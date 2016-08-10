@@ -1,0 +1,31 @@
+{
+    "name": "Wissem Gamra",
+    "year": 2018,
+    "college": "Ezra Stiles",
+    "major": "Electrical Engineering",
+    "picture": "https://yt3.ggpht.com/-ps51kDJhQrs/AAAAAAAAAAI/AAAAAAAAAAA/gaKp5HQDdLI/s900-c-k-no-rj-c0xffffff/photo.jpg",
+    "skills": [
+        "Java", "C", "C++", "Final Cut Pro", "Theatre & Film Producer"
+    ],
+    "experience": [
+        {
+            "title": "Free-Lance Producer",
+            "time": "2015-2016",
+            "detail": "Producer a feature length film (Captain Invincible is Dead - 2015), and 3 theatre plays (Last of the Maple Leaves - 2015, The Language Archive - 2015, Curse of the Starving Class - 2016)"
+        }
+    ],
+    "extracurriculars": [
+        {
+            "title": "Bulldog Productions",
+            "time": "2015-2016",
+            "detail": "Vice President",
+            "tags": ["Node", "Angular"]
+        }
+    ],
+    "links": {
+        "facebook": "https://www.facebook.com/wissem.gamra"
+    },
+    "available": true,
+    "bio": "Generalist programmer, aspiring to develop the next-gen video game console.",
+    "smallBio": "Into film, a little bit of theatre, and video games. I do programming too." 
+}

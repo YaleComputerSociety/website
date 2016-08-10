@@ -1,0 +1,231 @@
+---
+---
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<script src="http://localhost:35729/livereload.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono:300,400|Space+Mono:400,700" rel="stylesheet">
+
+<body>
+<header>
+	<div class="title-wrapper">
+		<h1><a href="{{ site.baseurl }}/" id="ytitle">Yale<br /> Computer<br />Society</a><span class="cursor"></span></h1>
+		<h2>Promoting computer science and engineering at Yale University</h2>
+		<p>
+			<a href="javascript:showMLInstructions()" class="btn join-ml">Join our Mailing List</a> to get updates about events and opportunities.
+		</p>
+	</div>
+</header>
+
+<section id="projects">
+	<header>
+		<h1><a href="#projects"><mark></mark>Projects</a></h1>
+		<h2>Here are some projects we've built in the past. <a href="#">have an idea?</a></h2>
+
+		<ul class="projects">
+			<div class="project clubs">
+				<a href="http://clubsatyale.org">
+					<div class="figure">
+						<span><strong>Clubs</strong></span>
+					</div>
+				</a>
+
+				<figcaption>
+					<div class="name">Clubs at Yale</div>
+					<p>A directory of extracurricular clubs for Yale students</p>
+				</figcaption>
+			</div>
+
+			<div class="project makers">
+				<a href="http://makersatyale.com">
+					<div class="figure">
+						<span><strong>Makers</strong>@Y</span>
+					</div>
+				</a>
+
+				<figcaption>
+					<div class="name">Makers at Yale</div>
+					<p>A directory of programmers &amp; designers at Yale</p>
+				</figcaption>
+			</div>
+
+			<div class="project bdgate">
+				<a href="http://github.com/ygom/bdgate">
+					<div class="figure">
+						<span><strong>BDGate</strong></span>
+					</div>
+				</a>
+
+				<figcaption>
+					<div class="name">Bulldog Gate <em>(offline)</em></div>
+					<p>Shorten URLs so that only Yale students and staff can open them</p>
+				</figcaption>
+			</div>
+		</ul>
+	</header>
+</section>
+
+<section id="members">
+	<header>
+		<h1><a href="#members"><mark></mark>Members of YCS</a></h1>
+	</header>
+
+	<section id="devs">
+		<header>
+			<h1><a href="#devs">Associate Developers</a></h1>
+			<h2>Associate developers create software projects</h2>
+		</header>
+
+		<ul class="people">
+			{% for _member in site.data.developers %} {% assign member = _member[1] %}
+			<div class="member" onClick="openMember('{{ _member[0] }}')">
+				<div class="picture">
+					<img src="{{ member.picture }}" />
+				</div>
+				<div class="info">
+					<div class="basics">
+						<strong>{{ member.name }}</strong>
+					</div>
+					<div class="blurb">{{ member.blurb }}</div>
+				</div>
+			</div>
+			{% endfor %}
+		</ul>
+	</section>
+
+	<section id="directors">
+		<header>
+			<h1><a href="#directors">Directors</a></h1>
+		</header>
+
+		<ul class="people">
+			{% for _member in site.data.members %} {% assign member = _member[1] %}
+			<div class="member" onClick="openMember('{{ _member[0] }}')">
+				<div class="picture">
+					<img src="{{ member.picture }}" />
+				</div>
+				<div class="info">
+					<div class="basics">
+						<strong>{{ member.name }}</strong>
+					</div>
+					<div class="blurb">{{ member.blurb }}</div>
+				</div>
+			</div>
+			{% endfor %}
+		</ul>
+	</section>
+	<section id="advisors">
+		<header>
+			<h1><a href="#advisors">Advisors</a></h1>
+		</header>
+
+		<ul class="people">
+			{% for _member in site.data.advisors %} {% assign member = _member[1] %}
+			<div class="member" onClick="openMember('{{ _member[0] }}')">
+				<div class="picture">
+					<img src="{{ member.picture }}" />
+				</div>
+				<div class="info">
+					<div class="basics">
+						<strong>{{ member.name }}</strong>
+					</div>
+					<div class="blurb">{{ member.blurb }}</div>
+				</div>
+			</div>
+			{% endfor %}
+		</ul>
+	</section>
+</section>
+
+
+<footer>
+<div class="container">
+<div class="row">
+	<div class="col-md-8 col-xs-12">
+		<p class="bio">
+			The YCS promoted talks, workshops and study breaks related to computer science and engineering.
+		</p>
+		
+	</div>
+	
+	<div class="col-md-4 col-xs-12" style="text-align: right">
+		Copyright 2016. All rights reserved.
+	</div>
+</div>
+</div>
+</footer>
+
+<script>
+$(function(){
+	var text = "Yale,Computer,Society";
+	var i = 0;
+	// $("#ytitle").html("");
+	// (function next() {
+	// 	var t = 100, c = text[i];
+	// 	if (c == ",") {
+	// 		c = "<br />";
+	// 		t = 300;
+	// 	};
+	// 	console.log("next", c, i)
+	// 	$("#ytitle").html($("#ytitle").html()+c);
+	// 	i++;
+	// 	if (text.length > i) {
+	// 		setTimeout(next, t);
+	// 	}
+	// })();
+});
+
+
+
+</script>
+
+
+<div class="page-popover" id="ml-popover">
+<div class="container">
+  <div class="close-btn" onClick="closePopover()"></div>
+    
+  <div class="row">
+    <div class="col-md-offset-2 col-md-8 col-xs-12">
+      <h1>Join the Mailing List</h1>
+      <!--
+      <p>
+        By joining our list you will receive emails about
+        <ul>
+          <li>upcoming <strong><abbr title="CS/EE/MecEng">maker events</abbr> on campus</strong></li>
+          <li>groups on campus organizing to <strong>attend hackathons</strong></li>
+          <li>curated emails with <strong>opportunities to work on software and hardware projects</strong></li>
+          <li>dinners and events for the community</li>
+        </ul>
+      </p>
+      <h2>How to Join</h2>
+      -->
+      <p>
+        Go to our Groups page at <a href="https://groups.google.com/a/elilists.yale.edu/forum/#!forum/ycs">groups.google.com/a/elilists.yale.edu/forum/#!forum/ycs</a> and <strong>click "Apply to join group"</strong>. <em>You must be logged in with your Yale account to access the website.</em>
+      </p>
+      <p>
+        If you have trouble doing that, <strong>email felipe.pires@[y].edu and ask for help.
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+
+
+function showMLInstructions() {
+  $("#ml-popover").fadeIn('slow');
+}
+
+function closePopover() {
+  $(".members").show();
+  $('.page-popover').fadeOut();
+  $("body").scrollTop(_pastScrolled);
+}
+
+</script>
+
+</body>
+</html>

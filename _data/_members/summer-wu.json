@@ -1,0 +1,24 @@
+{
+    "name": "Summer Wu",
+    "year": 2018,
+    "college": "Morse",
+    "major": "Computer Science",
+    "picture": "https://graph.facebook.com/1354343898/picture?width=400&height=400",
+    "skills": [
+      "Python", "Django", "Java", "Android", "Javascript", "C", "Unity", "HTML", "CSS"
+    ],
+    "experience": [
+    ],
+    "extracurriculars": [
+    ],
+    "links": {
+        "resume": "https://sumwu.me/static/summer_wu_resume.pdf",
+        "facebook": "http://facebook.com/summer.wu.560",
+        "github": "sw5813",
+        "linkedin": "https://www.linkedin.com/profile/view?id=289449779",
+        "website": "https://sumwu.me"
+    },
+    "available": false,
+    "bio": "Hailing from Chicago, currently living in New Haven/Hong Kong, soon headed to San Francisco/New York City/Budapest, endeavoring to explore the world. I'm interested in virtual/augmented reality, health tech, tinkering with new technologies and practical projects.",
+    "smallBio": "Hailing from Chicago, currently living in New Haven/Hong Kong, soon headed to SF/NY/Budapest, endeavoring to explore the world."
+}

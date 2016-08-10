@@ -1,0 +1,13 @@
+{
+   "felipe-pires":{
+      "name":"Felipe Pires",
+      "blurb": "President",
+      "picture":"http://graph.facebook.com/100000366187376/picture?width=400&height=400",
+   },
+
+   "john-amadeo": {
+      "name": "John Amadeo",
+      "blurb": "Talks",
+      "picture":"https://graph.facebook.com/1513041057/picture?width=400&height=400"
+   },
+}

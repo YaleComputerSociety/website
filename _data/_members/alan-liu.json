@@ -1,0 +1,30 @@
+{
+  "name": "Alan Liu",
+  "year": 2018,
+  "college": "Timothy Dwight",
+  "major": "Math & Computer Science",
+  "picture": "http://i.imgur.com/ntpWtqi.jpg",
+  "skills": [
+      "Backend: Python/Flask/Django, Ruby/Rails", "Mobile: Android",  "Web/Front End: JS, HTML, CSS", "General: C, Unity"
+    ],
+  "experience": [
+      {
+          "title": "Yale Student Developers",
+          "time": "2015-2016",
+          "detail": "Working with the Reservations team to create and improve a media reservations system. Currently being used by over 25 instances on campus including <a href = 'https://reservations.yale.edu/bmec/'> Bass Library </a> ",
+          "tags": ["Ruby", "Rails"]
+      }
+    ],
+  "extracurriculars": [
+    ],
+  "links": {
+    "resume": "http://www.alanliu.me/static/Alan%20Liu%20-%20Resume.pdf",
+    "github": "http://github.com/AlanLiu96",
+    "facebook": "http://facebook.com/AlanLiu1996",
+    "linkedin": "https://www.linkedin.com/profile/view?id=398694397",
+    "website": "https://alanliu.me/"
+  },
+  "available": true,
+  "bio": "Hi! When I’m not looking around in virtual reality, I’m thinking about how to make practical improvements to fix the little difficulties in life. Primarily a backend developer, with experience in Web & Android.</br> I’m always free to grab a meal or a chat. Drop me a message on <a href=”https://www.facebook.com/AlanLiu1996”> facebook</a> or shoot me an <a href=”mailto:alan.liu@yale.edu”> email </a>. ",
+  "smallBio": "Changing how we live, one day at a time."
+}

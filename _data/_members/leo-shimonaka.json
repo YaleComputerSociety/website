@@ -1,0 +1,28 @@
+{
+	"name": "Leo Shimonaka",
+	"year": 2018,
+	"college": "Jonathan Edwards",
+	"major": "Woodworking",
+	"picture": "http://leoshimonaka.com/images/me.jpg",
+	"skills": [
+		"Fruit", "iOS", "macOS", "Objective-C", "Swift", "Japanese Joinery", "Sarcasm"
+	],
+	"experience": [{
+		"title": "Writer of Code at Apple",
+		"time": "Feels like forever",
+		"detail": "Wrote code on different days at different places for stuff.",
+		"tags": ["Code", "Fruit"]
+	}],
+	"extracurriculars": [{
+		"title": "Treating Life as an Extracurricular",
+		"time": "Since 1995"
+	}],
+	"links": {
+		"github": "http://github.com/LeoShimonaka",
+		"facebook": "http://facebook.com/lshimonaka",
+		"personal": "http://leoshimonaka.com"
+	},
+	"available": false,
+	"bio": "I like coffee and music like every other human being ever. I can pretend to be interested in any project involving tech buzzwords, like 'machine learning,' 'internet of things,' 'virtual reality,' and 'the next big thing.' Autobiography coming soon.",
+	"smallBio": "Human being, person, and homo sapiens. Not interested in solving real problems. I want to volunteer at a sloth sanctuary instead."
+}

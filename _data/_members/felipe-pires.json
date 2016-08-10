@@ -1,0 +1,59 @@
+{
+    "name": "Felipe Pires",
+    "year": 2019,
+    "college": "Ezra Stiles",
+    "major": "Computer Science & Economics",
+    "picture": "http://graph.facebook.com/100000366187376/picture?width=400&height=400",
+    "skills": [
+        "Backend (Python, Node, Express)", "Frontend (React)", "Project Management", "Mobile (Swift, Android)"
+    ],
+    "experience": [
+        {
+            "title": "Member of YGM's ECD Team",
+            "time": "NOW",
+            "detail": "I'm currently helping out (not) with a YGM project for building a directory for extracurriculars at Yale.",
+            "tags": ["Node", "Angular"]
+        },
+        {
+            "title": "Developer of BulldogBook",
+            "time": "2016",
+            "detail": "Chrome Extension that allows Yale students to see suite and residential college information on the profile of other Yale students.",
+            "tags": ["Javascript"]
+        },
+        {
+            "title": "Creator of QI Labs",
+            "time": "2014'15",
+            "detail": "Social network for students interested in extracurricular opportunities. Programmed a wiki system for extracurriculars and a gamified platform where students can solve problems from past scientific olympiads. Open-sourced at <a href='http://github.com/f03lipe/qilabs'>github.com/f03lipe/qilabs</a>.",
+            "tags": ["Node", "React", "MongoDb", "Redis"]
+        },
+        {
+            "title": "CTO & Communtiy Mobilizer at Turma Cidadã",
+            "time": "2011’14",
+            "detail": "NGO that gives college and high school students in Brazil the opportunity to impact their local communities. Recruited students for volunteering, created the NGO’s website using django-cms and lead the media team for two years"
+        }
+    ],
+    "extracurriculars": [
+        {
+            "title": "Liberal Party",
+            "time": "2016"
+        },
+        {
+            "title": "Yale Guild of Makers",
+            "time": "2016",
+            "detail": "The oldest programming club at Yale."
+        },
+        {
+            "title": "Member of the Brazil Club",
+            "time": "2016",
+            "tags": ["Leadership"]
+        }
+
+    ],
+    "links": {
+        "github": "http://github.com/f03lipe",
+        "facebook": "http://facebook.com/felipearagaopires"
+    },
+    "available": true,
+    "bio": "<strike>Generalist</strike> programmer focused on web development. Collaborating on great things at YGM. I'm interested in the intersection of computer science and humanities, and that's what defines my Yale experience.<br />Particularly interested in <strong>virtual reality</strong> and <strong>machine learning</strong> projects.",
+    "smallBio": "Generalist programmer, focused on web development. Collaborating on great things at YGM."
+}

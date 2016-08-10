@@ -1,0 +1,459 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Our variables
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+@mixin media-query($device) {
+	@media screen and (max-width: $device) {
+		@content;
+	}
+}
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+  "base",
+  "layout",
+  "support",
+  "syntax-highlighting"
+;
+
+$blue: #4b8bcc; // #426bba;
+$color-tag: #F3753A; // #4A9BFF;
+
+.close-btn {
+	cursor: pointer;
+	vertical-align: middle;
+	text-align: center;
+
+	&:after {
+		display: inline-block;
+		content: "\00d7"; /* This will render the 'X' */
+	}
+
+	&:hover {
+		color: #000;
+	}
+}
+
+.container {
+	max-width: 960px;
+}
+
+.page-popover {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	// bottom
+	min-height: 100%;
+
+	background: white;
+}
+
+#ml-popover {
+	p {
+		line-height: 2;
+	}
+	li {
+		line-height: 2;
+	}
+}
+
+body > header {
+	position: relative;
+	color: white;
+	padding: 70px 60px; 
+  font-family: "Roboto";
+  border-bottom: 3px solid #EEE;
+  margin-bottom: 60px;
+
+	.title-wrapper {
+		color: #222;
+		font-size: 16px;
+
+		h1 {
+			font-size: 5em;
+			font-family: 'Space Mono', monospace;
+			font-weight: bolder;
+      margin-bottom: 30px;
+
+			a {
+				text-decoration: none;
+        &:hover {
+          color: #F68657;
+          color: #000;
+          @include transition(.1s);
+        }
+			}
+
+      @-webkit-keyframes blink {
+        from, to { opacity: 1 }
+        50% { opacity: 0 }
+      }
+
+      @-moz-keyframes blink {
+        from, to { opacity: 1 }
+        50% { opacity: 0 }
+      }
+
+      .cursor {
+        width: 40px;
+        margin-left: 10px;
+        display: inline-block;
+        height: .9em;
+        background: #F6F6F6;
+        vertical-align: bottom;
+
+        -webkit-animation: 1s blink step-end infinite;
+        -moz-animation: 1s blink step-end infinite;
+      }
+		}
+
+		h2 {
+			font-size: 1.4em;
+			margin-bottom: 30px;
+			font-family: 'Space Mono', monospace;
+		}
+
+		a {
+			text-decoration: underline;
+			color: inherit;
+		}
+	}
+
+	a.join-ml {
+		text-align: center;
+		background: white;
+		font-weight: bold;
+		font-size: 15px;
+		border-radius: 0;
+		color: #444;
+		text-transform: uppercase;
+		padding: 8px 10px;
+		border: 3px solid #EEE;
+		@include transition(.1s);
+		margin-right: 6px;
+    cursor: pointer;
+    z-index: 10;
+		text-decoration: none;
+
+		&:hover {
+			border-color: #FDD692;
+      // border-color: #F68657;
+		}
+
+		&:active {
+			box-shadow: none;
+		}
+	}
+}
+
+
+.page-popover {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 100%;
+  background: white;
+
+  .container {
+    padding: 20px;
+    height: 300px;
+    display: table;
+    vertical-align: top;
+    text-align: center;
+    margin-top: 50px;
+
+    font: 400 15px "Roboto";
+    text-align: left;
+
+    p {
+      font-family: "Roboto";
+    }
+    
+    .close-btn {
+      position: absolute;
+      right: 30px;
+      top: 20px;
+      color: #555;
+      // font-weight: bold;
+      font-size: 30px;
+      width: 40px;
+      height: 40px;
+      line-height: 38px;
+      border-radius: 40px;
+      
+      &:hover {
+        background: #EEE;
+      }
+    }
+
+    .row {
+      margin-bottom: 20px;
+    }
+     
+    ul.inline-list {
+      margin-left: 0;
+      margin-bottom: -4px;
+      
+      li {
+        display: inline-block;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+
+body > section {
+	padding: 10px 40px;
+  border-bottom: 3px solid #EEE;
+  margin-bottom: 40px;
+
+	header {
+		color: #666;
+    padding: 0 20px;
+    font-family: "Roboto Mono";
+    font-weight: bold;
+    font-size: 14px;
+
+    a {
+      text-decoration: none !important;
+      color: #444;
+      border-bottom: 1px solid transparent;
+      @include transition(.2s);
+
+      &:hover {
+        border-bottom: 1px solid #CCC;
+      }
+    }
+
+    mark {
+      background: transparent;
+      padding: 0;
+      margin-right: 10px;
+      &:before {
+        content: "#";
+        color: #BBB;
+        @include transition(.2s);
+        &:hover {
+          color: #AAA;
+        }
+      }
+    }
+
+    h1:hover mark:before {
+      color: #AAA;
+    }
+
+		h1 {
+			font-size: 1.7em;
+      color: #333;
+			font-weight: bold;
+		}
+
+		h2 {
+			font-weight: 300;
+			font-size: 1.2em;
+      color: #888;
+      margin-top: 1em;
+		}
+	}
+
+  & > section {
+    margin-left: 20px;
+
+    header h1 {
+      color: #666;
+      font-size: 1.4em;
+    }
+
+    header h2 {
+      font-size: 1.1em;
+      font-weight: 300;
+    }
+  }
+
+  & > section:first-of-type {
+    margin-top: 40px;
+  }
+}
+
+.projects {
+  list-style: none;
+  margin: 0 0 40px;
+  margin-left: 20px;
+}
+
+.project {
+  $width: 280px;
+  $height: $width/2;
+  width: $width;
+  margin-right: 20px;
+  margin-top: 30px;
+  vertical-align: top;
+  display: inline-block;
+
+  a {
+    text-decoration: none !important;
+  }
+
+  .figure {
+    height: $height;
+    width: $width;
+    text-align: center;
+    overflow: hidden;
+    background: #BBB;
+    cursor: pointer;
+    user-select: none;
+
+    span {
+      font-family: Arial;
+      line-height: $height;
+      color: white;
+      font-weight: normal;
+      white-space: nowrap;
+      font-size: 50px;
+    }
+  }
+
+  figcaption {
+    margin-top: 10px;
+
+    .name {
+      color: #333;
+      em {
+        font-style: normal;
+        opacity: .4;
+      }
+    }
+    p {
+      font-weight: 300;
+      color: #888;
+    }
+  }
+}
+
+.project.makers .figure {
+  background: #cddc39;
+}
+
+.project.clubs .figure {
+  background: #03a9f4;
+  text-align: right;
+  span {
+    font-size: 90px;
+    font-family: Roboto;
+  }
+}
+
+.project.bdgate .figure {
+  background: #E53A40;
+  text-align: center;
+  span {
+    font-size: 60px;
+    font-family: serif;
+    line-height: 200px;
+  }
+}
+
+.people {
+  list-style: none;
+  margin: 0 0 20px;
+}
+
+.people .member {
+	padding: 20px;
+	height: 260px;
+	width: 170px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+
+	font-size: 12px;
+	font-family: "museo-sans";
+
+	.info {
+		font: 400 14px "Roboto Mono";
+		text-align: left;
+
+		.basics {
+			text-align: center;
+			font-size: 14px;
+			color: #666;
+
+			& > * {
+				vertical-align: middle;
+			}
+
+			strong {
+				font-weight: normal;
+				color: #000;
+			}
+		}
+
+		& > div {
+			margin-bottom: 5px;
+		}
+
+		.blurb {
+			font-size: 14px;
+      text-align: center;
+			line-height: 1.5;
+      font-family: "Roboto Mono";
+      font-weight: 300;
+      color: #888;
+		}
+	}
+
+	.picture img {
+		width: 120px;
+    cursor: pointer;
+		height: 120px;
+		border-radius: 200px;
+		margin-bottom: 20px;
+
+		@include transition(.5s);
+
+		&:not(:hover) {
+			@include filter(grayscale, 100%);
+		}
+	}
+}
+
+footer {
+	padding: 40px 0 60px;
+  font-family: Roboto;
+  font-size: 14px;
+
+  .bio {
+    font-family: "Space Mono";
+  }
+}
