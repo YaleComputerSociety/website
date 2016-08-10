@@ -1,40 +1,40 @@
 {
 
    "leo-shimonaka":{
-      "name":"Leo Shimonaka",
-      "blurb": "Senior Mobile",
-      "picture":"https://graph.facebook.com/1344858061/picture?width=400&height=400",
+      "name": "Leo Shimonaka",
+      "blurb": "[<strong>Senior</strong>]Mobile",
+      "picture": "https://graph.facebook.com/1344858061/picture?width=400&height=400",
    },
 
-   "peter-zhou": {
-      "name": "Peter Zhou",
-      "blurb": "Mobile/AR",
-      "picture":"https://graph.facebook.com/100001824364348/picture?width=400&height=400"
-   },
-
-   "dennis-duan": {
-      "name": "Dennis Duan",
-      "blurb": "",
-      "picture":"https://graph.facebook.com/100000838599394/picture?width=400&height=400"
+   "lee-danilek":{
+      "name": "Lee Danilek",
+      "blurb": "[<strong>Senior</strong>]",
+      "picture": "http://a2.res.cloudinary.com/talent/image/fetch/t_face_s270/http://leedanilek.com/photos/profile_maker.jpeg",
    },
 
    "will-merrill":{
       "name": "Will Merrill",
       "year": 2019,
       "blurb": "Game/Linguistics",
-      "picture":"https://graph.facebook.com/100002264291889/picture?width=400&height=400",
+      "picture": "https://graph.facebook.com/100002264291889/picture?width=400&height=400",
    },
 
    "brian-kitano": {
       "name": "Brian Kitano",
-      "blurb": "",
-      "picture":"https://graph.facebook.com/100000406761998/picture?width=400&height=400",
+      "blurb": "AI",
+      "picture": "https://graph.facebook.com/100000406761998/picture?width=400&height=400",
    },
 
-   "lee-danilek":{
-      "name":"Lee Danilek",
+   "peter-zhou": {
+      "name": "Peter Zhou",
+      "blurb": "Mobile/AR",
+      "picture": "https://graph.facebook.com/100001824364348/picture?width=400&height=400"
+   },
+
+   "dennis-duan": {
+      "name": "Dennis Duan",
       "blurb": "",
-      "picture":"http://leedanilek.com/photos/profile_maker.jpeg",
+      "picture": "https://graph.facebook.com/100000838599394/picture?width=400&height=400"
    },
 
 }

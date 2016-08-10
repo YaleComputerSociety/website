@@ -1,13 +1,44 @@
 {
-   "felipe-pires":{
-      "name":"Felipe Pires",
-      "blurb": "President",
-      "picture":"http://graph.facebook.com/100000366187376/picture?width=400&height=400",
+   "felipe-pires": {
+      "name": "Felipe Pires",
+      "blurb": "Software",
+      "picture": "http://graph.facebook.com/100000366187376/picture?width=400&height=400",
    },
 
    "john-amadeo": {
       "name": "John Amadeo",
       "blurb": "Talks",
-      "picture":"https://graph.facebook.com/1513041057/picture?width=400&height=400"
+      "picture": "https://graph.facebook.com/1513041057/picture?width=400&height=400"
    },
+
+   "wissem-gamra": {
+      "name": "Wissem Gamra",
+      "blurb": "???",
+      "picture": "https://yt3.ggpht.com/-ps51kDJhQrs/AAAAAAAAAAI/AAAAAAAAAAA/gaKp5HQDdLI/s900-c-k-no-rj-c0xffffff/photo.jpg",
+   },
+
+   "davi-lemos": {
+      "name": "Davi Lemos",
+      "blurb": "Partnerships",
+      "picture": "https://graph.facebook.com/1580216716/picture?width=400&height=400",
+   },
+
+   "tt": {
+      "name": "???",
+      "blurb": "Treasurer",
+      "picture": "",
+   },
+
+   "cc": {
+      "name": "???",
+      "blurb": "Community",
+      "picture": "",
+   },
+
+   "annie-chen": {
+      "name": "Annie Chen",
+      "blurb": "???",
+      "picture": "https://graph.facebook.com/100001965862488/picture?width=400&height=400",
+   },
+
 }
