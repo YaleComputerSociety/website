@@ -317,12 +317,12 @@ body > header {
   position: relative;
   color: white;
   padding: 70px 60px;
-  font-family: "Roboto"; }
+  font-family: "Roboto";
+  font-size: 25px; }
   body > header .title-wrapper {
-    color: #222;
-    font-size: 16px; }
+    color: #222; }
     body > header .title-wrapper h1 {
-      font-size: 5em;
+      font-size: 3.2em;
       font-family: 'Space Mono', monospace;
       font-weight: bolder;
       margin-bottom: 30px; }
@@ -357,17 +357,20 @@ body > header {
         -webkit-animation: 1s blink step-end infinite;
         -moz-animation: 1s blink step-end infinite; }
     body > header .title-wrapper h2 {
-      font-size: 1.4em;
+      font-size: .9em;
+      line-height: 1.5;
       margin-bottom: 30px;
       font-family: 'Space Mono', monospace; }
     body > header .title-wrapper a {
       text-decoration: underline;
       color: inherit; }
+  body > header p {
+    font-size: 16px; }
   body > header a.join-ml {
     text-align: center;
     background: white;
     font-weight: bold;
-    font-size: 15px;
+    font-size: .95em;
     border-radius: 0;
     color: #444;
     text-transform: uppercase;
@@ -492,7 +495,8 @@ body > section.notice + footer {
 
 body > section {
   padding: 70px 60px 60px;
-  border-top: 3px solid #EEE; }
+  border-top: 3px solid #EEE;
+  font-size: 15px; }
   body > section header {
     color: #666;
     padding: 0;
@@ -538,6 +542,7 @@ body > section {
       color: #666;
       margin-top: 1em; }
   body > section > section {
+    padding: .1px;
     margin-left: 20px; }
     body > section > section header h1 {
       color: #444;
@@ -546,9 +551,9 @@ body > section {
       font-size: 1.1em;
       font-weight: 300; }
   body > section > section:not(:last-of-type) {
-    margin-bottom: 60px; }
+    margin-bottom: 4em; }
   body > section > section:first-of-type {
-    margin-top: 40px; }
+    margin-top: 2.5em; }
   body > section .info {
     padding-top: 10px;
     text-align: left;
@@ -576,16 +581,18 @@ body > section {
       line-height: 1.5; }
 
 ul.events {
-  margin-top: 40px; }
+  margin-top: 2.6em; }
   ul.events .date {
-    margin-bottom: 30px; }
+    margin-bottom: 2em; }
     ul.events .date h1 {
       font-family: "Roboto Mono";
       color: #888;
-      font-size: 18px;
-      font-weight: 300; }
+      font-size: 1.1em;
+      font-weight: 300;
+      margin-bottom: 0; }
+  ul.events .event:not(:last-child) {
+    margin-bottom: 2.7em; }
   ul.events .event {
-    margin-bottom: 50px;
     max-width: 900px;
     position: relative; }
     ul.events .event .image {
@@ -599,7 +606,6 @@ ul.events {
         border-radius: 100px; }
     ul.events .event .content {
       padding-left: 100px;
-      font-size: 14px;
       font-family: Roboto; }
       ul.events .event .content a {
         color: #333;
@@ -613,9 +619,11 @@ ul.events {
           text-decoration: none;
           border-bottom: 1px dashed #1976d2;
           border-bottom-color: #888; }
+      ul.events .event .content h1, ul.events .event .content h2, ul.events .event .content h3 {
+        line-height: 1.5; }
       ul.events .event .content h1 {
-        margin-bottom: .5em;
-        font-size: 1.5em;
+        margin-bottom: .2em;
+        font-size: 1.4em;
         font-weight: 300;
         color: #555; }
         ul.events .event .content h1 strong {
@@ -629,15 +637,15 @@ ul.events {
             text-transform: uppercase;
             color: inherit; }
       ul.events .event .content h2 {
-        font-size: 1.2em;
-        margin-bottom: .7em;
+        font-size: 1.1em;
+        margin-bottom: .5em;
         font-weight: 300;
         color: #333; }
         ul.events .event .content h2 strong {
           font-weight: 400; }
       ul.events .event .content h3 {
         font-family: "Roboto Mono";
-        font-size: 1.1em;
+        font-size: 1.0em;
         color: #333;
         font-weight: 300; }
 
@@ -709,15 +717,14 @@ ul.projects .project {
 
 ul.people {
   list-style: none;
-  margin: 0 0; }
+  margin: 40px 0 -40px; }
   ul.people > .member {
-    margin-top: 20px;
-    height: 200px;
     width: 170px;
+    height: 190px;
+    margin-bottom: 40px;
     display: inline-block;
     vertical-align: top;
     text-align: center;
-    font-size: 12px;
     font-family: "museo-sans"; }
     ul.people > .member .info {
       padding-top: 20px;
@@ -725,8 +732,8 @@ ul.people {
       text-align: center; }
     ul.people > .member .picture img {
       width: 120px;
-      cursor: pointer;
       height: 120px;
+      cursor: pointer;
       border-radius: 200px;
       -webkit-transition: 0.5s;
       -moz-transition: 0.5s;
@@ -743,7 +750,7 @@ ul.people {
 footer {
   display: table;
   width: 100%;
-  padding: 60px 60px;
+  padding: 60px 30px;
   font-family: Roboto;
   font-size: 13px;
   border-top: 3px solid #EEE;
@@ -751,3 +758,52 @@ footer {
   footer .bio {
     color: #444;
     line-height: 1.8; }
+
+@media screen and (max-width: 800px) {
+  body > header {
+    font-size: 15px;
+    padding: 30px; }
+    body > header p {
+      font-size: 15px; }
+
+  body > .notice {
+    padding: 15px 15px; }
+
+  body > section,
+  footer,
+  body > section.notice {
+    padding: 30px 20px; }
+    body > section > header,
+    footer > header,
+    body > section.notice > header {
+      font-size: 12px; }
+
+  section ul.people {
+    margin-bottom: -20px; }
+    section ul.people .member {
+      margin-bottom: 20px;
+      width: 110px;
+      height: 160px; }
+    section ul.people .member .info {
+      font-size: 13px; }
+    section ul.people .member .picture img {
+      width: 90px;
+      height: 90px; }
+
+  section ul.events {
+    font-size: 13px; }
+    section ul.events .event .content h1 .origin {
+      display: block;
+      margin: 0; }
+    section ul.events .event .content {
+      padding-left: 80px; }
+    section ul.events .event .image img {
+      width: 60px;
+      height: 60px; }
+
+  body > section > ul,
+  body > section > section > ul {
+    margin-left: 0; }
+
+  body > section > section {
+    margin-left: 10px; } }
