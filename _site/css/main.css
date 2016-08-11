@@ -769,12 +769,13 @@ footer {
   body > .notice {
     padding: 15px 15px; }
 
+  footer {
+    padding: 30px 5px; }
+
   body > section,
-  footer,
   body > section.notice {
     padding: 30px 20px; }
     body > section > header,
-    footer > header,
     body > section.notice > header {
       font-size: 12px; }
 

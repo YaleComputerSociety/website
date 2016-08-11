@@ -695,8 +695,11 @@ footer {
 		padding: $spacing-unit/2 $spacing-unit/2;
 	}
 
+	footer {
+		padding: $spacing-unit $spacing-unit*2/3-15;
+	}
+
 	body > section,
-	footer,
 	body > section.notice {
 		padding: $spacing-unit $spacing-unit*2/3;
 		
