@@ -10,18 +10,21 @@
 
 <body>
 
+<!--
 <div class="notice green">
 	<div class="content">
-		<strong>We're putting together teams to attend YHack.</strong> Join the Facebook group.
+		<strong>We're putting together teams to attend HackMIT, PennApps.</strong> Join the Facebook group.
 	</div>
 </div>
+-->
 
+<!--
 <div class="notice">
 <div class="content">
 	<a href="#"><strong>Join the Yale Computer Society this fall.</strong> Click to learn how.</a>
 </div>
 </div>
-
+-->
 
 <!-- 
 <div class="notice info">
@@ -55,7 +58,7 @@
 
 <section class="notice info">
 <div class="content">
-	<a href="#"><strong>Google Fall recruitment talk</strong> happening this <strong>Wed 4pm at CEID</strong>.</a>
+	<a href="#"><strong>Join the Yale Computer Society this fall.</strong> Click to learn how.</a>
 </div>
 </section>
 <!-- 
@@ -80,94 +83,15 @@
 
 <section id="events">
 	<header>
-		<h1><a href="#events"><mark></mark>Events</a> (fake for now)</h1>
+		<h1><a href="#events"><mark></mark>Events</a></h1>
 		<h2>Scheduled talks and workshops for 2016.</h2>
 	</header>
 
 	<ul class="events">
 		<div class="date">
-			<h1>September</h1>
-		</div>
-		<div class="date">
-			<h1>October</h1>
-		</div>
-		<div class="event">
-			<div class="image">
-				<img src="https://pbs.twimg.com/profile_images/54057404/Photo_14_400x400.jpg" />
-			</div>
-			<div class="content">
-				<h1>
-					<strong>Daniel Shiffman</strong>, Y '03
-				</h1>
-				<h2>
-					Project lead with the <strong>Processing Foundation</strong>. Associate Arts Professor at <strong>NYU's Tisch School of the Arts</strong>.
-				</h2>
-				<h3>Wednesday, <strong>October 19th</strong>. <strong>6 to 7pm</strong>. At CEID.</h3>
-			</div>
-		</div>
-		<div class="date">
-			<h1>November</h1>
-		</div>
-		<div class="event">
-			<div class="image">
-				<img src="http://a2.res.cloudinary.com/talent/image/fetch/t_face_s270/https://cdn1.vox-cdn.com/thumbor/hlzdx1-1D18Co32-KNBnHElEXpE=/0x292:1773x1289/1720x1147/filters:focal(0x292:1773x1289):format(webp)/cdn1.vox-cdn.com/uploads/chorus_image/image/50289463/167839960.0.jpg" />
-			</div>
-			<div class="content">
-				<h1>
-					<strong>Tom Lehman</strong> and <strong>Ilan Zechory</strong>, Y '07
-				</h1>
-				<h2>
-					Founders of <strong><a href="#">Genius</a></strong>.
-				</h2>
-				<h3>Wednesday, <strong>October 19th</strong>. <strong>6 to 7pm</strong>. Location TBA.</h3>
-			</div>
-		</div>
-		<div class="date">
-			<h1>December</h1>
+			<h1>List of events coming soon</h1>
 		</div>
 	</ul>
-
-	<section>
-		<header>
-			<h1>Past events</h1>
-		</header>
-
-		<ul class="events">
-			<div class="date">
-				<h1>March</h1>
-			</div>
-			<div class="event">
-				<div class="image">
-					<img src="https://ga-core.s3.amazonaws.com/cms/files/files/000/001/817/original/Ben_Silbermann_Pinterest_edit.jpg" />
-				</div>
-				<div class="content">
-					<h1>
-						<strong>Ben Silberman</strong>, Y '06 <div class="origin blue">by <strong>HackYale</strong></div>
-					</h1>
-					<h2>
-						Founder of <strong>Pinterest</strong>.
-						<a href="#" class="link"><strong>See on Youtube</strong>.</a>
-					</h2>
-					<h3>Wednesday, <strong>March 13rd</strong>. <strong>6 to 7pm</strong>. SSS 14.</h3>
-				</div>
-			</div>
-			<div class="event">
-				<div class="image">
-					<img src="http://a2.res.cloudinary.com/talent/image/fetch/t_face_s270/http://speakerdata.s3.amazonaws.com/photo/image/843459/michael_seibel.jpg" />
-				</div>
-				<div class="content">
-					<h1>
-						<strong>Michael Seibel</strong> and <strong>Justin Kan</strong>, Y '05 <div class="origin">by <strong>Yale SOM</strong> and the <strong>CS Department</strong></div>
-					</h1>
-					<h2>
-						Founders of <strong>Justin.tv</strong> and <strong>Twitch</strong>.
-						<a href="#" class="link"><strong>See on Youtube</strong>.</a>
-					</h2>
-					<h3>Monday, <strong>Feb 26th</strong>. <strong>6 to 7pm</strong>. SSS 14.</h3>
-				</div>
-			</div>
-		</ul>
-	</section>
 </section>
 
 
@@ -272,7 +196,7 @@
 		</header>
 
 		<ul class="people">
-			{% for _member in site.data.sd %} {% assign member = _member[1] %}
+			{% for _member in site.data.staff %} {% assign member = _member[1] %}
 			<div class="member" onClick="openMember('{{ _member[0] }}')">
 				<div class="picture">
 					<img src="{{ member.picture }}" />
@@ -292,7 +216,7 @@
 		</header>
 
 		<ul class="people">
-			{% for _member in site.data.members %} {% assign member = _member[1] %}
+			{% for _member in site.data.directors %} {% assign member = _member[1] %}
 			<div class="member" onClick="openMember('{{ _member[0] }}')">
 				<div class="picture">
 					<img src="{{ member.picture }}" />
@@ -305,6 +229,7 @@
 			{% endfor %}
 		</ul>
 	</section>
+	<!--
 	<section id="advisors">
 		<header>
 			<h1><a href="#advisors">Advisors</a></h1>
@@ -323,16 +248,19 @@
 			</div>
 			{% endfor %}
 		</ul>
+		-->
 	</section>
 </section>
 
-
+<!--
 <section class="notice abc">
 <div class="content">
 	<a href="#">Dec 12th 6-9pm at CEID: <strong>YCS study break for finals.</strong> See on Facebook.</a>
 </div>
 </section>
+-->
 
+<!--
 <section id="sponsors">
 	<header>
 		<h1><a href="#sponsors"><mark></mark>Sponsors</a></h1>
@@ -342,16 +270,9 @@
 		<div class="sponsor facebook">
 			<img src="{{ site.baseurl }}/images/facebook.png" />
 		</div>
-
-		<div class="sponsor google">
-			<img src="{{ site.baseurl }}/images/google.png" />
-		</div>
-
-		<div class="sponsor insomnia">
-			<img src="https://s-media-cache-ak0.pinimg.com/564x/41/da/3c/41da3c3f5a9c781567fdd0f93bcda95a.jpg" />
-		</div>
 	</ul>
 </section>
+-->
 
 <footer>
 <div class="col-md-8 col-xs-12">
