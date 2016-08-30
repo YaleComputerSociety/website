@@ -505,7 +505,7 @@ body > section {
     font-size: 14px; }
     body > section header a {
       text-decoration: none !important;
-      color: #444;
+      color: #000;
       border-bottom: 1px solid transparent;
       -webkit-transition: 0.2s;
       -moz-transition: 0.2s;
@@ -515,7 +515,7 @@ body > section {
       body > section header a:hover {
         border-bottom: 1px solid #CCC; }
       body > section header a:visited {
-        color: inherit; }
+        color: #000; }
     body > section header mark {
       background: transparent;
       padding: 0;
@@ -730,6 +730,8 @@ ul.people {
       padding-top: 20px;
       font-size: 14px;
       text-align: center; }
+    ul.people > .member h2.board {
+      font-weight: bold; }
     ul.people > .member .picture img {
       width: 120px;
       height: 120px;

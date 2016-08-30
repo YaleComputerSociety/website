@@ -2,13 +2,13 @@
 
    "leo-shimonaka":{
       "name": "Leo Shimonaka",
-      "blurb": "[<strong>Senior</strong>]Mobile",
+      "blurb": "Mobile",
       "picture": "https://graph.facebook.com/1344858061/picture?width=400&height=400",
    },
 
    "lee-danilek":{
       "name": "Lee Danilek",
-      "blurb": "[<strong>Senior</strong>]",
+      "blurb": "Mobile",
       "picture": "http://a2.res.cloudinary.com/talent/image/fetch/t_face_s270/http://leedanilek.com/photos/profile_maker.jpeg",
    },
 
@@ -17,6 +17,13 @@
       "year": 2019,
       "blurb": "Game/Linguistics",
       "picture": "https://graph.facebook.com/100002264291889/picture?width=400&height=400",
+   },
+
+   "brian-kitano":{
+      "name": "Brian Kitano",
+      "year": 2019,
+      "blurb": "AI",
+      "picture": "https://graph.facebook.com/100000406761998/picture?width=400&height=400",
    },
 
    "peter-zhou": {

@@ -331,7 +331,7 @@ body > section {
 
     a {
       text-decoration: none !important;
-      color: #444;
+      color: #000;
       border-bottom: 1px solid transparent;
       @include transition(.2s);
 
@@ -340,7 +340,7 @@ body > section {
       }
 
       &:visited {
-        color: inherit;
+        color: #000;
       }
     }
 
@@ -633,9 +633,11 @@ ul.people {
   list-style: none;
   margin: 40px 0 -40px;
 
+  $picdim: 120px;
+
   & > .member {
-    width: 170px;
-    height: 190px;
+    width: $picdim+50;
+    height: $picdim+70;
 		margin-bottom: 40px;
     display: inline-block;
     vertical-align: top;
@@ -649,9 +651,13 @@ ul.people {
       text-align: center;
     }
 
+    h2.board {
+      font-weight: bold;
+    }
+
     .picture img {
-      width: 120px;
-      height: 120px;
+      width: $picdim;
+      height: $picdim;
       cursor: pointer;
       border-radius: 200px;
 
