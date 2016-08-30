@@ -733,12 +733,6 @@ ul.people {
       -ms-transition: 0.5s;
       -o-transition: 0.5s;
       transition: 0.5s; }
-      ul.people > .member .picture img:not(:hover) {
-        -webkit-filter: grayscale(100%);
-        -moz-filter: grayscale(100%);
-        -ms-filter: grayscale(100%);
-        -o-filter: grayscale(100%);
-        filter: grayscale(100%); }
 
 footer {
   display: table;

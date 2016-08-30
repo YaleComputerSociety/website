@@ -652,7 +652,7 @@ ul.people {
       @include transition(.5s);
 
       &:not(:hover) {
-        @include filter(grayscale, 100%);
+        // @include filter(grayscale, 100%);
       }
     }
   }
