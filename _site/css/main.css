@@ -299,15 +299,6 @@ pre {
 .container {
   max-width: 960px; }
 
-.page-popover {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  min-height: 100%;
-  background: white; }
-
 #ml-popover p {
   line-height: 2; }
 #ml-popover li {
@@ -395,7 +386,7 @@ body > header {
 
 .page-popover {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;

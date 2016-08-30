@@ -63,18 +63,6 @@ $color-tag: #F3753A; // #4A9BFF;
 	max-width: 960px;
 }
 
-.page-popover {
-	display: none;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	// bottom
-	min-height: 100%;
-
-	background: white;
-}
-
 #ml-popover {
 	p {
 		line-height: 2;
@@ -182,7 +170,7 @@ body > header {
 
 .page-popover {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
