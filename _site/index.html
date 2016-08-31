@@ -203,7 +203,7 @@
 	<section id="devs">
 		<header>
 			<h1>Resident Developers</h1>
-      <h2>Associate developers create awesome projects incubated at YCS. <a href="#">Become one.</a></h2>
+      <h2>Associate developers create awesome projects incubated at YCS. <a href="javascript:showMLInstructions()">Become one.</a></h2>
 		</header>
 
 		<ul class="people">
@@ -297,7 +297,7 @@
 	<section id="staff">
 		<header>
 			<h1>Staff Members</h1>
-			<h2>Staff members bring talks to Yale and hold our workshops. <a href="#">Join us.</a></h2>
+      <h2>Staff members bring talks to Yale and hold our workshops. <a href="javascript:showMLInstructions()">Join us.</a></h2>
 		</header>
 
 		<ul class="people">
@@ -364,37 +364,6 @@
 			</div>
 			
 		</ul>
-	</section>
-	<!--
-	<section id="advisors">
-		<header>
-			<h1><a href="#advisors">Advisors</a></h1>
-		</header>
-
-		<ul class="people">
-			 
-			<div class="member" onClick="openMember('summer-wu')">
-				<div class="picture">
-					<img src="https://graph.facebook.com/1354343898/picture?width=400&height=400" />
-				</div>
-				<div class="info">
-					<h1>Summer Wu</h1>
-					<h2>???</h2>
-				</div>
-			</div>
-			 
-			<div class="member" onClick="openMember('pwho')">
-				<div class="picture">
-					<img src="" />
-				</div>
-				<div class="info">
-					<h1>Professor X</h1>
-					<h2></h2>
-				</div>
-			</div>
-			
-		</ul>
-		-->
 	</section>
 </section>
 
@@ -497,14 +466,17 @@ $(function(){
 
 <script>
 
+var _pastScrolled;
 
 function showMLInstructions() {
   $("#ml-popover").fadeIn('slow');
+  $("section").fadeOut('slow');
+  _pastScrolled = $("body").scrollTop();
 }
 
 function closePopover() {
-  $(".members").show();
-  $('.page-popover').fadeOut();
+  $("section").show();
+  $('#ml-popover').fadeOut();
   $("body").scrollTop(_pastScrolled);
 }
 
