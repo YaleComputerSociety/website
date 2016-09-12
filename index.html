@@ -28,7 +28,7 @@
 
 <div class="notice green">
 <div class="content">
-	<a href="http://yhack.org"><strong>Registration for YHack are now open!</strong> Submit your application.</a>
+	<a href="http://yhack.org"><strong>Registration for YHack is now open!</strong> Submit your application.</a>
 </div>
 </div>
 
@@ -181,6 +181,7 @@
 		<h1><a href="#members"><mark></mark>Members of YCS</a></h1>
 	</header>
 
+  <!--
 	<section id="devs">
 		<header>
 			<h1>Resident Developers</h1>
@@ -201,6 +202,7 @@
 			{% endfor %}
 		</ul>
 	</section>
+  -->
 
   <!--
 	<section id="staff">
@@ -244,6 +246,17 @@
 			</div>
 			{% endfor %}
 			{% for _member in site.data.staff %} {% assign member = _member[1] %}
+			<div class="member" onClick="openMember('{{ _member[0] }}')">
+				<div class="picture">
+					<img src="{{ member.picture }}" />
+				</div>
+				<div class="info">
+					<h1>{{ member.name }}</h1>
+					<h2>{{ member.blurb }}</h2>
+				</div>
+			</div>
+			{% endfor %}
+			{% for _member in site.data.developers %} {% assign member = _member[1] %}
 			<div class="member" onClick="openMember('{{ _member[0] }}')">
 				<div class="picture">
 					<img src="{{ member.picture }}" />
@@ -344,7 +357,7 @@ $(function(){
       	If you are interested in the work we do and would like to help us do more, <strong>you should consider joining our team</strong>. You can either:
 
       	<ul>
-      	<li>come to our weekly dinners (Siliman dining hall, Thursdays at 6pm) and see what we're up to, or</li><li>send a message to <a href="https://www.facebook.com/felipap">Felipe Pires</a> saying you're interested in helping out.</li>
+      	<li>come to our weekly dinners (Siliman dining hall, Wednesdays at 6.30pm) and see what we're up to, or</li><li>send a message to <a href="https://www.facebook.com/felipap">Felipe Pires</a> saying you're interested in helping out.</li>
       	</ul>
       </p>
       <p>

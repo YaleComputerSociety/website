@@ -17,6 +17,17 @@
       "picture": "https://yt3.ggpht.com/-ps51kDJhQrs/AAAAAAAAAAI/AAAAAAAAAAA/gaKp5HQDdLI/s900-c-k-no-rj-c0xffffff/photo.jpg"
    },
 
+   "sabrina-evans": {
+      "name": "Sabrina Evans",
+      "blurb": "Director of Community",
+      "picture": "https://graph.facebook.com/100000088944262/picture?width=400&height=400"
+   },
+
+   "brian-kitano": {
+      "name": "Brian Kitano",
+      "blurb": "Director of Development",
+      "picture": "https://graph.facebook.com/100000406761998/picture?width=400&height=400"
+   },
    "annie-chen": {
       "name": "Annie Chen",
       "blurb": "Outreach",
