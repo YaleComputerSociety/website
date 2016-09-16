@@ -4,6 +4,19 @@
       "blurb": "Talks",
       "picture": "http://graph.facebook.com/100004539012175/picture?width=400&height=400",
    },
+
+   "devon.merlette": {
+      "name": "Devon Merlette",
+      "blurb": "Design",
+      "picture": "http://graph.facebook.com/100000726794077/picture?width=400&height=400",
+   },
+
+   "will.kortum": {
+      "name": "Will Kortum",
+      "blurb": "Design",
+      "picture": "http://graph.facebook.com/100001779713088/picture?width=400&height=400",
+   },
+
    "pong": {
       "name": "Pong Trairatvorakul",
       "blurb": "Talks",
