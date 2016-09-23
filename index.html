@@ -279,7 +279,8 @@
 				</div>
 			</div>
 			{% endfor %}
-			{% for _member in site.data.developers %} {% assign member = _member[1] %}
+
+			{% for _member in site.data.developersasdf %} {% assign member = _member[1] %}
 			<div class="member" onClick="openMember('{{ _member[0] }}')">
 				<div class="picture">
 					<img src="{{ member.picture }}" />

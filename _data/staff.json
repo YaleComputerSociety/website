@@ -4,11 +4,6 @@
     "blurb": "Events",
     "picture": "http://graph.facebook.com/1196765670/picture?width=400&height=400"
   },
-   "shivam.sarodia.7": {
-      "name": "Shivam Sarodia",
-      "blurb": "Talks",
-      "picture": "http://graph.facebook.com/100004539012175/picture?width=400&height=400"
-   },
 
    "devon.merlette": {
       "name": "Devon Merlette",
@@ -26,5 +21,11 @@
       "name": "Pong Trairatvorakul",
       "blurb": "Talks",
       "picture": "http://graph.facebook.com/1568174206/picture?width=400&height=400",
-   }
+   },
+
+   "shivam.sarodia.7": {
+      "name": "Shivam Sarodia",
+      "blurb": "Talks",
+      "picture": "http://graph.facebook.com/100004539012175/picture?width=400&height=400"
+   },
 }

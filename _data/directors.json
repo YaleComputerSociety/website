@@ -5,16 +5,16 @@
       "picture": "http://graph.facebook.com/100000366187376/picture?width=400&height=400",
    },
 
-   "john-amadeo": {
-      "name": "John Amadeo",
-      "blurb": "Director of Talks",
-      "picture": "https://graph.facebook.com/1513041057/picture?width=400&height=400"
-   },
-
    "wissem-gamra": {
       "name": "Wissem Gamra",
       "blurb": "Treasurer",
       "picture": "https://yt3.ggpht.com/-ps51kDJhQrs/AAAAAAAAAAI/AAAAAAAAAAA/gaKp5HQDdLI/s900-c-k-no-rj-c0xffffff/photo.jpg"
+   },
+
+   "john-amadeo": {
+      "name": "John Amadeo",
+      "blurb": "Director of Talks",
+      "picture": "https://graph.facebook.com/1513041057/picture?width=400&height=400"
    },
 
    "sabrina-evans": {
@@ -27,11 +27,6 @@
       "name": "Brian Kitano",
       "blurb": "Director of Development",
       "picture": "https://graph.facebook.com/100000406761998/picture?width=400&height=400"
-   },
-   "annie-chen": {
-      "name": "Annie Chen",
-      "blurb": "Outreach",
-      "picture": "https://graph.facebook.com/100001965862488/picture?width=400&height=400",
-   },
+   }
 
 }
