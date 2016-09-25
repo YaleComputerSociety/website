@@ -261,7 +261,7 @@ body > .notice {
 
   &.news {
     background: #FDD692;
-    color: #EC7357;
+    color: #e06447;
   }
 
   .content {
@@ -277,10 +277,10 @@ body > .notice {
       color: inherit;
       border-bottom: 1px dashed fade-out(white, .3);
       @include transition(.2s);
+      text-decoration: none;
 
       &:hover {
-        text-decoration: none;
-        border-bottom: 1px dashed fade-out(#888, .1);
+        border-bottom: 1px dashed fade-out(#666, .1);
       }
     }
   }
