@@ -14,7 +14,7 @@
    "john-amadeo": {
       "name": "John Amadeo",
       "blurb": "Director of Talks",
-      "picture": "https://graph.facebook.com/1513041057/picture?width=400&height=400"
+      "picture": "/images/john.jpg"
    },
 
    "sabrina-evans": {
@@ -27,6 +27,29 @@
       "name": "Brian Kitano",
       "blurb": "Director of Development",
       "picture": "https://graph.facebook.com/100000406761998/picture?width=400&height=400"
-   }
+   },
 
+  "melina": {
+    "name": "Melina Delgado",
+    "blurb": "Events",
+    "picture": "http://graph.facebook.com/1196765670/picture?width=400&height=400"
+  },
+
+   "devon.merlette": {
+      "name": "Devon Merlette",
+      "blurb": "Lead Designer",
+      "picture": "http://graph.facebook.com/100000726794077/picture?width=400&height=400",
+   },
+
+   "will.kortum": {
+      "name": "Will Kortum",
+      "blurb": "Lead Designer",
+      "picture": "http://graph.facebook.com/100001779713088/picture?width=400&height=400",
+   },
+
+   "shanelle": {
+      "name": "Shanelle Roman",
+      "blurb": "Community Manager",
+      "picture": "http://graph.facebook.com/100000057069780/picture?width=400&height=400",
+   },
 }

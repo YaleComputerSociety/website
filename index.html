@@ -255,7 +255,7 @@
 		</header>
 
 		<ul class="people">
-			{% for _member in site.data.directors %} {% assign member = _member[1] %}
+			{% for _member in site.data.members %} {% assign member = _member[1] %}
 			<div class="member" onClick="openMember('{{ _member[0] }}')">
 				<div class="picture">
 					<img src="{{ member.picture }}" />
@@ -263,17 +263,6 @@
 				<div class="info">
 					<h1>{{ member.name }}</h1>
           <h2>{{ member.blurb }}</h2>
-				</div>
-			</div>
-			{% endfor %}
-			{% for _member in site.data.staff %} {% assign member = _member[1] %}
-			<div class="member" onClick="openMember('{{ _member[0] }}')">
-				<div class="picture">
-					<img src="{{ member.picture }}" />
-				</div>
-				<div class="info">
-					<h1>{{ member.name }}</h1>
-					<h2>{{ member.blurb }}</h2>
 				</div>
 			</div>
 			{% endfor %}
