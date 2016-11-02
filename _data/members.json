@@ -46,4 +46,16 @@
       "blurb": "Lead Designer",
       "picture": "http://graph.facebook.com/100001779713088/picture?width=400&height=400",
    },
+
+   "lee.danilek": {
+      "name": "Lee Danilek",
+      "blurb": "Spiritual Advisor",
+      "picture": "http://graph.facebook.com/100007383790048/picture?width=400&height=400"
+   },
+
+   "leo.shimonaka": {
+      "name": "Leo Shimonaka",
+      "blurb": "Spiritual Advisor",
+      "picture": "http://graph.facebook.com/1344858061/picture?width=400&height=400"
+   }
 }
