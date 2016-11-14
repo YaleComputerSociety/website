@@ -357,6 +357,11 @@ body > header {
       color: inherit; }
   body > header p, body > header form {
     font-size: 18px; }
+  body > header .and {
+    display: inline-block; }
+  body > header input.email, body > header .join-ml, body > header .and {
+    vertical-align: middle;
+    margin-bottom: 10px; }
   body > header input.email, body > header .join-ml {
     background: white;
     border: 3px solid #EEE;

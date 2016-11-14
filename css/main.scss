@@ -138,6 +138,15 @@ body > header {
     font-size: 18px;
   }
 
+  .and {
+    display: inline-block;
+  }
+
+  input.email, .join-ml, .and {
+    vertical-align: middle;
+    margin-bottom: 10px;
+  }
+
   input.email, .join-ml {
     background: white;
 
