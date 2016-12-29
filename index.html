@@ -251,52 +251,6 @@
 		<h1><a href="#members"><mark></mark>Members of YCS</a></h1>
 	</header>
 
-  <!--
-	<section id="devs">
-		<header>
-			<h1>Resident Developers</h1>
-      <h2>Associate developers create awesome projects incubated at YCS. <a href="javascript:showMLInstructions()">Become one.</a></h2>
-		</header>
-
-		<ul class="people">
-			{% for _member in site.data.developers %} {% assign member = _member[1] %}
-			<div class="member" onClick="openMember('{{ _member[0] }}')">
-				<div class="picture">
-					<img src="{{ member.picture }}" />
-				</div>
-				<div class="info">
-					<h1>{{ member.name }}</h1>
-					<h2>{{ member.blurb }}</h2>
-				</div>
-			</div>
-			{% endfor %}
-		</ul>
-	</section>
-  -->
-
-  <!--
-	<section id="staff">
-		<header>
-			<h1><a href="#staff">Staff Members</a></h1>
-			<h2>Staff members bring talks to Yale and hold our workshops. <a href="#">Join us.</a></h2>
-		</header>
-
-		<ul class="people">
-			{% for _member in site.data.staff %} {% assign member = _member[1] %}
-			<div class="member" onClick="openMember('{{ _member[0] }}')">
-				<div class="picture">
-					<img src="{{ member.picture }}" />
-				</div>
-				<div class="info">
-					<h1>{{ member.name }}</h1>
-					<h2>{{ member.blurb }}</h2>
-				</div>
-			</div>
-			{% endfor %}
-		</ul>
-	</section>
-  -->
-
 	<section id="staff">
 		<header>
 			<h1>Staff Members</h1>
@@ -312,18 +266,6 @@
 				<div class="info">
 					<h1>{{ member.name }}</h1>
           <h2>{{ member.blurb }}</h2>
-				</div>
-			</div>
-			{% endfor %}
-
-			{% for _member in site.data.developersasdf %} {% assign member = _member[1] %}
-			<div class="member" onClick="openMember('{{ _member[0] }}')">
-				<div class="picture">
-					<img src="{{ member.picture }}" />
-				</div>
-				<div class="info">
-					<h1>{{ member.name }}</h1>
-					<h2>{{ member.blurb }}</h2>
 				</div>
 			</div>
 			{% endfor %}

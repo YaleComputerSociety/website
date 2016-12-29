@@ -35,12 +35,6 @@
     "picture": "http://graph.facebook.com/100003477397995/picture?width=400&height=400"
   },
 
-  "nishitha": {
-    "name": "Nishitha Burman",
-    "blurb": "Director of Community",
-    "picture": "http://graph.facebook.com/100005652978008/picture?width=400&height=400"
-  },
-
   "shannon": {
     "name": "Shannon Yasuda",
     "blurb": "Events Manager",
@@ -53,6 +47,24 @@
     "picture": "http://graph.facebook.com/100009882549211/picture?width=400&height=400"
   },
 
+  "cristobal": {
+    "name": "Cristobal Gonzalez",
+    "blurb": "Director of Competitions",
+    "picture": "http://graph.facebook.com/100003022199269/picture?width=400&height=400"
+  },
+
+  "nishitha": {
+    "name": "Nishitha Burman",
+    "blurb": "Director of Community",
+    "picture": "http://graph.facebook.com/100005652978008/picture?width=400&height=400"
+  },
+
+  "amanda": {
+    "name": "Amanda Lee Ping",
+    "blurb": "Director of Publicity",
+    "picture": "http://graph.facebook.com/1548920938/picture?width=400&height=400"
+  },
+  
   "sabrina-evans": {
     "name": "Sabrina Evans",
     "blurb": "Ambassador to Oxford",
@@ -63,18 +75,6 @@
     "name": "Christopher Kim",
     "blurb": "Director of Partnerships",
     "picture": "http://graph.facebook.com/1790419246/picture?width=400&height=400"
-  },
-
-  "cristobal": {
-    "name": "Cristobal Gonzalez",
-    "blurb": "Director of Competitions",
-    "picture": "http://graph.facebook.com/100003022199269/picture?width=400&height=400"
-  },
-
-  "amanda": {
-    "name": "Amanda Lee Ping",
-    "blurb": "Director of Publicity",
-    "picture": "http://graph.facebook.com/1548920938/picture?width=400&height=400"
   },
 
   "devon.merlette": {
