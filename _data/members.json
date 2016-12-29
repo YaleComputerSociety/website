@@ -59,6 +59,12 @@
     "picture": "http://graph.facebook.com/100005652978008/picture?width=400&height=400"
   },
 
+  "chris.kim": {
+    "name": "Christopher Kim",
+    "blurb": "Director of Partnerships",
+    "picture": "http://graph.facebook.com/1790419246/picture?width=400&height=400"
+  },
+  
   "amanda": {
     "name": "Amanda Lee Ping",
     "blurb": "Director of Publicity",
@@ -69,12 +75,6 @@
     "name": "Sabrina Evans",
     "blurb": "Ambassador to Oxford",
     "picture": "https://graph.facebook.com/100000088944262/picture?width=400&height=400"
-  },
-
-  "chris.kim": {
-    "name": "Christopher Kim",
-    "blurb": "Director of Partnerships",
-    "picture": "http://graph.facebook.com/1790419246/picture?width=400&height=400"
   },
 
   "devon.merlette": {
