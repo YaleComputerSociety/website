@@ -4,7 +4,7 @@
 @charset "utf-8";
 
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: "Roboto", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
@@ -71,6 +71,43 @@ $color-tag: #F3753A; // #4A9BFF;
 		line-height: 2;
 	}
 }
+
+.button {
+  background: transparent;
+
+  border: 3px solid #EEE;
+  line-height: 2.7em;
+  font-size: .95em;
+  padding: 0 12px;
+  @include transition(.4s);
+  outline: none !important;
+  box-shadow: none !important;
+
+  z-index: 10;
+
+  font-family: 'Roboto';
+  font-weight: bold;
+
+  text-align: center;
+  border-radius: 0;
+  color: #444;
+  text-transform: uppercase;
+  padding: 0 10px;
+  border: 3px solid #EEE;
+  margin-right: 6px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-decoration: none !important;
+
+  &:hover, &:focus {
+    border-color: #a3daff;
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
 
 body > header {
 	position: relative;
@@ -330,12 +367,18 @@ body > .notice {
   }
 }
 
+body > section.borderless {
+  border-top: 0;
+}
+
 body > section.notice {
   border-top: 0;
   padding: 40px 60px;
   font-size: 20px;
 }
 
+body > section.borderless + section,
+body > section.borderless + footer,
 body > section.notice + section,
 body > section.notice + footer {
   border-top: 0;
@@ -421,6 +464,12 @@ body > section {
 
   & > section:first-of-type {
     margin-top: 2.5em;
+  }
+
+  & > p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-family: "Roboto";
   }
 
   .info {
@@ -584,6 +633,36 @@ ul.sponsors {
 
   .facebook img { height: 80px; }
   .google img { height: 70px; }
+}
+
+#prize {
+  background: #FF6C69;
+
+  *, h1, h2, h3, h4, h5, h6, p { color: white }
+
+
+}
+
+#about {
+  p {
+    color: #666;
+    font-size: 1.3em;
+    line-height: 1.8;
+
+    strong {
+      font-weight: bolder;
+    }
+
+    span {
+      border-bottom: 2px dotted #DDD;
+      color: #000;
+      cursor: pointer;
+    }
+  }
+
+  iframe {
+    margin-top: -20px;
+  }
 }
 
 .projects {

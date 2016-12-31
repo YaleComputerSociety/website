@@ -11,7 +11,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 400 16px/1.5 "Roboto", Helvetica, Arial, sans-serif;
   color: #111;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%;
@@ -304,6 +304,37 @@ pre {
 #ml-popover li {
   line-height: 2; }
 
+.button {
+  background: transparent;
+  border: 3px solid #EEE;
+  line-height: 2.7em;
+  font-size: .95em;
+  padding: 0 12px;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  outline: none !important;
+  box-shadow: none !important;
+  z-index: 10;
+  font-family: 'Roboto';
+  font-weight: bold;
+  text-align: center;
+  border-radius: 0;
+  color: #444;
+  text-transform: uppercase;
+  padding: 0 10px;
+  border: 3px solid #EEE;
+  margin-right: 6px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-decoration: none !important; }
+  .button:hover, .button:focus {
+    border-color: #a3daff; }
+  .button:active {
+    box-shadow: none; }
+
 body > header {
   position: relative;
   color: white;
@@ -496,11 +527,16 @@ body > .notice {
     font-size: 19px;
     vertical-align: middle; }
 
+body > section.borderless {
+  border-top: 0; }
+
 body > section.notice {
   border-top: 0;
   padding: 40px 60px;
   font-size: 20px; }
 
+body > section.borderless + section,
+body > section.borderless + footer,
 body > section.notice + section,
 body > section.notice + footer {
   border-top: 0; }
@@ -566,6 +602,10 @@ body > section {
     margin-bottom: 4em; }
   body > section > section:first-of-type {
     margin-top: 2.5em; }
+  body > section > p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-family: "Roboto"; }
   body > section .info {
     padding-top: 10px;
     text-align: left;
@@ -679,6 +719,24 @@ ul.sponsors .facebook img {
   height: 80px; }
 ul.sponsors .google img {
   height: 70px; }
+
+#prize {
+  background: #FF6C69; }
+  #prize *, #prize h1, #prize h2, #prize h3, #prize h4, #prize h5, #prize h6, #prize p {
+    color: white; }
+
+#about p {
+  color: #666;
+  font-size: 1.3em;
+  line-height: 1.8; }
+  #about p strong {
+    font-weight: bolder; }
+  #about p span {
+    border-bottom: 2px dotted #DDD;
+    color: #000;
+    cursor: pointer; }
+#about iframe {
+  margin-top: -20px; }
 
 .projects {
   list-style: none;

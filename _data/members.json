@@ -11,16 +11,16 @@
     "picture": "/images/john.jpg"
   },
 
-  "wissem-gamra": {
-    "name": "Wissem Gamra",
-    "blurb": "Treasurer",
-    "picture": "https://yt3.ggpht.com/-ps51kDJhQrs/AAAAAAAAAAI/AAAAAAAAAAA/gaKp5HQDdLI/s900-c-k-no-rj-c0xffffff/photo.jpg"
-  },
-
   "stephanie": {
     "name": "Stephanie Hickman",
     "blurb": "Social Chair",
     "picture": "http://graph.facebook.com/100000384198680/picture?width=400&height=400"
+  },
+
+  "wissem-gamra": {
+    "name": "Wissem Gamra",
+    "blurb": "Treasurer",
+    "picture": "https://yt3.ggpht.com/-ps51kDJhQrs/AAAAAAAAAAI/AAAAAAAAAAA/gaKp5HQDdLI/s900-c-k-no-rj-c0xffffff/photo.jpg"
   },
 
   "melina": {
@@ -79,25 +79,25 @@
 
   "devon.merlette": {
     "name": "Devon Merlette",
-    "blurb": "Lead Designer",
+    "blurb": "Designer",
     "picture": "http://graph.facebook.com/100000726794077/picture?width=400&height=400",
   },
 
   "will.kortum": {
     "name": "Will Kortum",
-    "blurb": "Lead Designer",
+    "blurb": "Designer",
     "picture": "http://graph.facebook.com/100001779713088/picture?width=400&height=400",
   },
 
   "william": {
     "name": "William Yang",
-    "blurb": "Events Manager",
+    "blurb": "Events Support",
     "picture": "http://graph.facebook.com/100000411957490/picture?width=400&height=400"
   },
 
   "tantan": {
     "name": "TanTan Wang",
-    "blurb": "Events Manager",
+    "blurb": "Events Support",
     "picture": "http://graph.facebook.com/100001649240042/picture?width=400&height=400"
   },
   
@@ -109,7 +109,7 @@
 
   "tyler": {
     "name": "Tyler Bleuel",
-    "blurb": "Talks Manager",
+    "blurb": "Talks Support",
     "picture": "http://graph.facebook.com/100001508249228/picture?width=400&height=400"
   },
 
