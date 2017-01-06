@@ -317,10 +317,10 @@
 <section id="members">
 	<header>
 		<h1><a href="#members"><mark></mark>Members of YCS</a></h1>
-		<h2>Staff members bring talks to Yale and make our events come true. <a href="javascript:showMLInstructions()">Join us.</a></h2>
+		<h2>Staff members make our <del>dreams</del> initiatives come true. <a href="javascript:showMLInstructions()">Join us.</a></h2>
 	</header>
 	
-	<ul class="people">
+	<ul class="people" id="staff-list">
 		{% for _member in site.data.members %} {% assign member = _member[1] %}
 		<div class="member" onClick="openMember('{{ _member[0] }}')">
 			<div class="picture">
@@ -373,6 +373,25 @@
 </footer>
 
 <script>
+$.fn.shuffleChildren = function() {
+  $.each(this.get(), function(index, el) {
+    var $el = $(el);
+    var $find = $el.children();
+
+    $find.sort(function() {
+        return 0.5 - Math.random();
+    });
+
+    $el.empty();
+    $find.appendTo($el);
+  });
+};
+
+$("#staff-list").shuffleChildren();
+
+</script>
+
+<script>
 $(function(){
 	var text = "Yale,Computer,Society";
 	var i = 0;
@@ -398,28 +417,7 @@ $(function(){
   <div class="close-btn" onClick="closePopover()"></div>
     
   <div class="row">
-    <div class="col-md-offset-2 col-md-8 col-xs-12">
-    <!--
-      <h1>Join the Mailing List</h1>
-      <p>
-        By joining our list you will receive emails about
-        <ul>
-          <li>upcoming <strong><abbr title="CS/EE/MecEng">maker events</abbr> on campus</strong></li>
-          <li>groups on campus organizing to <strong>attend hackathons</strong></li>
-          <li>curated emails with <strong>opportunities to work on software and hardware projects</strong></li>
-          <li>dinners and events for the community</li>
-        </ul>
-      </p>
-      <h2>How to Join</h2>
-
-      <p>
-        Go to our Groups page at <a href="https://groups.google.com/a/elilists.yale.edu/forum/#!forum/ycs">groups.google.com/a/elilists.yale.edu/forum/#!forum/ycs</a> and <strong>click "Apply to join group"</strong>. <em>You must be logged in with your Yale account to access the website.</em>
-      </p>
-      <p>
-        If you have trouble doing that, <strong>email felipe.pires@[y].edu</strong> and ask for help.
-      </p>
-      <br />
-       -->
+    <div class="col-md-offset-2 col-md-8 col-xs-12"
       <h2>Join YCS</h2>
       <p>
       	If you are interested in the work we do and would like to help us do more, <strong>you should consider joining our team</strong>. You can either:
