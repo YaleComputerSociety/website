@@ -80,8 +80,7 @@
 	</div>
 </header>
 
-
-<section id="prize" class="borderless">
+<section id="prize" class="hidden borderless">
 	<h1>Tech Prize</h1>
 	<h2>Up to $1000 for the first place</h2>
 	<p>
@@ -318,28 +317,22 @@
 <section id="members">
 	<header>
 		<h1><a href="#members"><mark></mark>Members of YCS</a></h1>
+		<h2>Staff members bring talks to Yale and make our events come true. <a href="javascript:showMLInstructions()">Join us.</a></h2>
 	</header>
-
-	<section id="staff">
-		<header>
-			<h1>Staff Members</h1>
-      <h2>Staff members bring talks to Yale and make our events come true. <a href="javascript:showMLInstructions()">Join us.</a></h2>
-		</header>
-
-		<ul class="people">
-			{% for _member in site.data.members %} {% assign member = _member[1] %}
-			<div class="member" onClick="openMember('{{ _member[0] }}')">
-				<div class="picture">
-					<img src="{{ member.picture }}" />
-				</div>
-				<div class="info">
-					<h1>{{ member.name }}</h1>
-          <h2>{{ member.blurb }}</h2>
-				</div>
+	
+	<ul class="people">
+		{% for _member in site.data.members %} {% assign member = _member[1] %}
+		<div class="member" onClick="openMember('{{ _member[0] }}')">
+			<div class="picture">
+				<img src="{{ member.picture }}" />
 			</div>
-			{% endfor %}
-		</ul>
-	</section>
+			<div class="info">
+				<h1>{{ member.name }}</h1>
+        <h2>{{ member.blurb }}</h2>
+			</div>
+		</div>
+		{% endfor %}
+	</ul>
 </section>
 
 <!--

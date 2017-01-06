@@ -527,18 +527,18 @@ body > .notice {
     font-size: 19px;
     vertical-align: middle; }
 
-body > section.borderless {
+body > section.borderless:not(.hidden) {
   border-top: 0; }
 
-body > section.notice {
+body > section.notice:not(.hidden) {
   border-top: 0;
   padding: 40px 60px;
   font-size: 20px; }
 
-body > section.borderless + section,
-body > section.borderless + footer,
-body > section.notice + section,
-body > section.notice + footer {
+body > section.borderless:not(.hidden) + section,
+body > section.borderless:not(.hidden) + footer,
+body > section.notice:not(.hidden) + section,
+body > section.notice:not(.hidden) + footer {
   border-top: 0; }
 
 body > section {
@@ -721,7 +721,7 @@ ul.sponsors .google img {
   height: 70px; }
 
 #prize {
-  background: #FF6C69; }
+  background: #FF6868; }
   #prize *, #prize h1, #prize h2, #prize h3, #prize h4, #prize h5, #prize h6, #prize p {
     color: white; }
 

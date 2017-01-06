@@ -367,20 +367,20 @@ body > .notice {
   }
 }
 
-body > section.borderless {
+body > section.borderless:not(.hidden) {
   border-top: 0;
 }
 
-body > section.notice {
+body > section.notice:not(.hidden) {
   border-top: 0;
   padding: 40px 60px;
   font-size: 20px;
 }
 
-body > section.borderless + section,
-body > section.borderless + footer,
-body > section.notice + section,
-body > section.notice + footer {
+body > section.borderless:not(.hidden) + section,
+body > section.borderless:not(.hidden) + footer,
+body > section.notice:not(.hidden) + section,
+body > section.notice:not(.hidden) + footer {
   border-top: 0;
 }
 
