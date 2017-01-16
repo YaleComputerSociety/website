@@ -56,7 +56,7 @@
 
 			<p>
 
-			<input type="email" value="" name="EMAIL" class="required email" placeholder="Add your email here to" id="mce-EMAIL">
+			<input type="email" value="" name="EMAIL" class="required email" placeholder="Email" id="mce-EMAIL">
 
 			<input type="submit" value="Join Our Newsletter" name="subscribe" id="mc-embedded-subscribe" href="javascript:showMLInstructions()" class="btn join-ml"></input>
 
@@ -286,9 +286,8 @@
 	<header>
 		<h1><a href="#members"><mark></mark>Members of YCS</a></h1>
 		<h2>We are a diverse and excited group of students working hard to make our projects come true. <a href="javascript:showMLInstructions()">Join us.</a></h2>
-	</header>
-	
-	<ul class="people" id="staff-list">
+	</header>	
+	<ul class="people shuffle" id="staff-list">
 		 
 		<div class="member" onClick="openMember('felipe-pires')">
 			<div class="picture">
@@ -320,16 +319,6 @@
 			</div>
 		</div>
 		 
-		<div class="member" onClick="openMember('wissem-gamra')">
-			<div class="picture">
-				<img src="https://yt3.ggpht.com/-ps51kDJhQrs/AAAAAAAAAAI/AAAAAAAAAAA/gaKp5HQDdLI/s900-c-k-no-rj-c0xffffff/photo.jpg" />
-			</div>
-			<div class="info">
-				<h1>Wissem Gamra</h1>
-        <h2>Treasurer</h2>
-			</div>
-		</div>
-		 
 		<div class="member" onClick="openMember('melina')">
 			<div class="picture">
 				<img src="http://graph.facebook.com/1196765670/picture?width=400&height=400" />
@@ -347,26 +336,6 @@
 			<div class="info">
 				<h1>Sean Walker</h1>
         <h2>Co-director of Events</h2>
-			</div>
-		</div>
-		 
-		<div class="member" onClick="openMember('shannon')">
-			<div class="picture">
-				<img src="http://graph.facebook.com/100006564433305/picture?width=400&height=400" />
-			</div>
-			<div class="info">
-				<h1>Shannon Yasuda</h1>
-        <h2>Events Manager</h2>
-			</div>
-		</div>
-		 
-		<div class="member" onClick="openMember('marilyn')">
-			<div class="picture">
-				<img src="http://graph.facebook.com/100009882549211/picture?width=400&height=400" />
-			</div>
-			<div class="info">
-				<h1>Marilyn Mossien</h1>
-        <h2>Events Manager</h2>
 			</div>
 		</div>
 		 
@@ -407,6 +376,26 @@
 			<div class="info">
 				<h1>Amanda Lee Ping</h1>
         <h2>Director of Publicity</h2>
+			</div>
+		</div>
+		 
+		<div class="member" onClick="openMember('shannon')">
+			<div class="picture">
+				<img src="http://graph.facebook.com/100006564433305/picture?width=400&height=400" />
+			</div>
+			<div class="info">
+				<h1>Shannon Yasuda</h1>
+        <h2>Events Manager</h2>
+			</div>
+		</div>
+		 
+		<div class="member" onClick="openMember('marilyn')">
+			<div class="picture">
+				<img src="http://graph.facebook.com/100009882549211/picture?width=400&height=400" />
+			</div>
+			<div class="info">
+				<h1>Marilyn Mossien</h1>
+        <h2>Events Manager</h2>
 			</div>
 		</div>
 		 
@@ -460,25 +449,19 @@
 			</div>
 		</div>
 		 
-		<div class="member" onClick="openMember('tyler')">
-			<div class="picture">
-				<img src="http://graph.facebook.com/100001508249228/picture?width=400&height=400" />
-			</div>
-			<div class="info">
-				<h1>Tyler Bleuel</h1>
-        <h2>Talks Support</h2>
-			</div>
-		</div>
-		 
 		<div class="member" onClick="openMember('brian')">
 			<div class="picture">
 				<img src="https://graph.facebook.com/100000406761998/picture?width=400&height=400" />
 			</div>
 			<div class="info">
 				<h1>Brian Kitano</h1>
-        <h2>Where is Brian Kitano?</h2>
+        <h2>Prize Support</h2>
 			</div>
 		</div>
+		
+	</ul>
+
+	<ul class="people" id="staff-list">
 		 
 		<div class="member" onClick="openMember('lee.danilek')">
 			<div class="picture">
@@ -565,7 +548,7 @@ $.fn.shuffleChildren = function() {
   });
 };
 
-$("#staff-list").shuffleChildren();
+$("#staff-list.shuffle").shuffleChildren();
 
 </script>
 

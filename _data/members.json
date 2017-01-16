@@ -17,12 +17,6 @@
     "picture": "http://graph.facebook.com/100000384198680/picture?width=400&height=400"
   },
 
-  "wissem-gamra": {
-    "name": "Wissem Gamra",
-    "blurb": "Treasurer",
-    "picture": "https://yt3.ggpht.com/-ps51kDJhQrs/AAAAAAAAAAI/AAAAAAAAAAA/gaKp5HQDdLI/s900-c-k-no-rj-c0xffffff/photo.jpg"
-  },
-
   "melina": {
     "name": "Melina Delgado",
     "blurb": "Co-director of Events",
@@ -33,18 +27,6 @@
     "name": "Sean Walker",
     "blurb": "Co-director of Events",
     "picture": "http://graph.facebook.com/100003477397995/picture?width=400&height=400"
-  },
-
-  "shannon": {
-    "name": "Shannon Yasuda",
-    "blurb": "Events Manager",
-    "picture": "http://graph.facebook.com/100006564433305/picture?width=400&height=400"
-  },
-
-  "marilyn": {
-    "name": "Marilyn Mossien",
-    "blurb": "Events Manager",
-    "picture": "http://graph.facebook.com/100009882549211/picture?width=400&height=400"
   },
 
   "cristobal": {
@@ -71,6 +53,18 @@
     "picture": "http://graph.facebook.com/1548920938/picture?width=400&height=400"
   },
   
+  "shannon": {
+    "name": "Shannon Yasuda",
+    "blurb": "Events Manager",
+    "picture": "http://graph.facebook.com/100006564433305/picture?width=400&height=400"
+  },
+
+  "marilyn": {
+    "name": "Marilyn Mossien",
+    "blurb": "Events Manager",
+    "picture": "http://graph.facebook.com/100009882549211/picture?width=400&height=400"
+  },
+
   "sabrina-evans": {
     "name": "Sabrina Evans",
     "blurb": "Ambassador to Oxford",
@@ -100,34 +94,10 @@
     "blurb": "Events Support",
     "picture": "http://graph.facebook.com/100001649240042/picture?width=400&height=400"
   },
-
-  "tyler": {
-    "name": "Tyler Bleuel",
-    "blurb": "Talks Support",
-    "picture": "http://graph.facebook.com/100001508249228/picture?width=400&height=400"
-  },
   
   "brian": {
     "name": "Brian Kitano",
-    "blurb": "Where is Brian Kitano?",
+    "blurb": "Prize Support",
     "picture": "https://graph.facebook.com/100000406761998/picture?width=400&height=400"
   },
-
-  "lee.danilek": {
-    "name": "Lee Danilek",
-    "blurb": "Spiritual Advisor",
-    "picture": "http://graph.facebook.com/100007383790048/picture?width=400&height=400"
-  },
-
-  "leo.shimonaka": {
-    "name": "Leo Shimonaka",
-    "blurb": "Spiritual Advisor",
-    "picture": "http://graph.facebook.com/1344858061/picture?width=400&height=400"
-  },
-
-  "summer": {
-    "name": "Summer Wu",
-    "blurb": "Spiritual Advisor",
-    "picture": "http://graph.facebook.com/1354343898/picture?width=400&height=400"
-  }
 }

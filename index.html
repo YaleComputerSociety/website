@@ -34,7 +34,7 @@
 
 			<p>
 
-			<input type="email" value="" name="EMAIL" class="required email" placeholder="Add your email here to" id="mce-EMAIL">
+			<input type="email" value="" name="EMAIL" class="required email" placeholder="Email" id="mce-EMAIL">
 
 			<input type="submit" value="Join Our Newsletter" name="subscribe" id="mc-embedded-subscribe" href="javascript:showMLInstructions()" class="btn join-ml"></input>
 
@@ -264,10 +264,23 @@
 	<header>
 		<h1><a href="#members"><mark></mark>Members of YCS</a></h1>
 		<h2>We are a diverse and excited group of students working hard to make our projects come true. <a href="javascript:showMLInstructions()">Join us.</a></h2>
-	</header>
-	
-	<ul class="people" id="staff-list">
+	</header>	
+	<ul class="people shuffle" id="staff-list">
 		{% for _member in site.data.members %} {% assign member = _member[1] %}
+		<div class="member" onClick="openMember('{{ _member[0] }}')">
+			<div class="picture">
+				<img src="{{ member.picture }}" />
+			</div>
+			<div class="info">
+				<h1>{{ member.name }}</h1>
+        <h2>{{ member.blurb }}</h2>
+			</div>
+		</div>
+		{% endfor %}
+	</ul>
+
+	<ul class="people" id="staff-list">
+		{% for _member in site.data.advisors %} {% assign member = _member[1] %}
 		<div class="member" onClick="openMember('{{ _member[0] }}')">
 			<div class="picture">
 				<img src="{{ member.picture }}" />
@@ -333,7 +346,7 @@ $.fn.shuffleChildren = function() {
   });
 };
 
-$("#staff-list").shuffleChildren();
+$("#staff-list.shuffle").shuffleChildren();
 
 </script>
 
