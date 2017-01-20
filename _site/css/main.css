@@ -545,13 +545,15 @@ body > section {
   padding: 70px 60px 60px;
   border-top: 3px solid #EEE;
   font-size: 15px; }
-  body > section header {
+  body > section footer {
+    margin-top: 40px; }
+  body > section header, body > section footer {
     color: #666;
     padding: 0;
     font-family: "Roboto Mono";
     font-weight: bold;
     font-size: 14px; }
-    body > section header a {
+    body > section header a, body > section footer a {
       text-decoration: none !important;
       color: #000;
       border-bottom: 1px solid transparent;
@@ -560,15 +562,15 @@ body > section {
       -ms-transition: 0.2s;
       -o-transition: 0.2s;
       transition: 0.2s; }
-      body > section header a:hover {
+      body > section header a:hover, body > section footer a:hover {
         border-bottom: 1px solid #CCC; }
-      body > section header a:visited {
+      body > section header a:visited, body > section footer a:visited {
         color: #000; }
-    body > section header mark {
+    body > section header mark, body > section footer mark {
       background: transparent;
       padding: 0;
       margin-right: 10px; }
-      body > section header mark:before {
+      body > section header mark:before, body > section footer mark:before {
         content: "#";
         color: #BBB;
         -webkit-transition: 0.2s;
@@ -576,15 +578,15 @@ body > section {
         -ms-transition: 0.2s;
         -o-transition: 0.2s;
         transition: 0.2s; }
-        body > section header mark:before:hover {
+        body > section header mark:before:hover, body > section footer mark:before:hover {
           color: #AAA; }
-    body > section header h1:hover mark:before {
+    body > section header h1:hover mark:before, body > section footer h1:hover mark:before {
       color: #AAA; }
-    body > section header h1 {
+    body > section header h1, body > section footer h1 {
       font-size: 1.5em;
       color: #333;
       font-weight: bold; }
-    body > section header h2 {
+    body > section header h2, body > section footer h2 {
       font-weight: 300;
       font-size: 1.2em;
       color: #666;
@@ -813,7 +815,7 @@ ul.people {
       -o-transition: 0.5s;
       transition: 0.5s; }
 
-footer {
+body > footer {
   display: table;
   width: 100%;
   padding: 60px;
@@ -821,7 +823,7 @@ footer {
   font-size: 13px;
   border-top: 3px solid #EEE;
   font-family: "Space Mono"; }
-  footer .bio {
+  body > footer .bio {
     color: #444;
     line-height: 1.8; }
 
@@ -835,7 +837,7 @@ footer {
   body > .notice {
     padding: 15px 15px; }
 
-  footer {
+  body > footer {
     padding: 30px 5px; }
 
   body > section,
