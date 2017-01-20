@@ -1,0 +1,56 @@
+{
+  "felipe-pires": {
+    "name": "Felipe Pires",
+    "blurb": "President",
+    "picture": "http://graph.facebook.com/100000366187376/picture?width=400&height=400",
+  },
+
+  "john-amadeo": {
+    "name": "John Amadeo",
+    "blurb": "Vice president",
+    "picture": "/images/john.jpg"
+  },
+
+  "stephanie": {
+    "name": "Stephanie Hickman",
+    "blurb": "Social Chair",
+    "picture": "http://graph.facebook.com/100000384198680/picture?width=400&height=400"
+  },
+
+  "melina": {
+    "name": "Melina Delgado",
+    "blurb": "Co-director of Events",
+    "picture": "http://graph.facebook.com/1196765670/picture?width=400&height=400"
+  },
+
+  "sean": {
+    "name": "Sean Walker",
+    "blurb": "Co-director of Events",
+    "picture": "http://graph.facebook.com/100003477397995/picture?width=400&height=400"
+  },
+
+  "cristobal": {
+    "name": "Cristobal Gonzalez",
+    "blurb": "Director of Competitions",
+    "picture": "http://graph.facebook.com/100003022199269/picture?width=400&height=400"
+  },
+
+  "nishitha": {
+    "name": "Nishitha Burman",
+    "blurb": "Director of Community",
+    "picture": "http://graph.facebook.com/100005652978008/picture?width=400&height=400"
+  },
+
+  "chris.kim": {
+    "name": "Christopher Kim",
+    "blurb": "Director of Partnerships",
+    "picture": "http://graph.facebook.com/1790419246/picture?width=400&height=400"
+  },
+  
+  "amanda": {
+    "name": "Amanda Lee Ping",
+    "blurb": "Director of Publicity",
+    "picture": "http://graph.facebook.com/1548920938/picture?width=400&height=400"
+  },
+  
+}
