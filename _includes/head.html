@@ -10,8 +10,15 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-  <link rel="stylesheet" href="{{ "/css/font.css" | prepend: site.baseurl }}">
+  
+{% if page.custom_css %}
+  {% for stylesheet in page.custom_css %}
+    <link rel="stylesheet" href="/css/{{ stylesheet }}.css" media="screen" type="text/css">
+  {% endfor %}
+{% else %}
+  <link rel="stylesheet" href="{{ "/css/index.css" | prepend: site.baseurl }}">
+{% endif %}
+
   
   <link rel="icon" type="image/png" href="{{ "/images/icon.png" | prepend: site.baseurl }}">
   <meta property="og:image" content="{{ "/images/ycs.png" | prepend: site.baseurl }}" />

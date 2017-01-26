@@ -14,8 +14,13 @@
   <link rel="alternate" type="application/rss+xml" title="Yale Computer Society" href="http://yalecompsociety.org/feed.xml">
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet" href="/css/font.css">
+  
+
+  
+    <link rel="stylesheet" href="/css/alumni.css" media="screen" type="text/css">
+  
+
+
   
   <link rel="icon" type="image/png" href="/images/icon.png">
   <meta property="og:image" content="/images/ycs.png" />
@@ -30,18 +35,17 @@
 <script src="http://localhost:35729/livereload.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400|Roboto+Mono:300,400|Space+Mono:400,700" rel="stylesheet">
 
-<body>
+<body class="alumni-page">
 
-<div class="notice info">
+<div class="notice ">
 <div class="content">
-	<a href="/"><strong>Back to main page.</strong></a>
+	<a href="/"><strong>Yale Computer Society:</strong> Promoting tech &amp; etrepreneurship at Yale. <strong>Back to main website.</strong></a>
 </div>
 </div>
 
-<header>
-	<div class="title-wrapper">
-		<h2 style="font-size: 30px"><strong>Alumni</strong> of the Yale Computer Society</h2>
-	</div>
+<header class="alumni">
+	<h1><strong>Alumni</strong> of YCS</h1>
+	<h2>Students who were members and advisors of YCS for at least one semester</h2>
 </header>
 
 <section id="members">
@@ -72,106 +76,23 @@
 		</div>
 		
 	</ul>
-
 </section>
 
-
 <footer>
-<div class="col-md-8 col-xs-12">
-	<p class="bio">
-		The YCS is a undergraduate organization that promotes talks, workshops and study breaks related to computer science and engineering on Yale campus.
-	</p>
-	<p>
-		Email <strong>felipe.pires@y[you know the rest].edu</strong> with questions or suggestions.
-	</p>
-</div>
+  <div class="col-md-8 col-xs-12">
+    <p class="bio">
+      The YCS is a undergraduate organization that promotes talks, workshops and study breaks related to computer science and engineering on Yale campus.
+    </p>
 
-<div class="col-md-4 col-xs-12" style="text-align: right">
-	Copyright 2016. All rights reserved.
-</div>
-</footer>
-
-<script>
-$.fn.shuffleChildren = function() {
-  $.each(this.get(), function(index, el) {
-    var $el = $(el);
-    var $find = $el.children();
-
-    $find.sort(function() {
-        return 0.5 - Math.random();
-    });
-
-    $el.empty();
-    $find.appendTo($el);
-  });
-};
-
-$("#staff-list.shuffle").shuffleChildren();
-
-</script>
-
-<script>
-$(function(){
-	var text = "Yale,Computer,Society";
-	var i = 0;
-	// $("#ytitle").html("");
-	// (function next() {
-	// 	var t = Math.random()*100+50, c = text[i];
-	// 	if (c == ",") {
-	// 		c = "<br />";
-	// 		t = 300;
-	// 	};
-	// 	console.log("next", c, i)
-	// 	$("#ytitle").html($("#ytitle").html()+c);
-	// 	i++;
-	// 	if (text.length > i) {
-	// 		setTimeout(next, t);
-	// 	}
-	// })();
-});
-</script>
-
-<div class="page-popover" id="ml-popover">
-<div class="container">
-  <div class="close-btn" onClick="closePopover()"></div>
-    
-  <div class="row">
-    <div class="col-md-offset-2 col-md-8 col-xs-12"
-      <h2>Join YCS</h2>
-      <p>
-      	If you are interested in the work we do and would like to help us do more, <strong>you should consider joining our team</strong>. You can either:
-
-      	<ul>
-      	<li>come to our weekly dinners (JE dining hall, Wednesdays at 6pm) and see what we're up to, or</li><li>send a message to <a href="https://www.facebook.com/felipap">Felipe Pires</a> saying you're interested in helping out.</li>
-      	</ul>
-      </p>
-      <p>
-      Looking forward to hearing from you soon.
-      </p>
-    </div>
+    <p>
+      Email <strong>felipe.pires@y[you know the rest].edu</strong> with questions or suggestions.
+    </p>
   </div>
-</div>
-</div>
 
-<script>
-
-var _pastScrolled;
-
-function showMLInstructions() {
-	window.open("http://bit.ly/joinycs17s");
-	return;
-  $("#ml-popover").fadeIn('slow');
-  $("section").fadeOut('slow');
-  _pastScrolled = $("body").scrollTop();
-}
-
-function closePopover() {
-  $("section").show();
-  $('#ml-popover').fadeOut();
-  $("body").scrollTop(_pastScrolled);
-}
-
-</script>
+  <div class="col-md-4 col-xs-12" style="text-align: right">
+    Copyright 2016. All rights reserved.
+  </div>
+</footer>
 
 </body>
 </html>

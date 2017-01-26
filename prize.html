@@ -1,0 +1,187 @@
+---
+custom_css:
+- prize
+---
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<script src="http://localhost:35729/livereload.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400|Roboto+Mono:300,400|Space+Mono:400,700" rel="stylesheet">
+
+<body class="prize">
+
+<div class="notice">
+<div class="content">
+	<a href="/"><strong>Yale Computer Society:</strong> Promoting tech &amp; etrepreneurship at Yale. <em>Back to main website.</em></a>
+</div>
+</div>
+
+<header>
+	<h3>The <strong>Yale Computer Society</strong> presents</h3>
+	<h1>Grace Hopper Prize</h1>
+	<h2>$1000 in prizes for best software projects</h2>
+
+	<p>
+		Want to create something impressive for your resume? Want a chance at a $1000 prize pool?
+	</p>
+	<p>
+		Submit a project to the YCS' first annual <strong>Grace Hopper Prize</strong>. Projects will be judged by our esteemed panel of Yale alumni entrepreneurs and Yale Computer Science professors with projects evaluated based upon their technological ingenuity, grace of design, completion, and level of difficulty. Along with the overarching prize, we will also have the <strong>Alan Perlis Prize for Newcomers</strong> for students currently enrolled in CPSC 223 or below. These prizes are designed to promote creativity and consistent effort on projects outside of the classroom during the course of this Spring 2017 semester. 
+	</p>
+</header>
+
+<section class="prize-rules">
+	<header>
+		<h1>Competition rules</h1>
+	</header>
+
+	<ul>
+		<li>The group must be entirely composed of current Yale students.</li>
+		<li>To quality for the Alan Perlis Prize for Newcomers, none of your members can have completed CPSC 223 or 323.</li>
+		<li>Groups may not exceed 5 people (you do not need to work in a group).</li>
+		<li>Each participant may only submit one project.</li>
+		<li>Projects must have been started after October 31, 2016. Projects started for classes (such as CS50) will be accepted, but further work on them is suggested. Projects created in hackathons are lot allowed.</li>
+		<li>Projects must be software based. If you would like to include a hardware component please contact cristobal.gonzalez@yale.edu.</li>
+		<li>If interested, sign up here for important updates! We’re going to have hack nights where teams can get together to work on their projects, look at what other teams are working on, eat free food, and attend workshops taught by fellow undergrads (e.g. web development, mobile development). </li>
+	</ul>
+</section>
+
+<section class="prize-judging">
+	<header>
+		<h1>Judging criteria</h1>
+	</header>
+	<ul>
+		<li>Technology: How technically impressive was the hack? Was the technical problem the team tackled difficult? Did it use a particularly clever technique or did it use many different components? Did the technology involved make you go "Wow"?</li>
+		<li>Design: Did the team put thought into the user experience? How well designed is the interface? For a website, this might be about how beautiful the CSS or graphics are. For a hardware project, it might be more about how good the human-computer interaction is (e.g. is it easy to use or does it use a cool interface?).</li>
+		<li>Completion: Does the hack work? Did the team achieve everything they wanted?</li>
+		<li>Each criteria will be weighted equally and scored on a 1-5 scale.</li>
+	</ul>
+</section>
+
+<section class="prize-submission">
+	<header>
+		<h1>Submission rules</h1>
+	</header>
+	<ul>
+		<li>Projects must be submitted by April 15 through the official prize submission site. The following details must be provided in the submission to be evaluated by judges:</li>
+		<li>Link to a GitHub repository where the project’s source code is stored</li>
+		<li>A short video (at most 7 minutes) explaining your project</li>
+		<ul>
+			<li>Overview of what their project does</li>
+			<li>Demo of the project in action</li>
+			<li>Technical specifications of project such as programming languages used, services/APIs used (e.g Amazon Web Services, Google Maps API)</li>
+		</ul>
+		<li>(Highly Encouraged) A link where judges can use and interact with your project (e.g. website address, iOS App Store link). If you need a Apple license contact cristobal.gonzalez@yale.edu.</li>
+	</ul>
+</section>
+
+<section id="sponsors">
+	<header>
+		<h1><a href="#sponsors"><mark></mark>Sponsors</a></h1>
+	</header>
+
+	<ul class="sponsors">
+		<div class="sponsor facebook">
+			<ul>
+				<li>Yale Computer Science</li>
+			</ul>
+		</div>
+	</ul>
+</section>
+
+<section id="members">
+	<header>
+		<h1><a href="#members"><mark></mark> Organized by</a></h1>
+		<h2></h2>
+	</header>	
+	<ul class="people alumni" id="alumni">
+		<div class="member">
+			<div class="picture">
+				<img src="http://graph.facebook.com/100003022199269/picture?width=400&height=400" />
+			</div>
+			<div class="info">
+			  <h1>Cristobal Gonzalez</h1>
+				<h2>Director</h2>
+			</div>
+		</div>
+
+		<div class="member">
+			<div class="picture">
+				<img src="http://graph.facebook.com/1790419246/picture?width=400&height=400" />
+			</div>
+			<div class="info">
+				<h1>Christopher Kim</h1>
+				<h2>Fundraising</h2>
+			</div>
+		</div>
+
+		<div class="member">
+			<div class="picture">
+				<img src="http://graph.facebook.com/1548920938/picture?width=400&height=400" />
+			</div>
+			<div class="info">
+				<h1>Amanda Lee Ping</h1>
+				<h2>Publicity</h2>
+			</div>
+		</div>
+
+		<div class="member">
+			<div class="picture">
+				<img src="http://graph.facebook.com/100000366187376/picture?width=400&height=400" />
+			</div>
+			<div class="info">
+				<h1>Felipe Pires</h1>
+				<h2>Support</h2>
+			</div>
+		</div>
+
+		<div class="member">
+			<div class="picture">
+				<img src="/images/john.jpg" />
+			</div>
+			<div class="info">
+				<h1>John Amadeo</h1>
+				<h2>Support</h2>
+			</div>
+		</div>
+
+	</ul>
+</section>
+
+
+<section class="notice hidden">
+
+	<div id="mc_embed_signup" class="mailchimp-form"> <!-- Begin MailChimp Signup Form -->
+		<form action="//yalecompsociety.us14.list-manage.com/subscribe/post?u=842f70190aeaa348007d7ccfb&amp;id=954e9ebd0c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+			<div aria-hidden="true" class="hidden">
+				<input type="text" name="b_842f70190aeaa348007d7ccfb_954e9ebd0c" tabindex="-1" value="">
+			</div>
+
+			<div class="row">
+				<div class="col-md-8 col-md-offsets-1 col-xs-12">
+					<div class="inline">
+						<h1>Subscribe to our newsletter</h1>
+						<h2>Receive updates about tech opportunities at Yale</h2>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<input type="email" value="" name="EMAIL" class="required email" placeholder="Your Email" id="mce-EMAIL">
+					<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" href="javascript:showMLInstructions()" class="btn ml-button"></input>
+				</div>
+			</div>
+
+			<div id="mce-responses" class="clear">
+				<div class="response" id="mce-error-response" style="display:none"></div>
+				<div class="response" id="mce-success-response" style="display:none"></div>
+			</div>
+		</form>
+	</div>
+
+</div>
+</section>
+
+{% include footer.html %}
+
+</body>
+</html>

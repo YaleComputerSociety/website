@@ -1,0 +1,52 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+@import
+  "base"
+;
+
+body.prize > header {
+  p {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+}
+
+body.prize > header {
+  font-size: 15px;
+  color: #222;
+
+  h1 {
+    font-size: 4.5em;
+    margin-bottom: 30px;
+    font-family: 'Space Mono', monospace;
+  }
+
+  h2 {
+    font-size: 2em;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    font-size: 1.2em;
+    color: #ff806b;
+  }
+}
+
+body.prize > section {
+
+  header {
+    margin-bottom: 30px;
+  }
+  
+  ul li {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  // background: #ff806b;
+  // color: white;
+}
