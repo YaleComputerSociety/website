@@ -193,6 +193,12 @@ pre {
   text-decoration: none !important; }
   .button:hover, .button:focus {
     border-color: #a3daff; }
+  .button.white {
+    border-color: white; }
+    .button.white:hover {
+      color: white; }
+    .button.white:hover, .button.white:focus {
+      border-color: white; }
   .button:active {
     box-shadow: none; }
 

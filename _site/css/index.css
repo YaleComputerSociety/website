@@ -193,6 +193,12 @@ pre {
   text-decoration: none !important; }
   .button:hover, .button:focus {
     border-color: #a3daff; }
+  .button.white {
+    border-color: white; }
+    .button.white:hover {
+      color: white; }
+    .button.white:hover, .button.white:focus {
+      border-color: white; }
   .button:active {
     box-shadow: none; }
 
@@ -809,3 +815,11 @@ body > footer {
 
   body > section > section {
     margin-left: 10px; } }
+section.prize-section {
+  background: #ff806b;
+  color: white; }
+  section.prize-section h2 {
+    font-size: 1.6em;
+    margin-bottom: 30px; }
+  section.prize-section button {
+    color: white; }

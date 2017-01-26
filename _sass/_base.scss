@@ -22,6 +22,10 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
+
+$ycsorange: #ff806b;
+
+
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
     @content;
@@ -97,6 +101,20 @@ $color-tag: #F3753A; // #4A9BFF;
   &:hover, &:focus {
     border-color: #a3daff;
   }
+
+  &.white {
+    border-color: white;
+
+    &:hover {
+      color: white;
+    }
+
+    &:hover, &:focus {
+      border-color: white;
+    }
+
+  }
+
 
   &:active {
     box-shadow: none;
