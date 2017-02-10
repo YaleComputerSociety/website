@@ -19,19 +19,19 @@
 
   "melina": {
     "name": "Melina Delgado",
-    "blurb": "Co-director of Events",
+    "blurb": "",
     "picture": "http://graph.facebook.com/1196765670/picture?width=400&height=400"
   },
 
   "sean": {
     "name": "Sean Walker",
-    "blurb": "Co-director of Events",
+    "blurb": "Director of Events",
     "picture": "http://graph.facebook.com/100003477397995/picture?width=400&height=400"
   },
 
   "cristobal": {
     "name": "Cristobal Gonzalez",
-    "blurb": "Director of Competitions",
+    "blurb": "Director of Career",
     "picture": "http://graph.facebook.com/100003022199269/picture?width=400&height=400"
   },
 
@@ -49,7 +49,7 @@
   
   "amanda": {
     "name": "Amanda Lee Ping",
-    "blurb": "Director of Publicity",
+    "blurb": "Director of Community",
     "picture": "http://graph.facebook.com/1548920938/picture?width=400&height=400"
   },
   
@@ -91,7 +91,7 @@
 
   "tantan": {
     "name": "TanTan Wang",
-    "blurb": "Events Support",
+    "blurb": "Manager of Tech Snaps",
     "picture": "http://graph.facebook.com/100001649240042/picture?width=400&height=400"
   },
 }
