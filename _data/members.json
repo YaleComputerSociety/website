@@ -19,7 +19,7 @@
 
   "melina": {
     "name": "Melina Delgado",
-    "blurb": "",
+    "blurb": "Social Team",
     "picture": "http://graph.facebook.com/1196765670/picture?width=400&height=400"
   },
 
@@ -55,7 +55,7 @@
   
   "shannon": {
     "name": "Shannon Yasuda",
-    "blurb": "Events Manager",
+    "blurb": "Events Team",
     "picture": "http://graph.facebook.com/100006564433305/picture?width=400&height=400"
   },
 
@@ -91,7 +91,7 @@
 
   "tantan": {
     "name": "TanTan Wang",
-    "blurb": "Manager of Tech Snaps",
+    "blurb": "Community Team",
     "picture": "http://graph.facebook.com/100001649240042/picture?width=400&height=400"
   },
 }
