@@ -583,6 +583,12 @@ ul.events {
       font-size: 1.1em;
       font-weight: 300;
       margin-bottom: 0; }
+    ul.events .date .year h1 {
+      font-family: "Roboto Mono";
+      color: #000;
+      font-size: 1.1em;
+      font-weight: 300;
+      margin-bottom: 0; }
   ul.events .event:not(:last-child) {
     margin-bottom: 2.7em; }
   ul.events .event {

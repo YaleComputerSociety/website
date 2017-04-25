@@ -8,7 +8,7 @@
   "john-amadeo": {
     "name": "John Amadeo",
     "blurb": "Vice president",
-    "picture": "/images/john.jpg"
+    "picture": "http://graph.facebook.com/1513041057/picture?width=400&height=400",
   },
 
   "stephanie": {
@@ -25,13 +25,13 @@
 
   "cristobal": {
     "name": "Cristobal Gonzalez",
-    "blurb": "Director of Career",
+    "blurb": "Director of Community",
     "picture": "http://graph.facebook.com/100003022199269/picture?width=400&height=400"
   },
 
   "nishitha": {
     "name": "Nishitha Burman",
-    "blurb": "Director of Community",
+    "blurb": "Community Team",
     "picture": "http://graph.facebook.com/100005652978008/picture?width=400&height=400"
   },
 
@@ -55,7 +55,7 @@
 
   "marilyn": {
     "name": "Marilyn Mossien",
-    "blurb": "Events Manager",
+    "blurb": "Events Team",
     "picture": "http://graph.facebook.com/100009882549211/picture?width=400&height=400"
   },
 
@@ -79,7 +79,7 @@
 
   "william": {
     "name": "William Yang",
-    "blurb": "Events Support",
+    "blurb": "Treasurer, Events Team",
     "picture": "http://graph.facebook.com/100000411957490/picture?width=400&height=400"
   },
 
@@ -88,4 +88,59 @@
     "blurb": "Community Team",
     "picture": "http://graph.facebook.com/100001649240042/picture?width=400&height=400"
   },
+
+  "alex.wang": {
+    "name": "Alex Wang",
+    "blurb": "Events Team",
+    "picture": "http://graph.facebook.com/100002654280088/picture?width=400&height=400"
+  },
+
+  "clark.xie": {
+    "name": "Clark Xie",
+    "blurb": "Events Team",
+    "picture": "http://graph.facebook.com/100002710753602/picture?width=400&height=400"
+  },
+
+  "ece.bozkurt": {
+    "name": "Ece Bozkurt",
+    "blurb": "Events Team",
+    "picture": "http://graph.facebook.com/100000203140467/picture?width=400&height=400"
+  },
+
+  "carlo.abelli": {
+    "name": "Carlo Abelli",
+    "blurb": "Events Team",
+    "picture": "http://graph.facebook.com/100003643689397/picture?width=400&height=400"
+  },
+
+  "lasya.sreepada": {
+    "name": "Lasya Sreepada",
+    "blurb": "Director of Events",
+    "picture": "/images/lasya.jpg"
+  },
+
+  "nikita.kvasniov": {
+    "name": "Nikita Kvasniov",
+    "blurb": "Partnerships Team",
+    "picture": "http://graph.facebook.com/100000245292061/picture?width=400&height=400"
+  },
+
+  "sanya.nijhawan": {
+    "name": "Sanya Nijhawan",
+    "blurb": "Events Team",
+    "picture": "http://graph.facebook.com/100000993115532/picture?width=400&height=400"
+  },
+
+  "ecr.chen": {
+    "name": "ECR Chen",
+    "blurb": "Director of Community",
+    "picture": "http://graph.facebook.com/100003555254518/picture?width=400&height=400"
+  },
+
+  "rishab.ramanathan": {
+    "name": "Rishab Ramanathan",
+    "blurb": "Community Team",
+    "picture": "http://graph.facebook.com/1516779894/picture?width=400&height=400"
+  },
+
 }
