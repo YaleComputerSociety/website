@@ -1,4 +1,5 @@
 GEM
+  remote: https://rubygems.org/
   specs:
     coderay (1.1.1)
     colorator (0.1)
@@ -73,4 +74,4 @@ DEPENDENCIES
   jekyll
 
 BUNDLED WITH
-   1.11.2
+   1.14.6
