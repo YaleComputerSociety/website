@@ -207,52 +207,30 @@ body > header {
   padding: 70px 60px;
   font-family: "Roboto";
   font-size: 25px; }
-
-body > header.main .title-wrapper {
-  color: #222; }
-  body > header.main .title-wrapper h1 {
-    font-size: 3.2em;
-    font-family: 'Space Mono', monospace;
-    font-weight: bolder;
-    margin-bottom: 30px; }
-    body > header.main .title-wrapper h1 a {
-      text-decoration: none; }
-      body > header.main .title-wrapper h1 a:hover {
-        color: #F68657;
-        color: #000;
-        -webkit-transition: 0.1s;
-        -moz-transition: 0.1s;
-        -ms-transition: 0.1s;
-        -o-transition: 0.1s;
-        transition: 0.1s; }
-@-webkit-keyframes blink {
-  from, to {
-    opacity: 1; }
-  50% {
-    opacity: 0; } }
-@-moz-keyframes blink {
-  from, to {
-    opacity: 1; }
-  50% {
-    opacity: 0; } }
-    body > header.main .title-wrapper h1 .cursor {
-      width: 40px;
-      margin-left: 10px;
-      display: inline-block;
-      height: .9em;
-      background: #FBFFB9;
-      background: #F6F6F6;
-      vertical-align: bottom;
-      -webkit-animation: 1s blink step-end infinite;
-      -moz-animation: 1s blink step-end infinite; }
-  body > header.main .title-wrapper h2 {
-    font-size: .9em;
-    line-height: 1.5;
-    margin-bottom: 30px;
-    font-family: 'Space Mono', monospace; }
-  body > header.main .title-wrapper a {
-    text-decoration: underline;
-    color: inherit; }
+  body > header .title-wrapper {
+    color: #222; }
+    body > header .title-wrapper h1 {
+      font-size: 3.2em;
+      font-family: 'Space Mono', monospace;
+      margin-bottom: 30px; }
+      body > header .title-wrapper h1 a {
+        text-decoration: none; }
+        body > header .title-wrapper h1 a:hover {
+          color: #F68657;
+          color: #000;
+          -webkit-transition: 0.1s;
+          -moz-transition: 0.1s;
+          -ms-transition: 0.1s;
+          -o-transition: 0.1s;
+          transition: 0.1s; }
+    body > header .title-wrapper h2 {
+      font-size: .9em;
+      line-height: 1.5;
+      margin-bottom: 30px;
+      font-family: 'Space Mono', monospace; }
+    body > header .title-wrapper a {
+      text-decoration: underline;
+      color: inherit; }
 
 header .mailchimp-form {
   font-size: 18px; }
@@ -505,20 +483,6 @@ body > section {
         border-bottom: 1px solid #CCC; }
       body > section header a:visited, body > section footer a:visited {
         color: #000; }
-    body > section header mark, body > section footer mark {
-      background: transparent;
-      padding: 0;
-      margin-right: 10px; }
-      body > section header mark:before, body > section footer mark:before {
-        content: "#";
-        color: #BBB;
-        -webkit-transition: 0.2s;
-        -moz-transition: 0.2s;
-        -ms-transition: 0.2s;
-        -o-transition: 0.2s;
-        transition: 0.2s; }
-        body > section header mark:before:hover, body > section footer mark:before:hover {
-          color: #AAA; }
     body > section header h1:hover mark:before, body > section footer h1:hover mark:before {
       color: #AAA; }
     body > section header h1, body > section footer h1 {
@@ -689,49 +653,6 @@ ul.sponsors .google img {
   list-style: none;
   margin: 0; }
 
-ul.projects .project {
-  width: 280px;
-  margin-left: 20px;
-  margin-top: 30px;
-  cursor: pointer;
-  vertical-align: top;
-  display: inline-block; }
-  ul.projects .project a {
-    text-decoration: none !important; }
-  ul.projects .project .figure {
-    height: 140px;
-    width: 280px;
-    text-align: center;
-    overflow: hidden;
-    background: #BBB;
-    user-select: none; }
-    ul.projects .project .figure span {
-      font-family: Arial;
-      line-height: 140px;
-      color: white;
-      font-weight: normal;
-      white-space: nowrap;
-      font-size: 50px; }
-  ul.projects .project .ainfo {
-    height: 80px;
-    padding: 10px;
-    background: #f3f3f3; }
-  ul.projects .project.makers .figure {
-    background: #cddc39; }
-  ul.projects .project.clubs .figure {
-    background: #03a9f4;
-    text-align: right; }
-    ul.projects .project.clubs .figure span {
-      font-size: 90px;
-      font-family: Roboto; }
-  ul.projects .project.bdgate .figure {
-    background: #E53A40;
-    text-align: center; }
-    ul.projects .project.bdgate .figure span {
-      font-size: 60px;
-      font-family: serif;
-      line-height: 200px; }
-
 ul.people {
   list-style: none;
   margin: 40px 0 -40px; }
@@ -821,6 +742,44 @@ body > footer {
 
   body > section > section {
     margin-left: 10px; } }
+mark {
+  background: transparent;
+  padding: 0;
+  margin-right: 10px; }
+  mark:before {
+    content: "#";
+    color: #BBB;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+    mark:before:hover {
+      color: #AAA; }
+
+body > header .title-wrapper {
+  color: #222; }
+@-webkit-keyframes blink {
+  from, to {
+    opacity: 1; }
+  50% {
+    opacity: 0; } }
+@-moz-keyframes blink {
+  from, to {
+    opacity: 1; }
+  50% {
+    opacity: 0; } }
+  body > header .title-wrapper h1 .cursor {
+    width: 40px;
+    margin-left: 10px;
+    display: inline-block;
+    height: .9em;
+    background: #FBFFB9;
+    background: #F6F6F6;
+    vertical-align: bottom;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite; }
+
 section.prize-section {
   background: #ff806b;
   color: white; }
@@ -829,3 +788,46 @@ section.prize-section {
     margin-bottom: 30px; }
   section.prize-section button {
     color: white; }
+
+ul.projects .project {
+  width: 280px;
+  margin-left: 20px;
+  margin-top: 30px;
+  cursor: pointer;
+  vertical-align: top;
+  display: inline-block; }
+  ul.projects .project a {
+    text-decoration: none !important; }
+  ul.projects .project .figure {
+    height: 140px;
+    width: 280px;
+    text-align: center;
+    overflow: hidden;
+    background: #BBB;
+    user-select: none; }
+    ul.projects .project .figure span {
+      font-family: Arial;
+      line-height: 140px;
+      color: white;
+      font-weight: normal;
+      white-space: nowrap;
+      font-size: 50px; }
+  ul.projects .project .ainfo {
+    height: 80px;
+    padding: 10px;
+    background: #f3f3f3; }
+  ul.projects .project.makers .figure {
+    background: #cddc39; }
+  ul.projects .project.clubs .figure {
+    background: #03a9f4;
+    text-align: right; }
+    ul.projects .project.clubs .figure span {
+      font-size: 90px;
+      font-family: Roboto; }
+  ul.projects .project.bdgate .figure {
+    background: #E53A40;
+    text-align: center; }
+    ul.projects .project.bdgate .figure span {
+      font-size: 60px;
+      font-family: serif;
+      line-height: 200px; }

@@ -1,0 +1,2 @@
+
+The playbook of the Yale Computer Society ([yalecompsociety.org](http://yalecompsociety.org)). All rights reserved.

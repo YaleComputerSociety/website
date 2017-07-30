@@ -1,0 +1,69 @@
+{
+  "sections": [
+    {
+      "title": "About Us",
+      "anchor": "about-us",
+      "children": [
+        {
+          "title": "Intro to YCS",
+          "file": "About-US_Intro-To-YCS.md"
+        },
+        {
+          "title": "Membership",
+          "file": "About-Us_Membership.md"
+          },
+        {
+          "title": "Tracks And Teams",
+          "file": "About-Us_Tracks-And-Teams.md"
+        }
+      ]
+    },
+
+    {
+      "title": "Process",
+      "children": [
+        {
+          "title": "Guidelines",
+          "file": "Process_Guidelines.md"
+        },
+        {
+          "title": "Interviewing",
+          "file": "Process_Interviewing.md"
+        },
+        {
+          "title": "Metrics",
+          "file": "Process_Metrics.md"
+        },
+        {
+          "title": "Meetings",
+          "file": "Process_Meetings.md"
+        },
+        {
+          "title": "Onboarding",
+          "file": "Process_Onboarding.md"
+        },
+        {
+          "title": "Code of Conduct",
+          "file": "Process_Code-Of-Conduct.md"
+        },
+        {
+          "title": "Tools",
+          "file": "Process_Tools.md"
+        },
+      ]
+    },
+    {
+      "title": "Tracks",
+      "children": [
+        {
+          "title": "Events",
+          "file": "Tracks_Events.md"
+        },
+        {
+          "title": "Partnerships",
+          "file": "Tracks_Partnerships.md"
+        },
+      ]
+    }
+	]
+}

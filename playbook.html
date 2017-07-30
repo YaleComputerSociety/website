@@ -1,0 +1,79 @@
+---
+custom_css:
+- playbook
+---
+<!DOCTYPE html>
+<html>
+
+	{% include head.html %}
+	<script src="http://localhost:35729/livereload.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400|Roboto+Mono:300,400|Space+Mono:400,700" rel="stylesheet">
+
+<body>
+
+<header>
+	<div class="title-wrapper">
+		<h1><a href="{{ site.baseurl }}/" id="ytitle"><strong>Yale Computer Society</strong> Playbook</a><span class="cursor"></span></h1>
+		<h2>How we run a tech &amp; entrepreneurship club at school</h2>
+	</div>
+</header>
+
+<section class="playbook-intro borderless" id="intro">
+	<p>
+		This document is a compilation of the knowledge acquired over generations of our leadership teams on how to lead an effective computer society at Yale.
+	</p>
+
+	<div class="table-of-contents">
+	{% for section in site.data.playbook.sections %}
+	<ul>
+		<div>
+			<a href="#{{section.anchor}}">{{ section.title }}</a>
+		</div>
+		{% for page in section.children %}
+			<li>
+				<a href="#{{section.anchor}}{{page.file}}">{{ page.title }}</a>
+			</li>
+		{% endfor %}
+	</ul>
+	{% endfor %}
+	</div>
+</section>
+
+
+{% for section in site.data.playbook.sections %}
+<section class="section-header">
+	<h1><a href="#{{section.achor}}">{{section.title}}</a></h1>
+</section>
+
+	{% assign parentIndex = forloop.index %}
+
+	{% for page in section.children %}
+	<section class="section-page" id="{{section.anchor}}{{page.file}}">
+		<header>
+			<a href="#{{section.anchor}}{{page.file}}"><mark></mark>{{parentIndex}}.{{forloop.index}} {{page.title}}</a>
+		</header>
+		<div class="body markdown-body">
+			{% capture my_include %}{% include_relative _playbook_pages/{{ page.file }} %}{% endcapture %}
+			{{ my_include | markdownify }}
+		</div>
+	</section>
+	{% endfor %}
+{% endfor %}
+
+<footer>
+<div class="col-md-8 col-xs-12">
+	<p class="bio">
+		The YCS is a undergraduate organization that promotes talks, workshops and study breaks related to computer science and engineering on Yale campus.
+	</p>
+	<p>
+		Email <strong>felipe.pires@y[you know the rest].edu</strong> with questions or suggestions.
+	</p>
+</div>
+
+<div class="col-md-4 col-xs-12" style="text-align: right">
+	Copyright 2016. All rights reserved.
+</div>
+</footer>
+
+</body>
+</html>

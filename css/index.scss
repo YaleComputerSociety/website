@@ -7,6 +7,37 @@
 	"base"
 ;
 
+
+body > header {
+  .title-wrapper {
+    color: #222;
+    h1 {
+      @-webkit-keyframes blink {
+        from, to { opacity: 1 }
+        50% { opacity: 0 }
+      }
+
+      @-moz-keyframes blink {
+        from, to { opacity: 1 }
+        50% { opacity: 0 }
+      }
+
+      .cursor {
+        width: 40px;
+        margin-left: 10px;
+        display: inline-block;
+        height: .9em;
+        background: #FBFFB9;
+        background: #F6F6F6;
+        vertical-align: bottom;
+
+        -webkit-animation: 1s blink step-end infinite;
+        -moz-animation: 1s blink step-end infinite;
+      }
+    }
+  }
+}
+
 section.prize-section {
 	background: $ycsorange;
 	color: white;
@@ -19,4 +50,67 @@ section.prize-section {
 	button {
 		color: white;
 	}
+}
+
+
+ul.projects .project {
+  $width: 280px;
+  $height: $width/2;
+  width: $width;
+  margin-left: 20px;
+  margin-top: 30px;
+  cursor: pointer;
+  vertical-align: top;
+  display: inline-block;
+
+  a {
+    text-decoration: none !important;
+  }
+
+  .figure {
+    height: $height;
+    width: $width;
+    text-align: center;
+    overflow: hidden;
+    background: #BBB;
+    user-select: none;
+
+    span {
+      font-family: Arial;
+      line-height: $height;
+      color: white;
+      font-weight: normal;
+      white-space: nowrap;
+      font-size: 50px;
+    }
+  }
+
+  .ainfo {
+    height: 80px;
+    padding: 10px;
+    background: #f3f3f3;
+  }
+
+  &.makers .figure {
+    background: #cddc39;
+  }
+
+  &.clubs .figure {
+    background: #03a9f4;
+    text-align: right;
+    span {
+      font-size: 90px;
+      font-family: Roboto;
+    }
+  }
+
+  &.bdgate .figure {
+    background: #E53A40;
+    text-align: center;
+    span {
+      font-size: 60px;
+      font-family: serif;
+      line-height: 200px;
+    }
+  }
 }
