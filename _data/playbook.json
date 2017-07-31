@@ -1,3 +1,30 @@
+)
+How-to-Contribute
+About-Us_Intro-to-YCS
+About-Us_Tracks-and-Teams
+About-Us_Membership
+Process_Metrics
+Process_Tools
+Process_Meetings
+Process_Interviewing
+Process_Onboarding
+Process_Code-of-Conduct
+Teams_Interview-Workshop
+Teams_Newsletter
+Teams_Tech-Gala
+Teams_YCS-Prize
+Teams_Hacknights
+Tracks_Partnerships
+Tracks:Partnerships_Reaching-out
+Tracks_Community
+Tracks_Newsletter
+Tracks_Events
+Membership_What-We-Are-Looking-For
+Membership_Board-Members
+Membership_Managers
+404
+404
+
 {
   "sections": [
     {
@@ -9,12 +36,12 @@
           "file": "playbook/About-Us_Intro-to-YCS.md"
         },
         {
-          "title": "Membership",
-          "file": "playbook/About-Us_Membership.md"
-          },
-        {
           "title": "Tracks And Teams",
           "file": "playbook/About-Us_Tracks-and-Teams.md"
+        },
+        {
+          "title": "Membership",
+          "file": "playbook/About-Us_Membership.md"
         }
       ]
     },
@@ -23,20 +50,20 @@
       "title": "Process",
       "children": [
         {
-          "title": "Guidelines",
-          "file": "playbook/Process_Guidelines.md"
-        },
-        {
-          "title": "Interviewing",
-          "file": "playbook/Process_Interviewing.md"
-        },
-        {
           "title": "Metrics",
           "file": "playbook/Process_Metrics.md"
         },
         {
+          "title": "Tools",
+          "file": "playbook/Process_Tools.md"
+        },
+        {
           "title": "Meetings",
           "file": "playbook/Process_Meetings.md"
+        },
+        {
+          "title": "Interviewing",
+          "file": "playbook/Process_Interviewing.md"
         },
         {
           "title": "Onboarding",
@@ -45,11 +72,7 @@
         {
           "title": "Code of Conduct",
           "file": "playbook/Process_Code-of-Conduct.md"
-        },
-        {
-          "title": "Tools",
-          "file": "playbook/Process_Tools.md"
-        },
+        }
       ]
     },
     {
