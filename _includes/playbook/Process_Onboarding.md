@@ -1,4 +1,4 @@
-This page outlines the process of getting new members into our organization.
+This section outlines the process of getting new members into our organization.
 
 While there is usually little challenge in executing the tasks outlined here, the cost of not doing them can be high. Members may skip important meetings when they aren't added the internal calendar, they can miss out on important discussions when they can't check Slack. These situations can be very frustrating to the people involved.
 

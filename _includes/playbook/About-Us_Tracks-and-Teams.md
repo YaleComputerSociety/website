@@ -1,4 +1,4 @@
-This page describes how we organize our work, dividing people by tracks (ie. what they specialize in) and putting them in teams (ie. groups that work on a certain project).
+This section describes how we organize our work, dividing people by tracks (ie. what they specialize in) and putting them in teams (ie. groups that work on a certain project).
 
 ### Firm example
 

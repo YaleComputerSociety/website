@@ -1,32 +1,47 @@
-If you were part of an extracurricular organization before, chances are that you have strong negative feelings about meetings. You are totally justified. When done wrong, which seems to happen more often than not, meetings are a huge time sink that busy college students just can't afford. **But when done right, meetings are a powerful instrument to coordinate teams and get work done**.
+If you were part of an extracurricular organization before, chances are that you have negative feelings about meetings. After all, club meetings, when done wrong, are a huge time sink that busy college students just can't afford. However, when done right, meetings are a powerful tool in coordinating a team and making progress.
 
-### Why meetings matter
+In our society, we have found that **meetings are one of the reasons why we are able to get things done despite everyone's busy schedules**. That is because **meetings enforce accountability and help us get work done**. For college students with busy schedules, physical meetings with fixed times are the best way to get everyone on the same page and communicate critical things.  Let's use an example to justify this point of view.
 
-Imagine, for instance, a group of type A college students who decide to work on an extracurricular project together, by coordinating only through a group chat. Being high energy and ambitious, the members like to crowd their schedules with many extracurriculars and interesting classes. This project will likely face two big problems: first a lack of communication and then a lack of progress. To begin, group chats are usually. They are easy to.
+## Why meetings matter
 
-Over the years, we have learned that groups with fixed meetings times and a leader on top of their shit.
+You might have seen this before. Image a group of college students who get together to work on a project: hosting a talk with a prestigious Yale alumnus working in tech. Knowing that they have a lot to do (ie. invite the speaker, book a venue, provide food, advertise the talk etc) but that none of the work requires them to physically meet, they decide to use just a group chat to coordinate. "No meetings", they say. After all, **being high energy and ambitious, the members of the group like to crowd their schedules with other clubs and side-projects**, so a remote project gives them the most flexibility, allowing them to work whenever they can.
 
-We have found, somewhat counterintuitively, that **meetings are one of the reasons why we are able to get things done in our society, despite everybody's busy schedules**. That is because meetings enforce accountability and help us keep making progress. When we fix a time in the week to get the team together we, are helping each other be on top of their work.
+Pretty soon they will start running into problems such as poor communication and lack of progress. To begin, **group chats are great tools for clubs but usually don't replace actual meetings**, physical or virtual. That is because when **talking through a chat we can't guarantee that everyone will pay attention**. (Some services, like Slack, try to fix this by adding special types of notifications and the ability to pin messages. Even then, it is still up to users to make sure they read the messages.) On top of that, delegating and following up on assignments will be equally hard, as it is easier to be ignored over chat or email. By the time they realize that weekly meetings are necessary, everybody's agenda is so packed with other responsibilities that conflicts and delays are inevitable.
 
-**How do we keep our meetings from turning into huge time sink monster?** Glad you asked.
+**When school work and other responsibilities start to mount, the first thing students delay is work without a strict deadline**, like the talk event in this example. So by not setting fixed meetings times when they are compelled by peer pressure to show their progress, they are risking the success of their project.
 
-## Hosting effective meetings
+# Effective meetings
 
-Wait for the meeting to be over and **voice your concerns.**
+How do we keep our meetings from turning into huge time sink monster? Glad you asked.
 
-0. **Do your homework.**  
-Come to the meeting prepared.
+### Tips for hosts
 
-1. **Be mindful of other people's time.**  
+If you are hosting a meeting
+
+0. **Do your homework**  
+Rule zero for hosting is to come prepared. Make sure you have a plan for what is going to be discussed during that time. It is good practice to ping the attendees beforehand, reminding them about the meeting and about work they are supposed to have done by then.
+
+1. **Make a list of commitments**  
+Once the meeting is done, you will want to know when to follow up about work.
+
+2. **Ask for attention**  
+It's OK to ask people to lower their laptop lids.
+
+3. **Have a fixed meeting time**, then **start on time and end on time**  
 It's a big responsibility to ask your team to take a bit of their day.
 Stick to 30 minutes. Start on time, finish on time.
 
-2. **Keep it under control.**  
+### Tips for participants
 
-3. **Fix a time at the beginning of the project.**  
-Demand adhrance.
+0. **Do your homework.**  
+This doesn't apply only to hosts. Come prepared for.
 
-4.
+1. Planning, no working  
+Unless otherwise noted, plan, don't work.
+
+2. Be focused
+
+3. Give feedback
 
 ### Tips for taking notes
 
@@ -34,7 +49,7 @@ Put your notes on Trello.
 
 # Our Meetings
 
-
+Our usual member will meet two or three times a week.
 
 ### General Meetings
 
@@ -42,9 +57,9 @@ Once a week, usually on Sundays at 8pm, during the course of the academic year, 
 
 #### Rotating Hosts
 
-General meetings are hosted by members of the board, which includes the senior board.
+Our general meetings are hosted by invited members.
 
-> Presence of everyone in the general meetings. Justifiable reasons to miss general meetings include not being on campus. But we expect a warning.
+> Presence of everyone in the general meetings. ## Justifiable reasons to miss general meetings include not being on campus. But we expect a warning.
 
 ### Board meetings
 
@@ -53,3 +68,10 @@ Board meetings happen every Wednesday night, from 8pm to 10pm.
 #### Team meetings
 
 , such that every member of our society is required to attend bla bla
+
+---
+
+
+References:
+
+- [https://hbr.org/1976/03/how-to-run-a-meeting]()

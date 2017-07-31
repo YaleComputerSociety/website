@@ -2,7 +2,7 @@
   "sections": [
     {
       "title": "What we are",
-      "anchor": "about-us",
+      "anchor": "what-we-are",
       "children": [
         {
           "title": "Intro to YCS",
@@ -18,9 +18,9 @@
         }
       ]
     },
-
     {
       "title": "How we work",
+      "anchor": "how-we-work",
       "children": [
         {
           "title": "Metrics",
@@ -50,6 +50,7 @@
     },
     {
       "title": "How we specialize",
+      "anchor": "how-we-specialize",
       "children": [
         {
           "title": "Events",
@@ -58,6 +59,16 @@
         {
           "title": "Partnerships",
           "file": "playbook/Tracks_Partnerships.md"
+        },
+      ]
+    },
+    {
+      "title": "How to kick ass",
+      "anchor": "how-to-kick-ass",
+      "children": [
+        {
+          "title": "Tips for Managers",
+          "file": "playbook/Membership_Managers.md"
         },
       ]
     }
