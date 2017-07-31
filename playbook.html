@@ -53,7 +53,7 @@ custom_css:
 			<a href="#{{section.anchor}}{{page.file}}"><mark></mark>{{parentIndex}}.{{forloop.index}} {{page.title}}</a>
 		</header>
 		<div class="body markdown-body">
-			{% capture my_include %}{% include playbook.wiki/About-Us_Intro-to-YCS.md %}{% endcapture %}
+			{% capture my_include %}{% include {{ page.file }} %}{% endcapture %}
 			{{ my_include | markdownify }}
 		</div>
 	</section>
