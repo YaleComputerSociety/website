@@ -828,9 +828,10 @@ body > header .title-wrapper h1 {
 .section-page {
   border: none; }
   .section-page .markdown-body {
-    max-width: 840px; }
+    max-width: 800px; }
     .section-page .markdown-body p, .section-page .markdown-body li {
-      font-size: 18px; }
+      font-size: 16px;
+      margin-bottom: 20px; }
     .section-page .markdown-body p, .section-page .markdown-body blockquote, .section-page .markdown-body ul, .section-page .markdown-body ol, .section-page .markdown-body dl, .section-page .markdown-body table, .section-page .markdown-body pre {
       font-weight: 400;
       line-height: 2;
@@ -863,7 +864,7 @@ body > header .title-wrapper h1 {
 
 .markdown-body {
   font-family: 'Helvetica Nesue', 'Roboto', monospace;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 2;
   word-wrap: break-word; }
   .markdown-body hr {
@@ -876,6 +877,7 @@ body > header .title-wrapper h1 {
     padding: 1em;
     font-style: normal;
     color: #AAA;
+    letter-spacing: 0;
     border-left: 0.25em solid #dfe2e5;
     background: #EEE; }
     .markdown-body blockquote > :first-child {

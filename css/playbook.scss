@@ -109,10 +109,11 @@ body > header {
   border: none;
 
   .markdown-body {
-    max-width: 840px;
+    max-width: 800px;
 
     p, li {
-      font-size: 18px;
+      font-size: 16px;
+      margin-bottom: 20px;
     }
 
     p, blockquote, ul, ol, dl, table, pre {
@@ -162,7 +163,7 @@ body > header {
 
 .markdown-body {
   font-family: 'Helvetica Nesue', 'Roboto', monospace; // -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 15px;
+  font-size: 13px;
   line-height: 2;
   word-wrap: break-word;
 
@@ -176,7 +177,9 @@ body > header {
   blockquote {
     padding: 1em;
     font-style: normal;
+    // font-family: 'Helvetica Neue';
     color: #AAA;
+    letter-spacing: 0;
     border-left: 0.25em solid #dfe2e5;
 
     background: #EEE;

@@ -1,4 +1,6 @@
-Like most encyclopedias, this playbook will never be finished – is a living document. Instead, we strive to keep it in sync with our latest ways of thinking and working.
+Like most encyclopedias, this playbook will never be finished – it is a living document. Instead, we strive to keep it in sync with our latest ways of thinking and working.
+
+Question everything you read here.
 
 ### Giving feedback
 
