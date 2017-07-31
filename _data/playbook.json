@@ -6,8 +6,63 @@
       "children": [
         {
           "title": "Intro to YCS",
-          "file": "playbook/About-Us_Intro-to-YCS.md"
+          "file": "playbook_wiki/About-Us_Intro-to-YCS.md"
+        },
+        {
+          "title": "Membership",
+          "file": "playbook_wiki/About-Us_Membership.md"
+          },
+        {
+          "title": "Tracks And Teams",
+          "file": "playbook_wiki/About-Us_Tracks-and-Teams.md"
         }
+      ]
+    },
+
+    {
+      "title": "Process",
+      "children": [
+        {
+          "title": "Guidelines",
+          "file": "playbook_wiki/Process_Guidelines.md"
+        },
+        {
+          "title": "Interviewing",
+          "file": "playbook_wiki/Process_Interviewing.md"
+        },
+        {
+          "title": "Metrics",
+          "file": "playbook_wiki/Process_Metrics.md"
+        },
+        {
+          "title": "Meetings",
+          "file": "playbook_wiki/Process_Meetings.md"
+        },
+        {
+          "title": "Onboarding",
+          "file": "playbook_wiki/Process_Onboarding.md"
+        },
+        {
+          "title": "Code of Conduct",
+          "file": "playbook_wiki/Process_Code-of-Conduct.md"
+        },
+        {
+          "title": "Tools",
+          "file": "playbook_wiki/Process_Tools.md"
+        },
+      ]
+    },
+    {
+      "title": "Tracks",
+      "children": [
+        {
+          "title": "Events",
+          "file": "playbook_wiki/Tracks_Events.md"
+        },
+        {
+          "title": "Partnerships",
+          "file": "playbook_wiki/Tracks_Partnerships.md"
+        },
       ]
     }
 	]
