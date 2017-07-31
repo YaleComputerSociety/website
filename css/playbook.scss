@@ -140,11 +140,23 @@ body > header {
     strong a, a strong {
       background-color: #FDD692;
       font-weight: 700;
-      color: #444;
+      color: #08c;
       border-bottom: 2px solid #888;
       text-decoration: none;
     }
     // *, h1, h2, h3, h4, h5, h6, p { color: #444 }
+
+    a {
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+    }
+    a:visited strong, a:visited {
+      color: #08c;
+    }
+    a:hover {
+      border-bottom: 2px solid #08c;
+      // border-bottom-style: solid;
+    }
   }
 }
 
@@ -162,10 +174,12 @@ body > header {
     border: 0
   }
   blockquote {
-    padding: 0 1em;
-    color: #6a737d;
+    padding: 1em;
+    font-style: normal;
+    color: #AAA;
     border-left: 0.25em solid #dfe2e5;
 
+    background: #EEE;
     &>:first-child {
       margin-top: 0
     }
@@ -214,7 +228,8 @@ body > header {
     font-size: 1.1em
   }
   h5 {
-    font-size: 0.875em
+    font-size: 1em;
+    font-weight: 900;
   }
   h6 {
     font-size: 0.85em;
