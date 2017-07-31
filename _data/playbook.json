@@ -6,15 +6,15 @@
       "children": [
         {
           "title": "Intro to YCS",
-          "file": "playbook.wiki/About-Us_Intro-to-YCS.md"
+          "file": "playbook/About-Us_Intro-to-YCS.md"
         },
         {
           "title": "Membership",
-          "file": "playbook.wiki/About-Us_Membership.md"
+          "file": "playbook/About-Us_Membership.md"
           },
         {
           "title": "Tracks And Teams",
-          "file": "playbook.wiki/About-Us_Tracks-and-Teams.md"
+          "file": "playbook/About-Us_Tracks-and-Teams.md"
         }
       ]
     },
@@ -24,31 +24,31 @@
       "children": [
         {
           "title": "Guidelines",
-          "file": "playbook.wiki/Process_Guidelines.md"
+          "file": "playbook/Process_Guidelines.md"
         },
         {
           "title": "Interviewing",
-          "file": "playbook.wiki/Process_Interviewing.md"
+          "file": "playbook/Process_Interviewing.md"
         },
         {
           "title": "Metrics",
-          "file": "playbook.wiki/Process_Metrics.md"
+          "file": "playbook/Process_Metrics.md"
         },
         {
           "title": "Meetings",
-          "file": "playbook.wiki/Process_Meetings.md"
+          "file": "playbook/Process_Meetings.md"
         },
         {
           "title": "Onboarding",
-          "file": "playbook.wiki/Process_Onboarding.md"
+          "file": "playbook/Process_Onboarding.md"
         },
         {
           "title": "Code of Conduct",
-          "file": "playbook.wiki/Process_Code-of-Conduct.md"
+          "file": "playbook/Process_Code-of-Conduct.md"
         },
         {
           "title": "Tools",
-          "file": "playbook.wiki/Process_Tools.md"
+          "file": "playbook/Process_Tools.md"
         },
       ]
     },
@@ -57,11 +57,11 @@
       "children": [
         {
           "title": "Events",
-          "file": "playbook.wiki/Tracks_Events.md"
+          "file": "playbook/Tracks_Events.md"
         },
         {
           "title": "Partnerships",
-          "file": "playbook.wiki/Tracks_Partnerships.md"
+          "file": "playbook/Tracks_Partnerships.md"
         },
       ]
     }
