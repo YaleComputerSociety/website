@@ -19,16 +19,25 @@ custom_css:
 </header>
 
 <section class="playbook-intro borderless" id="intro">
+	<h1>Welcome to our playbook</h1>
 	<p>
-		This document is a compilation of the knowledge acquired over generations of our leadership teams on how to lead an effective computer society at Yale.
+		This document is a compilation of the knowledge acquired over generations of our leadership teams on how to lead an effective computer society at Yale. This is our attempt to cement what works and investigate what doesn't.
 	</p>
+	<p>
+		You can start by <a href="#about-usplaybook/About-Us_Intro-to-YCS.md">reading more about us</a>. Happy exploring!
+	</p>
+</section>
 
-	<div class="table-of-contents">
+<section class="table-contents" id="table-of-contents">
+	<header>
+		<a href="#table-of-contents"><mark></mark>Table of Content</a>
+	</header>
+
 	{% for section in site.data.playbook.sections %}
+	<div class='header-item'>
+		{{ section.title }}
+	</div>
 	<ul>
-		<div>
-			<a href="#{{section.anchor}}">{{ section.title }}</a>
-		</div>
 		{% for page in section.children %}
 			<li>
 				<a href="#{{section.anchor}}{{page.file}}">{{ page.title }}</a>
@@ -36,28 +45,36 @@ custom_css:
 		{% endfor %}
 	</ul>
 	{% endfor %}
-	</div>
 </section>
 
+<section class="section-page" id="how-to-contribute">
+	<header>
+		<a href="#how-to-contribute"><mark></mark>How to Contribute</a>
+	</header>
+	<div class="body markdown-body">
+		{% capture my_include %}{% include playbook/How-to-Contribute.md %}{% endcapture %}
+		{{ my_include | markdownify }}
+	</div>
+</section>
 
 {% for section in site.data.playbook.sections %}
 <section class="section-header">
 	<h1><a href="#{{section.achor}}">{{section.title}}</a></h1>
 </section>
 
-	{% assign parentIndex = forloop.index %}
+{% assign parentIndex = forloop.index %}
 
-	{% for page in section.children %}
-	<section class="section-page" id="{{section.anchor}}{{page.file}}">
-		<header>
-			<a href="#{{section.anchor}}{{page.file}}"><mark></mark>{{parentIndex}}.{{forloop.index}} {{page.title}}</a>
-		</header>
-		<div class="body markdown-body">
-			{% capture my_include %}{% include {{ page.file }} %}{% endcapture %}
-			{{ my_include | markdownify }}
-		</div>
-	</section>
-	{% endfor %}
+{% for page in section.children %}
+<section class="section-page" id="{{section.anchor}}{{page.file}}">
+	<header>
+		<a href="#{{section.anchor}}{{page.file}}"><mark></mark>{{parentIndex}}.{{forloop.index}} {{page.title}}</a>
+	</header>
+	<div class="body markdown-body">
+		{% capture my_include %}{% include {{ page.file }} %}{% endcapture %}
+		{{ my_include | markdownify }}
+	</div>
+</section>
+{% endfor %}
 {% endfor %}
 
 <footer>
