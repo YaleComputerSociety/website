@@ -768,7 +768,7 @@ body > header .title-wrapper h1 {
     font-size: 25px; }
   .playbook-intro p {
     font-weight: 300;
-    width: 1000px;
+    max-width: 1000px;
     font-size: 20px;
     line-height: 1.8; }
   .playbook-intro *, .playbook-intro h1, .playbook-intro h2, .playbook-intro h3, .playbook-intro h4, .playbook-intro h5, .playbook-intro h6, .playbook-intro p {
@@ -797,20 +797,18 @@ body > header .title-wrapper h1 {
 
 .table-contents {
   font-family: 'Roboto Mono', monospace;
-  font-size: 18px; }
+  font-size: 20px; }
   .table-contents .header-item {
     font-size: 1.1em; }
   .table-contents .header-item, .table-contents ul li {
     color: #444;
     margin-bottom: 1em;
     font-weight: 500; }
-  .table-contents ul {
-    margin-bottom: 2em; }
-    .table-contents ul a {
-      text-decoration: none;
-      border-bottom: 2px solid rgba(0, 0, 0, 0.1); }
-    .table-contents ul a:hover {
-      border-bottom: 2px solid #444; }
+  .table-contents ul a {
+    text-decoration: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1); }
+  .table-contents ul a:hover {
+    border-bottom: 2px solid #444; }
 
 .section-page > header,
 .table-contents > header {
@@ -843,7 +841,12 @@ body > header .title-wrapper h1 {
       margin-bottom: 1em; }
     .section-page .markdown-body ul {
       margin-bottom: 2em; }
-    .section-page .markdown-body p + ul {
+    .section-page .markdown-body li ul {
+      margin-bottom: .5em;
+      margin-top: .5em; }
+    .section-page .markdown-body li ul p {
+      margin-bottom: .5em; }
+    .section-page .markdown-body > p + ul {
       margin-top: -1em; }
     .section-page .markdown-body strong {
       background-color: #a3daff;
@@ -1127,3 +1130,10 @@ body > header .title-wrapper h1 {
     font-weight: 600;
     background: #f6f8fa;
     border-top: 0; }
+
+@media screen and (max-width: 800px) {
+  body > header {
+    font-size: 15px;
+    padding: 30px; }
+    body > header p {
+      font-size: 15px; } }

@@ -1,78 +1,58 @@
-Our society is designed to accommodate members with different levels of availability and skill. In this 
+Our society is designed to accommodate members with varying levels of availability and skill. We prefer
 
-Two main levels of leadership exist. The **senior board** is composed of the President, the Vice-President, the Social Chair and the Treasurer. The **board of directors** is composed of the directors in charge of each of our three teams: Partnerships, Community and Events.
+### Noobs
 
-Students within each of these groups is.
+New members of our society are "noobs". Their first year is marked by constant learning and overcoming of challenges, as they get to know our members and become acquainted with the way we work.
 
-#### Senior Board
+### Veterans
 
-The senior board consists of the President, the Vice-President, the Social Chair and the Treasurer of our society.
+After one year of active participation, noobs become veterans. As veterans, they are expected to
 
-##### President, Vice-President
+### Directors
 
-sdf
+**Veterans be tapped to become directors and join the board,** starting at the end of their second semester with us. Directors play a fundamental role of support to teams and individuals in our club. They oversee projects and give support to leads.
 
-##### Social Chair
+Not everyone is tapped as soon as they become veterans. The previous board may feel like the member still needs to gain more experience, in which case they can be deferred for a semester. That's totally OK.
 
-The social chair runs human resources for the society. The social chair is also responsible for overseeing the **recruiting process**.
+### Chairs
 
-##### Treasurer
+**After one semester in the board, directors can petition to take up chair roles.** Chairs are executive positions dedicated to advancing the club and shaping its culture.
 
-The treasurer is responsible for the resources.
+# Teams
 
-### Board of Directors
+## Team Leads
 
-The board of directors is composed of the members of the senior board as well as of the directors of each of our three teams (**Events**, **Community**, **Partnerships**). While each director must be assigned to a single team, each team can be assigned to multiple directors, ideally a pair. When teams have multiple directors, the work must be clearly divided between them. In this case each must have direct control over specific people, projects and metrics.
+Team leads are responsible for managing resources and pushing a team forward.
 
-Directors of different teams have different responsibilities, as worked out with the rest of the senior board.
+# Board
 
-#### Director of Events
+Our board is composed of our directors.
 
-#### Director of Community
+Our chairs are:
 
-#### Director of Partnerships
+#### Chairman
 
-* Recruiting shall not be delegated. It’s the job of the senior members.
+The main responsibility of the chairman is recruiting and
 
-* What goes on the website is the job of the senior members.
+#### Treasure chair
 
-* Projects have one owner. Expect them to change hands.
+#### Social chair
 
-## Teams
+The social chair
 
-Our society is. There is little compulsory.
+#### Culture chair
 
-* Events
+The culture chair runs human resources for the society. The culture chair is also responsible for overseeing the **recruiting process**.
 
-* Community
+## Tapping of directors
 
-* Partnerships
+Before the end of the semester.
 
-## Elections
+## Petition for Chairs
 
-Elections happen close to the end of each academic year, sometime in April.
+Rising seniors may not run for chair positions.
 
-* Junior students may not run for senior board.
-
-Any student who has been part of the society for over a semester. Any student who has been part of the society for over two semesters is eligi
-
-* Strongly suggested that senior board members don’t participate in other extracurricular, safe for work or research, which must also be taken into consideration, commitments for more than 5 hours per week.
-
-The senior board of each year is responsible for selecting the next senior board, during the time of general meetings.? BEFORE? AFTER?
-
-Must be a measure of:
+Chair is an extra role. Strongly suggested that chairs don't participate in other time consuming extracurriculars.
 
 * How much has contributed?
-Playbook?
-
 * Success in projects
-
-# Operations
-
-In this section we describe several processes
-
-Managing effective teams of college students in an extracurricular organization comes with challenges that are often.
-
-Effectively managing teams of college students
-
-Most of these are a consequence of the short length of the undegraduate years and the excessive booking.

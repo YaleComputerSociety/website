@@ -64,7 +64,7 @@ body > header {
 
 .table-contents {
   font-family: 'Roboto Mono', monospace;
-  font-size: 18px;
+  font-size: 20px;
 
   .header-item {
     font-size: 1.1em;
@@ -77,7 +77,6 @@ body > header {
   }
 
   ul {
-    margin-bottom: 2em;
     a {
       text-decoration: none;
       border-bottom: 2px solid rgba(0,0,0,.1);
@@ -86,7 +85,6 @@ body > header {
       border-bottom: 2px solid #444;
     }
   }
-
 }
 
 .section-page,
@@ -130,7 +128,14 @@ body > header {
     ul {
       margin-bottom: 2em;
     }
-    p + ul {
+    li ul {
+      margin-bottom: .5em;
+      margin-top: .5em;
+    }
+    li ul p {
+      margin-bottom: .5em;
+    }
+    & > p + ul {
       margin-top: -1em;
     }
     strong {
@@ -509,5 +514,19 @@ body > header {
     font-weight: 600;
     background: #f6f8fa;
     border-top: 0
+  }
+}
+
+
+@include media-query($on-laptop) {
+  $spacing-unit: 30px;
+
+  body > header {
+    font-size: 15px;
+    padding: $spacing-unit;
+
+    p {
+      font-size: 15px;
+    }
   }
 }

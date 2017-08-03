@@ -1,12 +1,14 @@
-If you were part of an extracurricular organization before, chances are that you have negative feelings about meetings. After all, club meetings, when done wrong, are a huge time sink that busy college students just can't afford. However, when done right, meetings are a powerful tool in coordinating a team and making progress.
+If you were part of an extracurricular organization before, chances are that you have mixed feelings about meetings. When done wrong, club meetings are a huge time sink that busy college students just can't afford. When done right, however, meetings are a powerful tool in coordinating a team and making progress.
 
-In our society, we have found that **meetings are one of the reasons why we are able to get things done despite everyone's busy schedules**. That is because **meetings enforce accountability and help us get work done**. For college students with busy schedules, physical meetings with fixed times are the best way to get everyone on the same page and communicate critical things.  Let's use an example to justify this point of view.
+In our club, we have found that **meetings are the main reason why we are able to get things done, despite our packed schedules and countless responsibilities**. That is because we use meetings to enforce accountability, drive teams to face their issues and make progress. Let's use an example to justify this viewpoint.
 
 ## Why meetings matter
 
 You might have seen this before. Image a group of college students who get together to work on a project: hosting a talk with a prestigious Yale alumnus working in tech. Knowing that they have a lot to do (ie. invite the speaker, book a venue, provide food, advertise the talk etc) but that none of the work requires them to physically meet, they decide to use just a group chat to coordinate. "No meetings", they say. After all, **being high energy and ambitious, the members of the group like to crowd their schedules with other clubs and side-projects**, so a remote project gives them the most flexibility, allowing them to work whenever they can.
 
 Pretty soon they will start running into problems such as poor communication and lack of progress. To begin, **group chats are great tools for clubs but usually don't replace actual meetings**, physical or virtual. That is because when **talking through a chat we can't guarantee that everyone will pay attention**. (Some services, like Slack, try to fix this by adding special types of notifications and the ability to pin messages. Even then, it is still up to users to make sure they read the messages.) On top of that, delegating and following up on assignments will be equally hard, as it is easier to be ignored over chat or email. By the time they realize that weekly meetings are necessary, everybody's agenda is so packed with other responsibilities that conflicts and delays are inevitable.
+
+For college students with busy schedules, physical meetings with fixed times are the best way to get everyone on the same page and communicate critical things.
 
 **When school work and other responsibilities start to mount, the first thing students delay is work without a strict deadline**, like the talk event in this example. So by not setting fixed meetings times when they are compelled by peer pressure to show their progress, they are risking the success of their project.
 

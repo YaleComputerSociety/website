@@ -1,12 +1,16 @@
 {
   "sections": [
     {
-      "title": "What we are",
+      "title": "Who we are",
       "anchor": "what-we-are",
       "children": [
         {
           "title": "Intro to YCS",
           "file": "playbook/About-Us_Intro-to-YCS.md"
+        },
+        {
+          "title": "Our Values",
+          "file": "playbook/About-Us_Values.md"
         },
         {
           "title": "Tracks And Teams",
