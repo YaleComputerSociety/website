@@ -8,7 +8,7 @@ We take every interaction as an opportunity for personal and professional growth
 
 ## Leadership is ownership
 
-We are leaders and we own up to our responsibilities. We don't bail out on the commitments we make to each other. As leaders, we also **own the outcome of our team**. We step up and voice our concerns when we see problems. **We step up because we care.** We offer to help others with problems they are facing.
+We are leaders and we own up to our responsibilities. We don't bail out on the commitments we make to each other. We also **own the outcome of our team**. We step up and voice our concerns when we see problems. **We step up because we care.** We offer to help others with problems they are facing.
 
 ---
 

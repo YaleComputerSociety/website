@@ -278,6 +278,8 @@ body > header {
   padding: 70px 60px;
   font-family: 'Roboto';
   font-size: 25px; }
+  body > header > h1:last-child, body > header > h2:last-child, body > header > h3:last-child {
+    margin-bottom: 0; }
 
 body > section {
   padding: 70px 60px 60px;
