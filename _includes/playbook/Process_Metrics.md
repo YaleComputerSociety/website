@@ -1,30 +1,9 @@
 "How many people came to the last event? How many likes did our Facebook post get? What is the average number of visualizations of the newsletter?" These are some of the questions that we ask ourselves on a weekly basis as we try to understand how our teams are doing and how they can improve. We call the answers to these questions our **"metrics" – numbers that help us assess the performance and impact of the work we do**.
 
-Let's take a look at how we use metrics in a couple of our projects.
+> ### `Addendum`  
+> Read [More about metrics](https://medium.com/@felipap/more-about-metrics-5afa1151c7df).
 
-### Metrics measure a subjective goal
-
-Our newsletter team is responsible for sending out weekly emails that inform and excite students about upcoming events and opportunities. Here are some questions they ask themselves ever so often:
-
-> "In what day of the week should we send the newsletter?"  
-> "Do we need to improve the current design of emails?"  
-> "Should we change the email subject lines to make them clearer?"  
-
-**In making decisions like these, we must try to frame what we hope to accomplish in terms of relevant metrics.** In the case of the newsletter, we want to increase the number of subscribers, the rate of visualizations per email, the average clicks that a certain link gets etc. **That is because we believe that these indicators are correlated with our underlying goal**, which, as said before, is to inform and excite students about upcoming events and opportunities. We use these metrics before it is impossible to measure directly how much we inform and excite students. So if a new format of subject lines increases the number of clicks, it tells us that engagement has probably gone up, so the newsletter team should probably use it. If a new design does the opposite, engagement has probably decreased; the team might want to roll it back.
-
-The email tool used by the newsletter team (ie. MailChimp) should take care of providing the most important statistics for them. But tracking success is not always that easy. Some teams might need to sweat a bit to collect their data.
-
-### Metrics can be tricky
-
-**Measuring is not always straightforward.** It sometimes requires special effort of teams to track attendance, survey students, write down page stats from Facebook etc. Take, for example, the team responsible for hosting our study sessions. What metrics can they use to measure the success of their events? An obvious place to start would be to count the number of attendees – say, by having a volunteer count the number of students who walk into the room. This metric should certainly correlate with the success of our event, right? Yes, but not always! What happens, for instance, when during a particularly underfunded season our study session team is not able to provide food for the participants? We might find that a lot of the people show up to find no cookies and... tip-toe out of the room less than five minutes later. In this case, the number of attendees in itself no longer paints an accurate picture of how the event went, does it?
-
-Here you might be thinking that what we actually want to measure is the total student-hours spent inside that room. _But who's going to volunteer to measure that?!_ What seems, in theory, like a better metric might be impractical to measure. **If something is too hard to measure, it's of no use to us.**
-
-There is no silver lining here: measuring is very tricky sometimes. **It is up to the individual teams to define what metrics they will use to define success and, if necessary, change to better suit the situations.**
-
-Every now and then, the newsletter team will meet to reevaluate the metrics they use and, in terms those metrics, determine what they want to achieve in what period of time. Let's see how this process works.
-
-# Metrics at YCS
+### Spreadsheet
 
 The spreadsheet containing all of our metrics [lives in our shared folder and is available to all of our members](https://docs.google.com/spreadsheets/d/1BLYrQrd-UTvufIzzDQ3Dmyy7skhIQh9CD8W_69eHE_M/edit). Each team has its own tab where they fill in, week after week, their metrics.
 

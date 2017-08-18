@@ -4,11 +4,11 @@ We are here because we care about our community and we want to see it prosper. T
 
 ## Always be learning
 
-We see each new day as an opportunity for personal and professional growth. We explore, we question, and we listen. We welcome feedback from our peers and we offer them our feedback in goodwill.
+We see each new day as an opportunity for personal and professional growth. We explore, we question, and we listen. We welcome feedback from our peers with goodwill, just as we offer them our own.
 
 ## Leadership is ownership
 
-As leaders, we own the outcome of our projects, good or bad. We voice our concerns whenever we see problems and we step up to fix things. We know to ask others for help when we need it and we know to help others when asked.
+As leaders, we own the outcome of our projects, both the good and the bad. We voice our concerns whenever we see problems and we step up to fix things. We know to ask others for help when we need it and we know to help others when asked.
 
 ---
 

@@ -1,10 +1,10 @@
-Our society relies on a handful of tools in order to work effectively.
+We rely on a few tools in order to work effectively.
 
 ### Planning and Executing
 
-Our [Trello board](https://trello.com/b/npYqD3Ha/ycs-spring-17) is the source of truth for our organization. We use cards inside our board to distribute work and keep track of everyone's tasks and deadlines.
+Our `Trello board` is the source of truth for our organization. We use cards inside our board to distribute work and keep track of everyone's tasks and deadlines. We can also use comments in to keep track of meeting minutes.
 
-> Every member should have a Trello account associated to our board and check it regularly.
+> `SHOULD` &nbsp; Every member should have access to our board and check it regularly.
 
 ### Communication
 
@@ -14,7 +14,7 @@ We use [Slack](http://slack.com) in order to communicate with one with one anoth
 
 Good communication a crucial quality for any organization. For this reason, it is very important that every one of our members be active on Slack. We strongly recommend installing in your phones and keeping it open in your browser.
 
-**Note about Facebook Messenger** 
+**Note about Facebook Messenger**
 Using Messenger for ephemeral communications with team members is OK. As a rule of thumb, Messenger groups shouldn't last more than a couple of days. Once that happens, please consider transferring that group to Slack.
 
 #### YCS-IN mailing list
