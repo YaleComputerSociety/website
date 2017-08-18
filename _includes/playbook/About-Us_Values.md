@@ -1,6 +1,6 @@
 ## Focus on impact*
 
-We are here because we care about our community and we want to see it prosper. The opportunity to serve it inspires us to be creative and work hard. We make decisions so as to maximize the social value that we deliver to the world.
+We are here because we care about our community and we want to see it prosper. The opportunity to serve it inspires us to be creative and work hard. We try to make decisions that maximize the social value that we deliver to the world.
 
 ## Always be learning
 
