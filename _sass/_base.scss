@@ -22,11 +22,11 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-$ycsorange: #ff806b;
+$ycsorange: #ff7a6f;
 
 
 @mixin media-query($device) {
-  @media screen and (max-width: $device) {
+  @media screen and (min-width: $device) {
     @content;
   }
 }
@@ -489,11 +489,11 @@ body > section {
     a {
       text-decoration: none !important;
       color: #000;
-      border-bottom: 1px solid transparent;
-      @include transition(.2s);
+      border-bottom: 2px solid transparent;
+      @include transition(100ms);
 
       &:hover {
-        border-bottom: 1px solid #CCC;
+        border-bottom: 2px solid #EEE;
       }
 
       &:visited {
@@ -813,7 +813,16 @@ body > footer {
   }
 }
 
-@include media-query($on-laptop) {
+@media screen and (min-width: $on-laptop) {
+  body > section {
+    & > header mark {
+      margin-left: -35px;
+      padding-right: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: $on-laptop) {
   $spacing-unit: 30px;
 
   body > header {
@@ -824,6 +833,7 @@ body > footer {
       font-size: 15px;
     }
   }
+
 
   body > .notice {
     padding: $spacing-unit/2 $spacing-unit/2;

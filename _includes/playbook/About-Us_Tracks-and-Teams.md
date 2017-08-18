@@ -1,30 +1,16 @@
-This section describes how we organize our work, dividing people by tracks (ie. what they specialize in) and putting them in teams (ie. groups that work on a certain project).
 
-### Firm example
+We organize the work we do in three categories, which we call "tracks". The tasks related to logistics of organizing events (eg. finding a space, providing food) belong to the `events track`. The ones related to talking to students, teachers and staff (eg. writing our newsletter, making suggestions to the department) are in the `community track`. Tasks related to talking to third-parties (eg. inviting speakers or bringing recruiters to campus) belong to the `partnerships track`. Each of our members specializes in a track, according to our skills and aspirations, and that track determines our responsibilities.
 
-You may think of our Computer Society as a not-for-profit company. Like firms in a market, we have a product – the several projects we undertake throughout the year – that we promote and "sell" to our different customers – the Computer Science majors, our school administration, tech recruiters etc. Unlike firms, however, all the work we do is _pro bono_: we don't charge students for going to our events, we don't have a payroll and our retirement fund is empty. And we don't have office parties [that suck](https://youtu.be/p6Eaz-1_3iA?t=39s).
+Our `teams` are groups of members working on a certain project. Each team can have members from multiple tracks, depending on their needs. The team responsible for recruiting events probably needs partnerships people more than anything else. Our newsletter team, however, probably doesn't need events or partnerships work.
 
+We can thus distribute our members in a `matrix of tracks and teams`.
 
+|Teams \ Tracks| Events | Community | Partnerships|
+| ------------- |:-:|:-:|:-:|
+| Study sessions| 4 | 2 | 0 |
+| Recruiting    | 2 | 1 | 2 |
+| Newsletters   | 0 | 2 | 0 |
 
-This analogy, however fragile, can teach us a lot about .
+Each team is assigned to one or two `team leads`: members responsible for coordinating the work and pushing the team towards their goal. Every week, leads attend the board meeting to report the latest [tasks](#trello) and [metrics](#metrics).
 
-The challenges of working for student organizations are many.
-
-### Guidelines
-
-- No ambiguous delegation. We don't have co-presidents, co-managers (but we do). For every project, there is a person solely responsible for it.
-
-###
-
-Being a student organization dedicated to several simultaneous projects presents comparable challenges when compared to single-purpouse.
-
-- We operate on a per-semester schedule.
-
-
-# Teams
-
-# Tracks
-
-In order to work all of the projects we set out, our organization requires a lot of.
-
-By entering our organization, members have to pick a track to specialize in, which they later change if they want.
+The matrix of tracks and teams is constantly evolving, as our goals and resources change. At the end of each semester, teams are dissolved and the members come together for a [postmortem](#postmortem). At the beginning of each semester, the board can decide to continue the team – possibly with different members, goals and leads.

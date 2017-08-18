@@ -117,7 +117,7 @@ pre {
   margin-left: auto;
   padding-right: 30px;
   padding-left: 30px; }
-  @media screen and (max-width: 800px) {
+  @media screen and (min-width: 800px) {
     .wrapper {
       max-width: -webkit-calc(800px - (30px));
       max-width: calc(800px - (30px));
@@ -473,14 +473,14 @@ body > section {
     body > section header a, body > section footer a {
       text-decoration: none !important;
       color: #000;
-      border-bottom: 1px solid transparent;
-      -webkit-transition: 0.2s;
-      -moz-transition: 0.2s;
-      -ms-transition: 0.2s;
-      -o-transition: 0.2s;
-      transition: 0.2s; }
+      border-bottom: 2px solid transparent;
+      -webkit-transition: 100ms;
+      -moz-transition: 100ms;
+      -ms-transition: 100ms;
+      -o-transition: 100ms;
+      transition: 100ms; }
       body > section header a:hover, body > section footer a:hover {
-        border-bottom: 1px solid #CCC; }
+        border-bottom: 2px solid #EEE; }
       body > section header a:visited, body > section footer a:visited {
         color: #000; }
     body > section header h1:hover mark:before, body > section footer h1:hover mark:before {
@@ -693,6 +693,10 @@ body > footer {
     color: #444;
     line-height: 1.8; }
 
+@media screen and (min-width: 800px) {
+  body > section > header mark {
+    margin-left: -35px;
+    padding-right: 5px; } }
 @media screen and (max-width: 800px) {
   body > header {
     font-size: 15px;

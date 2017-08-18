@@ -118,7 +118,7 @@ pre {
   margin-left: auto;
   padding-right: 30px;
   padding-left: 30px; }
-  @media screen and (max-width: 800px) {
+  @media screen and (min-width: 800px) {
     .wrapper {
       max-width: -webkit-calc(800px - (30px));
       max-width: calc(800px - (30px));
@@ -474,14 +474,14 @@ body > section {
     body > section header a, body > section footer a {
       text-decoration: none !important;
       color: #000;
-      border-bottom: 1px solid transparent;
-      -webkit-transition: 0.2s;
-      -moz-transition: 0.2s;
-      -ms-transition: 0.2s;
-      -o-transition: 0.2s;
-      transition: 0.2s; }
+      border-bottom: 2px solid transparent;
+      -webkit-transition: 100ms;
+      -moz-transition: 100ms;
+      -ms-transition: 100ms;
+      -o-transition: 100ms;
+      transition: 100ms; }
       body > section header a:hover, body > section footer a:hover {
-        border-bottom: 1px solid #CCC; }
+        border-bottom: 2px solid #EEE; }
       body > section header a:visited, body > section footer a:visited {
         color: #000; }
     body > section header h1:hover mark:before, body > section footer h1:hover mark:before {
@@ -694,6 +694,10 @@ body > footer {
     color: #444;
     line-height: 1.8; }
 
+@media screen and (min-width: 800px) {
+  body > section > header mark {
+    margin-left: -35px;
+    padding-right: 5px; } }
 @media screen and (max-width: 800px) {
   body > header {
     font-size: 15px;
@@ -759,115 +763,133 @@ mark {
       color: #AAA; }
 
 body > header .title-wrapper h1 {
-  font-size: 50px; }
+  font-size: 50px;
+  line-height: 1.5; }
 
-.playbook-intro {
-  background: #ff806b;
+.PlaybookIntro {
+  background: #ff7a6f;
   color: white; }
-  .playbook-intro h1 {
-    font-size: 25px; }
-  .playbook-intro p {
+  .PlaybookIntro h1 {
+    font-size: 25px;
+    color: white; }
+  .PlaybookIntro p {
     font-weight: 300;
     max-width: 1000px;
     font-size: 20px;
-    line-height: 1.8; }
-  .playbook-intro *, .playbook-intro h1, .playbook-intro h2, .playbook-intro h3, .playbook-intro h4, .playbook-intro h5, .playbook-intro h6, .playbook-intro p {
+    line-height: 1.8;
     color: white; }
-  .playbook-intro a {
+  .PlaybookIntro a {
     color: inherit;
     text-decoration: none;
     font-weight: 600;
     border-bottom: 2px solid rgba(255, 255, 255, 0.5); }
-  .playbook-intro a:hover {
-    border-bottom: 2px solid #FFF; }
+    .PlaybookIntro a:hover {
+      border-bottom: 2px solid #FFF; }
 
-.section-header {
-  background-color: #EEE; }
-  .section-header h1 {
-    font-size: 25px;
-    font-family: 'Space Mono', 'Roboto Mono', sans-serif;
-    font-weight: 800;
-    text-transform: uppercase; }
-  .section-header a {
-    color: #222;
-    text-decoration: none; }
+.TableOfContents {
+  font-size: 18px; }
+  .TableOfContents ul.TableOfContents_Sections {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .TableOfContents .TableOfContents_Section {
+    margin-bottom: 2em; }
+    .TableOfContents .TableOfContents_Section > h1 {
+      color: #444;
+      font-family: "Roboto Mono", monospace;
+      font-size: 1.1em;
+      margin-bottom: 1em; }
+    .TableOfContents .TableOfContents_Section ul li {
+      font-weight: 500;
+      font-family: "Helvetica Nesue", "Roboto", monospace;
+      margin-bottom: 1em; }
+    .TableOfContents .TableOfContents_Section ul {
+      margin-bottom: 20px; }
+      .TableOfContents .TableOfContents_Section ul a {
+        text-decoration: none;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1); }
+      .TableOfContents .TableOfContents_Section ul a:hover {
+        border-bottom: 2px solid #444; }
 
-.section-page:nth-child(2n) {
-  background-color: #F7F7F7; }
-
-.table-contents {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 20px; }
-  .table-contents .header-item {
-    font-size: 1.1em; }
-  .table-contents .header-item, .table-contents ul li {
-    color: #444;
-    margin-bottom: 1em;
-    font-weight: 500; }
-  .table-contents ul a {
-    text-decoration: none;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.1); }
-  .table-contents ul a:hover {
-    border-bottom: 2px solid #444; }
-
-.section-page > header,
-.table-contents > header {
-  font-family: 'Space Mono', monospace;
+body > section > header {
+  font-family: "Space Mono", monospace;
   margin-bottom: 1em;
   font-weight: 600;
   font-size: 35px; }
-  .section-page > header a,
-  .table-contents > header a {
+  body > section > header a {
     color: #222; }
-  .section-page > header mark,
-  .table-contents > header mark {
-    margin-left: -35px;
-    padding-right: 5px; }
 
-.section-page {
-  border: none; }
-  .section-page .markdown-body {
-    max-width: 800px; }
-    .section-page .markdown-body p, .section-page .markdown-body li {
-      font-size: 17px;
-      margin-bottom: 20px; }
-    .section-page .markdown-body p, .section-page .markdown-body blockquote, .section-page .markdown-body ul, .section-page .markdown-body ol, .section-page .markdown-body dl, .section-page .markdown-body table, .section-page .markdown-body pre {
-      font-weight: 400;
-      line-height: 2;
-      margin-top: 0;
-      margin-bottom: 1.4em;
-      color: #222; }
-    .section-page .markdown-body li > p {
-      margin-bottom: 1em; }
-    .section-page .markdown-body ul {
-      margin-bottom: 2em; }
-    .section-page .markdown-body li ul {
-      margin-bottom: .5em;
-      margin-top: .5em; }
-    .section-page .markdown-body li ul p {
-      margin-bottom: .5em; }
-    .section-page .markdown-body > p + ul {
-      margin-top: -1em; }
-    .section-page .markdown-body strong {
-      background-color: #a3daff;
-      font-weight: 400;
-      padding: 0 2px; }
-    .section-page .markdown-body strong a, .section-page .markdown-body a strong {
-      background-color: #FDD692;
-      font-weight: 700;
-      color: #08c;
-      border-bottom: 2px solid #888;
-      text-decoration: none; }
-    .section-page .markdown-body a {
-      text-decoration: none;
-      border-bottom: 2px solid rgba(0, 124, 200, 0.2); }
-    .section-page .markdown-body a:visited strong, .section-page .markdown-body a:visited {
-      color: #08c; }
-    .section-page .markdown-body a:hover {
+.PlaybookSectionHeader {
+  background-color: #EEE; }
+  .PlaybookSectionHeader h1 {
+    font-size: 35px;
+    font-family: "Space Mono", monospace;
+    font-weight: 800;
+    text-transform: uppercase; }
+  .PlaybookSectionHeader a {
+    color: #222;
+    text-decoration: none; }
+
+.PlaybookPage:nth-child(2n) {
+  background-color: #F7F7F7; }
+
+.PlaybookPage > .markdown-body {
+  max-width: 800px; }
+  .PlaybookPage > .markdown-body p, .PlaybookPage > .markdown-body li {
+    font-size: 18px;
+    margin-bottom: 20px; }
+  .PlaybookPage > .markdown-body table {
+    font-family: "Roboto Mono", monospace;
+    font-size: 16px; }
+  .PlaybookPage > .markdown-body p, .PlaybookPage > .markdown-body blockquote, .PlaybookPage > .markdown-body ul, .PlaybookPage > .markdown-body ol, .PlaybookPage > .markdown-body dl, .PlaybookPage > .markdown-body table, .PlaybookPage > .markdown-body pre {
+    font-weight: 400;
+    line-height: 2.3;
+    margin-top: 0;
+    margin-bottom: 1em;
+    color: #222; }
+  .PlaybookPage > .markdown-body li > p {
+    margin-bottom: 1em; }
+  .PlaybookPage > .markdown-body ul {
+    margin-bottom: 2em; }
+  .PlaybookPage > .markdown-body li ul {
+    margin-bottom: .5em;
+    margin-top: .5em; }
+  .PlaybookPage > .markdown-body li ul p {
+    margin-bottom: .5em; }
+  .PlaybookPage > .markdown-body > p + ul {
+    margin-top: -1em; }
+  .PlaybookPage > .markdown-body strong {
+    background-color: rgba(163, 218, 255, 0.8);
+    font-weight: 400;
+    padding: 0 2px; }
+  .PlaybookPage > .markdown-body strong a, .PlaybookPage > .markdown-body a strong {
+    font-weight: 800;
+    color: #444;
+    padding: 0 4px;
+    border-bottom: 2px solid #444;
+    text-decoration: none; }
+  .PlaybookPage > .markdown-body code {
+    background: #ff7a6f;
+    color: white;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
+  .PlaybookPage > .markdown-body em {
+    font-weight: bolder;
+    font-style: normal; }
+  .PlaybookPage > .markdown-body a {
+    -webkit-transition: 100ms;
+    -moz-transition: 100ms;
+    -ms-transition: 100ms;
+    -o-transition: 100ms;
+    transition: 100ms;
+    border-bottom: 2px solid rgba(0, 124, 200, 0.2);
+    color: #08c;
+    text-decoration: none; }
+    .PlaybookPage > .markdown-body a:hover {
       border-bottom: 2px solid #08c; }
 
 .markdown-body {
-  font-family: 'Helvetica Nesue', 'Roboto', monospace;
+  font-family: "Helvetica Nesue", "Roboto", monospace;
   font-size: 13px;
   line-height: 2;
   word-wrap: break-word; }
@@ -921,7 +943,8 @@ body > header .title-wrapper h1 {
     font-size: 0.85em;
     color: #6a737d; }
   .markdown-body ul, .markdown-body ol {
-    padding-left: 2em; }
+    padding-top: 1em;
+    padding-left: 0em; }
     .markdown-body ul.no-list, .markdown-body ol.no-list {
       padding: 0;
       list-style-type: none; }
@@ -1131,7 +1154,7 @@ body > header .title-wrapper h1 {
     background: #f6f8fa;
     border-top: 0; }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 800px) {
   body > header {
     font-size: 15px;
     padding: 30px; }

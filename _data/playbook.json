@@ -19,6 +19,10 @@
         {
           "title": "Membership",
           "file": "playbook/About-Us_Membership.md"
+        },
+        {
+          "title": "Elections",
+          "file": "playbook/About-Us_Elections.md"
         }
       ]
     },
