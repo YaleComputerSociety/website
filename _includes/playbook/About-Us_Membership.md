@@ -5,9 +5,9 @@ By the end of their second semester, noobs are vetted and become our official me
 
 Directors can become `chairs` after one semester in the board. Chairs are a handful of executive positions dedicated to advancing our society and shaping its culture.
 
-- The `Chairman` is .
+- The `Chair person` is .
 
-- The `Vice chairman` is .
+- The `Vice chair person` is .
 
 - The `Culture` chair is responsible for our social events.
 

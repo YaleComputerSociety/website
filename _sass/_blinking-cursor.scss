@@ -1,0 +1,23 @@
+
+@-webkit-keyframes blink {
+  from, to { opacity: 1 }
+  50% { opacity: 0 }
+}
+
+@-moz-keyframes blink {
+  from, to { opacity: 1 }
+  50% { opacity: 0 }
+}
+
+@mixin blinking-cursor() {
+  width: 40px;
+  margin-left: 10px;
+  display: inline-block;
+  height: .9em;
+  background: #FBFFB9;
+  background: #F6F6F6;
+  vertical-align: bottom;
+
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+}

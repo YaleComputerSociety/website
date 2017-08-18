@@ -8,6 +8,10 @@
   "markdown"
 ;
 
+$fontTitle1: 'Space Mono', monospace;
+$fontTitle2: 'Roboto Mono', monospace;
+$fontText: 'Helvetica Nesue', 'Roboto', monospace; // -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
 body > header {
   .title-wrapper {
     h1 {
@@ -45,10 +49,6 @@ body > header {
     }
   }
 }
-
-$fontTitle1: 'Space Mono', monospace;
-$fontTitle2: 'Roboto Mono', monospace;
-$fontText: 'Helvetica Nesue', 'Roboto', monospace; // -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
 .TableOfContents {
   font-size: 18px;
@@ -200,7 +200,7 @@ body > section {
   @include markdown-body();
 }
 
-@include media-query($on-laptop) {
+@media screen and (min-width: $on-laptop) {
   $spacing-unit: 30px;
 
   body > header {

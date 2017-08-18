@@ -34,36 +34,45 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400|Roboto+Mono:300,400|Space+Mono:400,700" rel="stylesheet">
 
 <body>
-<!--
-<div class="notice info">
-<div class="content">
-	<a href="/prize">
-  Judges for the Grace Hopper Prize announced: Stephen Slade, Holly Rushmeier, and Jakub Szefer.
-	</a>
-</div>
+
+<!-- <section class="Notice abc">
+	<div class="content">
+		<a href="#">Dec 12th 6-9pm at CEID: <strong>YCS study break for finals.</strong> See on Facebook.</a>
+	</div>
+</section>
+
+<div class="Notice">
+	<div class="content">
+		<a href="/prize">
+	  Judges for the Grace Hopper Prize announced: Stephen Slade, Holly Rushmeier, and Jakub Szefer.
+		</a>
+	</div>
 </div> -->
 
-<header class="main">
-	<div class="title-wrapper">
-		<h1><a href="/" id="ytitle"><strong>Yale<br /> Computer<br />Society</strong></a><span class="cursor"></span></h1>
-		<h2>Students promoting tech &amp; entrepreneurship at Yale University</h2>
-	</div>
+<header>
+	<h1>
+		<a href="/" id="ytitle">
+			<strong>Yale<br /> Computer<br />Society</strong>
+		</a>
+		<span class="cursor"></span>
+	</h1>
+	<h2>
+		Students promoting tech &amp; entrepreneurship at Yale University
+	</h2>
 
-	<div class="mailchimp-form" id="mc_embed_signup"> <!-- Begin MailChimp Signup Form -->
+	<div class="MailchimpForm" id="mc_embed_signup">
+		<!-- Begin MailChimp Signup Form -->
 		<form action="//yalecompsociety.us14.list-manage.com/subscribe/post?u=842f70190aeaa348007d7ccfb&amp;id=954e9ebd0c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-
-			<div aria-hidden="true" class="hidden">
+			<div aria-hidden="true" class="hidden" style="position: absolute; left: -5000px;">
 				<input type="text" name="b_842f70190aeaa348007d7ccfb_954e9ebd0c" tabindex="-1" value="">
 			</div>
 
 			<p>
-
-			<input type="email" value="" name="EMAIL" class="required email" placeholder="Email" id="mce-EMAIL">
-
-			<input type="submit" value="Join Our Newsletter" name="subscribe" id="mc-embedded-subscribe" href="javascript:showMLInstructions()" class="btn ml-button"></input>
-
-			<span class="and">
-				and learn about <strong>events</strong> and <strong>opportunities</strong></span>
+				<input type="email" value="" name="EMAIL" class="required email" placeholder="Email" id="mce-EMAIL">
+				<input type="submit" value="Join Our Newsletter" name="subscribe" id="mc-embedded-subscribe" href="javascript:showMLInstructions()" class="button"></input>
+				<span class="and">
+					and learn about <strong>events</strong> and <strong>opportunities</strong>
+				</span>
 			</p>
 
 			<div id="mce-responses" class="clear">
@@ -71,6 +80,7 @@
 				<div class="response" id="mce-success-response" style="display:none"></div>
 			</div>
 		</form>
+		<!-- End MailChimp Signup Form -->
 	</div>
 </header>
 
@@ -91,8 +101,12 @@
 
   <ul class="events">
 
-		<div class="date">
-			<h1>April</h1>
+		<div class="year">
+			2017
+		</div>
+
+		<div class="month">
+			April
 		</div>
 
 		<div class="event">
@@ -170,8 +184,8 @@
 			</div>
 		</div>
 
-		<div class="date">
-			<h1>March</h1>
+		<div class="month">
+			March
 		</div>
 
 		<div class="event">
@@ -219,8 +233,8 @@
 			</div>
 		</div>
 
-		<div class="date">
-			<h1>February</h1>
+		<div class="month">
+			February
 		</div>
 
 		<div class="event">
@@ -254,11 +268,11 @@
 		</div>
 
 		<div class="year">
-			<h1>2016</h1>
+			2016
 		</div>
 
-		<div class="date">
-			<h1>December</h1>
+		<div class="month">
+			December
 		</div>
 
 		<div class="event">
@@ -291,8 +305,8 @@
 			</div>
 		</div>
 
-		<div class="date">
-			<h1>November</h1>
+		<div class="month">
+			November
 		</div>
 
 		<div class="event">
@@ -310,8 +324,8 @@
 			</div>
 		</div>
 
-		<div class="date">
-			<h1>September</h1>
+		<div class="month">
+			September
 		</div>
 		<div class="event">
 			<div class="image">
@@ -346,7 +360,7 @@
 </section>
 
 
-<section class="notice news left">
+<section class="Notice news left">
 <div class="content">
 	<strong>Join our weekly dinners.</strong> Wednesdays 6pm at Jonathan Edwards Dining Hall.
 </div>
@@ -421,7 +435,7 @@
 		<h2>We are a diverse and excited group of students working hard to make our projects come true. <a href="javascript:showMLInstructions()">Join us.</a></h2>
 	</header>
 
-	<ul class="people" id="staff-list">
+	<ul class="PeopleList" id="staff-list">
 		 
 		<div class="member" onClick="openMember('felipe-pires')">
 			<div class="picture">
@@ -665,7 +679,7 @@
 		
 	</ul>
 
-	<ul class="people" id="staff-list">
+	<ul class="PeopleList" id="staff-list">
 		 
 		<div class="member" onClick="openMember('lee.danilek')">
 			<div class="picture">
@@ -705,7 +719,7 @@
 </section>
 
 <!--
-<section class="notice abc">
+<section class="Notice abc">
 <div class="content">
 	<a href="#">Dec 12th 6-9pm at CEID: <strong>YCS study break for finals.</strong> See on Facebook.</a>
 </div>
@@ -757,69 +771,6 @@ $.fn.shuffleChildren = function() {
 };
 
 $("#staff-list.shuffle").shuffleChildren();
-
-</script>
-
-<script>
-$(function(){
-	var text = "Yale,Computer,Society";
-	var i = 0;
-	// $("#ytitle").html("");
-	// (function next() {
-	// 	var t = Math.random()*100+50, c = text[i];
-	// 	if (c == ",") {
-	// 		c = "<br />";
-	// 		t = 300;
-	// 	};
-	// 	console.log("next", c, i)
-	// 	$("#ytitle").html($("#ytitle").html()+c);
-	// 	i++;
-	// 	if (text.length > i) {
-	// 		setTimeout(next, t);
-	// 	}
-	// })();
-});
-</script>
-
-<div class="page-popover" id="ml-popover">
-<div class="container">
-  <div class="close-btn" onClick="closePopover()"></div>
-
-  <div class="row">
-    <div class="col-md-offset-2 col-md-8 col-xs-12"
-      <h2>Join YCS</h2>
-      <p>
-      	If you are interested in the work we do and would like to help us do more, <strong>you should consider joining our team</strong>. You can either:
-
-      	<ul>
-      	<li>come to our weekly dinners (JE dining hall, Wednesdays at 6pm) and see what we're up to, or</li><li>send a message to <a href="https://www.facebook.com/felipap">Felipe Pires</a> saying you're interested in helping out.</li>
-      	</ul>
-      </p>
-      <p>
-      Looking forward to hearing from you soon.
-      </p>
-    </div>
-  </div>
-</div>
-</div>
-
-<script>
-
-var _pastScrolled;
-
-function showMLInstructions() {
-	window.open("http://bit.ly/joinycs17s");
-	return;
-  $("#ml-popover").fadeIn('slow');
-  $("section").fadeOut('slow');
-  _pastScrolled = $("body").scrollTop();
-}
-
-function closePopover() {
-  $("section").show();
-  $('#ml-popover').fadeOut();
-  $("body").scrollTop(_pastScrolled);
-}
 
 </script>
 

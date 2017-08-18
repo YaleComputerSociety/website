@@ -1,103 +1,33 @@
-
-// Default variables
-$base-font-family: "Roboto", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
-$ycsorange: #ff7a6f;
-
-
-@mixin media-query($device) {
-  @media screen and (min-width: $device) {
-    @content;
-  }
-}
-
-@import 'support';
-@import 'reset';
-
-$blue: #4b8bcc; // #426bba;
-$color-tag: #F3753A; // #4A9BFF;
-
-
-.inline {
-    & > * { display: inline-block; }
-}
-
-.close-btn {
-  cursor: pointer;
-  vertical-align: middle;
-  text-align: center;
-
-  &:after {
-    display: inline-block;
-    content: "\00d7"; /* This will render the 'X' */
-  }
-
-  &:hover {
-    color: #000;
-  }
-}
-
-.container {
-  max-width: 960px;
-}
-
-#ml-popover {
-  p {
-    line-height: 2;
-  }
-  li {
-    line-height: 2;
-  }
-}
+@import "variables", "support", "reset", "notice";
 
 .button {
+  // quick reset
+  &:active {
+    box-shadow: none;
+  }
   background: transparent;
-
-  border: 3px solid #EEE;
-  line-height: 2.7em;
-  font-size: .95em;
-  padding: 0 12px;
-  @include transition(.4s);
-  outline: none !important;
   box-shadow: none !important;
-
-  z-index: 10;
-
-  font-family: 'Roboto';
-  font-weight: bold;
-
-  text-align: center;
-  border-radius: 0;
-  color: #444;
-  text-transform: uppercase;
-  padding: 0 10px;
-  border: 3px solid #EEE;
-  margin-right: 6px;
   cursor: pointer;
+  outline: none !important;
+  // actual look
+  @include transition(.4s);
+  color: #444;
+  border-radius: 0;
+  border: 3px solid #EEE;
+  font-family: 'Roboto';
+  font-size: 0.95em;
+  font-weight: bold;
   letter-spacing: 1px;
+  line-height: 2.7em;
+  margin-right: 6px;
+  padding: 0 10px;
+  text-align: center;
   text-decoration: none !important;
+  text-transform: uppercase;
+  vertical-align: middle;
 
-  &:hover, &:focus {
+  &:focus,
+  &:hover {
     border-color: #a3daff;
   }
 
@@ -108,366 +38,47 @@ $color-tag: #F3753A; // #4A9BFF;
       color: white;
     }
 
-    &:hover, &:focus {
+    &:focus,
+    &:hover {
       border-color: white;
     }
-
-  }
-
-
-  &:active {
-    box-shadow: none;
   }
 }
 
-
-body > header {
-  position: relative;
-  // color: white;
-  padding: 70px 60px;
-  font-family: "Roboto";
-  font-size: 25px;
-
-  .title-wrapper {
-    color: #222;
-    h1 {
-      font-size: 3.2em;
-      font-family: 'Space Mono', monospace;
-      // font-weight: bolder;
-      margin-bottom: 30px;
-
-      a {
-        text-decoration: none;
-        &:hover {
-          color: #F68657;
-          color: #000;
-          @include transition(.1s);
-        }
-      }
-    }
-
-    h2 {
-      font-size: .9em;
-      line-height: 1.5;
-      margin-bottom: 30px;
-      font-family: 'Space Mono', monospace;
-    }
-
-    a {
-      text-decoration: underline;
-      color: inherit;
-    }
-  }
-}
-
-header .mailchimp-form {
+.MailchimpForm {
   font-size: 18px;
 
   .and {
     display: inline-block;
-  }
-
-  input.email, .ml-button, .and {
-    vertical-align: middle;
-    margin-bottom: 10px;
-  }
-
-  input.email, .ml-button {
-    background: white;
-
-    border: 3px solid #EEE;
     line-height: 2.7em;
-    font-size: .95em;
-    padding: 0 .9em;
-    @include transition(.4s);
-    outline: none !important;
-    box-shadow: none !important;
-
-    z-index: 10;
-
-    font-family: 'Roboto';
-    font-weight: bold;
   }
 
   input.email {
-    width: 200px;
-    box-shadow: none;
-
-    &:focus {
-      border-color: #DDD;
-
-    }
-  }
-
-  input.hidden {
-    position: absolute; left: -5000px;
-  }
-
-  .ml-button {
-    text-align: center;
-    border-radius: 0;
-    color: #444;
-    text-transform: uppercase;
-    padding: 0 10px;
-    border: 3px solid #EEE;
-    margin-right: 6px;
-    cursor: pointer;
-    letter-spacing: 1px;
-    text-decoration: none !important;
-
-    &:hover, &:focus {
-      border-color: #FDD692;
-      border-color: #F68657;
-      border-color: #DDD;
-      border-color: #a3daff;
-    }
-
-    &:active {
-      box-shadow: none;
-    }
-  }
-}
-
-.notice > .mailchimp-form {
-  font-size: 15px;
-
-  input.email, .ml-button, .and {
-    vertical-align: middle;
-    margin-bottom: 10px;
-  }
-
-  input.email, .ml-button {
-    background: white;
-
-    border: 3px solid #EEE;
-    line-height: 2.7em;
-    font-size: .95em;
-    padding: 0 .9em;
     @include transition(.4s);
-    outline: none !important;
+    background: white;
+    border: 3px solid #EEE;
     box-shadow: none !important;
-
+    line-height: 2.7em;
+    font-family: 'Roboto';
+    font-size: 0.95em;
+    font-weight: bold;
+    outline: none !important;
+    padding: 0 0.9em;
+    vertical-align: middle;
+    width: 200px;
     z-index: 10;
 
-    font-family: 'Roboto';
-    font-weight: bold;
-  }
-
-  input.email {
-    width: 200px;
-    box-shadow: none;
-
     &:focus {
       border-color: #DDD;
-
-    }
-  }
-
-  input.hidden {
-    position: absolute; left: -5000px;
-  }
-
-  .ml-button {
-    text-align: center;
-    border-radius: 0;
-    color: #444;
-    text-transform: uppercase;
-    padding: 0 10px;
-    border: 3px solid #EEE;
-    margin-right: 6px;
-    cursor: pointer;
-    letter-spacing: 1px;
-    text-decoration: none !important;
-
-    &:hover, &:focus {
-      border-color: #FDD692;
-      border-color: #F68657;
-      border-color: #DDD;
-      border-color: #a3daff;
-    }
-
-    &:active {
-      box-shadow: none;
     }
   }
 }
 
-section.notice .join-mailinglist {
-  font-size: 15px;
-  padding: 10px 0;
-
-  h1 {
-    font-size: 25px;
-    display:  inline-block;
-    margin-right: 10px;
-    vertical-align: middle;
-  }
-
-  h2 {
-    margin-top: 5px;
-    font-family: Roboto, sans-serif;
-    font-size: 18px;
-    display: block;
-    color: #555;
-  }
-}
-
-
-.page-popover {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  min-height: 100%;
-  background: white;
-
-  .container {
-    padding: 20px;
-    height: 300px;
-    display: table;
-    vertical-align: top;
-    text-align: center;
-    margin-top: 50px;
-
-    font: 400 15px "Roboto";
-    text-align: left;
-
-    p {
-      font-family: "Roboto";
-    }
-
-    .close-btn {
-      position: absolute;
-      right: 30px;
-      top: 20px;
-      color: #555;
-      // font-weight: bold;
-      font-size: 30px;
-      width: 40px;
-      height: 40px;
-      line-height: 38px;
-      border-radius: 40px;
-
-      &:hover {
-        background: #EEE;
-      }
-    }
-
-    .row {
-      margin-bottom: 20px;
-    }
-
-    ul.inline-list {
-      margin-left: 0;
-      margin-bottom: -4px;
-
-      li {
-        display: inline-block;
-        font-size: 15px;
-      }
-    }
-  }
-}
-
-
-body > .notice {
+body > header {
   position: relative;
-  top: 0;
-  width: 100%;
-  padding: 15px 60px;
-
-  background: #f0f5f9;
-  color: #1e2022;
-  font-size: 13px;
-
-  &.left .content {
-    text-align: right;
-  }
-
-  em {
-    border-bottom: 1px dashed fade-out(#444, .3);
-    font-style: normal;
-  }
-
-  &.info {
-    background: #a3daff;
-    color: #454552;
-  }
-
-  &.green {
-    background: #cff09e;
-    color: #3b8686;
-  }
-
-  &.deadline {
-    background: #E26A6A;
-    color: #96281B;
-  }
-
-  &.abc {
-    background: #ffcdd2;
-    color: #e53935;
-  }
-
-  &.news {
-    background: #FDD692;
-    color: #e06447;
-  }
-
-  .content {
-    text-align: center;
-    text-align: left;
-    font-family: "Roboto";
-    line-height: 1.2;
-    font-weight: 300;
-    letter-spacing: .8px;
-
-    a {
-      vertical-align: middle;
-      color: inherit;
-      border-bottom: 1px dashed fade-out(white, .3);
-      @include transition(.2s);
-      text-decoration: none;
-
-      &:hover {
-        border-bottom: 1px dashed fade-out(#666, .1);
-      }
-    }
-  }
-
-  h1 {
-    font-size: 1.4em;
-  }
-  h2 {
-    font-size: 1.1em;
-  }
-
-  .close-btn {
-    color: white;
-    display: inline-block;
-    display: none;
-    font-size: 19px;
-    vertical-align: middle;
-  }
-}
-
-body > section.borderless:not(.hidden) {
-  border-top: 0;
-}
-
-body > section.notice:not(.hidden) {
-  border-top: 0;
-  padding: 40px 60px;
-  font-size: 20px;
-}
-
-body > header.borderless + section,
-body > section.borderless:not(.hidden) + section,
-body > section.borderless:not(.hidden) + footer,
-body > section.notice:not(.hidden) + section,
-body > section.notice:not(.hidden) + footer {
-  border-top: 0;
+  padding: 70px 60px;
+  font-family: 'Roboto';
+  font-size: 25px;
 }
 
 body > section {
@@ -479,10 +90,11 @@ body > section {
     margin-top: 40px;
   }
 
-  header, footer {
+  footer,
+  header {
     color: #666;
     padding: 0;
-    font-family: "Roboto Mono";
+    font-family: 'Roboto Mono';
     font-weight: bold;
     font-size: 14px;
 
@@ -501,10 +113,6 @@ body > section {
       }
     }
 
-    h1:hover mark:before {
-      color: #AAA;
-    }
-
     h1 {
       font-size: 1.5em;
       color: #333;
@@ -513,15 +121,35 @@ body > section {
 
     h2 {
       font-weight: 300;
+      line-height: 1.7;
       font-size: 1.2em;
       color: #666;
       margin-top: 1em;
     }
+
+    mark {
+      background: transparent;
+      margin-right: 15px;
+      margin-left: -35px;
+
+      &:before {
+        @include transition(.2s);
+        content: '#';
+        color: #BBB;
+
+        &:hover {
+          color: #AAA;
+        }
+      }
+    }
+
+    h1:hover mark:before {
+      color: #AAA;
+    }
   }
 
   & > section {
-    padding: .1px;
-    margin-left: 20px;
+    padding: 0.1px;
 
     header h1 {
       color: #444;
@@ -545,38 +173,40 @@ body > section {
   & > p {
     font-size: 1.2em;
     margin-top: 10px;
-    font-family: "Roboto";
+    font-family: 'Roboto';
   }
 
   .info {
     padding-top: 10px;
     text-align: left;
-    font: 400 14px "Roboto Mono";
+    font: 400 14px 'Roboto Mono';
 
-    & > div { margin-bottom: 5px; }
+    & > div {
+      margin-bottom: 5px;
+    }
 
     h1 {
       font-size: 1em;
-      margin-bottom: .5em;
+      margin-bottom: 0.5em;
       color: #111;
 
       small {
         font-size: inherit;
-        opacity: .4;
+        opacity: 0.4;
       }
     }
 
     h2 {
-      margin-bottom: .5em;
-      font-size: .9em;
+      margin-bottom: 0.5em;
+      font-size: 0.9em;
       font-weight: 300;
       color: #666;
       line-height: 1.5;
     }
 
     p {
-      font-size: .9em;
-      font-family: "Roboto";
+      font-size: 0.9em;
+      font-family: 'Roboto';
       font-weight: 300;
       color: #888;
       line-height: 1.5;
@@ -584,218 +214,14 @@ body > section {
   }
 }
 
-
-ul.events {
-  margin-top: 2.6em;
-
-  .date {
-    h1 {
-      font-family: "Roboto Mono";
-      color: #888;
-      font-size: 1.1em;
-      font-weight: 300;
-      margin-bottom: 0;
-    }
-
-  .year {
-    h1 {
-      font-family: "Roboto Mono";
-      color: #000;
-      font-size: 1.1em;
-      font-weight: 300;
-      margin-bottom: 0;
-    }
-  }
-
-    margin-bottom: 2em;
-  }
-
-  .event:not(:last-child) {
-    margin-bottom: 2.7em;
-  }
-
-  .event {
-    max-width: 900px;
-    position: relative;
-
-    .image {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 80px;
-
-      img {
-        width: 80px;
-        height: 80px;
-        border-radius: 100px;
-      }
-    }
-
-    .content {
-      padding-left: 100px;
-      font-family: Roboto;
-
-      a {
-        color: #333;
-        border-bottom: 1px dashed #DDD;
-        @include transition(.1s);
-
-        &:hover {
-          text-decoration: none;
-          //color: #1976d2;
-          border-bottom: 1px dashed #1976d2;
-          border-bottom-color: #888;
-        }
-      }
-
-      h1, h2, h3 {
-        line-height: 1.5;
-      }
-
-      h1 {
-        margin-bottom: .2em;
-        font-size: 1.4em;
-        font-weight: 300;
-        color: #555;
-
-        strong { color: #000; }
-
-        .origin {
-          display: inline-block;
-          color: #F4B350;
-          margin-left: 5px;
-          font-size: .7em;
-
-          strong {
-            text-transform: uppercase;
-            color: inherit;
-          }
-
-          &.blue {
-          }
-        }
-      }
-
-      h2 {
-        font-size: 1.1em;
-        margin-bottom: .5em;
-        font-weight: 300;
-        color: #333;
-
-        strong { font-weight: 400; }
-      }
-
-      h3 {
-        font-family: "Roboto Mono";
-        font-size: 1.0em;
-        color: #333;
-        font-weight: 300;
-      }
-    }
-  }
+body > section.borderless:not(.hidden) {
+  border-top: 0;
 }
 
-ul.sponsors {
-  header {
-    margin-bottom: 20px;
-  }
-
-  .sponsor {
-    margin-top: 40px;
-    display: inline-block;
-    margin-right: 30px;
-
-    img {
-      height: 90px;
-      aborder-radius: 40px;
-
-      @include transition(.5s);
-
-      &:not(:hover) {
-        // @include filter(grayscale, 100%);
-      }
-    }
-  }
-
-  .facebook img { height: 80px; }
-  .google img { height: 70px; }
-}
-
-#prize {
-  background: #FF6868;
-
-  *, h1, h2, h3, h4, h5, h6, p { color: white }
-
-
-}
-
-#about {
-  p {
-    color: #666;
-    font-size: 1.3em;
-    line-height: 1.8;
-
-    strong {
-      font-weight: bolder;
-    }
-
-    span {
-      border-bottom: 2px dotted #DDD;
-      color: #000;
-      cursor: pointer;
-    }
-  }
-
-  iframe {
-    margin-top: -20px;
-  }
-}
-
-.projects {
-  list-style: none;
-  margin: 0;
-}
-
-
-ul.people {
-  list-style: none;
-  margin: 40px 0 -40px;
-
-  $picdim: 120px;
-
-  & > .member {
-    width: $picdim+50;
-    height: $picdim+70;
-    margin-bottom: 40px;
-    display: inline-block;
-    vertical-align: top;
-    text-align: center;
-
-    font-family: "museo-sans";
-
-    .info {
-      padding-top: 20px;
-      font-size: 14px;
-      text-align: center;
-    }
-
-    h2.board {
-      font-weight: bold;
-    }
-
-    .picture img {
-      width: $picdim;
-      height: $picdim;
-      cursor: pointer;
-      border-radius: 200px;
-
-      @include transition(.5s);
-
-      &:not(:hover) {
-        // @include filter(grayscale, 100%);
-      }
-    }
-  }
+body > header.borderless + section,
+body > section.borderless:not(.hidden) + footer,
+body > section.borderless:not(.hidden) + section {
+  border-top: 0;
 }
 
 body > footer {
@@ -805,7 +231,7 @@ body > footer {
   font-family: Roboto;
   font-size: 13px;
   border-top: 3px solid #EEE;
-  font-family: "Space Mono";
+  font-family: 'Space Mono';
 
   .bio {
     color: #444;
@@ -813,103 +239,37 @@ body > footer {
   }
 }
 
-@media screen and (min-width: $on-laptop) {
+// Set margins for small screens.
+@media screen and (max-width: $on-laptop) {
   body > section {
     & > header mark {
-      margin-left: -35px;
-      padding-right: 5px;
+      margin-left: 0;
     }
-  }
-}
-
-@media screen and (max-width: $on-laptop) {
-  $spacing-unit: 30px;
-
-  body > header {
-    font-size: 15px;
-    padding: $spacing-unit;
-
-    p {
-      font-size: 15px;
-    }
-  }
-
-
-  body > .notice {
-    padding: $spacing-unit/2 $spacing-unit/2;
   }
 
   body > footer {
-    padding: $spacing-unit $spacing-unit*2/3-15;
+    padding: $device-spacing $device-spacing*2/3;
+  }
+
+  body > header {
+    font-size: 16px !important;
   }
 
   body > section,
-  body > section.notice {
-    padding: $spacing-unit $spacing-unit*2/3;
+  body > header {
+    padding: $device-spacing $device-spacing*2/3;
 
     & > header {
       font-size: 12px;
     }
   }
 
-  section ul.people {
-    margin-bottom: -20px;
-
-    .member {
-      margin-bottom: 20px;
-      width: 110px;
-      height: 160px;
-    }
-
-    .member .info {
-      font-size: 13px;
-    }
-
-    .member .picture img {
-      width: 90px;
-      height: 90px;
-    }
-
-  }
-
-  section ul.events {
-    font-size: 13px;
-
-    .event .content h1 .origin {
-      display: block;
-      margin: 0;
-    }
-
-    .event .content {
-      padding-left: 80px;
-    }
-
-    .event .image img {
-      width: 60px;
-      height: 60px;
-    }
-  }
-
-  body > section > ul,
-  body > section > section > ul {
+  body > section > section > ul,
+  body > section > ul {
     margin-left: 0;
   }
 
   body > section > section {
     margin-left: 10px;
-  }
-}
-
-mark {
-  background: transparent;
-  padding: 0;
-  margin-right: 10px;
-  &:before {
-    content: "#";
-    color: #BBB;
-    @include transition(.2s);
-    &:hover {
-      color: #AAA;
-    }
   }
 }

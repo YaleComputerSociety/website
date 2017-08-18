@@ -1,0 +1,60 @@
+
+@import "variables";
+
+.PeopleList {
+  list-style: none;
+  margin: 40px 0 -40px;
+
+  & > .member {
+    width: $PeopleList_picdim+50;
+    height: $PeopleList_picdim+70;
+    margin-bottom: 40px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    font-family: 'museo-sans';
+
+    .info {
+      padding-top: 20px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    h2.board {
+      font-weight: bold;
+    }
+
+    .picture img {
+      width: $PeopleList_picdim;
+      height: $PeopleList_picdim;
+      cursor: pointer;
+      border-radius: 200px;
+      @include transition(.5s);
+
+      &:not(:hover) {
+        // @include filter(grayscale, 100%);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $on-laptop) {
+  .PeopleList {
+    margin-bottom: -20px;
+
+    .member {
+      margin-bottom: 20px;
+      width: 110px;
+      height: 160px;
+    }
+
+    .member .info {
+      font-size: 13px;
+    }
+
+    .member .picture img {
+      width: 90px;
+      height: 90px;
+    }
+  }
+}
