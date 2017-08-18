@@ -135,8 +135,8 @@ body > section {
 
     mark {
       background: transparent;
-      margin-right: 15px;
-      margin-left: -35px;
+      padding-right: 15px;
+      margin-left: -45px;
 
       &:before {
         @include transition(.2s);

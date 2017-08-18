@@ -325,8 +325,8 @@ body > section {
     body > section footer mark,
     body > section header mark {
       background: transparent;
-      margin-right: 15px;
-      margin-left: -35px; }
+      padding-right: 15px;
+      margin-left: -45px; }
       body > section footer mark:before,
       body > section header mark:before {
         -webkit-transition: 0.2s;
