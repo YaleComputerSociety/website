@@ -584,7 +584,8 @@ body > section > header {
   font-family: "Helvetica Nesue", "Roboto", monospace;
   font-size: 13px;
   line-height: 2;
-  word-wrap: break-word; }
+  word-wrap: break-word;
+  font-size: 16px; }
   .markdown-body hr {
     height: 0.25em;
     padding: 0;

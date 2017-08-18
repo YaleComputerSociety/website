@@ -220,4 +220,5 @@ body > section {
 
 .markdown-body {
   @include markdown-body();
+  font-size: 16px;
 }

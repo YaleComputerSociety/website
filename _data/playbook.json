@@ -31,16 +31,16 @@
       "anchor": "how-we-work",
       "children": [
         {
-          "title": "Metrics",
-          "file": "playbook/Process_Metrics.md"
-        },
-        {
           "title": "Tools",
           "file": "playbook/Process_Tools.md"
         },
         {
           "title": "Meetings",
           "file": "playbook/Process_Meetings.md"
+        },
+        {
+          "title": "Metrics",
+          "file": "playbook/Process_Metrics.md"
         },
         {
           "title": "Interviewing",

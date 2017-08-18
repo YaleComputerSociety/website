@@ -1,16 +1,30 @@
 If you were part of an extracurricular organization before, chances are that you have mixed feelings about meetings. When done wrong, club meetings are a huge time sink that busy college students just can't afford. When done right, however, meetings are a powerful tool in coordinating a team and making progress.
 
-In our club, we have found that **meetings are the main reason why we are able to get things done, despite our packed schedules and countless responsibilities**. That is because we use meetings to enforce accountability, drive teams to face their issues and make progress. Let's use an example to justify this viewpoint.
+In our club, we find that **meetings are the main reason why we are able to get things done, despite our packed schedules**. That is because we use meetings to enforce accountability, drive teams to face their issues and make progress. For college students with busy schedules, physical meetings with fixed times are the best way to get everyone on the same page and communicate critical things.
 
-## Why meetings matter
+> ### `Addendum`  
+> Read [Why meetings matter](https://medium.com/@felipap/why-meetings-matter-c8d1467da3e1) for an illustration of our argument.
 
-You might have seen this before. Image a group of college students who get together to work on a project: hosting a talk with a prestigious Yale alumnus working in tech. Knowing that they have a lot to do (ie. invite the speaker, book a venue, provide food, advertise the talk etc) but that none of the work requires them to physically meet, they decide to use just a group chat to coordinate. "No meetings", they say. After all, **being high energy and ambitious, the members of the group like to crowd their schedules with other clubs and side-projects**, so a remote project gives them the most flexibility, allowing them to work whenever they can.
+# Our Meetings
 
-Pretty soon they will start running into problems such as poor communication and lack of progress. To begin, **group chats are great tools for clubs but usually don't replace actual meetings**, physical or virtual. That is because when **talking through a chat we can't guarantee that everyone will pay attention**. (Some services, like Slack, try to fix this by adding special types of notifications and the ability to pin messages. Even then, it is still up to users to make sure they read the messages.) On top of that, delegating and following up on assignments will be equally hard, as it is easier to be ignored over chat or email. By the time they realize that weekly meetings are necessary, everybody's agenda is so packed with other responsibilities that conflicts and delays are inevitable.
+Our usual member will meet two or three times a week.
 
-For college students with busy schedules, physical meetings with fixed times are the best way to get everyone on the same page and communicate critical things.
+### General Meetings
 
-**When school work and other responsibilities start to mount, the first thing students delay is work without a strict deadline**, like the talk event in this example. So by not setting fixed meetings times when they are compelled by peer pressure to show their progress, they are risking the success of their project.
+Once a week, usually on Sundays at 8pm, during the course of the academic year, everybody meets in person. This the opportunity for the entire team to share updates, discuss changes and bond.
+
+Our general meetings have `rotated hosts`.
+
+> Presence of everyone in the general meetings. ## Justifiable reasons to miss general meetings include not being on campus. But we expect a warning.
+
+### Board meetings
+
+`Board meetings` happen every Wednesday night, from 8pm to 10pm.
+
+#### Team meetings
+
+, such that every member of our society is required to attend bla bla
+
 
 # Effective meetings
 
@@ -48,28 +62,6 @@ Unless otherwise noted, plan, don't work.
 ### Tips for taking notes
 
 Put your notes on Trello.
-
-# Our Meetings
-
-Our usual member will meet two or three times a week.
-
-### General Meetings
-
-Once a week, usually on Sundays at 8pm, during the course of the academic year, everybody meets in person. This the opportunity for the entire team to share updates, discuss changes and bond.
-
-#### Rotating Hosts
-
-Our general meetings are hosted by invited members.
-
-> Presence of everyone in the general meetings. ## Justifiable reasons to miss general meetings include not being on campus. But we expect a warning.
-
-### Board meetings
-
-Board meetings happen every Wednesday night, from 8pm to 10pm.
-
-#### Team meetings
-
-, such that every member of our society is required to attend bla bla
 
 ---
 

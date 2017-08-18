@@ -16,7 +16,7 @@ The email tool used by the newsletter team (ie. MailChimp) should take care of p
 
 ### Metrics can be tricky
 
-**Measuring is not always a straightforward task.** More often than not, it requires the special effort of teams to track attendance, survey students, write down page stats from Facebook etc. Take, for example, the team responsible for hosting our study sessions. What metrics can they use to measure the success of their events? An obvious place to start would be to count the number of attendees – say, by having a volunteer count the number of students who walk into the room. This metric should certainly correlate with the success of our event, right? Yes, but not always! What happens, for instance, when during a particularly underfunded season our study session team is not able to provide food for the participants? We might find that a lot of the people show up to find no cookies and... tip-toe out of the room less than five minutes later. In this case, the number of attendees in itself no longer paints an accurate picture of how the event went, does it?
+**Measuring is not always straightforward.** It sometimes requires special effort of teams to track attendance, survey students, write down page stats from Facebook etc. Take, for example, the team responsible for hosting our study sessions. What metrics can they use to measure the success of their events? An obvious place to start would be to count the number of attendees – say, by having a volunteer count the number of students who walk into the room. This metric should certainly correlate with the success of our event, right? Yes, but not always! What happens, for instance, when during a particularly underfunded season our study session team is not able to provide food for the participants? We might find that a lot of the people show up to find no cookies and... tip-toe out of the room less than five minutes later. In this case, the number of attendees in itself no longer paints an accurate picture of how the event went, does it?
 
 Here you might be thinking that what we actually want to measure is the total student-hours spent inside that room. _But who's going to volunteer to measure that?!_ What seems, in theory, like a better metric might be impractical to measure. **If something is too hard to measure, it's of no use to us.**
 
@@ -41,7 +41,7 @@ We like to differentiate between three categories of metrics, according to the p
 #### Health metrics
 
 > "What is the average rate of absence in our meetings?"  
-> "What rate of our members marked themselves 'dissatisfied' with the work we do?"
+> "What rate of our members marked themselves 'dissatisfied' with the work we do?"  
 > "How many people attended our retreat?"
 
 _Mens sana in corpore sano_. Only a healthy team can keep doing amazing work in the long run. That's why we have metrics to try to measure how well we are working together over time.
