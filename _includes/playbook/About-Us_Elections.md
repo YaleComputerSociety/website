@@ -1,53 +1,8 @@
 
-Three important transitions happen at the end of each semester, during the reading period, in the following order.
+Three important transitions happen at the end of each semester, by no later than the weekend of reading period.
 
-During the `vetting of the noobs`, the board comes together to invite noobs in their second semester to become official members of our society.
+During the `vetting of the noobs`, the current board comes together to vet noobs to become official members of our society. The membership decision is determined by the _majority of present directors_. Noobs may be denied, for instance, due to demonstrated _lack of commitment_ or _inability to work in teams_.
 
-The majority might decide to deny the membership, in the
+In the `tapping of directors`, the current board members chooses ordinary members to become directors and join the board. During deliberation, directors who have worked with each of these members make the case for making them directors. The result is determined by the _majority of present directors_. Members tapped may deny the offer to become directors.
 
-In rare cases, the majority might decide to deny the membership, in which case the noob is .
-
-In the `tapping of directors`, the current board members choose to.
-
-During the `petition of chairs`, the newly elected board
-
-directors come before the board to make their case for pushing.
-
-These three
-
-Transitions in role happen at the end of every semester, during the reading period for finals.
-
-## Ceremony
-
-The changes occur in a spooky ceremony.
-
-## Vetting of the noobs
-
-First, the board meets to go through the list of noobs who are completing.
-
-### Tapping of directors
-
-### Petition of chairs
-
-Rising seniors are discouraged from running for chair positions.
-
-# Teams
-
-## Team Leads
-
-Team leads are responsible for managing resources and pushing a team forward.
-
-#### Chairman
-
-The main responsibility of the chairman is recruiting and
-
-## Tapping of Directors
-
-Before the end of the semester.
-
-## Petition for Chairs
-
-Chair is an extra role. Strongly suggested that chairs don't participate in other time consuming extracurriculars.
-
-* How much has contributed?
-* Success in projects
+During the `petition of chairs`, members of the newly elected board get together to choose the new chairs. Directors who are petitioning for a chair should make the case for their relevant skills and experience, and show commitment and a vision for the society. Deliberations end only when an absolute majority supports each association in a bijective mapping of chairs to directors. __This takes several hours.__ Seniors and rising seniors can't petition nor vote. Directors can be reelected for the same chair once.
