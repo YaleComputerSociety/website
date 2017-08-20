@@ -51,6 +51,10 @@
           "file": "playbook/Process_Onboarding.md"
         },
         {
+          "title": "Distributing work",
+          "file": "playbook/Process_PositionManagement.md"
+        },
+        {
           "title": "Code of Conduct",
           "file": "playbook/Process_Code-of-Conduct.md"
         }

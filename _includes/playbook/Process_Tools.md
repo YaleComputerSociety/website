@@ -1,34 +1,44 @@
-We rely on a few tools in order to work effectively.
+We rely on a handful of tools in order to work effectively.
 
-### Planning and Executing
+### Trello
 
-Our `Trello board` is the source of truth for our organization. We use cards inside our board to distribute work and keep track of everyone's tasks and deadlines. We can also use comments in to keep track of meeting minutes.
+Our [board on Trello](https://trello.com/yalecomputersociety) is our single source of truth. _We use it to plan, delegate and follow up on all of our tasks._ Each team owns a column in our board where they keep their own cards. __Team leads must make sure that their columns reflect the current state of the team and that the members are updating them on a daily basis.__
 
-> `SHOULD` &nbsp; Every member should have access to our board and check it regularly.
+> See more about how Trello works [here](https://trello.com/guide) and [here](https://blog.trello.com/topic/trello-news).
 
-### Communication
+Here are some best practices that we follow:
 
-#### Slack
+- Use the [members feature](http://help.trello.com/article/807-adding-a-member-to-a-card) to delegate a task to someone. You can also [add a due date](https://blog.trello.com/mark-a-trello-card-as-done) and make it easier to know when to follow up.
 
-We use [Slack](http://slack.com) in order to communicate with one with one another. We usually have one big channel for each org (e.g. Events) and one channel per team (e.g. Talks). Our domain on Slack is [yalecs.slack.com](http://yalecs.slack.com).
+- Keep columns ordered by priority of the card, with urgent tasks on top (you can use [sort by due date](https://blog.trello.com/7-ways-to-track-tasks-in-trello)). Don't forget to [archive tasks](http://help.trello.com/article/786-archiving-lists-deleting-lists) that are done or abandoned.
 
-Good communication a crucial quality for any organization. For this reason, it is very important that every one of our members be active on Slack. We strongly recommend installing in your phones and keeping it open in your browser.
+- Use cards to track meetings. You can use the card description to post the meeting's agenda and the comment section to register minutes during the meeting.
 
-**Note about Facebook Messenger**
-Using Messenger for ephemeral communications with team members is OK. As a rule of thumb, Messenger groups shouldn't last more than a couple of days. Once that happens, please consider transferring that group to Slack.
+### Slack
 
-#### YCS-IN mailing list
+We use [Slack](http://yalecs.slack.com) to communicate online. __Quick, efficient communication is vital for our success, so all of our members are expected to be responsive on it.__ We usually keep at least one channel per team.
 
-We use the [ycs-in mailing list](https://groups.google.com/a/elilists.yale.edu/forum/#!forum/ycs-in), managed by the Yale ITS, for some communications and reminders. Don't be afraid of using it.
-
-### Metrics Sheet
-
-The most important document in our Google Drive folder is our Metric Spreadsheet. It is used to keep track of the progress of our orgs, teams and sometimes of individual members. Managers often must pay special attention to this spreadsheet and update it weekly before meetings. [Learn more about our metrics system.](https://github.com/yalecs/playbook/wiki/Process:Metrics)
-
-### Calendar
-
-We use an internal Google calendar associated to yale.edu accounts to coordinate meetings. All new members should be given access to it and add it to their personal calendars.
+> *About Facebook Messenger*  
+> Using Messenger for quick contact with a group of members is OK. It's best however that group chats there don't last over a couple of days. When that happens, consider transferring it to Slack.
 
 ### File Sharing
 
-We use a [Google Drive folder](https://drive.google.com/drive/u/0/folders/0B3omFvP_R7pQa2lnd3Z0bTg4S3c) to keep all of our documents. We prefer adding documents to this Drive folder than sharing it with individual members using their emails. Our society strives for transparency and we trust each other, so there is rarely the need to keep any files relevant to our work outside of this folder.
+We use [Google Drive](https://drive.google.com/drive/u/0/folders/0B3omFvP_R7pQa2lnd3Z0bTg4S3c) to keep all of our documents. We prefer adding documents to our shared folder than sharing it with individual members using their emails, for the sake of both convenience and transparency. Teams usually maintain their own folders, which are recycled at the end of each semester, but not deleted!
+
+### Metrics Sheet
+
+One of the most important documents in our Google Drive folder is our spreadsheet of metrics, which we use to keep track of success across our teams. More on this ahead.
+
+### Mailing list
+
+We use the [ycs-in mailing list](https://groups.google.com/a/elilists.yale.edu/forum/#!forum/ycs-in), hosted by the Yale ITS, for important communications and reminders.
+
+### Calendar
+
+We use an internal Google calendar to keep track of important events. All new members should be given access to it and import into to their calendar apps, such as iCal. _Members must use this calendar to register all of our meetings and events_, as well as external events that we should be aware of.
+
+These external events include:
+
+- events of the academic calendar, like breaks and reading periods
+- dates for PSET, midterms and finals for the core Computer Science classes
+- events of related organizations on campus, such as YHack and DSAC

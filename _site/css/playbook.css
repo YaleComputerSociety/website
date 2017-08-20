@@ -479,7 +479,7 @@ body > header {
       border-bottom: 2px solid #FFF; }
 
 .TableOfContents {
-  font-size: 18px; }
+  font-size: 19px; }
   .TableOfContents ul.TableOfContents_Sections {
     list-style: none;
     margin: 0;
@@ -528,8 +528,7 @@ body > section > header {
 .PlaybookPage > .markdown-body {
   max-width: 800px; }
   .PlaybookPage > .markdown-body p, .PlaybookPage > .markdown-body li {
-    font-size: 18px;
-    margin-bottom: 20px; }
+    font-size: 18px; }
   .PlaybookPage > .markdown-body table {
     font-family: "Roboto Mono", monospace;
     font-size: 16px; }
@@ -539,6 +538,8 @@ body > section > header {
     margin-top: 0;
     margin-bottom: 1em;
     color: #222; }
+  .PlaybookPage > .markdown-body li {
+    margin-bottom: 0; }
   .PlaybookPage > .markdown-body li > p {
     margin-bottom: 1em; }
   .PlaybookPage > .markdown-body ul {
@@ -548,8 +549,8 @@ body > section > header {
     margin-top: .5em; }
   .PlaybookPage > .markdown-body li ul p {
     margin-bottom: .5em; }
-  .PlaybookPage > .markdown-body > p + ul {
-    margin-top: -1em; }
+  .PlaybookPage > .markdown-body > p + ul, .PlaybookPage > .markdown-body > p + ol {
+    margin-top: -1.5em; }
   .PlaybookPage > .markdown-body strong {
     background-color: rgba(163, 218, 255, 0.8);
     font-weight: 400;
@@ -565,6 +566,9 @@ body > section > header {
     color: white;
     border: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
+  .PlaybookPage > .markdown-body pre code {
+    font-family: "Helvetica Nesue", "Roboto", monospace;
+    font-size: 17px; }
   .PlaybookPage > .markdown-body em {
     font-weight: bolder;
     font-style: normal; }

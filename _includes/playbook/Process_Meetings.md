@@ -1,71 +1,72 @@
-If you were part of an extracurricular organization before, chances are that you have mixed feelings about meetings. When done wrong, club meetings are a huge time sink that busy college students just can't afford. When done right, however, meetings are a powerful tool in coordinating a team and making progress.
-
-In our club, we find that **meetings are the main reason why we are able to get things done, despite our packed schedules**. That is because we use meetings to enforce accountability, drive teams to face their issues and make progress. For college students with busy schedules, physical meetings with fixed times are the best way to get everyone on the same page and communicate critical things.
+If you were part of an extracurricular organization before, chances are that you have mixed feelings about meetings. Often times, meetings can be ineffective time sink that busy college students just can't afford. __In our club, however, we find that they are the main reason why we are able to get work done, despite our busy schedules.__ That is because we use meetings to enforce accountability, drive teams to confront their issues and to make progress.
 
 > ### `Addendum`  
-> Read [Why meetings matter](https://medium.com/@felipap/why-meetings-matter-c8d1467da3e1) for an illustration of our argument.
+> For college students with busy schedules, face-to-face gatherings with fixed times are the best way to get everyone on the same page and communicate critical things.  
+> [_Read the appendix that we wrote to illustrate this argument._](https://medium.com/@felipap/why-meetings-matter-c8d1467da3e1)
 
 # Our Meetings
 
-Our usual member will meet two or three times a week.
+Our typical member will attend two one-hour meetings per week.
 
-### General Meetings
+## Sunday Night Live
 
-Once a week, usually on Sundays at 8pm, during the course of the academic year, everybody meets in person. This the opportunity for the entire team to share updates, discuss changes and bond.
+Every Sunday at 8pm, during the course of the academic year, we all get together to share updates, discuss problems and socialize. The meetings last no longer than one hour, though members often stick around after that to talk in smaller groups. __Our chairs take turns in hosting each week.__
 
-Our general meetings have `rotated hosts`.
+Here is how the SNL usually goes:
 
-> Presence of everyone in the general meetings. ## Justifiable reasons to miss general meetings include not being on campus. But we expect a warning.
+1. Around 15 minutes before, people start to come in, take a seat and chat.
+2. The host starts the meeting on time with a summary of the events from the past week.
+3. The host invites directors to make important announcements.
+4. After that, the team leads take turns announcing their teams' latest updates.
+5. The meeting ends and people disperse into groups to chat about work in the upcoming week.
 
-### Board meetings
+### Engaging the room
 
-`Board meetings` happen every Wednesday night, from 8pm to 10pm.
+A big challenge for hosts is keeping the mood up in the room. We encourage everyone to interrupt the speakers with observations, ask questions, make jokes etc. It is important that people making announcements stand up in the front and __engage the room__. The host, however, must also keep in mind the clock, making the speakers hurry when necessary.
 
-#### Team meetings
+Here are some good practices:
 
-, such that every member of our society is required to attend bla bla
+- Play music in the room before the meeting starts and keep it in the background afterwards. While i's easier for the host to have someone else be the DJ, the hosts can still pick the songs and perhaps start the SNL by describing what is playing.
+- Start with a loud, energetic welcome to keep the mood up, and encourage people to clap.
+- Ask that people put away their computers and cellphones.
+- Have people come forward to share a cool story about the impact of our work.
+- Use the projector to show photos from the latest event, music videos, songs playing on the background etc.
 
+## Board meetings
 
-# Effective meetings
+Board meetings happen every Wednesday night, from 8pm to 10pm. That is when all team leads and directors come together to discuss progress and issues. Before the board meeting, team leads must update their metrics on the spreadsheet.
 
-How do we keep our meetings from turning into huge time sink monster? Glad you asked.
+__It's a big, loud mess.__ Good luck. (Srsly, though, we're gonna figure it out, John.)
+
+## Team meetings
+
+Team meetings vary a lot in format and duration and content, which are all up to the team to collectively decide. They must, however, have fixed meeting times and occur weekly. All meetings should be on the calendar.
 
 ### Tips for hosts
 
-If you are hosting a meeting
+Every meeting has exactly one host, which is rotated when there are multiple team leads.
 
-0. **Do your homework**  
-Rule zero for hosting is to come prepared. Make sure you have a plan for what is going to be discussed during that time. It is good practice to ping the attendees beforehand, reminding them about the meeting and about work they are supposed to have done by then.
+0. __Do your homework__.  
+This is rule zero of hosting. Make sure you thought about what will be discussed/accomplish, keeping in mind the time available.
 
-1. **Make a list of commitments**  
-Once the meeting is done, you will want to know when to follow up about work.
+1. __Ask for attention__.  
+It's OK to ask people to lower their laptop lids, or get off their cellphones.
 
-2. **Ask for attention**  
-It's OK to ask people to lower their laptop lids.
+1. __Start on time, end on time__.  
+Meeting times are fixed, so everyone should be expected to arrive on time. You, however, have to make sure to end on time.
 
-3. **Have a fixed meeting time**, then **start on time and end on time**  
-It's a big responsibility to ask your team to take a bit of their day.
-Stick to 30 minutes. Start on time, finish on time.
+### Tips for everyone
 
-### Tips for participants
+1. __Be lazy. Just talk, don't work.__  
+This can vary from team to team, but it's usually a good idea to use the meeting slot strictly to discuss and plan, not to do work. We often realize During meetings that we forgot to do this one thing and we rush to do it immediately. But doing work during meetings usually throws us off the discussion or even causes people to stop talking as they wait for us to finish.
 
-0. **Do your homework.**  
-This doesn't apply only to hosts. Come prepared for.
+1. __Lean in!__  
+Talk; share your views; don't hesitate to raise issues when you see them. Leadership is ownership, so you have a responsibility to speak up when you disagree.
 
-1. Planning, no working  
-Unless otherwise noted, plan, don't work.
+### On absences
 
-2. Be focused
+Absences in meetings come back to bite us in ways we can never foresee. That's why presence in meetings is so important. Being on time is also very important. Once a couple of people start coming in late, it takes effort and awkwardness to get everybody to show up in time.
 
-3. Give feedback
+> In a nutshell, it is _not OK to miss meetings for reasons that you can plan around_. That includes doing school work, attending office hours, etc. It does not include, however, being sick or being out of New Haven for a competition. _As soon as you know you will miss a meeting, let the chairman know._
 
-### Tips for taking notes
-
-Put your notes on Trello.
-
----
-
-
-References:
-
-- [https://hbr.org/1976/03/how-to-run-a-meeting]()
+> Absences in team meetings are taken case-by-case depending on the team lead.

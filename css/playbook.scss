@@ -73,7 +73,7 @@ body > header {
 }
 
 .TableOfContents {
-  font-size: 18px;
+  font-size: 19px;
 
   ul.TableOfContents_Sections {
     list-style: none;
@@ -147,7 +147,6 @@ body > section {
 
   p, li {
     font-size: 18px;
-    margin-bottom: 20px;
   }
 
   table {
@@ -162,6 +161,9 @@ body > section {
     margin-bottom: 1em;
     color: #222;
   }
+  li {
+    margin-bottom: 0;
+  }
   li > p {
     margin-bottom: 1em;
   }
@@ -175,8 +177,9 @@ body > section {
   li ul p {
     margin-bottom: .5em;
   }
-  & > p + ul {
-    margin-top: -1em;
+  & > p + ul,
+  & > p + ol {
+    margin-top: -1.5em;
   }
 
   strong {
@@ -194,11 +197,20 @@ body > section {
     text-decoration: none;
   }
 
+  // Use `word` to make it a tag.
   code {
     background: $ycsorange;
     color: white;
     border: none; // 1px solid rgba(0,0,0,.2);
     box-shadow: 0 0 5px rgba(0,0,0,.2);
+  }
+
+  // Use ```paragraph``` to make it a notice, used for rules.
+  pre {
+    code {
+      font-family: $fontText;
+      font-size: 17px;
+    }
   }
 
   em {
