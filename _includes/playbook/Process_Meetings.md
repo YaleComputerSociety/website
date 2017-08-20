@@ -57,11 +57,11 @@ Meeting times are fixed, so everyone should be expected to arrive on time. You, 
 
 ### Tips for everyone
 
-1. __Be lazy. Just talk, don't work.__  
-This can vary from team to team, but it's usually a good idea to use the meeting slot strictly to discuss and plan, not to do work. We often realize During meetings that we forgot to do this one thing and we rush to do it immediately. But doing work during meetings usually throws us off the discussion or even causes people to stop talking as they wait for us to finish.
+1. __Be lazy: talk, don't work__  
+This can vary from team to team, but it's usually a good idea to use the meeting slot strictly to discuss and plan, not to do work. We often realize during meetings that we forgot to do something important and we rush to do it immediately. But by completing tasks during meetings, however relevant, we usually throw ourselves off the important discussion going on, or, even worse, sometimes bring the discussion to a halt, as others are waiting for us to finish.
 
-1. __Lean in!__  
-Talk; share your views; don't hesitate to raise issues when you see them. Leadership is ownership, so you have a responsibility to speak up when you disagree.
+1. __Lean in__  
+Share your views and don't hesitate to raise issues when you see them. Leadership is ownership, so you have a responsibility to speak up when you disagree.
 
 ### On absences
 
