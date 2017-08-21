@@ -5,6 +5,6 @@ In the `vetting of the noobs`, the current board comes together to vet rookies t
 
 In the `tapping of the board`, the current board chooses members from outside of the board to become directors. During deliberation, directors who have worked with each of these members make the case for their experience. The result is determined by the _majority of present directors_. Members tapped may deny the offer to become directors.
 
-During the `petition of the chairs`, members of the newly elected board get together to choose the new chairs. Directors who are petitioning for a chair should make the case for their relevant skills and experience, and show commitment and a vision for the society. Deliberations end only when an absolute majority of the members present support each association in a bijective mapping of chairs to directors. This may take several hours.
+During the `petition of the chairs`, members of the newly elected board get together to choose the new chairs. Directors who are petitioning for a chair should make the case for their relevant skills and experience, and show a vision and commitment to the society. Deliberations end only when an absolute majority of the members present support each association in a bijective mapping of chairs to directors. This may take several hours.
 
-Directors can be reelected for the same chair once. Indeed, good chairs should be _asked_ to stay for a year. Seniors and rising seniors can't run nor vote.
+Directors can be reelected for the same chair once. Indeed, good chairs should stay for a year. Seniors and rising seniors can't run nor vote.

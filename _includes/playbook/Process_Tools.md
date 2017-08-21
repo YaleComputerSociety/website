@@ -12,18 +12,18 @@ Here are some best practices that we follow:
 
 - Keep columns ordered by priority of the card, with urgent tasks on top (you can use [sort by due date](https://blog.trello.com/7-ways-to-track-tasks-in-trello)). Don't forget to [archive tasks](http://help.trello.com/article/786-archiving-lists-deleting-lists) that are done or abandoned.
 
-- Use cards to track meetings. You can use the card description to post the meeting's agenda and the comment section to register minutes during the meeting.
+- Use cards to track meetings. You can use the card description to post the meeting's agenda and the comment section to register minutes during the meeting. Don't forget to [add](http://help.trello.com/article/807-adding-a-member-to-a-card) the team to the card.
 
 ### Slack
 
 We use [Slack](http://yalecs.slack.com) to communicate online. __Quick, efficient communication is vital for our success, so all of our members are expected to be responsive on it.__ We usually keep at least one channel per team.
 
 > *About Facebook Messenger*  
-> Using Messenger for quick contact with a group of members is OK. It's best however that group chats there don't last over a couple of days. When that happens, consider transferring it to Slack.
+> Using Messenger for quick contact with a group of members is OK. It's best however that group chats there don't last over a couple of days. When that happens, consider transferring it to Slack, so they become available to everyone.
 
 ### File Sharing
 
-We use [Google Drive](https://drive.google.com/drive/u/0/folders/0B3omFvP_R7pQa2lnd3Z0bTg4S3c) to keep all of our documents. We prefer adding documents to our shared folder than sharing it with individual members using their emails, for the sake of both convenience and transparency. Teams usually maintain their own folders, which are recycled at the end of each semester, but not deleted!
+We use [Google Drive](https://drive.google.com/drive/u/0/folders/0B3omFvP_R7pQa2lnd3Z0bTg4S3c) to keep all of our documents. We prefer adding documents to our shared folder than sharing it with individual members using their emails, for the sake of convenience and transparency. Teams usually maintain their own folders, which are archived at the end of each semester (but not deleted!).
 
 ### Metrics Sheet
 

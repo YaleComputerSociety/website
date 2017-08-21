@@ -172,7 +172,8 @@ body > section {
   }
   li ul {
     margin-bottom: .5em;
-    margin-top: .5em;
+    margin-top: .5em !important;
+    padding: 0; // to reset margin
   }
   li ul p {
     margin-bottom: .5em;

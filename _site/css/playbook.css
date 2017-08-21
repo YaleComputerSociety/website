@@ -546,7 +546,8 @@ body > section > header {
     margin-bottom: 2em; }
   .PlaybookPage > .markdown-body li ul {
     margin-bottom: .5em;
-    margin-top: .5em; }
+    margin-top: .5em !important;
+    padding: 0; }
   .PlaybookPage > .markdown-body li ul p {
     margin-bottom: .5em; }
   .PlaybookPage > .markdown-body > p + ul, .PlaybookPage > .markdown-body > p + ol {
