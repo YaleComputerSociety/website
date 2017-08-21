@@ -3,11 +3,11 @@ Newcomers in our society are `rookies`. Their first semester with us is marked b
 
 ## Mentorship
 
-Our `board of directors` plays an important role of support to our teams. Each director takes a few members of their own track as mentees, usually people spread over just a couple of teams, and follow the work they do, helping them with problems as they come along. A Director of Community, for example, may work with two community members doing publicity work for a study session, as well as with the lead of the team that writes the newsletters. Directors must be in constant touch with their members, touching base at least a couple of times per week. _Directors should advise but can never make decisions for their pupils._ __Like teams, mentorships are dissolved at the end of each semester and may be renewed.__
+Our `board of directors` plays an important role of support to our teams. Each director takes a few members of their own track as mentees, usually people spread over just a couple of teams, and follow the work they do, helping them with problems as they come along. Directors must be in constant touch with their mentees, and every other week may join also their meetings. Directors should advise but can never make decisions for their mentees. _Just like teams, mentorships are dissolved at the end of each semester and may be renewed afterwards._
 
 ## Chairs
 
-After one semester in the board, directors can petition to become `chairs`. Chairs are a handful of executive positions dedicated to advancing our society and shaping its culture. Chairs are an extra responsibility on top of a director's role of supporting teams.
+After one semester in the board, directors can petition to become `chairs`. Chairs are a handful of executive positions dedicated to advancing our society and shaping its culture. Chairs are an extra responsibility on top of a director's role of mentoring.
 
 - The `Chairperson` is .
 
@@ -19,9 +19,7 @@ responsible for our internal newsletter (birthdays, feedback etc).
 
 Birthdays.
 
-- The `Membership` chair is the glue of the group. They are responsible for making sure.
-
-Responsible for removing permissions for members leaving.
+- The `Membership` chair is responsible for running the recruitment process and for making sure that the mentorship of directors and members are working.
 
 - The `Treasurer` is.
 
