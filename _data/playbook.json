@@ -61,20 +61,6 @@
       ]
     },
     {
-      "title": "How we specialize",
-      "anchor": "how-we-specialize",
-      "children": [
-        {
-          "title": "Events",
-          "file": "playbook/Tracks_Events.md"
-        },
-        {
-          "title": "Partnerships",
-          "file": "playbook/Tracks_Partnerships.md"
-        },
-      ]
-    },
-    {
       "title": "How to kick ass",
       "anchor": "how-to-kick-ass",
       "children": [

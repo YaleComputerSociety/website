@@ -205,12 +205,12 @@ section.Notice:not(.hidden) + section {
   border-top: 0; }
 
 @media screen and (max-width: 800px) {
-  body > .notice {
+  body > .Notice {
     padding: 15px; }
 
-  body > section.notice {
+  body > section.Notice {
     padding: 30px 20px; }
-    body > section.notice > header {
+    body > section.Notice > header {
       font-size: 12px; } }
 .button {
   background: transparent;
@@ -284,7 +284,7 @@ body > header {
 body > section {
   padding: 70px 60px 60px;
   border-top: 3px solid #EEE;
-  font-size: 15px; }
+  font-size: 16px; }
   body > section footer {
     margin-top: 40px; }
   body > section footer,
@@ -293,7 +293,7 @@ body > section {
     padding: 0;
     font-family: 'Roboto Mono';
     font-weight: bold;
-    font-size: 14px; }
+    font-size: 1em; }
     body > section footer a,
     body > section header a {
       text-decoration: none !important;
@@ -325,8 +325,7 @@ body > section {
     body > section footer mark,
     body > section header mark {
       background: transparent;
-      padding-right: 15px;
-      margin-left: -45px; }
+      padding-right: 15px; }
       body > section footer mark:before,
       body > section header mark:before {
         -webkit-transition: 0.2s;

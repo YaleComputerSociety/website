@@ -85,11 +85,11 @@ section.Notice:not(.hidden) + section {
 }
 
 @media screen and (max-width: $on-laptop) {
-  body > .notice {
+  body > .Notice {
     padding: $device-spacing/2;
   }
 
-  body > section.notice {
+  body > section.Notice {
     padding: $device-spacing $device-spacing*2/3;
 
     & > header {

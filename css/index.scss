@@ -2,11 +2,11 @@
 ---
 
 @charset "utf-8";
-@import "base", "blinking-cursor", "PeopleList";
+@import "base", "blinking-cursor", "PeopleList", "smartnav";
 
 body > header {
 	color: #222;
-	font-size: 23px;
+	font-size: 26px;
 
 	h1,
 	h2,
@@ -22,7 +22,7 @@ body > header {
 
 	h1 {
 		font-family: $logoFont;
-		font-size: 3.5em;
+		font-size: 4em;
 		margin-bottom: 30px;
 	}
 
@@ -128,9 +128,120 @@ ul.projects .project {
   }
 }
 
-ul.events {
+ul.eventsLarge {
   margin-top: 2.6em;
 
+  .month {
+    font-family: 'Roboto Mono';
+    color: #888;
+    font-size: 1.1em;
+    font-weight: 500;
+		text-transform: uppercase;
+    margin-bottom: 2em;
+	}
+
+  .year {
+    font-family: 'Roboto Mono';
+    color: #000;
+    font-size: 2em;
+    font-weight: 300;
+    margin-bottom: .5em;
+  }
+
+  .event:not(:last-child) {
+    margin-bottom: 2.7em;
+  }
+
+  .event {
+    max-width: 900px;
+    position: relative;
+		flex: 1;
+		flex-direction: row;
+		align-items: center;
+		display: flex;
+
+    .image {
+      margin-right: 40px;
+			min-width: $Events_picdim;
+
+      img {
+        width: $Events_picdim;
+        height: $Events_picdim;
+        border-radius: 1000px;
+      }
+    }
+
+    .content {
+      font-family: Roboto;
+			font-size: 16px;
+
+      a {
+        color: #333;
+        border-bottom: 1px dashed #DDD;
+        @include transition(.1s);
+
+        &:hover {
+          text-decoration: none;
+          //color: #1976d2;
+          border-bottom: 1px dashed #1976d2;
+          border-bottom-color: #888;
+        }
+      }
+
+      h1,
+      h2,
+      h3 {
+        line-height: 1.5;
+      }
+
+      h1 {
+        margin-bottom: 0.2em;
+        font-size: 1.4em;
+        font-weight: 300;
+        color: #555;
+
+        strong {
+          color: #000;
+        }
+
+        .origin {
+          display: inline-block;
+          color: #F4B350;
+          margin-left: 5px;
+          font-size: 0.7em;
+
+          strong {
+            text-transform: uppercase;
+            color: inherit;
+          }
+
+          &.blue {}
+        }
+      }
+
+      h2 {
+        font-size: 1.1em;
+        margin-bottom: 0.5em;
+        font-weight: 300;
+        color: #333;
+
+        strong {
+          font-weight: 400;
+        }
+      }
+
+      h3 {
+        font-family: 'Roboto Mono';
+        font-size: 1.0em;
+        color: #333;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+ul.events {
+  margin-top: 2.6em;
 
   .month {
     font-family: 'Roboto Mono';

@@ -12,6 +12,7 @@ Chairs are a handful of executive positions dedicated to advancing our society a
 - The `Chairperson` is the team lead for the chairs. They are the [servant leader](https://en.wikipedia.org/wiki/Servant_leadership) who makes sure that each of our member has resources to work appropriately, according to the playbook.
 
 - The `Culture` chair is runs social events and traditions of our society. Responsibilities include:
+  - __Weekly dinners__
   - __Society toasts__
   - __Weekly newsletter__
   - __Part-ais__

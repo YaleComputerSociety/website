@@ -90,7 +90,7 @@ body > header {
 body > section {
   padding: 70px 60px 60px;
   border-top: 3px solid #EEE;
-  font-size: 15px;
+  font-size: 16px;
 
   footer {
     margin-top: 40px;
@@ -102,7 +102,7 @@ body > section {
     padding: 0;
     font-family: 'Roboto Mono';
     font-weight: bold;
-    font-size: 14px;
+    font-size: 1em;
 
     a {
       text-decoration: none !important;
@@ -136,7 +136,6 @@ body > section {
     mark {
       background: transparent;
       padding-right: 15px;
-      margin-left: -45px;
 
       &:before {
         @include transition(.2s);
