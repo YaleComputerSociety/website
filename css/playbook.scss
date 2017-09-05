@@ -232,6 +232,10 @@ body > section {
   }
 }
 
+section > header mark {
+  display: none;
+}
+
 .markdown-body {
   @include markdown-body();
   font-size: 16px;

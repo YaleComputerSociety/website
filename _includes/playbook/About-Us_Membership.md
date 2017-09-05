@@ -18,12 +18,14 @@ Chairs are a handful of executive positions dedicated to advancing our society a
   - __Part-ais__
   - Internal study breaks (__Hot coacode__, with hot cocoa, that happens in December).
 
-- The `Membership` chair makes sure that our members are learning and having fun. Responsibilities include:
+- The `Mentorship/Operations` chair makes sure that our members are learning and having fun. Responsibilities include:
+  - Onboard people.
   - Setting up the mentorship pairings and make sure they are working.
   - Following up on mentors and mentees via surveys and thinks about.
   - Holding workshop for mentors in the beginning of each semester.
 
-- The `Recruitment` chair is responsible for running recruitment and onboarding. Responsibilities include:
+- The `Membership` chair is responsible for
+  - Find ways to ours the most satisfied club on campus.
   - Mentor or lead the team for the Fall extracurricular bazar and the Spring Bulldog Days.
   - Publicize YCS throughout the entire semester.
 

@@ -761,6 +761,9 @@ body > section > header {
     .PlaybookPage > .markdown-body a:hover {
       border-bottom: 2px solid #08c; }
 
+section > header mark {
+  display: none; }
+
 .markdown-body {
   font-family: "Helvetica Nesue", "Roboto", monospace;
   font-size: 13px;
