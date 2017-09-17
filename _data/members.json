@@ -1,146 +1,67 @@
 {
   "felipe-pires": {
     "name": "Felipe Pires",
-    "blurb": "President",
+    "blurb": "Chairperson",
     "picture": "http://graph.facebook.com/100000366187376/picture?width=400&height=400",
   },
 
   "john-amadeo": {
     "name": "John Amadeo",
-    "blurb": "Vice president",
+    "blurb": "Projects Chair",
     "picture": "http://graph.facebook.com/1513041057/picture?width=400&height=400",
-  },
-
-  "stephanie": {
-    "name": "Stephanie Hickman",
-    "blurb": "Social Chair",
-    "picture": "http://graph.facebook.com/100000384198680/picture?width=400&height=400"
   },
 
   "sean": {
     "name": "Sean Walker",
-    "blurb": "Director of Events",
+    "blurb": "Social Chair",
     "picture": "http://graph.facebook.com/100003477397995/picture?width=400&height=400"
   },
 
-  "cristobal": {
-    "name": "Cristobal Gonzalez",
-    "blurb": "Director of Community",
-    "picture": "http://graph.facebook.com/100003022199269/picture?width=400&height=400"
-  },
-
-  "nishitha": {
-    "name": "Nishitha Burman",
-    "blurb": "Community Team",
-    "picture": "http://graph.facebook.com/100005652978008/picture?width=400&height=400"
-  },
-
-  "chris.kim": {
-    "name": "Christopher Kim",
-    "blurb": "Director of Partnerships",
-    "picture": "http://graph.facebook.com/1790419246/picture?width=400&height=400"
+  "william": {
+    "name": "William Yang",
+    "blurb": "Treasurer Chair",
+    "picture": "http://graph.facebook.com/100000411957490/picture?width=400&height=400"
   },
   
   "amanda": {
     "name": "Amanda Lee Ping",
-    "blurb": "Director of Community",
+    "blurb": "Events Director",
     "picture": "http://graph.facebook.com/1548920938/picture?width=400&height=400"
   },
   
   "shannon": {
     "name": "Shannon Yasuda",
-    "blurb": "Events Team",
+    "blurb": "Events Director",
     "picture": "http://graph.facebook.com/100006564433305/picture?width=400&height=400"
   },
 
-  "marilyn": {
-    "name": "Marilyn Mossien",
-    "blurb": "Events Team",
-    "picture": "http://graph.facebook.com/100009882549211/picture?width=400&height=400"
-  },
-
-  "sabrina-evans": {
-    "name": "Sabrina Evans",
-    "blurb": "Ambassador to Oxford",
-    "picture": "https://graph.facebook.com/100000088944262/picture?width=400&height=400"
-  },
-
-  "devon.merlette": {
-    "name": "Devon Merlette",
-    "blurb": "Designer",
-    "picture": "http://graph.facebook.com/100000726794077/picture?width=400&height=400",
-  },
-
-  "will.kortum": {
-    "name": "Will Kortum",
-    "blurb": "Designer",
-    "picture": "http://graph.facebook.com/100001779713088/picture?width=400&height=400",
-  },
-
-  "william": {
-    "name": "William Yang",
-    "blurb": "Treasurer, Events Team",
-    "picture": "http://graph.facebook.com/100000411957490/picture?width=400&height=400"
+  "nikita.kvasniov": {
+    "name": "Nikita Kvasniov",
+    "blurb": "Partnerships Director",
+    "picture": "http://graph.facebook.com/100000245292061/picture?width=400&height=400"
   },
 
   "tantan": {
     "name": "TanTan Wang",
-    "blurb": "Community Team",
+    "blurb": "",
     "picture": "http://graph.facebook.com/100001649240042/picture?width=400&height=400"
-  },
-
-  "alex.wang": {
-    "name": "Alex Wang",
-    "blurb": "Events Team",
-    "picture": "http://graph.facebook.com/100002654280088/picture?width=400&height=400"
   },
 
   "clark.xie": {
     "name": "Clark Xie",
-    "blurb": "Events Team",
+    "blurb": "",
     "picture": "http://graph.facebook.com/100002710753602/picture?width=400&height=400"
   },
 
   "ece.bozkurt": {
     "name": "Ece Bozkurt",
-    "blurb": "Events Team",
+    "blurb": "",
     "picture": "http://graph.facebook.com/100000203140467/picture?width=400&height=400"
-  },
-
-  "carlo.abelli": {
-    "name": "Carlo Abelli",
-    "blurb": "Events Team",
-    "picture": "http://graph.facebook.com/100003643689397/picture?width=400&height=400"
-  },
-
-  "lasya.sreepada": {
-    "name": "Lasya Sreepada",
-    "blurb": "Director of Events",
-    "picture": "/images/lasya.jpg"
-  },
-
-  "nikita.kvasniov": {
-    "name": "Nikita Kvasniov",
-    "blurb": "Partnerships Team",
-    "picture": "http://graph.facebook.com/100000245292061/picture?width=400&height=400"
   },
 
   "sanya.nijhawan": {
     "name": "Sanya Nijhawan",
-    "blurb": "Events Team",
+    "blurb": "",
     "picture": "http://graph.facebook.com/100000993115532/picture?width=400&height=400"
   },
-
-  "emmett.chen-ran": {
-    "name": "Emmett Chen-Ran",
-    "blurb": "Director of Community",
-    "picture": "http://graph.facebook.com/100003555254518/picture?width=400&height=400"
-  },
-
-  "rishab.ramanathan": {
-    "name": "Rishab Ramanathan",
-    "blurb": "Community Team",
-    "picture": "http://graph.facebook.com/1516779894/picture?width=400&height=400"
-  },
-
 }
