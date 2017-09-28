@@ -2,13 +2,13 @@
   "felipe-pires": {
     "name": "Felipe Pires",
     "blurb": "Chairperson",
-    "picture": "http://graph.facebook.com/100000366187376/picture?width=400&height=400",
+    "picture": "http://graph.facebook.com/100000366187376/picture?width=400&height=400"
   },
 
   "john-amadeo": {
     "name": "John Amadeo",
     "blurb": "Projects Chair",
-    "picture": "http://graph.facebook.com/1513041057/picture?width=400&height=400",
+    "picture": "http://graph.facebook.com/1513041057/picture?width=400&height=400"
   },
 
   "sean": {
@@ -41,10 +41,10 @@
     "picture": "http://graph.facebook.com/100000245292061/picture?width=400&height=400"
   },
 
-  "tantan": {
-    "name": "TanTan Wang",
+  "alex.wang": {
+    "name": "Alex Wang",
     "blurb": "",
-    "picture": "http://graph.facebook.com/100001649240042/picture?width=400&height=400"
+    "picture": "http://graph.facebook.com/100002654280088/picture?width=400&height=400"
   },
 
   "clark.xie": {
@@ -64,4 +64,10 @@
     "blurb": "",
     "picture": "http://graph.facebook.com/100000993115532/picture?width=400&height=400"
   },
+
+  "tantan": {
+    "name": "TanTan Wang",
+    "blurb": "",
+    "picture": "http://graph.facebook.com/100001649240042/picture?width=400&height=400"
+  }
 }
