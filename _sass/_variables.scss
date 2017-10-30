@@ -1,0 +1,27 @@
+// Default variables
+$base-font-family: "Roboto", Helvetica, Arial, sans-serif;
+$base-font-size: 16px;
+$base-font-weight: 400;
+$small-font-size: $base-font-size * 0.875;
+$base-line-height: 1.5;
+$spacing-unit: 30px;
+$text-color: #111;
+$background-color: #fdfdfd;
+$brand-color: #2a7ae2;
+$grey-color: #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark: darken($grey-color, 25%); // Width of the content area
+$content-width: 800px;
+$on-palm: 600px;
+$on-laptop: 800px;
+//
+$ycsorange: #ff7a6f;
+$blue: #4b8bcc; // #426bba;
+$color-tag: #F3753A; // #4A9BFF;
+
+$PeopleList_picdim: 130px;
+$Events_picdim: 130px;
+
+$device-spacing: 30px;
+// $laptop-spacing: 30px;
+$logoFont: 'Space Mono', monospace;

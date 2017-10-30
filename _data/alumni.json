@@ -1,13 +1,96 @@
 {
-  "wissem-gamra": {
-    "name": "Wissem Gamra",
-    "blurb": "Treasurer",
-    "picture": "https://yt3.ggpht.com/-ps51kDJhQrs/AAAAAAAAAAI/AAAAAAAAAAA/gaKp5HQDdLI/s900-c-k-no-rj-c0xffffff/photo.jpg"
+  "2017": {
+    "stephanie": {
+      "name": "Stephanie Hickman",
+      "blurb": "Social Chair",
+      "picture": "http://graph.facebook.com/100000384198680/picture?width=400&height=400",
+      "description": "Worked as social chair when the group was small etc.",
+    },
+
+    "cristobal": {
+      "name": "Cristobal Gonzalez",
+      "blurb": "Director of Community",
+      "picture": "http://graph.facebook.com/100003022199269/picture?width=400&height=400"
+    },
+
+    "nishitha": {
+      "name": "Nishitha Burman",
+      "blurb": "Community Team",
+      "picture": "http://graph.facebook.com/100005652978008/picture?width=400&height=400"
+    },
+
+    "chris.kim": {
+      "name": "Christopher Kim",
+      "blurb": "Director of Partnerships",
+      "picture": "http://graph.facebook.com/1790419246/picture?width=400&height=400"
+    },
+
+    "marilyn": {
+      "name": "Marilyn Mossien",
+      "blurb": "Events Team",
+      "picture": "http://graph.facebook.com/100009882549211/picture?width=400&height=400"
+    },
+
+    "sabrina-evans": {
+      "name": "Sabrina Evans",
+      "blurb": "Ambassador to Oxford",
+      "picture": "https://graph.facebook.com/100000088944262/picture?width=400&height=400"
+    },
+
+    "devon.merlette": {
+      "name": "Devon Merlette",
+      "blurb": "Designer",
+      "picture": "http://graph.facebook.com/100000726794077/picture?width=400&height=400",
+    },
+
+    "will.kortum": {
+      "name": "Will Kortum",
+      "blurb": "Designer",
+      "picture": "http://graph.facebook.com/100001779713088/picture?width=400&height=400",
+    },
+
+    "alex.wang": {
+      "name": "Alex Wang",
+      "blurb": "Events Team",
+      "picture": "http://graph.facebook.com/100002654280088/picture?width=400&height=400"
+    },
+
+    "carlo.abelli": {
+      "name": "Carlo Abelli",
+      "blurb": "Events Team",
+      "picture": "http://graph.facebook.com/100003643689397/picture?width=400&height=400"
+    },
+
+    "lasya.sreepada": {
+      "name": "Lasya Sreepada",
+      "blurb": "Director of Events",
+      "picture": "/images/lasya.jpg"
+    },
+
+    "emmett.chen-ran": {
+      "name": "Emmett Chen-Ran",
+      "blurb": "Director of Community",
+      "picture": "http://graph.facebook.com/100003555254518/picture?width=400&height=400"
+    },
+
+    "rishab.ramanathan": {
+      "name": "Rishab Ramanathan",
+      "blurb": "Community Team",
+      "picture": "http://graph.facebook.com/1516779894/picture?width=400&height=400"
+    },
   },
 
-  "brian": {
-    "name": "Brian Kitano",
-    "blurb": "",
-    "picture": "https://graph.facebook.com/100000406761998/picture?width=400&height=400"
+  "2016": {
+    "wissem-gamra": {
+      "name": "Wissem Gamra",
+      "blurb": "Treasurer",
+      "picture": "https://yt3.ggpht.com/-ps51kDJhQrs/AAAAAAAAAAI/AAAAAAAAAAA/gaKp5HQDdLI/s900-c-k-no-rj-c0xffffff/photo.jpg"
+    },
+
+    "brian": {
+      "name": "Brian Kitano",
+      "blurb": "",
+      "picture": "https://graph.facebook.com/100000406761998/picture?width=400&height=400"
+    },
   },
 }

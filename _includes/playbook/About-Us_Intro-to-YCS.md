@@ -1,0 +1,1 @@
+We exist to serve the community of Yale students interested in tech and entrepreneurship. We work hard to help expand this community and the opportunities available to it. As a society, we seek to be a medium of personal and professional growth for our members.

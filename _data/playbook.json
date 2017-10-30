@@ -1,0 +1,74 @@
+{
+  "sections": [
+    {
+      "title": "Who we are",
+      "anchor": "what-we-are",
+      "children": [
+        {
+          "title": "Intro to YCS",
+          "file": "playbook/About-Us_Intro-to-YCS.md"
+        },
+        {
+          "title": "Our Values",
+          "file": "playbook/About-Us_Values.md"
+        },
+        {
+          "title": "Tracks And Teams",
+          "file": "playbook/About-Us_Tracks-and-Teams.md"
+        },
+        {
+          "title": "Membership",
+          "file": "playbook/About-Us_Membership.md"
+        },
+        {
+          "title": "Elections",
+          "file": "playbook/About-Us_Elections.md"
+        }
+      ]
+    },
+    {
+      "title": "How we work",
+      "anchor": "how-we-work",
+      "children": [
+        {
+          "title": "Tools",
+          "file": "playbook/Process_Tools.md"
+        },
+        {
+          "title": "Meetings",
+          "file": "playbook/Process_Meetings.md"
+        },
+        {
+          "title": "Metrics",
+          "file": "playbook/Process_Metrics.md"
+        },
+        {
+          "title": "Interviewing",
+          "file": "playbook/Process_Interviewing.md"
+        },
+        {
+          "title": "Onboarding",
+          "file": "playbook/Process_Onboarding.md"
+        },
+        {
+          "title": "Distributing work",
+          "file": "playbook/Process_PositionManagement.md"
+        },
+        {
+          "title": "Code of Conduct",
+          "file": "playbook/Process_Code-of-Conduct.md"
+        }
+      ]
+    },
+    {
+      "title": "How to kick ass",
+      "anchor": "how-to-kick-ass",
+      "children": [
+        {
+          "title": "Tips for Managers",
+          "file": "playbook/Membership_Managers.md"
+        },
+      ]
+    }
+	]
+}

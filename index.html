@@ -9,36 +9,45 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400|Roboto+Mono:300,400|Space+Mono:400,700" rel="stylesheet">
 
 <body>
-<!-- 
-<div class="notice info">
-<div class="content">
-	<a href="/prize">
-  Judges for the Grace Hopper Prize announced: Stephen Slade, Holly Rushmeier, and Jakub Szefer.
-	</a>
-</div>
+
+<!-- <section class="Notice abc">
+	<div class="content">
+		<a href="#">Dec 12th 6-9pm at CEID: <strong>YCS study break for finals.</strong> See on Facebook.</a>
+	</div>
+</section>
+
+<div class="Notice">
+	<div class="content">
+		<a href="/prize">
+	  Judges for the Grace Hopper Prize announced: Stephen Slade, Holly Rushmeier, and Jakub Szefer.
+		</a>
+	</div>
 </div> -->
 
-<header class="main">
-	<div class="title-wrapper">
-		<h1><a href="{{ site.baseurl }}/" id="ytitle">Yale<br /> Computer<br />Society</a><span class="cursor"></span></h1>
-		<h2>Students promoting tech &amp; entrepreneurship at Yale University</h2>
-	</div>
+<header>
+	<h1>
+		<a href="{{ site.baseurl }}/" id="ytitle">
+			<strong>Yale<br /> Computer<br />Society</strong>
+		</a>
+		<span class="cursor"></span>
+	</h1>
+	<h2>
+		Students promoting tech &amp; entrepreneurship at Yale University
+	</h2>
 
-	<div class="mailchimp-form" id="mc_embed_signup"> <!-- Begin MailChimp Signup Form -->
+	<div class="MailchimpForm" id="mc_embed_signup">
+		<!-- Begin MailChimp Signup Form -->
 		<form action="//yalecompsociety.us14.list-manage.com/subscribe/post?u=842f70190aeaa348007d7ccfb&amp;id=954e9ebd0c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-
-			<div aria-hidden="true" class="hidden">
+			<div aria-hidden="true" class="hidden" style="position: absolute; left: -5000px;">
 				<input type="text" name="b_842f70190aeaa348007d7ccfb_954e9ebd0c" tabindex="-1" value="">
 			</div>
 
 			<p>
-
-			<input type="email" value="" name="EMAIL" class="required email" placeholder="Email" id="mce-EMAIL">
-
-			<input type="submit" value="Join Our Newsletter" name="subscribe" id="mc-embedded-subscribe" href="javascript:showMLInstructions()" class="btn ml-button"></input>
-
-			<span class="and">
-				and learn about <strong>events</strong> and <strong>opportunities</strong></span>
+				<input type="email" value="" name="EMAIL" class="required email" placeholder="Email" id="mce-EMAIL">
+				<input type="submit" value="Join Our Newsletter" name="subscribe" id="mc-embedded-subscribe" href="javascript:showMLInstructions()" class="button"></input>
+				<span class="and">
+					and learn about <strong>events</strong> and <strong>opportunities</strong>
+				</span>
 			</p>
 
 			<div id="mce-responses" class="clear">
@@ -46,291 +55,277 @@
 				<div class="response" id="mce-success-response" style="display:none"></div>
 			</div>
 		</form>
+		<!-- End MailChimp Signup Form -->
 	</div>
 </header>
-
-<section id="section-prize" class="prize-section borderless">
-	<h1>YCS <strong>Grace Hopper Prize</strong> of 2016</h1>
-	<h2>
-		$1000 pool for the best software projects at Yale.
-	</h2>
-
-	<button class="btn button white" onClick="window.location='/prize'">Click to learn more</button>
-</section>
 
 
 <section id="events">
 	<header>
 		<h1><a href="#events"><mark></mark>Events</a></h1>
-		<h2>Scheduled events for 2016-2017.</h2>
+		<h2>Events for the 2016-2017 year.</h2>
 	</header>
 
-	<ul class="events">
-  </ul>
+  <ul class="eventsLarge">
+			<div class="year">
+				2017
+			</div>
 
-<section>
-  <header>
-  <h1>Past events</h1>
-  </header>
+			<div class="month">
+				April
+			</div>
 
-  <ul class="events">
+			<div class="event">
+				<div class="image">
+					<img src="{{ site.baseurl }}/images/gala.jpg" />
+				</div>
+				<div class="content">
+					<h1>
+	          <strong>YCS Presents: Tech Gala</strong>
+					</h1>
+					<h2>
+						Come to the 1st annual Tech Gala, an end-of-year celebration of computer science at Yale!
+					</h2>
+	        <h3>Friday, <strong>April 28th</strong>. <strong>8-10pm</strong>.Grace Hopper Dining Hall.</h3>
+				</div>
+			</div>
 
-		<div class="date">
-			<h1>April</h1>
-		</div>
+			<div class="event">
+				<div class="image">
+					<img src="{{ site.baseurl }}/images/codelab.JPG" />
+				</div>
+				<div class="content">
+					<h1>
+	          <strong>Facebook CodeLab</strong>
+					</h1>
+					<h2>
+						Interview workshop hosted by Yale alumni now working as Facebook engineers!
+					</h2>
+	        <h3>Tuesday, <strong>April 18th</strong>. <strong>5-6pm</strong>.CEID.</h3>
+				</div>
+			</div>
 
-		<div class="event">
-			<div class="image">
-				<img src="{{ site.baseurl }}/images/gala.jpg" />
+			<div class="event">
+				<div class="image">
+					<img src="{{ site.baseurl }}/images/hacknights3.JPG" />
+				</div>
+				<div class="content">
+					<h1>
+	          <strong>Hacknights Week 02</strong>
+					</h1>
+					<h2>
+						Come to Hacknights Week 02! Food/drinks provided.
+					</h2>
+	        <h3>Thursday, <strong>April 13th</strong>. <strong>8-9pm</strong>.WLH 210.</h3>
+				</div>
 			</div>
-			<div class="content">
-				<h1>
-          <strong>YCS Presents: Tech Gala</strong>
-				</h1>
-				<h2>
-					Come to the 1st annual Tech Gala, an end-of-year celebration of computer science at Yale! 
-				</h2>
-        <h3>Friday, <strong>April 28th</strong>. <strong>8-10pm</strong>.Grace Hopper Dining Hall.</h3>
-			</div>
-		</div>
 
-		<div class="event">
-			<div class="image">
-				<img src="{{ site.baseurl }}/images/codelab.JPG" />
+			<div class="event">
+				<div class="image">
+					<img src="{{ site.baseurl }}/images/friedman.JPG" />
+				</div>
+				<div class="content">
+					<h1>
+	          <strong>Daniel Friedman</strong>, Y '11
+					</h1>
+					<h2>
+						Thiel Fellow, Forbes 30 Under 30 Social Innovator, and CEO of Thinkful, an online coding bootcamp that combines face-to-face learning with the accessibility of online education.
+					</h2>
+	        <h3>Saturday, <strong>April 8th</strong>. <strong>12.30-2pm</strong>.Bass L01-A.</h3>
+				</div>
 			</div>
-			<div class="content">
-				<h1>
-          <strong>Facebook CodeLab</strong>
-				</h1>
-				<h2>
-					Interview workshop hosted by Yale alumni now working as Facebook engineers!
-				</h2>
-        <h3>Tuesday, <strong>April 18th</strong>. <strong>5-6pm</strong>.CEID.</h3>
-			</div>
-		</div>
 
-		<div class="event">
-			<div class="image">
-				<img src="{{ site.baseurl }}/images/hacknights3.JPG" />
+			<div class="event">
+				<div class="image">
+					<img src="{{ site.baseurl }}/images/hacknights2.JPG" />
+				</div>
+				<div class="content">
+					<h1>
+	          <strong>Hacknights Week 01</strong>
+					</h1>
+					<h2>
+						Come to Hacknights Week 01! Food/drinks provided.
+					</h2>
+	        <h3>Thursday, <strong>April 6th</strong>. <strong>8-10pm</strong>.WLH 210.</h3>
+				</div>
 			</div>
-			<div class="content">
-				<h1>
-          <strong>Hacknights Week 02</strong>
-				</h1>
-				<h2>
-					Come to Hacknights Week 02! Food/drinks provided.
-				</h2>
-        <h3>Thursday, <strong>April 13th</strong>. <strong>8-9pm</strong>.WLH 210.</h3>
-			</div>
-		</div>
 
-		<div class="event">
-			<div class="image">
-				<img src="{{ site.baseurl }}/images/friedman.JPG" />
+			<div class="month">
+				March
 			</div>
-			<div class="content">
-				<h1>
-          <strong>Daniel Friedman</strong>, Y '11
-				</h1>
-				<h2>
-					Thiel Fellow, Forbes 30 Under 30 Social Innovator, and CEO of Thinkful, an online coding bootcamp that combines face-to-face learning with the accessibility of online education.
-				</h2>
-        <h3>Saturday, <strong>April 8th</strong>. <strong>12.30-2pm</strong>.Bass L01-A.</h3>
-			</div>
-		</div>
 
-		<div class="event">
-			<div class="image">
-				<img src="{{ site.baseurl }}/images/hacknights2.JPG" />
+			<div class="event">
+				<div class="image">
+					<img src="{{ site.baseurl }}/images/simonson.JPG" />
+				</div>
+				<div class="content">
+					<h1>
+	          <strong>Yusuf Simonson</strong>
+					</h1>
+					<h2>
+						CTO at TheMuse (YCombinator W12), online jobs and career advice platform w/ 50M users and $28M in funding.
+					</h2>
+	        <h3>Friday, <strong>March 31st</strong>. <strong>4-6pm</strong>.WLH 113.</h3>
+				</div>
 			</div>
-			<div class="content">
-				<h1>
-          <strong>Hacknights Week 01</strong>
-				</h1>
-				<h2>
-					Come to Hacknights Week 01! Food/drinks provided.
-				</h2>
-        <h3>Thursday, <strong>April 6th</strong>. <strong>8-10pm</strong>.WLH 210.</h3>
-			</div>
-		</div>
 
-		<div class="date">
-			<h1>March</h1>
-		</div>
+			<div class="event">
+				<div class="image">
+					<img src="{{ site.baseurl }}/images/hacknights1.JPG" />
+				</div>
+				<div class="content">
+					<h1>
+	          <strong>Hacknights Week 00</strong>
+					</h1>
+					<h2>
+						Join YCS for our inaugural Hack Nights! Code together with your friends on psets, projects, etc. while enjoying free food and drinks.
+					</h2>
+	        <h3>Thursday, <strong>March 30th</strong>. <strong>8-9pm</strong>.WLH 210.</h3>
+				</div>
+			</div>
 
-		<div class="event">
-			<div class="image">
-				<img src="{{ site.baseurl }}/images/simonson.JPG" />
+			<div class="event">
+				<div class="image">
+					<img src="{{ site.baseurl }}/images/cs477.JPG" />
+				</div>
+				<div class="content">
+					<h1>
+	          <strong>CS 477 Study Session</strong>
+					</h1>
+					<h2>
+						Study for the upcoming NLP midterm together!
+					</h2>
+	        <h3>Friday, <strong>March 3rd</strong>. <strong>8-9pm</strong>.WLH 116.</h3>
+				</div>
 			</div>
-			<div class="content">
-				<h1>
-          <strong>Yusuf Simonson</strong>
-				</h1>
-				<h2>
-					CTO at TheMuse (YCombinator W12), online jobs and career advice platform w/ 50M users and $28M in funding.
-				</h2>
-        <h3>Friday, <strong>March 31st</strong>. <strong>4-6pm</strong>.WLH 113.</h3>
-			</div>
-		</div>
 
-		<div class="event">
-			<div class="image">
-				<img src="{{ site.baseurl }}/images/hacknights1.JPG" />
+			<div class="month">
+				February
 			</div>
-			<div class="content">
-				<h1>
-          <strong>Hacknights Week 00</strong>
-				</h1>
-				<h2>
-					Join YCS for our inaugural Hack Nights! Code together with your friends on psets, projects, etc. while enjoying free food and drinks. 
-				</h2>
-        <h3>Thursday, <strong>March 30th</strong>. <strong>8-9pm</strong>.WLH 210.</h3>
-			</div>
-		</div>
 
-		<div class="event">
-			<div class="image">
-				<img src="{{ site.baseurl }}/images/cs477.JPG" />
+			<div class="event">
+				<div class="image">
+					<img src="{{ site.baseurl }}/images/cs365.JPG" />
+				</div>
+				<div class="content">
+					<h1>
+	          <strong>CS 365 Study Session</strong>
+					</h1>
+					<h2>
+					Study for the upcoming CPSC 365 midterm with friends and Insomnia cookies!
+					</h2>
+	        <h3>Monday, <strong>February 27th</strong>. <strong>3-4pm</strong>.WLH 211.</h3>
+				</div>
 			</div>
-			<div class="content">
-				<h1>
-          <strong>CS 477 Study Session</strong>
-				</h1>
-				<h2>
-					Study for the upcoming NLP midterm together!
-				</h2>
-        <h3>Friday, <strong>March 3rd</strong>. <strong>8-9pm</strong>.WLH 116.</h3>
-			</div>
-		</div>
 
-		<div class="date">
-			<h1>February</h1>
-		</div>
+			<div class="event">
+				<div class="image">
+					<img src="{{ site.baseurl }}/images/prizeinfo.JPG" />
+				</div>
+				<div class="content">
+					<h1>
+	          <strong>YCS Grace Hopper Prize Info Session</strong>
+					</h1>
+					<h2>
+						Come to the first info session for the Grace Hopper Prize and the Alan Perlis Prize for Newcomers
+					</h2>
+	        <h3>Wednesday, <strong>February 15th</strong>. <strong>9-10pm</strong>. WLH 114.</h3>
+				</div>
+			</div>
 
-		<div class="event">
-			<div class="image">
-				<img src="{{ site.baseurl }}/images/cs365.JPG" />
+			<div class="year">
+				2016
 			</div>
-			<div class="content">
-				<h1>
-          <strong>CS 365 Study Session</strong>
-				</h1>
-				<h2>
-				Study for the upcoming CPSC 365 midterm with friends and Insomnia cookies!
-				</h2>
-        <h3>Monday, <strong>February 27th</strong>. <strong>3-4pm</strong>.WLH 211.</h3>
-			</div>
-		</div>
 
-		<div class="event">
-			<div class="image">
-				<img src="{{ site.baseurl }}/images/prizeinfo.JPG" />
+			<div class="month">
+				December
 			</div>
-			<div class="content">
-				<h1>
-          <strong>YCS Grace Hopper Prize Info Session</strong>
-				</h1>
-				<h2>
-					Come to the first info session for the Grace Hopper Prize and the Alan Perlis Prize for Newcomers
-				</h2>
-        <h3>Wednesday, <strong>February 15th</strong>. <strong>9-10pm</strong>. WLH 114.</h3>
-			</div>
-		</div>
 
-		<div class="year">
-			<h1>2016</h1>
-		</div>
+			<div class="event">
+				<div class="image">
+					<img src="{{ site.baseurl }}/images/study.jpg" />
+				</div>
+				<div class="content">
+					<h1>
+	          <strong>Study sessions for finals</strong>
+					</h1>
+					<h2>
+						Come study with friends at the CEID. Check out our events on Facebook to find the times for you class. Lots of cookies await for you.
+					</h2>
+	        <h3>All weekend, <strong>starting December 10th</strong>. CEID.</h3>
+				</div>
+			</div>
 
-		<div class="date">
-			<h1>December</h1>
-		</div>
+			<div class="event">
+				<div class="image">
+					<img src="{{ site.baseurl }}/images/interview.png" />
+				</div>
+				<div class="content">
+					<h1>
+	          <strong>Interview Workshop I</strong>
+					</h1>
+					<h2>
+						Learn about the process of interviewing for the main tech companies, the coding challenges and how to prepare for them. Dinner (pizza &amp; cookies) will be provided.
+					</h2>
+	        <h3>Monday, <strong>December 5th</strong>. <strong>7-9pm</strong>. AKW 100.</h3>
+				</div>
+			</div>
 
-		<div class="event">
-			<div class="image">
-				<img src="{{ site.baseurl }}/images/study.jpg" />
+			<div class="month">
+				November
 			</div>
-			<div class="content">
-				<h1>
-          <strong>Study sessions for finals</strong>
-				</h1>
-				<h2>
-					Come study with friends at the CEID. Check out our events on Facebook to find the times for you class. Lots of cookies await for you.
-				</h2>
-        <h3>All weekend, <strong>starting December 10th</strong>. CEID.</h3>
-			</div>
-		</div>
 
-		<div class="event">
-			<div class="image">
-				<img src="{{ site.baseurl }}/images/interview.png" />
+			<div class="event">
+				<div class="image">
+					<img src="{{ site.baseurl }}/images/julia-austin.jpg" />
+				</div>
+				<div class="content">
+					<h1>
+	          <strong>Julia Austin</strong>
+					</h1>
+					<h2>
+	          CTO at DigitalOcean and Senior Lecturer at Harvard Business School. Previously at VMWare and Akamai.
+					</h2>
+	        <h3>Thursday, <strong>November 3rd</strong>. <strong>11:45am-12:45</strong>. Lunch at the CEID.</h3>
+				</div>
 			</div>
-			<div class="content">
-				<h1>
-          <strong>Interview Workshop I</strong>
-				</h1>
-				<h2>
-					Learn about the process of interviewing for the main tech companies, the coding challenges and how to prepare for them. Dinner (pizza &amp; cookies) will be provided.
-				</h2>
-        <h3>Monday, <strong>December 5th</strong>. <strong>7-9pm</strong>. AKW 100.</h3>
-			</div>
-		</div>
 
-		<div class="date">
-			<h1>November</h1>
-		</div>
-
-		<div class="event">
-			<div class="image">
-				<img src="{{ site.baseurl }}/images/julia-austin.jpg" />
+			<div class="month">
+				September
 			</div>
-			<div class="content">
-				<h1>
-          <strong>Julia Austin</strong>
-				</h1>
-				<h2>
-          CTO at DigitalOcean and Senior Lecturer at Harvard Business School. Previously at VMWare and Akamai.
-				</h2>
-        <h3>Thursday, <strong>November 3rd</strong>. <strong>11:45am-12:45</strong>. Lunch at the CEID.</h3>
+			<div class="event">
+				<div class="image">
+					<img src="{{ site.baseurl }}/images/tom.png" />
+				</div>
+				<div class="content">
+					<h1>
+						<strong>Tom Lehman</strong>, Y '06
+					</h1>
+					<h2>
+						CEO &amp; Co-founder of <strong>Genius</strong>, formerly Rap Genius, the world’s biggest collection of song lyrics and crowdsourced musical knowledge.
+					</h2>
+					<h3>Friday, <strong>September 30th</strong>. <strong>7pm to 8:15pm</strong>. At Sudler Hall.</h3>
+				</div>
 			</div>
-		</div>
-
-		<div class="date">
-			<h1>September</h1>
-		</div>
-		<div class="event">
-			<div class="image">
-				<img src="{{ site.baseurl }}/images/tom.png" />
+			<div class="event">
+				<div class="image">
+					<img src="{{ site.baseurl }}/images/abhi.png" />
+				</div>
+				<div class="content">
+					<h1>
+						<strong>Abhishek Chandra</strong>, Y '16
+					</h1>
+					<h2>
+						CTO of <strong>Spring.Care</strong>, a healthcare company using data-driven technology to diagnose depression.
+					</h2>
+					<h3>Friday, <strong>September 9th</strong>. <strong>4:30pm to 6pm</strong>. At CEID.</h3>
+				</div>
 			</div>
-			<div class="content">
-				<h1>
-					<strong>Tom Lehman</strong>, Y '06
-				</h1>
-				<h2>
-					CEO &amp; Co-founder of <strong>Genius</strong>, formerly Rap Genius, the world’s biggest collection of song lyrics and crowdsourced musical knowledge.
-				</h2>
-				<h3>Friday, <strong>September 30th</strong>. <strong>7pm to 8:15pm</strong>. At Sudler Hall.</h3>
-			</div>
-		</div>
-		<div class="event">
-			<div class="image">
-				<img src="{{ site.baseurl }}/images/abhi.png" />
-			</div>
-			<div class="content">
-				<h1>
-					<strong>Abhishek Chandra</strong>, Y '16
-				</h1>
-				<h2>
-					CTO of <strong>Spring.Care</strong>, a healthcare company using data-driven technology to diagnose depression.
-				</h2>
-				<h3>Friday, <strong>September 9th</strong>. <strong>4:30pm to 6pm</strong>. At CEID.</h3>
-			</div>
-		</div>
-	</ul>
-</section>
+		</ul>
 </section>
 
 
-<section class="notice news left">
+<section class="Notice news left">
 <div class="content">
 	<strong>Join our weekly dinners.</strong> Wednesdays 6pm at Jonathan Edwards Dining Hall.
 </div>
@@ -401,11 +396,11 @@
 
 <section id="members">
 	<header>
-		<h1><a href="#members"><mark></mark>Members of YCS</a></h1>
-		<h2>We are a diverse and excited group of students working hard to make our projects come true. <a href="javascript:showMLInstructions()">Join us.</a></h2>
-	</header>	
+		<h1><a href="#members"><mark></mark>Our Members</a></h1>
+		<h2>We are a diverse and excited group of students working hard to achieve our mission.</h2>
+	</header>
 
-	<ul class="people" id="staff-list">
+	<ul class="PeopleList" id="staff-list">
 		{% for _member in site.data.members %} {% assign member = _member[1] %}
 		<div class="member" onClick="openMember('{{ _member[0] }}')">
 			<div class="picture">
@@ -419,7 +414,26 @@
 		{% endfor %}
 	</ul>
 
-	<ul class="people" id="staff-list">
+	<br />
+	<header>
+		<h1>Our Rookies</h1>
+	</header>
+
+	<ul class="PeopleList" id="staff-list">
+		{% for member in site.data.rookies %}
+		<div class="member" onClick="openMember('{{ _member[0] }}')">
+			<div class="picture">
+				<img src="{{ member.picture }}" />
+			</div>
+			<div class="info">
+				<h1>{{ member.name }}</h1>
+        <h2>{{ member.blurb }}</h2>
+			</div>
+		</div>
+		{% endfor %}
+	</ul>
+
+	<ul class="PeopleList" id="staff-list">
 		{% for _member in site.data.advisors %} {% assign member = _member[1] %}
 		<div class="member" onClick="openMember('{{ _member[0] }}')">
 			<div class="picture">
@@ -434,12 +448,12 @@
 	</ul>
 
 	<footer>
-		<a href="/alumni" style="font-weight: normal">List of Yale Computer Society Alumni.</a>
-	</footer>	
+		<a href="/alumni" style="font-weight: normal">List of our Alumni.</a>
+	</footer>
 </section>
 
 <!--
-<section class="notice abc">
+<section class="Notice abc">
 <div class="content">
 	<a href="#">Dec 12th 6-9pm at CEID: <strong>YCS study break for finals.</strong> See on Facebook.</a>
 </div>
@@ -491,69 +505,6 @@ $.fn.shuffleChildren = function() {
 };
 
 $("#staff-list.shuffle").shuffleChildren();
-
-</script>
-
-<script>
-$(function(){
-	var text = "Yale,Computer,Society";
-	var i = 0;
-	// $("#ytitle").html("");
-	// (function next() {
-	// 	var t = Math.random()*100+50, c = text[i];
-	// 	if (c == ",") {
-	// 		c = "<br />";
-	// 		t = 300;
-	// 	};
-	// 	console.log("next", c, i)
-	// 	$("#ytitle").html($("#ytitle").html()+c);
-	// 	i++;
-	// 	if (text.length > i) {
-	// 		setTimeout(next, t);
-	// 	}
-	// })();
-});
-</script>
-
-<div class="page-popover" id="ml-popover">
-<div class="container">
-  <div class="close-btn" onClick="closePopover()"></div>
-    
-  <div class="row">
-    <div class="col-md-offset-2 col-md-8 col-xs-12"
-      <h2>Join YCS</h2>
-      <p>
-      	If you are interested in the work we do and would like to help us do more, <strong>you should consider joining our team</strong>. You can either:
-
-      	<ul>
-      	<li>come to our weekly dinners (JE dining hall, Wednesdays at 6pm) and see what we're up to, or</li><li>send a message to <a href="https://www.facebook.com/felipap">Felipe Pires</a> saying you're interested in helping out.</li>
-      	</ul>
-      </p>
-      <p>
-      Looking forward to hearing from you soon.
-      </p>
-    </div>
-  </div>
-</div>
-</div>
-
-<script>
-
-var _pastScrolled;
-
-function showMLInstructions() {
-	window.open("http://bit.ly/joinycs17s");
-	return;
-  $("#ml-popover").fadeIn('slow');
-  $("section").fadeOut('slow');
-  _pastScrolled = $("body").scrollTop();
-}
-
-function closePopover() {
-  $("section").show();
-  $('#ml-popover').fadeOut();
-  $("body").scrollTop(_pastScrolled);
-}
 
 </script>
 

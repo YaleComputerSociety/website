@@ -1,0 +1,129 @@
+---
+custom_css:
+- playbook
+---
+<!DOCTYPE html>
+<html>
+	{% include head.html %}
+	<script src="http://localhost:35729/livereload.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400|Roboto+Mono:300,400|Space+Mono:400,700" rel="stylesheet">
+<body>
+
+{% capture sidebarContent blackout=true %}
+<header>
+	<a href="#table-of-contents"><mark></mark>Table of Contents</a>
+</header>
+
+<ul>
+	{% for section in site.data.playbook.sections %}
+	<li>
+	<h2>
+		{{ section.title }}
+	</h2>
+	<ul>
+		{% for page in section.children %}
+			<li>
+				<a href="#{{page.file}}">{{ page.title }}</a>
+			</li>
+		{% endfor %}
+	</ul>
+	{% endfor %}
+	<li>
+</ul>
+
+{% endcapture %}
+{% include smartnav.html content=sidebarContent blackout=true %}
+
+<div class="Notice">
+<div class="content">
+	<a href="/"><strong>Yale Computer Society:</strong> Promoting tech &amp; entrepreneurship at Yale. <em>Back to main website.</em></a>
+</div>
+</div>
+
+<header>
+	<h1><a href="{{ site.baseurl }}/playbook" id="ytitle"><strong>Yale Computer Society</strong> Playbook</a><span class="cursor"></span></h1>
+	<h2>How we run a tech &amp; entrepreneurship club at school</h2>
+</header>
+
+<section class="PlaybookIntro borderless" id="intro">
+	<p>
+		<strong>Welcome to our playbook.</strong>
+	</p>
+	<p>
+		 This document is a compilation of the knowledge acquired over generations of our leadership teams on how to lead an effective computer society at Yale. This is our attempt to cement what works and investigate what doesn't.
+	</p>
+	<p>
+		Happy exploring!
+	</p>
+</section>
+
+<section class="TableOfContents hidden" id="table-of-contents">
+	<header>
+		<a href="#table-of-contents"><mark></mark>Table of Contents</a>
+	</header>
+
+	<ul class="TableOfContents_Sections">
+		{% for section in site.data.playbook.sections %}
+		<li class="TableOfContents_Section">
+			<h1>
+				{{ section.title }}
+			</h1>
+			<ul>
+				{% for page in section.children %}
+					<li>
+						<a href="#{{page.file}}">{{ page.title }}</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</li>
+		{% endfor %}
+	</ul>
+</section>
+
+{% for section in site.data.playbook.sections %}
+<section class="PlaybookSectionHeader">
+	<h1><a href="#{{section.anchor}}" id="#{{section.anchor}}">{{section.title}}</a></h1>
+</section>
+
+{% assign parentIndex = forloop.index %}
+
+{% for page in section.children %}
+<section class="PlaybookPage borderless">
+	<header>
+		<a href="#{{page.file}}" id="{{page.file}}"><mark></mark>{{parentIndex}}.{{forloop.index}} {{page.title}}</a>
+	</header>
+	<div class="body markdown-body">
+		{% capture my_include %}{% include {{ page.file }} %}{% endcapture %}
+		{{ my_include | markdownify }}
+	</div>
+</section>
+{% endfor %}
+{% endfor %}
+
+<section class="PlaybookPage" id="how-to-contribute">
+	<header>
+		<a href="#how-to-contribute"><mark></mark>How to Contribute</a>
+	</header>
+	<div class="body markdown-body">
+		{% capture my_include %}{% include playbook/How-to-Contribute.md %}{% endcapture %}
+		{{ my_include | markdownify }}
+	</div>
+</section>
+
+<footer>
+<div class="col-md-8 col-xs-12">
+	<p class="bio">
+		The YCS is a undergraduate organization that promotes talks, workshops and study breaks related to computer science and engineering on Yale campus.
+	</p>
+	<p>
+		Email <strong>felipe.pires@y[you know the rest].edu</strong> with questions or suggestions.
+	</p>
+</div>
+
+<div class="col-md-4 col-xs-12" style="text-align: right">
+	Copyright 2016. All rights reserved.
+</div>
+</footer>
+
+</body>
+</html>
