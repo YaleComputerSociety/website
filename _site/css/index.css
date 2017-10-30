@@ -161,7 +161,7 @@ pre {
     border-bottom: 1px dashed rgba(68, 68, 68, 0.7);
     font-style: normal; }
   .Notice .content {
-    font-family: "Helvetic Neue", Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-weight: 300;
     letter-spacing: 0.8px;
     line-height: 1.2;
@@ -262,7 +262,7 @@ section.Notice:not(.hidden) + section {
     border: 2px solid #999;
     box-shadow: none !important;
     line-height: 2.2em;
-    font-family: "Helvetic Neue", sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 0.95em;
     font-weight: 500;
     outline: none !important;
@@ -278,7 +278,7 @@ section.Notice:not(.hidden) + section {
 body > header {
   position: relative;
   padding: 70px 60px;
-  font-family: "Helvetic Neue", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 25px; }
   body > header > h1:last-child, body > header > h2:last-child, body > header > h3:last-child {
     margin-bottom: 0; }
@@ -293,7 +293,7 @@ body > section {
   body > section header {
     color: #666;
     padding: 0;
-    font-family: "Helvetic Neue", Helvetica, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: bold;
     font-size: 1em; }
     body > section footer a,
@@ -345,11 +345,11 @@ body > section {
   body > section > p {
     font-size: 1.2em;
     margin-top: 10px;
-    font-family: "Helvetic Neue", Helvetica, sans-serif; }
+    font-family: Helvetica, Arial, sans-serif; }
   body > section .info {
     margin-top: 15px;
     text-align: left;
-    font: 400 14px "Helvetic Neue", Helvetica, sans-serif; }
+    font: 400 14px Helvetica, Arial, sans-serif; }
     body > section .info > div {
       margin-bottom: 5px; }
     body > section .info h1 {
@@ -373,7 +373,7 @@ body > section {
       line-height: 1.7; }
     body > section .info p {
       font-size: 0.9em;
-      font-family: "Helvetic Neue", Helvetica, sans-serif;
+      font-family: Helvetica, Arial, sans-serif;
       font-weight: 300;
       color: #888;
       line-height: 1.5; }
@@ -390,10 +390,9 @@ body > footer {
   display: table;
   width: 100%;
   padding: 60px 40px;
-  font-family: Roboto;
   font-size: 17px;
   border-top: 3px solid #EEE;
-  font-family: "Helvetic Neue", Helvetica, sans-serif; }
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   body > footer .bio {
     color: #444;
     line-height: 2; }
@@ -752,7 +751,7 @@ body > header {
     -o-transition: 0.1s;
     transition: 0.1s; }
   body > header h1 {
-    font-family: "Helvetic Neue", Helvetica, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 4em;
     margin-bottom: 30px;
     text-transform: uppercase;
@@ -762,7 +761,7 @@ body > header {
     line-height: 1.5;
     margin-bottom: 30px;
     font-weight: 300;
-    font-family: "Helvetic Neue", sans-serif; }
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   body > header .MailchimpForm {
     font-size: .8em; }
   body > header .cursor {
@@ -780,14 +779,14 @@ ul.events {
   margin-top: 2.6em;
   margin-left: 0; }
   ul.events .month {
-    font-family: "Helvetic Neue", Helvetica, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #888;
     font-size: 1.1em;
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 2em; }
   ul.events .year {
-    font-family: "Helvetic Neue", Helvetica, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #000;
     font-size: 2em;
     font-weight: 300;
@@ -808,7 +807,6 @@ ul.events {
         width: 130px;
         height: 130px; }
     ul.events .event .content {
-      font-family: Roboto;
       font-size: 16px; }
       ul.events .event .content a {
         color: #333;
@@ -847,7 +845,7 @@ ul.events {
         ul.events .event .content h2 strong {
           font-weight: 400; }
       ul.events .event .content h3 {
-        font-family: "Helvetic Neue", Helvetica, sans-serif;
+        font-family: Helvetica, Arial, sans-serif;
         font-size: 1.0em;
         color: #333;
         font-weight: 300; }
