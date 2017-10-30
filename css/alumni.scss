@@ -2,9 +2,9 @@
 ---
 
 @charset "utf-8";
-@import "base" ;
+@import "base";
 
-body > header.alumni {
+body > header {
   font-size: 20px;
   color: #222;
 
@@ -19,5 +19,90 @@ body > header.alumni {
     line-height: 1.5;
     margin-bottom: 30px;
     font-family: 'Space Mono', monospace;
+  }
+}
+
+section#alumni {
+  & > header {
+    margin: 50px 0;
+  }
+}
+
+
+.AlumniList {
+  list-style: none;
+  margin: 20px 0;
+
+  & > .member {
+    width: $AlumniList_picdim+50;
+    margin-bottom: 60px;
+    display: block;
+    vertical-align: top;
+    text-align: center;
+    font-family: 'museo-sans';
+    font-size: 16px;
+
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    -webkit-flex-direction: row; /* Safari 6.1+ */
+    flex-direction: row;
+    flex: 0;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    min-width: 800px;
+
+    .picture {
+      flex: 0;
+      min-width: $AlumniList_picdim;
+      margin-right: 30px;
+    }
+
+    .info {
+      flex: 1;
+      padding-top: 20px;
+      font-size: 1.4em;
+      text-align: left;
+      font-family: sans-serif;
+    }
+
+    h2 {
+      font-weight: 500;
+    }
+
+    h3 {
+    }
+
+    .picture img {
+      width: $AlumniList_picdim;
+      height: $AlumniList_picdim;
+      cursor: pointer;
+      // border-radius: 200px;
+      @include transition(.5s);
+
+      &:not(:hover) {
+        // @include filter(grayscale, 100%);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $on-laptop) {
+  .AlumniList {
+    margin-bottom: -20px;
+
+    .member {
+      margin-bottom: 20px;
+      width: 110px;
+      height: 160px;
+    }
+
+    .member .info {
+      font-size: 13px;
+    }
+
+    .member .picture img {
+      width: 90px;
+      height: 90px;
+    }
   }
 }

@@ -1,96 +1,103 @@
+[
 {
-  "2017": {
-    "stephanie": {
-      "name": "Stephanie Hickman",
-      "blurb": "Social Chair",
+  "label": "Leaving Spring 2017",
+  "members": [
+    {
+      "name": "Stephanie Hickman '19",
+      "blurb": "",
+      "description": "Stephanie served as our first Culture Chair. She hosted the first social events for club members and helped outline the role for future Chairs.",
       "picture": "http://graph.facebook.com/100000384198680/picture?width=400&height=400",
-      "description": "Worked as social chair when the group was small etc.",
     },
-
-    "cristobal": {
-      "name": "Cristobal Gonzalez",
-      "blurb": "Director of Community",
+    {
+      "name": "Cristobal Gonzalez '20",
+      "blurb": "Gala Lead",
+      "description": "Cristobal lead the team that organized the first YCS Prize, for best software project submitted by Yale students.",
       "picture": "http://graph.facebook.com/100003022199269/picture?width=400&height=400"
     },
-
-    "nishitha": {
-      "name": "Nishitha Burman",
-      "blurb": "Community Team",
+    {
+      "name": "Nishitha Burman '20",
+      "blurb": "Community Director",
+      "description": "Nishitha was the first dedicated writer of our Newsletter and one of the first members of our community team.",
       "picture": "http://graph.facebook.com/100005652978008/picture?width=400&height=400"
     },
-
-    "chris.kim": {
-      "name": "Christopher Kim",
-      "blurb": "Director of Partnerships",
+    {
+      "name": "Lasya Sreepada '19",
+      "blurb": "Gala Lead",
+      "description": "Lasya lead the team that organized the very first YCS Gala. She worked under a strict deadline to figure out logistics for the event and delegate work to her team.",
+      "picture": "/images/lasya.jpg"
+    },
+    {
+      "name": "Emmett Chen-Ran '20",
+      "blurb": "Community Director",
+      "description": "Emmett was one of our first community directors.",
+      "picture": "http://graph.facebook.com/100003555254518/picture?width=400&height=400"
+    },
+    {
+      "name": "Christopher Kim '19",
+      "blurb": "Partnerships Director",
+      "description": "Christopher lead our first team dedicated to establishing partnerships with companies and reaching out to Yale alumni. He helped secure money for the first YCS Prize.",
       "picture": "http://graph.facebook.com/1790419246/picture?width=400&height=400"
     },
-
-    "marilyn": {
-      "name": "Marilyn Mossien",
-      "blurb": "Events Team",
+    {
+      "name": "Marilyn Mossien '20",
+      "blurb": "Gala team",
+      "description": "Marilyn was one of the first first years to join the club. She played a fundamental role in the logistics of hosting the first Tech Gala.",
       "picture": "http://graph.facebook.com/100009882549211/picture?width=400&height=400"
     },
-
-    "sabrina-evans": {
-      "name": "Sabrina Evans",
-      "blurb": "Ambassador to Oxford",
+    {
+      "name": "Will Kortum, '19",
+      "blurb": "Lead Designer",
+      "description": "Will designed posters and online banners for our first events.",
+      "picture": "http://graph.facebook.com/100001779713088/picture?width=400&height=400",
+    },
+    {
+      "name": "Alex Wang '19",
+      "blurb": "",
+      "description": "Alex was part of",
+      "picture": "http://graph.facebook.com/100002654280088/picture?width=400&height=400"
+    },
+    {
+      "name": "Carlo Abelli '19",
+      "blurb": "Talks team",
+      "description": "Carlo was part of",
+      "picture": "http://graph.facebook.com/100003643689397/picture?width=400&height=400"
+    },
+    {
+      "name": "Rishab Ramanathan '19",
+      "blurb": "Talks team",
+      "description": "Rishab was part of the Talks team, and helped invite and host speakers.",
+      "picture": "http://graph.facebook.com/1516779894/picture?width=400&height=400"
+    },
+    {
+      "name": "Devon Merlette, '19",
+      "blurb": "Lead Designer",
+      "description": "Devon designed posters and online banners for our first events.",
+      "picture": "http://graph.facebook.com/100000726794077/picture?width=400&height=400",
+    },
+  ],
+},
+{
+  "label": "Leaving Fall 2016",
+  "members": [
+    {
+      "name": "Wissem Gamra '18",
+      "blurb": "Treasurer",
+      "description": "Wissem served as our first Treasurer. He helped the club navigate the school bureocracy required to establish an organization, applying for grants to host events etc.",
+      "picture": "https://yt3.ggpht.com/-ps51kDJhQrs/AAAAAAAAAAI/AAAAAAAAAAA/gaKp5HQDdLI/s900-c-k-no-rj-c0xffffff/photo.jpg"
+    },
+    {
+      "name": "Brian Kitano '19",
+      "blurb": "",
+      "description": "Brian was one of our very first members, and helped conceptualize the beginnings of the club.",
+      "picture": "https://graph.facebook.com/100000406761998/picture?width=400&height=400"
+    },
+    {
+      "name": "Sabrina Evans '19",
+      "blurb": "Community Director",
+      "description": "Sabrina was one of the first members of YCS. She was the first author of our weekly newsletters. She also established partnerships with tech organizations in New Haven.",
       "picture": "https://graph.facebook.com/100000088944262/picture?width=400&height=400"
     },
 
-    "devon.merlette": {
-      "name": "Devon Merlette",
-      "blurb": "Designer",
-      "picture": "http://graph.facebook.com/100000726794077/picture?width=400&height=400",
-    },
-
-    "will.kortum": {
-      "name": "Will Kortum",
-      "blurb": "Designer",
-      "picture": "http://graph.facebook.com/100001779713088/picture?width=400&height=400",
-    },
-
-    "alex.wang": {
-      "name": "Alex Wang",
-      "blurb": "Events Team",
-      "picture": "http://graph.facebook.com/100002654280088/picture?width=400&height=400"
-    },
-
-    "carlo.abelli": {
-      "name": "Carlo Abelli",
-      "blurb": "Events Team",
-      "picture": "http://graph.facebook.com/100003643689397/picture?width=400&height=400"
-    },
-
-    "lasya.sreepada": {
-      "name": "Lasya Sreepada",
-      "blurb": "Director of Events",
-      "picture": "/images/lasya.jpg"
-    },
-
-    "emmett.chen-ran": {
-      "name": "Emmett Chen-Ran",
-      "blurb": "Director of Community",
-      "picture": "http://graph.facebook.com/100003555254518/picture?width=400&height=400"
-    },
-
-    "rishab.ramanathan": {
-      "name": "Rishab Ramanathan",
-      "blurb": "Community Team",
-      "picture": "http://graph.facebook.com/1516779894/picture?width=400&height=400"
-    },
-  },
-
-  "2016": {
-    "wissem-gamra": {
-      "name": "Wissem Gamra",
-      "blurb": "Treasurer",
-      "picture": "https://yt3.ggpht.com/-ps51kDJhQrs/AAAAAAAAAAI/AAAAAAAAAAA/gaKp5HQDdLI/s900-c-k-no-rj-c0xffffff/photo.jpg"
-    },
-
-    "brian": {
-      "name": "Brian Kitano",
-      "blurb": "",
-      "picture": "https://graph.facebook.com/100000406761998/picture?width=400&height=400"
-    },
-  },
+  ],
 }
+]

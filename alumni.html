@@ -12,35 +12,40 @@ custom_css:
 
 <body class="alumni-page">
 
-<div class="notice ">
+<div class="Notice ">
 <div class="content">
 	<a href="/"><strong>Yale Computer Society:</strong> Promoting tech &amp; etrepreneurship at Yale. <strong>Back to main website.</strong></a>
 </div>
 </div>
 
-<header class="alumni">
+<header>
 	<h1><strong>Alumni</strong> of YCS</h1>
 	<h2>Students who were members and advisors of YCS for at least one semester</h2>
 </header>
 
-<section id="members">
+<section id="alumni">
+{% for section in site.data.alumni %}
 	<header>
-		<h1><a href="#members"><mark></mark>Board Fall 2016</a></h1>
-		<h2></h2>
-	</header>	
-	<ul class="people alumni" id="alumni">
-		{% for _member in site.data.alumni %} {% assign member = _member[1] %}
-		<div class="member" onClick="openMember('{{ _member[0] }}')">
+		<h1>{{ section.label }}</h1>
+	</header>
+
+	<div>
+	<ul class="AlumniList">
+	{% for member in section.members %}
+		<div class="member">
 			<div class="picture">
 				<img src="{{ member.picture }}" />
 			</div>
 			<div class="info">
 				<h1>{{ member.name }}</h1>
         <h2>{{ member.blurb }}</h2>
+        <h3>{{ member.description }}</h3>
 			</div>
 		</div>
-		{% endfor %}
+	{% endfor %}
 	</ul>
+	</div>
+{% endfor %}
 </section>
 
 {% include footer.html %}

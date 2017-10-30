@@ -401,41 +401,8 @@
 	</header>
 
 	<ul class="PeopleList" id="staff-list">
-		{% for _member in site.data.members %} {% assign member = _member[1] %}
-		<div class="member" onClick="openMember('{{ _member[0] }}')">
-			<div class="picture">
-				<img src="{{ member.picture }}" />
-			</div>
-			<div class="info">
-				<h1>{{ member.name }}</h1>
-        <h2>{{ member.blurb }}</h2>
-			</div>
-		</div>
-		{% endfor %}
-	</ul>
-
-	<br />
-	<header>
-		<h1>Our Rookies</h1>
-	</header>
-
-	<ul class="PeopleList" id="staff-list">
-		{% for member in site.data.rookies %}
-		<div class="member" onClick="openMember('{{ _member[0] }}')">
-			<div class="picture">
-				<img src="{{ member.picture }}" />
-			</div>
-			<div class="info">
-				<h1>{{ member.name }}</h1>
-        <h2>{{ member.blurb }}</h2>
-			</div>
-		</div>
-		{% endfor %}
-	</ul>
-
-	<ul class="PeopleList" id="staff-list">
-		{% for _member in site.data.advisors %} {% assign member = _member[1] %}
-		<div class="member" onClick="openMember('{{ _member[0] }}')">
+		{% for member in site.data.members %}
+		<div class="member">
 			<div class="picture">
 				<img src="{{ member.picture }}" />
 			</div>
