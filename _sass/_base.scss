@@ -14,11 +14,11 @@
   @include transition(.4s);
   color: #444;
   border-radius: 0;
-  border: 2px solid #BBB;
+  border: 2px solid #999;
   font-size: 0.95em;
-  font-weight: 600;
-  letter-spacing: 1px;
-  line-height: 2.7em;
+  font-weight: 400;
+  // letter-spacing: 1px;
+  line-height: 2.2em;
   margin-right: 6px;
   padding: 0 10px;
   text-align: center;
@@ -28,7 +28,7 @@
 
   &:focus,
   &:hover {
-    border-color: #888; //#a3daff;
+    border-color: #666; //#a3daff;
   }
 
   &.white {
@@ -50,26 +50,26 @@
 
   .and {
     display: inline-block;
-    line-height: 2.7em;
+    line-height: 2.2em;
   }
 
   input.email {
     @include transition(.4s);
     background: white;
-    border: 2px solid #BBB;
+    border: 2px solid #999;
     box-shadow: none !important;
-    line-height: 2.7em;
+    line-height: 2.2em;
     font-family: $font-mailchimp;
     font-size: 0.95em;
-    font-weight: 600;
+    font-weight: 500;
     outline: none !important;
-    padding: 0 0.9em;
+    padding: 0 0.6em;
     vertical-align: middle;
     width: 200px;
     z-index: 10;
 
     &:focus {
-      border-color: #888;
+      border-color: #666;
     }
   }
 
