@@ -3,22 +3,17 @@
 
 .PeopleList {
   list-style: none;
-  margin: 60px 0 -60px;
+  margin: 40px 0 -50px;
 
   & > .member {
     width: $PeopleList_picdim+50;
     height: $PeopleList_picdim+70;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     display: inline-block;
     vertical-align: top;
-    text-align: center;
-    font-family: 'museo-sans';
-    font-size: 16px;
+    font-size: 15px;
 
     .info {
-      padding-top: 20px;
-      font-size: 1em;
-      text-align: center;
     }
 
     h2.board {
@@ -29,7 +24,7 @@
       width: $PeopleList_picdim;
       height: $PeopleList_picdim;
       cursor: pointer;
-      border-radius: 200px;
+      // border-radius: 200px;
       @include transition(.5s);
 
       &:not(:hover) {

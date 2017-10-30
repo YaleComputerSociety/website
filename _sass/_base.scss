@@ -1,5 +1,6 @@
 @import "variables", "support", "reset", "notice";
 
+
 .button {
   // quick reset
   &:active {
@@ -13,10 +14,9 @@
   @include transition(.4s);
   color: #444;
   border-radius: 0;
-  border: 3px solid #EEE;
-  font-family: 'Roboto';
+  border: 2px solid #BBB;
   font-size: 0.95em;
-  font-weight: bold;
+  font-weight: 600;
   letter-spacing: 1px;
   line-height: 2.7em;
   margin-right: 6px;
@@ -28,7 +28,7 @@
 
   &:focus,
   &:hover {
-    border-color: #a3daff;
+    border-color: #888; //#a3daff;
   }
 
   &.white {
@@ -56,12 +56,12 @@
   input.email {
     @include transition(.4s);
     background: white;
-    border: 3px solid #EEE;
+    border: 2px solid #BBB;
     box-shadow: none !important;
     line-height: 2.7em;
-    font-family: 'Roboto';
+    font-family: $font-mailchimp;
     font-size: 0.95em;
-    font-weight: bold;
+    font-weight: 600;
     outline: none !important;
     padding: 0 0.9em;
     vertical-align: middle;
@@ -69,15 +69,19 @@
     z-index: 10;
 
     &:focus {
-      border-color: #DDD;
+      border-color: #888;
     }
+  }
+
+  p {
+    margin-bottom: 0;
   }
 }
 
 body > header {
   position: relative;
   padding: 70px 60px;
-  font-family: 'Roboto';
+  font-family: $font-header;
   font-size: 25px;
 
   & > h1:last-child,
@@ -135,21 +139,21 @@ body > section {
 
     mark {
       background: transparent;
-      padding-right: 15px;
+      // padding-right: 15px;
 
-      &:before {
-        @include transition(.2s);
-        content: '#';
-        color: #BBB;
+      // &:before {
+      //   @include transition(.2s);
+      //   content: '#';
+      //   color: #BBB;
 
-        &:hover {
-          color: #AAA;
-        }
-      }
+      //   &:hover {
+      //     color: #888;
+      //   }
+      // }
     }
 
     h1:hover mark:before {
-      color: #AAA;
+      color: #888;
     }
   }
 
@@ -182,16 +186,16 @@ body > section {
   }
 
   .info {
-    padding-top: 10px;
+    margin-top: 15px;
     text-align: left;
-    font: 400 14px 'Roboto Mono';
+    font: 400 14px $font-section;
 
     & > div {
       margin-bottom: 5px;
     }
 
     h1 {
-      font-size: 1.1em;
+      font-size: 1.2em;
       margin-bottom: 0.5em;
       color: #111;
 
@@ -203,7 +207,7 @@ body > section {
 
     h2 {
       margin-bottom: 0.5em;
-      font-size: 1em;
+      font-size: 1.1em;
       font-weight: 300;
       color: #666;
       line-height: 1.5;
@@ -219,7 +223,7 @@ body > section {
 
     p {
       font-size: 0.9em;
-      font-family: 'Roboto';
+      font-family: $font-section;
       font-weight: 300;
       color: #888;
       line-height: 1.5;
@@ -242,13 +246,13 @@ body > footer {
   width: 100%;
   padding: 60px 40px;
   font-family: Roboto;
-  font-size: 15px;
+  font-size: 17px;
   border-top: 3px solid #EEE;
   font-family: $font-footer;
 
   .bio {
     color: #444;
-    line-height: 1.8;
+    line-height: 2;
   }
 }
 

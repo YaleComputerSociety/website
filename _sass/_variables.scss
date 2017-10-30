@@ -1,5 +1,5 @@
 // Default variables
-$base-font-family: "Roboto", Helvetica, Arial, sans-serif;
+$base-font-family: Helvetica, Arial, sans-serif;
 $base-font-size: 16px;
 $base-font-weight: 400;
 $small-font-size: $base-font-size * 0.875;
@@ -15,10 +15,16 @@ $content-width: 800px;
 $on-palm: 600px;
 $on-laptop: 800px;
 //
-$font-section-header: "Helvetic Neue", sans-serif;
-$font-section: "Helvetic Neue", sans-serif;
-$font-footer: "Helvetic Neue", sans-serif;
-$font-notice: "Helvetic Neue", sans-serif;
+
+$font-section-header: "Helvetic Neue", Helvetica, sans-serif;
+$font-section: "Helvetic Neue", Helvetica, sans-serif;
+$font-footer: "Helvetic Neue", Helvetica, sans-serif;
+$font-notice: "Helvetic Neue", Helvetica, sans-serif;
+$font-events: "Helvetic Neue", Helvetica, sans-serif;
+$font-events-header: "Helvetic Neue", Helvetica, sans-serif;
+$font-mailchimp: "Helvetic Neue", sans-serif;
+$font-header: "Helvetic Neue", sans-serif;
+$font-button: "Helvetic Neue", sans-serif;
 
 //
 $ycsorange: #ff7a6f;
@@ -31,4 +37,4 @@ $Events_picdim: 130px;
 
 $device-spacing: 30px;
 // $laptop-spacing: 30px;
-$logoFont: 'Space Mono', monospace;
+$logoFont: "Helvetic Neue", Helvetica, sans-serif;

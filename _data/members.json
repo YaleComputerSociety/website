@@ -36,6 +36,11 @@
     "picture": "http://graph.facebook.com/100000245292061/picture?width=400&height=400"
   },
   {
+    "name": "Aadit Vyas",
+    "blurb": "Hacknights Lead",
+    "picture": "http://graph.facebook.com/100002921788451/picture?width=400&height=400",
+  },
+  {
     "name": "Jason Lu",
     "blurb": "Careers Lead",
     "picture": "http://graph.facebook.com/100003245433369/picture?width=400&height=400",
@@ -51,11 +56,6 @@
     "picture": "http://graph.facebook.com/583097471/picture?width=400&height=400",
   },
   {
-    "name": "Aadit Vyas",
-    "blurb": "Hacknights Lead",
-    "picture": "http://graph.facebook.com/100002921788451/picture?width=400&height=400",
-  },
-  {
     "name": "Christopher Moore",
     "blurb": "Workshops Lead",
     "picture": "http://graph.facebook.com/100002445557638/picture?width=400&height=400",
@@ -65,17 +65,7 @@
     "blurb": "Newsletters Lead",
     "picture": "http://graph.facebook.com/100002274614860/picture?width=400&height=400",
   },
-  {
-    "name": "Sanya Nijhawan",
-    "blurb": "Careers",
-    "picture": "http://graph.facebook.com/100000993115532/picture?width=400&height=400"
-  },
-  {
-    "name": "Alex Briasco-Stewart",
-    "blurb": "Talks",
-    "picture": "http://graph.facebook.com/100004147207542/picture?width=400&height=400",
-  },
-  {
+    {
     "name": "Amar Patel",
     "blurb": "Careers",
     "picture": "http://graph.facebook.com/100011626359827/picture?width=400&height=400",

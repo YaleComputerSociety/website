@@ -1,0 +1,145 @@
+[
+{
+	"year": "2017",
+	"months": [
+		{
+			"month": "April",
+			"events": [
+				{
+					"name": "YCS Presents: Tech Gala",
+					"thumbnail_url": "/images/gala.jpg",
+					"description": "Come to the 1st annual Tech Gala, an end-of-year celebration of computer science at Yale!",
+					"time": "Friday, <strong>April 28th</strong>. <strong>8-10pm</strong>.",
+					"location": "Grace Hopper Dining Hall."
+				},
+				{
+					"name": "Facebook CodeLab",
+					"thumbnail_url": "/images/codelab.JPG",
+					"description": "Interview workshop hosted by Yale alumni now working as Facebook engineers!",
+					"time": "Tuesday, <strong>April 18th</strong>. <strong>5-6pm</strong>.",
+					"location": "CEID."
+				},
+				{
+					"name": "Hacknights Week 02",
+					"thumbnail_url": "/images/hacknights3.JPG",
+					"description": "Come to Hacknights Week 02! Food/drinks provided.",
+					"time": "Thursday, <strong>April 13th</strong>. <strong>8-9pm</strong>.",
+					"location": "WLH 210."
+				},
+				{
+					"name": "Daniel Friedman",
+					"thumbnail_url": "/images/friedman.JPG",
+					"description": "Thiel Fellow, Forbes 30 Under 30 Social Innovator, and CEO of Thinkful, an online coding bootcamp that combines face-to-face learning with the accessibility of online education.",
+					"time": "Saturday, <strong>April 8th</strong>. <strong>12.30-2pm</strong>.",
+					"location": "Bass L01-A."
+				},
+				{
+					"name": "Hacknights Week 01",
+					"thumbnail_url": "/images/hacknights2.JPG",
+					"description": "Come to Hacknights Week 01! Food/drinks provided.",
+					"time": "Thursday, <strong>April 6th</strong>. <strong>8-10pm</strong>.",
+					"location": "WLH 210."
+				}
+			]
+		},
+		{
+			"month": "March",
+			"events": [
+				{
+					"name": "Yusuf Simonson",
+					"thumbnail_url": "/images/simonson.JPG",
+					"description": "CTO at TheMuse (YCombinator W12), online jobs and career advice platform w/ 50M users and $28M in funding.",
+					"time": "Friday, <strong>March 31st</strong>. <strong>4-6pm</strong>.",
+					"location": "WLH 113."
+				},
+				{
+					"name": "Hacknights Week 00",
+					"thumbnail_url": "/images/hacknights1.JPG",
+					"description": "Join YCS for our inaugural Hack Nights! Code together with your friends on psets, projects, etc. while enjoying free food and drinks.",
+					"time": "Thursday, <strong>March 30th</strong>. <strong>8-9pm</strong>.",
+					"location": "WLH 210."
+				},
+				{
+					"name": "CS 477 Study Session",
+					"thumbnail_url": "/images/cs477.JPG",
+					"description": "Study for the upcoming NLP midterm together!",
+					"time": "Friday, <strong>March 3rd</strong>. <strong>8-9pm</strong>.",
+					"location": "WLH 116."
+				}
+			]
+		},
+		{
+			"month": "February",
+			"events": [
+				{
+					"name": "CS 365 Study Session",
+					"thumbnail_url": "/images/cs365.JPG",
+					"description": "Study for the upcoming CPSC 365 midterm with friends and Insomnia cookies!",
+					"time": "Monday, <strong>February 27th</strong>. <strong>3-4pm</strong>.",
+					"location": "WLH 211."
+				},
+				{
+					"name": "YCS Grace Hopper Prize Info Session",
+					"thumbnail_url": "/images/prizeinfo.JPG",
+					"description": "Come to the first info session for the Grace Hopper Prize and the Alan Perlis Prize for Newcomers",
+					"time": "Wednesday, <strong>February 15th</strong>. <strong>9-10pm</strong>.",
+					"location": "WLH 114."
+				}
+			]
+		}
+	]
+},
+{
+	"year": "2016",
+	"months": [
+		{
+			"month": "December",
+			"events": [
+			{
+				"name": "Study sessions for finals",
+				"thumbnail_url": "/images/study.jpg",
+				"description": "Come study with friends at the CEID. Check out our events on Facebook to find the times for you class. Lots of cookies await for you.",
+				"time": "All weekend, <strong>starting December 10th</strong>.",
+				"location": "CEID."
+			},
+			{
+				"name": "Interview Workshop I",
+				"thumbnail_url": "/images/interview.png",
+				"description": "Learn about the process of interviewing for the main tech companies, the coding challenges and how to prepare for them. Dinner (pizza &amp; cookies) will be provided.",
+				"time": "Monday, <strong>December 5th</strong>. <strong>7-9pm</strong>.",
+				"location": "AKW 100."
+			}]
+		},
+		{
+			"month": "November",
+			"events": [
+			{
+				"name": "Julia Austin",
+				"thumbnail_url": "/images/julia-austin.jpg",
+				"description": "CTO at DigitalOcean and Senior Lecturer at Harvard Business School. Previously at VMWare and Akamai.",
+				"time": "Thursday, <strong>November 3rd</strong>. <strong>11:45am-12:45</strong>.",
+				"location": "Lunch at the CEID."
+			}]
+		},
+		{
+			"month": "September",
+			"events": [
+				{
+					"name": "Tom Lehman",
+					"thumbnail_url": "/images/tom.png",
+					"description": "CEO &amp; Co-founder of <strong>Genius</strong>, formerly Rap Genius, the world’s biggest collection of song lyrics and crowdsourced musical knowledge.",
+					"time": "Friday, <strong>September 30th</strong>. <strong>7pm to 8:15pm</strong>",
+					"location": "At Sudler Hall."
+				},
+				{
+					"name": "Abhishek Chandra",
+					"thumbnail_url": "/images/abhi.png",
+					"description": "CTO of <strong>Spring.Care</strong>, a healthcare company using data-driven technology to diagnose depression.",
+					"time": "Friday, <strong>September 9th</strong>. <strong>4:30pm to 6pm</strong>.",
+					"location": "At CEID."
+				}
+			]
+		}
+]
+}
+]
