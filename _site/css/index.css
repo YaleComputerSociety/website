@@ -848,7 +848,8 @@ ul.events {
         font-family: Helvetica, Arial, sans-serif;
         font-size: 1.0em;
         color: #333;
-        font-weight: 300; }
+        font-weight: 300;
+        margin-bottom: 0; }
 
 ul.sponsors header {
   margin-bottom: 20px; }
