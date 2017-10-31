@@ -684,9 +684,9 @@ ul.ProjectList > div {
     text-align: right; }
     ul.ProjectList > div.ProjectList_Prize .figure span {
       font-size: 90px; }
-  ul.ProjectList > div.ProjectList_Survey .figure {
+  ul.ProjectList > div.ProjectList_Report .figure {
     background: #FF6F59; }
-    ul.ProjectList > div.ProjectList_Survey .figure span {
+    ul.ProjectList > div.ProjectList_Report .figure span {
       font-size: 50px; }
   ul.ProjectList > div.ProjectList_Workshops .figure {
     background: #a3ddff;
