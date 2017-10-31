@@ -20,4 +20,8 @@
 
   -webkit-animation: 1s blink step-end infinite;
   -moz-animation: 1s blink step-end infinite;
+
+  &:hover {
+    background: #FBFFB9;
+  }
 }

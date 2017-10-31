@@ -1,6 +1,7 @@
 [
 {
-  "label": "Left Spring 2017",
+  "label": "Spring '17",
+  "description": "Members who left in the spring of 2017",
   "members": [
     {
       "name": "Stephanie Hickman '19",
@@ -46,7 +47,7 @@
     },
     {
       "name": "Tantan Wang '20",
-      "blurb": "",
+      "blurb": "TechSnaps team",
       "description": "Tantan was the first photographer of the TechSnaps team, helping capture stories of members of the Yale Computer Science community.",
       "picture": "http://graph.facebook.com/100001649240042/picture?width=400&height=400",
     },
@@ -89,18 +90,19 @@
   ],
 },
 {
-  "label": "Left Fall 2016",
+  "label": "Fall '16",
+  "description": "Members who left in the fall of 2016",
   "members": [
     {
       "name": "Wissem Gamra '18",
       "blurb": "Treasurer",
-      "description": "Wissem served as our first Treasurer. He helped the club navigate the school bureocracy required to establish an organization, applying for grants to host events etc.",
+      "description": "Wissem served as our first Treasurer. His contributions allowed the club navigate the school bureocracy required to establish an organization.",
       "picture": "https://yt3.ggpht.com/-ps51kDJhQrs/AAAAAAAAAAI/AAAAAAAAAAA/gaKp5HQDdLI/s900-c-k-no-rj-c0xffffff/photo.jpg"
     },
     {
       "name": "Brian Kitano '19",
       "blurb": "",
-      "description": "Brian was one of our very first members, and helped conceptualize the beginnings of the club.",
+      "description": "Brian was one of our very first members and helped in the beginnings of the club.",
       "picture": "https://graph.facebook.com/100000406761998/picture?width=400&height=400"
     },
     {

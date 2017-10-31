@@ -12,13 +12,13 @@
   outline: none !important;
   // actual look
   @include transition(.4s);
-  color: #444;
+  color: #222;
   border-radius: 0;
   border: 2px solid #999;
-  font-size: 0.95em;
+  font-size: 0.8em;
   font-weight: 400;
   // letter-spacing: 1px;
-  line-height: 2.2em;
+  line-height: 2.6em;
   margin-right: 6px;
   padding: 0 10px;
   text-align: center;
@@ -55,11 +55,10 @@
 
   input.email {
     @include transition(.4s);
-    background: white;
+    background: rgba(255,255,255,.7);
     border: 2px solid #999;
     box-shadow: none !important;
     line-height: 2.2em;
-    font-family: $font-mailchimp;
     font-size: 0.95em;
     font-weight: 500;
     outline: none !important;
@@ -96,11 +95,6 @@ body > section {
   border-top: 3px solid #EEE;
   font-size: 16px;
 
-  footer {
-    margin-top: 40px;
-  }
-
-  footer,
   header {
     color: #666;
     padding: 0;
@@ -132,28 +126,10 @@ body > section {
     h2 {
       font-weight: 300;
       line-height: 1.7;
-      font-size: 1.2em;
+      letter-spacing: 1px;
+      font-size: 1.3em;
       color: #666;
       margin-top: 1em;
-    }
-
-    mark {
-      background: transparent;
-      // padding-right: 15px;
-
-      // &:before {
-      //   @include transition(.2s);
-      //   content: '#';
-      //   color: #BBB;
-
-      //   &:hover {
-      //     color: #888;
-      //   }
-      // }
-    }
-
-    h1:hover mark:before {
-      color: #888;
     }
   }
 
@@ -203,6 +179,7 @@ body > section {
         font-size: inherit;
         opacity: 0.4;
       }
+      font-family: $font-section;
     }
 
     h2 {
@@ -211,6 +188,7 @@ body > section {
       font-weight: 300;
       color: #666;
       line-height: 1.5;
+      font-family: $font-paragraph;
     }
 
     h3 {
@@ -219,11 +197,12 @@ body > section {
       font-weight: 300;
       color: #666;
       line-height: 1.7;
+      font-family: $font-paragraph;
     }
 
     p {
       font-size: 0.9em;
-      font-family: $font-section;
+      font-family: $font-paragraph;
       font-weight: 300;
       color: #888;
       line-height: 1.5;
@@ -257,12 +236,6 @@ body > footer {
 
 // Set margins for small screens.
 @media screen and (max-width: $on-laptop) {
-  body > section {
-    & > header mark {
-      margin-left: 0;
-    }
-  }
-
   body > footer {
     padding: $device-spacing $device-spacing*2/3;
   }

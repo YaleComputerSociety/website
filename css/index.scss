@@ -3,10 +3,16 @@
 
 @charset "utf-8";
 
-@import "base", "blinking-cursor", "PeopleList", "smartnav", "ProjectList";
+@import "base";
+@import "blinking-cursor";
+@import "PeopleList";
+@import "smartnav";
+@import "ProjectList";
+@import "EventList";
 
 body > header {
 	color: #222;
+  margin-top: 50px;
 	font-size: 23px;
 
 	h1,
@@ -26,6 +32,7 @@ body > header {
 		font-size: 4em;
 		margin-bottom: 30px;
     text-transform: uppercase;
+    letter-spacing: 4px;
     font-weight: 300;
 	}
 
@@ -44,164 +51,4 @@ body > header {
 	.cursor {
 		@include blinking-cursor();
 	}
-}
-
-@media screen and (max-width: $on-laptop) {
-  // section ul.events {
-  //   font-size: 13px;
-
-  //   .event .content h1 .origin {
-  //     display: block;
-  //     margin: 0;
-  //   }
-
-  //   .event .content {
-  //     padding-left: 80px;
-  //   }
-
-  //   .event .image img {
-  //     width: 60px;
-  //     height: 60px;
-  //   }
-  // }
-}
-
-ul.events {
-  margin-top: 2.6em;
-  margin-left: 0;
-
-  .month {
-    font-family: $font-events-header;
-    color: #888;
-    font-size: 1.1em;
-    font-weight: 500;
-		text-transform: uppercase;
-    margin-bottom: 2em;
-	}
-
-  .year {
-    font-family: $font-events-header;
-    color: #000;
-    font-size: 2em;
-    font-weight: 300;
-    margin-bottom: .5em;
-  }
-
-  .event:not(:last-child) {
-    margin-bottom: 2.7em;
-  }
-
-  .event {
-    max-width: 900px;
-    position: relative;
-		flex: 1;
-		flex-direction: row;
-		align-items: center;
-		display: flex;
-
-    .image {
-      margin-right: 30px;
-			min-width: $Events_picdim;
-
-      img {
-        width: $Events_picdim;
-        height: $Events_picdim;
-        // border-radius: 1000px;
-      }
-    }
-
-    .content {
-			font-size: 16px;
-
-      a {
-        color: #333;
-        border-bottom: 1px dashed #DDD;
-        @include transition(.1s);
-
-        &:hover {
-          text-decoration: none;
-          //color: #1976d2;
-          border-bottom: 1px dashed #1976d2;
-          border-bottom-color: #888;
-        }
-      }
-
-      h1,
-      h2,
-      h3 {
-        line-height: 1.5;
-      }
-
-      h1 {
-        margin-bottom: 0.2em;
-        font-size: 1.4em;
-        font-weight: 400;
-        color: #222;
-
-        .origin {
-          display: inline-block;
-          color: #F4B350;
-          margin-left: 5px;
-          font-size: 0.7em;
-
-          strong {
-            text-transform: uppercase;
-            color: inherit;
-          }
-
-          &.blue {}
-        }
-      }
-
-      h2 {
-        font-size: 1.1em;
-        margin-bottom: 0.5em;
-        font-weight: 300;
-        color: #333;
-
-        strong {
-          font-weight: 400;
-        }
-      }
-
-      h3 {
-        font-family: $font-events;
-        font-size: 1.0em;
-        color: #333;
-        font-weight: 300;
-        margin-bottom: 0;
-      }
-    }
-  }
-}
-
-
-ul.sponsors {
-  header {
-    margin-bottom: 20px;
-  }
-
-  .sponsor {
-    margin-top: 40px;
-    display: inline-block;
-    margin-right: 30px;
-
-    img {
-      height: 90px;
-      aborder-radius: 40px;
-      @include transition(.5s);
-
-      &:not(:hover) {
-        // @include filter(grayscale, 100%);
-      }
-    }
-  }
-
-  .facebook img {
-    height: 80px;
-  }
-
-  .google img {
-    height: 70px;
-  }
 }

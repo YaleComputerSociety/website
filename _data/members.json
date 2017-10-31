@@ -65,7 +65,12 @@
     "blurb": "Newsletters Lead",
     "picture": "http://graph.facebook.com/100002274614860/picture?width=400&height=400",
   },
-    {
+  {
+    "name": "Alika Smith",
+    "blurb": "Workshops",
+    "picture": "http://graph.facebook.com/100000976637882/picture?width=400&height=400",
+  },
+  {
     "name": "Amar Patel",
     "blurb": "Careers",
     "picture": "http://graph.facebook.com/100011626359827/picture?width=400&height=400",
@@ -106,6 +111,11 @@
     "picture": "http://graph.facebook.com/100002166630035/picture?width=400&height=400",
   },
   {
+    "name": "Fatima Kahbi",
+    "blurb": "Hacknights",
+    "picture": "http://graph.facebook.com/100009148292152/picture?width=400&height=400",
+  },
+  {
     "name": "Gray Newfield",
     "blurb": "Talks",
     "picture": "http://graph.facebook.com/100003969836544/picture?width=400&height=400",
@@ -126,9 +136,14 @@
     "picture": "http://graph.facebook.com/100000978362861/picture?width=400&height=400",
   },
   {
-    "name": "Maganty Rushyendra",
+    "name": "Rushi Maganty",
     "blurb": "Community",
     "picture": "http://graph.facebook.com/1215114595/picture?width=400&height=400",
+  },
+  {
+    "name": "Melissa Lu",
+    "blurb": "Careers",
+    "picture": "http://graph.facebook.com/100001513239821/picture?width=400&height=400",
   },
   {
     "name": "Patrycja Gorska",

@@ -12,9 +12,9 @@ custom_css:
 
 <body class="alumni-page">
 
-<div class="Notice ">
+<div class="Notice">
 <div class="content">
-	<a href="/"><strong>Yale Computer Society:</strong> Promoting tech &amp; etrepreneurship at Yale. <strong>Back to main website.</strong></a>
+	<a href="/"><strong>Go back to main page.</strong></a>
 </div>
 </div>
 
@@ -27,6 +27,7 @@ custom_css:
 {% for section in site.data.alumni %}
 	<header>
 		<h1>{{ section.label }}</h1>
+		<h2>{{ section.description }}</h2>
 	</header>
 
 	<div>
