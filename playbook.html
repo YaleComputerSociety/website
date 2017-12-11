@@ -9,30 +9,7 @@ custom_css:
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400|Roboto+Mono:300,400|Space+Mono:400,700" rel="stylesheet">
 <body>
 
-{% capture sidebarContent blackout=true %}
-<header>
-	<a href="#table-of-contents"><mark></mark>Table of Contents</a>
-</header>
 
-<ul>
-	{% for section in site.data.playbook.sections %}
-	<li>
-	<h2>
-		{{ section.title }}
-	</h2>
-	<ul>
-		{% for page in section.children %}
-			<li>
-				<a href="#{{page.file}}">{{ page.title }}</a>
-			</li>
-		{% endfor %}
-	</ul>
-	{% endfor %}
-	<li>
-</ul>
-
-{% endcapture %}
-{% include smartnav.html content=sidebarContent blackout=true %}
 
 <div class="Notice">
 <div class="content">

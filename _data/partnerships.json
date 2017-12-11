@@ -1,0 +1,33 @@
+{
+  "sections": [
+    {
+      "title": "Opportunities",
+      "anchor": "Types",
+      "children": [
+
+        {
+          "title": "Internships",
+          "file": "partnerships/Internships.md"
+        },
+        {
+          "title": "Research",
+          "file": "partnerships/Research.md"
+        },
+        {
+          "title": "Jobs",
+          "file": "partnerships/Jobs.md"
+        },
+        {
+          "title": "Gigs",
+          "file": "partnerships/Gigs.md"
+        }
+
+      ]
+
+
+
+    },
+
+
+	]
+}
