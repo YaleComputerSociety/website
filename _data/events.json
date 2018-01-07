@@ -1,7 +1,100 @@
-[
+[		
 {
 	"year": "2017",
 	"months": [
+		{
+			"month": "November",
+			"events": [
+				{
+					"name": "Intel Deep Learning Seminar",
+					"thumbnail_url": "/images/deeplearning.jpg",
+					"description": "Learn the fundamentals of Machine Learning, Deep Learning & Artificial Intelligence focused on newly optimized frameworks for Intel Architecture like Intel® Software Optimization for neon™, Intel® Optimization for Caffe*, and Intel® Software Optimization for Theano* from professional and academic experts.",
+					"time": "Wednesday, <strong>November 29th</strong>. <strong>5-8pm</strong>.",
+					"location": "AKW 200."
+				},
+				{
+					"name": "Introduction to Git Workshop",
+					"thumbnail_url": "/images/git.jpg",
+					"description": "Douglas Duhaime will walk us through setup and the basics of how to use Git, a free tool that is key to projects in CS and beyond.",
+					"time": "Friday, <strong>November 10th</strong>. <strong>3-5pm</strong>.",
+					"location": "Bass L06."
+				},
+				{
+					"name": "GamingTheSystem: Nintendo Talk and Dinner",
+					"thumbnail_url": "/images/nintendodinner.jpg",
+					"description": "Come learn about job and internship opportunities at Nintendo. After a company talk, join us for a dinner with Steve Rabin! Bring your resume!",
+					"time": "Wednesday, <strong>November 8th</strong>. <strong>5-6pm</strong>.",
+					"location": "Silliman College Annex."
+				},
+				{
+					"name": "Game ai architectures: a technical event",
+					"thumbnail_url": "/images/aiarchitecture.jpg",
+					"description": "Steve Rabin will be outlining the Game AI architectures that revolutionized the gaming industry in this juicy technical talk.",
+					"time": "Tuesday, <strong>November 7th</strong>. <strong>5:15-6:15pm</strong>.",
+					"location": "Davies Auditorium."
+				},
+				{
+					"name": "Game.Art.Design: Artist Event",
+					"thumbnail_url": "/images/gameartdesign.jpg",
+					"description": "How do we animate flocks of birds or large schools of fish? How do computers generate realistic landscapes? Can computers be artists? Join us and Professor Steve Rabin as he explains some of the technology behind these and more.",
+					"time": "Tuesday, <strong>November 7th</strong>. <strong>3:30-4:30pm</strong>.",
+					"location": "CCAM Lecture Hall."
+				},
+				{
+					"name": "Brains Behind the Games",
+					"thumbnail_url": "/images/brainsgames.jpg",
+					"description": "Professor Rabin will give you an AI breakdown on any game you suggest!",
+					"time": "Monday, <strong>November 6th</strong>. <strong>4:30-5:30pm</strong>.",
+					"location": "CEID."
+				},
+				{
+					"name": "Intro to Android Development Workshop",
+					"thumbnail_url": "/images/androiddev.jpg",
+					"description": "You'll learn how to set up Android Studio and create a basic to-do app.",
+					"time": "Thursday, <strong>November 2nd</strong>. <strong>7-8pm</strong>.",
+					"location": "CEID."
+				},
+				
+			]
+		},
+		{
+			"month": "October",
+			"events": [
+				{
+					"name": "Horizons School of Technology Careers-in-Tech Workshop",
+					"thumbnail_url": "/images/careerintech.jpg",
+					"description": "Want to learn how to build the foundations of a non-STEM and STEM career in tech? Join us for a Careers-in-Tech workshop from Horizons School of Technology!",
+					"time": "Monday, <strong>October 16th</strong>. <strong>7-9pm</strong>.",
+					"location": "WLH 209."
+				},
+				{
+					"name": "Google Lightning Talks",
+					"thumbnail_url": "/images/careerintech.jpg",
+					"description": "Are you curious to learn more about the cool projects happening at Google? Join the Yale Computer Society for short product talks from Yale alumni Googlers!",
+					"time": "Wednesday, <strong>October 11th</strong>. <strong>7-8pm</strong>.",
+					"location": "CEID."
+				},
+				{
+					"name": "First YCS Hack/Night of the Year",
+					"thumbnail_url": "/images/hacknight.jpg",
+					"description": "Come work on your CS projects or homework with other CS students!",
+					"time": "Tuesday, <strong>October 3rd</strong>. <strong>8-10pm</strong>.",
+					"location": "CTL 120B."
+				}
+			]
+		},
+		{
+			"month": "September",
+			"events": [
+				{	
+					"name": "Apple Iphone Announcement Livestream with YCS",
+					"thumbnail_url": "/images/iPhone.jpg",
+					"description": "Watch Apple announce the next iPhone with the Yale Computer Society!",
+					"time": "Tuesday, <strong>September 12th</strong>. <strong>12:45pm</strong>.",
+					"location": "SSS."
+				}
+			]
+		},			
 		{
 			"month": "April",
 			"events": [
