@@ -194,8 +194,11 @@ pre {
     background: #ffcdd2;
     color: #e53935; }
   .Notice.news {
-    background: #FDD692;
-    color: #e06447; }
+    background: #ff7a6f;
+    color: #ffffff; }
+  .Notice.part {
+    background: #3CB371;
+    color: #ffffff; }
 
 .Notice.fixed {
   position: fixed;
