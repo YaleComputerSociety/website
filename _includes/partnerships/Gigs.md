@@ -10,16 +10,14 @@
 #### Posted: <date_posted>
 -->
 
-
-# Yale Journal of Human Rights
+# Yale Digital Humanities Lab
 
 ### Yale University
 
-The Yale Journal of Human Rights is looking for a student to build their website on Wordpress (also open to other platform suggestions). The site should function as a content management system with capabilities to display pictures, multimedia and text. A good example of what we had in mind was the Yale Record's site: yalerecord.org. We are willing to pay for this project. If interested, please contact arka.gupta@yale.edu for more
-information.
+5th year PhD student in the sociology department with a grant from Digital Humanities Lab looking for additional CS students (grad or undergrad does not matter) to hire.
 
 
-#### Posted: 11/30/17
+#### Posted: 4/6/18
 
 
 # Yale: Intro To Public Humanities
