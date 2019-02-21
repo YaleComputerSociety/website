@@ -1,0 +1,82 @@
+[
+   {
+    "name": "Shannon Yasuda",
+    "blurb": "President",
+    "picture": "http://graph.facebook.com/100006564433305/picture?width=400&height=400"
+   },
+   {
+    "name": "Jun Kwak",
+    "blurb": "Vice President",
+    "picture": "https://scontent.fijd1-1.fna.fbcdn.net/v/t1.0-9/q84/c0.0.843.843a/p843x403/37782309_1780936481987617_3745538908943810560_o.jpg?_nc_cat=106&_nc_ht=scontent.fijd1-1.fna&oh=93d864cf162fa9ea6cf717af41d47480&oe=5CE30A13"
+  },
+  {
+    "name": "Nikita Kvasniov",
+    "blurb": "Treasurer",
+    "picture": "http://graph.facebook.com/100000245292061/picture?width=400&height=400"
+  },
+  {
+    "name": "William Sussman",
+    "blurb": "Treasurer",
+    "picture": "http://graph.facebook.com/100017053578041/picture?width=400&height=400",
+  },
+  {
+    "name": "Joanna Wu",
+    "blurb": "Social Chair",
+    "picture": "http://graph.facebook.com/100000563089709/picture?width=400&height=400",
+  },
+  {
+    "name": "Felipe Pires",
+    "blurb": "Board Advisor",
+    "picture": "http://graph.facebook.com/100000366187376/picture?width=400&height=400",
+  },
+  { 
+    "name": "Amanda Lee Ping",
+    "blurb": "Board Advisor",
+    "picture": "http://graph.facebook.com/1548920938/picture?width=400&height=400"
+  }
+  {
+    "name": "Aadit Vyas",
+    "blurb": "Hacknights Lead",
+    "picture": "http://graph.facebook.com/100002921788451/picture?width=400&height=400",
+  },
+  {
+    "name": "Christopher Moore",
+    "blurb": "Workshops Lead",
+    "picture": "http://graph.facebook.com/100002445557638/picture?width=400&height=400",
+  },
+  {
+    "name": "Zeb Mehring",
+    "blurb": "Newsletters Lead",
+    "picture": "http://graph.facebook.com/100002274614860/picture?width=400&height=400",
+  },
+  {
+    "name": "Amar Patel",
+    "blurb": "Careers",
+    "picture": "http://graph.facebook.com/100011626359827/picture?width=400&height=400",
+  },
+  {
+    "name": "Duncan Khosla",
+    "blurb": "Careers",
+    "picture": "http://graph.facebook.com/100006767687163/picture?width=400&height=400",
+  },
+  {
+    "name": "Rushi Maganty",
+    "blurb": "Community",
+    "picture": "http://graph.facebook.com/1215114595/picture?width=400&height=400",
+  },
+  {
+    "name": "Samantha White",
+    "blurb": "Workshops",
+    "picture": "http://graph.facebook.com/100004906872086/picture?width=400&height=400",
+  },
+  {
+    "name": "Vivek Gopalan",
+    "blurb": "Careers",
+    "picture": "http://graph.facebook.com/100004440849177/picture?width=400&height=400",
+  },
+  {
+    "name": "Yuxuan Ke",
+    "blurb": "Talks",
+    "picture": "http://graph.facebook.com/725133061/picture?width=400&height=400",
+  },
+]
