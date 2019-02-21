@@ -2,12 +2,12 @@
    {
     "name": "Shannon Yasuda",
     "blurb": "President",
-    "picture": "http://graph.facebook.com/100006564433305/picture?width=400&height=400"
+    "picture": "http://graph.facebook.com/100006564433305/picture?width=400&height=400",
    },
   {
     "name": "Nikita Kvasniov",
     "blurb": "Treasurer",
-    "picture": "http://graph.facebook.com/100000245292061/picture?width=400&height=400"
+    "picture": "http://graph.facebook.com/100000245292061/picture?width=400&height=400",
   },
   {
     "name": "William Sussman",
@@ -27,7 +27,7 @@
   { 
     "name": "Amanda Lee Ping",
     "blurb": "Board Advisor",
-    "picture": "http://graph.facebook.com/1548920938/picture?width=400&height=400"
+    "picture": "http://graph.facebook.com/1548920938/picture?width=400&height=400",
   }
   {
     "name": "Aadit Vyas",
