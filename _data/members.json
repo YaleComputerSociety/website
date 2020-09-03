@@ -20,12 +20,12 @@
     "picture": "http://graph.facebook.com/100000366187376/picture?width=400&height=400",
   },
   { 
-    "name": "Amanda Lee Ping",
+    "name": "Matthew Burtell",
     "blurb": "Events Team Lead",
     "picture": "http://graph.facebook.com/1548920938/picture?width=400&height=400",
   },
   {
-    "name": "Aadit Vyas",
+    "name": "Undecided",
     "blurb": "Workshops Team Lead",
     "picture": "http://graph.facebook.com/100002921788451/picture?width=400&height=400",
   },
@@ -43,10 +43,5 @@
     "name": "Cody Lin",
     "blurb": "Development Team Lead",
     "picture": "http://graph.facebook.com/100011626359827/picture?width=400&height=400",
-  },
-  {
-    "name": "Duncan Khosla",
-    "blurb": "General",
-    "picture": "http://graph.facebook.com/100006767687163/picture?width=400&height=400",
   }
 ]
