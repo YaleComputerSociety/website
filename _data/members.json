@@ -9,15 +9,15 @@
     "blurb": "Vice President",
     "picture": "http://graph.facebook.com/100010210506824/picture?width=400&height=400",
    },
+   {
+    "name": "Kishan Patel",
+    "blurb": "Secretary",
+    "picture": "http://graph.facebook.com/100035274727823/picture?width=400&height=400",
+  },
   {
     "name": "Megha Joshi",
     "blurb": "Treasurer",
     "picture": "http://graph.facebook.com/100011626151297/picture?width=400&height=400",
-  },
-  {
-    "name": "Kishan Patel",
-    "blurb": "Secretary",
-    "picture": "http://graph.facebook.com/100035274727823/picture?width=400&height=400",
   },
   { 
     "name": "Matthew Burtell",
@@ -28,11 +28,6 @@
     "name": "Rosie Rothschild",
     "blurb": "Workshops Team Lead",
     "picture": "http://graph.facebook.com/100010563720394/picture?width=400&height=400",
-  },
-  {
-    "name": "William Sussman",
-    "blurb": "Board Advisor",
-    "picture": "http://graph.facebook.com/100017053578041/picture?width=400&height=400",
   },
   {
     "name": "Harshal Sheth",
@@ -48,5 +43,10 @@
     "name": "Michelle Li",
     "blurb": "Design Team Lead",
     "picture": "http://graph.facebook.com/100001272182824/picture?width=400&height=400",
+  },
+   {
+    "name": "William Sussman",
+    "blurb": "Board Advisor",
+    "picture": "http://graph.facebook.com/100017053578041/picture?width=400&height=400",
   }
 ]
