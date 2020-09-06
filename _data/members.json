@@ -21,18 +21,13 @@
   },
    {
     "name": "Kevin Chen",
-    "blurb": "Treasurer",
+    "blurb": "Design Chair",
     "picture": "http://graph.facebook.com/1000042669467187/picture?width=400&height=400",
   },
-  { 
-    "name": "Matthew Burtell",
-    "blurb": "Events Team Lead",
-    "picture": "http://graph.facebook.com/100003660164589/picture?width=400&height=400",
-  },
-  {
-    "name": "Rosie Rothschild",
-    "blurb": "Workshops Team Lead",
-    "picture": "http://graph.facebook.com/100010563720394/picture?width=400&height=400",
+   {
+    "name": "William Sussman",
+    "blurb": "Social Chair",
+    "picture": "http://graph.facebook.com/100017053578041/picture?width=400&height=400",
   },
   {
     "name": "Harshal Sheth",
@@ -49,9 +44,14 @@
     "blurb": "Design Team Lead",
     "picture": "http://graph.facebook.com/100001272182824/picture?width=400&height=400",
   },
-   {
-    "name": "William Sussman",
-    "blurb": "Board Advisor",
-    "picture": "http://graph.facebook.com/100017053578041/picture?width=400&height=400",
+   { 
+    "name": "Matthew Burtell",
+    "blurb": "Events Team Lead",
+    "picture": "http://graph.facebook.com/100003660164589/picture?width=400&height=400",
+  },
+  {
+    "name": "Rosie Rothschild",
+    "blurb": "Workshops Team Lead",
+    "picture": "http://graph.facebook.com/100010563720394/picture?width=400&height=400",
   }
 ]
