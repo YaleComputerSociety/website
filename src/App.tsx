@@ -49,7 +49,7 @@ function App() {
                 }
             </div>
             <h1>Fall 2022 Board</h1>
-            <h4>Meet the people behind the mission!</h4>
+            <h4>Meet the people making this all possible!</h4>
             <div className="card-grid">
                 {
                     BOARD.map((board_member, i) => (
