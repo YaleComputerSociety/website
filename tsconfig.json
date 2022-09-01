@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+<<<<<<< HEAD
+=======
+    "target": "es5",
+>>>>>>> 2b93c9e (React Version of Redesigned Website. Removed 5615920 per internal convo.)
     "lib": [
       "dom",
       "dom.iterable",
@@ -7,6 +11,7 @@
     ],
     "allowJs": true,
     "skipLibCheck": true,
+<<<<<<< HEAD
     "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -35,5 +40,21 @@
   ],
   "exclude": [
     "node_modules"
+=======
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
+  },
+  "include": [
+    "src"
+>>>>>>> 2b93c9e (React Version of Redesigned Website. Removed 5615920 per internal convo.)
   ]
 }
