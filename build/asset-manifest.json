@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.26d05dc1.css",
+    "main.js": "/static/js/main.b460ce11.js",
+    "static/js/787.71e672d5.chunk.js": "/static/js/787.71e672d5.chunk.js",
+    "static/media/yuts-square.png": "/static/media/yuts-square.2870cd7b1b7bb173c9d4.png",
+    "static/media/yalies.png": "/static/media/yalies.b4330d9b935a18fcb839.png",
+    "static/media/coursetable.svg": "/static/media/coursetable.a71b619b996c8f91ddfb576614a57788.svg",
+    "index.html": "/index.html",
+    "static/media/email.svg": "/static/media/email.3c0a3d9e8ab0388916ca628e90a1ec5f.svg",
+    "static/media/instagram.svg": "/static/media/instagram.58343ea253613167c66a1909840b2d30.svg",
+    "static/media/briefcase.svg": "/static/media/briefcase.21248a068c385cec74542746ea8c5e8c.svg",
+    "static/media/user.svg": "/static/media/user.780a52a3688dd2fd0230fe4949982dd5.svg",
+    "static/media/terminal.svg": "/static/media/terminal.62314645ceb01c471ab4fcc6d5137b5d.svg",
+    "static/media/code.svg": "/static/media/code.5006cb1eb2fba36c6c80bfb24f55e45a.svg",
+    "static/media/facebook.svg": "/static/media/facebook.ed57b640744ceccd3f18032d96c96255.svg",
+    "main.26d05dc1.css.map": "/static/css/main.26d05dc1.css.map",
+    "main.b460ce11.js.map": "/static/js/main.b460ce11.js.map",
+    "787.71e672d5.chunk.js.map": "/static/js/787.71e672d5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.26d05dc1.css",
+    "static/js/main.b460ce11.js"
+  ]
+}
