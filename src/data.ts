@@ -368,9 +368,10 @@ export const PARTNERSHIPS = [
 =======
 import coursetable from './assets/coursetable.svg'
 import yalies from './assets/yalies.png'
-import yuts from './assets/yuts-square.png'
+import studybuddy from './assets/studybuddy.png'
 import campushub from './assets/campushub.png'
 import mealmatch from './assets/MealMatch.png'
+import roomadvisor from './assets/roomadvisor.png'
 
 import dev_projects from './assets/code.svg'
 import networking_events from './assets/briefcase.svg'
@@ -384,11 +385,6 @@ export const BOARD = [
         role: "President"
     },
     {
-        name: "Kyle Andruczk",
-        image: "",
-        role: "Vice President, Yuts Project Lead"
-    },
-    {
         name: "Meili Gupta",
         image: "",
         role: "Secretary, Events Team Lead"
@@ -396,7 +392,7 @@ export const BOARD = [
     {
         name: "Addison Goolsbee",
         image: "",
-        role: "Treasurer"
+        role: "Treasurer, CampusHub Project Lead"
     },
     {
         name: "Brandon Yee",
@@ -409,9 +405,9 @@ export const BOARD = [
         role: "Outreach Chair"
     },
     {
-        name: "Andy Wu",
+        name: "Amy Zhao",
         image: "",
-        role: "Advisor"
+        role: "Design Team Lead"
     },
     {
         name: "Lily Zhou",
@@ -429,7 +425,7 @@ export const BOARD = [
         role: "Yalies Project Lead"
     },
     {
-        name: "Tucker Moses",
+        name: "Aidan Palmer",
         image: "",
         role: "CampusHub Project Lead"
     },
@@ -437,21 +433,40 @@ export const BOARD = [
         name: "Kai Xu",
         image: "",
         role: "MealMatch Project Lead"
+    },
+    {
+        name: "Braden Wong",
+        image: "",
+        role: "MealMatch Project Lead"
+    },
+    {
+        name: "Ethan Mathieu",
+        image: "",
+        role: "StudyBuddy Project Lead"
+    },
+    {
+        name: "Bill Qian",
+        image: "",
+        role: "RoomAdvisor Project Lead"
     }
 ]
 
-export const PROJECTS = [
+export type Project = {
+    name: string;
+    image: string;
+    link?: string;
+}
+
+export const PROJECTS: Project[] = [
     {
         name: "CourseTable",
-        image: coursetable
+        image: coursetable,
+        link: "https://www.coursetable.com/"
     },
     {
         name: "Yalies",
-        image: yalies
-    },
-    {
-        name: "Yuts",
-        image: yuts
+        image: yalies,
+        link: "https://yalies.io/"
     },
     {
         name: "CampusHub",
@@ -459,7 +474,16 @@ export const PROJECTS = [
     },
     {
         name: "MealMatch",
-        image: mealmatch
+        image: mealmatch,
+        link: "https://www.mealmatch.app/"
+    },
+    {
+        name: "StudyBuddy",
+        image: studybuddy
+    },
+    {
+        name: "RoomAdvisor",
+        image: roomadvisor
     }
 ]
 
