@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Product imports
 import { StaticImageData } from "next/image";
 
@@ -372,82 +373,168 @@ import studybuddy from './assets/studybuddy.png'
 import campushub from './assets/campushub.png'
 import mealmatch from './assets/MealMatch.png'
 import roomadvisor from './assets/roomadvisor.png'
+=======
+import coursetable from './assets/products/coursetable.svg'
+import yalies from './assets/products/yalies.png'
+import studybuddy from './assets/products/studybuddy.png'
+import yalebutteries from './assets/products/yalebutteries.jpg'
+import mealmatch from './assets/products/MealMatch.png'
+import roomadvisor from './assets/products/roomadvisor.png'
+>>>>>>> 722fd5d (Latest changes to YCS website, including updated profiles, projects, layout)
 
 import dev_projects from './assets/code.svg'
 import networking_events from './assets/briefcase.svg'
 import hack_nights from './assets/terminal.svg'
 import socials from './assets/user.svg'
 
+// People imports
+import meili from './assets/people/meili.jpg'
+import kelvin from './assets/people/kelvin.jpg'
+import bill from './assets/people/bill.jpg'
+import erik from './assets/people/erik.jpg'
+import katherine from './assets/people/katherine.jpg'
+import lauren from './assets/people/lauren.jpg'
+import rosie from './assets/people/rosie.jpg'
+import amy from './assets/people/amy.jpeg'
+import kai from './assets/people/kai.jpg'
+import braden from './assets/people/braden.jpg'
+import kenny from './assets/people/kenny.jpg'
+import brandon from './assets/people/brandon.jpg'
+import addison from './assets/people/addison.jpg'
+
 export const BOARD = [
     {
         name: "Kelvin Yip",
-        image: "",
-        role: "President"
+        image: kelvin,
+        role: [
+            "President"
+        ]
     },
     {
         name: "Meili Gupta",
-        image: "",
-        role: "Secretary, Events Team Lead"
+        image: meili,
+        role: [
+            "Vice-President"
+        ]
     }, 
     {
         name: "Addison Goolsbee",
-        image: "",
-        role: "Treasurer, CampusHub Project Lead"
+        image: addison,
+        role: [
+            "Treasurer",
+        ]
     },
     {
         name: "Brandon Yee",
-        image: "",
-        role: "Social Chair"
+        image: brandon,
+        role: [
+            "Social Chair"
+        ]
     },
     {
         name: "Rosie Rothschild",
+        image: rosie,
+        role: [
+            "Outreach Chair"
+        ]
+    },
+    {
+        name: "Nabil Rahman",
         image: "",
-        role: "Outreach Chair"
+        role: [
+            "Events Team Lead"
+        ]
     },
     {
         name: "Amy Zhao",
-        image: "",
-        role: "Design Team Lead"
+        image: amy,
+        role: [
+            "Design Team Lead"
+        ]
     },
     {
         name: "Lily Zhou",
         image: "",
-        role: "CourseTable Project Lead"
+        role: [
+            "CourseTable"
+        ]
     },
     {
         name: "Lucas Huang",
         image: "",
-        role: "CourseTable Project Lead"
+        role: [
+            "CourseTable"
+        ]
     },
     {
         name: "Erik Boesen",
-        image: "",
-        role: "Yalies Project Lead"
+        image: erik,
+        role: [
+            "Yalies"
+        ]
+    },
+    {
+        name: "Addison Goolsbee",
+        image: addison,
+        role: [
+            "YaleButteries"
+        ]
     },
     {
         name: "Aidan Palmer",
         image: "",
-        role: "CampusHub Project Lead"
+        role: [
+            "YaleButteries"
+        ]
     },
     {
         name: "Kai Xu",
-        image: "",
-        role: "MealMatch Project Lead"
+        image: kai,
+        role: [
+            "MealMatch"
+        ]
     },
     {
         name: "Braden Wong",
-        image: "",
-        role: "MealMatch Project Lead"
+        image: braden,
+        role: [
+            "MealMatch"
+        ]
     },
     {
         name: "Ethan Mathieu",
         image: "",
-        role: "StudyBuddy Project Lead"
+        role: [
+            "StudyBuddy"
+        ]
     },
     {
         name: "Bill Qian",
-        image: "",
-        role: "RoomAdvisor Project Lead"
+        image: bill,
+        role: [
+            "RoomAdvisor"
+        ]
+    },
+    {
+        name: "Kenny Tung",
+        image: kenny,
+        role: [
+            "RoomAdvisor"
+        ]
+    },
+    {
+        name: "Katherine He",
+        image: katherine,
+        role: [
+            "AutoDonation"
+        ]
+    },
+    {
+        name: "Lauren Delwiche",
+        image: lauren,
+        role: [
+            "Security"
+        ]
     }
 ]
 
@@ -469,8 +556,8 @@ export const PROJECTS: Project[] = [
         link: "https://yalies.io/"
     },
     {
-        name: "CampusHub",
-        image: campushub
+        name: "YaleButteries",
+        image: yalebutteries
     },
     {
         name: "MealMatch",
