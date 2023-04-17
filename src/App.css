@@ -50,8 +50,6 @@
 .card {
   border-radius: 10px;
   margin: 10px;
-  background-color: #f7f7f7;
-  box-shadow: 0 3px 10px rgba(0 0 0 / 0.2);
   padding: 10px;
   text-align: center;
   display: flex;
@@ -60,9 +58,34 @@
   justify-content: center;
 }
 
+.project-card {
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card:hover {
+  box-shadow: 0 3px 10px rgba(0 0 0 / 0.2);
+  transform: scale(1.1); 
+}
+
 .social-logo {
   width: 30px;
   height: 30px;
+}
+
+.social-logo:hover {
+  transform: scale(1.1); 
+}
+
+.project-link {
+  text-decoration: none;
+  color: inherit;
 }
 
 @media only screen and (max-width: 800px) {
@@ -74,5 +97,11 @@
 @media only screen and (max-width: 600px) {
   .card-grid {
       grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .card-grid {
+      grid-template-columns: repeat(1, 1fr);
   }
 }
