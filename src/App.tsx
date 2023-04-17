@@ -24,14 +24,14 @@ const CardWrapper = ({children}: CardWrapperProps) => (
 )
 
 const ProjectCard = ({project}: ProjectCardProps) => (
-    <CardWrapper>
+    <div className={project.link ? 'project-card' : 'card'}>
         <div style={{ width: '150px', height: '150px', display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
             <img src={project.image} alt={project.name} style={{ maxWidth: '150px', maxHeight: '150px', borderRadius: '15px' }}/>
         </div>
         <strong style={{ marginTop: '10px' }}>
             {project.name}
         </strong>
-    </CardWrapper>
+    </div>
 )
 
 function App() {
@@ -60,14 +60,14 @@ function App() {
                     ))
                 }
             </div>
-            <SectionTitle header='Spring 2023 Development' subheader='Here is the software we are building to improve the Yale experience using technology!'/>
+            <SectionTitle header='Products' subheader='Building software to improve the Yale experience with technology'/>
             <div className='card-grid'>
                 {
                     PROJECTS.map((project, i) => (
                         <Fragment key={i}>
                             {
                                 project.link ?
-                                <a href={project.link} target="_blank" rel="noreferrer" style={{ textDecoration: 'none' }}>
+                                <a href={project.link} target="_blank" rel="noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
                                     <ProjectCard project={project}/>
                                 </a> :
                                 <ProjectCard project={project}/>
@@ -76,14 +76,38 @@ function App() {
                     ))
                 }
             </div>
-            <SectionTitle header='Spring 2023 Board' subheader='Meet the people making this possible!'/>
+            <SectionTitle header='Board' subheader='Meet the team overseeing the general growth of YCS'/>
             <div className="card-grid">
                 {
-                    BOARD.map((board_member, i) => (
+                    BOARD.slice(0, 7).map((board_member, i) => (
                         <CardWrapper key={i}>
-                            <img src={people} alt={board_member.name} style={{ width: '100%', maxWidth: '200px', marginBottom: '1rem', height: '100%', maxHeight: '200px' }}/>
-                            <strong>{board_member.name}</strong>
-                            <p>{board_member.role}</p>
+                            <img src={board_member.image === "" ? people : board_member.image} alt={board_member.name} style={{ width: '100%', height: '100%', objectFit: 'cover', maxWidth: '200px', maxHeight: '200px' }}/>
+                            <strong style={{ margin: '1rem 0' }}>{board_member.name}</strong>
+                            <div>
+                                {board_member.role.map((role, i) => (
+                                    <div style={{ backgroundColor: 'lightgrey', color: '#1f232b', padding: '2.5px 5px 2.5px 5px', borderRadius: '5px' }} key={i}>
+                                        {role}
+                                    </div>
+                                ))}
+                            </div>
+                        </CardWrapper>
+                    ))
+                }
+            </div>
+            <SectionTitle header='Project Leads' subheader='Meet the people taking our projects to greater heights'/>
+            <div className="card-grid">
+                {
+                    BOARD.slice(7).map((board_member, i) => (
+                        <CardWrapper key={i}>
+                            <img src={board_member.image === "" ? people : board_member.image} alt={board_member.name} style={{ width: '100%', height: '100%', objectFit: 'cover', maxWidth: '200px', maxHeight: '200px' }}/>
+                            <strong style={{ margin: '1rem 0' }}>{board_member.name}</strong>
+                            <div>
+                                {board_member.role.map((role, i) => (
+                                    <div style={{ backgroundColor: 'lightgrey', color: '#1f232b', padding: '2.5px 5px 2.5px 5px', borderRadius: '5px' }} key={i}>
+                                        {role}
+                                    </div>
+                                ))}
+                            </div>
                         </CardWrapper>
                     ))
                 }
