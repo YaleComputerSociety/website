@@ -26,7 +26,7 @@ const CardWrapper = ({children}: CardWrapperProps) => (
 const ProjectCard = ({project}: ProjectCardProps) => (
     <div className={project.link ? 'project-card' : 'card'}>
         <div style={{ width: '150px', height: '150px', display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
-            <img src={project.image} alt={project.name} style={{ maxWidth: '150px', maxHeight: '150px', borderRadius: '15px' }}/>
+            <img src={project.image} loading='lazy' alt={project.name} style={{ maxWidth: '150px', maxHeight: '150px', borderRadius: '15px' }}/>
         </div>
         <strong style={{ marginTop: '10px' }}>
             {project.name}
@@ -53,7 +53,7 @@ function App() {
                 {
                     ABOUTUS.map((about, i) => (
                         <CardWrapper key={i}>
-                            <img src={about.icon} alt={about.name} style={{ width: '50px', height: '50px' }} />
+                            <img loading='lazy' src={about.icon} alt={about.name} style={{ width: '50px', height: '50px' }} />
                             <strong style={{ margin: '1rem 0' }}>{about.name}</strong>
                             <p>{about.description}</p>
                         </CardWrapper>
@@ -81,7 +81,12 @@ function App() {
                 {
                     BOARD.slice(0, 7).map((board_member, i) => (
                         <CardWrapper key={i}>
-                            <img src={board_member.image === "" ? people : board_member.image} alt={board_member.name} style={{ width: '100%', height: '100%', objectFit: 'cover', maxWidth: '200px', maxHeight: '200px' }}/>
+                            <img 
+                                src={board_member.image === "" ? people : board_member.image} 
+                                alt={board_member.name} 
+                                loading="lazy"
+                                style={{ width: '100%', height: '100%', objectFit: 'cover', maxWidth: '200px', maxHeight: '200px' }}
+                            />
                             <strong style={{ margin: '1rem 0' }}>{board_member.name}</strong>
                             <div>
                                 {board_member.role.map((role, i) => (
@@ -99,7 +104,12 @@ function App() {
                 {
                     BOARD.slice(7).map((board_member, i) => (
                         <CardWrapper key={i}>
-                            <img src={board_member.image === "" ? people : board_member.image} alt={board_member.name} style={{ width: '100%', height: '100%', objectFit: 'cover', maxWidth: '200px', maxHeight: '200px' }}/>
+                            <img 
+                                src={board_member.image === "" ? people : board_member.image} 
+                                alt={board_member.name} 
+                                loading="lazy"
+                                style={{ width: '100%', height: '100%', objectFit: 'cover', maxWidth: '200px', maxHeight: '200px' }}
+                            />
                             <strong style={{ margin: '1rem 0' }}>{board_member.name}</strong>
                             <div>
                                 {board_member.role.map((role, i) => (
