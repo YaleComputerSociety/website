@@ -24,6 +24,11 @@ import braden from './assets/people/braden.jpg'
 import kenny from './assets/people/kenny.jpg'
 import brandon from './assets/people/brandon.jpg'
 import addison from './assets/people/addison.jpg'
+import nabil from './assets/people/nabil.jpg'
+import aidan from './assets/people/aidan.jpg'
+import ethan from './assets/people/ethan.jpg'
+import lucas from './assets/people/lucas.jpg'
+import lily from './assets/people/lily.jpg'
 
 export const BOARD = [
     {
@@ -63,7 +68,7 @@ export const BOARD = [
     },
     {
         name: "Nabil Rahman",
-        image: "",
+        image: nabil,
         role: [
             "Events Team Lead"
         ]
@@ -77,14 +82,14 @@ export const BOARD = [
     },
     {
         name: "Lily Zhou",
-        image: "",
+        image: lily,
         role: [
             "CourseTable"
         ]
     },
     {
         name: "Lucas Huang",
-        image: "",
+        image: lucas,
         role: [
             "CourseTable"
         ]
@@ -105,7 +110,7 @@ export const BOARD = [
     },
     {
         name: "Aidan Palmer",
-        image: "",
+        image: aidan,
         role: [
             "YaleButteries"
         ]
@@ -126,7 +131,7 @@ export const BOARD = [
     },
     {
         name: "Ethan Mathieu",
-        image: "",
+        image: ethan,
         role: [
             "StudyBuddy"
         ]
