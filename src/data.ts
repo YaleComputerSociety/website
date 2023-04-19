@@ -67,7 +67,7 @@ export const BOARD = [
         ]
     },
     {
-        name: "Nabil Rahman",
+        name: "Md Nabil Rahman",
         image: nabil,
         role: [
             "Events Team Lead"
