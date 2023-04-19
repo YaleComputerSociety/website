@@ -72,11 +72,13 @@
 .project-card:hover {
   box-shadow: 0 3px 10px rgba(0 0 0 / 0.2);
   transform: scale(1.1); 
+  transition: 0.2s;
 }
 
 .social-logo {
   width: 30px;
   height: 30px;
+  transition: 0.2s;
 }
 
 .social-logo:hover {
@@ -86,6 +88,21 @@
 .project-link {
   text-decoration: none;
   color: inherit;
+}
+
+.mailchimp-btn {
+  cursor: pointer;
+  border: 5px solid white;
+  border-radius: 15px;
+  width: fit-content;
+  padding: 15px; 
+  transition: 0.2s;
+}
+
+.mailchimp-btn:hover {
+  color: rgb(31, 35, 43);
+  background: white;
+  transform: scale(1.1); 
 }
 
 @media only screen and (max-width: 800px) {
