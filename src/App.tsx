@@ -38,12 +38,12 @@ function App() {
     return (
         <div className="App">
             <div style={{ backgroundColor: '#1f232b' }}>
-                <img src={logo} alt={"Yale Computer Society logo"} style={{ maxHeight: '200px' }} />
+                <img src={logo} alt={"Yale Computer Society logo"} style={{ maxHeight: '200px', pointerEvents: 'none' }} />
             </div>
             <div style={{ backgroundColor: '#1f232b', color: 'white', padding: '0 0 2rem 0', display: "flex", flexDirection: 'column', alignItems: 'center' }}>
                 <h3>Students promoting tech &amp; entrepreneurship at Yale University</h3>
                 <div style={{ display: 'flex' }}>
-                    <div style={{ cursor: "pointer", border: "5px solid white", borderRadius: '15px', width: "fit-content", padding: '15px' }} onClick={() => window.open("https://yalecompsociety.us7.list-manage.com/subscribe/post?u=83b3abd7222875600c46cf8de&amp;id=155d6c54ff", "_blank")} >
+                    <div className='mailchimp-btn' onClick={() => window.open("https://yalecompsociety.us7.list-manage.com/subscribe/post?u=83b3abd7222875600c46cf8de&amp;id=155d6c54ff", "_blank")} >
                         Subscribe To Our Mailchimp
                     </div>
                 </div>
