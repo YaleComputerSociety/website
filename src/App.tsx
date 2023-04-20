@@ -25,7 +25,7 @@ const CardWrapper = ({children}: CardWrapperProps) => (
 
 const ProjectCard = ({project}: ProjectCardProps) => (
     <div className={project.link ? 'project-card' : 'card'}>
-        <div style={{ width: '150px', height: '150px', display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
+        <div style={{ width: '150px', height: '150px', display: 'flex', alignItems: 'center', marginBottom: '10px', justifyContent: 'center' }}>
             <img src={project.image} loading='lazy' alt={project.name} style={{ maxWidth: '150px', maxHeight: '150px', borderRadius: '15px' }}/>
         </div>
         <strong style={{ marginTop: '10px' }}>
@@ -125,7 +125,7 @@ function App() {
             <footer style={{ backgroundColor: '#1f232b', padding: '15px', display: 'flex', flexDirection: 'column', color: 'white' }}>
                 <div>
                 <a href="mailto:yalecomputersociety@gmail.com">
-                    <img src={email} className="social-logo" style={{ marginRight: '10px' }} alt="Email"/>
+                    <img className="social-logo" style={{ marginRight: '10px' }} src={email} alt="Email"/>
                 </a>
                 <a href="https://www.facebook.com/yalecompsociety/" target="_blank" rel="noreferrer">
                     <img className="social-logo" style={{ margin: '0 10px' }} src={facebook} alt="Facebook"/>
