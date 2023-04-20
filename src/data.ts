@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Product imports
 import { StaticImageData } from "next/image";
 
@@ -374,13 +375,20 @@ import campushub from './assets/campushub.png'
 import mealmatch from './assets/MealMatch.png'
 import roomadvisor from './assets/roomadvisor.png'
 =======
+=======
+// Product imports
+>>>>>>> 7640fdf (Added new projects and min card grid length)
 import coursetable from './assets/products/coursetable.svg'
 import yalies from './assets/products/yalies.png'
-import studybuddy from './assets/products/studybuddy.png'
+import ymeets from './assets/products/ymeets.png'
 import yalebutteries from './assets/products/yalebutteries.jpg'
 import mealmatch from './assets/products/MealMatch.png'
 import roomadvisor from './assets/products/roomadvisor.png'
+<<<<<<< HEAD
 >>>>>>> 722fd5d (Latest changes to YCS website, including updated profiles, projects, layout)
+=======
+import autodonation from './assets/products/autodonation.svg'
+>>>>>>> 7640fdf (Added new projects and min card grid length)
 
 import dev_projects from './assets/code.svg'
 import networking_events from './assets/briefcase.svg'
@@ -510,7 +518,7 @@ export const BOARD = [
         name: "Ethan Mathieu",
         image: ethan,
         role: [
-            "StudyBuddy"
+            "ymeets"
         ]
     },
     {
@@ -570,12 +578,16 @@ export const PROJECTS: Project[] = [
         link: "https://www.mealmatch.app/"
     },
     {
-        name: "StudyBuddy",
-        image: studybuddy
+        name: "ymeets",
+        image: ymeets
     },
     {
         name: "RoomAdvisor",
         image: roomadvisor
+    },
+    {
+        name: "AutoDonation",
+        image: autodonation
     }
 ]
 
