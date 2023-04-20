@@ -1,0 +1,17 @@
+.footer {
+    background-color: #1f232b; 
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.social-logo {
+    width: 30px;
+    height: 30px;
+    transition: 0.2s;
+}
+  
+.social-logo:hover {
+    transform: scale(1.1); 
+}
