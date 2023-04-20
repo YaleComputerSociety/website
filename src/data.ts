@@ -1,9 +1,11 @@
+// Product imports
 import coursetable from './assets/products/coursetable.svg'
 import yalies from './assets/products/yalies.png'
-import studybuddy from './assets/products/studybuddy.png'
+import ymeets from './assets/products/ymeets.png'
 import yalebutteries from './assets/products/yalebutteries.jpg'
 import mealmatch from './assets/products/MealMatch.png'
 import roomadvisor from './assets/products/roomadvisor.png'
+import autodonation from './assets/products/autodonation.svg'
 
 import dev_projects from './assets/code.svg'
 import networking_events from './assets/briefcase.svg'
@@ -133,7 +135,7 @@ export const BOARD = [
         name: "Ethan Mathieu",
         image: ethan,
         role: [
-            "StudyBuddy"
+            "ymeets"
         ]
     },
     {
@@ -193,12 +195,16 @@ export const PROJECTS: Project[] = [
         link: "https://www.mealmatch.app/"
     },
     {
-        name: "StudyBuddy",
-        image: studybuddy
+        name: "ymeets",
+        image: ymeets
     },
     {
         name: "RoomAdvisor",
         image: roomadvisor
+    },
+    {
+        name: "AutoDonation",
+        image: autodonation
     }
 ]
 
