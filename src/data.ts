@@ -395,6 +395,11 @@ import networking_events from './assets/briefcase.svg'
 import hack_nights from './assets/terminal.svg'
 import socials from './assets/user.svg'
 
+// Media imports
+import email from './assets/email.svg'
+import facebook from './assets/facebook.svg'
+import instagram from './assets/instagram.svg'
+
 // People imports
 import meili from './assets/people/meili.jpg'
 import kelvin from './assets/people/kelvin.jpg'
@@ -555,39 +560,55 @@ export type Project = {
     name: string;
     image: string;
     link?: string;
+    live: boolean;
+    description: string;
 }
 
 export const PROJECTS: Project[] = [
     {
         name: "CourseTable",
         image: coursetable,
-        link: "https://www.coursetable.com/"
+        link: "https://www.coursetable.com/",
+        description: "CourseTable is a student-built courses browser used by nearly everybody at Yale - chances are you've used it to do some shopping yourself!",
+        live: true
     },
     {
         name: "Yalies",
         image: yalies,
-        link: "https://yalies.io/"
+        link: "https://yalies.io/",
+        description: "Yalies is a website that provides data on the Yale student body. It combines data from Yale Face Book and Yale Directory, with enhanced design, user experience, and security.",
+        live: true
     },
     {
         name: "YaleButteries",
-        image: yalebutteries
+        image: yalebutteries,
+        description: "We are an app that technologically transforms how butteries at Yale work, which includes features such as a buttery ordering system for students and an inventory and order management system for butteries managers and workers.",
+        live: false
     },
     {
         name: "MealMatch",
         image: mealmatch,
-        link: "https://www.mealmatch.app/"
+        link: "https://www.mealmatch.app/",
+        description: "MealMatch is a campus dating and friendship platform that matches you with other students with compatible bios and arranges a convenient time for both of you to meet at a dining hall for a meal.",
+        live: true
     },
     {
         name: "ymeets",
-        image: ymeets
+        image: ymeets,
+        live: false,
+        description: "We are a novel web application aimed specifically at making it easier for Yale students to find a common window of time and an optimal space to meet."
     },
     {
         name: "RoomAdvisor",
-        image: roomadvisor
+        image: roomadvisor,
+        live: false,
+        description: "Room Advisor is a website where Yale students can browse, rate, and review college rooms across campus."
     },
     {
         name: "AutoDonation",
-        image: autodonation
+        image: autodonation,
+        live: false,
+        description: "AutoDonation is a free, intuitive platform that helps nonprofits automate, collect, and track donations."
     }
 ]
 
@@ -613,4 +634,34 @@ export const ABOUTUS = [
         description: "We host social events for CS students to meet each other and exchange interests."
     }
 ]
+<<<<<<< HEAD
 >>>>>>> 2b93c9e (React Version of Redesigned Website. Removed 5615920 per internal convo.)
+=======
+
+export const MEDIA = [
+    {
+        link: "mailto:yalecomputersociety@gmail.com",
+        margin: { 
+            marginRight: '10px'
+        },
+        imageSrc: email,
+        alt: "Email"
+    },
+    {
+        link: "https://www.facebook.com/yalecompsociety/",
+        margin: { 
+            margin: '0 10px'
+        },
+        imageSrc: facebook,
+        alt: "Facebook"
+    },
+    {
+        link: "https://www.instagram.com/yalecompsociety/",
+        margin: { 
+            marginLeft: '10px'
+        },
+        imageSrc: instagram,
+        alt: "Instagram"
+    }
+]
+>>>>>>> 359653e (New pages, sticky header)
