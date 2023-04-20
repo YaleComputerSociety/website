@@ -1,0 +1,30 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+}
+
+.logo {
+    height: 100%;
+    float: left;
+    padding-left: 2.5vw;
+    transition: 0.2s;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+}
+
+.header-link {
+    padding: 0 10px;
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.header-link:hover {
+    transform: scale(1.2);
+}

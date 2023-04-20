@@ -47,6 +47,16 @@
   grid-auto-flow: row;
 }
 
+.product-grid {
+  display: grid;
+  width: 80%;
+  max-width: 1500px;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2px;
+  grid-auto-flow: row;
+}
+
 .card {
   border-radius: 10px;
   margin: 10px;
@@ -75,16 +85,6 @@
   transition: 0.2s;
 }
 
-.social-logo {
-  width: 30px;
-  height: 30px;
-  transition: 0.2s;
-}
-
-.social-logo:hover {
-  transform: scale(1.1); 
-}
-
 .project-link {
   text-decoration: none;
   color: inherit;
@@ -108,6 +108,12 @@
 @media only screen and (max-width: 800px) {
   .card-grid {
       grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .product-grid {
+      grid-template-columns: repeat(1, 1fr);
   }
 }
 
