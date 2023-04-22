@@ -1,4 +1,3 @@
-import { ReactNode } from "react"
 import { CardWrapper } from "../components/CardWrapper"
 import { SectionTitle } from "../components/SectionTitle"
 import { BOARD } from "../data"
