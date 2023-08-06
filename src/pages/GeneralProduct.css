@@ -5,3 +5,45 @@
 .third-section {
     background: linear-gradient(250deg, #1F232C, #1F232C 50%, white 50%, white);;
 }
+
+.section-image-container {
+    width: 60%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.section-image {
+    width: 90%;
+    border-radius: 50px; 
+}
+
+.section-text-container {
+    width: 40%; 
+    display: flex; 
+    height: 100%;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-around;
+}
+
+.text-container {
+    display: flex;
+    height: 60%;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-around;
+    width: 90%;
+}
+
+.section-text-title {
+    font-weight: bold;
+    font-size: 48px;
+    color: white;
+}
+
+.section-text {
+    font-size: 36px;
+    color: white;
+    white-space: pre-wrap;
+}
