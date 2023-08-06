@@ -36,7 +36,7 @@ export const GeneralProduct = ({
                     <div style={{ display: "flex", height: "60%", flexDirection: "column", alignItems: 'center', justifyContent: "space-around", width: "90%" }}>
                         <div style={{ display: "flex" }}>
                             <div style={{ fontWeight: 700, color: "white", fontSize: "57px" }}>{productName}</div> 
-                            <img src={productLogo} alt={productName} style={{ width: "67.5px", height: "67.5px", marginLeft: "1rem" }} />
+                            <img src={require(`../assets/products/${productName}/productlogo.png`)} alt={productName} style={{ width: "67.5px", height: "67.5px", marginLeft: "1rem" }} />
                         </div>
                         <div style={{ fontWeight: 400, color: "white", fontSize: "32px" }}>{productSlogan}</div>
                         <div style={{ backgroundColor: productColor, color: "white", width: "fit-content", borderRadius: "50px", padding: "25px 35px", fontWeight: 500, fontSize: "28.5px" }}>
