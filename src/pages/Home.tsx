@@ -1,6 +1,6 @@
 import { SectionTitle } from "../components/SectionTitle";
 import logo from "../assets/ycs_black.png";
-import { ABOUTUS } from "../data";
+import { ABOUTUS, PROJECTS } from "../data";
 import { Fragment } from "react";
 import { CardWrapper } from "../components/CardWrapper";
 
@@ -10,23 +10,52 @@ import "../index.css";
 
 export const Home = () => {
   return (
-    <div className="landing-page">
-      <div className="div">
-        <h1 className="text-white text-6xl font-extrabold tracking-wider text-center py-10 md:py-3 bg-green-500">Yale Computer Society</h1>
-        <div className="overlap-4">
-          <p className="promoting-tech">
-            Promoting tech &amp; entrepreneurship <br />
-            at Yale University
-          </p>
-          <p className="bg-cyan-400">hi</p>
-          <div className="explore-button">
-            <div className="div-wrapper">
-              <div className="text-wrapper-12">Join us</div>
-            </div>
+    <div className="">
+      <div className="flex flex-col items-center">
+        <h1 className="text-white text-8xl font-extrabold text-center py-10 md:py-3 mt-72 mb-8">Yale Computer Society</h1>
+        <p className="text-gray-400 text-3xl mb-52"> Yale's premier software development and computer science student organization</p>
+        <p className="text-gray-400 text-4xl" style={{ letterSpacing: "1em" }}>
+          v v v
+        </p>
+
+        <div className="py-28 flex flex-col items-center w-full">
+          <div className="text-center text-white text-3xl font-normal pb-12">Check out our products!</div>
+          <div className="w-3/4 h-28 bg-gray-400 rounded-full flex items-center justify-evenly">
+            <img className="w-20 h-20 rounded-lg" src={PROJECTS[0].image} alt="" />
+            <img className="w-20 h-20 rounded-lg" src={PROJECTS[1].image} alt="" />
+            <img className="w-20 h-20 rounded-lg" src={PROJECTS[2].image} alt="" />
+            <img className="w-20 h-20 rounded-lg" src={PROJECTS[3].image} alt="" />
+            <img className="w-20 h-20 rounded-lg" src={PROJECTS[4].image} alt="" />
+            <img className="w-20 h-20 rounded-lg" src={PROJECTS[5].image} alt="" />
+            <img className="w-20 h-20 rounded-lg" src={PROJECTS[6].image} alt="" />
+          </div>
+          <div className="w-3/4 h-6 relative mt-4 text-md text-gray-400 text-center flex justify-evenly">
+            <div>CourseTable</div>
+            <div>Yalies.io</div>
+            <div>YaleButteries</div>
+            <div>MealMatch</div>
+            <div>ymeets</div>
+            <div>AutoDonation</div>
+            <div>RoomAdvisor</div>
           </div>
         </div>
 
-        <div className="overlap-group">
+        <div className="w-3/4 mb-8 text-white text-6xl font-medium">Cultivating a passion for programming</div>
+        <div className="w-3/4 text-gray-400 text-3xl mb-20">From development mentorship to hacking nights, we create a community for programmers of all skill levels. </div>
+
+        <div className="columns-2">
+          <div className="text-center w-96 h-48 bg-gradient-to-b from-ycs-pink to-ycs-pink/10 rounded-2xl">
+            <div className="text-white">dpaoisjdfapoisf</div>
+          </div>
+          <div className=" w-96 h-48 bg-gradient-to-b from-ycs-pink to-ycs-pink/10 rounded-2xl">
+            <div className="text-white">dpaoisjdfapoisf</div>
+          </div>
+          <div className=" w-96 h-48 bg-gradient-to-b from-ycs-pink to-ycs-pink/10 rounded-2xl">
+            <div className="text-white">dpaoisjdfapoisf</div>
+          </div>
+        </div>
+
+        {/* <div className="overlap-group">
           <p className="p">Offer real-world software engineering projects to work on collaboratively.</p>
           <div className="text-wrapper-7">Development</div>
         </div>
@@ -126,29 +155,7 @@ export const Home = () => {
             <div className="text-wrapper-21">RoomAdvisor</div>
           </div>
         </div>
-        <div className="check-out-our-work">
-          <div className="y-cs-products-wrapper">
-            <div className="y-cs-products">
-              <img className="image" alt="Image" src="https://generation-sessions.s3.amazonaws.com/946ecc0b964fb4a6ddf8c088ea18b080/img/image-4@2x.png" />
-              <img className="image-removebg" alt="Image removebg" src="https://generation-sessions.s3.amazonaws.com/946ecc0b964fb4a6ddf8c088ea18b080/img/image-removebg-preview-1@2x.png" />
-              <img className="img" alt="Image" src="https://generation-sessions.s3.amazonaws.com/946ecc0b964fb4a6ddf8c088ea18b080/img/image-9@2x.png" />
-              <img className="image-2" alt="Image" src="https://generation-sessions.s3.amazonaws.com/946ecc0b964fb4a6ddf8c088ea18b080/img/image-7@2x.png" />
-              <img className="image-3" alt="Image" src="https://generation-sessions.s3.amazonaws.com/946ecc0b964fb4a6ddf8c088ea18b080/img/image-5@2x.png" />
-              <img className="image-4" alt="Image" src="https://generation-sessions.s3.amazonaws.com/946ecc0b964fb4a6ddf8c088ea18b080/img/image-6@2x.png" />
-              <img className="image-5" alt="Image" src="https://generation-sessions.s3.amazonaws.com/946ecc0b964fb4a6ddf8c088ea18b080/img/image-8@2x.png" />
-            </div>
-          </div>
-          <div className="descriptions">
-            <div className="text-wrapper-22">Yalies.io</div>
-            <div className="text-wrapper-23">YaleButteries</div>
-            <div className="text-wrapper-24">CourseTable</div>
-            <div className="text-wrapper-25">RoomAdvisor</div>
-            <div className="text-wrapper-26">MealMatch</div>
-            <div className="text-wrapper-27">ymeets</div>
-            <div className="text-wrapper-28">AutoDonation</div>
-          </div>
-          <div className="text-wrapper-29">Check out our work</div>
-        </div>
+
         <div className="group-6">
           <div className="text-wrapper-30">JOIN THE COMMUNITY</div>
           <p className="program-with-us-at">
@@ -168,7 +175,7 @@ export const Home = () => {
             <img className="image-8" alt="Image" src="https://generation-sessions.s3.amazonaws.com/946ecc0b964fb4a6ddf8c088ea18b080/img/image-10@2x.png" />
           </div>
         </div>
-        <p className="text-wrapper-34">Yale Computer Society © 2023</p>
+      <p className="text-wrapper-34">Yale Computer Society © 2023</p> */}
       </div>
     </div>
   );
