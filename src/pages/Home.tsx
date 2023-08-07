@@ -6,17 +6,19 @@ import { CardWrapper } from "../components/CardWrapper";
 
 import React from "react";
 import "./home.css";
+import "../index.css";
 
 export const Home = () => {
   return (
     <div className="landing-page">
       <div className="div">
-        <h1 className="text-wrapper">Yale Computer Society</h1>
+        <h1 className="text-white text-6xl font-extrabold tracking-wider text-center py-10 md:py-3 bg-green-500">Yale Computer Society</h1>
         <div className="overlap-4">
           <p className="promoting-tech">
             Promoting tech &amp; entrepreneurship <br />
             at Yale University
           </p>
+          <p className="bg-cyan-400">hi</p>
           <div className="explore-button">
             <div className="div-wrapper">
               <div className="text-wrapper-12">Join us</div>
