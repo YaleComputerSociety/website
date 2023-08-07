@@ -11,6 +11,7 @@ interface GeneralProductProps {
     secondSectionText: (string | JSX.Element)[] | string;
     thirdSectionTitle: string;
     thirdSectionText: (string | JSX.Element)[] | string;
+    productLink: string;
 }
 
 /**
@@ -23,8 +24,9 @@ interface GeneralProductProps {
  * @param {(string | JSX.Element)[] | string} firstSectionText The text to display in the first section of the product description.
  * @param {string} secondSectionTitle The title to display in the second section of the product description.
  * @param {(string | JSX.Element)[] | string} secondSectionText The text to display in the second section of the product description.
- *  * @param {string} thirdSectionTitle The title to display in the third section of the product description.
+ * @param {string} thirdSectionTitle The title to display in the third section of the product description.
  * @param {(string | JSX.Element)[] | string} thirdSectionText The text to display in the third section of the product description.
+ * @param {string} productLink A link to access the product.
  * @returns {JSX.Element}
  */
 export const GeneralProduct = ({
@@ -37,7 +39,8 @@ export const GeneralProduct = ({
     secondSectionTitle,
     secondSectionText,
     thirdSectionTitle,
-    thirdSectionText
+    thirdSectionText,
+    productLink
 }: GeneralProductProps): JSX.Element => {
 
     interface GeneralProductSectionImageProps {
@@ -75,7 +78,7 @@ export const GeneralProduct = ({
                             <img src={require(`../assets/products/${productName}/productlogo.png`)} alt={productName} style={{ width: "67.5px", height: "67.5px", marginLeft: "1rem", display: "inline-block" }} />
                         </div>
                         <div style={{ fontWeight: 400, color: "white", fontSize: "32px", textAlign: "left" }}>{productSlogan}</div>
-                        <div style={{ backgroundColor: productColor, color: "white", width: "fit-content", borderRadius: "50px", padding: "25px 35px", fontWeight: 500, fontSize: "28.5px", marginRight: "auto" }}>
+                        <div className='visit-button' style={{ backgroundColor: productColor }} onClick={() => window.open(productLink, "_blank")}>
                             {isWeb ? "Visit Site" : "Download App"}
                         </div>
                     </div>
