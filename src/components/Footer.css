@@ -1,17 +1,18 @@
 .footer {
-    background-color: #1f232b; 
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    color: white;
+  background-color: #1f232b;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  z-index: 20;
 }
 
 .social-logo {
-    width: 30px;
-    height: 30px;
-    transition: 0.2s;
+  width: 30px;
+  height: 30px;
+  transition: 0.2s;
 }
-  
+
 .social-logo:hover {
-    transform: scale(1.1); 
+  transform: scale(1.1);
 }

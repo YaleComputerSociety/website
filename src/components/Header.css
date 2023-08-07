@@ -1,30 +1,52 @@
 .header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 10vh;
-    background-color: white;
+  position: fixed;
+  width: 94%;
+  height: 6%;
+  background-color: white;
+  top: 3%;
+  left: 3%;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 20;
+}
+
+.pagesList {
+  display: flex;
+  height: 100%;
+  justify-content: right;
+  align-items: center;
+  padding-right: 4vw;
+  flex: 0 0 70%;
+  gap: 5%;
 }
 
 .logo {
-    height: 100%;
-    float: left;
-    padding-left: 2.5vw;
-    transition: 0.2s;
+  display: flex;
+  height: 100%;
+  flex: 0 0 14%;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
 }
 
 .logo:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .header-link {
-    padding: 0 10px;
-    color: inherit;
-    font-weight: bold;
-    text-decoration: none;
-    transition: 0.2s;
+  padding: 0 10px;
+  color: inherit;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.2s;
 }
 
 .header-link:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
