@@ -13,16 +13,6 @@
   width: 1440px;
 }
 
-.landing-page .text-wrapper {
-  color: #ffffff;
-  font-size: 64px;
-  font-weight: 900;
-  letter-spacing: 1px;
-  text-align: center;
-  padding: 10% 0 3% 0;
-  background: green;
-}
-
 .landing-page .overlap-4 {
   background: cyan;
   position: relative;
