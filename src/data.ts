@@ -406,7 +406,7 @@ import hack_nights from "./assets/terminal.svg";
 import socials from "./assets/user.svg";
 
 // Media imports
-import email from "./assets/email.svg";
+import email from "./assets/email2.png";
 import facebook from "./assets/facebook.svg";
 import instagram from "./assets/instagram.svg";
 
@@ -638,7 +638,7 @@ export const MEDIA = [
   {
     link: "mailto:yalecomputersociety@gmail.com",
     margin: {
-      marginRight: "10px",
+      marginRight: "5px",
     },
     imageSrc: email,
     alt: "Email",
