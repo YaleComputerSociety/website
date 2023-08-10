@@ -21,10 +21,10 @@ export const SectionTitle = ({ title: header, subtitle: subheader }: SectionTitl
 
 export const SectionTitle = ({header, subheader}: SectionTitleProps) => (
 
-    <>
-        <h1>{header}</h1>
-        <h4>{subheader}</h4>
-    </>
+    <div style={{paddingTop: "10vh", paddingBottom: "10vh"}}>
+        <h1 style={{fontSize: "65px", fontWeight: "700"}}>{header}</h1>
+        <h4 style={{fontSize: "20px", marginTop: "21px"}}>{subheader}</h4>
+    </div>
 
 )
 >>>>>>> 359653e (New pages, sticky header)
