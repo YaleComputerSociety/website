@@ -1,4 +1,5 @@
 .site
 .sass-cache
 .jekyll-metadata
+.idea
 node_modules
