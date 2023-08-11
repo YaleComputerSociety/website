@@ -1,6 +1,5 @@
 import { Fragment } from "react";
 import { Project, PROJECTS } from "../data";
-import { GeneralProduct } from "./GeneralProduct";
 import { Link } from "react-router-dom";
 
 type ProjectCardProps = {
@@ -8,7 +7,7 @@ type ProjectCardProps = {
 };
 
 const ProjectCard = ({ project }: ProjectCardProps) => (
-  <div className={project.live ? "project-card" : "card"} style={{ display: "flex", flexDirection: "row" }}>
+  <div className={project.link ? "project-card" : "card"} style={{ display: "flex", flexDirection: "row" }}>
     <div style={{ width: "25%" }}>
       <img src={project.image} loading="lazy" alt={project.name} style={{ maxWidth: "80%", maxHeight: "150px", borderRadius: "15px" }} />
     </div>
@@ -45,9 +44,9 @@ export const Products = () => {
         {PROJECTS.filter((project) => !project.live).map((project, i) => (
           <Fragment key={i}>
             {project.link ? (
-              <a href={project.link} target="_blank" rel="noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
-                <ProjectCard project={project} />
-              </a>
+                <Link to={project.link} style={{ textDecoration: "none", color: "inherit" }}>
+                    <ProjectCard project={project} />
+                </Link>
             ) : (
               <ProjectCard project={project} />
             )}

@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import ycs_logo from "../assets/ycs_logo_dark_512.png";
 import "./Header.css";
 
 export const Header = () => {
