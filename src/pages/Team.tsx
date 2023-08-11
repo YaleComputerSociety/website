@@ -4,11 +4,11 @@ import { BOARD } from "../data";
 
 export const Team = () => {
   return (
-    <div style={{ paddingTop: "10vh", color: "white" }}>
+    <div style={{ paddingTop: "10vh", paddingLeft:"15vw", paddingRight:"15vw", color: "white" }}>
       <SectionTitle header="Our Team" subheader="Meet the people that make up y/cs." />
         <h1 style={{fontWeight: 700, fontSize: "35px", paddingBottom: "3vh"}}>Board</h1>
       <div className="card-grid">
-        {BOARD.slice(0, 7).map((board_member, i) => (
+        {BOARD.slice(0, 12).map((board_member, i) => (
           <CardWrapper key={i}>
             <img src={board_member.image} alt={board_member.name} loading="lazy" style={{ width: "100%", height: "100%", objectFit: "cover", maxWidth: "200px", maxHeight: "200px", borderRadius: "40px" }} />
             <strong style={{ margin: "1rem 0" }}>{board_member.name}</strong>
@@ -20,7 +20,7 @@ export const Team = () => {
       </div>
         <h1 style={{fontWeight: 700, fontSize: "35px", paddingTop: "10vh", paddingBottom: "3vh"}}>Product Leads</h1>
       <div className="card-grid">
-        {BOARD.slice(7).map((board_member, i) => (
+        {BOARD.slice(12).map((board_member, i) => (
             <CardWrapper key={i}>
                 <img src={board_member.image} alt={board_member.name} loading="lazy" style={{ width: "100%", height: "100%", objectFit: "cover", maxWidth: "200px", maxHeight: "200px", borderRadius: "40px" }} />
                 <strong style={{ margin: "1rem 0" }}>{board_member.name}</strong>
