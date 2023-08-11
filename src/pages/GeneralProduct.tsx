@@ -1,9 +1,12 @@
 import './GeneralProduct.css'
+import { GeneralProductHeader } from './components/GeneralProductHeader';
+import { GeneralProductSectionText } from './components/GeneralProductSectionText';
 
 interface GeneralProductProps {
     productName: string;
     productSlogan: string;
     productColor: string;
+    productLink: string;
     isWeb: boolean;
     firstSectionTitle: string;
     firstSectionText: (string | JSX.Element)[] | string;
@@ -11,7 +14,6 @@ interface GeneralProductProps {
     secondSectionText: (string | JSX.Element)[] | string;
     thirdSectionTitle: string;
     thirdSectionText: (string | JSX.Element)[] | string;
-    productLink: string;
 }
 
 /**
@@ -53,49 +55,24 @@ export const GeneralProduct = ({
         </div>
     )
 
-    interface GeneralProductSectionTextProps {
-        title: string;
-        text: (string | JSX.Element)[] | string;
-        align: CanvasTextAlign;
-    }
-
-    const GeneralProductSectionText = ({ title, text, align }: GeneralProductSectionTextProps) => (
-        <div className='section-text-container'>
-            <div className='text-container'>
-                <div className='section-text-title' style={{ textAlign: align }}>{title}</div>
-                <div className='section-text' style={{ textAlign: align }}>{text}</div>
-            </div>
-        </div>
-    )
-
     return (
-        <div style={{ paddingTop: '10vh' }}>
-            <div style={{ background: "#1F232C", padding: "20px 0", height: "90vh", display: "flex" }}>
-                <div className='section-text-container'>
-                    <div className='text-container' style={{ width: "75%" }}>
-                        <div style={{ display: "flex", width: "100%" }}>
-                            <div style={{ fontWeight: 700, color: "white", fontSize: "57px", float: "left", display: "inline-block" }}>{productName}</div> 
-                            <img src={require(`../assets/products/${productName}/productlogo.png`)} alt={productName} style={{ width: "67.5px", height: "67.5px", marginLeft: "1rem", display: "inline-block" }} />
-                        </div>
-                        <div style={{ fontWeight: 400, color: "white", fontSize: "32px", textAlign: "left" }}>{productSlogan}</div>
-                        <div className='visit-button' style={{ backgroundColor: productColor }} onClick={() => window.open(productLink, "_blank")}>
-                            {isWeb ? "Visit Site" : "Download App"}
-                        </div>
-                    </div>
-                </div>
-                <div className='section-image-container'>
-                    <img src={require(`../assets/products/${productName}/headerimage.png`)} style={{ width: "95%" }} alt="Product Main Screenshot"/>
-                </div>
-            </div>
-            <div className='first-section' style={{ padding: "20px 0", height: "90vh", display: "flex" }}>
+        <div>
+            <GeneralProductHeader
+                productName={productName}
+                productColor={productColor}
+                productSlogan={productSlogan}
+                productLink={productLink}
+                buttonDescription={isWeb ? "Visit Site" : "Download App"}
+            />
+            <div className='first-section' style={{ padding: "20px 0", height: "100vh", display: "flex" }}>
                 <GeneralProductSectionImage sectionNumber='first'/>
                 <GeneralProductSectionText title={firstSectionTitle} text={firstSectionText} align='right'/>
             </div>
-            <div style={{ background: productColor, padding: "20px 0", height: "90vh", display: "flex" }}>
+            <div style={{ background: productColor, padding: "20px 0", height: "100vh", display: "flex" }}>
                 <GeneralProductSectionText title={secondSectionTitle} text={secondSectionText} align='left'/> 
                 <GeneralProductSectionImage sectionNumber='second'/>
             </div>
-            <div className='third-section' style={{ padding: "20px 0", height: "90vh", display: "flex" }}>
+            <div className='third-section' style={{ padding: "20px 0", height: "100vh", display: "flex" }}>
                 <GeneralProductSectionImage sectionNumber='third'/>
                 <GeneralProductSectionText title={thirdSectionTitle} text={thirdSectionText} align='right'/> 
             </div>

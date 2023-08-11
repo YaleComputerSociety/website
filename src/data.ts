@@ -566,6 +566,7 @@ export const PROJECTS: Project[] = [
   },
   {
     name: "ymeets",
+    link: "/products/Ymeets",
     image: ymeets,
     live: false,
     description: "We are a novel web application aimed specifically at making it easier for Yale students to find a common window of time and an optimal space to meet.",
@@ -579,6 +580,7 @@ export const PROJECTS: Project[] = [
   {
     name: "AutoDonation",
     image: autodonation,
+    link: "/products/AutoDonation",
     live: false,
     description: "AutoDonation is a free, intuitive platform that helps nonprofits automate, collect, and track donations.",
   },
