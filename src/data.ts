@@ -432,43 +432,69 @@ import lily from "./assets/people/lily.jpg";
 
 export const BOARD = [
   {
-    name: "Kelvin Yip",
-    image: kelvin,
+    name: "Addison Goolsbee",
+    image: addison,
     role: ["President"],
   },
   {
-    name: "Meili Gupta",
-    image: meili,
-    role: ["Vice-President"],
+    name: "Ethan Mathieu",
+    image: ethan,
+    role: ["Vice President"],
   },
   {
-    name: "Addison Goolsbee",
-    image: addison,
+    name: "Katherine He",
+    image: katherine,
+    role: ["Director of Development"],
+  },
+  {
+    name: "Amina Sakho",
+    image: "blank",
+    role: ["Vice Director of Development"],
+  },
+  {
+    name: "Kai Zhang",
+    image: kai,
+    role: ["Director of Design"],
+  },
+  {
+    name: "Emillie Ma",
+    image: "",
+    role: ["Director of Events"],
+  },
+  {
+    name: "Jessica Le",
+    image: "",
+    role: ["Director of Outreach and Recruitment"],
+  },
+  {
+    name: "Fatima Kamara",
+    image: "",
+    role: ["Vice Director of Outreach and Recruitment"],
+  },
+  {
+    name: "Nabil Rahman",
+    image: nabil,
     role: ["Treasurer"],
   },
   {
-    name: "Brandon Yee",
-    image: brandon,
-    role: ["Social Chair"],
+    name: "Tyler Schroder",
+    image: "",
+    role: ["Communications"],
   },
   {
-    name: "Rosie Rothschild",
-    image: rosie,
-    role: ["Outreach Chair"],
+    name: "Lauren Delwiche",
+    image: "",
+    role: ["Security Lead"],
   },
   {
-    name: "Md Nabil Rahman",
-    image: nabil,
-    role: ["Events Team Lead"],
+    name: "Kelvin Yip",
+    image: kelvin,
+    role: ["Advisor"],
   },
+  // product leads
   {
-    name: "Amy Zhao",
-    image: amy,
-    role: ["Design Team Lead"],
-  },
-  {
-    name: "Lily Zhou",
-    image: lily,
+    name: "Alex Schapiro",
+    image: "",
     role: ["CourseTable"],
   },
   {
@@ -480,11 +506,6 @@ export const BOARD = [
     name: "Erik Boesen",
     image: erik,
     role: ["Yalies"],
-  },
-  {
-    name: "Addison Goolsbee",
-    image: addison,
-    role: ["YaleButteries"],
   },
   {
     name: "Aidan Palmer",
@@ -502,8 +523,8 @@ export const BOARD = [
     role: ["MealMatch"],
   },
   {
-    name: "Ethan Mathieu",
-    image: ethan,
+    name: "Nicholas Ribeiro",
+    image: "",
     role: ["ymeets"],
   },
   {
@@ -520,11 +541,6 @@ export const BOARD = [
     name: "Katherine He",
     image: katherine,
     role: ["AutoDonation"],
-  },
-  {
-    name: "Lauren Delwiche",
-    image: lauren,
-    role: ["Security"],
   },
 ];
 
