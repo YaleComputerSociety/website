@@ -14,7 +14,7 @@
 }
 
 .section-image {
-    width: 90%;
+    width: 80%;
     border-radius: 50px; 
 }
 
@@ -33,17 +33,17 @@
     flex-direction: column; 
     align-items: center; 
     justify-content: space-around;
-    width: 90%;
+    width: 56%;
 }
 
 .section-text-title {
     font-weight: bold;
-    font-size: 48px;
+    font-size: 44px;
     color: white;
 }
 
 .section-text {
-    font-size: 36px;
+    font-size: 24px;
     color: white;
     white-space: pre-wrap;
 }
@@ -52,9 +52,9 @@
     color: white; 
     width: fit-content; 
     border-radius: 50px; 
-    padding: 25px 35px; 
+    padding: 20px 40px; 
     font-weight: 500;
-    font-size: 28.5px; 
+    font-size: 24px; 
     margin-right: auto;
     cursor: pointer;
     transition: 0.2s;
