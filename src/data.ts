@@ -90,7 +90,7 @@ export const BOARD = [
   },
   {
     name: "Lauren Delwiche",
-    image: "",
+    image: lauren,
     role: ["Security Lead"],
   },
   {
