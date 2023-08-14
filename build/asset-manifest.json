@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.12e6b30c.css",
-    "main.js": "/static/js/main.15b8a3ef.js",
+    "main.css": "/static/css/main.5aecc6f5.css",
+    "main.js": "/static/js/main.441f6975.js",
     "static/js/787.71e672d5.chunk.js": "/static/js/787.71e672d5.chunk.js",
     "static/media/kelvin.jpg": "/static/media/kelvin.6b8c727be2e8e7f4d131.jpg",
     "static/media/nabil.jpg": "/static/media/nabil.5003db5a1a570ad72b54.jpg",
@@ -18,34 +18,31 @@
     "static/media/kenny.jpg": "/static/media/kenny.a294a5fd29aa3f5764a4.jpg",
     "static/media/amy.jpeg": "/static/media/amy.7466b390c1539679fee3.jpeg",
     "static/media/MealMatch.png": "/static/media/MealMatch.6cbfccfe864359e28b58.png",
-    "static/media/headerimage.png": "/static/media/headerimage.92bfba38e15312cc5828.png",
+    "static/media/headerimage.png": "/static/media/headerimage.87c75a9e8a7ac4662963.png",
     "static/media/thirdsectionimage.png": "/static/media/thirdsectionimage.415abcc0cf2d7a7470e8.png",
     "static/media/secondsectionimage.png": "/static/media/secondsectionimage.b8a522943c2b3bb72fa6.png",
     "static/media/ethan.jpg": "/static/media/ethan.42718a805be6ebb22360.jpg",
     "static/media/firstsectionimage.png": "/static/media/firstsectionimage.1bc115d7d9b0886cd1fc.png",
-    "static/media/roomadvisor.png": "/static/media/roomadvisor.b47e23e151f8418ff70c.png",
     "static/media/katherine.jpg": "/static/media/katherine.9996a2d62795a65ff929.jpg",
+    "static/media/roomadvisor.png": "/static/media/roomadvisor.157b83df956e656d1153.png",
     "static/media/lucas.jpg": "/static/media/lucas.1f14548158bed889ca3a.jpg",
     "static/media/aidan.jpg": "/static/media/aidan.628b20560ae0247695f1.jpg",
-    "static/media/ymeets.png": "/static/media/ymeets.2bb6e7379dd744c59607.png",
     "static/media/yalies.png": "/static/media/yalies.b4330d9b935a18fcb839.png",
     "static/media/yalebutteries.jpg": "/static/media/yalebutteries.f2749ce98de3c6a99488.jpg",
-    "static/media/coursetable.svg": "/static/media/coursetable.a71b619b996c8f91ddfb576614a57788.svg",
     "static/media/autodonation.svg": "/static/media/autodonation.34329ebcb83898bc5e6cca2a14112fd1.svg",
     "index.html": "/index.html",
-    "static/media/email.svg": "/static/media/email.3c0a3d9e8ab0388916ca628e90a1ec5f.svg",
     "static/media/instagram.svg": "/static/media/instagram.58343ea253613167c66a1909840b2d30.svg",
     "static/media/briefcase.svg": "/static/media/briefcase.21248a068c385cec74542746ea8c5e8c.svg",
     "static/media/user.svg": "/static/media/user.780a52a3688dd2fd0230fe4949982dd5.svg",
     "static/media/terminal.svg": "/static/media/terminal.62314645ceb01c471ab4fcc6d5137b5d.svg",
     "static/media/code.svg": "/static/media/code.5006cb1eb2fba36c6c80bfb24f55e45a.svg",
     "static/media/facebook.svg": "/static/media/facebook.ed57b640744ceccd3f18032d96c96255.svg",
-    "main.12e6b30c.css.map": "/static/css/main.12e6b30c.css.map",
-    "main.15b8a3ef.js.map": "/static/js/main.15b8a3ef.js.map",
+    "main.5aecc6f5.css.map": "/static/css/main.5aecc6f5.css.map",
+    "main.441f6975.js.map": "/static/js/main.441f6975.js.map",
     "787.71e672d5.chunk.js.map": "/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.12e6b30c.css",
-    "static/js/main.15b8a3ef.js"
+    "static/css/main.5aecc6f5.css",
+    "static/js/main.441f6975.js"
   ]
 }
