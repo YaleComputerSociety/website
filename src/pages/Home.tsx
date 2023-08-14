@@ -33,22 +33,25 @@ export const Home = () => {
         <div className="py-28 flex flex-col items-center w-full">
           <div className="text-center text-white text-3xl font-normal pb-12">Check out our products!</div>
           <div className="w-3/4 h-28 bg-gray-400 rounded-full flex items-center justify-evenly">
-            <img className="w-20 h-20 rounded-lg" src={PROJECTS[0].image} alt="" />
-            <img className="w-20 h-20 rounded-lg" src={PROJECTS[1].image} alt="" />
-            <img className="w-20 h-20 rounded-lg" src={PROJECTS[2].image} alt="" />
-            <img className="w-20 h-20 rounded-lg" src={PROJECTS[3].image} alt="" />
-            <img className="w-20 h-20 rounded-lg" src={PROJECTS[4].image} alt="" />
-            <img className="w-20 h-20 rounded-lg" src={PROJECTS[5].image} alt="" />
-            <img className="w-20 h-20 rounded-lg" src={PROJECTS[6].image} alt="" />
+            {
+              PROJECTS.map((project, i) => (
+                <img className="w-20 h-20 rounded-lg" key={i} src={project.image} alt="" />
+              ))
+            }
           </div>
           <div className="w-3/4 h-6 relative mt-4 text-md text-gray-400 text-center flex justify-evenly">
-            <div>CourseTable</div>
+            {
+              PROJECTS.map((project, i) => (
+                <div key={i}>{project.name}</div>
+              ))
+            }
+            {/* <div>CourseTable</div>
             <div>Yalies.io</div>
             <div>YaleButteries</div>
             <div>MealMatch</div>
             <div>ymeets</div>
             <div>AutoDonation</div>
-            <div>RoomAdvisor</div>
+            <div>RoomAdvisor</div> */}
           </div>
         </div>
 

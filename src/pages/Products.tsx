@@ -9,7 +9,7 @@ type ProjectCardProps = {
 const ProjectCard = ({ project }: ProjectCardProps) => (
   <div className={project.link ? "project-card" : "card"} style={{ display: "flex", flexDirection: "row" }}>
     <div style={{ width: "25%" }}>
-      <img src={project.image} loading="lazy" alt={project.name} style={{ maxWidth: "80%", maxHeight: "150px", borderRadius: "15px" }} />
+      <img className="rounded-lg" src={project.image} loading="lazy" alt={project.name} style={{ maxWidth: "80%", maxHeight: "150px", borderRadius: "25%" }} />
     </div>
     <div style={{ width: "75%" }}>
       <strong style={{ marginTop: "10px" }}>{project.name}</strong>
@@ -20,8 +20,8 @@ const ProjectCard = ({ project }: ProjectCardProps) => (
 
 export const Products = () => {
   return (
-    <div style={{ paddingTop: "10vh", background: "white" }}>
-      <h2>Live Products</h2>
+    <div style={{ paddingTop: "10vh", background: "#1F232B", color: "white" }}>
+      <h2 style={{ fontSize: "30px", fontWeight: 700, margin: "20px 0" }}>Live Products</h2>
       <div className="product-grid">
         {PROJECTS.filter((project) => project.live).map((project, i) => (
           <Fragment key={i}>
@@ -39,7 +39,7 @@ export const Products = () => {
           </Fragment>
         ))}
       </div>
-      <h2>Products in Production</h2>
+      <h2 style={{ fontSize: "30px", fontWeight: 700, margin: "20px 0" }}>Products in Production</h2>
       <div className="product-grid">
         {PROJECTS.filter((project) => !project.live).map((project, i) => (
           <Fragment key={i}>

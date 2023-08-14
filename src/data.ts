@@ -557,14 +557,14 @@ export const PROJECTS: Project[] = [
     name: "CourseTable",
     image: coursetable,
     link: "https://www.coursetable.com/",
-    description: "CourseTable is a student-built courses browser used by nearly everybody at Yale - chances are you've used it to do some shopping yourself!",
+    description: "A student-built courses browser used by nearly everyone at Yale.",
     live: true,
   },
   {
     name: "Yalies",
     image: yalies,
     link: "https://yalies.io/",
-    description: "Yalies is a website that provides data on the Yale student body. It combines data from Yale Face Book and Yale Directory, with enhanced design, user experience, and security.",
+    description: "A directory that provides data on the Yale student body.",
     live: true,
   },
   {
@@ -577,7 +577,7 @@ export const PROJECTS: Project[] = [
     name: "MealMatch",
     image: mealmatch,
     link: "https://www.mealmatch.app/",
-    description: "MealMatch is a campus dating and friendship platform that matches you with other students with compatible bios and arranges a convenient time for both of you to meet at a dining hall for a meal.",
+    description: "A campus friendship platform that pairs you with other students.",
     live: true,
   },
   {
