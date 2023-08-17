@@ -8,12 +8,12 @@ interface GeneralProductProps {
     productColor: string;
     productLink: string;
     isWeb: boolean;
-    firstSectionTitle: string;
-    firstSectionText: (string | JSX.Element)[] | string;
-    secondSectionTitle: string;
-    secondSectionText: (string | JSX.Element)[] | string;
-    thirdSectionTitle: string;
-    thirdSectionText: (string | JSX.Element)[] | string;
+    firstSectionTitle?: string;
+    firstSectionText?: (string | JSX.Element)[] | string;
+    secondSectionTitle?: string;
+    secondSectionText?: (string | JSX.Element)[] | string;
+    thirdSectionTitle?: string;
+    thirdSectionText?: (string | JSX.Element)[] | string;
 }
 
 /**
@@ -63,19 +63,29 @@ export const GeneralProduct = ({
                 productSlogan={productSlogan}
                 productLink={productLink}
                 buttonDescription={isWeb ? "Visit Site" : "Download App"}
+                isWeb={isWeb}
             />
-            <div className='first-section' style={{ padding: "20px 0", height: "100vh", display: "flex" }}>
-                <GeneralProductSectionImage sectionNumber='first'/>
-                <GeneralProductSectionText title={firstSectionTitle} text={firstSectionText} align='right'/>
-            </div>
-            <div style={{ background: productColor, padding: "20px 0", height: "100vh", display: "flex" }}>
-                <GeneralProductSectionText title={secondSectionTitle} text={secondSectionText} align='left'/> 
-                <GeneralProductSectionImage sectionNumber='second'/>
-            </div>
-            <div className='third-section' style={{ padding: "20px 0", height: "100vh", display: "flex" }}>
-                <GeneralProductSectionImage sectionNumber='third'/>
-                <GeneralProductSectionText title={thirdSectionTitle} text={thirdSectionText} align='right'/> 
-            </div>
+            {
+                firstSectionTitle && firstSectionText &&
+                <div className='first-section' style={{ padding: "20px 0", height: "100vh", display: "flex" }}>
+                    <GeneralProductSectionImage sectionNumber='first'/>
+                    <GeneralProductSectionText title={firstSectionTitle} text={firstSectionText} align='right'/>
+                </div>
+            }
+            {
+                secondSectionTitle && secondSectionText &&
+                <div style={{ background: productColor, padding: "20px 0", height: "100vh", display: "flex" }}>
+                    <GeneralProductSectionText title={secondSectionTitle} text={secondSectionText} align='left'/> 
+                    <GeneralProductSectionImage sectionNumber='second'/>
+                </div>
+            }
+            {
+                thirdSectionTitle && thirdSectionText &&
+                <div className='third-section' style={{ padding: "20px 0", height: "100vh", display: "flex" }}>
+                    <GeneralProductSectionImage sectionNumber='third'/>
+                    <GeneralProductSectionText title={thirdSectionTitle} text={thirdSectionText} align='right'/> 
+                </div>
+            }
         </div>
     )
 
