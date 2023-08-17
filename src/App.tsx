@@ -9,6 +9,9 @@ import { CourseTable } from './pages/CourseTable';
 import { Ymeets } from './pages/Ymeets';
 import { AutoDonation } from './pages/AutoDonation';
 import { useEffect } from 'react';
+import { Yalies } from './pages/Yalies';
+import { YaleButteries } from './pages/YaleButteries';
+import { MealMatch } from './pages/MealMatch';
 
 const scrollToTop = () => {
     window.scrollTo({
@@ -42,6 +45,9 @@ function App() {
                 <Route path={"/products/CourseTable"} element={<CourseTable/>}/>
                 <Route path={"/products/Ymeets"} element={<Ymeets/>}/>
                 <Route path={"/products/Autodonation"} element={<AutoDonation/>}/>
+                <Route path={"/products/Yalies"} element={<Yalies/>}/>
+                <Route path={"/products/YaleButteries"} element={<YaleButteries/>}/>
+                <Route path={"/products/MealMatch"} element={<MealMatch/>}/>
             </Routes>
             <Footer/>
         </div>

@@ -4,12 +4,14 @@ interface GeneralLabProps {
     productName: string;
     productColor: string;
     productSlogan: string;  
+    isWeb: boolean;
 }
 
 export const GeneralLab = ({
     productName,
     productColor,
-    productSlogan
+    productSlogan,
+    isWeb
 }: GeneralLabProps) => {
 
     return (
@@ -19,6 +21,7 @@ export const GeneralLab = ({
             productSlogan={productSlogan}
             productLink='https://airtable.com/appqm7yvqSUcLQKV4/shrRxMb5gJOPjl20A'
             buttonDescription='Get Updates 🛠️'
+            isWeb={isWeb}
         />
     )
 
