@@ -1,29 +1,41 @@
-import { Fragment } from "react";
 import { Project, PROJECTS } from "../data";
 import { Link } from "react-router-dom";
 import { ProductBar } from "../components/ProductBar";
+import { ReactNode } from "react";
 
 type ProductCardProps = {
   product: Project;
 };
 
-const ProjectCard = ({ product }: ProductCardProps) => (
-  <div className={product.link ? "project-card" : "card"} style={{ display: "flex", flexDirection: "row" }}>
-    <div style={{ width: "25%" }}>
-      <img className="rounded-lg" src={product.image} loading="lazy" alt={product.name} style={{ maxWidth: "80%", maxHeight: "150px", borderRadius: "25%" }} />
+const ProductCard = ({ product }: ProductCardProps) => {
+  const ConditionalWrapper = ({ condition, wrapper, children }: { condition: any, wrapper: any, children: ReactNode }) => condition ? wrapper(children) : children;
+  return (
+    <div className={product.link ? "project-card" : "project-card-no-link"} style={{ display: "flex", flexDirection: "column", position: "relative" }}>
+      <ConditionalWrapper 
+        condition={product.link}
+        wrapper={(children: ReactNode) => <Link to={product.link!} style={{ textDecoration: "none", color: "inherit" }}>{children}</Link>}  
+      >
+        <div className="w-40 h-40" style={{ backgroundColor: "#404859", borderRadius: "50%", position: "absolute", top: "-80px", left: "50%", transform: "translate(-50%)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <img className="w-32 h-32" src={product.image} loading="lazy" alt={product.name} style={{ borderRadius: "50%" }} />
+        </div>
+        <div style={{ fontWeight: 500, fontSize: "25px", marginTop: "100px" }}>{product.name}</div>
+        <div style={{ fontWeight: 400, fontSize: "18px", margin: "40px 20px" }}>{product.description}</div>
+      </ConditionalWrapper>
     </div>
-    <div style={{ width: "75%" }}>
-      <strong style={{ marginTop: "10px" }}>{product.name}</strong>
-      <p>{product.description}</p>
-    </div>
-  </div>
-);
+  )
+}
 
-const ProductCard = ({ product }: ProductCardProps) => (
-  <div>
+interface ProductGridProps {
+  live: boolean
+}
 
+const ProductGrid = ({live}: ProductGridProps) => (
+  <div className="product-grid">
+    {
+      PROJECTS.filter((project) => project.live === live).map((project, i) => <ProductCard product={project} key={i}/>)
+    }
   </div>
-)
+) 
 
 export const Products = () => {
   return (
@@ -31,34 +43,10 @@ export const Products = () => {
       <div style={{ fontSize: "65px", fontWeight: 700, marginTop: "10vh" }}>Products</div>
       <div style={{ fontSize: "20px", fontWeight: 400, marginTop: "10vh"  }}>From a campus-wide student directory to your class-scheduling needs, we've got you covered.</div>
       <ProductBar productBarHeader="Overview"/>
-      <h2 style={{ fontSize: "30px", fontWeight: 700, margin: "20px 0" }}>Live Products</h2>
-      <div className="product-grid">
-        {PROJECTS.filter((project) => project.live).map((project, i) => (
-          <Fragment key={i}>
-            {
-              project.link ? 
-              <Link to={project.link} style={{ textDecoration: "none", color: "inherit" }}>
-                <ProjectCard product={project} />
-              </Link> :
-              <ProjectCard product={project} />
-            }
-          </Fragment>
-        ))}
-      </div>
-      <h2 style={{ fontSize: "30px", fontWeight: 700, margin: "20px 0" }}>Products in Production</h2>
-      <div className="product-grid">
-        {PROJECTS.filter((project) => !project.live).map((project, i) => (
-          <Fragment key={i}>
-          {
-            project.link ? 
-            <Link to={project.link} style={{ textDecoration: "none", color: "inherit" }}>
-              <ProjectCard product={project} />
-            </Link> :
-            <ProjectCard product={project} />
-          }
-        </Fragment>
-        ))}
-      </div>
+      <h2 style={{ fontSize: "30px", fontWeight: 700, margin: "10vh 0" }}>Live Products</h2>
+      <ProductGrid live/>
+      <h2 style={{ fontSize: "30px", fontWeight: 700, margin: "10vh 0" }}>Products in Production</h2>
+      <ProductGrid live={false}/>
     </div>
   );
 };
