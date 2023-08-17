@@ -8,41 +8,6 @@ body {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .card-grid {
   display: grid;
   width: 90%;
@@ -55,11 +20,11 @@ body {
 
 .product-grid {
   display: grid;
-  width: 80%;
+  width: 90%;
   max-width: 1500px;
   margin: 0 auto;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2px;
+  grid-gap: 10px;
   grid-auto-flow: row;
 }
 
@@ -74,40 +39,33 @@ body {
 }
 
 .project-card {
-  border-radius: 10px;
-  margin: 10px;
+  border-radius: 25px;
+  margin: 60px 10px;
   padding: 10px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #323844;
+}
+
+.project-card-no-link {
+  border-radius: 25px;
+  margin: 60px 10px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #323844;
 }
 
 .project-card:hover {
   box-shadow: 0 3px 10px rgba(0 0 0 / 0.2);
   transform: scale(1.1);
   transition: 0.2s;
-}
-
-.project-link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.mailchimp-btn {
-  cursor: pointer;
-  border: 5px solid white;
-  border-radius: 15px;
-  width: fit-content;
-  padding: 15px;
-  transition: 0.2s;
-}
-
-.mailchimp-btn:hover {
-  color: rgb(31, 35, 43);
-  background: white;
-  transform: scale(1.1);
 }
 
 @media only screen and (max-width: 800px) {
