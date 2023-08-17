@@ -18,24 +18,19 @@ import facebook from "./assets/facebook.svg";
 import instagram from "./assets/instagram.svg";
 
 // People imports
-import meili from "./assets/people/meili.jpg";
 import kelvin from "./assets/people/kelvin.jpg";
 import bill from "./assets/people/bill.jpg";
 import erik from "./assets/people/erik.jpg";
 import katherine from "./assets/people/katherine.jpg";
 import lauren from "./assets/people/lauren.jpg";
-import rosie from "./assets/people/rosie.jpg";
-import amy from "./assets/people/amy.jpeg";
 import kai from "./assets/people/kai.jpg";
 import braden from "./assets/people/braden.jpg";
 import kenny from "./assets/people/kenny.jpg";
-import brandon from "./assets/people/brandon.jpg";
 import addison from "./assets/people/addison.jpg";
 import nabil from "./assets/people/nabil.jpg";
 import aidan from "./assets/people/aidan.jpg";
 import ethan from "./assets/people/ethan.jpg";
 import lucas from "./assets/people/lucas.jpg";
-import lily from "./assets/people/lily.jpg";
 
 export const BOARD = [
   {
@@ -163,27 +158,28 @@ export const PROJECTS: Project[] = [
   {
     name: "CourseTable",
     image: coursetable,
-    link: "https://www.coursetable.com/",
+    link: "/products/CourseTable",
     description: "A student-built courses browser used by nearly everyone at Yale.",
     live: true,
   },
   {
     name: "Yalies",
     image: yalies,
-    link: "https://yalies.io/",
+    link: "/products/Yalies",
     description: "A directory that provides data on the Yale student body.",
     live: true,
   },
   {
     name: "YaleButteries",
     image: yalebutteries,
-    description: "We are an app that technologically transforms how butteries at Yale work, which includes features such as a buttery ordering system for students and an inventory and order management system for butteries managers and workers.",
+    link: "/products/YaleButteries",
+    description: "An app to transform the buttery experience at Yale.",
     live: false,
   },
   {
     name: "MealMatch",
     image: mealmatch,
-    link: "https://www.mealmatch.app/",
+    link: "/products/MealMatch",
     description: "A campus friendship platform that pairs you with other students.",
     live: true,
   },
@@ -192,20 +188,20 @@ export const PROJECTS: Project[] = [
     link: "/products/Ymeets",
     image: ymeets,
     live: false,
-    description: "We are a novel web application aimed specifically at making it easier for Yale students to find a common window of time and an optimal space to meet.",
+    description: "A web application aimed to make it easier for Yalies to find a time to meet.",
   },
   {
     name: "RoomAdvisor",
     image: roomadvisor,
     live: false,
-    description: "Room Advisor is a website where Yale students can browse, rate, and review college rooms across campus.",
+    description: "A website where Yale students can browse, rate, and review college rooms.",
   },
   {
     name: "AutoDonation",
     image: autodonation,
     link: "/products/AutoDonation",
     live: false,
-    description: "AutoDonation is a free, intuitive platform that helps nonprofits automate, collect, and track donations.",
+    description: "An intuitive platform that helps nonprofits automate, collect, and track donations.",
   },
 ];
 
