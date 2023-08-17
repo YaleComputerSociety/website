@@ -5,6 +5,7 @@ import { Fragment, FC } from "react";
 import { CardWrapper } from "../components/CardWrapper";
 
 import "./home.css";
+import { ProductBar } from "../components/ProductBar";
 
 interface GradientBoxProps {
   title: string;
@@ -29,32 +30,7 @@ export const Home = () => {
         <p className="text-gray-400 text-4xl" style={{ letterSpacing: "1em" }}>
           v v v
         </p>
-
-        <div className="py-28 flex flex-col items-center w-full">
-          <div className="text-center text-white text-3xl font-normal pb-12">Check out our products!</div>
-          <div className="w-3/4 h-28 bg-gray-400 rounded-full flex items-center justify-evenly">
-            {
-              PROJECTS.map((project, i) => (
-                <img className="w-20 h-20 rounded-lg" key={i} src={project.image} alt="" />
-              ))
-            }
-          </div>
-          <div className="w-3/4 h-6 relative mt-4 text-md text-gray-400 text-center flex justify-evenly">
-            {
-              PROJECTS.map((project, i) => (
-                <div key={i}>{project.name}</div>
-              ))
-            }
-            {/* <div>CourseTable</div>
-            <div>Yalies.io</div>
-            <div>YaleButteries</div>
-            <div>MealMatch</div>
-            <div>ymeets</div>
-            <div>AutoDonation</div>
-            <div>RoomAdvisor</div> */}
-          </div>
-        </div>
-
+        <ProductBar productBarHeader="Check out our work"/>
         <div className="w-3/4 mb-8 text-white text-6xl font-medium">Cultivating a passion for programming</div>
         <div className="w-3/4 text-gray-400 text-3xl mb-10">From development mentorship to hacking nights, we create a community for programmers of all skill levels. </div>
 
