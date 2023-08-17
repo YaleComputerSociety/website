@@ -7,11 +7,6 @@ import mealmatch from "./assets/products/logos/MealMatch.png";
 import roomadvisor from "./assets/products/logos/roomadvisor.png";
 import autodonation from "./assets/products/logos/autodonation.svg";
 
-import dev_projects from "./assets/code.svg";
-import networking_events from "./assets/briefcase.svg";
-import hack_nights from "./assets/terminal.svg";
-import socials from "./assets/user.svg";
-
 // Media imports
 import email from "./assets/email2.png";
 import facebook from "./assets/facebook.svg";
@@ -185,46 +180,23 @@ export const PROJECTS: Project[] = [
   },
   {
     name: "ymeets",
-    link: "/products/Ymeets",
     image: ymeets,
-    live: false,
+    link: "/products/Ymeets",
     description: "A web application aimed to make it easier for Yalies to find a time to meet.",
+    live: false,
   },
   {
     name: "RoomAdvisor",
     image: roomadvisor,
-    live: false,
     description: "A website where Yale students can browse, rate, and review college rooms.",
+    live: false,
   },
   {
     name: "AutoDonation",
     image: autodonation,
     link: "/products/AutoDonation",
-    live: false,
     description: "An intuitive platform that helps nonprofits automate, collect, and track donations.",
-  },
-];
-
-export const ABOUTUS = [
-  {
-    name: "Development Projects",
-    icon: dev_projects,
-    description: "We offer development projects to gain real-world software engineering experience.",
-  },
-  {
-    name: "Speaker Events",
-    icon: networking_events,
-    description: "We host speaker events with technologists and industry professionals.",
-  },
-  {
-    name: "Hack Nights",
-    icon: hack_nights,
-    description: "We host Hack Nights for students to work together and hack away at projects of their choosing.",
-  },
-  {
-    name: "Social Events",
-    icon: socials,
-    description: "We host social events for CS students to meet each other and exchange interests.",
+    live: false,
   },
 ];
 

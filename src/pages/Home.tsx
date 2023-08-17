@@ -1,8 +1,4 @@
-import { SectionTitle } from "../components/SectionTitle";
-import logo from "../assets/ycs_black.png";
-import { ABOUTUS, PROJECTS } from "../data";
-import { Fragment, FC } from "react";
-import { CardWrapper } from "../components/CardWrapper";
+import { FC } from "react";
 
 import "./home.css";
 import { ProductBar } from "../components/ProductBar";
