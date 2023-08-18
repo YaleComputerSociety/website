@@ -1,6 +1,5 @@
 import { Project, PROJECTS } from "../data";
 import { Link } from "react-router-dom";
-import { ProductBar } from "../components/ProductBar";
 import { ReactNode } from "react";
 
 type ProductCardProps = {
@@ -42,7 +41,6 @@ export const Products = () => {
     <div style={{ paddingTop: "10vh", background: "#1F232B", color: "white" }}>
       <div style={{ fontSize: "65px", fontWeight: 700, marginTop: "10vh" }}>Products</div>
       <div style={{ fontSize: "20px", fontWeight: 400, marginTop: "10vh"  }}>From a campus-wide student directory to your class-scheduling needs, we've got you covered.</div>
-      <ProductBar productBarHeader="Overview"/>
       <h2 style={{ fontSize: "30px", fontWeight: 700, margin: "10vh 0" }}>Live Products</h2>
       <ProductGrid live/>
       <h2 style={{ fontSize: "30px", fontWeight: 700, margin: "10vh 0" }}>Products in Production</h2>
