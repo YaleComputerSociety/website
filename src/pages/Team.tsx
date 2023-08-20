@@ -6,7 +6,7 @@ export const Team = () => {
   return (
     <div style={{ paddingTop: "10vh", paddingLeft:"15vw", paddingRight:"15vw", color: "white" }}>
       <SectionTitle header="Our Team" subheader="Meet the people that make up y/cs." />
-        <h1 style={{fontWeight: 700, fontSize: "35px", paddingBottom: "3vh"}}>Board</h1>
+      <h1 style={{fontWeight: 700, fontSize: "35px", paddingBottom: "3vh"}}>Board</h1>
       <div className="card-grid">
         {BOARD.slice(0, 12).map((board_member, i) => (
           <CardWrapper key={i}>
