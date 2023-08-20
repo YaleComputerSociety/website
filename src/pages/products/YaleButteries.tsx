@@ -1,4 +1,4 @@
-import { GeneralLab } from "./GeneralLab"
+import { GeneralLab } from "../GeneralLab"
 
 export const YaleButteries = () => {
     return (
