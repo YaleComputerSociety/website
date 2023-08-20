@@ -26,6 +26,7 @@ import nabil from "./assets/people/nabil.jpg";
 import aidan from "./assets/people/aidan.jpg";
 import ethan from "./assets/people/ethan.jpg";
 import lucas from "./assets/people/lucas.jpg";
+import defaultPerson from "./assets/people.jpeg"
 
 export const BOARD = [
   {
@@ -45,27 +46,27 @@ export const BOARD = [
   },
   {
     name: "Amina Sakho",
-    image: "blank",
+    image: defaultPerson,
     role: ["Vice Director of Development"],
   },
   {
     name: "Kai Zhang",
-    image: kai,
+    image: defaultPerson,
     role: ["Director of Design"],
   },
   {
     name: "Emillie Ma",
-    image: "",
+    image: defaultPerson,
     role: ["Director of Events"],
   },
   {
     name: "Jessica Le",
-    image: "",
+    image: defaultPerson,
     role: ["Director of Outreach and Recruitment"],
   },
   {
     name: "Fatima Kamara",
-    image: "",
+    image: defaultPerson,
     role: ["Vice Director of Outreach and Recruitment"],
   },
   {
@@ -75,7 +76,7 @@ export const BOARD = [
   },
   {
     name: "Tyler Schroder",
-    image: "",
+    image: defaultPerson,
     role: ["Communications"],
   },
   {
@@ -91,7 +92,7 @@ export const BOARD = [
   // product leads
   {
     name: "Alex Schapiro",
-    image: "",
+    image: defaultPerson,
     role: ["CourseTable"],
   },
   {
@@ -121,7 +122,7 @@ export const BOARD = [
   },
   {
     name: "Nicholas Ribeiro",
-    image: "",
+    image: defaultPerson,
     role: ["ymeets"],
   },
   {
@@ -188,6 +189,7 @@ export const PROJECTS: Project[] = [
   {
     name: "RoomAdvisor",
     image: roomadvisor,
+    link: "/products/RoomAdvisor",
     description: "A website where Yale students can browse, rate, and review college rooms.",
     live: false,
   },

@@ -1,4 +1,4 @@
-import { GeneralProduct } from "./GeneralProduct"
+import { GeneralProduct } from "../GeneralProduct"
 
 export const MealMatch = () => {
     return (
