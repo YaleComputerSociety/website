@@ -5,13 +5,14 @@ import { Home } from './pages/Home';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { Products } from './pages/Products';
 import { Team } from './pages/Team';
-import { CourseTable } from './pages/CourseTable';
-import { Ymeets } from './pages/Ymeets';
-import { AutoDonation } from './pages/AutoDonation';
+import { CourseTable } from './pages/products/CourseTable';
+import { Ymeets } from './pages/products/Ymeets';
+import { AutoDonation } from './pages/products/AutoDonation';
 import { useEffect } from 'react';
-import { Yalies } from './pages/Yalies';
-import { YaleButteries } from './pages/YaleButteries';
-import { MealMatch } from './pages/MealMatch';
+import { Yalies } from './pages/products/Yalies';
+import { YaleButteries } from './pages/products/YaleButteries';
+import { MealMatch } from './pages/products/MealMatch';
+import { RoomAdvisor } from './pages/products/RoomAdvisor';
 
 const scrollToTop = () => {
     window.scrollTo({
@@ -48,6 +49,7 @@ function App() {
                 <Route path={"/products/Yalies"} element={<Yalies/>}/>
                 <Route path={"/products/YaleButteries"} element={<YaleButteries/>}/>
                 <Route path={"/products/MealMatch"} element={<MealMatch/>}/>
+                <Route path={"/products/RoomAdvisor"} element={<RoomAdvisor/>}/>
             </Routes>
             <Footer/>
         </div>
