@@ -15,7 +15,7 @@ const images: Image[] = [
   { source: require(`../assets/products/CourseTable/firstsectionimage.png`), page: "coursetable", name: "CourseTable" },
   { source: require(`../assets/products/YaleButteries/headerimage2.png`), page: "yalebutteries", name: "Yale Butteries" },
   { source: require(`../assets/products/MealMatch/headerimage.png`), page: "mealmatch", name: "MealMatch" },
-  { source: require(`../assets/products/Ymeets/headerimage.png`), page: "ymeets", name: "YMeets" },
+  { source: require(`../assets/products/Ymeets/headerimage.png`), page: "ymeets", name: "ymeets" },
   { source: require(`../assets/products/RoomAdvisor/headerimage.png`), page: "roomadvisor", name: "RoomAdvisor" },
   { source: require(`../assets/products/AutoDonation/headerimage.png`), page: "autodonation", name: "AutoDonation" },
 ];
