@@ -13,6 +13,7 @@ import { Yalies } from './pages/products/Yalies';
 import { YaleButteries } from './pages/products/YaleButteries';
 import { MealMatch } from './pages/products/MealMatch';
 import { RoomAdvisor } from './pages/products/RoomAdvisor';
+import {About} from "./pages/About";
 
 const scrollToTop = () => {
     window.scrollTo({
@@ -42,6 +43,7 @@ function App() {
             <Routes>
                 <Route path={"/"} element={<Home/>}/>
                 <Route path={"/team"} element={<Team/>}/>
+                <Route path={"/about"} element={<About/>}/>
                 <Route path={"/products"} element={<Products/>}/>
                 <Route path={"/products/CourseTable"} element={<CourseTable/>}/>
                 <Route path={"/products/Ymeets"} element={<Ymeets/>}/>
