@@ -75,7 +75,7 @@ export const Home = () => {
         </div>
 
         <div className="w-3/4 mt-20 mb-8 text-white text-5xl font-medium text-left">Ready to join the best computer science club at Yale?</div>
-        <div className="w-3/4 text-gray-400 text-left text-3xl font-normal mb-8">Follow the link to join our slack channel and earn you general membership, and watch out for our software team recruiting cycles!</div>
+        <div className="w-3/4 text-gray-400 text-left text-3xl font-normal mb-8">Join our email list to stay up to date on our events and opportunities. The Fall 2023 Membership Application will open after the Extracirrcular Bazaar</div>
         <div className="w-3/4 flex items-center">
           <div className="w-44 h-12 relative bg-ycs-pink rounded-full text-white text-xl font-bold flex items-center text-center justify-center">Learn More</div>
         </div>
