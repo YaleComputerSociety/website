@@ -26,7 +26,14 @@ import nabil from "./assets/people/nabil.jpg";
 import aidan from "./assets/people/aidan.jpg";
 import ethan from "./assets/people/ethan.jpg";
 import lucas from "./assets/people/lucas.jpg";
-import defaultPerson from "./assets/people.jpeg"
+import defaultPerson from "./assets/people.jpeg";
+
+// partnerships import
+import meta from "./assets/partnerships/meta.png"
+import bloomberg from "./assets/partnerships/bloomberg.png"
+import wgics from "./assets/partnerships/wgics.png"
+import yes from "./assets/partnerships/yes.png"
+import yhack from "./assets/partnerships/yhack.png"
 
 export const BOARD = [
   {
@@ -228,3 +235,26 @@ export const MEDIA = [
     alt: "Instagram",
   },
 ];
+
+export const PARTNERSHIPS = [
+  {
+    name: "Meta",
+    image: meta
+  },
+  {
+    name: "Bloomberg",
+    image: bloomberg
+  },
+  {
+    name: "Yale Entrepreneurial Society",
+    image: yes
+  },
+  {
+    name: "YHack",
+    image: yhack
+  },
+  {
+    name: "Women and Gender Minorities in CS",
+    image: wgics
+  }
+]
