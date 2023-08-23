@@ -46,16 +46,16 @@ const GradientBox: FC<GradientBoxProps> = ({ title, text, color }) => {
 export const Home = () => {
   return (
     <div className="">
-      <div className="flex flex-col items-center">
-        <h1 className="text-white text-big font-extrabold  text-center py-10 md:py-3 mt-36 mb-8">y/cs</h1>
-        <p className="text-white w-1/2 text-3xl mb-6">We are the Yale Computer Society.</p>
-        <p className="text-gray-400 w-1/2 text-2xl mb-6">Yale's premier software development, computer science and tech entrepreneurship student organization.</p>
+      <div className="flex flex-col items-center shadow-black text-shadow">
+        <h1 className="text-white text-big shadow-black text-shadow font-extrabold  text-center py-10 md:py-3 mt-36 mb-8">y/cs</h1>
+        <p className="text-white w-1/2 text-3xl shadow-black text-shadow mb-6">We are the Yale Computer Society.</p>
+        <p className="text-gray-400 w-1/2 text-2xl shadow-black text-shadow mb-6">Yale's premier software development, computer science and tech entrepreneurship student organization.</p>
 
-        <p className="text-white font-bold text-3xl mt-20">
-          Check out our <span className="text-ycs-pink">products</span>
+        <p className="text-white bg-ycs-blue p-4 rounded-md first-letter font-bold text-3xl mt-20">
+          Check out our <span className="font-bold">Development Projects</span>
         </p>
         <ProductCarousel />
-        <div className="w-3/4 mb-8 text-white text-6xl font-medium">Cultivating a passion for programming</div>
+        <div className="w-3/4 mb-8 text-white text-6xl font-medium  shadow-black text-shadow">Cultivating a passion for programming</div>
         <div className="w-3/4 text-gray-400 text-3xl mb-10">From development mentorship to hacking nights, we create a community for programmers of all skill levels. </div>
 
         <div className="columns-2 gap-4"></div>
