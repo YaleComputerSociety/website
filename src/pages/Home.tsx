@@ -49,37 +49,7 @@ export const Home = () => {
       <div className="flex flex-col text-shadow shadow-black  items-center">
         <h1 className="text-white text-big font-extrabold text-shadow-xl shadow-black text-center py-10 md:py-3 mt-60 mb-8">y/cs</h1>
         <p className="text-white w-1/2 text-3xl mb-6">We are the Yale Computer Society.</p>
-        <p className="text-gray-400 w-1/2 text-2xl mb-6">Yale's premier software development, computer science and tech entrepreneurship student organization.</p>
-     
-      <div
-        style={{    transform: "translateY(200%)",
-        margin: "auto",
-        width: "5%",
-        padding: "10px",
-        position: "relative",
-        bottom: "0",
-        animation: "bounce 4s",
-        animationDirection: "alternate",
-        animationIterationCount: "infinite",
-        color: "white"}}
-      >
-        <div
-          style={{
-            border: "solid white",
-            borderWidth: "0 10px 10px 0",
-            padding: "20px",
-            transform: "rotate(45deg)",
-            WebkitTransform: "rotate(45deg)", // For Webkit browsers
-            justifyContent: "center",
-            alignItems: "center",
-            filter: "drop-shadow(4px 4px 2px black)"
-          }}
-        >
-          {/* Your content */}
-        </div>
-      </div>
-
-      
+        <p className="text-gray-400 w-1/2 text-2xl mb-6">Yale's premier software development, computer science and tech entrepreneurship student organization.</p> 
         <ProductBar productBarHeader="Our Development Teams"/>
         <div className="w-3/4 mb-8 text-white text-6xl font-medium">Cultivating a passion for programming</div>
         <div className="w-3/4 text-gray-400 text-3xl mb-10">From development mentorship to hacking nights, we create a community for programmers of all skill levels. </div>
