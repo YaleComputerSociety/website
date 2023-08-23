@@ -39,7 +39,7 @@ const ProductGrid = ({live}: ProductGridProps) => (
 
 export const Products = () => {
   return (
-    <div style={{ padding: "10vh 15vh 0 15vh", background: "#1F232B", color: "white" }}>
+    <div className="product-container">
       <SectionTitle header="Products" subheader="From a campus-wide student directory to your class-scheduling needs, we've got you covered."/>
       <h2 style={{ fontSize: "30px", fontWeight: 700, margin: "10vh 0" }}>Live Products</h2>
       <ProductGrid live/>
