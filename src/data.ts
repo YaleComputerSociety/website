@@ -145,7 +145,7 @@ export const BOARD = [
 export type Project = {
   name: string;
   image: string;
-  link?: string;
+  link: string;
   live: boolean;
   description: string;
 };
