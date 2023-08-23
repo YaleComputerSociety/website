@@ -5,7 +5,7 @@ type CardWrapperProps = {
 }
 
 export const CardWrapper = ({children}: CardWrapperProps) => (
-    <div className='card'>
+    <div className='card' >
         {children}
     </div>
 )
