@@ -15,7 +15,7 @@ const GoogleCalendar = () => {
 
 export const Events = () => {
     return (
-        <div className="mt-24 ml-12">
+        <div className="mt-36 mx-12">
             <div className="grid grid-cols-2 gap-4">
                 <div className="text-left text-white">
                     <h1 className=" p-4 font-bold text-white text-4xl bg-ycs-pink rounded-lg">Events</h1>
