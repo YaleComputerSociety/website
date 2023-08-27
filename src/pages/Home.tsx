@@ -7,9 +7,8 @@ import ProductCarousel from "../components/ProductCarousel";
 interface GradientBoxProps {
   title: string;
   text: string;
-  color: "pink" | "blue" | "green" | "faded-pink"; 
+  color: "pink" | "blue" | "green" | "faded-pink";
 }
-
 
 const GradientBox: FC<GradientBoxProps> = ({ title, text, color }) => {
   let gradientColors;
@@ -46,7 +45,6 @@ const GradientBox: FC<GradientBoxProps> = ({ title, text, color }) => {
 };
 
 export const Home = () => {
-
   const nav = useNavigate();
 
   return (
@@ -66,14 +64,24 @@ export const Home = () => {
         <div className="columns-2 gap-4"></div>
 
         <div className="flex w-3/4 mb-12 h-3/4">
-          <div className="w-1/2 mr-10 flex flex-grow">
+          <div
+            className="w-1/2 mr-10 flex flex-grow hover:cursor-pointer transform transition-transform hover:scale-105 active:scale-95"
+            onClick={() => {
+              nav("/products");
+            }}
+          >
             <GradientBox title="Development" color="blue" text="Become a member of one of our software teams and help build apps that benefit the Yale and New Haven community." />
           </div>
-          <div className="w-1/2 flex flex-col justify-between">
-            <div className="mb-8">
+          <div className="w-1/2 flex flex-col justify-between ">
+            <div className="mb-8 hover:cursor-pointer transform transition-transform hover:scale-105 active:scale-95">
               <GradientBox title="Mentorship" color="pink" text="New to software engineering? Learn from mentors who have been there before with the y/cs Catalyst Program." />
             </div>
-            <div>
+            <div
+              className="hover:cursor-pointer transform transition-transform hover:scale-105 active:scale-95"
+              onClick={() => {
+                nav("/events");
+              }}
+            >
               <GradientBox title="Events" color="green" text="Help plan social events for students to meet and share their interests, as well as bring notable industry figures to Yale's campus." />
             </div>
           </div>
@@ -82,7 +90,14 @@ export const Home = () => {
         <div className="w-3/4 mt-20 mb-8 text-white text-5xl font-medium text-left">Ready to join the best computer science club at Yale?</div>
         <div className="w-3/4 text-gray-400 text-left text-3xl font-normal mb-8">Join our email list to stay up to date on our events and opportunities. The Fall 2023 Membership Application will open after the Extracurricular Bazaar.</div>
         <div className="w-3/4 flex items-center">
-          <div onClick={() => { nav("/events") }} className="w-44 h-12 relative bg-ycs-pink rounded-full text-white text-xl font-bold flex items-center text-center justify-center">Learn More</div>
+          <div
+            onClick={() => {
+              nav("/events");
+            }}
+            className="w-44 h-12 relative bg-ycs-pink rounded-full text-white text-xl font-bold flex items-center text-center justify-center hover:cursor-pointer transform transition-transform hover:scale-105 active:scale-95"
+          >
+            Learn More
+          </div>
         </div>
       </div>
     </div>
