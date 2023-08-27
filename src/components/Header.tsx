@@ -12,7 +12,10 @@ export const Header = () => {
           Team
         </Link>
         <Link className="header-link" to="/products">
-          Products
+          Development
+        </Link>
+        <Link className="header-link" to="/events">
+          Events
         </Link>
           <Link className="header-link" to="/about">
               About

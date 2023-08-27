@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { useNavigate } from "react-router-dom";
 
 import "./home.css";
 import ProductCarousel from "../components/ProductCarousel";
@@ -6,8 +7,9 @@ import ProductCarousel from "../components/ProductCarousel";
 interface GradientBoxProps {
   title: string;
   text: string;
-  color: "pink" | "blue" | "green" | "faded-pink"; // Define the possible colors here
+  color: "pink" | "blue" | "green" | "faded-pink"; 
 }
+
 
 const GradientBox: FC<GradientBoxProps> = ({ title, text, color }) => {
   let gradientColors;
@@ -44,10 +46,13 @@ const GradientBox: FC<GradientBoxProps> = ({ title, text, color }) => {
 };
 
 export const Home = () => {
+
+  const nav = useNavigate();
+
   return (
     <div className="">
-      <div className="flex flex-col items-center shadow-black text-shadow">
-        <h1 className="text-white text-big shadow-black text-shadow font-extrabold  text-center py-10 md:py-3 mt-36 mb-8">y/cs</h1>
+      <div className="flex flex-col items-center ">
+        <h1 className="text-white text-big font-extrabold  text-center py-10 md:py-3 mt-36 mb-8">y/cs</h1>
         <p className="text-white w-1/2 text-3xl shadow-black text-shadow mb-6">We are the Yale Computer Society.</p>
         <p className="text-gray-400 w-1/2 text-2xl shadow-black text-shadow mb-6">Yale's premier software development, computer science and tech entrepreneurship student organization.</p>
 
@@ -66,7 +71,7 @@ export const Home = () => {
           </div>
           <div className="w-1/2 flex flex-col justify-between">
             <div className="mb-8">
-              <GradientBox title="Mentorship" color="pink" text="New to software engineering? Learn from mentors who have been there before with the y/cs New Developers Program " />
+              <GradientBox title="Mentorship" color="pink" text="New to software engineering? Learn from mentors who have been there before with the y/cs Catalyst Program." />
             </div>
             <div>
               <GradientBox title="Events" color="green" text="Help plan social events for students to meet and share their interests, as well as bring notable industry figures to Yale's campus." />
@@ -75,9 +80,9 @@ export const Home = () => {
         </div>
 
         <div className="w-3/4 mt-20 mb-8 text-white text-5xl font-medium text-left">Ready to join the best computer science club at Yale?</div>
-        <div className="w-3/4 text-gray-400 text-left text-3xl font-normal mb-8">Join our email list to stay up to date on our events and opportunities. The Fall 2023 Membership Application will open after the Extracirrcular Bazaar</div>
+        <div className="w-3/4 text-gray-400 text-left text-3xl font-normal mb-8">Join our email list to stay up to date on our events and opportunities. The Fall 2023 Membership Application will open after the Extracurricular Bazaar.</div>
         <div className="w-3/4 flex items-center">
-          <div className="w-44 h-12 relative bg-ycs-pink rounded-full text-white text-xl font-bold flex items-center text-center justify-center">Learn More</div>
+          <div onClick={() => { nav("/events") }} className="w-44 h-12 relative bg-ycs-pink rounded-full text-white text-xl font-bold flex items-center text-center justify-center">Learn More</div>
         </div>
       </div>
     </div>
