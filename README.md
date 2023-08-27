@@ -65,6 +65,7 @@ npm run deploy
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 This will run the script located in the `package.json` file located under the scripts property, keyed by the value of "deploy". The script is:
 
 ```bash
@@ -81,3 +82,6 @@ GH-Pages will handle building. Once it does, make sure that the custom domain ya
 =======
 GH-Pages will handle building. Once it does, on GitHub go to settings -> then pages -> custom domain section and type in the domain name, `yalecomputersociety.org`
 >>>>>>> 4090f01 (Improve buttons and update readme)
+=======
+GH-Pages will handle building. Once it does, on GitHub go to settings -> pages -> custom domain section and type in the domain name, `yalecomputersociety.org`
+>>>>>>> e470407 (Update readme)
