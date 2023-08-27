@@ -27,4 +27,4 @@ After, we can publish to gh-pages. Assuming all node packages have been successf
 npm run deploy
 ```
 
-GH-Pages will handle building. Once it does, on GitHub go to settings -> then pages -> custom domain section and type in the domain name, `yalecomputersociety.org`
+GH-Pages will handle building. Once it does, on GitHub go to settings -> pages -> custom domain section and type in the domain name, `yalecomputersociety.org`
