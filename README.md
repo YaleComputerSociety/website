@@ -1,6 +1,7 @@
 # YCS Website
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 The Official website for the Yale Computer Society. Built using Next.js with Typescript and Tailwind
 
 ## Getting Started
@@ -34,19 +35,18 @@ npm run start # run the build locally
 After confirming the build runs locally, push your commits to the Github main branch
 =======
 YCS Website is a React web application that serves as the official website for the Yale Computer Society.
+=======
+The Official website for the Yale Computer Society. Built using React and Tailwind
+>>>>>>> 4090f01 (Improve buttons and update readme)
 
-## Installation
+## Setup
 
 After cloning, make sure to use package manager [npm](https://nodejs.org/en/download) to install all dependencies.
 
 ```bash
-npm i
+npm i  # install dependencies
+npm start  # run the website on localhost:3000
 ```
-
-## File Structure
-- Assets: Stores images and icons that may need to be rendered within the website.
-- Components: Stores reusable React code that many pages of the website will contain.
-- Pages: Stores the pages that will be navigable on the website.
 
 ## Publishing
 
@@ -64,6 +64,7 @@ After, we can publish to gh-pages. Assuming all node packages have been successf
 npm run deploy
 ```
 
+<<<<<<< HEAD
 This will run the script located in the `package.json` file located under the scripts property, keyed by the value of "deploy". The script is:
 
 ```bash
@@ -77,3 +78,6 @@ GH-Pages will handle building. Once it does, make sure that the custom domain ya
 - Refactor website to have a sticky navbar.
 - Add designs from design team.
 >>>>>>> 846ace8 (Added new images, modified README)
+=======
+GH-Pages will handle building. Once it does, on GitHub go to settings -> then pages -> custom domain section and type in the domain name, `yalecomputersociety.org`
+>>>>>>> 4090f01 (Improve buttons and update readme)
