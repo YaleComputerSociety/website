@@ -3,7 +3,7 @@ import { SectionTitle } from "../components/SectionTitle";
 import teamPhoto from "../assets/team.png";
 import {SmallSectionTitle} from "../components/SmallSectionTitle";
 import {InfoCard} from "../components/InfoCard";
-import {PARTNERSHIPS} from "../data";
+import {PARTNERSHIPS, STORIES, TODAY_STATISTICS} from "../data";
 
 export const About = () => {
   return (
@@ -12,7 +12,7 @@ export const About = () => {
         <CardWrapper>
             <img src={teamPhoto} style={{width: "auto", height: 344 }}/>
         </CardWrapper>
-        <div style={{backgroundColor: "#323844", padding: "10vh", marginTop: "5vh", borderRadius: 40}}>
+        <div style={{backgroundColor: "#323844", padding: "10vh", marginTop: "5vh", marginBottom: "5vh", borderRadius: 40}}>
             <text>
                 As the place for CS at Yale, we’re a team of computer science enthusiasts looking to revolutionize the
                 campus and make students’ lives easier through the use of technology. As a cohort of product designers,
@@ -24,28 +24,40 @@ export const About = () => {
 
         <SmallSectionTitle header={"Our Story"} subheader={"The founding and growth of YCS can be attributed to three crucial years."}/>
 
-        <div className="card-grid">
-            <InfoCard data={"2012"} description={"In 2012, then Yale students Peter Xu and Harry Yu created CourseTable – Yale’s first product built by students, for students."}></InfoCard>
+        <div className="flex flex-row pt-10 gap-4" style={{marginBottom: "5vh"}}>
+            {
+                STORIES.map((story, i) => (
+                    <InfoCard data={story.data} description={story.description} key={i} />
+                ))
+            }
         </div>
         
         <SmallSectionTitle header={"Today"} subheader={"By the Numbers"}/>
 
-        <text style={{fontSize: 20}}>Our Partnerships</text>
-        <div className="py-28 flex flex-col items-center w-full bg-white">
-            <div className="w-3/4 h-28 shadow-lg shadow-black rounded-full flex items-center justify-evenly" style={{backgroundColor: "#323844"}}>
-                {
-                    PARTNERSHIPS.map((project, i) => (
-                        <img className="rounded-lg" key={i} src={project.image} alt={project.name} />
-                    ))
-                }
-            </div>
-            <div className="w-3/4 h-6 relative mt-4 text-md text-gray-400 text-center flex justify-evenly">
-                {
-                    PARTNERSHIPS.map((project, i) => (
-                        <div key={i}>{project.name}</div>
-                    ))
-                }
-            </div>
+        <div className="flex flex-row pt-10 gap-4" style={{marginBottom: "10vh"}}>
+            {
+                TODAY_STATISTICS.map((story, i) => (
+                    <InfoCard data={story.data} description={story.description} key={i} />
+                ))
+            }
+        </div>
+
+        <p style={{fontSize: 20, marginTop: "5vh"}}>Our Partnerships</p>
+
+        <div className="mt-10 grid grid-rows-2 grid-cols-5 gap-y-4 justify-items-center w-full">
+            <div style={{backgroundColor: "#323844", gridArea: "1 / 1 / 2 / 6"}} className="w-full h-28 shadow-lg shadow-black rounded-full col-span-5" />
+            {
+                PARTNERSHIPS.map((project, i) => (
+                    <img className="rounded-lg" style={{height: 50, gridArea: `1 / ${i + 1} / 2 / ${i + 2}`, alignSelf: "center"}}
+                         key={i} src={project.image} alt={project.name} />
+                ))
+            }
+
+            {
+                PARTNERSHIPS.map((project, i) => (
+                    <div className="text-md text-gray-400" key={i}>{project.name}</div>
+                ))
+            }
         </div>
     </div>
   );
