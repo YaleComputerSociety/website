@@ -10,12 +10,12 @@ export const About = () => {
     <div style={{ paddingTop: "10vh", paddingLeft:"10vw", paddingRight:"10vw", color: "white" }}>
       <SectionTitle header="About Us" subheader="The community for designers and engineers @ Yale." />
         <CardWrapper>
-            <img src={teamPhoto} style={{width: "auto", height: 344 }}/>
+            <img src={teamPhoto} style={{width: "auto", height: 344 }} alt="YCS Team"/>
         </CardWrapper>
         <div style={{backgroundColor: "#323844", padding: "10vh", marginTop: "5vh", marginBottom: "5vh", borderRadius: 40}}>
             <text>
-                As the place for CS at Yale, we’re a team of computer science enthusiasts looking to revolutionize the
-                campus and make students’ lives easier through the use of technology. As a cohort of product designers,
+                As the place for CS at Yale, we're a team of computer science enthusiasts looking to revolutionize the
+                campus and make students' lives easier through the use of technology. As a cohort of product designers,
                 software engineers, and computing ambassadors, we develop high-quality, open-source products, host speaker
                 events with technologists and industry professionals, and break barriers for students to gain real-world software
                 engineering experience.
