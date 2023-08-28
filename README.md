@@ -1,19 +1,15 @@
 # YCS Website
 
-YCS Website is a React web application that serves as the official website for the Yale Computer Society.
+The Official website for the Yale Computer Society. Built using React and Tailwind
 
-## Installation
+## Setup
 
 After cloning, make sure to use package manager [npm](https://nodejs.org/en/download) to install all dependencies.
 
 ```bash
-npm i
+npm i  # install dependencies
+npm start  # run the website on localhost:3000
 ```
-
-## File Structure
-- Assets: Stores images and icons that may need to be rendered within the website.
-- Components: Stores reusable React code that many pages of the website will contain.
-- Pages: Stores the pages that will be navigable on the website.
 
 ## Publishing
 
@@ -31,15 +27,4 @@ After, we can publish to gh-pages. Assuming all node packages have been successf
 npm run deploy
 ```
 
-This will run the script located in the `package.json` file located under the scripts property, keyed by the value of "deploy". The script is:
-
-```bash
-gh-pages -d build
-```
-
-GH-Pages will handle building. Once it does, make sure that the custom domain yalecompsociety.org is registered. This can be done by going to settings, then pages, finally to the custom domain section.
-
-## TODO
-
-- Refactor website to have a sticky navbar.
-- Add designs from design team.
+GH-Pages will handle building. Once it does, on GitHub go to settings -> pages -> custom domain section and type in the domain name, `yalecomputersociety.org`
