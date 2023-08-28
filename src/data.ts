@@ -258,8 +258,8 @@ export const STORIES = [
 
 export const TODAY_STATISTICS = [
   {
-    data: "80+",
-    description: "active members"
+    data: "200+",
+    description: "community members"
   },
   {
     data: "4000+",
