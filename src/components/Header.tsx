@@ -17,6 +17,9 @@ export const Header = () => {
         <Link className="header-link" to="/events">
           Events
         </Link>
+          <Link className="header-link" to="/about">
+              About
+          </Link>
         <Link className="header-link" target="_blank" to="https://airtable.com/appuVd3lWwTikuv40/shrLYVYcHUDQa8T3h">
           Feedback
         </Link>

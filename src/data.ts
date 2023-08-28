@@ -26,7 +26,15 @@ import nabil from "./assets/people/nabil.jpg";
 import aidan from "./assets/people/aidan.jpg";
 import ethan from "./assets/people/ethan.jpg";
 import lucas from "./assets/people/lucas.jpg";
-import defaultPerson from "./assets/people.jpeg"
+import defaultPerson from "./assets/people.jpeg";
+
+// partnerships import
+import meta from "./assets/partnerships/meta.png"
+import bloomberg from "./assets/partnerships/bloomberg.png"
+import wgics from "./assets/partnerships/wgics.png"
+import yes from "./assets/partnerships/yes.png"
+import yhack from "./assets/partnerships/yhack.png"
+import exp from "constants";
 
 export const BOARD = [
   {
@@ -150,6 +158,7 @@ export type Project = {
   description: string;
 };
 
+
 export const PROJECTS: Project[] = [
   {
     name: "Yalies",
@@ -228,3 +237,59 @@ export const MEDIA = [
     alt: "Instagram",
   },
 ];
+
+export const STORIES = [
+  {
+    data: "2012",
+    description: "In 2012, then Yale students Peter Xu and Harry Yu created CourseTable – Yale’s first product built " +
+        "by students, for students."
+  },
+  {
+    data: "2016",
+    description: "In 2016, the Yale Computer Society was created as a space for CS enthusiasts to learn and share " +
+        "tech learnings together."
+  },
+  {
+    data: "2019",
+    description: "In 2019, the Yale Computer Society combined product and community to begin developing a suite of" +
+        " products for Yale students."
+  }
+];
+
+export const TODAY_STATISTICS = [
+  {
+    data: "80+",
+    description: "active members"
+  },
+  {
+    data: "4000+",
+    description: "users"
+  },
+  {
+    data: "7",
+    description: "software products"
+  }
+]
+
+export const PARTNERSHIPS = [
+  {
+    name: "Meta",
+    image: meta
+  },
+  {
+    name: "Bloomberg",
+    image: bloomberg
+  },
+  {
+    name: "Yale Entrepreneurial Society",
+    image: yes
+  },
+  {
+    name: "YHack",
+    image: yhack
+  },
+  {
+    name: "Women and Gender Minorities in CS",
+    image: wgics
+  }
+]
