@@ -34,6 +34,7 @@ import bloomberg from "./assets/partnerships/bloomberg.png"
 import wgics from "./assets/partnerships/wgics.png"
 import yes from "./assets/partnerships/yes.png"
 import yhack from "./assets/partnerships/yhack.png"
+import exp from "constants";
 
 export const BOARD = [
   {
@@ -157,6 +158,7 @@ export type Project = {
   description: string;
 };
 
+
 export const PROJECTS: Project[] = [
   {
     name: "CourseTable",
@@ -235,6 +237,39 @@ export const MEDIA = [
     alt: "Instagram",
   },
 ];
+
+export const STORIES = [
+  {
+    data: "2012",
+    description: "In 2012, then Yale students Peter Xu and Harry Yu created CourseTable – Yale’s first product built " +
+        "by students, for students."
+  },
+  {
+    data: "2016",
+    description: "In 2016, the Yale Computer Society was created as a space for CS enthusiasts to learn and share " +
+        "tech learnings together."
+  },
+  {
+    data: "2019",
+    description: "In 2019, the Yale Computer Society combined product and community to begin developing a suite of" +
+        " products for Yale students."
+  }
+];
+
+export const TODAY_STATISTICS = [
+  {
+    data: "80+",
+    description: "active members"
+  },
+  {
+    data: "4000+",
+    description: "users"
+  },
+  {
+    data: "7",
+    description: "software products"
+  }
+]
 
 export const PARTNERSHIPS = [
   {
