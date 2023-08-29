@@ -30,11 +30,12 @@ import defaultPerson from "./assets/people.jpeg";
 
 // partnerships import
 import meta from "./assets/partnerships/meta.png"
-import bloomberg from "./assets/partnerships/bloomberg.png"
+import bloomberg from "./assets/partnerships/bloomberg.jpeg"
 import wgics from "./assets/partnerships/wgics.png"
 import yes from "./assets/partnerships/yes.png"
 import yhack from "./assets/partnerships/yhack.png"
 import exp from "constants";
+import tsai from "./assets/partnerships/tsaicity.png"
 
 export const BOARD = [
   {
@@ -276,20 +277,24 @@ export const PARTNERSHIPS = [
     name: "Meta",
     image: meta
   },
+
+  {
+    name : "Tsai City \n",
+    image : tsai,
+  },
+
   {
     name: "Bloomberg",
     image: bloomberg
   },
-  {
-    name: "Yale Entrepreneurial Society",
-    image: yes
-  },
-  {
-    name: "YHack",
-    image: yhack
-  },
+
   {
     name: "Women and Gender Minorities in CS",
     image: wgics
+  },
+
+  {
+    name : "YES",
+    image  : yes
   }
 ]
