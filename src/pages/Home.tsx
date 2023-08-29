@@ -1,8 +1,11 @@
 import { FC } from "react";
 import { useNavigate } from "react-router-dom";
+import tsai from "../assets/partnerships/tsaicity.png"
 
 import "./home.css";
 import ProductCarousel from "../components/ProductCarousel";
+import { PARTNERSHIPS } from "../data";
+
 
 interface GradientBoxProps {
   title: string;
@@ -87,6 +90,23 @@ export const Home = () => {
           </div>
         </div>
 
+        <div className="w-3/4 m-20 mb-0 text-white text-6xl font-medium  shadow-black text-shadow">Our Partners</div>
+        <div className="w-2/4 text-gray-400 text-3xl">y/cs corporate partners help make our goals a reality.</div>
+        <div className="mt-10 grid grid-rows-2 grid-cols-5 gap-y-4 justify-items-center w-3/4">
+            <div style={{backgroundColor: "#323844", gridArea: "1 / 1 / 2 / 6"}} className="w-full h-28 shadow-lg shadow-black rounded-full col-span-5" />
+            {
+                PARTNERSHIPS.map((project, i) => (
+                    <img className="rounded-lg" style={{height: 50, gridArea: `1 / ${i + 1} / 2 / ${i + 2}`, alignSelf: "center"}}
+                         key={i} src={project.image} alt={project.name} />
+                ))
+            }
+
+            {
+                PARTNERSHIPS.map((project, i) => (
+                    <div className="text-md text-gray-400" key={i}>{project.name}</div>
+                ))
+            }
+        </div>
         <div className="w-3/4 mt-20 mb-8 text-white text-5xl font-medium text-left">Ready to join the best computer science club at Yale?</div>
         <div className="w-3/4 text-gray-400 text-left text-3xl font-normal mb-8">Join our email list to stay up to date on our events and opportunities. The Fall 2023 Membership Application will open after the Extracurricular Bazaar.</div>
         <div className="w-3/4 flex items-center">
