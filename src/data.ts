@@ -162,17 +162,17 @@ export type Project = {
 
 export const PROJECTS: Project[] = [
   {
-    name: "Yalies",
-    image: yalies,
-    link: "/products/Yalies",
-    description: "A directory that provides data on the Yale student body.",
-    live: true,
-  },
-  {
     name: "CourseTable",
     image: coursetable,
     link: "/products/CourseTable",
     description: "A student-built courses browser used by nearly everyone at Yale.",
+    live: true,
+  },
+  {
+    name: "Yalies",
+    image: yalies,
+    link: "/products/Yalies",
+    description: "A directory that provides data on the Yale student body.",
     live: true,
   },
   {
@@ -182,13 +182,7 @@ export const PROJECTS: Project[] = [
     description: "An app to transform the buttery experience at Yale.",
     live: false,
   },
-  {
-    name: "MealMatch",
-    image: mealmatch,
-    link: "/products/MealMatch",
-    description: "A campus friendship platform that pairs you with other students.",
-    live: true,
-  },
+
   {
     name: "ymeets",
     image: ymeets,
