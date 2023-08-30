@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.95536ef5.css",
-    "main.js": "/static/js/main.b1929bc9.js",
+    "main.css": "/static/css/main.df82736c.css",
+    "main.js": "/static/js/main.f63606e7.js",
     "static/js/787.71e672d5.chunk.js": "/static/js/787.71e672d5.chunk.js",
     "static/media/kelvin.jpg": "/static/media/kelvin.6b8c727be2e8e7f4d131.jpg",
+    "static/media/team.png": "/static/media/team.2630309273f1f7dcaf1c.png",
     "static/media/nabil.jpg": "/static/media/nabil.5003db5a1a570ad72b54.jpg",
     "static/media/addison.jpg": "/static/media/addison.d65b2d44aa22ce1881e6.jpg",
     "static/media/lauren.jpg": "/static/media/lauren.c6775cf7b3245faa382a.jpg",
@@ -27,16 +28,18 @@
     "static/media/yalies.png": "/static/media/yalies.b4330d9b935a18fcb839.png",
     "static/media/headerimage1.png": "/static/media/headerimage1.316b46401c826fc0698d.png",
     "static/media/yalebutteries.jpg": "/static/media/yalebutteries.f2749ce98de3c6a99488.jpg",
+    "static/media/wgics.png": "/static/media/wgics.47d64bd5cef46dfaba9b.png",
+    "static/media/yes.png": "/static/media/yes.db65f3585f15528dd9b9.png",
     "static/media/autodonation.svg": "/static/media/autodonation.34329ebcb83898bc5e6cca2a14112fd1.svg",
     "index.html": "/index.html",
     "static/media/instagram.svg": "/static/media/instagram.58343ea253613167c66a1909840b2d30.svg",
     "static/media/facebook.svg": "/static/media/facebook.ed57b640744ceccd3f18032d96c96255.svg",
-    "main.95536ef5.css.map": "/static/css/main.95536ef5.css.map",
-    "main.b1929bc9.js.map": "/static/js/main.b1929bc9.js.map",
+    "main.df82736c.css.map": "/static/css/main.df82736c.css.map",
+    "main.f63606e7.js.map": "/static/js/main.f63606e7.js.map",
     "787.71e672d5.chunk.js.map": "/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.95536ef5.css",
-    "static/js/main.b1929bc9.js"
+    "static/css/main.df82736c.css",
+    "static/js/main.f63606e7.js"
   ]
 }
