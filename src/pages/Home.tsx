@@ -90,8 +90,8 @@ export const Home = () => {
           </div>
         </div>
 
-        <div className="w-3/4 m-20 mb-0 text-white text-6xl font-medium  shadow-black text-shadow">Our Partners</div>
-        <div className="w-2/4 text-gray-400 text-3xl">y/cs corporate partners help make our goals a reality.</div>
+        <div className="w-3/4 m-20 mb-0 text-white text-6xl font-medium  shadow-black text-shadow">Our Partners & Sponsors</div>
+        <div className="w-2/4 text-gray-400 text-3xl">y/cs Partners & Sponsors help make our goals a reality.</div>
         <div className="mt-10 grid grid-rows-2 grid-cols-5 gap-y-4 justify-items-center w-3/4">
             <div style={{backgroundColor: "#323844", gridArea: "1 / 1 / 2 / 6"}} className="w-full h-28 shadow-lg shadow-black rounded-full col-span-5" />
             {
