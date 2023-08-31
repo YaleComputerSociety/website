@@ -18,8 +18,6 @@ import bill from "./assets/people/bill.jpg";
 import erik from "./assets/people/erik.jpg";
 import katherine from "./assets/people/katherine.jpg";
 import lauren from "./assets/people/lauren.jpg";
-import kai from "./assets/people/kai.jpg";
-import braden from "./assets/people/braden.jpg";
 import kenny from "./assets/people/kenny.jpg";
 import addison from "./assets/people/addison.jpg";
 import nabil from "./assets/people/nabil.jpg";
@@ -35,6 +33,7 @@ import wgics from "./assets/partnerships/wgics.png"
 import yes from "./assets/partnerships/yes.png"
 import yhack from "./assets/partnerships/yhack.png"
 import exp from "constants";
+import janestreet from "./assets/partnerships/JS Logo 2023.png"
 import tsai from "./assets/partnerships/tsaicity.png"
 
 export const BOARD = [
@@ -118,16 +117,6 @@ export const BOARD = [
     name: "Aidan Palmer",
     image: aidan,
     role: ["YaleButteries"],
-  },
-  {
-    name: "Kai Xu",
-    image: kai,
-    role: ["MealMatch"],
-  },
-  {
-    name: "Braden Wong",
-    image: braden,
-    role: ["MealMatch"],
   },
   {
     name: "Nicholas Ribeiro",
@@ -273,8 +262,8 @@ export const PARTNERSHIPS = [
   },
 
   {
-    name : "Tsai City \n",
-    image : tsai,
+    name : "Jane Street",
+    image  : janestreet
   },
 
   {
@@ -283,12 +272,12 @@ export const PARTNERSHIPS = [
   },
 
   {
-    name: "Women and Gender Minorities in CS",
-    image: wgics
+    name : "Tsai City \n",
+    image : tsai,
   },
 
   {
-    name : "YES",
-    image  : yes
-  }
+    name: "Women and Gender Minorities in CS",
+    image: wgics
+  },
 ]

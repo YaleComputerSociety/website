@@ -42,7 +42,7 @@ export const About = () => {
             }
         </div>
 
-        <p style={{fontSize: 20, marginTop: "5vh"}}>Our Partnerships</p>
+        <p style={{fontSize: 20, marginTop: "5vh"}}>Our Partners & Sponsors</p>
 
         <div className="mt-10 grid grid-rows-2 grid-cols-5 gap-y-4 justify-items-center w-full">
             <div style={{backgroundColor: "#323844", gridArea: "1 / 1 / 2 / 6"}} className="w-full h-28 shadow-lg shadow-black rounded-full col-span-5" />
