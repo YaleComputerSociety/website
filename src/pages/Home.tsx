@@ -37,7 +37,7 @@ const GradientBox: FC<GradientBoxProps> = ({ title, text, color }) => {
   }
 
   return (
-    <div className={`w-full h-full text-left bg-gradient-to-b ${gradientColors} rounded-2xl p-10 my-10 mx-auto relative hover:scale-105 active:scale-95 transform`}>
+    <div className={`w-full h-full text-left bg-gradient-to-b ${gradientColors} rounded-2xl p-10 my-10 mx-auto min-h-2r0elative hover:scale-105 active:scale-95 transform`}>
       <div className="p-6">
         <div className="text-white text-lg font-bold">
           <div className="absolute bottom-0 left-0 right-0 p-6">
@@ -93,8 +93,17 @@ export const Home = () => {
           </div>
         </div>
         <div className="mt-10 w-9/12">
-          <GradientBox title="Computer Security" color="red" text="Help plan social events for students to meet and share their interests, as well as bring notable industry figures to Yale's campus." />
+          <GradientBox title="Computer Security" color="red" text="
+          
+           
+          Hear from students and professionals about the technical tricks of the trade, 
+          compete in fun Capture the Flag challenges to hone your skills and work with the development teams to secure their products.
+          " />
         </div>
+
+        {/* "Learn" - "Hear from students and professionals about the technical tricks of the trade."
+"Practice" - "Compete in fun "Capture the Flag" challenges with fellow Yalies to hone your skills."
+"Implement" - "Contribute to the Y/CS mission by working with the development teams to secure their products." */}
 
         <div className="w-3/4 m-20 mb-0 text-white text-6xl font-medium  shadow-black text-shadow">Our Partners & Sponsors</div>
         <div className="w-2/4 text-gray-400 text-3xl">y/cs Partners & Sponsors help make our goals a reality.</div>
