@@ -78,6 +78,11 @@ export const BOARD = [
     role: ["Vice Director of Outreach and Recruitment"],
   },
   {
+    name: "Lauren Delwiche",
+    image: lauren,
+    role: ["Director of Computer Security"],
+  },
+  {
     name: "Nabil Rahman",
     image: nabil,
     role: ["Treasurer"],
@@ -86,11 +91,6 @@ export const BOARD = [
     name: "Tyler Schroder",
     image: defaultPerson,
     role: ["Communications"],
-  },
-  {
-    name: "Lauren Delwiche",
-    image: lauren,
-    role: ["Security Lead"],
   },
   {
     name: "Kelvin Yip",
@@ -246,11 +246,11 @@ export const TODAY_STATISTICS = [
     description: "community members"
   },
   {
-    data: "4000+",
+    data: "10000+",
     description: "users"
   },
   {
-    data: "7",
+    data: "6",
     description: "software products"
   }
 ]

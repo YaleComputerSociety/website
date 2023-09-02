@@ -18,6 +18,7 @@ module.exports = {
         "ycs-faded-pink" : "F26891",
         "ycs-blue" : "#0071BC",
         "ycs-green" : "#39A393",
+        "ycs-security-red" : "#590c0c"
       },
       fontSize: {
         'big': '200px',
