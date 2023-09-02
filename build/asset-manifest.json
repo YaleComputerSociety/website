@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c9f8bded.css",
-    "main.js": "/static/js/main.562bfa8d.js",
+    "main.js": "/static/js/main.e3ec1dda.js",
     "static/js/787.71e672d5.chunk.js": "/static/js/787.71e672d5.chunk.js",
     "static/media/kelvin.jpg": "/static/media/kelvin.6b8c727be2e8e7f4d131.jpg",
     "static/media/team.png": "/static/media/team.2630309273f1f7dcaf1c.png",
@@ -9,9 +9,7 @@
     "static/media/addison.jpg": "/static/media/addison.d65b2d44aa22ce1881e6.jpg",
     "static/media/lauren.jpg": "/static/media/lauren.c6775cf7b3245faa382a.jpg",
     "static/media/erik.jpg": "/static/media/erik.c6f7b53dd1153a8e0634.jpg",
-    "static/media/kai.jpg": "/static/media/kai.651756469b195f8b4754.jpg",
     "static/media/bill.jpg": "/static/media/bill.824f62810ef9ab7b7308.jpg",
-    "static/media/braden.jpg": "/static/media/braden.c09a2e738a36097aa00a.jpg",
     "static/media/kenny.jpg": "/static/media/kenny.a294a5fd29aa3f5764a4.jpg",
     "static/media/headerimage.png": "/static/media/headerimage.87c75a9e8a7ac4662963.png",
     "static/media/productlogo.png": "/static/media/productlogo.f2749ce98de3c6a99488.png",
@@ -25,20 +23,20 @@
     "static/media/headerimage2.png": "/static/media/headerimage2.9fd95ee43d1df16df249.png",
     "static/media/aidan.jpg": "/static/media/aidan.628b20560ae0247695f1.jpg",
     "static/media/yalies.png": "/static/media/yalies.b4330d9b935a18fcb839.png",
+    "static/media/JS Logo 2023.png": "/static/media/JS Logo 2023.c10fdb6c28f0e5fce2d3.png",
     "static/media/headerimage1.png": "/static/media/headerimage1.316b46401c826fc0698d.png",
     "static/media/yalebutteries.jpg": "/static/media/yalebutteries.f2749ce98de3c6a99488.jpg",
     "static/media/wgics.png": "/static/media/wgics.47d64bd5cef46dfaba9b.png",
-    "static/media/yes.png": "/static/media/yes.db65f3585f15528dd9b9.png",
     "static/media/autodonation.svg": "/static/media/autodonation.34329ebcb83898bc5e6cca2a14112fd1.svg",
     "index.html": "/index.html",
     "static/media/instagram.svg": "/static/media/instagram.58343ea253613167c66a1909840b2d30.svg",
     "static/media/facebook.svg": "/static/media/facebook.ed57b640744ceccd3f18032d96c96255.svg",
     "main.c9f8bded.css.map": "/static/css/main.c9f8bded.css.map",
-    "main.562bfa8d.js.map": "/static/js/main.562bfa8d.js.map",
+    "main.e3ec1dda.js.map": "/static/js/main.e3ec1dda.js.map",
     "787.71e672d5.chunk.js.map": "/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c9f8bded.css",
-    "static/js/main.562bfa8d.js"
+    "static/js/main.e3ec1dda.js"
   ]
 }
