@@ -5,7 +5,6 @@ import tsai from "../assets/partnerships/tsaicity.png"
 import "./home.css";
 import ProductCarousel from "../components/ProductCarousel";
 import { PARTNERSHIPS } from "../data";
-import Alert from '@mui/material/Alert';
 
 
 interface GradientBoxProps {
@@ -57,10 +56,7 @@ export const Home = () => {
   return (
     <div className="">  
     
-     <Alert className="mt-20" variant="filled" severity="info">
-        y/cs applications are live! Visit www.tinyurl.com/apply-ycs to apply!
-      </Alert>
-      
+
       <div className="flex flex-col items-center ">
 
      
