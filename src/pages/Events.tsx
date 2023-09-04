@@ -4,8 +4,6 @@ const GoogleCalendar = () => {
         <iframe
           src="https://calendar.google.com/calendar/embed?src=t6isudodqcpb2uepck99jmjt3o%40group.calendar.google.com&ctz=America%2FNew_York" 
           style={{ border: '0', width: '100%', height: '600px' }}
-          
-
           title="Google Calendar"
         ></iframe>
       </div>
@@ -23,7 +21,10 @@ export const Events = () => {
                       Each semester, the y/cs hosts dozens of events. Check here for our calendar to see what's coming up!
                       <br/>
                       <br/>
-                      <span className="font-bold">Interested in joining the y/cs? The application to join will open again in Fall 2023!</span>
+                      <span className="font-bold">Interested in joining the y/cs? The application to join is now open!</span>
+                      <br/>
+                      <br/>
+                      <a className="text-ycs-pink underline" target="_blank" href="https://www.tinyurl.com/apply-ycs">Click Here to Apply!</a>
                     </p>
                     <h1 className="font-bold underline text-2xl text-white mt-5">Recruitment Calendar</h1>
                     <ol className="text-xl">
