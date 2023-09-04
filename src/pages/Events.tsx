@@ -1,11 +1,11 @@
 const GoogleCalendar = () => {
     return (
-      <div className="google-calendar p-3 bg-ycs-blue border-4 border-solid mr-4 ml-4 border-ycs-blue ">
+      <div className="p-3 bg-ycs-blue border-4 border-solid mr-4 ml-4 border-ycs-blue ">
         <iframe
-          src="https://calendar.google.com/calendar/embed?src=t6isudodqcpb2uepck99jmjt3o%40group.calendar.google.com&ctz=America%2FChicago"
+          src="https://calendar.google.com/calendar/embed?src=t6isudodqcpb2uepck99jmjt3o%40group.calendar.google.com&ctz=America%2FNew_York" 
           style={{ border: '0', width: '100%', height: '600px' }}
-          frameBorder="0"
-          scrolling="no"
+          
+
           title="Google Calendar"
         ></iframe>
       </div>
@@ -27,9 +27,11 @@ export const Events = () => {
                     </p>
                     <h1 className="font-bold underline text-2xl text-white mt-5">Recruitment Calendar</h1>
                     <ol className="text-xl">
-                      <li>August 29th: Yale Engineering & Entrepreneurship Expo!</li>
-                      <li>September 3rd: Extracurricular Bazaar + Application Opens!</li>
-                      <li>September 13th: Application Closes!</li>
+                      <li className="line-through">August 29th: Yale Engineering & Entrepreneurship Expo!</li>
+                      <li className="line-through">September 3rd: Extracurricular Bazaar + Application Opens!</li>
+                      <li className="">September 6th: Meet y/cs @ 5:30-6:30pm Tsai CITY</li>
+                      <li className="">September 10th: Meet y/cs @ 5:30-6:30pm Tsai CITY</li>
+                      <li className="text-ycs-pink">September 13th: Application Closes!</li>
                       <br/>
                       <li>Email yalecomputersociety@gmail.com with any questions you may have!</li>
                     </ol>
