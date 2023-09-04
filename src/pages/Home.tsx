@@ -5,6 +5,7 @@ import tsai from "../assets/partnerships/tsaicity.png"
 import "./home.css";
 import ProductCarousel from "../components/ProductCarousel";
 import { PARTNERSHIPS } from "../data";
+import Alert from '@mui/material/Alert';
 
 
 interface GradientBoxProps {
@@ -54,8 +55,15 @@ export const Home = () => {
   const nav = useNavigate();
 
   return (
-    <div className="">
+    <div className="">  
+    
+     <Alert className="mt-20" variant="filled" severity="info">
+        y/cs applications are live! Visit www.tinyurl.com/apply-ycs to apply!
+      </Alert>
+      
       <div className="flex flex-col items-center ">
+
+     
         <h1 className="text-white text-big font-extrabold  text-center py-10 md:py-3 mt-36 mb-8">y/cs</h1>
         <p className="text-white w-1/2 text-3xl shadow-black text-shadow mb-6">We are the Yale Computer Society.</p>
         <p className="text-gray-400 w-1/2 text-2xl shadow-black text-shadow mb-6">Yale's premier computer software & tech entrepreneurship student organization.</p>
@@ -100,10 +108,6 @@ export const Home = () => {
           compete in fun Capture the Flag challenges to hone your skills and work with the development teams to secure their products.
           " />
         </div>
-
-        {/* "Learn" - "Hear from students and professionals about the technical tricks of the trade."
-"Practice" - "Compete in fun "Capture the Flag" challenges with fellow Yalies to hone your skills."
-"Implement" - "Contribute to the Y/CS mission by working with the development teams to secure their products." */}
 
         <div className="w-3/4 m-20 mb-0 text-white text-6xl font-medium  shadow-black text-shadow">Our Partners & Sponsors</div>
         <div className="w-2/4 text-gray-400 text-3xl">y/cs Partners & Sponsors help make our goals a reality.</div>
