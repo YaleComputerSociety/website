@@ -21,21 +21,7 @@ export const Events = () => {
                       Each semester, the y/cs hosts dozens of events. Check here for our calendar to see what's coming up!
                       <br/>
                       <br/>
-                      <span className="font-bold">Interested in joining the y/cs? The application to join is now open!</span>
-                      <br/>
-                      <br/>
-                      <a className="text-ycs-pink underline" target="_blank" href="https://www.tinyurl.com/apply-ycs">Click Here to Apply!</a>
                     </p>
-                    <h1 className="font-bold underline text-2xl text-white mt-5">Recruitment Calendar</h1>
-                    <ol className="text-xl">
-                      <li className="line-through">August 29th: Yale Engineering & Entrepreneurship Expo!</li>
-                      <li className="line-through">September 3rd: Extracurricular Bazaar + Application Opens!</li>
-                      <li className="">September 6th: Meet y/cs @ 5:30-6:30pm Tsai CITY</li>
-                      <li className="">September 10th: Meet y/cs @ 5:30-6:30pm Tsai CITY</li>
-                      <li className="text-ycs-pink">September 13th: Application Closes!</li>
-                      <br/>
-                      <li>Email yalecomputersociety@gmail.com with any questions you may have!</li>
-                    </ol>
                 </div>
                 <GoogleCalendar />
           
