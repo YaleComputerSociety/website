@@ -12,9 +12,6 @@ export const Header = () => {
       </Link>
      
       <div className="pagesList">
-      <Link className="header-link" to="/events">
-          Apply Today!
-      </Link>
       <Link className="header-link" to="/about">
           About
       </Link>
