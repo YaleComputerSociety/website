@@ -1,13 +1,16 @@
 import { FC } from "react";
 import { useNavigate } from "react-router-dom";
+import tsai from "../assets/partnerships/tsaicity.png"
 
 import "./home.css";
 import ProductCarousel from "../components/ProductCarousel";
+import { PARTNERSHIPS } from "../data";
+
 
 interface GradientBoxProps {
   title: string;
   text: string;
-  color: "pink" | "blue" | "green" | "faded-pink";
+  color: "pink" | "blue" | "green" | "faded-pink" | "red";
 }
 
 const GradientBox: FC<GradientBoxProps> = ({ title, text, color }) => {
@@ -26,12 +29,15 @@ const GradientBox: FC<GradientBoxProps> = ({ title, text, color }) => {
     case "green":
       gradientColors = "from-ycs-green to-ycs-green/10";
       break;
+    case "red":
+      gradientColors = "from-ycs-security-red to-ycs-security-red/10"
+      break
     default:
       gradientColors = "from-ycs-pink to-ycs-pink/10";
   }
 
   return (
-    <div className={`w-full h-full text-left bg-gradient-to-b ${gradientColors} rounded-2xl p-8 my-10 mx-auto relative`}>
+    <div className={`w-full h-full text-left bg-gradient-to-b ${gradientColors} rounded-2xl p-10 my-10 mx-auto min-h-2r0elative hover:scale-105 active:scale-95 transform`}>
       <div className="p-6">
         <div className="text-white text-lg font-bold">
           <div className="absolute bottom-0 left-0 right-0 p-6">
@@ -48,22 +54,26 @@ export const Home = () => {
   const nav = useNavigate();
 
   return (
-    <div className="">
+    <div className="">  
+    
+
       <div className="flex flex-col items-center ">
+
+     
         <h1 className="text-white text-big font-extrabold  text-center py-10 md:py-3 mt-36 mb-8">y/cs</h1>
         <p className="text-white w-1/2 text-3xl shadow-black text-shadow mb-6">We are the Yale Computer Society.</p>
-        <p className="text-gray-400 w-1/2 text-2xl shadow-black text-shadow mb-6">Yale's premier software development, computer science and tech entrepreneurship student organization.</p>
+        <p className="text-gray-400 w-1/2 text-2xl shadow-black text-shadow mb-6">Yale's premier computer software & tech entrepreneurship student organization.</p>
 
         <p className="text-white bg-ycs-blue p-4 rounded-md first-letter font-bold text-3xl mt-20">
           Check out our <span className="font-bold">Development Projects</span>
         </p>
         <ProductCarousel />
-        <div className="w-3/4 mb-8 text-white text-6xl font-medium  shadow-black text-shadow">Cultivating a passion for programming</div>
+        <div className="w-3/4 mb-8 text-white text-6xl font-medium  shadow-black text-shadow">Cultivating a passion for programming & computing</div>
         <div className="w-3/4 text-gray-400 text-3xl mb-10">From development mentorship to hacking nights, we create a community for programmers of all skill levels. </div>
 
         <div className="columns-2 gap-4"></div>
 
-        <div className="flex w-3/4 mb-12 h-3/4">
+        <div className="flex w-3/4 h-3/4">
           <div
             className="w-1/2 mr-10 flex flex-grow hover:cursor-pointer transform transition-transform hover:scale-105 active:scale-95"
             onClick={() => {
@@ -86,7 +96,32 @@ export const Home = () => {
             </div>
           </div>
         </div>
+        <div className="mt-10 w-9/12">
+          <GradientBox title="Computer Security" color="red" text="
+          
+           
+          Hear from students and professionals about the technical tricks of the trade, 
+          compete in fun Capture the Flag challenges to hone your skills and work with the development teams to secure their products.
+          " />
+        </div>
 
+        <div className="w-3/4 m-20 mb-0 text-white text-6xl font-medium  shadow-black text-shadow">Our Partners & Sponsors</div>
+        <div className="w-2/4 text-gray-400 text-3xl">y/cs Partners & Sponsors help make our goals a reality.</div>
+        <div className="mt-10 grid grid-rows-2 grid-cols-5 gap-y-4 justify-items-center w-3/4">
+            <div style={{backgroundColor: "#323844", gridArea: "1 / 1 / 2 / 6"}} className="w-full h-28 shadow-lg shadow-black rounded-full col-span-5" />
+            {
+                PARTNERSHIPS.map((project, i) => (
+                    <img className="rounded-lg" style={{height: 50, gridArea: `1 / ${i + 1} / 2 / ${i + 2}`, alignSelf: "center"}}
+                         key={i} src={project.image} alt={project.name} />
+                ))
+            }
+
+            {
+                PARTNERSHIPS.map((project, i) => (
+                    <div className="text-md text-gray-400" key={i}>{project.name}</div>
+                ))
+            }
+        </div>
         <div className="w-3/4 mt-20 mb-8 text-white text-5xl font-medium text-left">Ready to join the best computer science club at Yale?</div>
         <div className="w-3/4 text-gray-400 text-left text-3xl font-normal mb-8">Join our email list to stay up to date on our events and opportunities. The Fall 2023 Membership Application will open after the Extracurricular Bazaar.</div>
         <div className="w-3/4 flex items-center">

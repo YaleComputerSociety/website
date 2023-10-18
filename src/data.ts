@@ -18,15 +18,23 @@ import bill from "./assets/people/bill.jpg";
 import erik from "./assets/people/erik.jpg";
 import katherine from "./assets/people/katherine.jpg";
 import lauren from "./assets/people/lauren.jpg";
-import kai from "./assets/people/kai.jpg";
-import braden from "./assets/people/braden.jpg";
 import kenny from "./assets/people/kenny.jpg";
 import addison from "./assets/people/addison.jpg";
 import nabil from "./assets/people/nabil.jpg";
 import aidan from "./assets/people/aidan.jpg";
 import ethan from "./assets/people/ethan.jpg";
 import lucas from "./assets/people/lucas.jpg";
-import defaultPerson from "./assets/people.jpeg"
+import defaultPerson from "./assets/people.jpeg";
+
+// partnerships import
+import meta from "./assets/partnerships/meta.png"
+import bloomberg from "./assets/partnerships/bloomberg.jpeg"
+import wgics from "./assets/partnerships/wgics.png"
+import yes from "./assets/partnerships/yes.png"
+import yhack from "./assets/partnerships/yhack.png"
+import exp from "constants";
+import janestreet from "./assets/partnerships/JS Logo 2023.png"
+import tsai from "./assets/partnerships/tsaicity.png"
 
 export const BOARD = [
   {
@@ -70,6 +78,11 @@ export const BOARD = [
     role: ["Vice Director of Outreach and Recruitment"],
   },
   {
+    name: "Lauren Delwiche",
+    image: lauren,
+    role: ["Director of Computer Security"],
+  },
+  {
     name: "Nabil Rahman",
     image: nabil,
     role: ["Treasurer"],
@@ -78,11 +91,6 @@ export const BOARD = [
     name: "Tyler Schroder",
     image: defaultPerson,
     role: ["Communications"],
-  },
-  {
-    name: "Lauren Delwiche",
-    image: lauren,
-    role: ["Security Lead"],
   },
   {
     name: "Kelvin Yip",
@@ -109,16 +117,6 @@ export const BOARD = [
     name: "Aidan Palmer",
     image: aidan,
     role: ["YaleButteries"],
-  },
-  {
-    name: "Kai Xu",
-    image: kai,
-    role: ["MealMatch"],
-  },
-  {
-    name: "Braden Wong",
-    image: braden,
-    role: ["MealMatch"],
   },
   {
     name: "Nicholas Ribeiro",
@@ -150,19 +148,20 @@ export type Project = {
   description: string;
 };
 
+
 export const PROJECTS: Project[] = [
-  {
-    name: "Yalies",
-    image: yalies,
-    link: "/products/Yalies",
-    description: "A directory that provides data on the Yale student body.",
-    live: true,
-  },
   {
     name: "CourseTable",
     image: coursetable,
     link: "/products/CourseTable",
     description: "A student-built courses browser used by nearly everyone at Yale.",
+    live: true,
+  },
+  {
+    name: "Yalies",
+    image: yalies,
+    link: "/products/Yalies",
+    description: "A directory that provides data on the Yale student body.",
     live: true,
   },
   {
@@ -172,13 +171,7 @@ export const PROJECTS: Project[] = [
     description: "An app to transform the buttery experience at Yale.",
     live: false,
   },
-  {
-    name: "MealMatch",
-    image: mealmatch,
-    link: "/products/MealMatch",
-    description: "A campus friendship platform that pairs you with other students.",
-    live: true,
-  },
+
   {
     name: "ymeets",
     image: ymeets,
@@ -228,3 +221,63 @@ export const MEDIA = [
     alt: "Instagram",
   },
 ];
+
+export const STORIES = [
+  {
+    data: "2012",
+    description: "In 2012, then Yale students Peter Xu and Harry Yu created CourseTable – Yale’s first product built " +
+        "by students, for students."
+  },
+  {
+    data: "2016",
+    description: "In 2016, the Yale Computer Society was created as a space for CS enthusiasts to learn and share " +
+        "tech learnings together."
+  },
+  {
+    data: "2019",
+    description: "In 2019, the Yale Computer Society combined product and community to begin developing a suite of" +
+        " products for Yale students."
+  }
+];
+
+export const TODAY_STATISTICS = [
+  {
+    data: "200+",
+    description: "community members"
+  },
+  {
+    data: "10000+",
+    description: "users"
+  },
+  {
+    data: "6",
+    description: "software products"
+  }
+]
+
+export const PARTNERSHIPS = [
+  {
+    name: "Meta",
+    image: meta
+  },
+
+  {
+    name : "Jane Street",
+    image  : janestreet
+  },
+
+  {
+    name: "Bloomberg",
+    image: bloomberg
+  },
+
+  {
+    name : "Tsai City \n",
+    image : tsai,
+  },
+
+  {
+    name: "Women and Gender Minorities in CS",
+    image: wgics
+  },
+]
