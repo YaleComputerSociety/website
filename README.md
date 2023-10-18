@@ -55,6 +55,7 @@ Before publishing any changes, make sure that `react-version` contains your most
 ```bash
 git add .
 git commit -m "[Clearly explain modifications made]"
+git pull
 git push origin react-version
 ```
 
@@ -63,6 +64,7 @@ After, we can publish to gh-pages. Assuming all node packages have been successf
 ```bash
 npm run deploy
 ```
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -85,3 +87,5 @@ GH-Pages will handle building. Once it does, on GitHub go to settings -> then pa
 =======
 GH-Pages will handle building. Once it does, on GitHub go to settings -> pages -> custom domain section and type in the domain name, `yalecomputersociety.org`
 >>>>>>> e470407 (Update readme)
+=======
+>>>>>>> d634eb9 (Update readme)
