@@ -5,7 +5,6 @@ import Alert from '@mui/material/Alert';
 export const Header = () => {
   return (
     <div className="header">
-    
       
       <Link className="logo" to="/">
         &lt;y/cs&gt;
@@ -30,7 +29,12 @@ export const Header = () => {
       <Link className="header-link" target="_blank" to="https://airtable.com/appuVd3lWwTikuv40/shrLYVYcHUDQa8T3h">
         Feedback
       </Link>
+
+      <Link className="header-link" target="_blank" to="http://tinyurl.com/apply-ycs-spring">
+        Apply today!
+      </Link>
       </div>
+
     </div>
   );
 };
