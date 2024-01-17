@@ -62,7 +62,7 @@ export const Home = () => {
      
         <h1 className="text-white text-big font-extrabold  text-center py-10 md:py-3 mt-36 mb-8">y/cs</h1>
         <p className="text-white w-1/2 text-3xl shadow-black text-shadow mb-6">We are the Yale Computer Society.</p>
-        <p className="text-gray-400 w-1/2 text-2xl shadow-black text-shadow mb-6">Yale's premier computer software & tech entrepreneurship student organization.</p>
+        <p className="text-gray-400 w-1/2 text-2xl shadow-black text-shadow mb-6">Yale's premier software development & computer technology organization.</p>
 
         <p className="text-white bg-ycs-blue p-4 rounded-md first-letter font-bold text-3xl mt-20">
           Check out our <span className="font-bold">Development Projects</span>
@@ -123,7 +123,7 @@ export const Home = () => {
             }
         </div>
         <div className="w-3/4 mt-20 mb-8 text-white text-5xl font-medium text-left">Ready to join the best computer science club at Yale?</div>
-        <div className="w-3/4 text-gray-400 text-left text-3xl font-normal mb-8">Join our email list to stay up to date on our events and opportunities. The Fall 2023 Membership Application will open after the Extracurricular Bazaar.</div>
+        <div className="w-3/4 text-gray-400 text-left text-3xl font-normal mb-8">The Spring 2024 Membership Application will open in January. Check back here reguarly for more details.</div>
         <div className="w-3/4 flex items-center">
           <div
             onClick={() => {
