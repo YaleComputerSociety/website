@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const GoogleCalendar = () => {
     return (
       <div className="p-3 bg-ycs-blue border-4 border-solid mr-4 ml-4 border-ycs-blue ">
@@ -22,8 +24,13 @@ export const Events = () => {
                       <br/>
                       <br/>
                     </p>
+                    <Link className="bg-ycs-pink rounded-lg p-10 hover:scale-110 text-white header-link" target="_blank" to="http://tinyurl.com/apply-ycs-spring">
+                      Apply today!
+                    </Link>
                 </div>
                 <GoogleCalendar />
+
+                
           
             </div>
         </div>
