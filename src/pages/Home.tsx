@@ -62,7 +62,7 @@ export const Home = () => {
      
         <h1 className="text-white text-big font-extrabold  text-center py-10 md:py-3 mt-36 mb-8">y/cs</h1>
         <p className="text-white w-1/2 text-3xl shadow-black text-shadow mb-6">We are the Yale Computer Society.</p>
-        <p className="text-gray-400 w-1/2 text-2xl shadow-black text-shadow mb-6">Yale's premier software development & computer technology organization.</p>
+        <p className="text-gray-400 w-1/2 text-2xl shadow-black text-shadow mb-6">Yale's premier software development & computer technology organization</p>
 
         <p className="text-white bg-ycs-blue p-4 rounded-md first-letter font-bold text-3xl mt-20">
           Check out our <span className="font-bold">Development Projects</span>
