@@ -24,9 +24,7 @@ export const Events = () => {
                       <br/>
                       <br/>
                     </p>
-                    <Link className="bg-ycs-pink rounded-lg p-10 hover:scale-110 text-white header-link" target="_blank" to="http://tinyurl.com/apply-ycs-spring">
-                      Apply today!
-                    </Link>
+                    
                 </div>
                 <GoogleCalendar />
 

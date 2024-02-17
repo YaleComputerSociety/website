@@ -13,7 +13,7 @@ export const About = () => {
             <img src={teamPhoto} style={{width: "auto", height: 344 }} alt="YCS Team"/>
         </CardWrapper>
         <div style={{backgroundColor: "#323844", padding: "10vh", marginTop: "5vh", marginBottom: "5vh", borderRadius: 40}}>
-            <text>
+            <text className="text-2xl">
                 As the place for CS at Yale, we're a team of computer science enthusiasts looking to revolutionize the
                 campus and make students' lives easier through the use of technology. As a cohort of product designers,
                 software engineers, and computing ambassadors, we develop high-quality, open-source products, host speaker
@@ -22,7 +22,7 @@ export const About = () => {
             </text>
         </div>
 
-        <SmallSectionTitle header={"Our Story"} subheader={"The founding and growth of YCS can be attributed to three crucial years."}/>
+        <SmallSectionTitle header={"Our Story"} subheader={"The founding and growth of y/cs can be attributed to three crucial years."}/>
 
         <div className="flex flex-row pt-10 gap-4" style={{marginBottom: "5vh"}}>
             {
