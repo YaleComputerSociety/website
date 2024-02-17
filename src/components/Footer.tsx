@@ -16,7 +16,7 @@ export const Footer = () => {
           </a>
         ))}
       </div>
-      <div className="mt-4 text-gray-400">Yale Computer Society © 2023</div>
+      <div className="mt-4 text-gray-400">Yale Computer Society © 2024</div>
     </footer>
   );
 };

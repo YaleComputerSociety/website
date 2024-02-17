@@ -242,11 +242,11 @@ export const STORIES = [
 
 export const TODAY_STATISTICS = [
   {
-    data: "200+",
-    description: "community members"
+    data: "120+",
+    description: "members"
   },
   {
-    data: "10000+",
+    data: "20000+",
     description: "users"
   },
   {
