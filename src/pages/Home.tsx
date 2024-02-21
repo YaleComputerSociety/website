@@ -2,7 +2,7 @@ import { FC } from "react";
 import { useNavigate } from "react-router-dom";
 import tsai from "../assets/partnerships/tsaicity.png"
 
-import "./home.css";
+import "../styles/home.css";
 import ProductCarousel from "../components/ProductCarousel";
 import { PARTNERSHIPS } from "../data";
 

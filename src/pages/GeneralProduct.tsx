@@ -1,6 +1,6 @@
-import './GeneralProduct.css'
-import { GeneralProductHeader } from './components/GeneralProductHeader';
-import { GeneralProductSectionText } from './components/GeneralProductSectionText';
+import '../styles/GeneralProduct.css'
+import { GeneralProductHeader } from '../components/GeneralProductHeader';
+import { GeneralProductSectionText } from '../components/GeneralProductSectionText';
 
 interface GeneralProductProps {
     productName: string;
