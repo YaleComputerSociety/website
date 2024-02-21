@@ -1,4 +1,4 @@
-import { GeneralProductHeader } from "./components/GeneralProductHeader";
+import { GeneralProductHeader } from "../components/GeneralProductHeader";
 
 interface GeneralLabProps {
     productName: string;

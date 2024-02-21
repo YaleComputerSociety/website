@@ -1,4 +1,4 @@
-import '../GeneralProduct.css'
+import '../styles/GeneralProduct.css'
 
 interface GeneralProductSectionTextProps {
     title: string;
