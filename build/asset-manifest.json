@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9f179e9a.css",
-    "main.js": "/static/js/main.ed48cd1b.js",
+    "main.css": "/static/css/main.ca6fbbc9.css",
+    "main.js": "/static/js/main.03269189.js",
     "static/js/787.71e672d5.chunk.js": "/static/js/787.71e672d5.chunk.js",
     "static/media/kelvin.jpg": "/static/media/kelvin.6b8c727be2e8e7f4d131.jpg",
     "static/media/team.png": "/static/media/team.2630309273f1f7dcaf1c.png",
@@ -12,7 +12,7 @@
     "static/media/bill.jpg": "/static/media/bill.824f62810ef9ab7b7308.jpg",
     "static/media/kenny.jpg": "/static/media/kenny.a294a5fd29aa3f5764a4.jpg",
     "static/media/headerimage.png": "/static/media/headerimage.87c75a9e8a7ac4662963.png",
-    "static/media/productlogo.png": "/static/media/productlogo.f2749ce98de3c6a99488.png",
+    "static/media/productlogo.png": "/static/media/productlogo.632c1d2c571e2105447a.png",
     "static/media/thirdsectionimage.png": "/static/media/thirdsectionimage.a45aced625576e5de195.png",
     "static/media/secondsectionimage.png": "/static/media/secondsectionimage.6ba96c40fc742b9acce2.png",
     "static/media/ethan.jpg": "/static/media/ethan.42718a805be6ebb22360.jpg",
@@ -27,16 +27,20 @@
     "static/media/headerimage1.png": "/static/media/headerimage1.316b46401c826fc0698d.png",
     "static/media/yalebutteries.jpg": "/static/media/yalebutteries.f2749ce98de3c6a99488.jpg",
     "static/media/wgics.png": "/static/media/wgics.47d64bd5cef46dfaba9b.png",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/autodonation.svg": "/static/media/autodonation.34329ebcb83898bc5e6cca2a14112fd1.svg",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "static/media/instagram.svg": "/static/media/instagram.58343ea253613167c66a1909840b2d30.svg",
     "static/media/facebook.svg": "/static/media/facebook.ed57b640744ceccd3f18032d96c96255.svg",
-    "main.9f179e9a.css.map": "/static/css/main.9f179e9a.css.map",
-    "main.ed48cd1b.js.map": "/static/js/main.ed48cd1b.js.map",
+    "main.ca6fbbc9.css.map": "/static/css/main.ca6fbbc9.css.map",
+    "main.03269189.js.map": "/static/js/main.03269189.js.map",
     "787.71e672d5.chunk.js.map": "/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f179e9a.css",
-    "static/js/main.ed48cd1b.js"
+    "static/css/main.ca6fbbc9.css",
+    "static/js/main.03269189.js"
   ]
 }
