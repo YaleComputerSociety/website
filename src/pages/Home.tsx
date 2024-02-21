@@ -8,12 +8,10 @@ import { PARTNERSHIPS } from "../data";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import { GradientBox } from "../components/GradientBox";
+import { SolidColorBlock } from "../components/SolidColorBlock";
 
-interface GradientBoxProps {
-  title: string;
-  text: string;
-  color: "pink" | "blue" | "green" | "faded-pink" | "red";
-}
+
 
 const settings = {
   dots: true,
@@ -26,55 +24,8 @@ const settings = {
   cssEase: "linear"
 };
 
-const GradientBox: FC<GradientBoxProps> = ({ title, text, color }) => {
-  let gradientColors;
 
-  switch (color) {
-    case "pink":
-      gradientColors = "from-ycs-pink to-ycs-pink/10";
-      break;
-    case "faded-pink":
-      gradientColors = "from-ycs-faded-pink to-ycs-faded-pink/10";
-      break;
-    case "blue":
-      gradientColors = "from-ycs-blue to-ycs-blue/10";
-      break;
-    case "green":
-      gradientColors = "from-ycs-green to-ycs-green/10";
-      break;
-    case "red":
-      gradientColors = "from-ycs-security-red to-ycs-security-red/10"
-      break
-    default:
-      gradientColors = "from-ycs-pink to-ycs-pink/10";
-  }
 
-  return (
-    <div className={`w-full lg:h-full sm:h-fit h-full text-left bg-gradient-to-b ${gradientColors} rounded-2xl p-10 my-10 mx-auto min-h-2r0elative hover:scale-105 active:scale-95 transform`}>
-      <div className="p-6">
-        <div className="text-white lg:text-lg md:text-md sm:text-sm font-bold">
-          <div className="absolute bottom-0 left-0 right-0 p-6">
-            <p className="text-white">{title}</p>
-            <p className="text-gray-400 overflow-hidden whitespace-wrap">{text}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-const SolidColorBlock = (props: any) => {
-    return <div className={`lg:w-1/3 sm:w-full m-8 bg-${props.color} rounded-lg`}>
-      <div className="p-6">
-          <div className="text-white lg:text-5xl md:text-3xl sm:text-3xl xs:text-2xl text-left font-bold mb-2">
-              <p>{props.title}</p>
-          </div>
-          <div className="text-white text-left lg:text-lg md:text-md sm:text-sm text-sm">
-              <p>{props.desc}</p>
-          </div>
-      </div>
-    </div>
-}
 
 export const Home = () => {
   const nav = useNavigate();
