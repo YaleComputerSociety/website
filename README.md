@@ -15,9 +15,7 @@ npm start  # run the website on localhost:3000
 
 Before publishing any changes, make sure that `react-version` contains your most updated code. This process involves making sure to add all the modified files, committing these modifications, then pushing to the branch. Example:
 
-```bash
-git add .
-git commit -m "[Clearly explain modifications made]"
+kgit commit -m "[Clearly explain modifications made]"
 git pull
 git push origin react-version
 ```

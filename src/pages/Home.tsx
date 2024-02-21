@@ -173,14 +173,14 @@ export const Home = () => {
             </div>
             <div className="w-3/4 m-20 mb-0 text-white text-6xl font-medium  shadow-black text-shadow">Our Partners & Sponsors</div>
             <div className="w-2/4 text-gray-400 text-3xl mb-10">y/cs Partners & Sponsors help make our goals a reality.</div>
-            <Slider {...settings}>
+            {/* <Slider {...settings}>
               {PARTNERSHIPS.map((project, i) => (
                 <div key={i} className="">
                   <img className="" src={project.image} alt={project.name} />
                   <div className="">{project.name}</div>
                 </div>
               ))}
-            </Slider>
+            </Slider> */}
 
          
 
@@ -199,14 +199,14 @@ export const Home = () => {
           </div>
         </div>
         </div>
-        <Slider {...settings}>
-              {PARTNERSHIPS.map((project, i) => (
-                <div key={i} className="">
-                  <img className="" src={project.image} alt={project.name} />
-                  <div className="">{project.name}</div>
-                </div>
-              ))}
-            </Slider>
+        {/* <Slider {...settings}>
+          {PARTNERSHIPS.map((project, i) => (
+            <div key={i} className="">
+              <img className="" src={project.image} alt={project.name} />
+              <div className="">{project.name}</div>
+            </div>
+          ))}
+        </Slider> */}
     
       
       </div>
