@@ -1,11 +1,9 @@
-import { ReactNode } from "react"
+import { ReactNode } from "react";
 
 type CardWrapperProps = {
-    children: ReactNode
-}
+  children: ReactNode;
+};
 
-export const CardWrapper = ({children}: CardWrapperProps) => (
-    <div className='card' >
-        {children}
-    </div>
-)
+export const CardWrapper = ({ children }: CardWrapperProps) => (
+  <div className="card">{children}</div>
+);
