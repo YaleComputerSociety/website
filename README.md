@@ -8,14 +8,15 @@ After cloning, make sure to use package manager [npm](https://nodejs.org/en/down
 
 ```bash
 npm i  # install dependencies
-npm start  # run the website on localhost:3000
+npm run dev  # run the website on localhost:3000
 ```
 
 ## Publishing
 
 Before publishing any changes, make sure that `react-version` contains your most updated code. This process involves making sure to add all the modified files, committing these modifications, then pushing to the branch. Example:
 
-kgit commit -m "[Clearly explain modifications made]"
+```bash
+git commit -m "[Clearly explain modifications made]"
 git pull
 git push origin react-version
 ```
