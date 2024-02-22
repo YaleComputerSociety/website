@@ -44,6 +44,7 @@ import teamPhoto from "@assets/team.png";
 import { SmallSectionTitle } from "@components/SmallSectionTitle";
 import { InfoCard } from "@components/InfoCard";
 import { PARTNERSHIPS, STORIES, TODAY_STATISTICS } from "@data";
+import { Sponsors } from "@components/Sponsors";
 
 const About = () => {
   return (
@@ -114,6 +115,7 @@ const About = () => {
       </div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       <Sponsors />
       <div className="mt-20" />
 =======
@@ -145,6 +147,11 @@ const About = () => {
         ))}
       </div>
 >>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
+=======
+      
+
+      <Sponsors />
+>>>>>>> d6e3433 (Fix sponsors)
     </div>
   );
 };
