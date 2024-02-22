@@ -45,16 +45,7 @@ const Team = () => {
           </CardWrapper>
         ))}
       </div>
-      <h1
-        style={{
-          fontWeight: 700,
-          fontSize: "35px",
-          paddingTop: "10vh",
-          paddingBottom: "3vh",
-        }}
-      >
-        Product Leads
-      </h1>
+      <h1 className="font-bold text-3xl py-6 text-center">Product Leads</h1>
       <div className="card-grid">
         {BOARD.slice(BOARD_CUTOFF).map((board_member, i) => (
           <CardWrapper key={i}>
