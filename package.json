@@ -6,6 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+<<<<<<< HEAD
     "build": "next build && cp CNAME .next/",
     "start": "next start"
   },
@@ -44,6 +45,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && cp CNAME .next/",
+=======
+    "build": "next build && cp CNAME out/",
+>>>>>>> 3daf704 (Add in eslintrc file and vscode settings from nextjs project version (forgot to copy over previously; configure build to generate a static site)
     "start": "next start",
     "lint": "next lint",
     "deploy": "gh-pages -d build"
