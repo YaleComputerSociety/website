@@ -4,7 +4,7 @@ import { SectionTitle } from "@components/SectionTitle";
 import teamPhoto from "@assets/team.png";
 import { SmallSectionTitle } from "@components/SmallSectionTitle";
 import { InfoCard } from "@components/InfoCard";
-import { PARTNERSHIPS, STORIES, TODAY_STATISTICS } from "@data";
+import { STORIES, TODAY_STATISTICS } from "@data";
 import { Sponsors } from "@components/Sponsors";
 
 const About = () => {
@@ -67,8 +67,6 @@ const About = () => {
           <InfoCard data={story.data} description={story.description} key={i} />
         ))}
       </div>
-
-      
 
       <Sponsors />
     </div>
