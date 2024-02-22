@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "next dev",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "build": "next build && cp CNAME .next/",
     "start": "next start"
   },
@@ -48,9 +49,11 @@
 =======
     "build": "next build && cp CNAME out/",
 >>>>>>> 3daf704 (Add in eslintrc file and vscode settings from nextjs project version (forgot to copy over previously; configure build to generate a static site)
+=======
+    "build": "next build && cp CNAME .next/",
+>>>>>>> 1a5d1b6 (Update package.json scripts)
     "start": "next start",
-    "lint": "next lint",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d .next"
   },
 <<<<<<< HEAD
   "eslintConfig": {
