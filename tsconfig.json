@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     "target": "es5",
 >>>>>>> 2b93c9e (React Version of Redesigned Website. Removed 5615920 per internal convo.)
@@ -43,18 +44,36 @@
 =======
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+=======
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+>>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
+    "noEmit": true,
+    "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@*": ["./src/*"]
+    }
   },
+<<<<<<< HEAD
   "include": [
     "src"
 >>>>>>> 2b93c9e (React Version of Redesigned Website. Removed 5615920 per internal convo.)
   ]
+=======
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+>>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
 }

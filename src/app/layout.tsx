@@ -1,13 +1,21 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+<<<<<<< HEAD
 import "@styles/globals.css";
 // import localFont from "next/font/local";
 
+=======
+
+import "@styles/globals.css";
+>>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
 import Navbar from "@components/Navbar";
 import { Footer } from "@components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
+<<<<<<< HEAD
 // const mona = localFont({ src: "../fonts/Mona-Sans.woff2" });
+=======
+>>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
 
 export const metadata: Metadata = {
   title: "Yale Computer Society",
@@ -24,7 +32,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+<<<<<<< HEAD
       <body className={`bg-ycs-black text-white ${inter.className}`}>
+=======
+      <body className={inter.className}>
+>>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
         <Navbar />
         {children}
         <Footer />

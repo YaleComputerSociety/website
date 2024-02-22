@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import "@styles/GeneralProduct.css";
+>>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
 import Image from "next/image";
 
 import { GeneralProductHeader } from "@components/GeneralProductHeader";
@@ -47,11 +51,15 @@ export const GeneralProduct = ({
 }: GeneralProductProps): JSX.Element => {
   interface GeneralProductSectionImageProps {
     sectionNumber: string;
+<<<<<<< HEAD
     className?: string;
+=======
+>>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
   }
 
   const GeneralProductSectionImage = ({
     sectionNumber,
+<<<<<<< HEAD
     className,
   }: GeneralProductSectionImageProps) => (
     <div className={`mx-6 ${className}`}>
@@ -61,6 +69,17 @@ export const GeneralProduct = ({
           `../assets/products/${productName.toLowerCase()}/${sectionNumber}sectionimage.png`,
         )}
         className="p-1 rounded-lg md:ml-10 bg-gray-100"
+=======
+  }: GeneralProductSectionImageProps) => (
+    <div className="section-image-container">
+      <Image
+        loading="lazy"
+        src={require(
+          `../assets/products/${productName}/${sectionNumber}sectionimage.png`,
+        )}
+        className="section-image"
+        style={{ border: `10px solid ${productColor}` }}
+>>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
         alt={`Product ${sectionNumber} Section Screenshot`}
       />
     </div>
@@ -77,6 +96,7 @@ export const GeneralProduct = ({
         isWeb={isWeb}
       />
       {firstSectionTitle && firstSectionText && (
+<<<<<<< HEAD
         <div className="first-section flex h-full py-16 md:py-20 items-center flex-col md:flex-row">
           <GeneralProductSectionImage sectionNumber="first" className="order-last md:order-first" />
           <GeneralProductSectionText
@@ -84,24 +104,49 @@ export const GeneralProduct = ({
             text={firstSectionText}
             productColor={productColor}
             className="text-center md:text-right bg-ycs-black md:bg-transparent"
+=======
+        <div
+          className="first-section"
+          style={{ padding: "20px 0", height: "100vh", display: "flex" }}
+        >
+          <GeneralProductSectionImage sectionNumber="first" />
+          <GeneralProductSectionText
+            title={firstSectionTitle}
+            text={firstSectionText}
+            align="right"
+>>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
           />
         </div>
       )}
       {secondSectionTitle && secondSectionText && (
         <div
+<<<<<<< HEAD
           className="flex h-full py-16 md:py-20 items-center flex-col md:flex-row"
           style={{ background: productColor }}
+=======
+          style={{
+            background: productColor,
+            padding: "20px 0",
+            height: "100vh",
+            display: "flex",
+          }}
+>>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
         >
           <GeneralProductSectionText
             title={secondSectionTitle}
             text={secondSectionText}
+<<<<<<< HEAD
             productColor={"#dde"}
             className="text-center md:text-left bg-ycs-black md:bg-transparent"
+=======
+            align="left"
+>>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
           />
           <GeneralProductSectionImage sectionNumber="second" />
         </div>
       )}
       {thirdSectionTitle && thirdSectionText && (
+<<<<<<< HEAD
         <div className="third-section flex h-full py-16 md:py-20 items-center flex-col md:flex-row">
           <GeneralProductSectionImage sectionNumber="third" className="order-last md:order-first" />
           <GeneralProductSectionText
@@ -109,6 +154,17 @@ export const GeneralProduct = ({
             text={thirdSectionText}
             productColor={productColor}
             className="text-center md:text-right bg-ycs-black md:bg-transparent"
+=======
+        <div
+          className="third-section"
+          style={{ padding: "20px 0", height: "100vh", display: "flex" }}
+        >
+          <GeneralProductSectionImage sectionNumber="third" />
+          <GeneralProductSectionText
+            title={thirdSectionTitle}
+            text={thirdSectionText}
+            align="right"
+>>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
           />
         </div>
       )}

@@ -34,6 +34,10 @@ body {
   color: white;
   cursor: pointer;
   z-index: 20;
+<<<<<<< HEAD
+=======
+  padding: 0.5rem;
+>>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
 }
 
 .nav-link::after {
@@ -52,6 +56,7 @@ body {
 .nav-link:hover::after {
   transform: scaleX(1); 
   transform-origin: bottom left; 
+<<<<<<< HEAD
 }
 
 
@@ -78,4 +83,6 @@ body {
 
 .animate-fade-in {
   animation: fadeIn 3s forwards;
+=======
+>>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
 }

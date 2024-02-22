@@ -21,7 +21,10 @@ export const GeneralLab = ({
       productLink="https://airtable.com/appqm7yvqSUcLQKV4/shrRxMb5gJOPjl20A"
       buttonDescription="Get Updates 🛠️"
       isWeb={isWeb}
+<<<<<<< HEAD
       isLab={true}
+=======
+>>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
     />
   );
 };

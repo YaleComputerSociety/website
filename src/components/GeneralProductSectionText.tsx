@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import "@styles/GeneralProduct.css";
 
 interface GeneralProductSectionTextProps {
@@ -24,19 +25,34 @@ export const GeneralProductSectionText = ({
 );
 =======
 import '../styles/GeneralProduct.css'
+=======
+import "../styles/GeneralProduct.css";
+>>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
 
 interface GeneralProductSectionTextProps {
-    title: string;
-    text: (string | JSX.Element)[] | string;
-    align: CanvasTextAlign;
+  title: string;
+  text: (string | JSX.Element)[] | string;
+  align: CanvasTextAlign;
 }
 
-export const GeneralProductSectionText = ({ title, text, align }: GeneralProductSectionTextProps) => (
-    <div className='section-text-container'>
-        <div className='text-container'>
-            <div className='section-text-title' style={{ textAlign: align }}>{title}</div>
-            <div className='section-text' style={{ textAlign: align }}>{text}</div>
-        </div>
+export const GeneralProductSectionText = ({
+  title,
+  text,
+  align,
+}: GeneralProductSectionTextProps) => (
+  <div className="section-text-container">
+    <div className="text-container">
+      <div className="section-text-title" style={{ textAlign: align }}>
+        {title}
+      </div>
+      <div className="section-text" style={{ textAlign: align }}>
+        {text}
+      </div>
     </div>
+<<<<<<< HEAD
 )
 >>>>>>> fb778c0 (Delete all remaining ds stores, merge the two component folders, create styles folder)
+=======
+  </div>
+);
+>>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
