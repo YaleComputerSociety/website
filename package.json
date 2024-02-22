@@ -10,6 +10,7 @@
 <<<<<<< HEAD
     "build": "next build && cp CNAME .next/",
     "start": "next start"
+<<<<<<< HEAD
   },
   "dependencies": {
     "@tsparticles/engine": "^3.2.2",
@@ -54,6 +55,8 @@
 >>>>>>> 1a5d1b6 (Update package.json scripts)
     "start": "next start",
     "deploy": "gh-pages -d .next"
+=======
+>>>>>>> 9e4ec21 (Update readme)
   },
 <<<<<<< HEAD
   "eslintConfig": {
