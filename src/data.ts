@@ -39,7 +39,6 @@ import defaultPerson from "./assets/people.jpeg";
 // partnerships import
 import meta from "./assets/partnerships/meta.png";
 import bloomberg from "./assets/partnerships/bloomberg.jpeg";
-import wgics from "./assets/partnerships/wgics.png";
 import janestreet from "./assets/partnerships/JS Logo 2023.png";
 import tsai from "./assets/partnerships/tsaicity.png";
 
@@ -288,24 +287,16 @@ export const PARTNERSHIPS = [
     name: "Meta",
     image: meta,
   },
-
-  {
-    name: "Jane Street",
-    image: janestreet,
-  },
-
   {
     name: "Bloomberg",
     image: bloomberg,
   },
-
   {
-    name: "Tsai City \n",
-    image: tsai,
+    name: "Jane Street",
+    image: janestreet,
   },
-
   {
-    name: "Women and Gender Minorities in CS",
-    image: wgics,
+    name: "Tsai City",
+    image: tsai,
   },
 ];

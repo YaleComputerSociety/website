@@ -5,6 +5,7 @@ import teamPhoto from "@assets/team.png";
 import { SmallSectionTitle } from "@components/SmallSectionTitle";
 import { InfoCard } from "@components/InfoCard";
 import { PARTNERSHIPS, STORIES, TODAY_STATISTICS } from "@data";
+import { Sponsors } from "@components/Sponsors";
 
 const About = () => {
   return (
@@ -67,33 +68,9 @@ const About = () => {
         ))}
       </div>
 
-      <p style={{ fontSize: 20, marginTop: "5vh" }}>Our Partners & Sponsors</p>
+      
 
-      <div className="mt-10 grid grid-rows-2 grid-cols-5 gap-y-4 justify-items-center w-full">
-        <div
-          style={{ backgroundColor: "#323844", gridArea: "1 / 1 / 2 / 6" }}
-          className="w-full h-28 shadow-lg shadow-black rounded-full col-span-5"
-        />
-        {PARTNERSHIPS.map((project, i) => (
-          <Image
-            className="rounded-lg"
-            style={{
-              height: 50,
-              gridArea: `1 / ${i + 1} / 2 / ${i + 2}`,
-              alignSelf: "center",
-            }}
-            key={i}
-            src={project.image}
-            alt={project.name}
-          />
-        ))}
-
-        {PARTNERSHIPS.map((project, i) => (
-          <div className="text-md text-gray-400" key={i}>
-            {project.name}
-          </div>
-        ))}
-      </div>
+      <Sponsors />
     </div>
   );
 };

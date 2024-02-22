@@ -1,7 +1,11 @@
 import "@styles/home.css";
 
+import Link from "next/link";
+
 import { GradientBox } from "../components/GradientBox";
 import { SolidColorBlock } from "../components/SolidColorBlock";
+
+import { Sponsors } from "@components/Sponsors";
 
 const Home = () => {
   return (
@@ -51,18 +55,16 @@ const Home = () => {
           </div>
 
           <div className="flex flex-col md:flex-row w-3/4 h-3/4 mx-auto">
-            <div
+            <Link
+              href="/products"
               className="w-full md:w-1/2 mr-10 flex flex-grow hover:cursor-pointer transform transition-transform hover:scale-105 active:scale-95"
-              // onClick={() => {
-              //   // nav("/products");
-              // }}
             >
               <GradientBox
                 title="Development"
                 color="blue"
                 text="Become a member of one of our software teams and help build apps that benefit the Yale and New Haven community."
               />
-            </div>
+            </Link>
             <div className="w-full md:w-1/2 flex flex-col justify-between">
               <div className="mb-8 hover:cursor-pointer transform transition-transform hover:scale-105 active:scale-95">
                 <GradientBox
@@ -71,18 +73,16 @@ const Home = () => {
                   text="New to software engineering? Learn from mentors who have been there before with the y/cs Catalyst Program."
                 />
               </div>
-              <div
+              <Link
+                href="/events"
                 className="hover:cursor-pointer transform transition-transform hover:scale-105 active:scale-95"
-                // onClick={() => {
-                //   // nav("/events");
-                // }}
               >
                 <GradientBox
                   title="Events"
                   color="green"
                   text="Help plan social events for students to meet and share their interests, as well as bring notable industry figures to Yale's campus."
                 />
-              </div>
+              </Link>
             </div>
           </div>
           <div className="mt-10 w-full md:w-9/12 mx-auto">
@@ -92,20 +92,8 @@ const Home = () => {
               text="Hear from students and professionals about the technical tricks of the trade, compete in fun Capture the Flag challenges to hone your skills and work with the development teams to secure their products."
             />
           </div>
-          <div className="w-3/4 m-20 mb-0 text-white text-6xl font-medium  shadow-black text-shadow">
-            Our Partners & Sponsors
-          </div>
-          <div className="w-2/4 text-gray-400 text-3xl mb-10">
-            y/cs Partners & Sponsors help make our goals a reality.
-          </div>
-          {/* <Slider {...settings}>
-              {PARTNERSHIPS.map((project, i) => (
-                <div key={i} className="">
-                  <img className="" src={project.image} alt={project.name} />
-                  <div className="">{project.name}</div>
-                </div>
-              ))}
-            </Slider> */}
+
+          <Sponsors />
 
           <div className="w-3/4 mt-20 mb-8 text-white text-5xl font-medium text-left">
             Ready to join the best computer science club at Yale?
@@ -115,24 +103,14 @@ const Home = () => {
             Extracirrcular Bazaar.
           </div>
           <div className="w-3/4 flex items-center">
-            <div
-              // onClick={() => {
-              //   // nav("/events");
-              // }}
+            <Link
+              href="/events"
               className="w-44 h-12 relative bg-ycs-pink rounded-full text-white text-xl font-bold flex items-center text-center justify-center hover:cursor-pointer transform transition-transform hover:scale-105 active:scale-95"
             >
               Learn More
-            </div>
+            </Link>
           </div>
         </div>
-        {/* <Slider {...settings}>
-          {PARTNERSHIPS.map((project, i) => (
-            <div key={i} className="">
-              <img className="" src={project.image} alt={project.name} />
-              <div className="">{project.name}</div>
-            </div>
-          ))}
-        </Slider> */}
       </div>
     </div>
   );
