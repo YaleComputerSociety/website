@@ -43,7 +43,7 @@ import { SectionTitle } from "@components/SectionTitle";
 import teamPhoto from "@assets/team.png";
 import { SmallSectionTitle } from "@components/SmallSectionTitle";
 import { InfoCard } from "@components/InfoCard";
-import { PARTNERSHIPS, STORIES, TODAY_STATISTICS } from "@data";
+import { STORIES, TODAY_STATISTICS } from "@data";
 import { Sponsors } from "@components/Sponsors";
 
 const About = () => {
@@ -116,6 +116,7 @@ const About = () => {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <Sponsors />
       <div className="mt-20" />
 =======
@@ -150,6 +151,8 @@ const About = () => {
 =======
       
 
+=======
+>>>>>>> 638938f (Fix linting error)
       <Sponsors />
 >>>>>>> d6e3433 (Fix sponsors)
     </div>
