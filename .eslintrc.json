@@ -1,0 +1,15 @@
+{
+  "extends": ["plugin:@typescript-eslint/recommended", "next/core-web-vitals", "plugin:prettier/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "prettier", "import"],
+  "rules": {
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "parent", "sibling", "index"],
+        "newlines-between": "always"
+      }
+    ],
+    "import/newline-after-import": "error"
+  }
+}
