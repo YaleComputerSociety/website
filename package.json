@@ -4,10 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && cp CNAME out/",
+    "build": "next build && cp CNAME .next/",
     "start": "next start",
-    "lint": "next lint",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d .next"
   },
   "dependencies": {
     "next": "14.1.0",
