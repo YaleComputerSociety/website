@@ -1,10 +1,16 @@
 # YCS Website
 
-The Official website for the Yale Computer Society. Built using React and Tailwind
+The Official website for the Yale Computer Society. Built using Next.js with Typescript and Tailwind
 
-## Setup
+## Development Setup
 
-After cloning, make sure to use package manager [npm](https://nodejs.org/en/download) to install all dependencies.
+### Requirements
+
+- Install [Visual Studio Code](https://code.visualstudio.com/Download) for the coding environment
+- Install the VSCode extension [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) for code styling, syntax checking, and finding problems
+- Install Node/npm for managing packages
+
+### Running the Website Locally
 
 ```bash
 npm i  # install dependencies
