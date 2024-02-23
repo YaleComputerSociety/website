@@ -10,6 +10,10 @@
         "newlines-between": "always"
       }
     ],
-    "import/newline-after-import": "error"
+    "import/newline-after-import": "error",
+    "prettier/prettier": ["error", {
+        "printWidth": 100,
+        "endOfLine": "auto"
+    }]
   }
 }
