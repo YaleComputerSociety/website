@@ -25,7 +25,11 @@ export const NavbarMobileMenu = () => {
 
   return (
     <div>
+<<<<<<< HEAD
       <button onClick={toggleMobileMenu} className="text-white text-3xl pr-2 pt-[0.47rem]">
+=======
+      <button onClick={toggleMobileMenu} className="text-white text-3xl pr-2">
+>>>>>>> 8dc16be (Adjust navbar mobile menu 'x' button and refactor into separate component)
         <div className="space-y-2">
           <span className="block w-8 h-0.5 bg-white"></span>
           <span className="block w-8 h-0.5 bg-white"></span>
@@ -34,11 +38,22 @@ export const NavbarMobileMenu = () => {
       </button>
       <div
         ref={menuRef}
+<<<<<<< HEAD
         className={`fixed top-0 right-0 h-full bg-ycs-pink shadow-md transition-transform duration-500 w-3/4 rounded-bl-[5rem] rounded-tl-[5rem] flex flex-col ${
           isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
         <button onClick={toggleMobileMenu} className="py-2 px-6 text-6xl font-extralight self-end">
+=======
+        className={`fixed top-0 right-0 h-full bg-ycs-pink shadow-md transition-transform w-3/4 rounded-bl-[5rem] rounded-tl-[5rem] flex flex-col ${
+          isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <button
+          onClick={toggleMobileMenu}
+          className="py-2 px-6 text-6xl font-thin self-end"
+        >
+>>>>>>> 8dc16be (Adjust navbar mobile menu 'x' button and refactor into separate component)
           ×
         </button>
         <ul className="flex flex-col text-3xl p-14 gap-8">
