@@ -1,5 +1,3 @@
-import "@styles/home.css";
-
 import Link from "next/link";
 
 import { GradientBox } from "../components/GradientBox";
