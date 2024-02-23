@@ -79,7 +79,7 @@ export const ParticleNetwork = () => {
           value: 100,
         },
         opacity: {
-          value: 1,
+          value: 0.7,
         },
         shape: {
           type: "circle",
