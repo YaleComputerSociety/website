@@ -3,7 +3,6 @@ import Image from "next/image";
 import { CardWrapper } from "@components/CardWrapper";
 import { SectionTitle } from "@components/SectionTitle";
 import { BOARD } from "@data";
-import "@styles/App.css";
 
 const Team = () => {
   const BOARD_CUTOFF = 13;
