@@ -40,7 +40,7 @@ export const NavbarMobileMenu = () => {
       >
         <button
           onClick={toggleMobileMenu}
-          className="py-2 px-6 text-6xl font-thin self-end"
+          className="py-2 px-6 text-6xl font-extralight self-end"
         >
           ×
         </button>
