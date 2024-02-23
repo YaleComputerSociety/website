@@ -99,6 +99,7 @@ export const ParticleNetwork = () => {
         opacity: {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           value: 0.7,
 =======
           value: 0.5,
@@ -106,6 +107,9 @@ export const ParticleNetwork = () => {
 =======
           value: 1,
 >>>>>>> 1d22529 (Move network particles to be overlapping in the correct location)
+=======
+          value: 0.7,
+>>>>>>> 1fd6f67 (Adjust parameters on particles, adjust speed of mobile menu opening)
         },
         shape: {
           type: "circle",
