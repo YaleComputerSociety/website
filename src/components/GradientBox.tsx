@@ -37,9 +37,7 @@ export const GradientBox: FC<GradientBoxProps> = ({ title, text, color }) => {
         <div className="text-white lg:text-lg md:text-md sm:text-sm font-bold">
           <div className="absolute bottom-0 left-0 right-0 p-6">
             <p className="text-white">{title}</p>
-            <p className="text-gray-400 overflow-hidden whitespace-wrap">
-              {text}
-            </p>
+            <p className="text-gray-400 overflow-hidden whitespace-wrap">{text}</p>
           </div>
         </div>
       </div>

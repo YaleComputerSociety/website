@@ -3,10 +3,7 @@ interface SmallSectionTitleProps {
   subheader: string;
 }
 
-export const SmallSectionTitle = ({
-  header,
-  subheader,
-}: SmallSectionTitleProps) => (
+export const SmallSectionTitle = ({ header, subheader }: SmallSectionTitleProps) => (
   <div className="py-10 w-full flex flex-col items-center">
     <h1 style={{ fontSize: "25px", fontWeight: "700" }}>{header}</h1>
     <h4
