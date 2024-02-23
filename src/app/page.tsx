@@ -8,12 +8,10 @@ import { ParticleNetwork } from "@components/ParticleNetwork";
 
 const Home = () => {
   return (
-    <div className="bg-ycs-black">
-      {/* <div className="h-3/4 w-full bg-blue-200 absolute"> */}
+    <div>
       <ParticleNetwork />
-      {/* </div> */}
-      <div className="flex flex-col">
-        <p className="text-white text-left mt-20 lg:text-7xl md:text-6xl sm:text-6xl text-6xl shadow-black text-shadow mb-6 mr-10 ml-10">
+      <div className="flex flex-col z-20">
+        <p className="text-white text-left mt-20 lg:text-7xl md:text-6xl sm:text-6xl text-6xl shadow-black text-shadow mb-6 mr-10 ml-10 ">
           We are the <br /> Yale Computer Society.
         </p>
         <p className="text-gray-400 text-left lg:text-2xl md:text-xl sm:text-x shadow-black text-shadow mb-6 mr-10 ml-10">
