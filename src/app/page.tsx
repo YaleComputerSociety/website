@@ -10,6 +10,7 @@ const Home = () => {
   return (
     <div>
       <ParticleNetwork />
+      <div className="text-ycs-gray text-[30rem] font-black">y/cs</div>
       <div className="flex flex-col z-20">
         <p className="text-white text-left mt-20 lg:text-7xl md:text-6xl sm:text-6xl text-6xl shadow-black text-shadow mb-6 mr-10 ml-10 ">
           We are the <br /> Yale Computer Society.
