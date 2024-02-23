@@ -1,4 +1,3 @@
-import "@styles/GeneralProduct.css";
 import Image from "next/image";
 
 import { GeneralProductHeader } from "@components/GeneralProductHeader";
