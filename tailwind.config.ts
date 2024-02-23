@@ -25,6 +25,7 @@ const config: Config = {
         "ycs-blue": "#0071BC",
         "ycs-green": "#39A393",
         "ycs-security-red": "#590c0c",
+        "ycs-gray": "#4c535f",
       },
       fontSize: {
         big: "200px",
