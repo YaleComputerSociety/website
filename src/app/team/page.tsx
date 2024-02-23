@@ -10,10 +10,14 @@ import { CardWrapper } from "@components/CardWrapper";
 import { SectionTitle } from "@components/SectionTitle";
 import { BOARD } from "@data";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import "@styles/App.css";
 >>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
 =======
 >>>>>>> 6919d97 (Remove unused files)
+=======
+import "@styles/App.css";
+>>>>>>> e5c05d1 (Change thickness of mobile menu 'x')
 
 const Team = () => {
   const BOARD_CUTOFF = 13;
@@ -45,12 +49,10 @@ const Team = () => {
               src={board_member.image}
               alt={board_member.name}
               loading="lazy"
+              height="200"
+              // width="200"
               style={{
-                width: "100%",
-                height: "100%",
                 objectFit: "cover",
-                maxWidth: "200px",
-                maxHeight: "200px",
                 borderRadius: "40px",
               }}
             />

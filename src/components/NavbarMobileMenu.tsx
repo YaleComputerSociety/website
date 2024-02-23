@@ -51,7 +51,7 @@ export const NavbarMobileMenu = () => {
       >
         <button
           onClick={toggleMobileMenu}
-          className="py-2 px-6 text-6xl font-thin self-end"
+          className="py-2 px-6 text-6xl font-extralight self-end"
         >
 >>>>>>> 8dc16be (Adjust navbar mobile menu 'x' button and refactor into separate component)
           ×
