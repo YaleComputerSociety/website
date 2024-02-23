@@ -79,7 +79,7 @@ export const ParticleNetwork = () => {
           value: 100,
         },
         opacity: {
-          value: 0.5,
+          value: 1,
         },
         shape: {
           type: "circle",
@@ -95,7 +95,7 @@ export const ParticleNetwork = () => {
 
   if (init) {
     return (
-      <div style={{ height: "100vh" }}>
+      <div className="h-[80vh] absolute inset-0 -z-10">
         <Particles id="tsparticles" particlesLoaded={particlesLoaded} options={options} />
       </div>
     );
