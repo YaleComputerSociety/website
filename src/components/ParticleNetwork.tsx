@@ -98,10 +98,14 @@ export const ParticleNetwork = () => {
         },
         opacity: {
 <<<<<<< HEAD
+<<<<<<< HEAD
           value: 0.7,
 =======
           value: 0.5,
 >>>>>>> bd8b04e (Add in network particles to home screen)
+=======
+          value: 1,
+>>>>>>> 1d22529 (Move network particles to be overlapping in the correct location)
         },
         shape: {
           type: "circle",
@@ -122,12 +126,16 @@ export const ParticleNetwork = () => {
   if (init) {
     return (
 <<<<<<< HEAD
+<<<<<<< HEAD
       <div
         className={`h-[80vh] absolute inset-0 -z-10 opacity-0 ${isParticlesLoaded && "opacity-0 animate-fade-in"}`}
       >
 =======
       <div style={{ height: "100vh" }}>
 >>>>>>> bd8b04e (Add in network particles to home screen)
+=======
+      <div className="h-[80vh] absolute inset-0 -z-10">
+>>>>>>> 1d22529 (Move network particles to be overlapping in the correct location)
         <Particles id="tsparticles" particlesLoaded={particlesLoaded} options={options} />
       </div>
     );
