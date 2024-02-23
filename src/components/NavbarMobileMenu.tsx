@@ -38,10 +38,7 @@ export const NavbarMobileMenu = () => {
           isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <button
-          onClick={toggleMobileMenu}
-          className="py-2 px-6 text-6xl font-extralight self-end"
-        >
+        <button onClick={toggleMobileMenu} className="py-2 px-6 text-6xl font-extralight self-end">
           ×
         </button>
         <ul className="flex flex-col text-3xl p-14 gap-8">
