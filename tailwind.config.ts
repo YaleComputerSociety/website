@@ -42,7 +42,11 @@ const config: Config = {
         "ycs-gray": "#323844",
 =======
         "ycs-security-red": "#590c0c",
+<<<<<<< HEAD
 >>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
+=======
+        "ycs-gray": "#4c535f",
+>>>>>>> 42b7347 (Add relative padding to navbar and begin to create background y/cs)
       },
       fontSize: {
         big: "200px",
