@@ -3,6 +3,7 @@ import Image from "next/image";
 import { CardWrapper } from "@components/CardWrapper";
 import { SectionTitle } from "@components/SectionTitle";
 import { BOARD } from "@data";
+import "@styles/App.css";
 
 const Team = () => {
   const BOARD_CUTOFF = 13;
@@ -28,12 +29,10 @@ const Team = () => {
               src={board_member.image}
               alt={board_member.name}
               loading="lazy"
+              height="200"
+              // width="200"
               style={{
-                width: "100%",
-                height: "100%",
                 objectFit: "cover",
-                maxWidth: "200px",
-                maxHeight: "200px",
                 borderRadius: "40px",
               }}
             />
