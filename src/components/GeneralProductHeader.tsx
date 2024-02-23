@@ -189,16 +189,12 @@ export const GeneralProductHeader = ({
         ) : (
           <>
             <Image
-              src={require(
-                `../assets/products/${productName}/headerimage1.png`,
-              )}
+              src={require(`../assets/products/${productName}/headerimage1.png`)}
               style={{ width: "35%", marginRight: "5%" }}
               alt="Product Main Mobile Screenshot 1"
             />
             <Image
-              src={require(
-                `../assets/products/${productName}/headerimage2.png`,
-              )}
+              src={require(`../assets/products/${productName}/headerimage2.png`)}
               style={{ width: "35%", marginLeft: "5%" }}
               alt="Product Main Mobile Screenshot 2"
             />

@@ -60,6 +60,7 @@ export const GeneralProduct = ({
 >>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
   }
 
+<<<<<<< HEAD
   const GeneralProductSectionImage = ({
     sectionNumber,
 <<<<<<< HEAD
@@ -74,12 +75,13 @@ export const GeneralProduct = ({
         className="p-1 rounded-lg md:ml-10 bg-gray-100"
 =======
   }: GeneralProductSectionImageProps) => (
+=======
+  const GeneralProductSectionImage = ({ sectionNumber }: GeneralProductSectionImageProps) => (
+>>>>>>> bd8b04e (Add in network particles to home screen)
     <div className="section-image-container">
       <Image
         loading="lazy"
-        src={require(
-          `../assets/products/${productName}/${sectionNumber}sectionimage.png`,
-        )}
+        src={require(`../assets/products/${productName}/${sectionNumber}sectionimage.png`)}
         className="section-image"
         style={{ border: `10px solid ${productColor}` }}
 >>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)

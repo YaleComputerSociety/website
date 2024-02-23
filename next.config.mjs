@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 async function loadConfig() {
   const withBundleAnalyzer = (await import("@next/bundle-analyzer")).default({
@@ -28,6 +29,13 @@ const nextConfig = {
 =======
 const nextConfig = {};
 >>>>>>> 1a5d1b6 (Update package.json scripts)
+=======
+const nextConfig = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+};
+>>>>>>> bd8b04e (Add in network particles to home screen)
 
 export default nextConfig;
 >>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)

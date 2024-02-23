@@ -2,7 +2,11 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
+<<<<<<< HEAD
 import type { Container, ISourceOptions } from "@tsparticles/engine";
+=======
+import { type Container, type ISourceOptions } from "@tsparticles/engine";
+>>>>>>> bd8b04e (Add in network particles to home screen)
 import { loadSlim } from "@tsparticles/slim";
 
 import "@styles/ParticleNetwork.css";
@@ -29,9 +33,14 @@ enum OutMode {
   split = "split",
 }
 
+<<<<<<< HEAD
 const ParticleNetwork = () => {
   const [init, setInit] = useState(false);
   const [isParticlesLoaded, setIsParticlesLoaded] = useState(false);
+=======
+export const ParticleNetwork = () => {
+  const [init, setInit] = useState(false);
+>>>>>>> bd8b04e (Add in network particles to home screen)
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -43,7 +52,10 @@ const ParticleNetwork = () => {
 
   const particlesLoaded = async (container?: Container): Promise<void> => {
     console.log(container);
+<<<<<<< HEAD
     setIsParticlesLoaded(true);
+=======
+>>>>>>> bd8b04e (Add in network particles to home screen)
   };
 
   const options: ISourceOptions = useMemo(
@@ -62,7 +74,11 @@ const ParticleNetwork = () => {
           distance: 150,
           enable: true,
           opacity: 1,
+<<<<<<< HEAD
           width: 2.5,
+=======
+          width: 2,
+>>>>>>> bd8b04e (Add in network particles to home screen)
         },
         move: {
           direction: MoveDirection.none,
@@ -81,13 +97,21 @@ const ParticleNetwork = () => {
           value: 100,
         },
         opacity: {
+<<<<<<< HEAD
           value: 0.7,
+=======
+          value: 0.5,
+>>>>>>> bd8b04e (Add in network particles to home screen)
         },
         shape: {
           type: "circle",
         },
         size: {
+<<<<<<< HEAD
           value: { min: 5, max: 5 },
+=======
+          value: { min: 3, max: 5 },
+>>>>>>> bd8b04e (Add in network particles to home screen)
         },
       },
       detectRetina: true,
@@ -97,9 +121,13 @@ const ParticleNetwork = () => {
 
   if (init) {
     return (
+<<<<<<< HEAD
       <div
         className={`h-[80vh] absolute inset-0 -z-10 opacity-0 ${isParticlesLoaded && "opacity-0 animate-fade-in"}`}
       >
+=======
+      <div style={{ height: "100vh" }}>
+>>>>>>> bd8b04e (Add in network particles to home screen)
         <Particles id="tsparticles" particlesLoaded={particlesLoaded} options={options} />
       </div>
     );
@@ -107,5 +135,8 @@ const ParticleNetwork = () => {
 
   return <></>;
 };
+<<<<<<< HEAD
 
 export default ParticleNetwork;
+=======
+>>>>>>> bd8b04e (Add in network particles to home screen)
