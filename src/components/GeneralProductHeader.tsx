@@ -1,5 +1,4 @@
 import Link from "next/link";
-import "../styles/GeneralProduct.css";
 import Image from "next/image";
 
 interface GeneralProductHeaderProps {
