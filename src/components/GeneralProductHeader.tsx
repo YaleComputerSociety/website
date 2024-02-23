@@ -104,7 +104,6 @@ export const GeneralProductHeader = ({
 import '../styles/GeneralProduct.css'
 =======
 import Link from "next/link";
-import "../styles/GeneralProduct.css";
 import Image from "next/image";
 >>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
 

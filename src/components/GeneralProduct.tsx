@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import "@styles/GeneralProduct.css";
 >>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
+=======
+>>>>>>> 6919d97 (Remove unused files)
 import Image from "next/image";
 
 import { GeneralProductHeader } from "@components/GeneralProductHeader";

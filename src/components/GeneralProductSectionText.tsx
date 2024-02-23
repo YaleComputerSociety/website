@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import "@styles/GeneralProduct.css";
 
 interface GeneralProductSectionTextProps {
@@ -28,6 +29,9 @@ import '../styles/GeneralProduct.css'
 =======
 import "../styles/GeneralProduct.css";
 >>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
+=======
+import "@styles/GeneralProduct.css";
+>>>>>>> 6919d97 (Remove unused files)
 
 interface GeneralProductSectionTextProps {
   title: string;

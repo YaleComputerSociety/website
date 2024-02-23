@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 "use client";
 
 import Link from "next/link";
@@ -59,6 +60,8 @@ const Home = () => {
 =======
 import "@styles/home.css";
 
+=======
+>>>>>>> 6919d97 (Remove unused files)
 import Link from "next/link";
 
 import { GradientBox } from "../components/GradientBox";

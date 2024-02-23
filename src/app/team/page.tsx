@@ -9,8 +9,11 @@ import Image from "next/image";
 import { CardWrapper } from "@components/CardWrapper";
 import { SectionTitle } from "@components/SectionTitle";
 import { BOARD } from "@data";
+<<<<<<< HEAD
 import "@styles/App.css";
 >>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
+=======
+>>>>>>> 6919d97 (Remove unused files)
 
 const Team = () => {
   const BOARD_CUTOFF = 13;
