@@ -15,12 +15,10 @@ const Events = () => {
     <div className="mt-36 mx-12">
       <div className="grid grid-cols-2 gap-4">
         <div className="text-left text-white">
-          <h1 className=" p-4 font-bold text-white text-4xl bg-ycs-pink rounded-lg">
-            Events
-          </h1>
+          <h1 className=" p-4 font-bold text-white text-4xl bg-ycs-pink rounded-lg">Events</h1>
           <p className="mt-10 text-2xl text-white">
-            Each semester, the y/cs hosts dozens of events. Check here for our
-            calendar to see what&apos;s coming up!
+            Each semester, the y/cs hosts dozens of events. Check here for our calendar to see
+            what&apos;s coming up!
             <br />
             <br />
           </p>
