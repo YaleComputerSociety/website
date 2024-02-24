@@ -43,7 +43,13 @@ import bloomberg from "./assets/partnerships/bloomberg.jpeg";
 import janestreet from "./assets/partnerships/JS Logo 2023.png";
 import tsai from "./assets/partnerships/tsaicity.png";
 
-export const BOARD = [
+export interface Person {
+  name: string;
+  image: StaticImageData;
+  role: string[];
+}
+
+export const BOARD: Person[] = [
   {
     name: "Addison Goolsbee",
     image: addison,
