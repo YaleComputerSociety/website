@@ -8,7 +8,7 @@ const Team = () => {
 
   return (
     <div className="flex flex-col align-middle">
-      <SectionTitle header="Our Team" subheader="Meet the people that make up the y/cs" />
+      <SectionTitle title="Our Team" subtitle="Meet the people that make up the y/cs" />
       <TeamGrid title="Board" people={BOARD.slice(0, BOARD_CUTOFF)} />
       <TeamGrid title="Product Leads" people={BOARD.slice(BOARD_CUTOFF)} />
     </div>
