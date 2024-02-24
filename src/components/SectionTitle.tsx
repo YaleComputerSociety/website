@@ -1,6 +1,7 @@
 interface SectionTitleProps {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   title: string;
   subtitle: string;
 }
@@ -33,14 +34,18 @@ export const SectionTitle = ({header, subheader}: SectionTitleProps) => (
 =======
   header: string;
   subheader: string;
+=======
+  title: string;
+  subtitle: string;
+>>>>>>> 449454f (Adjust section title to be fully responsive')
 }
 
-export const SectionTitle = ({ header, subheader }: SectionTitleProps) => (
-  <div className="text-center py-10 m-auto">
-    <h1 className="bg-ycs-pink p-4 xl:px-8 rounded-md text-2xl md:text-5xl xl:text-7xl font-bold">
+export const SectionTitle = ({ title: header, subtitle: subheader }: SectionTitleProps) => (
+  <div className="text-center py-10 max-w-xl m-auto">
+    <h1 className="bg-ycs-pink py-4 px-8 rounded-md text-2xl md:text-5xl xl:text-7xl font-bold inline-block">
       {header}
     </h1>
-    <h4 style={{ fontSize: "20px", fontWeight: "400", marginTop: "21px" }}>{subheader}</h4>
+    <h4 className="text-lg mt-5">{subheader}</h4>
   </div>
 );
 >>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)

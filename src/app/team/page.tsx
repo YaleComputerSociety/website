@@ -105,7 +105,7 @@ const Team = () => {
 >>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
 =======
     <div className="flex flex-col align-middle">
-      <SectionTitle header="Our Team" subheader="Meet the people that make up the y/cs" />
+      <SectionTitle title="Our Team" subtitle="Meet the people that make up the y/cs" />
       <TeamGrid title="Board" people={BOARD.slice(0, BOARD_CUTOFF)} />
       <TeamGrid title="Product Leads" people={BOARD.slice(BOARD_CUTOFF)} />
 >>>>>>> 8d111fe (Refactor team page and make responsive; fix image sizes)

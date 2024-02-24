@@ -50,10 +50,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
       <ConditionalWrapper
         condition={product.link != null}
         wrapper={(children: ReactNode) => (
-          <Link
-            href={product.link!}
-            style={{ textDecoration: "none", color: "inherit" }}
-          >
+          <Link href={product.link!} style={{ textDecoration: "none", color: "inherit" }}>
             {children}
           </Link>
         )}
@@ -80,9 +77,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
             style={{ borderRadius: "50%" }}
           />
         </div>
-        <div style={{ fontWeight: 500, fontSize: "25px", marginTop: "80px" }}>
-          {product.name}
-        </div>
+        <div style={{ fontWeight: 500, fontSize: "25px", marginTop: "80px" }}>{product.name}</div>
         <div style={{ fontWeight: 400, fontSize: "18px", margin: "40px 20px" }}>
           {product.description}
         </div>
@@ -118,14 +113,12 @@ const Products = () => {
 =======
     <div className="product-container">
       <SectionTitle
-        header="Products"
-        subheader="From a campus-wide student directory to your class-scheduling needs, we've got you covered."
+        title="Products"
+        subtitle="From a campus-wide student directory to your class-scheduling needs, we've got you covered."
       />
       <h2 className="text-3xl font-bold my-20 text-center">Live Products</h2>
       <ProductGrid live />
-      <h2 className="text-3xl font-bold my-20 text-center">
-        Products in Production
-      </h2>
+      <h2 className="text-3xl font-bold my-20 text-center">Products in Production</h2>
       <ProductGrid live={false} />
     </div>
 >>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
