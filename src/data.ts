@@ -33,9 +33,10 @@ import alex from "./assets/people/alex.jpeg";
 import sida from "./assets/people/sida.jpeg";
 import chase from "./assets/people/chase.jpeg";
 import nicholas from "./assets/people/nicholas.jpeg";
+import ian from "./assets/people/ian.jpeg";
 import neil from "./assets/people/neil.jpeg";
 import ericyoon from "./assets/people/ericyoon.jpeg";
-import defaultPerson from "./assets/people.jpeg";
+// import defaultPerson from "./assets/people.jpeg";
 // partnerships import
 import meta from "./assets/partnerships/meta.png";
 import bloomberg from "./assets/partnerships/bloomberg.jpeg";
@@ -136,7 +137,7 @@ export const BOARD = [
   },
   {
     name: "Ian Lim",
-    image: defaultPerson,
+    image: ian,
     role: ["Yale Clubs"],
   },
   {
@@ -174,8 +175,7 @@ export const PROJECTS: Project[] = [
     name: "CourseTable",
     image: coursetable,
     link: "/products/coursetable",
-    description:
-      "A student-built courses browser used by nearly everyone at Yale.",
+    description: "A student-built courses browser used by nearly everyone at Yale.",
     live: true,
   },
   {
@@ -197,16 +197,14 @@ export const PROJECTS: Project[] = [
     name: "ymeets",
     image: ymeets,
     link: "/products/ymeets",
-    description:
-      "A web application aimed to make it easier for Yalies to find a time to meet.",
+    description: "A web application aimed to make it easier for Yalies to find a time to meet.",
     live: false,
   },
   {
     name: "RoomAdvisor",
     image: roomadvisor,
     link: "/products/roomadvisor",
-    description:
-      "A website where Yale students can browse, rate, and review college rooms.",
+    description: "A website where Yale students can browse, rate, and review college rooms.",
     live: false,
   },
   {
