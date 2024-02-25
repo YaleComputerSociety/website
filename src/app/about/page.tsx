@@ -9,7 +9,7 @@ import { Sponsors } from "@components/Sponsors";
 
 const About = () => {
   return (
-    <div className="flex justify-center items-center flex-col pt-40 pr-40 pl-40 text-white">
+    <div className="flex justify-center items-center flex-col pr-40 pl-40 text-white">
       <SectionTitle title="About Us" subtitle="The community for designers and engineers @ Yale." />
 
       <Image src={teamPhoto} style={{ width: "auto", height: 344 }} alt="YCS Team" />
