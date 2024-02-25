@@ -31,6 +31,7 @@ enum OutMode {
 
 export const ParticleNetwork = () => {
   const [init, setInit] = useState(false);
+  const [isParticlesLoaded, setIsParticlesLoaded] = useState(false);
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -42,6 +43,7 @@ export const ParticleNetwork = () => {
 
   const particlesLoaded = async (container?: Container): Promise<void> => {
     console.log(container);
+    setIsParticlesLoaded(true);
   };
 
   const options: ISourceOptions = useMemo(
@@ -95,7 +97,9 @@ export const ParticleNetwork = () => {
 
   if (init) {
     return (
-      <div className="h-[80vh] absolute inset-0 -z-10">
+      <div
+        className={`h-[80vh] absolute inset-0 -z-10 opacity-0 animate-fade-in ${isParticlesLoaded ? "opacity-0 animate-fade-in" : ""}`}
+      >
         <Particles id="tsparticles" particlesLoaded={particlesLoaded} options={options} />
       </div>
     );
