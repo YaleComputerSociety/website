@@ -73,10 +73,9 @@ import { ParticleNetwork } from "@components/ParticleNetwork";
 const Home = () => {
   return (
     <div>
-      {/* The particles have a second-long lag before they load in for unknown reasons, so ths effectively fades them in */}
-      <div className="bg-ycs-black -z-10 w-full h-full top-0 absolute animate-fade-out">
-        <ParticleNetwork />
-      </div>
+      {/* <div className="bg-ycs-black -z-10 w-full h-full top-0 absolute animate-fade-out"> */}
+      <ParticleNetwork />
+      {/* </div> */}
 
       {/* <div className="text-ycs-gray text-[30rem] font-black fixed -z-10 text-center w-full">
         y/cs

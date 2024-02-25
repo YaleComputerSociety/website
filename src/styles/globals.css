@@ -89,16 +89,21 @@ body {
 =======
 }
 
-@keyframes fadeOut {
+@keyframes fadeIn {
   from {
-    opacity: 1;
+    opacity: 0;
   }
   to {
-    opacity: 0;
+    opacity: 1;
   }
 }
 
+<<<<<<< HEAD
 .animate-fade-out {
   animation: fadeOut 3s forwards 0.8s;
 >>>>>>> 8ff1451 (Fix particle loading problem by fading them in)
+=======
+.animate-fade-in {
+  animation: fadeIn 3s forwards;
+>>>>>>> 4f18b83 (Fix particle fade in to only trigger once the engine is loaded)
 }

@@ -40,7 +40,11 @@ const ParticleNetwork = () => {
 =======
 export const ParticleNetwork = () => {
   const [init, setInit] = useState(false);
+<<<<<<< HEAD
 >>>>>>> bd8b04e (Add in network particles to home screen)
+=======
+  const [isParticlesLoaded, setIsParticlesLoaded] = useState(false);
+>>>>>>> 4f18b83 (Fix particle fade in to only trigger once the engine is loaded)
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -53,9 +57,13 @@ export const ParticleNetwork = () => {
   const particlesLoaded = async (container?: Container): Promise<void> => {
     console.log(container);
 <<<<<<< HEAD
+<<<<<<< HEAD
     setIsParticlesLoaded(true);
 =======
 >>>>>>> bd8b04e (Add in network particles to home screen)
+=======
+    setIsParticlesLoaded(true);
+>>>>>>> 4f18b83 (Fix particle fade in to only trigger once the engine is loaded)
   };
 
   const options: ISourceOptions = useMemo(
@@ -139,6 +147,7 @@ export const ParticleNetwork = () => {
     return (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <div
         className={`h-[80vh] absolute inset-0 -z-10 opacity-0 ${isParticlesLoaded && "opacity-0 animate-fade-in"}`}
       >
@@ -148,6 +157,11 @@ export const ParticleNetwork = () => {
 =======
       <div className="h-[80vh] absolute inset-0 -z-10">
 >>>>>>> 1d22529 (Move network particles to be overlapping in the correct location)
+=======
+      <div
+        className={`h-[80vh] absolute inset-0 -z-10 opacity-0 animate-fade-in ${isParticlesLoaded ? "opacity-0 animate-fade-in" : ""}`}
+      >
+>>>>>>> 4f18b83 (Fix particle fade in to only trigger once the engine is loaded)
         <Particles id="tsparticles" particlesLoaded={particlesLoaded} options={options} />
       </div>
     );
