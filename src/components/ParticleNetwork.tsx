@@ -75,10 +75,14 @@ export const ParticleNetwork = () => {
           enable: true,
           opacity: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
           width: 2.5,
 =======
           width: 2,
 >>>>>>> bd8b04e (Add in network particles to home screen)
+=======
+          width: 2.5,
+>>>>>>> 8ff1451 (Fix particle loading problem by fading them in)
         },
         move: {
           direction: MoveDirection.none,
@@ -116,10 +120,14 @@ export const ParticleNetwork = () => {
         },
         size: {
 <<<<<<< HEAD
+<<<<<<< HEAD
           value: { min: 5, max: 5 },
 =======
           value: { min: 3, max: 5 },
 >>>>>>> bd8b04e (Add in network particles to home screen)
+=======
+          value: { min: 5, max: 5 },
+>>>>>>> 8ff1451 (Fix particle loading problem by fading them in)
         },
       },
       detectRetina: true,

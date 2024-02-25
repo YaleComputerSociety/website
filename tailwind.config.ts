@@ -2,6 +2,7 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
 <<<<<<< HEAD
+<<<<<<< HEAD
   content: ["./src/components/**/*.{js,ts,jsx,tsx,mdx}", "./src/app/**/*.{js,ts,jsx,tsx,mdx}"],
 =======
   content: [
@@ -10,6 +11,9 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
 >>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
+=======
+  content: ["./src/components/**/*.{js,ts,jsx,tsx,mdx}", "./src/app/**/*.{js,ts,jsx,tsx,mdx}"],
+>>>>>>> 8ff1451 (Fix particle loading problem by fading them in)
   theme: {
     extend: {
       backgroundImage: {

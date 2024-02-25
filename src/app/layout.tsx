@@ -16,6 +16,7 @@ import "@styles/globals.css";
 >>>>>>> 96faa32 (Add ian photo)
 import Navbar from "@components/Navbar";
 import { Footer } from "@components/Footer";
+import { ParticleNetwork } from "@components/ParticleNetwork";
 
 const inter = Inter({ subsets: ["latin"] });
 <<<<<<< HEAD
@@ -48,6 +49,7 @@ export default function RootLayout({
       <body className={inter.className}>
 >>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
         <Navbar />
+        <ParticleNetwork />
         {children}
         <Footer />
       </body>
