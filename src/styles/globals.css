@@ -55,15 +55,15 @@ body {
   transform-origin: bottom left; 
 }
 
-@keyframes fadeOut {
+@keyframes fadeIn {
   from {
-    opacity: 1;
+    opacity: 0;
   }
   to {
-    opacity: 0;
+    opacity: 1;
   }
 }
 
-.animate-fade-out {
-  animation: fadeOut 3s forwards 0.8s;
+.animate-fade-in {
+  animation: fadeIn 3s forwards;
 }
