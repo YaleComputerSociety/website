@@ -60,7 +60,7 @@ export const ParticleNetwork = () => {
           distance: 150,
           enable: true,
           opacity: 1,
-          width: 2,
+          width: 2.5,
         },
         move: {
           direction: MoveDirection.none,
@@ -85,7 +85,7 @@ export const ParticleNetwork = () => {
           type: "circle",
         },
         size: {
-          value: { min: 3, max: 5 },
+          value: { min: 5, max: 5 },
         },
       },
       detectRetina: true,
