@@ -49,15 +49,11 @@ export const GeneralProduct = ({
     sectionNumber: string;
   }
 
-  const GeneralProductSectionImage = ({
-    sectionNumber,
-  }: GeneralProductSectionImageProps) => (
+  const GeneralProductSectionImage = ({ sectionNumber }: GeneralProductSectionImageProps) => (
     <div className="section-image-container">
       <Image
         loading="lazy"
-        src={require(
-          `../assets/products/${productName}/${sectionNumber}sectionimage.png`,
-        )}
+        src={require(`../assets/products/${productName}/${sectionNumber}sectionimage.png`)}
         className="section-image"
         style={{ border: `10px solid ${productColor}` }}
         alt={`Product ${sectionNumber} Section Screenshot`}

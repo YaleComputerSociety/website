@@ -4,24 +4,30 @@ import { GradientBox } from "../components/GradientBox";
 import { SolidColorBlock } from "../components/SolidColorBlock";
 
 import { Sponsors } from "@components/Sponsors";
+import { ParticleNetwork } from "@components/ParticleNetwork";
 
 const Home = () => {
   return (
-    <div className="bg-ycs-black">
-      <div className="flex flex-col">
-        <br />
-        <br />
-        <p className="text-white text-left mt-20 lg:text-7xl md:text-6xl sm:text-6xl text-6xl shadow-black text-shadow mb-6 mr-10 ml-10">
+    <div>
+      {/* The particles have a second-long lag before they load in for unknown reasons, so ths effectively fades them in */}
+      <div className="bg-ycs-black -z-10 w-full h-full top-0 absolute animate-fade-out">
+        <ParticleNetwork />
+      </div>
+
+      {/* <div className="text-ycs-gray text-[30rem] font-black fixed -z-10 text-center w-full">
+        y/cs
+      </div> */}
+      <div className="flex flex-col z-20">
+        <p className="text-white text-left mt-20 lg:text-7xl md:text-6xl sm:text-6xl text-6xl shadow-black text-shadow mb-6 mr-10 ml-10 ">
           We are the <br /> Yale Computer Society.
         </p>
         <p className="text-gray-400 text-left lg:text-2xl md:text-xl sm:text-x shadow-black text-shadow mb-6 mr-10 ml-10">
-          Yale&apos;s premier tech organization and software application
-          incubator.
+          Yale&apos;s premier tech organization and software application incubator.
         </p>
 
         <h1 className="text-white mt-20 mr-10 ml-10 text-center text-2xl">
-          We build and maintain student-run applications that power Yale
-          University&apos;s campus community.
+          We build and maintain student-run applications that power Yale University&apos;s campus
+          community.
         </h1>
 
         <div className="lg:flex lg:flex-row sm:flex-col mb-10 ml-20 mr-20">
@@ -48,8 +54,8 @@ const Home = () => {
             Cultivating a passion for software development and computing
           </div>
           <div className="w-3/4 text-gray-400 text-2xl mb-10 text-center">
-            From development mentorship to hacking nights, we create a community
-            for programmers of all skill levels.
+            From development mentorship to hacking nights, we create a community for programmers of
+            all skill levels.
           </div>
 
           <div className="flex flex-col md:flex-row w-3/4 h-3/4 mx-auto">
@@ -97,8 +103,7 @@ const Home = () => {
             Ready to join the best computer science club at Yale?
           </div>
           <div className="w-3/4 text-gray-400 text-left text-3xl font-normal mb-8">
-            The Fall 2024 Membership Application will open following the
-            Extracirrcular Bazaar.
+            The Fall 2024 Membership Application will open following the Extracirrcular Bazaar.
           </div>
           <div className="w-3/4 flex items-center">
             <Link

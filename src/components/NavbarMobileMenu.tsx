@@ -34,14 +34,11 @@ export const NavbarMobileMenu = () => {
       </button>
       <div
         ref={menuRef}
-        className={`fixed top-0 right-0 h-full bg-ycs-pink shadow-md transition-transform w-3/4 rounded-bl-[5rem] rounded-tl-[5rem] flex flex-col ${
+        className={`fixed top-0 right-0 h-full bg-ycs-pink shadow-md transition-transform duration-500 w-3/4 rounded-bl-[5rem] rounded-tl-[5rem] flex flex-col ${
           isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <button
-          onClick={toggleMobileMenu}
-          className="py-2 px-6 text-6xl font-extralight self-end"
-        >
+        <button onClick={toggleMobileMenu} className="py-2 px-6 text-6xl font-extralight self-end">
           ×
         </button>
         <ul className="flex flex-col text-3xl p-14 gap-8">
