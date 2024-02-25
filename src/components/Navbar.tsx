@@ -36,32 +36,35 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className="flex items-center justify-between bg-ycs-black text-white p-6 w-full fixed z-20 top-0">
-      <div>
-        <Link
-          href="/"
-          className="font-black pl-2 text-3xl hover:scale-110 transition-transform duration-300 inline-block"
-        >
-          y/cs
-        </Link>
-      </div>
-      {isMobile ? (
-        <NavbarMobileMenu />
-      ) : (
-        <ul className="flex gap-12 text-lg">
-          {navigationItems.map((item, index) => (
-            <Link
-              href={item.link}
-              className="nav-link transform duration-100"
-              key={index}
-              target={!item.link.startsWith("/") ? "_blank" : undefined}
-            >
-              {item.name}
-            </Link>
-          ))}
-        </ul>
-      )}
-    </nav>
+    <>
+      <nav className="flex items-center justify-between bg-ycs-black text-white p-6 w-full fixed z-20 top-0">
+        <div>
+          <Link
+            href="/"
+            className="font-black pl-2 text-3xl hover:scale-110 transition-transform duration-300 inline-block"
+          >
+            y/cs
+          </Link>
+        </div>
+        {isMobile ? (
+          <NavbarMobileMenu />
+        ) : (
+          <ul className="flex gap-12 text-lg">
+            {navigationItems.map((item, index) => (
+              <Link
+                href={item.link}
+                className="nav-link transform duration-100"
+                key={index}
+                target={!item.link.startsWith("/") ? "_blank" : undefined}
+              >
+                {item.name}
+              </Link>
+            ))}
+          </ul>
+        )}
+      </nav>
+      <div className="h-24" />
+    </>
   );
 }
 
