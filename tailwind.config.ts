@@ -20,7 +20,7 @@ const config: Config = {
         "ycs-faded-pink": "F26891",
         "ycs-blue": "#0071BC",
         "ycs-green": "#39A393",
-        "ycs-security-red": "#590c0c",
+        "ycs-security-red": "#890c0c",
         "ycs-gray": "#4c535f",
       },
       fontSize: {
