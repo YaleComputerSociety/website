@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import Link from "next/link";
 import { FC } from "react";
 
@@ -11,16 +12,24 @@ interface Props {
 
 export const GradientBox: FC<Props> = ({ title, text, color, link }) => {
 =======
+=======
+import Link from "next/link";
+>>>>>>> 1e8d24f (Modify gradient box section and make it responsive)
 import { FC } from "react";
 
-interface GradientBoxProps {
+interface Props {
   title: string;
   text: string;
   color: "pink" | "blue" | "green" | "faded-pink" | "red";
+  link?: string;
 }
 
+<<<<<<< HEAD
 export const GradientBox: FC<GradientBoxProps> = ({ title, text, color }) => {
 >>>>>>> aa99426 (Refactor gradientBox and solidColorBlock into component files)
+=======
+export const GradientBox: FC<Props> = ({ title, text, color, link }) => {
+>>>>>>> 1e8d24f (Modify gradient box section and make it responsive)
   let gradientColors;
 
   switch (color) {
@@ -54,6 +63,7 @@ export const GradientBox: FC<GradientBoxProps> = ({ title, text, color }) => {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   const content = (
     <div
       className={`w-full text-left bg-gradient-to-b ${gradientColors} rounded-2xl p-6 md:p-10  mx-auto  relative hover:scale-105 active:scale-95 transform duration-150`}
@@ -69,19 +79,20 @@ export const GradientBox: FC<GradientBoxProps> = ({ title, text, color }) => {
 };
 =======
   return (
+=======
+  const content = (
+>>>>>>> 1e8d24f (Modify gradient box section and make it responsive)
     <div
-      className={`w-full lg:h-full sm:h-fit h-full text-left bg-gradient-to-b ${gradientColors} rounded-2xl p-10 my-10 mx-auto min-h-2r0elative hover:scale-105 active:scale-95 transform`}
+      className={`w-full h-full text-left bg-gradient-to-b ${gradientColors} rounded-2xl p-6 md:p-10  mx-auto  relative hover:scale-105 active:scale-95 transform duration-150`}
     >
-      <div className="p-6">
-        <div className="text-white lg:text-lg md:text-md sm:text-sm font-bold">
-          <div className="absolute bottom-0 left-0 right-0 p-6">
-            <p className="text-white">{title}</p>
-            <p className="text-gray-400 overflow-hidden whitespace-wrap">{text}</p>
-          </div>
-        </div>
+      <div className="text-white cursor-default font-bold">
+        <p className="text-white text-md lg:text-xl">{title}</p>
+        <p className="text-gray-400 overflow-hidden whitespace-wrap text-sm lg:text-lg">{text}</p>
       </div>
     </div>
   );
+
+  return link ? <Link href={link}>{content}</Link> : content;
 };
 <<<<<<< HEAD
 >>>>>>> aa99426 (Refactor gradientBox and solidColorBlock into component files)

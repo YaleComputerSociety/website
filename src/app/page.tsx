@@ -180,47 +180,33 @@ const Home = () => {
           />
         </div>
 
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center gap-4">
           <TitleSubtitle
             title="Cultivating a passion for computer science"
             subtitle="From development mentorship to hacking nights, we create a community for programmers of all skill levels."
           />
-          <div className="flex flex-col md:flex-row w-3/4 h-3/4 mx-auto">
-            <Link
-              href="/products"
-              className="w-full md:w-1/2 mr-10 flex flex-grow hover:cursor-pointer transform transition-transform hover:scale-105 active:scale-95"
-            >
-              <GradientBox
-                title="Development"
-                color="blue"
-                text="Become a member of one of our software teams and help build apps that benefit the Yale and New Haven community."
-              />
-            </Link>
-            <div className="w-full md:w-1/2 flex flex-col justify-between">
-              <div className="mb-8 hover:cursor-pointer transform transition-transform hover:scale-105 active:scale-95">
-                <GradientBox
-                  title="Mentorship"
-                  color="pink"
-                  text="New to software engineering? Learn from mentors who have been there before with the y/cs Catalyst Program."
-                />
-              </div>
-              <Link
-                href="/events"
-                className="hover:cursor-pointer transform transition-transform hover:scale-105 active:scale-95"
-              >
-                <GradientBox
-                  title="Events"
-                  color="green"
-                  text="Help plan social events for students to meet and share their interests, as well as bring notable industry figures to Yale's campus."
-                />
-              </Link>
-            </div>
-          </div>
-          <div className="mt-10 w-full md:w-9/12 mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 w-3/4 mx-auto gap-8 mt-8">
+            <GradientBox
+              title="Development"
+              color="blue"
+              text="Become a member of one of our software teams and help build apps that benefit the Yale and New Haven community."
+              link="/products"
+            />
+            <GradientBox
+              title="Mentorship"
+              color="pink"
+              text="New to software engineering? Learn from mentors who have been there before with the y/cs Catalyst Program."
+            />
+            <GradientBox
+              title="Events"
+              color="green"
+              text="Help plan social events for students to meet and share their interests, as well as bring notable industry figures to Yale's campus."
+              link="/events"
+            />
             <GradientBox
               title="Computer Security"
               color="red"
-              text="Hear from students and professionals about the technical tricks of the trade, compete in fun Capture the Flag challenges to hone your skills and work with the development teams to secure their products."
+              text="Hear from students and professionals about the technical tricks of the trade, compete in Capture the Flag challenges, and work with the development teams to secure their products."
             />
           </div>
 

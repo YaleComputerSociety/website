@@ -42,6 +42,7 @@ const config: Config = {
         "ycs-blue": "#0071BC",
         "ycs-green": "#39A393",
 <<<<<<< HEAD
+<<<<<<< HEAD
         "ycs-security-red": "#890c0c",
         "ycs-gray": "#323844",
 =======
@@ -49,6 +50,9 @@ const config: Config = {
 <<<<<<< HEAD
 >>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
 =======
+=======
+        "ycs-security-red": "#890c0c",
+>>>>>>> 1e8d24f (Modify gradient box section and make it responsive)
         "ycs-gray": "#4c535f",
 >>>>>>> 42b7347 (Add relative padding to navbar and begin to create background y/cs)
       },
