@@ -5,7 +5,6 @@ import "@styles/globals.css";
 
 import Navbar from "@components/Navbar";
 import { Footer } from "@components/Footer";
-import { ParticleNetwork } from "@components/ParticleNetwork";
 
 const inter = Inter({ subsets: ["latin"] });
 // const mona = localFont({ src: "../fonts/Mona-Sans.woff2" });
@@ -27,7 +26,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
-        <ParticleNetwork />
         {children}
         <Footer />
       </body>
