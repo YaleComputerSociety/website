@@ -159,7 +159,7 @@ export const ParticleNetwork = () => {
 >>>>>>> 1d22529 (Move network particles to be overlapping in the correct location)
 =======
       <div
-        className={`h-[80vh] absolute inset-0 -z-10 opacity-0 animate-fade-in ${isParticlesLoaded ? "opacity-0 animate-fade-in" : ""}`}
+        className={`h-[80vh] absolute inset-0 -z-10 ${isParticlesLoaded && "opacity-0 animate-fade-in"}`}
       >
 >>>>>>> 4f18b83 (Fix particle fade in to only trigger once the engine is loaded)
         <Particles id="tsparticles" particlesLoaded={particlesLoaded} options={options} />
