@@ -27,6 +27,7 @@ export const Sponsors: React.FC = () => {
       />
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       <div className="mt-10 grid grid-cols-4 gap-y-4 justify-items-center md:w-3/4 md:mx-0 mx-5">
         <div
           style={{ gridArea: "1 / 1 / 2 / 6" }}
@@ -54,6 +55,12 @@ export const Sponsors: React.FC = () => {
           style={{ gridArea: "1 / 1 / 2 / 6" }}
           className="w-full h-28 rounded-full col-span-5 md:bg-[#323844]"
 >>>>>>> 428b2c4 (Make sponsors component responsive)
+=======
+      <div className="mt-10 grid grid-cols-4 gap-y-4 justify-items-center md:w-3/4 md:mx-0 mx-5">
+        <div
+          style={{ gridArea: "1 / 1 / 2 / 6" }}
+          className="w-full h-28 rounded-full md:bg-[#323844] row-span-1"
+>>>>>>> 6ed938b (Fix the rest of the bottom of the home page to be responsive. The whole page works on mobile now)
         />
         {PARTNERSHIPS.map((project, i) => (
           <Image
@@ -73,6 +80,7 @@ export const Sponsors: React.FC = () => {
         {PARTNERSHIPS.map((project, i) => (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           <div className="text-md text-gray-400 text-center row-span-1" key={i}>
 =======
           <div className="text-md text-gray-400" key={i}>
@@ -80,6 +88,9 @@ export const Sponsors: React.FC = () => {
 =======
           <div className="text-md text-gray-400 text-center" key={i}>
 >>>>>>> 428b2c4 (Make sponsors component responsive)
+=======
+          <div className="text-md text-gray-400 text-center row-span-1" key={i}>
+>>>>>>> 6ed938b (Fix the rest of the bottom of the home page to be responsive. The whole page works on mobile now)
             {project.name}
           </div>
         ))}
