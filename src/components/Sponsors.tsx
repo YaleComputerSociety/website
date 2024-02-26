@@ -26,6 +26,7 @@ export const Sponsors: React.FC = () => {
         className="mt-32"
       />
 
+<<<<<<< HEAD
       <div className="mt-10 grid grid-cols-4 gap-y-4 justify-items-center md:w-3/4 md:mx-0 mx-5">
         <div
           style={{ gridArea: "1 / 1 / 2 / 6" }}
@@ -47,6 +48,12 @@ export const Sponsors: React.FC = () => {
           style={{ backgroundColor: "#323844", gridArea: "1 / 1 / 2 / 6" }}
           className="w-full h-28 rounded-full col-span-5"
 >>>>>>> d6e3433 (Fix sponsors)
+=======
+      <div className="mt-10 grid grid-rows-2 grid-cols-4 gap-y-4 justify-items-center md:w-3/4 md:mx-0 mx-5">
+        <div
+          style={{ gridArea: "1 / 1 / 2 / 6" }}
+          className="w-full h-28 rounded-full col-span-5 md:bg-[#323844]"
+>>>>>>> 428b2c4 (Make sponsors component responsive)
         />
         {PARTNERSHIPS.map((project, i) => (
           <Image
@@ -65,10 +72,14 @@ export const Sponsors: React.FC = () => {
 
         {PARTNERSHIPS.map((project, i) => (
 <<<<<<< HEAD
+<<<<<<< HEAD
           <div className="text-md text-gray-400 text-center row-span-1" key={i}>
 =======
           <div className="text-md text-gray-400" key={i}>
 >>>>>>> d6e3433 (Fix sponsors)
+=======
+          <div className="text-md text-gray-400 text-center" key={i}>
+>>>>>>> 428b2c4 (Make sponsors component responsive)
             {project.name}
           </div>
         ))}

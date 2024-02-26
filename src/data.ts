@@ -40,7 +40,7 @@ import ericyoon from "./assets/people/ericyoon.jpeg";
 // partnerships import
 import meta from "./assets/partnerships/meta.png";
 import bloomberg from "./assets/partnerships/bloomberg.jpeg";
-import janestreet from "./assets/partnerships/JS Logo 2023.png";
+import janestreet from "./assets/partnerships/janestreet.jpeg";
 import tsai from "./assets/partnerships/tsaicity.png";
 
 export interface Person {
