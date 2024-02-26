@@ -1,21 +1,21 @@
 import Image from "next/image";
 
+import { TitleSubtitle } from "./TitleSubtitle";
+
 import { PARTNERSHIPS } from "@data";
 
 export const Sponsors: React.FC = () => {
   return (
-    <div>
-      <div className="w-3/4 m-20 mb-0 text-white text-6xl font-medium shadow-black text-shadow text-center">
-        Our Partners & Sponsors
-      </div>
-      <div className="text-gray-400 text-xl my-4 text-center">
-        y/cs Partners & Sponsors help make our goals a reality.
-      </div>
+    <>
+      <TitleSubtitle
+        title="Our Partners & Sponsors"
+        subtitle="y/cs Partners & Sponsors help make our goals a reality."
+      />
 
-      <div className="mt-10 grid grid-rows-2 grid-cols-4 gap-y-4 justify-items-center w-full">
+      <div className="mt-10 grid grid-cols-4 gap-y-4 justify-items-center md:w-3/4 md:mx-0 mx-5">
         <div
-          style={{ backgroundColor: "#323844", gridArea: "1 / 1 / 2 / 6" }}
-          className="w-full h-28 rounded-full col-span-5"
+          style={{ gridArea: "1 / 1 / 2 / 6" }}
+          className="w-full h-28 rounded-full md:bg-[#323844] row-span-1"
         />
         {PARTNERSHIPS.map((project, i) => (
           <Image
@@ -33,11 +33,11 @@ export const Sponsors: React.FC = () => {
         ))}
 
         {PARTNERSHIPS.map((project, i) => (
-          <div className="text-md text-gray-400" key={i}>
+          <div className="text-md text-gray-400 text-center row-span-1" key={i}>
             {project.name}
           </div>
         ))}
       </div>
-    </div>
+    </>
   );
 };
