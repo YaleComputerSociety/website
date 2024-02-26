@@ -98,7 +98,7 @@ export const ParticleNetwork = () => {
   if (init) {
     return (
       <div
-        className={`h-[80vh] absolute inset-0 -z-10 ${isParticlesLoaded && "opacity-0 animate-fade-in"}`}
+        className={`h-[80vh] absolute inset-0 -z-10 opacity-0 ${isParticlesLoaded && "opacity-0 animate-fade-in"}`}
       >
         <Particles id="tsparticles" particlesLoaded={particlesLoaded} options={options} />
       </div>
