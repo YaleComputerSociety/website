@@ -1,18 +1,18 @@
 import Image from "next/image";
 
+import { TitleSubtitle } from "./TitleSubtitle";
+
 import { PARTNERSHIPS } from "@data";
 
 export const Sponsors: React.FC = () => {
   return (
-    <div>
-      <div className="w-3/4 m-20 mb-0 text-white text-6xl font-medium shadow-black text-shadow text-center">
-        Our Partners & Sponsors
-      </div>
-      <div className="text-gray-400 text-xl my-4 text-center">
-        y/cs Partners & Sponsors help make our goals a reality.
-      </div>
+    <>
+      <TitleSubtitle
+        title="Our Partners & Sponsors"
+        subtitle="y/cs Partners & Sponsors help make our goals a reality."
+      />
 
-      <div className="mt-10 grid grid-rows-2 grid-cols-4 gap-y-4 justify-items-center w-full">
+      <div className="mt-10 grid grid-rows-2 grid-cols-4 gap-y-4 justify-items-center w-3/4">
         <div
           style={{ backgroundColor: "#323844", gridArea: "1 / 1 / 2 / 6" }}
           className="w-full h-28 rounded-full col-span-5"
@@ -38,6 +38,6 @@ export const Sponsors: React.FC = () => {
           </div>
         ))}
       </div>
-    </div>
+    </>
   );
 };
