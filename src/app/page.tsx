@@ -11,12 +11,25 @@ const Home = () => {
     <div>
       <ParticleNetwork />
 
-      {/* <div className="text-ycs-gray text-[30rem] font-black fixed -z-10 text-center w-full">
-        y/cs
-      </div> */}
-      <div className="flex flex-col z-20">
-        <p className="text-white text-left mt-20 lg:text-7xl md:text-6xl sm:text-6xl text-6xl shadow-black text-shadow mb-6 mr-10 ml-10 ">
-          We are the <br /> Yale Computer Society.
+      <div className="hidden md:flex justify-center items-center overflow-hidden fixed top-0 left-0 w-full h-full -z-10">
+        <div
+          className="text-white opacity-5 text-[20rem] md:text-[30rem] font-black text-center"
+          style={{
+            transform: "translateX(-50%)",
+            left: "50%",
+            position: "absolute",
+            fontSize: "calc(50vw + 1rem)",
+          }}
+        >
+          y/cs
+        </div>
+      </div>
+      <div className="flex flex-col">
+        <p className="text-white text-center font-extrabold text-4xl md:text-5xl mt-20 mb-3 ">
+          We are the
+        </p>
+        <p className="text-white text-center text-6xl md:text-8xl font-extrabold">
+          Yale Computer Society
         </p>
         <p className="text-gray-400 text-left lg:text-2xl md:text-xl sm:text-x shadow-black text-shadow mb-6 mr-10 ml-10">
           Yale&apos;s premier tech organization and software application incubator.
