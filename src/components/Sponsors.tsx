@@ -1,19 +1,28 @@
 import Image from "next/image";
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { TitleSubtitle } from "./TitleSubtitle";
 
 =======
 >>>>>>> d6e3433 (Fix sponsors)
+=======
+import { TitleSubtitle } from "./TitleSubtitle";
+
+>>>>>>> daf332c (Create TitleSubtitle component and apply to home page as well as sponsors component)
 import { PARTNERSHIPS } from "@data";
 
 export const Sponsors: React.FC = () => {
   return (
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> daf332c (Create TitleSubtitle component and apply to home page as well as sponsors component)
     <>
       <TitleSubtitle
         title="Our Partners & Sponsors"
         subtitle="y/cs Partners & Sponsors help make our goals a reality."
+<<<<<<< HEAD
         className="mt-32"
       />
 
@@ -29,8 +38,11 @@ export const Sponsors: React.FC = () => {
       <div className="text-gray-400 text-xl my-4 text-center">
         y/cs Partners & Sponsors help make our goals a reality.
       </div>
+=======
+      />
+>>>>>>> daf332c (Create TitleSubtitle component and apply to home page as well as sponsors component)
 
-      <div className="mt-10 grid grid-rows-2 grid-cols-4 gap-y-4 justify-items-center w-full">
+      <div className="mt-10 grid grid-rows-2 grid-cols-4 gap-y-4 justify-items-center w-3/4">
         <div
           style={{ backgroundColor: "#323844", gridArea: "1 / 1 / 2 / 6" }}
           className="w-full h-28 rounded-full col-span-5"
@@ -62,9 +74,13 @@ export const Sponsors: React.FC = () => {
         ))}
       </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
     </>
 =======
     </div>
 >>>>>>> d6e3433 (Fix sponsors)
+=======
+    </>
+>>>>>>> daf332c (Create TitleSubtitle component and apply to home page as well as sponsors component)
   );
 };

@@ -69,6 +69,7 @@ import { SolidColorBlock } from "../components/SolidColorBlock";
 
 import { Sponsors } from "@components/Sponsors";
 import { ParticleNetwork } from "@components/ParticleNetwork";
+import { TitleSubtitle } from "@components/TitleSubtitle";
 
 const Home = () => {
   return (
@@ -77,7 +78,7 @@ const Home = () => {
 
       <div className="hidden md:flex justify-center items-center overflow-hidden fixed top-0 left-0 w-full h-full -z-10">
         <div
-          className="text-white opacity-5 text-[20rem] md:text-[30rem] font-black text-center"
+          className="text-white opacity-[0.03] text-[20rem] md:text-[30rem] font-black text-center"
           style={{
             transform: "translateX(-50%)",
             left: "50%",
@@ -178,17 +179,12 @@ const Home = () => {
             desc={"across all y/cs applications."}
           />
         </div>
-        <br />
-        <br />
-        <div className="flex flex-col items-center">
-          <div className="w-3/4 mb-8 text-white lg:text-6xl md:text-xl sm:text-3xl text-3xl font-medium shadow-black text-shadow text-center">
-            Cultivating a passion for software development and computing
-          </div>
-          <div className="w-3/4 text-gray-400 text-2xl mb-10 text-center">
-            From development mentorship to hacking nights, we create a community for programmers of
-            all skill levels.
-          </div>
 
+        <div className="flex flex-col items-center">
+          <TitleSubtitle
+            title="Cultivating a passion for computer science"
+            subtitle="From development mentorship to hacking nights, we create a community for programmers of all skill levels."
+          />
           <div className="flex flex-col md:flex-row w-3/4 h-3/4 mx-auto">
             <Link
               href="/products"
