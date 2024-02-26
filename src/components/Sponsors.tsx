@@ -12,10 +12,10 @@ export const Sponsors: React.FC = () => {
         subtitle="y/cs Partners & Sponsors help make our goals a reality."
       />
 
-      <div className="mt-10 grid grid-rows-2 grid-cols-4 gap-y-4 justify-items-center md:w-3/4 md:mx-0 mx-5">
+      <div className="mt-10 grid grid-cols-4 gap-y-4 justify-items-center md:w-3/4 md:mx-0 mx-5">
         <div
           style={{ gridArea: "1 / 1 / 2 / 6" }}
-          className="w-full h-28 rounded-full col-span-5 md:bg-[#323844]"
+          className="w-full h-28 rounded-full md:bg-[#323844] row-span-1"
         />
         {PARTNERSHIPS.map((project, i) => (
           <Image
@@ -33,7 +33,7 @@ export const Sponsors: React.FC = () => {
         ))}
 
         {PARTNERSHIPS.map((project, i) => (
-          <div className="text-md text-gray-400 text-center" key={i}>
+          <div className="text-md text-gray-400 text-center row-span-1" key={i}>
             {project.name}
           </div>
         ))}

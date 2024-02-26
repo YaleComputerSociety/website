@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import { GradientBox } from "../components/GradientBox";
 import { SolidColorBlock } from "../components/SolidColorBlock";
 
@@ -91,20 +89,11 @@ const Home = () => {
 
           <Sponsors />
 
-          <div className="w-3/4 mt-20 mb-8 text-white text-5xl font-medium text-left">
-            Ready to join the best computer science club at Yale?
-          </div>
-          <div className="w-3/4 text-gray-400 text-left text-3xl font-normal mb-8">
-            The Fall 2024 Membership Application will open following the Extracirrcular Bazaar.
-          </div>
-          <div className="w-3/4 flex items-center">
-            <Link
-              href="/events"
-              className="w-44 h-12 relative bg-ycs-pink rounded-full text-white text-xl font-bold flex items-center text-center justify-center hover:cursor-pointer transform transition-transform hover:scale-105 active:scale-95"
-            >
-              Learn More
-            </Link>
-          </div>
+          <TitleSubtitle
+            title="Ready to join the best computer science club at Yale?"
+            subtitle="The Fall 2024 Membership Application will open following the Extracirrcular Bazaar."
+          />
+          <div className="mt-20" />
         </div>
       </div>
     </div>
