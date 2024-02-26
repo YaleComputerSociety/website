@@ -95,17 +95,21 @@ const Home = () => {
         <p className="text-white text-center text-6xl md:text-8xl font-extrabold">
           Yale Computer Society
         </p>
-        <p className="text-gray-400 text-left lg:text-2xl md:text-xl sm:text-x shadow-black text-shadow mb-6 mr-10 ml-10">
+        <p className="text-white text-center lg:text-xl md:text-lg text-md mt-6 md:mt-8 w-3/4 md:w-1/2 mx-auto">
           Yale&apos;s premier tech organization and software application incubator.
         </p>
 
-        <h1 className="text-white mt-20 mr-10 ml-10 text-center text-2xl">
+        <h1 className="text-white md:mt-[8vw] mt-16 text-center text-2xl w-3/4 mx-auto">
           We build and maintain student-run applications that power Yale University&apos;s campus
           community.
         </h1>
 
+<<<<<<< HEAD
         <div className="lg:flex lg:flex-row sm:flex-col mb-10 ml-20 mr-20">
 >>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
+=======
+        <div className="flex md:flex-row flex-col mt-10 gap-10 md:mx-10 mx-16">
+>>>>>>> c804257 (Alter the pink blocks section and make it responsive)
           <SolidColorBlock
             color={"ycs-pink"}
             title={"80+ developers"}
