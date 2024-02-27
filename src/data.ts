@@ -19,7 +19,7 @@ import katherine from "./assets/people/katherine.jpg";
 import lauren from "./assets/people/lauren.jpg";
 import addison from "./assets/people/addison.jpg";
 import nabil from "./assets/people/nabil.jpg";
-import ethan from "./assets/people/ethan.jpg";
+import ethan from "./assets/people/ethan.jpeg";
 import amina from "./assets/people/amina.png";
 import anna from "./assets/people/anna.jpeg";
 import daniel from "./assets/people/daniel.jpeg";
