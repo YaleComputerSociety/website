@@ -39,8 +39,8 @@ export const ProductCard = ({ product, roundedIcon }: Props) => {
             alt={product.name}
           />
         </div>
-        <div style={{ fontWeight: 500, fontSize: "25px", marginTop: "80px" }}>{product.name}</div>
-        <div style={{ fontWeight: 400, fontSize: "18px", margin: "40px 20px" }}>
+        <div className="font-semibold text-xl md:text-3xl mt-16">{product.name}</div>
+        <div className="font-normal text-md md:text-lg md:m-8 md:mt-4 m-4">
           {product.description}
         </div>
       </ConditionalWrapper>
