@@ -30,9 +30,10 @@ import "@styles/App.css";
 
 type ProductCardProps = {
   product: Project;
+  roundedIcon?: boolean;
 };
 
-const ProductCard = ({ product }: ProductCardProps) => {
+const ProductCard = ({ product, roundedIcon }: ProductCardProps) => {
   const ConditionalWrapper = ({
     condition,
     wrapper,
@@ -44,8 +45,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
   }) => (condition ? wrapper(children) : children);
   return (
     <div
-      className={product.link ? "project-card" : "project-card-no-link"}
-      style={{ display: "flex", flexDirection: "column", position: "relative" }}
+      className={`flex flex-col relative ${product.link ? "project-card" : "project-card-no-link"}`}
     >
       <ConditionalWrapper
         condition={product.link != null}
@@ -55,26 +55,12 @@ const ProductCard = ({ product }: ProductCardProps) => {
           </Link>
         )}
       >
-        <div
-          className="w-40 h-40"
-          style={{
-            backgroundColor: "#404859",
-            borderRadius: "50%",
-            position: "absolute",
-            top: "-80px",
-            left: "50%",
-            transform: "translate(-50%)",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
+        <div className="w-40 h-40 bg-ycs-gray rounded-full absolute top-[-80px] left-1/2 -translate-x-1/2 flex justify-center items-center">
           <Image
-            className="w-32 h-32"
+            className={`${roundedIcon ? "rounded-full w-32 h-32" : "w-28 h-28"}`}
             src={product.image}
             loading="lazy"
             alt={product.name}
-            style={{ borderRadius: "50%" }}
           />
         </div>
         <div style={{ fontWeight: 500, fontSize: "25px", marginTop: "80px" }}>{product.name}</div>
@@ -93,7 +79,7 @@ interface ProductGridProps {
 const ProductGrid = ({ live }: ProductGridProps) => (
   <div className="product-grid">
     {PROJECTS.filter((project) => project.live === live).map((project, i) => (
-      <ProductCard product={project} key={i} />
+      <ProductCard product={project} roundedIcon={project.shouldIconBeRounded} key={i} />
     ))}
   </div>
 >>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)

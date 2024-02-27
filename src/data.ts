@@ -174,6 +174,7 @@ export type Project = {
   link: string;
   live: boolean;
   description: string;
+  shouldIconBeRounded: boolean;
 };
 
 export const PROJECTS: Project[] = [
@@ -183,6 +184,7 @@ export const PROJECTS: Project[] = [
     link: "/products/coursetable",
     description: "A student-built courses browser used by nearly everyone at Yale.",
     live: true,
+    shouldIconBeRounded: false,
   },
   {
     name: "Yalies",
@@ -190,6 +192,7 @@ export const PROJECTS: Project[] = [
     link: "/products/yalies",
     description: "A directory that provides data on the Yale student body.",
     live: true,
+    shouldIconBeRounded: false,
   },
   {
     name: "YaleButteries",
@@ -197,6 +200,7 @@ export const PROJECTS: Project[] = [
     link: "/products/yalebutteries",
     description: "An app to transform the buttery experience at Yale.",
     live: false,
+    shouldIconBeRounded: true,
   },
 
   {
@@ -205,6 +209,7 @@ export const PROJECTS: Project[] = [
     link: "/products/ymeets",
     description: "A web application aimed to make it easier for Yalies to find a time to meet.",
     live: false,
+    shouldIconBeRounded: true,
   },
   {
     name: "RoomAdvisor",
@@ -212,6 +217,7 @@ export const PROJECTS: Project[] = [
     link: "/products/roomadvisor",
     description: "A website where Yale students can browse, rate, and review college rooms.",
     live: false,
+    shouldIconBeRounded: true,
   },
   {
     name: "AutoDonation",
@@ -220,6 +226,7 @@ export const PROJECTS: Project[] = [
     description:
       "An intuitive platform that helps nonprofits automate, collect, and track donations.",
     live: false,
+    shouldIconBeRounded: false,
   },
 ];
 
