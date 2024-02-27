@@ -43,10 +43,14 @@ export default function RootLayout({
   return (
     <html lang="en">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <body className={`bg-ycs-black text-white ${inter.className}`}>
 =======
       <body className={inter.className}>
 >>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
+=======
+      <body className={`bg-ycs-black ${inter.className}`}>
+>>>>>>> e793b80 (Attempt to fix background color bug)
         <Navbar />
         {children}
         <Footer />
