@@ -45,6 +45,7 @@ const config: Config = {
 <<<<<<< HEAD
         "ycs-security-red": "#890c0c",
         "ycs-gray": "#323844",
+<<<<<<< HEAD
 =======
         "ycs-security-red": "#590c0c",
 <<<<<<< HEAD
@@ -55,6 +56,8 @@ const config: Config = {
 >>>>>>> 1e8d24f (Modify gradient box section and make it responsive)
         "ycs-gray": "#4c535f",
 >>>>>>> 42b7347 (Add relative padding to navbar and begin to create background y/cs)
+=======
+>>>>>>> b3ae02a (Make events page responsive)
       },
       fontSize: {
         big: "200px",

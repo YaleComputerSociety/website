@@ -58,6 +58,7 @@ interface InfoCardProps {
 export const InfoCard = ({ data, description }: InfoCardProps) => (
   <div className="flex">
     <div
+      className="w-[300px] mx-auto md:w-full min-w-[200px]"
       style={{
         backgroundColor: "#323844",
         borderRadius: 25,
@@ -67,7 +68,6 @@ export const InfoCard = ({ data, description }: InfoCardProps) => (
         paddingBottom: 39,
         paddingTop: 64,
         color: "rgba(255, 255, 255, 0.50)",
-        width: 300,
         textAlign: "center",
       }}
     >

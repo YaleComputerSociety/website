@@ -40,7 +40,7 @@ export const SmallSectionTitle = ({header, subheader}: SmallSectionTitleProps) =
 }
 
 export const SmallSectionTitle = ({ header, subheader }: SmallSectionTitleProps) => (
-  <div className="py-10 w-full flex flex-col items-center">
+  <div className="py-10 flex flex-col items-center mx-5">
     <h1 style={{ fontSize: "25px", fontWeight: "700" }}>{header}</h1>
     <h4
       style={{
