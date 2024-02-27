@@ -6,14 +6,14 @@ import { TitleSubtitle } from "@components/TitleSubtitle";
 
 const About = () => {
   return (
-    <div className="flex justify-center items-center flex-col text-white">
+    <div className="flex justify-center items-center flex-col">
       <SectionTitle
         title="About Us"
         subtitle="The community for designers and engineers at Yale."
       />
 
       <div
-        className="bg-ycs-gray p-6 md:p-12 m-6 md:m-12 text-lg md:text-2xl"
+        className="bg-ycs-gray p-6 md:p-12 m-6 md:m-12 mb-0 md:mb-0 text-lg md:text-2xl"
         style={{
           borderRadius: 40,
         }}
