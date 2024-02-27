@@ -33,7 +33,7 @@ export const GradientBox: FC<Props> = ({ title, text, color, link }) => {
 
   const content = (
     <div
-      className={`w-full h-full text-left bg-gradient-to-b ${gradientColors} rounded-2xl p-6 md:p-10  mx-auto  relative hover:scale-105 active:scale-95 transform duration-150`}
+      className={`w-full text-left bg-gradient-to-b ${gradientColors} rounded-2xl p-6 md:p-10  mx-auto  relative hover:scale-105 active:scale-95 transform duration-150`}
     >
       <div className="text-white cursor-default font-bold">
         <p className="text-white text-md lg:text-xl">{title}</p>
