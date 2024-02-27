@@ -7,6 +7,7 @@ interface SectionTitleProps {
 }
 
 export const SectionTitle = ({ title: header, subtitle: subheader }: SectionTitleProps) => (
+<<<<<<< HEAD
   <div className="flex flex-col mx-5 mt-8">
     <div className="text-center py-10 self-center">
       <h1 className="md:text-8xl sm:text-7xl text-[2.3rem] font-bold text-ycs-pink sm:mb-5">
@@ -46,6 +47,15 @@ export const SectionTitle = ({ title: header, subtitle: subheader }: SectionTitl
       {header}
     </h1>
     <h4 className="text-lg mt-5">{subheader}</h4>
+=======
+  <div className="flex flex-col mx-5">
+    <div className="text-center py-10 max-w-xl self-center">
+      <h1 className="bg-ycs-pink py-4 px-8 rounded-md text-2xl md:text-5xl xl:text-7xl font-bold inline-block">
+        {header}
+      </h1>
+      <h4 className="text-lg mt-5">{subheader}</h4>
+    </div>
+>>>>>>> a12eeba (Add x margins to section title's subtitle)
   </div>
 );
 >>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
