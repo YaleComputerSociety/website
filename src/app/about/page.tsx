@@ -1,29 +1,24 @@
-import Image from "next/image";
-
 import { SectionTitle } from "@components/SectionTitle";
-import teamPhoto from "@assets/team.png";
-import { SmallSectionTitle } from "@components/SmallSectionTitle";
 import { InfoCard } from "@components/InfoCard";
 import { STORIES, TODAY_STATISTICS } from "@data";
 import { Sponsors } from "@components/Sponsors";
+import { TitleSubtitle } from "@components/TitleSubtitle";
 
 const About = () => {
   return (
-    <div className="flex justify-center items-center flex-col pr-40 pl-40 text-white">
-      <SectionTitle title="About Us" subtitle="The community for designers and engineers @ Yale." />
-
-      <Image src={teamPhoto} style={{ width: "auto", height: 344 }} alt="YCS Team" />
+    <div className="flex justify-center items-center flex-col text-white">
+      <SectionTitle
+        title="About Us"
+        subtitle="The community for designers and engineers at Yale."
+      />
 
       <div
+        className="bg-ycs-gray p-6 md:p-12 m-6 md:m-12 text-lg md:text-2xl"
         style={{
-          backgroundColor: "#323844",
-          padding: "10vh",
-          marginTop: "5vh",
-          marginBottom: "5vh",
           borderRadius: 40,
         }}
       >
-        <text className="text-2xl">
+        <text>
           As the place for CS at Yale, we&apos;re a team of computer science enthusiasts looking to
           revolutionize the campus and make students&apos; lives easier through the use of
           technology. As a cohort of product designers, software engineers, and computing
@@ -33,26 +28,28 @@ const About = () => {
         </text>
       </div>
 
-      <SmallSectionTitle
-        header={"Our Story"}
-        subheader={"The founding and growth of y/cs can be attributed to three crucial years."}
+      <TitleSubtitle
+        title="Our Story"
+        subtitle="The founding and growth of y/cs can be attributed to three crucial years."
+        className="mb-10"
       />
 
-      <div className="flex flex-row pt-10 gap-4" style={{ marginBottom: "5vh" }}>
+      <div className="flex flex-col md:flex-row pt-10 gap-16 md:gap-4 mx-10">
         {STORIES.map((story, i) => (
           <InfoCard data={story.data} description={story.description} key={i} />
         ))}
       </div>
 
-      <SmallSectionTitle header={"Today"} subheader={"By the Numbers"} />
+      <TitleSubtitle title="Today" subtitle="By the Numbers" className="mb-10" />
 
-      <div className="flex flex-row pt-10 gap-4" style={{ marginBottom: "10vh" }}>
+      <div className="flex flex-col md:flex-row pt-10 gap-16 md:gap-4 mx-10">
         {TODAY_STATISTICS.map((story, i) => (
           <InfoCard data={story.data} description={story.description} key={i} />
         ))}
       </div>
 
       <Sponsors />
+      <div className="mt-20" />
     </div>
   );
 };
