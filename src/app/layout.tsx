@@ -44,6 +44,7 @@ export default function RootLayout({
     <html lang="en">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <body className={`bg-ycs-black text-white ${inter.className}`}>
 =======
       <body className={inter.className}>
@@ -51,6 +52,9 @@ export default function RootLayout({
 =======
       <body className={`bg-ycs-black ${inter.className}`}>
 >>>>>>> e793b80 (Attempt to fix background color bug)
+=======
+      <body className={`bg-ycs-black text-white ${inter.className}`}>
+>>>>>>> f88d129 (Fix safari sponsors placement glitch; attempt to fix infrequent black text glitch)
         <Navbar />
         {children}
         <Footer />

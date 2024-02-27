@@ -32,6 +32,7 @@ const Team = () => {
   return (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <div className="flex flex-col mb-12">
       <SectionTitle title="Our Team" subtitle="Meet the people that make up the y/cs" />
       <TeamGrid title="Board" people={BOARD.slice(0, BOARD_CUTOFF)} />
@@ -105,6 +106,9 @@ const Team = () => {
 >>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
 =======
     <div className="flex flex-col align-middle">
+=======
+    <div className="flex flex-col">
+>>>>>>> f88d129 (Fix safari sponsors placement glitch; attempt to fix infrequent black text glitch)
       <SectionTitle title="Our Team" subtitle="Meet the people that make up the y/cs" />
       <TeamGrid title="Board" people={BOARD.slice(0, BOARD_CUTOFF)} />
       <TeamGrid title="Product Leads" people={BOARD.slice(BOARD_CUTOFF)} />

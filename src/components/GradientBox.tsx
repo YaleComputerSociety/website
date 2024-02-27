@@ -67,6 +67,7 @@ export const GradientBox: FC<Props> = ({ title, text, color, link }) => {
   const content = (
     <div
       className={`w-full text-left bg-gradient-to-b ${gradientColors} rounded-2xl p-6 md:p-10  mx-auto  relative hover:scale-105 active:scale-95 transform duration-150`}
+<<<<<<< HEAD
     >
       <div className="text-white cursor-default font-bold">
         <p className="text-white text-md lg:text-xl">{title}</p>
@@ -84,6 +85,8 @@ export const GradientBox: FC<Props> = ({ title, text, color, link }) => {
 >>>>>>> 1e8d24f (Modify gradient box section and make it responsive)
     <div
       className={`w-full h-full text-left bg-gradient-to-b ${gradientColors} rounded-2xl p-6 md:p-10  mx-auto  relative hover:scale-105 active:scale-95 transform duration-150`}
+=======
+>>>>>>> f88d129 (Fix safari sponsors placement glitch; attempt to fix infrequent black text glitch)
     >
       <div className="text-white cursor-default font-bold">
         <p className="text-white text-md lg:text-xl">{title}</p>
