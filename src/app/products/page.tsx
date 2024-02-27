@@ -12,6 +12,7 @@ interface Props {
 const ProductGrid = ({ live }: Props) => (
   <>
     <h2 className="text-2xl sm:text-4xl font-bold text-center mb-16 mt-10">
+<<<<<<< HEAD
       {live ? "Live Products" : "Products in Development"}
     </h2>
     <div className="product-grid">
@@ -48,6 +49,8 @@ const ProductGrid = ({ live }: ProductGridProps) => (
 const ProductGrid = ({ live }: Props) => (
   <>
     <h2 className="text-3xl font-bold text-center mb-16">
+=======
+>>>>>>> 663bb3d (Make products page a little more responsive; fully responsive now)
       {live ? "Live Products" : "Products in Development"}
     </h2>
     <div className="product-grid">

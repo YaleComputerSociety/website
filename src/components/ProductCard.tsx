@@ -49,12 +49,17 @@ export const ProductCard = ({ product, roundedIcon }: Props) => {
           />
         </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <div className="font-semibold text-xl md:text-3xl mt-16">{product.name}</div>
         <div className="font-normal text-md md:text-lg md:m-8 md:mt-4 m-4">
 =======
         <div style={{ fontWeight: 500, fontSize: "25px", marginTop: "80px" }}>{product.name}</div>
         <div style={{ fontWeight: 400, fontSize: "18px", margin: "40px 20px" }}>
 >>>>>>> e7167db (Refactor product card into its own component)
+=======
+        <div className="font-semibold text-xl md:text-3xl mt-16">{product.name}</div>
+        <div className="font-normal text-md md:text-lg md:m-8 md:mt-4 m-4">
+>>>>>>> 663bb3d (Make products page a little more responsive; fully responsive now)
           {product.description}
         </div>
       </ConditionalWrapper>
