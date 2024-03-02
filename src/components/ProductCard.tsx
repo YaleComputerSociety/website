@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ReactNode, ReactElement } from "react";
 import Image from "next/image";
+import nologoproduct1 from "../assets/products/logos/ycs.png";
 
 <<<<<<< HEAD
 import nologoproduct1 from "../assets/products/logos/ycs.png";
@@ -40,10 +41,14 @@ export const ProductCard = ({ product, roundedIcon }: Props) => {
           <Image
             className={`${roundedIcon ? "rounded-full w-32 h-32" : "w-28 h-28"} ${product.name == "Yalies" && "left-7 absolute"}`}
 <<<<<<< HEAD
+<<<<<<< HEAD
             src={product.logo ? product.logo : nologoproduct1}
 =======
             src={product.image}
 >>>>>>> e7167db (Refactor product card into its own component)
+=======
+            src={product.image? product.image : nologoproduct1 }
+>>>>>>> 406e299 (join page)
             loading="lazy"
             alt={product.name}
           />

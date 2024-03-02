@@ -88,10 +88,11 @@ export const navigationItems = [
   { name: "Products", link: "/products" },
   { name: "Events", link: "/events" },
   { name: "Team", link: "/team" },
+  {name : "Join", link : "/join"},
   {
     name: "Feedback",
     link: "https://airtable.com/appuVd3lWwTikuv40/shrLYVYcHUDQa8T3h",
-  },
+  }
 ];
 
 function Navbar() {
