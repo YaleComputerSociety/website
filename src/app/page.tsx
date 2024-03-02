@@ -1,11 +1,14 @@
+"use client"
+
 import { GradientBox } from "../components/GradientBox";
 import { SolidColorBlock } from "../components/SolidColorBlock";
-
 import { Sponsors } from "@components/Sponsors";
 import { ParticleNetwork } from "@components/ParticleNetwork";
 import { TitleSubtitle } from "@components/TitleSubtitle";
+import { Button } from "@components/Button";
 
 const Home = () => {
+
   return (
     <div>
       <ParticleNetwork />
@@ -99,7 +102,15 @@ const Home = () => {
           title="Ready to join the best computer science club at Yale?"
           subtitle="The Fall 2024 Membership Application will open following the Extracirrcular Bazaar."
         />
-        <div className="mt-20" />
+
+        <Button 
+          onClick={() => {}}
+          buttonText="Learn More"
+          disabled={false}
+          link="/join"
+        />        
+       
+
       </div>
     </div>
   );
