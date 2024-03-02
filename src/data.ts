@@ -42,6 +42,7 @@ import meta from "./assets/partnerships/meta.png";
 import bloomberg from "./assets/partnerships/bloomberg.jpeg";
 import janestreet from "./assets/partnerships/janestreet.jpeg";
 import tsai from "./assets/partnerships/tsaicity.png";
+import { TbFlagSearch } from "react-icons/tb";
 
 export interface Person {
   name: string;
@@ -170,8 +171,8 @@ export const BOARD: Person[] = [
 
 export type Project = {
   name: string;
-  image: StaticImageData;
-  link: string;
+  image: StaticImageData | undefined;
+  link: string | undefined;
   live: boolean;
   description: string;
   shouldIconBeRounded: boolean;
@@ -211,6 +212,34 @@ export const PROJECTS: Project[] = [
     live: false,
     shouldIconBeRounded: true,
   },
+
+  {
+    name: "MajorAudit",
+    description: "A web application aimed to make it easier for Yalies contextualize their four-year plan.",
+    shouldIconBeRounded: true,
+    live : false,
+    link : undefined,
+    image : undefined
+  },
+
+  {
+    name: "YaleClubs",
+    description: "A web application aimed to make it easy to find new clubs and groups on campus",
+    shouldIconBeRounded: true,
+    live : false,
+    link : undefined,
+    image : undefined
+  },
+
+  {
+    name: "YaleJournals",
+    description: "A web application that will make it easier to stay up to date with articles published on campus",
+    shouldIconBeRounded: true,
+    live : false,
+    link : undefined,
+    image : undefined
+  },
+
   {
     name: "RoomAdvisor",
     image: roomadvisor,
@@ -219,15 +248,7 @@ export const PROJECTS: Project[] = [
     live: false,
     shouldIconBeRounded: true,
   },
-  {
-    name: "AutoDonation",
-    image: autodonation,
-    link: "/products/autodonation",
-    description:
-      "An intuitive platform that helps nonprofits automate, collect, and track donations.",
-    live: false,
-    shouldIconBeRounded: false,
-  },
+
 ];
 
 export const MEDIA = [
