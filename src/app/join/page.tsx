@@ -146,16 +146,16 @@ const Join = () => {
     return (
       <div className="ml-32 mr-32">
         
-        <h1 className="text-8xl font-bold mt-10 text-ycs-pink mb-5">&lt;Come build with us /&gt;</h1>
+        <h1 className="lg:text-8xl md:text-6xl sm:text-6xl text-6xl font-bold mt-10 text-ycs-pink mb-5">&lt;Come build with us /&gt;</h1>
 
-        <p className="text-4xl text-left mb-10">We are Yale's largest collective of software developers, product designers, and computer science en
+        <p className="lg:text-4xl md:text-2xl sm:text-xl text-left mb-10">We are Yale's largest collective of software developers, product designers, and computer science en
         enthusiasts. We're excited that you're interested in joining us!
         </p>
 
-        <p className="text-3xl font-bold underline">Roles</p>
+        <p className="lg:text-3xl md:text-xl sm:text-xl text-xl font-bold underline">Roles</p>
         
 
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-8">
           {
 
             ROLES.map((r) => {
@@ -176,7 +176,8 @@ const Join = () => {
           
           <p className="text-xl">
   
-            Applications to join y/cs open at the beginning of each semester. There are three phases in the application
+            Applications to join y/cs open at the beginning of each semester. 
+            There are three phases in the application
             process.  
 
             <br></br>
@@ -211,6 +212,7 @@ const Join = () => {
           buttonText="Join"
           disabled={true}
           onClick={() => {console.log("hello")}}
+          link="none"
         />
       
       </div>
