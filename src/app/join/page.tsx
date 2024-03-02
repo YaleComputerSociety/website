@@ -40,7 +40,7 @@ const Join = () => {
         
         <h1 className="lg:text-8xl md:text-6xl sm:text-6xl text-6xl font-bold mt-10 text-ycs-pink mb-5">&lt;Come build with us /&gt;</h1>
 
-        <p className="lg:text-4xl md:text-2xl sm:text-xl text-left mb-10">We are Yale's largest collective of software developers, product designers, and computer science en
+        <p className="lg:text-4xl md:text-2xl sm:text-xl text-left mb-10">We are Yale's largest collective of software developers, product designers, and computer science 
         enthusiasts. We're excited that you're interested in joining us!
         </p>
 
