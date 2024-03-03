@@ -1,14 +1,15 @@
-"use client"
+"use client";
+
+import Link from "next/link";
 
 import { GradientBox } from "../components/GradientBox";
 import { SolidColorBlock } from "../components/SolidColorBlock";
+
 import { Sponsors } from "@components/Sponsors";
 import { ParticleNetwork } from "@components/ParticleNetwork";
 import { TitleSubtitle } from "@components/TitleSubtitle";
-import { Button } from "@components/Button";
 
 const Home = () => {
-
   return (
     <div>
       <ParticleNetwork />
@@ -34,18 +35,21 @@ const Home = () => {
         <p className="text-white text-center text-6xl md:text-8xl font-extrabold">
           Yale Computer Society
         </p>
-        
+
         <p className="text-white text-center lg:text-xl md:text-lg text-md mt-6 md:mt-8 w-3/4 md:w-1/2 mx-auto">
           Yale&apos;s premier tech and computer science organization
         </p>
 
-        <a className="text-ycs-pink text-xl underline text-center mt-8" href="https://github.com/yalecomputersociety">GitHub</a>
+        <a
+          className="text-ycs-pink text-xl underline text-center mt-8"
+          href="https://github.com/yalecomputersociety"
+        >
+          GitHub
+        </a>
 
         <h1 className="text-white md:mt-[8vw] text-center mt-16 text-2xl w-3/4 mx-auto">
-          We're a group of computer science students
-          that build software applications for Yale University&apos;s campus
-          community and connect over our
-          shared love for applied computing.
+          We&apos;re a group of computer science students that build software applications for Yale
+          University&apos;s campus community and connect over our shared love for applied computing.
         </h1>
 
         <div className="flex md:flex-row flex-col mt-10 gap-10 md:mx-10 mx-16">
@@ -103,14 +107,12 @@ const Home = () => {
           subtitle="The Fall 2024 Membership Application will open following the Extracirrcular Bazaar."
         />
 
-        <Button 
-          onClick={() => {}}
-          buttonText="Learn More"
-          disabled={false}
-          link="/join"
-        />        
-       
-
+        <Link
+          href="/join"
+          className="rounded-full disabled:opacity-50 font-bold text-xl hover:scale-105 bg-ycs-pink p-4 pl-12 pr-12 m-6"
+        >
+          Learn More
+        </Link>
       </div>
     </div>
   );
