@@ -10,6 +10,7 @@ export const Sponsors: React.FC = () => {
       <TitleSubtitle
         title="Our Partners & Sponsors"
         subtitle="y/cs Partners & Sponsors help make our goals a reality."
+        className="mt-32"
       />
 
       <div className="mt-10 grid grid-cols-4 gap-y-4 justify-items-center md:w-3/4 md:mx-0 mx-5">
