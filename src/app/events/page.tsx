@@ -6,7 +6,9 @@ interface Props {
 
 const GoogleCalendar: React.FC<Props> = ({ className }: Props) => {
   return (
-    <div className={`border-[0.75rem] rounded-xl border-solid border-ycs-pink ${className}`}>
+    <div
+      className={`border-[0.75rem] rounded-xl border-solid border-ycs-pink bg-white ${className}`}
+    >
       <iframe
         src="https://calendar.google.com/calendar/embed?src=t6isudodqcpb2uepck99jmjt3o%40group.calendar.google.com&ctz=America%2FNew_York"
         style={{ border: "0", width: "100%", height: "600px" }}
