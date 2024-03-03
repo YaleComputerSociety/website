@@ -21,8 +21,14 @@ const GoogleCalendar = () => {
 >>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
 =======
   return (
+<<<<<<< HEAD
     <div className={`border-[0.75rem] rounded-xl border-solid border-ycs-pink ${className}`}>
 >>>>>>> f34bcd0 (Reorganize events page and make responsive)
+=======
+    <div
+      className={`border-[0.75rem] rounded-xl border-solid border-ycs-pink bg-white ${className}`}
+    >
+>>>>>>> 3dd601d (Work on rewriting join page to be responsive and better laid out)
       <iframe
         src="https://calendar.google.com/calendar/embed?src=t6isudodqcpb2uepck99jmjt3o%40group.calendar.google.com&ctz=America%2FNew_York"
         style={{ border: "0", width: "100%", height: "600px" }}

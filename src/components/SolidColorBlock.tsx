@@ -32,7 +32,7 @@ interface Props {
 
 export const SolidColorBlock: React.FC<Props> = (props: Props) => {
   return (
-    <div className={`w-full bg-${props.color} m-5 ml-2 mr-2 rounded-lg text-center`}>
+    <div className={`w-full bg-${props.color} ml-2 mr-2 rounded-lg text-center`}>
       <div className="p-6">
         <div className="text-white lg:text-5xl text-3xl font-bold mb-2">
           <p>{props.title}</p>
