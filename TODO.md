@@ -11,7 +11,7 @@ Please add anything you think of, and make sure to keep this list up-to-date as 
 =======
 Please add anything you think of, and make sure to keep this list up-to-date!
 
-- Security team page
+- Communities page (y/cs communities tbd)
 - Carousel on the home page of all the products, preferably hyper-animated
 - custom font: space grotesque? Github-Mono?
 >>>>>>> 918876a (Add todo.md file)
