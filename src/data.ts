@@ -241,6 +241,16 @@ export const PROJECTS: Project[] = [
   },
 
   {
+    name: "YaleIMs",
+    description: "An app that will unite the Yale IMs experience.",
+    shouldIconBeRounded: true,
+    live : false,
+    link : undefined,
+    image : undefined
+  },
+
+
+  {
     name: "RoomAdvisor",
     image: roomadvisor,
     link: "/products/roomadvisor",
