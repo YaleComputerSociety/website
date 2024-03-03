@@ -36,7 +36,7 @@ const ROLES = [
 const Join = () => {
 
     return (
-      <div className="ml-32 mr-32">
+      <div className="lg:ml-32 lg:mr-32 md:ml-20 md:mr-20 sm:ml-16 sm:mr-16 mr-20 ml-20">
         
         <h1 className="lg:text-8xl md:text-6xl sm:text-6xl text-6xl font-bold mt-10 text-ycs-pink mb-5">&lt;Come build with us /&gt;</h1>
 
