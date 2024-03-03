@@ -4,7 +4,7 @@ Hey y/cs website builders! Here's a list of things to be implemented at some poi
 
 Please add anything you think of, and make sure to keep this list up-to-date!
 
-- Security team page
+- Communities page (y/cs communities tbd)
 - Carousel on the home page of all the products, preferably hyper-animated
 - custom font: space grotesque? Github-Mono?
 - Design a more pleasing y/cs logo to go in the top right
