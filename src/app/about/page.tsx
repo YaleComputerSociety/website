@@ -31,7 +31,7 @@ const About = () => {
       <TitleSubtitle
         title="Our Story"
         subtitle="The founding and growth of y/cs can be attributed to three crucial years."
-        className="mb-10"
+        className="mb-10 mt-32"
       />
 
       <div className="flex flex-col md:flex-row pt-10 gap-16 md:gap-4 mx-10">
@@ -40,7 +40,7 @@ const About = () => {
         ))}
       </div>
 
-      <TitleSubtitle title="Today" subtitle="By the Numbers" className="mb-10" />
+      <TitleSubtitle title="Today" subtitle="By the Numbers" className="mb-10 mt-32" />
 
       <div className="flex flex-col md:flex-row pt-10 gap-16 md:gap-4 mx-10">
         {TODAY_STATISTICS.map((story, i) => (
