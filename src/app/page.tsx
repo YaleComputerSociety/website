@@ -95,7 +95,7 @@ const Home = () => {
           <GradientBox
             title="Community"
             color="red"
-            text="Join one of our y/cs communities to meet people of similar Computer Science interests to yourself. Our most popular community is Computer Security."
+            text="Join a y/cs community such as the Cybersecurity Community to meet people of similar computer science interests to yourself."
             link={"https://forms.gle/C4JvNKg5R19Khnpi9"}
           />
         </div>
