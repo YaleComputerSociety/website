@@ -183,6 +183,7 @@ const Join = () => {
         className="mb-10 mt-32"
       />
 
+<<<<<<< HEAD
       <div>
         <p className="text-xl">
 >>>>>>> 3dd601d (Work on rewriting join page to be responsive and better laid out)
@@ -205,6 +206,25 @@ const Join = () => {
           Based on your written application and interview you are placed on a y/cs team. Some teams
           are competitive to join, while others are non-competitive.
         </p>
+=======
+      <div className="bg-ycs-gray md:mx-10 mx-8 md:p-10 p-8 rounded-2xl md:text-2xl text-lg">
+        <span className="font-bold">1. Written Application</span>
+        <br></br>
+        Applicants are evaluated based on submitted short responses, resumé and past relevant
+        experiences.
+        <br></br>
+        <br></br>
+        <span className="font-bold">2. Interview</span>
+        <br></br>
+        Successful applicants are moved to an interview phase. Those applying for technical roles
+        likely recieve technical questions. Not all teams require interviews.
+        <br></br>
+        <br></br>
+        <span className="font-bold">3. Team Placement</span>
+        <br></br>
+        Based on your written application and interview you are placed on a y/cs team. Some teams
+        are competitive to join, while others are non-competitive.
+>>>>>>> 363872d (Finish cleaning up join page & making responsive)
       </div>
 
 <<<<<<< HEAD

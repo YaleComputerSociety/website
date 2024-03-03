@@ -57,7 +57,7 @@ const About = () => {
       />
 
       <div
-        className="bg-ycs-gray p-6 md:p-12 m-6 md:m-12 mb-0 md:mb-0 text-lg md:text-2xl"
+        className="bg-ycs-gray p-8 md:p-12 m-8 md:m-12 mb-0 md:mb-0 text-lg md:text-2xl"
         style={{
           borderRadius: 40,
         }}
