@@ -34,6 +34,7 @@ const ROLES = [
 ];
 
 const Join = () => {
+<<<<<<< HEAD
   return (
     <>
       <SectionTitle
@@ -43,6 +44,18 @@ const Join = () => {
           us!"
       />
       <div className="ml-32 mr-32">
+=======
+
+    return (
+      <div className="lg:ml-32 lg:mr-32 md:ml-20 md:mr-20 sm:ml-16 sm:mr-16 mr-20 ml-20">
+        
+        <h1 className="lg:text-8xl md:text-6xl sm:text-6xl text-6xl font-bold mt-10 text-ycs-pink mb-5">&lt;Come build with us /&gt;</h1>
+
+        <p className="lg:text-4xl md:text-2xl sm:text-xl text-left mb-10">We are Yale's largest collective of software developers, product designers, and computer science 
+        enthusiasts. We're excited that you're interested in joining us!
+        </p>
+
+>>>>>>> 3225ddd (fixed join page mobile)
         <p className="lg:text-3xl md:text-xl sm:text-xl text-xl font-bold underline">Roles</p>
 
         <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-8">
