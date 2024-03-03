@@ -23,6 +23,9 @@ export const Sponsors: React.FC = () => {
         title="Our Partners & Sponsors"
         subtitle="y/cs Partners & Sponsors help make our goals a reality."
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4d54a93 (Fix titleSubtitle margin top spacing)
         className="mt-32"
       />
 

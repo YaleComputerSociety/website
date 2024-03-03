@@ -8,6 +8,7 @@ export const TitleSubtitle: React.FC<Props> = ({ title, subtitle, className }: P
   return (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <div className={`w-3/4 flex flex-col items-center mx-auto ${className}`}>
       <div className="text-white lg:text-6xl text-3xl font-bold text-center">{title}</div>
 =======
@@ -18,6 +19,9 @@ export const TitleSubtitle: React.FC<Props> = ({ title, subtitle, className }: P
 >>>>>>> daf332c (Create TitleSubtitle component and apply to home page as well as sponsors component)
 =======
     <div className={`w-3/4 mt-40 flex flex-col items-center mx-auto ${className}`}>
+=======
+    <div className={`w-3/4 flex flex-col items-center mx-auto ${className}`}>
+>>>>>>> 4d54a93 (Fix titleSubtitle margin top spacing)
       <div className="text-white lg:text-6xl text-3xl font-bold text-center">{title}</div>
 >>>>>>> b3ae02a (Make events page responsive)
       <div className=" text-gray-400 lg:text-2xl text-lg mt-5 text-center">{subtitle}</div>

@@ -206,6 +206,7 @@ const Home = () => {
         <TitleSubtitle
           title="Cultivating a passion for the computer science industry"
           subtitle="From development mentorship to hacking nights, we create a community for programmers of all skill levels."
+          className="mt-32"
         />
         <div className="grid grid-cols-1 md:grid-cols-2 w-3/4 mx-auto gap-8 mt-8">
           <GradientBox
@@ -252,6 +253,7 @@ const Home = () => {
         <TitleSubtitle
           title="Ready to join the best computer science club at Yale?"
           subtitle="The Fall 2024 Membership Application will open following the Extracirrcular Bazaar."
+          className="mt-32"
         />
 <<<<<<< HEAD
         <div className="mt-20" />

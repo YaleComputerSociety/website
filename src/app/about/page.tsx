@@ -75,7 +75,7 @@ const About = () => {
       <TitleSubtitle
         title="Our Story"
         subtitle="The founding and growth of y/cs can be attributed to three crucial years."
-        className="mb-10"
+        className="mb-10 mt-32"
       />
 
 <<<<<<< HEAD
@@ -98,6 +98,7 @@ const About = () => {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <TitleSubtitle title="Today" subtitle="By the Numbers" className="mb-10 mt-32" />
 
       <div className="flex flex-col md:flex-row pt-10 gap-16 md:gap-4 mx-10">
@@ -115,6 +116,9 @@ const About = () => {
 >>>>>>> 449454f (Adjust section title to be fully responsive')
 =======
       <TitleSubtitle title="Today" subtitle="By the Numbers" className="mb-10" />
+=======
+      <TitleSubtitle title="Today" subtitle="By the Numbers" className="mb-10 mt-32" />
+>>>>>>> 4d54a93 (Fix titleSubtitle margin top spacing)
 
       <div className="flex flex-col md:flex-row pt-10 gap-16 md:gap-4 mx-10">
 >>>>>>> b3ae02a (Make events page responsive)

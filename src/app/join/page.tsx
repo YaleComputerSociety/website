@@ -159,10 +159,8 @@ const Join = () => {
       <TitleSubtitle
         title="Roles"
         subtitle="Explore the diverse opportunities to contribute and grow with our dynamic team."
-        className="mb-10 mt-0"
+        className="mb-10"
       />
-
-      {/* <div className="flex md:flex-row flex-col mt-10 gap-10 md:mx-10 mx-16"> */}
 
       <div className="grid md:grid-cols-2 grid-cols-1 gap-8 md:mx-10 mx-16">
         {ROLES.map((r, index) => {
@@ -182,7 +180,7 @@ const Join = () => {
         title="Application Process"
         subtitle="Applications to join y/cs open at the beginning of each semester. There are three phases
         in the application process."
-        className="mb-10"
+        className="mb-10 mt-32"
       />
 
       <div>
