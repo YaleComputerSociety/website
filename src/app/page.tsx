@@ -1,11 +1,14 @@
+"use client"
+
 import { GradientBox } from "../components/GradientBox";
 import { SolidColorBlock } from "../components/SolidColorBlock";
-
 import { Sponsors } from "@components/Sponsors";
 import { ParticleNetwork } from "@components/ParticleNetwork";
 import { TitleSubtitle } from "@components/TitleSubtitle";
+import { Button } from "@components/Button";
 
 const Home = () => {
+
   return (
     <div>
       <ParticleNetwork />
@@ -31,13 +34,18 @@ const Home = () => {
         <p className="text-white text-center text-6xl md:text-8xl font-extrabold">
           Yale Computer Society
         </p>
+        
         <p className="text-white text-center lg:text-xl md:text-lg text-md mt-6 md:mt-8 w-3/4 md:w-1/2 mx-auto">
-          Yale&apos;s premier tech organization and software application incubator.
+          Yale&apos;s premier tech and computer science organization
         </p>
 
-        <h1 className="text-white md:mt-[8vw] mt-16 text-center text-2xl w-3/4 mx-auto">
-          We build and maintain student-run applications that power Yale University&apos;s campus
-          community.
+        <a className="text-ycs-pink text-xl underline text-center mt-8" href="https://github.com/yalecomputersociety">GitHub</a>
+
+        <h1 className="text-white md:mt-[8vw] text-center mt-16 text-2xl w-3/4 mx-auto">
+          We're a group of computer science students
+          that build software applications for Yale University&apos;s campus
+          community and connect over our
+          shared love for applied computing.
         </h1>
 
         <div className="flex md:flex-row flex-col mt-10 gap-10 md:mx-10 mx-16">
@@ -59,7 +67,7 @@ const Home = () => {
         </div>
 
         <TitleSubtitle
-          title="Cultivating a passion for computer science"
+          title="Cultivating a passion for the computer science industry"
           subtitle="From development mentorship to hacking nights, we create a community for programmers of all skill levels."
         />
         <div className="grid grid-cols-1 md:grid-cols-2 w-3/4 mx-auto gap-8 mt-8">
@@ -81,9 +89,10 @@ const Home = () => {
             link="/events"
           />
           <GradientBox
-            title="Computer Security"
+            title="Community"
             color="red"
-            text="Hear from professionals, compete in Capture the Flag challenges, and work with the development teams to secure their products."
+            text="Join one of our y/cs communities to meet people of similar Computer Science interests to yourself. Our most popular community is Computer Security."
+            link={"https://forms.gle/C4JvNKg5R19Khnpi9"}
           />
         </div>
 
@@ -93,7 +102,15 @@ const Home = () => {
           title="Ready to join the best computer science club at Yale?"
           subtitle="The Fall 2024 Membership Application will open following the Extracirrcular Bazaar."
         />
-        <div className="mt-20" />
+
+        <Button 
+          onClick={() => {}}
+          buttonText="Learn More"
+          disabled={false}
+          link="/join"
+        />        
+       
+
       </div>
     </div>
   );
