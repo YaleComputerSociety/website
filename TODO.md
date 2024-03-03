@@ -3,6 +3,7 @@
 Hey y/cs website builders! Here's a list of things to be implemented at some point, in no particular order
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Please add anything you think of, and make sure to keep this list up-to-date as you complete things!
 
 - Communities page (y/cs communities tbd)
@@ -15,6 +16,13 @@ Please add anything you think of, and make sure to keep this list up-to-date!
 - Carousel on the home page of all the products, preferably hyper-animated
 - custom font: space grotesque? Github-Mono?
 >>>>>>> 918876a (Add todo.md file)
+=======
+Please add anything you think of, and make sure to keep this list up-to-date as you complete things!
+
+- Communities page (y/cs communities tbd)
+- Carousel on the home page of all the products, preferably hyper-animated
+- custom font: Roboto? Github-Mono?
+>>>>>>> c17f8d5 (Update todo)
 - Design a more pleasing y/cs logo to go in the top right
   - Maybe to fit in with the gradient background logo design, have an orange-pink or purple-pink y/cs gradient behind the y/cs? If you go with this, animate it like a button
 - Redesign the products page
@@ -24,10 +32,14 @@ Please add anything you think of, and make sure to keep this list up-to-date!
   - Then, every time there is some big news, e.g. a new product is released or applications are open, we can set up the banner very easily
   - Ideally this would be reusable across most/all other products
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Redesign join page's timeline
 =======
 - Application info + timeline page (?)
 >>>>>>> 918876a (Add todo.md file)
+=======
+- Redesign join page's timeline
+>>>>>>> c17f8d5 (Update todo)
 - secrets! A bunch of fun secrets throughout the website. Here are some random
   - console.log hidden game
   - scrolling past the bottom really fast (there's a bounce animation) reveals something
@@ -37,6 +49,7 @@ Please add anything you think of, and make sure to keep this list up-to-date!
 - Make an internal list of things in the repo that consists of parts of the website that need to be regularly updated (team photos, dev products, banners, front page stats, sponsors, etc.)
 - Dive into SEO
 <<<<<<< HEAD
+<<<<<<< HEAD
   - make "ycs" associated with the website (y/cs is, but searching yale ycs won't get anything)
 - Google search analytics
 - Redesign the sponsors component
@@ -44,10 +57,13 @@ Please add anything you think of, and make sure to keep this list up-to-date!
 - Redesign the about page and especially rewrite it
 =======
   - make y/cs and ycs associated with the website
+=======
+  - make "y/cs" and "ycs" associated with the website
+>>>>>>> c17f8d5 (Update todo)
 - Google search analytics
 - Redesign the sponsors component
 - Make a sponsorship page or some sort of clear way for potential sponsors to get in touch, more than just the footer
-- Redesign the about page
+- Redesign the about page and especially rewrite it
 - Make the individual product pages responsive; potentially redesign them?
 - Increase the resolution of the individual product page pictures
 >>>>>>> 918876a (Add todo.md file)
@@ -58,6 +74,7 @@ Please add anything you think of, and make sure to keep this list up-to-date!
 - Fade the network particles at their edges so they don't abruptly cut out
 - Add github/linkedin/personal website icon-links to the people on the team page
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Explain the page structure, nextjs, vercel, and cloudflare on the readme
 - Add more personality! The &lt;About Us /&gt; type of headers are a good start
 - Find some way to ensure people working on the project are actually using eslint... hopefully not by explicitly forcing eslint in the compiler
@@ -66,3 +83,8 @@ Please add anything you think of, and make sure to keep this list up-to-date!
 =======
 - explain the page structure, nextjs, vercel, and cloudflare on the readme
 >>>>>>> 918876a (Add todo.md file)
+=======
+- Explain the page structure, nextjs, vercel, and cloudflare on the readme
+- Add more personality! The &lt;About Us /&gt; type of headers are a good start
+- Find some way to ensure people working on the project are actually using eslint
+>>>>>>> c17f8d5 (Update todo)
