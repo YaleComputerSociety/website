@@ -194,6 +194,7 @@ const Home = () => {
         <Link
           href="/join"
           className="rounded-full disabled:opacity-50 font-bold text-xl hover:scale-105 duration-200 bg-ycs-pink p-4 pl-12 pr-12 m-6"
+<<<<<<< HEAD
         >
           Learn More
         </Link>
@@ -274,6 +275,8 @@ const Home = () => {
         <Link
           href="/join"
           className="rounded-full disabled:opacity-50 font-bold text-xl hover:scale-105 bg-ycs-pink p-4 pl-12 pr-12 m-6"
+=======
+>>>>>>> d4f4465 (Improve top left ycs logo)
         >
           Learn More
         </Link>

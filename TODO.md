@@ -50,6 +50,7 @@ Please add anything you think of, and make sure to keep this list up-to-date as 
 - Dive into SEO
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - make "ycs" associated with the website (y/cs is, but searching yale ycs won't get anything)
 - Google search analytics
 - Redesign the sponsors component
@@ -60,6 +61,9 @@ Please add anything you think of, and make sure to keep this list up-to-date as 
 =======
   - make "y/cs" and "ycs" associated with the website
 >>>>>>> c17f8d5 (Update todo)
+=======
+  - make "ycs" associated with the website (y/cs is, but searching yale ycs won't get anything)
+>>>>>>> d4f4465 (Improve top left ycs logo)
 - Google search analytics
 - Redesign the sponsors component
 - Make a sponsorship page or some sort of clear way for potential sponsors to get in touch, more than just the footer

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ReactNode, ReactElement } from "react";
 import Image from "next/image";
+
 import nologoproduct1 from "../assets/products/logos/ycs.png";
 
 <<<<<<< HEAD
@@ -42,6 +43,7 @@ export const ProductCard = ({ product, roundedIcon }: Props) => {
             className={`${roundedIcon ? "rounded-full w-32 h-32" : "w-28 h-28"} ${product.name == "Yalies" && "left-7 absolute"}`}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             src={product.logo ? product.logo : nologoproduct1}
 =======
             src={product.image}
@@ -49,6 +51,9 @@ export const ProductCard = ({ product, roundedIcon }: Props) => {
 =======
             src={product.image? product.image : nologoproduct1 }
 >>>>>>> 406e299 (join page)
+=======
+            src={product.image ? product.image : nologoproduct1}
+>>>>>>> d4f4465 (Improve top left ycs logo)
             loading="lazy"
             alt={product.name}
           />
