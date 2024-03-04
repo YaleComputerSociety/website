@@ -111,7 +111,7 @@ const Home = () => {
 
         <Link
           href="/join"
-          className="rounded-full disabled:opacity-50 font-bold text-xl hover:scale-105 bg-ycs-pink p-4 pl-12 pr-12 m-6"
+          className="rounded-full disabled:opacity-50 font-bold text-xl hover:scale-105 duration-200 bg-ycs-pink p-4 pl-12 pr-12 m-6"
         >
           Learn More
         </Link>
