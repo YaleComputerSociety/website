@@ -3,7 +3,7 @@ import { StaticImageData } from "next/image";
 
 import coursetable from "./assets/products/logos/coursetable.png";
 import yalies from "./assets/products/logos/yalies.png";
-import ymeets from "./assets/products/logos/ymeets.png";
+import ymeets from "./assets/products/logos/ymeetslogo.png";
 import yalebutteries from "./assets/products/logos/yalebutteries.jpg";
 import roomadvisor from "./assets/products/logos/roomadvisor.png";
 import autodonation from "./assets/products/logos/autodonation.svg";
