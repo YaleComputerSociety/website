@@ -11,11 +11,11 @@ export const navigationItems = [
   { name: "Products", link: "/products" },
   { name: "Events", link: "/events" },
   { name: "Team", link: "/team" },
-  {name : "Join", link : "/join"},
+  { name: "Join", link: "/join" },
   {
     name: "Feedback",
     link: "https://airtable.com/appuVd3lWwTikuv40/shrLYVYcHUDQa8T3h",
-  }
+  },
 ];
 
 function Navbar() {
@@ -39,14 +39,14 @@ function Navbar() {
   return (
     <>
       <nav className="flex items-center justify-between bg-ycs-black text-white p-6 w-full fixed z-20 top-0">
-        <div>
-          <Link
-            href="/"
-            className="font-black pl-2 text-3xl hover:scale-110 transition-transform duration-300 inline-block"
-          >
+        <Link href="/" className="font-extrabold pl-2 text-3xl">
+          <div className="transition-transform duration-300 hover:translate-y-[0.075rem] hover:translate-x-[0.075rem] active:translate-y-[0.2rem] active:translate-x-[0.2rem] active:duration-100">
             y/cs
-          </Link>
-        </div>
+          </div>
+          <div className="font-black absolute left-[2.2rem] top-[1.95rem] -z-10 bg-gradient-to-r from-ycs-pink to-ycs-pink text-transparent bg-clip-text">
+            y/cs
+          </div>
+        </Link>
         {isMobile ? (
           <NavbarMobileMenu />
         ) : (

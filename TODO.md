@@ -24,7 +24,7 @@ Please add anything you think of, and make sure to keep this list up-to-date as 
 - Improve the load time for the network particles—if you throttle the network speed and disable cache, you'll see that it takes a really long time sometimes for the particles to load in. This intuitively should not be resource intensive, so making it faster should be doable
 - Make an internal list of things in the repo that consists of parts of the website that need to be regularly updated (team photos, dev products, banners, front page stats, sponsors, etc.)
 - Dive into SEO
-  - make "y/cs" and "ycs" associated with the website
+  - make "ycs" associated with the website (y/cs is, but searching yale ycs won't get anything)
 - Google search analytics
 - Redesign the sponsors component
 - Make a sponsorship page or some sort of clear way for potential sponsors to get in touch, more than just the footer
