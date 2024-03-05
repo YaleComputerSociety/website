@@ -145,6 +145,10 @@ const ROLES = [
     title: "Event Planner",
     desc: "Help plan Events for members of the Society. Past events include the y/cs Gala, Demo Day, Murder Mystery, and more!",
   },
+  {
+    title : "Community Member",
+    desc : "Become an active member of one of the y/cs computer science interest commmunities."
+  }
 ];
 
 const Join = () => {
