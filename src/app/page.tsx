@@ -27,12 +27,20 @@ const Home = () => {
           y/cs
         </div>
       </div>
+      {/* <div className="transition-transform duration-300 hover:translate-y-[0.075rem] hover:translate-x-[0.075rem] active:translate-y-[0.2rem] active:translate-x-[0.2rem] active:duration-100">
+            y/cs
+          </div>
+          <div className="font-black absolute left-[2.2rem] top-[1.95rem] -z-10 bg-gradient-to-r from-ycs-pink to-ycs-pink text-transparent bg-clip-text">
+            y/cs
+          </div> */}
 
       <div className="flex flex-col items-center">
-        <p className="text-white text-center font-extrabold text-4xl md:text-5xl mt-20 mb-3 ">
+        <p 
+        
+        className="text-white drop-shadow-lg text-center font-extrabold text-4xl md:text-5xl mt-20 mb-3 -z-10 bg-gradient-to-r from-ycs-pink to-ycs-pink text-transparent bg-clip-text">
           We are the
         </p>
-        <p className="text-white text-center text-6xl md:text-8xl font-extrabold">
+        <p className="text-white drop-shadow-lg text-center text-6xl md:text-8xl font-extrabold">
           Yale Computer Society
         </p>
 
@@ -41,7 +49,7 @@ const Home = () => {
         </p>
 
         <a
-          className="text-ycs-pink text-xl underline text-center mt-8"
+          className="text-ycs-pink text-xl underline text-center mt-8 transition-transform duration-300 hover:translate-y-[0.075rem] hover:translate-x-[0.075rem] active:translate-y-[0.2rem] active:translate-x-[0.2rem] active:duration-100"
           href="https://github.com/yalecomputersociety"
         >
           GitHub
