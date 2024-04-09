@@ -146,9 +146,9 @@ const ROLES = [
     desc: "Help plan Events for members of the Society. Past events include the y/cs Gala, Demo Day, Murder Mystery, and more!",
   },
   {
-    title : "Community Member",
-    desc : "Become an active member of one of the y/cs computer science interest commmunities."
-  }
+    title: "Community Member",
+    desc: "Become an active member of one of the y/cs computer science interest commmunities.",
+  },
 ];
 
 const Join = () => {
@@ -214,7 +214,7 @@ const Join = () => {
       <div className="bg-ycs-gray md:mx-10 mx-8 md:p-10 p-8 rounded-2xl md:text-2xl text-lg">
         <span className="font-bold">1. Written Application</span>
         <br></br>
-        Applicants are evaluated based on submitted short responses, resumé and past relevant
+        Applicants are evaluated based on submitted short responses, resume and past relevant
         experiences.
         <br></br>
         <br></br>
