@@ -73,7 +73,7 @@ const Home = () => {
           />
           <SolidColorBlock
             color={"ycs-pink"}
-            title={"20,000+ unqiue users"}
+            title={"20,000+ unique users"}
             desc={"across all y/cs applications."}
           />
         </div>
