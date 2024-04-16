@@ -155,6 +155,9 @@ const Home = () => {
           <SolidColorBlock
             color={"ycs-pink"}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 97fb659 (Fix unique users typo)
             title={"20,000+ unique users"}
             desc={"across all y/cs applications."}
           />
