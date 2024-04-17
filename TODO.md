@@ -91,4 +91,8 @@ Please add anything you think of, and make sure to keep this list up-to-date as 
 - Explain the page structure, nextjs, vercel, and cloudflare on the readme
 - Add more personality! The &lt;About Us /&gt; type of headers are a good start
 - Find some way to ensure people working on the project are actually using eslint
+<<<<<<< HEAD
 >>>>>>> c17f8d5 (Update todo)
+=======
+- Fix the require imports in generalproduct screens to use nextjs images correctly
+>>>>>>> 361f873 (Make product header responsive)

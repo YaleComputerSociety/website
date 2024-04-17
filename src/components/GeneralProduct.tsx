@@ -82,9 +82,14 @@ export const GeneralProduct = ({
       <Image
         loading="lazy"
         src={require(`../assets/products/${productName}/${sectionNumber}sectionimage.png`)}
+<<<<<<< HEAD
         className="section-image"
         style={{ border: `10px solid ${productColor}` }}
 >>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
+=======
+        style={{ backgroundColor: `${productColor}` }} // productColor won't work in tailwind for some reason
+        className="p-3 rounded-xl md:ml-10"
+>>>>>>> 361f873 (Make product header responsive)
         alt={`Product ${sectionNumber} Section Screenshot`}
       />
     </div>
@@ -102,6 +107,7 @@ export const GeneralProduct = ({
       />
       {firstSectionTitle && firstSectionText && (
 <<<<<<< HEAD
+<<<<<<< HEAD
         <div className="first-section flex h-full py-16 md:py-20 items-center flex-col md:flex-row">
           <GeneralProductSectionImage sectionNumber="first" className="order-last md:order-first" />
           <GeneralProductSectionText
@@ -114,12 +120,19 @@ export const GeneralProduct = ({
           className="first-section"
           style={{ padding: "20px 0", height: "100vh", display: "flex" }}
         >
+=======
+        <div className="first-section flex h-full py-20 items-center flex-col md:flex-row">
+>>>>>>> 361f873 (Make product header responsive)
           <GeneralProductSectionImage sectionNumber="first" />
           <GeneralProductSectionText
             title={firstSectionTitle}
             text={firstSectionText}
             align="right"
+<<<<<<< HEAD
 >>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
+=======
+            style="bg-ycs-black md:bg-transparent"
+>>>>>>> 361f873 (Make product header responsive)
           />
         </div>
       )}
