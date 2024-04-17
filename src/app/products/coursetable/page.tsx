@@ -14,7 +14,7 @@ const CourseTable = () => {
         " classes.\nFilter by subject, rating, and workload to discover the best courses.",
       ]}
       secondSectionTitle="Simulate your schedule"
-      secondSectionText="Add classes to your worksheet - see how they fit together. Make sure you have time for lunch!"
+      secondSectionText="Add classes to your worksheet and see how they fit together. Make sure you have time for lunch!"
       thirdSectionTitle="Choose the right classes"
       thirdSectionText={[
         "View ",
