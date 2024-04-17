@@ -54,8 +54,8 @@ export const GeneralProduct = ({
       <Image
         loading="lazy"
         src={require(`../assets/products/${productName}/${sectionNumber}sectionimage.png`)}
-        className="section-image"
-        style={{ border: `10px solid ${productColor}` }}
+        style={{ backgroundColor: `${productColor}` }} // productColor won't work in tailwind for some reason
+        className="p-3 rounded-xl md:ml-10"
         alt={`Product ${sectionNumber} Section Screenshot`}
       />
     </div>
@@ -72,15 +72,13 @@ export const GeneralProduct = ({
         isWeb={isWeb}
       />
       {firstSectionTitle && firstSectionText && (
-        <div
-          className="first-section"
-          style={{ padding: "20px 0", height: "100vh", display: "flex" }}
-        >
+        <div className="first-section flex h-full py-20 items-center flex-col md:flex-row">
           <GeneralProductSectionImage sectionNumber="first" />
           <GeneralProductSectionText
             title={firstSectionTitle}
             text={firstSectionText}
             align="right"
+            style="bg-ycs-black md:bg-transparent"
           />
         </div>
       )}
