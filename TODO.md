@@ -95,4 +95,8 @@ Please add anything you think of, and make sure to keep this list up-to-date as 
 >>>>>>> c17f8d5 (Update todo)
 =======
 - Fix the require imports in generalproduct screens to use nextjs images correctly
+<<<<<<< HEAD
 >>>>>>> 361f873 (Make product header responsive)
+=======
+- fix logo on phone size screen
+>>>>>>> 4a0d865 (Make entire full product page responsive)

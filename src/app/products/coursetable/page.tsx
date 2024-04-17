@@ -15,10 +15,14 @@ const CourseTable = () => {
       ]}
       secondSectionTitle="Simulate your schedule"
 <<<<<<< HEAD
+<<<<<<< HEAD
       secondSectionText="Add classes to your worksheet and see how they fit together. Make sure you have time for lunch!"
 =======
       secondSectionText="Add classes to your worksheet - see how they fit together. Make sure you have time for lunch!"
 >>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
+=======
+      secondSectionText="Add classes to your worksheet and see how they fit together. Make sure you have time for lunch!"
+>>>>>>> 4a0d865 (Make entire full product page responsive)
       thirdSectionTitle="Choose the right classes"
       thirdSectionText={[
         "View ",
