@@ -36,18 +36,6 @@
     width: 56%;
 }
 
-.section-text-title {
-    font-weight: bold;
-    font-size: 44px;
-    color: white;
-}
-
-.section-text {
-    font-size: 24px;
-    color: white;
-    white-space: pre-wrap;
-}
-
 .visit-button {
     color: white; 
     width: fit-content; 
