@@ -99,4 +99,8 @@ Please add anything you think of, and make sure to keep this list up-to-date as 
 >>>>>>> 361f873 (Make product header responsive)
 =======
 - fix logo on phone size screen
+<<<<<<< HEAD
 >>>>>>> 4a0d865 (Make entire full product page responsive)
+=======
+- update images for all projects and get higher-quality images
+>>>>>>> 5cd4d0c (Temporarily change names of asset product folders)

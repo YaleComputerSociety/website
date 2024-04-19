@@ -44,6 +44,7 @@ export const ProductCard = ({ product, roundedIcon }: Props) => {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             src={product.logo ? product.logo : nologoproduct1}
 =======
             src={product.image}
@@ -54,6 +55,9 @@ export const ProductCard = ({ product, roundedIcon }: Props) => {
 =======
             src={product.image ? product.image : nologoproduct1}
 >>>>>>> d4f4465 (Improve top left ycs logo)
+=======
+            src={product.logo ? product.logo : nologoproduct1}
+>>>>>>> 5cd4d0c (Temporarily change names of asset product folders)
             loading="lazy"
             alt={product.name}
           />
