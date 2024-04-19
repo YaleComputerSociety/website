@@ -33,6 +33,9 @@ const Team = () => {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> af6950a (Fix footer and title spacing)
     <div className="flex flex-col mb-12">
       <SectionTitle title="Our Team" subtitle="Meet the people that make up the y/cs" />
       <TeamGrid title="Board" people={BOARD.slice(0, BOARD_CUTOFF)} />

@@ -42,10 +42,14 @@ const Events = () => {
   return (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <div className="mb-12">
 =======
     <div>
 >>>>>>> f34bcd0 (Reorganize events page and make responsive)
+=======
+    <div className="mb-12">
+>>>>>>> af6950a (Fix footer and title spacing)
       <SectionTitle
         title="Events"
         subtitle="Each semester, the y/cs hosts dozens of events. Check here for our calendar to see
