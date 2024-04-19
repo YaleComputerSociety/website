@@ -139,7 +139,7 @@ export const GeneralProductHeader = ({
 
   return (
     <div className={`flex ${divHeight} flex-col md:flex-row items-center`}>
-      <div className="flex flex-col gap-4 px-4 md:px-0 md:pl-12 pt-8 md:pt-0">
+      <div className="flex flex-col gap-4 px-4 md:px-0 md:pl-12 pt-8 md:pt-0 w-2/5 min-w-96">
         <div className="flex flex-row items-center self-center">
           <div className="font-bold text-3xl md:text-4xl lg:text-5xl">{productName}</div>
           {logo != null && (
@@ -177,12 +177,13 @@ export const GeneralProductHeader = ({
         </Link>
 >>>>>>> 361f873 (Make product header responsive)
       </div>
-      <div className="">
+      <div className="flex flex-grow justify-center">
         {isWeb && header ? (
           <Image
             src={header}
             alt="Product Main Screenshot"
-            className="px-6 md:px-16 pt-14 md:pt-0 flex-or"
+            className="px-6 md:mr-12 md:pl-4 pt-14 md:pt-0"
+            priority
           />
         ) : (
           <>
@@ -191,6 +192,7 @@ export const GeneralProductHeader = ({
                 src={header}
                 style={{ width: "35%", marginRight: "5%" }}
                 alt="Product Main Mobile Screenshot 1"
+                priority
               />
             )}
             {header2 != null && (
