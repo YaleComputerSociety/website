@@ -27,6 +27,7 @@ export const NavbarMobileMenu = () => {
     <div>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <button onClick={toggleMobileMenu} className="text-white text-3xl pr-2 pt-[0.47rem]">
 =======
       <button onClick={toggleMobileMenu} className="text-white text-3xl pr-2">
@@ -34,6 +35,9 @@ export const NavbarMobileMenu = () => {
 =======
       <button onClick={toggleMobileMenu} className="text-white text-3xl pr-2 pt-1">
 >>>>>>> ab05046 (Fix ycs logo in mobile)
+=======
+      <button onClick={toggleMobileMenu} className="text-white text-3xl pr-2 pt-[0.47rem]">
+>>>>>>> 86b5f77 (Adjust header spacings)
         <div className="space-y-2">
           <span className="block w-8 h-0.5 bg-white"></span>
           <span className="block w-8 h-0.5 bg-white"></span>
