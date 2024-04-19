@@ -37,7 +37,6 @@ Please add anything you think of, and make sure to keep this list up-to-date as 
 - Add github/linkedin/personal website icon-links to the people on the team page
 - Explain the page structure, nextjs, vercel, and cloudflare on the readme
 - Add more personality! The &lt;About Us /&gt; type of headers are a good start
-- Find some way to ensure people working on the project are actually using eslint
-- Fix the require imports in generalproduct screens to use nextjs images correctly
-- fix logo on phone size screen
+- Find some way to ensure people working on the project are actually using eslint... hopefully not by explicitly forcing eslint in the compiler
+- Fix the require imports in general product screens to use nextjs images correctly
 - update images for all projects and get higher-quality images
