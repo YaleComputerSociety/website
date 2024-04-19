@@ -42,3 +42,4 @@ Please add anything you think of, and make sure to keep this list up-to-date as 
 - Find some way to ensure people working on the project are actually using eslint
 - Fix the require imports in generalproduct screens to use nextjs images correctly
 - fix logo on phone size screen
+- update images for all projects and get higher-quality images

@@ -36,7 +36,7 @@ export const ProductCard = ({ product, roundedIcon }: Props) => {
         <div className="w-40 h-40 bg-ycs-gray rounded-full absolute top-[-80px] left-1/2 -translate-x-1/2 flex justify-center items-center">
           <Image
             className={`${roundedIcon ? "rounded-full w-32 h-32" : "w-28 h-28"} ${product.name == "Yalies" && "left-7 absolute"}`}
-            src={product.image ? product.image : nologoproduct1}
+            src={product.logo ? product.logo : nologoproduct1}
             loading="lazy"
             alt={product.name}
           />
