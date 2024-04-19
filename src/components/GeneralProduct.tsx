@@ -47,15 +47,20 @@ export const GeneralProduct = ({
 }: GeneralProductProps): JSX.Element => {
   interface GeneralProductSectionImageProps {
     sectionNumber: string;
+    className?: string;
   }
 
-  const GeneralProductSectionImage = ({ sectionNumber }: GeneralProductSectionImageProps) => (
-    <div className="section-image-container">
+  const GeneralProductSectionImage = ({
+    sectionNumber,
+    className,
+  }: GeneralProductSectionImageProps) => (
+    <div className={`mx-6 ${className}`}>
       <Image
         loading="lazy"
-        src={require(`../assets/products/${productName}/${sectionNumber}sectionimage.png`)}
-        className="section-image"
-        style={{ border: `10px solid ${productColor}` }}
+        src={require(
+          `../assets/products/${productName.toLowerCase()}/${sectionNumber}sectionimage.png`,
+        )}
+        className="p-1 rounded-lg md:ml-10 bg-gray-100"
         alt={`Product ${sectionNumber} Section Screenshot`}
       />
     </div>
@@ -72,45 +77,38 @@ export const GeneralProduct = ({
         isWeb={isWeb}
       />
       {firstSectionTitle && firstSectionText && (
-        <div
-          className="first-section"
-          style={{ padding: "20px 0", height: "100vh", display: "flex" }}
-        >
-          <GeneralProductSectionImage sectionNumber="first" />
+        <div className="first-section flex h-full py-16 md:py-20 items-center flex-col md:flex-row">
+          <GeneralProductSectionImage sectionNumber="first" className="order-last md:order-first" />
           <GeneralProductSectionText
             title={firstSectionTitle}
             text={firstSectionText}
-            align="right"
+            productColor={productColor}
+            className="text-center md:text-right bg-ycs-black md:bg-transparent"
           />
         </div>
       )}
       {secondSectionTitle && secondSectionText && (
         <div
-          style={{
-            background: productColor,
-            padding: "20px 0",
-            height: "100vh",
-            display: "flex",
-          }}
+          className="flex h-full py-16 md:py-20 items-center flex-col md:flex-row"
+          style={{ background: productColor }}
         >
           <GeneralProductSectionText
             title={secondSectionTitle}
             text={secondSectionText}
-            align="left"
+            productColor={"#dde"}
+            className="text-center md:text-left bg-ycs-black md:bg-transparent"
           />
           <GeneralProductSectionImage sectionNumber="second" />
         </div>
       )}
       {thirdSectionTitle && thirdSectionText && (
-        <div
-          className="third-section"
-          style={{ padding: "20px 0", height: "100vh", display: "flex" }}
-        >
-          <GeneralProductSectionImage sectionNumber="third" />
+        <div className="third-section flex h-full py-16 md:py-20 items-center flex-col md:flex-row">
+          <GeneralProductSectionImage sectionNumber="third" className="order-last md:order-first" />
           <GeneralProductSectionText
             title={thirdSectionTitle}
             text={thirdSectionText}
-            align="right"
+            productColor={productColor}
+            className="text-center md:text-right bg-ycs-black md:bg-transparent"
           />
         </div>
       )}
