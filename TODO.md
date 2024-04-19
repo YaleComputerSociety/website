@@ -29,8 +29,6 @@ Please add anything you think of, and make sure to keep this list up-to-date as 
 - Redesign the sponsors component
 - Make a sponsorship page or some sort of clear way for potential sponsors to get in touch, more than just the footer
 - Redesign the about page and especially rewrite it
-- Make the individual product pages responsive; potentially redesign them?
-- Increase the resolution of the individual product page pictures
 - Add a bunch of y/cs photos to the about and events pages
 - The mobile hamburger menu flickers in after 0.01 seconds on phone, but you can tell. It looks a little glitchy
 - Have the navigation bar underline the page you're currently on (if you're not on the home page)
