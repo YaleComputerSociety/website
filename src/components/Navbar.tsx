@@ -42,6 +42,7 @@ function Navbar() {
   return (
     <>
       <div className="gradient-shadow fixed w-full h-24 z-20"></div>
+<<<<<<< HEAD
       <nav className="flex flex-row items-center justify-between bg-ycs-black text-white p-8 w-full fixed z-20">
         <Link href="/" className="font-extrabold pl-2 text-3xl">
           <div className="transition-transform duration-300 hover:translate-y-[0.075rem] hover:translate-x-[0.075rem] active:translate-y-[0.2rem] active:translate-x-[0.2rem] active:duration-100 absolute top-[1.95rem]">
@@ -145,6 +146,9 @@ function Navbar() {
 =======
     <>
       <nav className="flex items-center justify-between  text-white p-8 w-full fixed z-20 top-0 bg-green-400">
+=======
+      <nav className="flex items-center justify-between bg-ycs-black text-white p-8 w-full fixed z-20 top-0">
+>>>>>>> 9997884 (Add cool glowing thing to header)
         <Link href="/" className="font-extrabold pl-2 text-3xl">
           <div className="transition-transform duration-300 hover:translate-y-[0.075rem] hover:translate-x-[0.075rem] active:translate-y-[0.2rem] active:translate-x-[0.2rem] active:duration-100">
             y/cs
