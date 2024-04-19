@@ -34,7 +34,6 @@ body {
   color: white;
   cursor: pointer;
   z-index: 20;
-  padding: 0.5rem;
 }
 
 .nav-link::after {
