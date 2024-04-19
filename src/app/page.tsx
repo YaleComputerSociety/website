@@ -11,7 +11,7 @@ import { TitleSubtitle } from "@components/TitleSubtitle";
 
 const Home = () => {
   return (
-    <div>
+    <div className="mb-12">
       <ParticleNetwork />
 
       <div className="hidden md:flex justify-center items-center overflow-hidden fixed top-0 left-0 w-full h-full -z-10">
@@ -35,9 +35,7 @@ const Home = () => {
           </div> */}
 
       <div className="flex flex-col items-center">
-        <p 
-        
-        className="text-white drop-shadow-lg text-center font-extrabold text-4xl md:text-5xl mt-20 mb-3 -z-10 bg-gradient-to-r from-ycs-pink to-ycs-pink text-transparent bg-clip-text">
+        <p className="text-white drop-shadow-lg text-center font-extrabold text-4xl md:text-5xl mt-20 mb-3 -z-10 bg-gradient-to-r from-ycs-pink to-ycs-pink text-transparent bg-clip-text">
           We are the
         </p>
         <p className="text-white drop-shadow-lg text-center text-6xl md:text-8xl font-extrabold">

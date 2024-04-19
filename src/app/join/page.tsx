@@ -35,7 +35,7 @@ const ROLES = [
 
 const Join = () => {
   return (
-    <>
+    <div className="mb-12">
       <SectionTitle
         title="Build With Us"
         subtitle="We are Yale's largest collective of software developers, product designers, and
@@ -81,7 +81,7 @@ const Join = () => {
       </div>
 
       {/* Put a button to apply here during application season */}
-    </>
+    </div>
   );
 };
 
