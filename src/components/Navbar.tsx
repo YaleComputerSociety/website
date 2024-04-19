@@ -38,7 +38,8 @@ function Navbar() {
 
   return (
     <>
-      <nav className="flex items-center justify-between  text-white p-8 w-full fixed z-20 top-0 bg-green-400">
+      <div className="gradient-shadow fixed w-full h-24 z-20"></div>
+      <nav className="flex items-center justify-between bg-ycs-black text-white p-8 w-full fixed z-20 top-0">
         <Link href="/" className="font-extrabold pl-2 text-3xl">
           <div className="transition-transform duration-300 hover:translate-y-[0.075rem] hover:translate-x-[0.075rem] active:translate-y-[0.2rem] active:translate-x-[0.2rem] active:duration-100">
             y/cs
