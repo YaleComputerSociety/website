@@ -20,7 +20,7 @@ const GoogleCalendar: React.FC<Props> = ({ className }: Props) => {
 
 const Events = () => {
   return (
-    <div>
+    <div className="mb-12">
       <SectionTitle
         title="Events"
         subtitle="Each semester, the y/cs hosts dozens of events. Check here for our calendar to see
