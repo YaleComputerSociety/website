@@ -10,6 +10,7 @@ interface GeneralProductHeaderProps {
   productLink: string;
   buttonDescription: string;
   isWeb: boolean;
+  isLab?: boolean;
 }
 
 export const GeneralProductHeader = ({
@@ -19,11 +20,18 @@ export const GeneralProductHeader = ({
   productLink,
   buttonDescription,
   isWeb,
+  isLab,
 }: GeneralProductHeaderProps) => {
-  const logo = PROJECTS.find((project) => project.name === productName)?.image;
+  const logo = PROJECTS.find((project) => project.name === productName)?.logo;
+  const header = PROJECTS.find(
+    (project) => project.name.toLowerCase() === productName.toLowerCase(),
+  )?.headerImage;
+  const header2 = PROJECTS.find((project) => project.name === productName)?.headerImage2;
+  const isLabProduct = isLab ?? false;
+  const divHeight = `${isLabProduct ? "h-[60vh] md:h-[65vh] pt-24" : "h-[80vh] md:h-[85vh]"}`;
 
   return (
-    <div className="flex h-[80vh] md:h-[85vh] flex-col md:flex-row items-center">
+    <div className={`flex ${divHeight} flex-col md:flex-row items-center`}>
       <div className="flex flex-col gap-4 px-4 md:px-0 md:pl-12 pt-8 md:pt-0">
         <div className="flex flex-row items-center self-center">
           <div className="font-bold text-3xl md:text-4xl lg:text-5xl">{productName}</div>
@@ -50,24 +58,28 @@ export const GeneralProductHeader = ({
         </Link>
       </div>
       <div className="">
-        {isWeb ? (
+        {isWeb && header ? (
           <Image
-            src={require(`../assets/products/${productName}/headerimage.png`)}
+            src={header}
             alt="Product Main Screenshot"
             className="px-6 md:px-16 pt-14 md:pt-0 flex-or"
           />
         ) : (
           <>
-            <Image
-              src={require(`../assets/products/${productName}/headerimage1.png`)}
-              style={{ width: "35%", marginRight: "5%" }}
-              alt="Product Main Mobile Screenshot 1"
-            />
-            <Image
-              src={require(`../assets/products/${productName}/headerimage2.png`)}
-              style={{ width: "35%", marginLeft: "5%" }}
-              alt="Product Main Mobile Screenshot 2"
-            />
+            {header != null && (
+              <Image
+                src={header}
+                style={{ width: "35%", marginRight: "5%" }}
+                alt="Product Main Mobile Screenshot 1"
+              />
+            )}
+            {header2 != null && (
+              <Image
+                src={header2}
+                style={{ width: "35%", marginLeft: "5%" }}
+                alt="Product Main Mobile Screenshot 2"
+              />
+            )}
           </>
         )}
       </div>
