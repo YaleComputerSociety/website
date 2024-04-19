@@ -57,7 +57,9 @@ export const GeneralProduct = ({
     <div className={`mx-6 ${className}`}>
       <Image
         loading="lazy"
-        src={require(`../assets/products/${productName}/${sectionNumber}sectionimage.png`)}
+        src={require(
+          `../assets/products/${productName.toLowerCase()}/${sectionNumber}sectionimage.png`,
+        )}
         className="p-1 rounded-lg md:ml-10 bg-gray-100"
         alt={`Product ${sectionNumber} Section Screenshot`}
       />
