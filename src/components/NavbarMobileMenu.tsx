@@ -26,10 +26,14 @@ export const NavbarMobileMenu = () => {
   return (
     <div>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <button onClick={toggleMobileMenu} className="text-white text-3xl pr-2 pt-[0.47rem]">
 =======
       <button onClick={toggleMobileMenu} className="text-white text-3xl pr-2">
 >>>>>>> 8dc16be (Adjust navbar mobile menu 'x' button and refactor into separate component)
+=======
+      <button onClick={toggleMobileMenu} className="text-white text-3xl pr-2 pt-1">
+>>>>>>> ab05046 (Fix ycs logo in mobile)
         <div className="space-y-2">
           <span className="block w-8 h-0.5 bg-white"></span>
           <span className="block w-8 h-0.5 bg-white"></span>
