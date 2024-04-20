@@ -137,10 +137,10 @@ export const GeneralProductHeader = ({
   )?.headerImage;
   const header2 = PROJECTS.find((project) => project.name === productName)?.headerImage2;
   const isLabProduct = isLab ?? false;
-  const divHeight = `${isLabProduct ? "h-[65vh] md:h-[70vh]" : "h-[80vh] md:h-[85vh] pt-12 md:pt-0"}`;
+  const divHeight = `${isLabProduct ? "h-[75vh] md:h-[70vh]" : "h-[80vh] md:h-[85vh]"}`;
 
   return (
-    <div className={`flex ${divHeight} flex-col md:flex-row items-center`}>
+    <div className={`flex ${divHeight} flex-col md:flex-row items-center pt-12 md:pt-0`}>
       <div className="flex flex-col gap-4 px-4 md:px-0 md:pl-12 md:pt-0 w-2/5 min-w-96">
         <div className="flex flex-row items-center self-center">
           <div className="font-bold text-3xl md:text-4xl lg:text-5xl">{productName}</div>
@@ -189,20 +189,20 @@ export const GeneralProductHeader = ({
             priority
           />
         ) : (
-          <div className="flex flex-row w-full h-full px-[16vw] md:px-[8vw] py-8 md:py-16 gap-6">
+          <div className="flex flex-row md:min-w-[1000px] w-full h-full px-[16vw] md:px-[8vw] py-8 md:py-16 gap-6 md:gap-12 justify-center items-center">
             {header != null && (
-              <div className="flex-1 relative">
+              <div className="w-[100px] md:w-[20vw] max-w-[220px] h-[216px] md:h-[43.2vw] max-h-[475px] relative overflow-hidden rounded-2xl md:rounded-3xl">
                 <Image
                   src={header}
                   alt="Product Main Mobile Screenshot 1"
-                  className="object-contain my-auto"
-                  fill
+                  className="object-contain my-auto rounded-xl"
+                  sizes="20vw"
                   priority
                 />
               </div>
             )}
             {header2 != null && (
-              <div className="flex-1 relative">
+              <div className="w-[100px] md:w-[20vw] max-w-[220px] h-[216px] md:h-[43.2vw] max-h-[475px] relative overflow-hidden rounded-2xl md:rounded-3xl">
                 <Image
                   src={header2}
                   alt="Product Main Mobile Screenshot 2"
