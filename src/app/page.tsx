@@ -1,18 +1,23 @@
 "use client";
 
 import Link from "next/link";
+import dynamic from "next/dynamic";
 
-import { GradientBox } from "../components/GradientBox";
-import { SolidColorBlock } from "../components/SolidColorBlock";
-
+import { GradientBox } from "@components/GradientBox";
+import { SolidColorBlock } from "@components/SolidColorBlock";
 import { Sponsors } from "@components/Sponsors";
-import { ParticleNetwork } from "@components/ParticleNetwork";
+// import { ParticleNetwork } from "@components/ParticleNetwork";
 import { TitleSubtitle } from "@components/TitleSubtitle";
+
+const FastParticleNetwork = dynamic(() => import("@components/ParticleNetwork"), {
+  loading: () => <p>Loading...</p>,
+  ssr: true,
+});
 
 const Home = () => {
   return (
     <div className="mb-12">
-      <ParticleNetwork />
+      <FastParticleNetwork />
 
       <div className="hidden md:flex justify-center items-center overflow-hidden fixed top-0 left-0 w-full h-full -z-10">
         <div

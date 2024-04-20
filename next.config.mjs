@@ -1,8 +1,16 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-};
 
-export default nextConfig;
+async function loadConfig() {
+  const withBundleAnalyzer = (await import("@next/bundle-analyzer")).default({
+    enabled: process.env.ANALYZE === "true",
+  });
+
+  return withBundleAnalyzer({
+    // reactStrictMode: true,
+    eslint: {
+      ignoreDuringBuilds: true,
+    },
+  });
+}
+
+export default loadConfig();
