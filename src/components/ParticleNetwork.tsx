@@ -3,10 +3,14 @@
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import type { Container, ISourceOptions } from "@tsparticles/engine";
 =======
 import { type Container, type ISourceOptions } from "@tsparticles/engine";
 >>>>>>> bd8b04e (Add in network particles to home screen)
+=======
+import type { Container, ISourceOptions } from "@tsparticles/engine";
+>>>>>>> 115020c (Speed up load time for particle network (?))
 import { loadSlim } from "@tsparticles/slim";
 
 import "@styles/ParticleNetwork.css";
@@ -34,6 +38,9 @@ enum OutMode {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 115020c (Speed up load time for particle network (?))
 const ParticleNetwork = () => {
   const [init, setInit] = useState(false);
   const [isParticlesLoaded, setIsParticlesLoaded] = useState(false);
@@ -170,7 +177,12 @@ export const ParticleNetwork = () => {
   return <></>;
 };
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 export default ParticleNetwork;
 =======
 >>>>>>> bd8b04e (Add in network particles to home screen)
+=======
+
+export default ParticleNetwork;
+>>>>>>> 115020c (Speed up load time for particle network (?))

@@ -10,6 +10,7 @@ import dynamic from "next/dynamic";
 
 import { GradientBox } from "@components/GradientBox";
 import { SolidColorBlock } from "@components/SolidColorBlock";
+<<<<<<< HEAD
 import { Sponsors } from "@components/Sponsors";
 // import { ParticleNetwork } from "@components/ParticleNetwork";
 import { TitleSubtitle } from "@components/TitleSubtitle";
@@ -81,14 +82,21 @@ import Link from "next/link";
 import { GradientBox } from "../components/GradientBox";
 import { SolidColorBlock } from "../components/SolidColorBlock";
 
+=======
+>>>>>>> 115020c (Speed up load time for particle network (?))
 import { Sponsors } from "@components/Sponsors";
-import { ParticleNetwork } from "@components/ParticleNetwork";
+// import { ParticleNetwork } from "@components/ParticleNetwork";
 import { TitleSubtitle } from "@components/TitleSubtitle";
+
+const FastParticleNetwork = dynamic(() => import("@components/ParticleNetwork"), {
+  loading: () => <p>Loading...</p>,
+  ssr: true,
+});
 
 const Home = () => {
   return (
     <div className="mb-12">
-      <ParticleNetwork />
+      <FastParticleNetwork />
 
       <div className="hidden md:flex justify-center items-center overflow-hidden fixed top-0 left-0 w-full h-full -z-10">
         <div

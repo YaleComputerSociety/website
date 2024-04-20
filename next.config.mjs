@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 async function loadConfig() {
   const withBundleAnalyzer = (await import("@next/bundle-analyzer")).default({
@@ -39,3 +40,20 @@ const nextConfig = {
 
 export default nextConfig;
 >>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
+=======
+
+async function loadConfig() {
+  const withBundleAnalyzer = (await import("@next/bundle-analyzer")).default({
+    enabled: process.env.ANALYZE === "true",
+  });
+
+  return withBundleAnalyzer({
+    // reactStrictMode: true,
+    eslint: {
+      ignoreDuringBuilds: true,
+    },
+  });
+}
+
+export default loadConfig();
+>>>>>>> 115020c (Speed up load time for particle network (?))
