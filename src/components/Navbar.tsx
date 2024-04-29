@@ -13,9 +13,14 @@ export const navigationItems = [
   { name: "Team", link: "/team" },
   { name: "Join", link: "/join" },
   {
+    name : "Blog",
+    link : "/blog"
+  },
+  {
     name: "Feedback",
     link: "https://airtable.com/appuVd3lWwTikuv40/shrLYVYcHUDQa8T3h",
   },
+
 ];
 
 function Navbar() {

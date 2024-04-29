@@ -1,8 +1,11 @@
+"use client"
+
 import { SectionTitle } from "@components/SectionTitle";
 import { InfoCard } from "@components/InfoCard";
 import { STORIES, TODAY_STATISTICS } from "@data";
 import { Sponsors } from "@components/Sponsors";
 import { TitleSubtitle } from "@components/TitleSubtitle";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -50,6 +53,16 @@ const About = () => {
 
       <Sponsors />
       <div className="mt-20" />
+
+      <Link
+          href="./TheYaleComputerSocietyConstitution.pdf"
+          className="rounded-full disabled:opacity-50 font-bold text-xl hover:scale-105 duration-200 bg-ycs-pink p-4 pl-12 pr-12 m-6"
+        >
+      Read our Constitution Here
+        </Link>
+
+
+
     </div>
   );
 };
