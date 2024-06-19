@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-import "@styles/GeneralProduct.css";
->>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
-=======
->>>>>>> 6919d97 (Remove unused files)
 import Image from "next/image";
 
 import { GeneralProductHeader } from "@components/GeneralProductHeader";
@@ -54,44 +47,6 @@ export const GeneralProduct = ({
 }: GeneralProductProps): JSX.Element => {
   interface GeneralProductSectionImageProps {
     sectionNumber: string;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    className?: string;
-=======
->>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
-  }
-
-<<<<<<< HEAD
-  const GeneralProductSectionImage = ({
-    sectionNumber,
-<<<<<<< HEAD
-    className,
-  }: GeneralProductSectionImageProps) => (
-    <div className={`mx-6 ${className}`}>
-      <Image
-        loading="lazy"
-        src={require(
-          `../assets/products/${productName.toLowerCase()}/${sectionNumber}sectionimage.png`,
-        )}
-        className="p-1 rounded-lg md:ml-10 bg-gray-100"
-=======
-  }: GeneralProductSectionImageProps) => (
-=======
-  const GeneralProductSectionImage = ({ sectionNumber }: GeneralProductSectionImageProps) => (
->>>>>>> bd8b04e (Add in network particles to home screen)
-    <div className="section-image-container">
-      <Image
-        loading="lazy"
-        src={require(`../assets/products/${productName}/${sectionNumber}sectionimage.png`)}
-<<<<<<< HEAD
-        className="section-image"
-        style={{ border: `10px solid ${productColor}` }}
->>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
-=======
-        style={{ backgroundColor: `${productColor}` }} // productColor won't work in tailwind for some reason
-        className="p-3 rounded-xl md:ml-10"
->>>>>>> 361f873 (Make product header responsive)
-=======
     className?: string;
   }
 
@@ -106,7 +61,6 @@ export const GeneralProduct = ({
           `../assets/products/${productName.toLowerCase()}/${sectionNumber}sectionimage.png`,
         )}
         className="p-1 rounded-lg md:ml-10 bg-gray-100"
->>>>>>> 4a0d865 (Make entire full product page responsive)
         alt={`Product ${sectionNumber} Section Screenshot`}
       />
     </div>
@@ -123,9 +77,6 @@ export const GeneralProduct = ({
         isWeb={isWeb}
       />
       {firstSectionTitle && firstSectionText && (
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         <div className="first-section flex h-full py-16 md:py-20 items-center flex-col md:flex-row">
           <GeneralProductSectionImage sectionNumber="first" className="order-last md:order-first" />
           <GeneralProductSectionText
@@ -133,76 +84,24 @@ export const GeneralProduct = ({
             text={firstSectionText}
             productColor={productColor}
             className="text-center md:text-right bg-ycs-black md:bg-transparent"
-=======
-        <div
-          className="first-section"
-          style={{ padding: "20px 0", height: "100vh", display: "flex" }}
-        >
-=======
-        <div className="first-section flex h-full py-20 items-center flex-col md:flex-row">
->>>>>>> 361f873 (Make product header responsive)
-          <GeneralProductSectionImage sectionNumber="first" />
-          <GeneralProductSectionText
-            title={firstSectionTitle}
-            text={firstSectionText}
-            align="right"
-<<<<<<< HEAD
->>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
-=======
-            style="bg-ycs-black md:bg-transparent"
->>>>>>> 361f873 (Make product header responsive)
-=======
-        <div className="first-section flex h-full py-16 md:py-20 items-center flex-col md:flex-row">
-          <GeneralProductSectionImage sectionNumber="first" className="order-last md:order-first" />
-          <GeneralProductSectionText
-            title={firstSectionTitle}
-            text={firstSectionText}
-            productColor={productColor}
-            className="text-center md:text-right bg-ycs-black md:bg-transparent"
->>>>>>> 4a0d865 (Make entire full product page responsive)
           />
         </div>
       )}
       {secondSectionTitle && secondSectionText && (
         <div
-<<<<<<< HEAD
-<<<<<<< HEAD
           className="flex h-full py-16 md:py-20 items-center flex-col md:flex-row"
           style={{ background: productColor }}
-=======
-          style={{
-            background: productColor,
-            padding: "20px 0",
-            height: "100vh",
-            display: "flex",
-          }}
->>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
-=======
-          className="flex h-full py-16 md:py-20 items-center flex-col md:flex-row"
-          style={{ background: productColor }}
->>>>>>> 4a0d865 (Make entire full product page responsive)
         >
           <GeneralProductSectionText
             title={secondSectionTitle}
             text={secondSectionText}
-<<<<<<< HEAD
-<<<<<<< HEAD
             productColor={"#dde"}
             className="text-center md:text-left bg-ycs-black md:bg-transparent"
-=======
-            align="left"
->>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
-=======
-            productColor={"#dde"}
-            className="text-center md:text-left bg-ycs-black md:bg-transparent"
->>>>>>> 4a0d865 (Make entire full product page responsive)
           />
           <GeneralProductSectionImage sectionNumber="second" />
         </div>
       )}
       {thirdSectionTitle && thirdSectionText && (
-<<<<<<< HEAD
-<<<<<<< HEAD
         <div className="third-section flex h-full py-16 md:py-20 items-center flex-col md:flex-row">
           <GeneralProductSectionImage sectionNumber="third" className="order-last md:order-first" />
           <GeneralProductSectionText
@@ -210,26 +109,6 @@ export const GeneralProduct = ({
             text={thirdSectionText}
             productColor={productColor}
             className="text-center md:text-right bg-ycs-black md:bg-transparent"
-=======
-        <div
-          className="third-section"
-          style={{ padding: "20px 0", height: "100vh", display: "flex" }}
-        >
-          <GeneralProductSectionImage sectionNumber="third" />
-          <GeneralProductSectionText
-            title={thirdSectionTitle}
-            text={thirdSectionText}
-            align="right"
->>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
-=======
-        <div className="third-section flex h-full py-16 md:py-20 items-center flex-col md:flex-row">
-          <GeneralProductSectionImage sectionNumber="third" className="order-last md:order-first" />
-          <GeneralProductSectionText
-            title={thirdSectionTitle}
-            text={thirdSectionText}
-            productColor={productColor}
-            className="text-center md:text-right bg-ycs-black md:bg-transparent"
->>>>>>> 4a0d865 (Make entire full product page responsive)
           />
         </div>
       )}

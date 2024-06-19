@@ -25,19 +25,7 @@ export const NavbarMobileMenu = () => {
 
   return (
     <div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       <button onClick={toggleMobileMenu} className="text-white text-3xl pr-2 pt-[0.47rem]">
-=======
-      <button onClick={toggleMobileMenu} className="text-white text-3xl pr-2">
->>>>>>> 8dc16be (Adjust navbar mobile menu 'x' button and refactor into separate component)
-=======
-      <button onClick={toggleMobileMenu} className="text-white text-3xl pr-2 pt-1">
->>>>>>> ab05046 (Fix ycs logo in mobile)
-=======
-      <button onClick={toggleMobileMenu} className="text-white text-3xl pr-2 pt-[0.47rem]">
->>>>>>> 86b5f77 (Adjust header spacings)
         <div className="space-y-2">
           <span className="block w-8 h-0.5 bg-white"></span>
           <span className="block w-8 h-0.5 bg-white"></span>
@@ -46,29 +34,11 @@ export const NavbarMobileMenu = () => {
       </button>
       <div
         ref={menuRef}
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 1fd6f67 (Adjust parameters on particles, adjust speed of mobile menu opening)
         className={`fixed top-0 right-0 h-full bg-ycs-pink shadow-md transition-transform duration-500 w-3/4 rounded-bl-[5rem] rounded-tl-[5rem] flex flex-col ${
           isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
         <button onClick={toggleMobileMenu} className="py-2 px-6 text-6xl font-extralight self-end">
-=======
-        className={`fixed top-0 right-0 h-full bg-ycs-pink shadow-md transition-transform w-3/4 rounded-bl-[5rem] rounded-tl-[5rem] flex flex-col ${
-          isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
-      >
-<<<<<<< HEAD
-        <button
-          onClick={toggleMobileMenu}
-          className="py-2 px-6 text-6xl font-extralight self-end"
-        >
->>>>>>> 8dc16be (Adjust navbar mobile menu 'x' button and refactor into separate component)
-=======
-        <button onClick={toggleMobileMenu} className="py-2 px-6 text-6xl font-extralight self-end">
->>>>>>> bd8b04e (Add in network particles to home screen)
           ×
         </button>
         <ul className="flex flex-col text-3xl p-14 gap-8">

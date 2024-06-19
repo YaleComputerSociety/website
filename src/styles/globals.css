@@ -34,13 +34,6 @@ body {
   color: white;
   cursor: pointer;
   z-index: 20;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  padding: 0.5rem;
->>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
-=======
->>>>>>> ab05046 (Fix ycs logo in mobile)
 }
 
 .nav-link::after {
@@ -59,21 +52,6 @@ body {
 .nav-link:hover::after {
   transform: scaleX(1); 
   transform-origin: bottom left; 
-<<<<<<< HEAD
-<<<<<<< HEAD
-}
-
-
-
-.gradient-shadow::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 105%;
-  /* filter: blur(10px); */
-  background: radial-gradient(circle, #FFcccc, #FF555B);
 }
 
 
@@ -100,26 +78,4 @@ body {
 
 .animate-fade-in {
   animation: fadeIn 3s forwards;
-=======
->>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
-=======
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-<<<<<<< HEAD
-.animate-fade-out {
-  animation: fadeOut 3s forwards 0.8s;
->>>>>>> 8ff1451 (Fix particle loading problem by fading them in)
-=======
-.animate-fade-in {
-  animation: fadeIn 3s forwards;
->>>>>>> 4f18b83 (Fix particle fade in to only trigger once the engine is loaded)
 }

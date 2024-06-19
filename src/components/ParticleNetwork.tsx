@@ -2,15 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-<<<<<<< HEAD
-<<<<<<< HEAD
 import type { Container, ISourceOptions } from "@tsparticles/engine";
-=======
-import { type Container, type ISourceOptions } from "@tsparticles/engine";
->>>>>>> bd8b04e (Add in network particles to home screen)
-=======
-import type { Container, ISourceOptions } from "@tsparticles/engine";
->>>>>>> 115020c (Speed up load time for particle network (?))
 import { loadSlim } from "@tsparticles/slim";
 
 import "@styles/ParticleNetwork.css";
@@ -37,21 +29,9 @@ enum OutMode {
   split = "split",
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 115020c (Speed up load time for particle network (?))
 const ParticleNetwork = () => {
   const [init, setInit] = useState(false);
   const [isParticlesLoaded, setIsParticlesLoaded] = useState(false);
-=======
-export const ParticleNetwork = () => {
-  const [init, setInit] = useState(false);
-<<<<<<< HEAD
->>>>>>> bd8b04e (Add in network particles to home screen)
-=======
-  const [isParticlesLoaded, setIsParticlesLoaded] = useState(false);
->>>>>>> 4f18b83 (Fix particle fade in to only trigger once the engine is loaded)
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -63,14 +43,7 @@ export const ParticleNetwork = () => {
 
   const particlesLoaded = async (container?: Container): Promise<void> => {
     console.log(container);
-<<<<<<< HEAD
-<<<<<<< HEAD
     setIsParticlesLoaded(true);
-=======
->>>>>>> bd8b04e (Add in network particles to home screen)
-=======
-    setIsParticlesLoaded(true);
->>>>>>> 4f18b83 (Fix particle fade in to only trigger once the engine is loaded)
   };
 
   const options: ISourceOptions = useMemo(
@@ -89,15 +62,7 @@ export const ParticleNetwork = () => {
           distance: 150,
           enable: true,
           opacity: 1,
-<<<<<<< HEAD
-<<<<<<< HEAD
           width: 2.5,
-=======
-          width: 2,
->>>>>>> bd8b04e (Add in network particles to home screen)
-=======
-          width: 2.5,
->>>>>>> 8ff1451 (Fix particle loading problem by fading them in)
         },
         move: {
           direction: MoveDirection.none,
@@ -116,33 +81,13 @@ export const ParticleNetwork = () => {
           value: 100,
         },
         opacity: {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
           value: 0.7,
-=======
-          value: 0.5,
->>>>>>> bd8b04e (Add in network particles to home screen)
-=======
-          value: 1,
->>>>>>> 1d22529 (Move network particles to be overlapping in the correct location)
-=======
-          value: 0.7,
->>>>>>> 1fd6f67 (Adjust parameters on particles, adjust speed of mobile menu opening)
         },
         shape: {
           type: "circle",
         },
         size: {
-<<<<<<< HEAD
-<<<<<<< HEAD
           value: { min: 5, max: 5 },
-=======
-          value: { min: 3, max: 5 },
->>>>>>> bd8b04e (Add in network particles to home screen)
-=======
-          value: { min: 5, max: 5 },
->>>>>>> 8ff1451 (Fix particle loading problem by fading them in)
         },
       },
       detectRetina: true,
@@ -152,23 +97,9 @@ export const ParticleNetwork = () => {
 
   if (init) {
     return (
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       <div
         className={`h-[80vh] absolute inset-0 -z-10 opacity-0 ${isParticlesLoaded && "opacity-0 animate-fade-in"}`}
       >
-=======
-      <div style={{ height: "100vh" }}>
->>>>>>> bd8b04e (Add in network particles to home screen)
-=======
-      <div className="h-[80vh] absolute inset-0 -z-10">
->>>>>>> 1d22529 (Move network particles to be overlapping in the correct location)
-=======
-      <div
-        className={`h-[80vh] absolute inset-0 -z-10 opacity-0 ${isParticlesLoaded && "opacity-0 animate-fade-in"}`}
-      >
->>>>>>> 4f18b83 (Fix particle fade in to only trigger once the engine is loaded)
         <Particles id="tsparticles" particlesLoaded={particlesLoaded} options={options} />
       </div>
     );
@@ -176,13 +107,5 @@ export const ParticleNetwork = () => {
 
   return <></>;
 };
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 export default ParticleNetwork;
-=======
->>>>>>> bd8b04e (Add in network particles to home screen)
-=======
-
-export default ParticleNetwork;
->>>>>>> 115020c (Speed up load time for particle network (?))

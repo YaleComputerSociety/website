@@ -4,11 +4,6 @@ import Image from "next/image";
 
 import nologoproduct1 from "../assets/products/logos/ycs.png";
 
-<<<<<<< HEAD
-import nologoproduct1 from "../assets/products/logos/ycs.png";
-
-=======
->>>>>>> e7167db (Refactor product card into its own component)
 import type { Project } from "@data";
 
 interface Props {
@@ -41,39 +36,13 @@ export const ProductCard = ({ product, roundedIcon }: Props) => {
         <div className="w-40 h-40 bg-ycs-gray rounded-full absolute top-[-80px] left-1/2 -translate-x-1/2 flex justify-center items-center">
           <Image
             className={`${roundedIcon ? "rounded-full w-32 h-32" : "w-28 h-28"} ${product.name == "Yalies" && "left-7 absolute"}`}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             src={product.logo ? product.logo : nologoproduct1}
-=======
-            src={product.image}
->>>>>>> e7167db (Refactor product card into its own component)
-=======
-            src={product.image? product.image : nologoproduct1 }
->>>>>>> 406e299 (join page)
-=======
-            src={product.image ? product.image : nologoproduct1}
->>>>>>> d4f4465 (Improve top left ycs logo)
-=======
-            src={product.logo ? product.logo : nologoproduct1}
->>>>>>> 5cd4d0c (Temporarily change names of asset product folders)
             loading="lazy"
             alt={product.name}
           />
         </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
         <div className="font-semibold text-xl md:text-3xl mt-16">{product.name}</div>
         <div className="font-normal text-md md:text-lg md:m-8 md:mt-4 m-4">
-=======
-        <div style={{ fontWeight: 500, fontSize: "25px", marginTop: "80px" }}>{product.name}</div>
-        <div style={{ fontWeight: 400, fontSize: "18px", margin: "40px 20px" }}>
->>>>>>> e7167db (Refactor product card into its own component)
-=======
-        <div className="font-semibold text-xl md:text-3xl mt-16">{product.name}</div>
-        <div className="font-normal text-md md:text-lg md:m-8 md:mt-4 m-4">
->>>>>>> 663bb3d (Make products page a little more responsive; fully responsive now)
           {product.description}
         </div>
       </ConditionalWrapper>

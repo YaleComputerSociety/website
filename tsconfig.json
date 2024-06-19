@@ -1,22 +1,12 @@
 {
   "compilerOptions": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    "target": "es5",
->>>>>>> 2b93c9e (React Version of Redesigned Website. Removed 5615920 per internal convo.)
-=======
->>>>>>> bd8b04e (Add in network particles to home screen)
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
-<<<<<<< HEAD
     "allowJs": true,
     "skipLibCheck": true,
-<<<<<<< HEAD
     "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -45,55 +35,5 @@
   ],
   "exclude": [
     "node_modules"
-=======
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-=======
-    "lib": ["dom", "dom.iterable", "esnext"],
-=======
->>>>>>> bd8b04e (Add in network particles to home screen)
-    "allowJs": true,
-    "skipLibCheck": true,
->>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
-    "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "jsx": "preserve",
-    "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
-    "paths": {
-      "@*": [
-        "./src/*"
-      ]
-    },
-    "isolatedModules": true
-  },
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "include": [
-    "src"
->>>>>>> 2b93c9e (React Version of Redesigned Website. Removed 5615920 per internal convo.)
   ]
-=======
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
->>>>>>> d4869af (Rewrite the entire codebase in nextjs with stricter eslint and typescript settings)
-=======
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
->>>>>>> bd8b04e (Add in network particles to home screen)
 }
