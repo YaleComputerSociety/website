@@ -11,7 +11,7 @@ export const navigationItems = [
   { name: "Products", link: "/products" },
   { name: "Events", link: "/events" },
   { name: "Team", link: "/team" },
-  { name: "Incoming Students", link: /"newstudents" },
+  { name: "Incoming Students", link: "/newstudents" },
   { name: "Join", link: "/join" },
   {
     name: "Feedback",
