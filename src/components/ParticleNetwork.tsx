@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { type Container, type ISourceOptions } from "@tsparticles/engine";
+import type { Container, ISourceOptions } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
 
 import "@styles/ParticleNetwork.css";
@@ -29,7 +29,7 @@ enum OutMode {
   split = "split",
 }
 
-export const ParticleNetwork = () => {
+const ParticleNetwork = () => {
   const [init, setInit] = useState(false);
   const [isParticlesLoaded, setIsParticlesLoaded] = useState(false);
 
@@ -107,3 +107,5 @@ export const ParticleNetwork = () => {
 
   return <></>;
 };
+
+export default ParticleNetwork;

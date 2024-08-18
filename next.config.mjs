@@ -1,17 +1,16 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-};
 
-// const withMDX = require("@next/mdx")({
-//   extension: /\.mdx?$/
-// });
+async function loadConfig() {
+  const withBundleAnalyzer = (await import("@next/bundle-analyzer")).default({
+    enabled: process.env.ANALYZE === "true",
+  });
 
-// module.exports = withMDX({
-//   pageExtensions: ["js", "jsx", "md", "mdx"]
-// });
+  return withBundleAnalyzer({
+    // reactStrictMode: true,
+    eslint: {
+      ignoreDuringBuilds: true,
+    },
+  });
+}
 
-
-export default nextConfig;
+export default loadConfig();

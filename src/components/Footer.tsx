@@ -22,9 +22,13 @@ const FooterIcon: React.FC<FooterIconProps> = (props: FooterIconProps) => {
   );
 };
 
-export const Footer = () => {
+interface Props {
+  className?: string;
+}
+
+export const Footer = ({ className }: Props) => {
   return (
-    <footer className="mt-16 flex flex-col text-white z-20 justify-normal items-center">
+    <footer className={`flex flex-col text-white z-20 justify-normal items-center ${className}`}>
       <div className="text-white text-xl mb-1">Get in touch with us</div>
       <div className="flex justify-center gap-6 p-3">
         <FooterIcon

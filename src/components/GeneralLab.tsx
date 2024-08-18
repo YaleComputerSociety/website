@@ -21,6 +21,7 @@ export const GeneralLab = ({
       productLink="https://airtable.com/appqm7yvqSUcLQKV4/shrRxMb5gJOPjl20A"
       buttonDescription="Get Updates 🛠️"
       isWeb={isWeb}
+      isLab={true}
     />
   );
 };

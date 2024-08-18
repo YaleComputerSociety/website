@@ -7,6 +7,13 @@ import ymeets from "./assets/products/logos/ymeetslogo.png";
 import yalebutteries from "./assets/products/logos/yalebutteries.jpg";
 import roomadvisor from "./assets/products/logos/roomadvisor.png";
 import autodonation from "./assets/products/logos/autodonation.svg";
+import coursetableHeader from "./assets/products/coursetable/headerimage.png";
+import yaliesHeader from "./assets/products/yalies/headerimage.png";
+import ymeetsHeader from "./assets/products/ymeets/headerimage.png";
+import yalebutteriesHeader1 from "./assets/products/yalebutteries/headerimage1.png";
+import yalebutteriesHeader2 from "./assets/products/yalebutteries/headerimage2.png";
+import roomadvisorHeader from "./assets/products/roomadvisor/headerimage.png";
+import autodonationHeader from "./assets/products/autodonation/headerimage.png";
 // Media imports
 import email from "./assets/email2.png";
 import facebook from "./assets/facebook.svg";
@@ -34,7 +41,7 @@ import chase from "./assets/people/chase.jpeg";
 import nicholas from "./assets/people/nicholas.jpeg";
 import ian from "./assets/people/ian.jpeg";
 import neil from "./assets/people/neil.jpeg";
-import ericyoon from "./assets/people/ericyoon.jpeg";
+import eric from "./assets/people/eric.jpeg";
 // import defaultPerson from "./assets/people.jpeg";
 // partnerships import
 import meta from "./assets/partnerships/meta.png";
@@ -127,7 +134,7 @@ export const BOARD: Person[] = [
   },
   {
     name: "Eric Yoon",
-    image: ericyoon,
+    image: eric,
     role: ["Yalies"],
   },
   {
@@ -169,7 +176,9 @@ export const BOARD: Person[] = [
 
 export type Project = {
   name: string;
-  image: StaticImageData | undefined;
+  logo: StaticImageData | undefined;
+  headerImage?: StaticImageData | undefined;
+  headerImage2?: StaticImageData | undefined;
   link: string | undefined;
   live: boolean;
   description: string;
@@ -179,7 +188,8 @@ export type Project = {
 export const PROJECTS: Project[] = [
   {
     name: "CourseTable",
-    image: coursetable,
+    logo: coursetable,
+    headerImage: coursetableHeader,
     link: "/products/coursetable",
     description: "A student-built courses browser used by nearly everyone at Yale.",
     live: true,
@@ -187,7 +197,8 @@ export const PROJECTS: Project[] = [
   },
   {
     name: "Yalies",
-    image: yalies,
+    logo: yalies,
+    headerImage: yaliesHeader,
     link: "/products/yalies",
     description: "A directory that provides data on the Yale student body.",
     live: true,
@@ -195,7 +206,9 @@ export const PROJECTS: Project[] = [
   },
   {
     name: "YaleButteries",
-    image: yalebutteries,
+    logo: yalebutteries,
+    headerImage: yalebutteriesHeader1,
+    headerImage2: yalebutteriesHeader2,
     link: "/products/yalebutteries",
     description: "An app to transform the buttery experience at Yale.",
     live: false,
@@ -204,7 +217,8 @@ export const PROJECTS: Project[] = [
 
   {
     name: "ymeets",
-    image: ymeets,
+    logo: ymeets,
+    headerImage: ymeetsHeader,
     link: "/products/ymeets",
     description: "A web application aimed to make it easier for Yalies to find a time to meet.",
     live: false,
@@ -218,7 +232,7 @@ export const PROJECTS: Project[] = [
     shouldIconBeRounded: true,
     live: false,
     link: undefined,
-    image: undefined,
+    logo: undefined,
   },
 
   {
@@ -227,7 +241,7 @@ export const PROJECTS: Project[] = [
     shouldIconBeRounded: true,
     live: false,
     link: undefined,
-    image: undefined,
+    logo: undefined,
   },
 
   {
@@ -237,7 +251,7 @@ export const PROJECTS: Project[] = [
     shouldIconBeRounded: true,
     live: false,
     link: undefined,
-    image: undefined,
+    logo: undefined,
   },
 
   {
@@ -246,11 +260,12 @@ export const PROJECTS: Project[] = [
     shouldIconBeRounded: true,
     live: false,
     link: undefined,
-    image: undefined,
+    logo: undefined,
   },
   {
     name: "RoomAdvisor",
-    image: roomadvisor,
+    logo: roomadvisor,
+    headerImage: roomadvisorHeader,
     link: "/products/roomadvisor",
     description: "A website where Yale students can browse, rate, and review college rooms.",
     live: false,
@@ -258,7 +273,8 @@ export const PROJECTS: Project[] = [
   },
   {
     name: "AutoDonation",
-    image: autodonation,
+    logo: autodonation,
+    headerImage: autodonationHeader,
     link: "/products/autodonation",
     description:
       "An intuitive platform that helps nonprofits automate, collect, and track donations.",

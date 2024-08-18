@@ -25,7 +25,7 @@ export const NavbarMobileMenu = () => {
 
   return (
     <div>
-      <button onClick={toggleMobileMenu} className="text-white text-3xl pr-2">
+      <button onClick={toggleMobileMenu} className="text-white text-3xl pr-2 pt-[0.47rem]">
         <div className="space-y-2">
           <span className="block w-8 h-0.5 bg-white"></span>
           <span className="block w-8 h-0.5 bg-white"></span>

@@ -1,18 +1,23 @@
 "use client";
 
 import Link from "next/link";
+import dynamic from "next/dynamic";
 
-import { GradientBox } from "../components/GradientBox";
-import { SolidColorBlock } from "../components/SolidColorBlock";
-
+import { GradientBox } from "@components/GradientBox";
+import { SolidColorBlock } from "@components/SolidColorBlock";
 import { Sponsors } from "@components/Sponsors";
-import { ParticleNetwork } from "@components/ParticleNetwork";
+// import { ParticleNetwork } from "@components/ParticleNetwork";
 import { TitleSubtitle } from "@components/TitleSubtitle";
+
+const FastParticleNetwork = dynamic(() => import("@components/ParticleNetwork"), {
+  loading: () => <p>Loading...</p>,
+  ssr: true,
+});
 
 const Home = () => {
   return (
-    <div>
-      <ParticleNetwork />
+    <div className="mb-12">
+      <FastParticleNetwork />
 
       <div className="hidden md:flex justify-center items-center overflow-hidden fixed top-0 left-0 w-full h-full -z-10">
         <div
@@ -27,37 +32,26 @@ const Home = () => {
           y/cs
         </div>
       </div>
-      {/* <div className="transition-transform duration-300 hover:translate-y-[0.075rem] hover:translate-x-[0.075rem] active:translate-y-[0.2rem] active:translate-x-[0.2rem] active:duration-100">
-            y/cs
-          </div>
-          <div className="font-black absolute left-[2.2rem] top-[1.95rem] -z-10 bg-gradient-to-r from-ycs-pink to-ycs-pink text-transparent bg-clip-text">
-            y/cs
-          </div> */}
 
       <div className="flex flex-col items-center">
-        <p 
-        
-        className="text-white drop-shadow-lg text-center font-extrabold text-4xl md:text-5xl mt-20 mb-3 -z-10 bg-gradient-to-r from-ycs-pink to-ycs-pink text-transparent bg-clip-text">
+        <p className="text-white drop-shadow-lg text-center font-extrabold text-4xl md:text-5xl mt-20 md:mt-[9vw] mb-3 -z-10 bg-gradient-to-r from-ycs-pink to-ycs-pink text-transparent bg-clip-text">
           We are the
         </p>
         <p className="text-white drop-shadow-lg text-center text-6xl md:text-8xl font-extrabold">
           Yale Computer Society
         </p>
 
-        <p className="text-white text-center lg:text-xl md:text-lg text-md mt-6 md:mt-8 w-3/4 md:w-1/2 mx-auto">
+        <p className="text-white text-center lg:text-2xl md:text-xl text-lg mt-6 md:mt-8 w-3/4 md:w-3/4 mx-auto">
           Yale&apos;s premier tech and computer science organization
         </p>
 
-        <a
-          className="text-ycs-pink text-xl underline text-center mt-8 transition-transform duration-300 hover:translate-y-[0.075rem] hover:translate-x-[0.075rem] active:translate-y-[0.2rem] active:translate-x-[0.2rem] active:duration-100"
-          href="https://github.com/yalecomputersociety"
-        >
-          GitHub
-        </a>
-
-        <h1 className="text-white md:mt-[8vw] text-center mt-16 text-2xl w-3/4 mx-auto">
+        <h1 className="text-white md:mt-[7vw] text-center mt-16 lg:text-2xl md:text-xl text-lg w-3/4 mx-auto">
           We&apos;re a group of computer science students that build software applications for Yale
           University&apos;s campus community and connect over our shared love for applied computing.
+          Check out our{" "}
+          <a className="text-ycs-pink underline" href="https://github.com/yalecomputersociety">
+            GitHub
+          </a>
         </h1>
 
         <div className="flex md:flex-row flex-col mt-10 gap-10 md:mx-10 mx-16">
@@ -73,7 +67,7 @@ const Home = () => {
           />
           <SolidColorBlock
             color={"ycs-pink"}
-            title={"20,000+ unqiue users"}
+            title={"20,000+ unique users"}
             desc={"across all y/cs applications."}
           />
         </div>

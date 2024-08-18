@@ -29,8 +29,6 @@ Please add anything you think of, and make sure to keep this list up-to-date as 
 - Redesign the sponsors component
 - Make a sponsorship page or some sort of clear way for potential sponsors to get in touch, more than just the footer
 - Redesign the about page and especially rewrite it
-- Make the individual product pages responsive; potentially redesign them?
-- Increase the resolution of the individual product page pictures
 - Add a bunch of y/cs photos to the about and events pages
 - The mobile hamburger menu flickers in after 0.01 seconds on phone, but you can tell. It looks a little glitchy
 - Have the navigation bar underline the page you're currently on (if you're not on the home page)
@@ -39,4 +37,6 @@ Please add anything you think of, and make sure to keep this list up-to-date as 
 - Add github/linkedin/personal website icon-links to the people on the team page
 - Explain the page structure, nextjs, vercel, and cloudflare on the readme
 - Add more personality! The &lt;About Us /&gt; type of headers are a good start
-- Find some way to ensure people working on the project are actually using eslint
+- Find some way to ensure people working on the project are actually using eslint... hopefully not by explicitly forcing eslint in the compiler
+- Fix the require imports in general product screens to use nextjs images correctly
+- update images for all projects and get higher-quality images
