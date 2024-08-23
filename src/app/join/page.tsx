@@ -12,7 +12,7 @@ const ROLES = [
 
   {
     title: "Catalyst Developer",
-    desc: "Hone your development skills in a beginner friendly software program.",
+    desc: "Hone your development skills in a beginner friendly software program designed to prepare you to work on one of our products.",
   },
 
   {
