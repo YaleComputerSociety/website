@@ -4,11 +4,14 @@ import "@styles/App.css";
 import { TeamGrid } from "@components/TeamGrid";
 
 const Team = () => {
-  const BOARD_CUTOFF = 13;
+  const BOARD_CUTOFF = 14;
 
   return (
     <div className="flex flex-col mb-12">
-      <SectionTitle title="Our Team" subtitle="Meet the people that make up the y/cs" />
+      <SectionTitle
+        title="Our Team"
+        subtitle="Meet the people that make up the y/cs"
+      />
       <TeamGrid title="Board" people={BOARD.slice(0, BOARD_CUTOFF)} />
       <TeamGrid title="Product Leads" people={BOARD.slice(BOARD_CUTOFF)} />
     </div>
