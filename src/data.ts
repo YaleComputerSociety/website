@@ -47,6 +47,7 @@ import ian from "./assets/people/ian.jpeg";
 import neil from "./assets/people/neil.jpeg";
 import eric from "./assets/people/eric.jpeg";
 import LilyLin from "./assets/people/LilyLin.png"
+import amanda from "./assets/people/amanda.png"
 // import defaultPerson from "./assets/people.jpeg";
 // partnerships import
 import meta from "./assets/partnerships/meta.png";
@@ -83,7 +84,7 @@ export const BOARD: Person[] = [
   },
   {
     name: "Amanda Huang",
-    image: defaultpic,
+    image: amanda,
     role: ["Co-Director of Events"],
   },
   {
