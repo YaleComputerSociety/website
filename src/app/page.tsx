@@ -124,6 +124,14 @@ const Home = () => {
         >
           Learn More
         </Link>
+        <Link
+          href={
+            "https://docs.google.com/forms/d/e/1FAIpQLSd8vyeaux2ia9CgvDH6Os6wsbuO_uIX1axE7udcSZKoMD0m4w/viewform?usp=sf_link"
+          }
+          className="text-ycs-pink font-bold text-xl hover:scale-105 duration-200"
+        >
+          Applications are now open, apply today!
+        </Link>
       </div>
     </div>
   );
