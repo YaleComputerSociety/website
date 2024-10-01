@@ -29,7 +29,7 @@ import lauren from "./assets/people/lauren.jpg";
 import handan from "./assets/people/handan.jpeg"
 import addison from "./assets/people/addison.jpg";
 import nabil from "./assets/people/nabil.jpg";
-import ethan from "./assets/people/ethan.jpeg";
+import ethan from "./assets/people/ethan.jpg";
 import amina from "./assets/people/amina.png";
 import anna from "./assets/people/anna.jpeg";
 import daniel from "./assets/people/daniel.jpeg";
@@ -102,11 +102,7 @@ export const BOARD: Person[] = [
     image: LilyLin,
     role: ["Director of Design"],
   },
-  {
-    name: "Lauren Delwiche",
-    image: lauren,
-    role: ["Director of Computer Security"],
-  },
+  
   {
     name: "Handan Dilara Bikmaz",
     image: handan,
@@ -128,11 +124,7 @@ export const BOARD: Person[] = [
     image: addison,
     role: ["Senior Advisor"],
   },
-  {
-    name: "Katherine He",
-    image: katherine,
-    role: ["Advisor"],
-  },
+  
   // product leads
   {
     name: "Alex Schapiro",

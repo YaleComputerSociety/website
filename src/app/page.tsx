@@ -105,7 +105,7 @@ const Home = () => {
           <GradientBox
             title="Community"
             color="red"
-            text="Join a y/cs community such as the Cybersecurity Community to meet people of similar computer science interests to yourself."
+            text="Join a y/cs community! These are groups of similarily interested Y/CS members who meet reguarly to discuss topics of interest. New communities are loading..."
             link={"https://forms.gle/C4JvNKg5R19Khnpi9"}
           />
         </div>
@@ -123,14 +123,6 @@ const Home = () => {
           className="rounded-full disabled:opacity-50 font-bold text-xl hover:scale-105 duration-200 bg-ycs-pink p-4 pl-12 pr-12 m-6"
         >
           Learn More
-        </Link>
-        <Link
-          href={
-            "https://docs.google.com/forms/d/e/1FAIpQLSd8vyeaux2ia9CgvDH6Os6wsbuO_uIX1axE7udcSZKoMD0m4w/viewform?usp=sf_link"
-          }
-          className="text-ycs-pink font-bold text-xl hover:scale-105 duration-200"
-        >
-          Applications are now open, apply today!
         </Link>
       </div>
     </div>

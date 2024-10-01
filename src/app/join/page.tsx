@@ -70,17 +70,6 @@ const Join = () => {
         className="mb-10 mt-32"
       />
 
-      <div className="flex justify-center items-center m-5">
-        <Link
-          href={
-            "https://docs.google.com/forms/d/e/1FAIpQLSd8vyeaux2ia9CgvDH6Os6wsbuO_uIX1axE7udcSZKoMD0m4w/viewform?usp=sf_link"
-          }
-          className="text-ycs-pink font-bold text-xl hover:scale-105 duration-200"
-        >
-          Applications are now open, apply today!
-        </Link>
-      </div>
-
       <div className="bg-ycs-gray md:mx-10 mx-8 md:p-10 p-8 rounded-2xl md:text-2xl text-lg">
         <span className="font-bold">1. Written Application</span>
         <br></br>

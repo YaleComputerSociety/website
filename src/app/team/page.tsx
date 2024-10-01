@@ -4,7 +4,7 @@ import "@styles/App.css";
 import { TeamGrid } from "@components/TeamGrid";
 
 const Team = () => {
-  const BOARD_CUTOFF = 14;
+  const BOARD_CUTOFF = 12;
 
   return (
     <div className="flex flex-col mb-12">

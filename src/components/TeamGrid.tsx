@@ -25,8 +25,13 @@ export const TeamGrid: React.FC<Props> = (props: Props) => {
               />
             </div>
             <div className="text-md xl:text-xl flex flex-col">
-              <strong className="font-bold mt-2 xl:mt-4 text-center">{board_member.name}</strong>
-              <div style={{ fontFamily: "Space Mono" }} className="text-center text-ycs-pink">
+              <strong className="font-bold mt-2 xl:mt-4 text-center">
+                {board_member.name}
+              </strong>
+              <div
+                style={{ fontFamily: "Space Mono" }}
+                className="text-center text-ycs-pink"
+              >
                 {board_member.role[0].toUpperCase()}
               </div>
             </div>
