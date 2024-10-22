@@ -220,7 +220,7 @@ export const PROJECTS: Project[] = [
     headerImage: ymeetsHeader,
     link: "/products/ymeets",
     description: "A web application aimed to make it easier for Yalies to find a time to meet.",
-    live: false,
+    live: true,
     shouldIconBeRounded: true,
   },
 
