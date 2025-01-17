@@ -54,6 +54,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #323844;
+  transition: 0.2s;
 }
 
 .project-card-no-link {
@@ -71,7 +72,6 @@ body {
 .project-card:hover {
   box-shadow: 0 3px 10px rgba(0 0 0 / 0.2);
   transform: scale(1.1);
-  transition: 0.2s;
 }
 
 @media only screen and (max-width: 800px) {
