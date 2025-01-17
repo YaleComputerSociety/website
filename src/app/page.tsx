@@ -61,6 +61,16 @@ const Home = () => {
           </a>
         </h1>
 
+        <a
+          href={
+            "https://docs.google.com/forms/d/e/1FAIpQLSe5SHLgU1WBu6DyAIebNDJ3t-bx5XMh5aEcPkUG0ypAGFEd0w/viewform?usp=dialog"
+          }
+          className="m-3
+          text-ycs-pink font-bold"
+        >
+          Applications are open now!
+        </a>
+
         <div className="flex md:flex-row flex-col mt-10 gap-10 md:mx-10 mx-16">
           <SolidColorBlock
             color={"ycs-pink"}

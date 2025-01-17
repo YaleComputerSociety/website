@@ -37,12 +37,24 @@ const ROLES = [
 const Join = () => {
   return (
     <div className="mb-12">
+      <div className="flex items-center justify-center">
+        <a
+          href={
+            "https://docs.google.com/forms/d/e/1FAIpQLSe5SHLgU1WBu6DyAIebNDJ3t-bx5XMh5aEcPkUG0ypAGFEd0w/viewform?usp=dialog"
+          }
+          className="m-3
+          text-white text-4xl font-bold text-center"
+        >
+          Applications are open now!
+        </a>
+      </div>
       <SectionTitle
         title="Build With Us"
         subtitle="We are Yale's largest collective of software developers, product designers, and
           computer science enthusiasts. We're excited that you're interested in joining
           us!"
       />
+
       <TitleSubtitle
         title="Roles"
         subtitle="Explore the diverse opportunities to contribute and grow with our dynamic team."
