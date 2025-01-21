@@ -19,13 +19,17 @@ import email from "./assets/email2.png";
 import facebook from "./assets/facebook.svg";
 import instagram from "./assets/instagram.svg";
 // People imports
+import eva from "./assets/people/eva.jpeg"
 import kelvin from "./assets/people/kelvin.jpg";
+import defaultpic from "./assets/people/defaultpic.jpg"
 import bill from "./assets/people/bill.jpg";
+import leslie from "./assets/people/leslie.jpeg"
 import katherine from "./assets/people/katherine.jpg";
 import lauren from "./assets/people/lauren.jpg";
+import handan from "./assets/people/handan.jpeg"
 import addison from "./assets/people/addison.jpg";
 import nabil from "./assets/people/nabil.jpg";
-import ethan from "./assets/people/ethan.jpeg";
+import ethan from "./assets/people/ethan.jpg";
 import amina from "./assets/people/amina.png";
 import anna from "./assets/people/anna.jpeg";
 import daniel from "./assets/people/daniel.jpeg";
@@ -42,6 +46,8 @@ import nicholas from "./assets/people/nicholas.jpeg";
 import ian from "./assets/people/ian.jpeg";
 import neil from "./assets/people/neil.jpeg";
 import eric from "./assets/people/eric.jpeg";
+import LilyLin from "./assets/people/LilyLin.png"
+import amanda from "./assets/people/amanda.png"
 // import defaultPerson from "./assets/people.jpeg";
 // partnerships import
 import meta from "./assets/partnerships/meta.png";
@@ -57,70 +63,68 @@ export interface Person {
 
 export const BOARD: Person[] = [
   {
-    name: "Addison Goolsbee",
-    image: addison,
-    role: ["President"],
-  },
-  {
-    name: "Ethan Mathieu",
-    image: ethan,
-    role: ["Vice President"],
-  },
-  {
-    name: "Katherine He",
-    image: katherine,
-    role: ["Director of Development"],
-  },
-  {
-    name: "Amina Sakho",
-    image: amina,
-    role: ["Vice Director of Development"],
-  },
-  {
     name: "Betti Tang",
     image: betti,
-    role: ["Co-Director of Events"],
+    role: ["Co-President"],
   },
   {
     name: "Daniel Wang",
     image: daniel,
+    role: ["Co-President"],
+  },
+  {
+    name: "Lorenss Martinsons",
+    image: lorenss,
+    role: ["Director of Development"],
+  },
+  {
+    name: "Chase Reynders",
+    image: chase,
+    role: ["Director of Cataylst"],
+  },
+  {
+    name: "Amanda Huang",
+    image: amanda,
     role: ["Co-Director of Events"],
   },
   {
-    name: "Jessica Le",
-    image: jessica,
-    role: ["Co-Director of Outreach & Recruitment"],
+    name: "Eva Zheng",
+    image: eva,
+    role: ["Co-Director of Events"],
   },
   {
-    name: "Fatima Kamara",
-    image: fatima,
-    role: ["Co-Director of Outreach & Recruitment"],
+    name: "Leslie Kim",
+    image: leslie,
+    role: ["Director of Outreach & Recruitment"],
   },
   {
-    name: "Kai Zhang",
-    image: kai,
+    name: "Lily Lin",
+    image: LilyLin,
     role: ["Director of Design"],
   },
+  
   {
-    name: "Lauren Delwiche",
-    image: lauren,
-    role: ["Director of Computer Security"],
-  },
-  {
-    name: "Nabil Rahman",
-    image: nabil,
+    name: "Handan Dilara Bikmaz",
+    image: handan,
     role: ["Treasurer"],
   },
   {
     name: "Tyler Schroder",
     image: tyler,
-    role: ["Communications"],
+    role: ["Director of Communications"],
   },
   {
-    name: "Kelvin Yip",
-    image: kelvin,
-    role: ["Advisor"],
+    name: "Ethan Mathieu",
+    image: ethan,
+    role: ["Senior Advisor"],
   },
+
+  {
+    name: "Addison Goolsebee",
+    image: addison,
+    role: ["Senior Advisor"],
+  },
+  
   // product leads
   {
     name: "Alex Schapiro",
@@ -161,11 +165,6 @@ export const BOARD: Person[] = [
     name: "Bill Qian",
     image: bill,
     role: ["RoomAdvisor"],
-  },
-  {
-    name: "Neil Shah",
-    image: neil,
-    role: ["AutoDonation"],
   },
   {
     name: "Anna Xu",
@@ -221,7 +220,7 @@ export const PROJECTS: Project[] = [
     headerImage: ymeetsHeader,
     link: "/products/ymeets",
     description: "A web application aimed to make it easier for Yalies to find a time to meet.",
-    live: false,
+    live: true,
     shouldIconBeRounded: true,
   },
 
@@ -270,16 +269,6 @@ export const PROJECTS: Project[] = [
     description: "A website where Yale students can browse, rate, and review college rooms.",
     live: false,
     shouldIconBeRounded: true,
-  },
-  {
-    name: "AutoDonation",
-    logo: autodonation,
-    headerImage: autodonationHeader,
-    link: "/products/autodonation",
-    description:
-      "An intuitive platform that helps nonprofits automate, collect, and track donations.",
-    live: false,
-    shouldIconBeRounded: false,
   },
 ];
 

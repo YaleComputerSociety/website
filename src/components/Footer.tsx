@@ -42,7 +42,7 @@ export const Footer = ({ className }: Props) => {
           icon={<FaGithub />}
         />
         <FooterIcon
-          link="https://www.instagram.com/yalecompsociety/"
+          link="https://www.instagram.com/yalecomputersociety/"
           ariaLabel="Instagram"
           icon={<FaInstagram />}
         />

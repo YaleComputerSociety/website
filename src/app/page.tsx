@@ -9,10 +9,13 @@ import { Sponsors } from "@components/Sponsors";
 // import { ParticleNetwork } from "@components/ParticleNetwork";
 import { TitleSubtitle } from "@components/TitleSubtitle";
 
-const FastParticleNetwork = dynamic(() => import("@components/ParticleNetwork"), {
-  loading: () => <p>Loading...</p>,
-  ssr: true,
-});
+const FastParticleNetwork = dynamic(
+  () => import("@components/ParticleNetwork"),
+  {
+    loading: () => <p>Loading...</p>,
+    ssr: true,
+  }
+);
 
 const Home = () => {
   return (
@@ -46,13 +49,27 @@ const Home = () => {
         </p>
 
         <h1 className="text-white md:mt-[7vw] text-center mt-16 lg:text-2xl md:text-xl text-lg w-3/4 mx-auto">
-          We&apos;re a group of computer science students that build software applications for Yale
-          University&apos;s campus community and connect over our shared love for applied computing.
-          Check out our{" "}
-          <a className="text-ycs-pink underline" href="https://github.com/yalecomputersociety">
+          We&apos;re a group of computer science students that build software
+          applications for Yale University&apos;s campus community and connect
+          over our shared love for applied computing.
+          <br />
+          <a
+            className="text-ycs-pink underline"
+            href="https://github.com/yalecomputersociety"
+          >
             GitHub
           </a>
         </h1>
+
+        <a
+          href={
+            "https://docs.google.com/forms/d/e/1FAIpQLSe5SHLgU1WBu6DyAIebNDJ3t-bx5XMh5aEcPkUG0ypAGFEd0w/viewform?usp=dialog"
+          }
+          className="m-3
+          text-ycs-pink font-bold"
+        >
+          Applications are open now!
+        </a>
 
         <div className="flex md:flex-row flex-col mt-10 gap-10 md:mx-10 mx-16">
           <SolidColorBlock
@@ -98,7 +115,7 @@ const Home = () => {
           <GradientBox
             title="Community"
             color="red"
-            text="Join a y/cs community such as the Cybersecurity Community to meet people of similar computer science interests to yourself."
+            text="Join a y/cs community! These are groups of similarily interested Y/CS members who meet reguarly to discuss topics of interest. New communities are loading..."
             link={"https://forms.gle/C4JvNKg5R19Khnpi9"}
           />
         </div>

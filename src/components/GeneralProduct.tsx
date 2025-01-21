@@ -58,7 +58,7 @@ export const GeneralProduct = ({
       <Image
         loading="lazy"
         src={require(
-          `../assets/products/${productName.toLowerCase()}/${sectionNumber}sectionimage.png`,
+          `../assets/products/${productName.toLowerCase()}/${sectionNumber}sectionimage.png`
         )}
         className="p-1 rounded-lg md:ml-10 bg-gray-100"
         alt={`Product ${sectionNumber} Section Screenshot`}
@@ -78,7 +78,10 @@ export const GeneralProduct = ({
       />
       {firstSectionTitle && firstSectionText && (
         <div className="first-section flex h-full py-16 md:py-20 items-center flex-col md:flex-row">
-          <GeneralProductSectionImage sectionNumber="first" className="order-last md:order-first" />
+          <GeneralProductSectionImage
+            sectionNumber="first"
+            className="order-last md:order-first"
+          />
           <GeneralProductSectionText
             title={firstSectionTitle}
             text={firstSectionText}
@@ -103,7 +106,10 @@ export const GeneralProduct = ({
       )}
       {thirdSectionTitle && thirdSectionText && (
         <div className="third-section flex h-full py-16 md:py-20 items-center flex-col md:flex-row">
-          <GeneralProductSectionImage sectionNumber="third" className="order-last md:order-first" />
+          <GeneralProductSectionImage
+            sectionNumber="third"
+            className="order-last md:order-first"
+          />
           <GeneralProductSectionText
             title={thirdSectionTitle}
             text={thirdSectionText}
