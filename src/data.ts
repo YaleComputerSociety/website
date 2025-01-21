@@ -26,7 +26,6 @@ import addison from "./assets/people/addison.jpg";
 import ethan from "./assets/people/ethan.jpg";
 import anna from "./assets/people/anna.jpeg";
 import daniel from "./assets/people/daniel.jpeg";
-import betti from "./assets/people/betti.jpeg";
 import lorenss from "./assets/people/lorenss.jpeg";
 import tyler from "./assets/people/tyler.jpeg";
 import alex from "./assets/people/alex.jpeg";
@@ -34,6 +33,7 @@ import sida from "./assets/people/sida.jpeg";
 import chase from "./assets/people/chase.jpeg";
 import nicholas from "./assets/people/nicholas.jpeg";
 import ian from "./assets/people/ian.jpeg";
+import betti from "./assets/people/betti.jpeg";
 import eric from "./assets/people/eric.jpeg";
 import LilyLin from "./assets/people/LilyLin.png";
 import amanda from "./assets/people/amanda.png";
@@ -52,19 +52,24 @@ export interface Person {
 
 export const BOARD: Person[] = [
   {
-    name: "Betti Tang",
-    image: betti,
-    role: ["Co-President"],
-  },
-  {
     name: "Daniel Wang",
     image: daniel,
-    role: ["Co-President"],
+    role: ["President"],
   },
   {
-    name: "Lorenss Martinsons",
-    image: lorenss,
+    name: "Lily Lin",
+    image: LilyLin,
+    role: ["Vice President & Director of Design"],
+  },
+  {
+    name: "Addison Goolsbee",
+    image: addison,
     role: ["Director of Development"],
+  },
+  {
+    name: "Ethan Mathieu",
+    image: ethan,
+    role: ["Senior Advisor"],
   },
   {
     name: "Chase Reynders",
@@ -87,12 +92,6 @@ export const BOARD: Person[] = [
     role: ["Director of Outreach & Recruitment"],
   },
   {
-    name: "Lily Lin",
-    image: LilyLin,
-    role: ["Director of Design"],
-  },
-
-  {
     name: "Handan Dilara Bikmaz",
     image: handan,
     role: ["Treasurer"],
@@ -102,26 +101,15 @@ export const BOARD: Person[] = [
     image: tyler,
     role: ["Director of Communications"],
   },
-  {
-    name: "Ethan Mathieu",
-    image: ethan,
-    role: ["Senior Advisor"],
-  },
-
-  {
-    name: "Addison Goolsebee",
-    image: addison,
-    role: ["Senior Advisor"],
-  },
 
   // product leads
   {
-    name: "Alex Schapiro",
+    name: "Neil Song",
     image: alex,
     role: ["CourseTable"],
   },
   {
-    name: "Sida Chen",
+    name: "Humphrey Xu",
     image: sida,
     role: ["CourseTable"],
   },
@@ -131,34 +119,39 @@ export const BOARD: Person[] = [
     role: ["Yalies"],
   },
   {
-    name: "Nicholas Ribeiro",
+    name: "Jeet Parikh",
     image: nicholas,
     role: ["ymeets"],
   },
   {
-    name: "Chase Reynders",
-    image: chase,
-    role: ["Yale Butteries"],
-  },
-  {
-    name: "Ian Lim",
-    image: ian,
+    name: "Addison Goolsbee",
+    image: addison,
     role: ["Yale Clubs"],
   },
   {
-    name: "Lorenss Martinsons",
+    name: "Ryan Gumlia",
     image: lorenss,
     role: ["MajorAudit"],
   },
   {
-    name: "Bill Qian",
+    name: "Hunter Wimsatt",
     image: bill,
     role: ["RoomAdvisor"],
   },
   {
-    name: "Anna Xu",
+    name: "Ephraim Akrai-Nettey",
     image: anna,
     role: ["Yale IMs"],
+  },
+  {
+    name: "Rifat Tarafder",
+    image: betti,
+    role: ["YaleJournals"],
+  },
+  {
+    name: "Ryan Fernandes",
+    image: ian,
+    role: ["RDB"],
   },
 ];
 
@@ -241,6 +234,15 @@ export const PROJECTS: Project[] = [
     headerImage: roomadvisorHeader,
     link: "/products/roomadvisor",
     description: "A website where Yale students can browse, rate, and review college rooms.",
+    live: false,
+    shouldIconBeRounded: true,
+  },
+  {
+    name: "RDB",
+    logo: undefined,
+    headerImage: undefined,
+    link: undefined,
+    description: "Database visualizer for Yale research",
     live: false,
     shouldIconBeRounded: true,
   },
