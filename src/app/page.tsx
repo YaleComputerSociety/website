@@ -9,13 +9,10 @@ import { Sponsors } from "@components/Sponsors";
 // import { ParticleNetwork } from "@components/ParticleNetwork";
 import { TitleSubtitle } from "@components/TitleSubtitle";
 
-const FastParticleNetwork = dynamic(
-  () => import("@components/ParticleNetwork"),
-  {
-    loading: () => <p>Loading...</p>,
-    ssr: true,
-  }
-);
+const FastParticleNetwork = dynamic(() => import("@components/ParticleNetwork"), {
+  loading: () => <p>Loading...</p>,
+  ssr: true,
+});
 
 const Home = () => {
   return (
@@ -49,14 +46,10 @@ const Home = () => {
         </p>
 
         <h1 className="text-white md:mt-[7vw] text-center mt-16 lg:text-2xl md:text-xl text-lg w-3/4 mx-auto">
-          We&apos;re a group of computer science students that build software
-          applications for Yale University&apos;s campus community and connect
-          over our shared love for applied computing.
+          We&apos;re a group of computer science students that build software applications for Yale
+          University&apos;s campus community and connect over our shared love for applied computing.
           <br />
-          <a
-            className="text-ycs-pink underline"
-            href="https://github.com/yalecomputersociety"
-          >
+          <a className="text-ycs-pink underline" href="https://github.com/yalecomputersociety">
             GitHub
           </a>
         </h1>
