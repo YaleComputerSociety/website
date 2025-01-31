@@ -20,20 +20,15 @@ import facebook from "./assets/facebook.svg";
 import instagram from "./assets/instagram.svg";
 // People imports
 import eva from "./assets/people/eva.jpeg";
-import bill from "./assets/people/bill.jpg";
 import leslie from "./assets/people/leslie.jpeg";
 import handan from "./assets/people/handan.jpeg";
 import addison from "./assets/people/addison.jpg";
 import ethan from "./assets/people/ethan.jpg";
-import anna from "./assets/people/anna.jpeg";
 import daniel from "./assets/people/daniel.jpeg";
 import tyler from "./assets/people/tyler.jpeg";
 import neil from "./assets/people/neil.jpeg";
 import humphrey from "./assets/people/humphrey.jpg";
 import chase from "./assets/people/chase.jpeg";
-import nicholas from "./assets/people/nicholas.jpeg";
-import ian from "./assets/people/ian.jpeg";
-import betti from "./assets/people/betti.jpeg";
 import eric from "./assets/people/eric.jpeg";
 import LilyLin from "./assets/people/LilyLin.png";
 import amanda from "./assets/people/amanda.png";
@@ -43,7 +38,6 @@ import hunter from "./assets/people/hunter.jpeg";
 import ephraim from "./assets/people/ephraim.jpeg";
 import jeet from "./assets/people/jeet.jpeg";
 import rylan from "./assets/people/rylan.jpeg";
-// import defaultPerson from "./assets/people.jpeg";
 // partnerships import
 import meta from "./assets/partnerships/meta.png";
 import bloomberg from "./assets/partnerships/bloomberg.jpeg";
