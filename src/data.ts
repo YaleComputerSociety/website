@@ -7,6 +7,7 @@ import yalies from "./assets/products/logos/yalies.png";
 import ymeets from "./assets/products/logos/ymeetslogo.png";
 import roomadvisor from "./assets/products/logos/roomadvisor.png";
 import yaleclubs from "./assets/products/logos/yaleclubs.svg";
+import yims from "./assets/products/logos/yims.png";
 // import yims from "./assets/products/logos/yaleims.png";
 // Product headers
 import coursetableHeader from "./assets/products/coursetable/headerimage.png";
@@ -208,7 +209,7 @@ export const PROJECTS: Project[] = [
     shouldIconBeRounded: true,
     live: true,
     link: "https://yaleims.com",
-    logo: undefined,
+    logo: yims,
   },
   {
     name: "MajorAudit",
@@ -216,16 +217,7 @@ export const PROJECTS: Project[] = [
       "A web application aimed to make it easier for Yalies contextualize their four-year plan.",
     shouldIconBeRounded: true,
     live: false,
-    link: undefined,
-    logo: undefined,
-  },
-  {
-    name: "YaleJournals",
-    description:
-      "A web application that will make it easier to stay up to date with articles published on campus",
-    shouldIconBeRounded: true,
-    live: false,
-    link: undefined,
+    link: "https://majoraudit.web.app/",
     logo: undefined,
   },
   {
@@ -238,10 +230,10 @@ export const PROJECTS: Project[] = [
     shouldIconBeRounded: true,
   },
   {
-    name: "RDB",
+    name: "YLabs",
     logo: undefined,
     headerImage: undefined,
-    link: undefined,
+    link: "https://rdb.onrender.com/",
     description: "Database visualizer for Yale research",
     live: false,
     shouldIconBeRounded: true,
