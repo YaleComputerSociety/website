@@ -8,7 +8,7 @@ import ymeets from "./assets/products/logos/ymeetslogo.png";
 import roomadvisor from "./assets/products/logos/roomadvisor.png";
 import yaleclubs from "./assets/products/logos/yaleclubs.svg";
 import yims from "./assets/products/logos/yims.png";
-// import yims from "./assets/products/logos/yaleims.png";
+import ylabs from "./assets/products/logos/ylabs.png";
 // Product headers
 import coursetableHeader from "./assets/products/coursetable/headerimage.png";
 import yaliesHeader from "./assets/products/yalies/headerimage.png";
@@ -27,10 +27,9 @@ import addison from "./assets/people/addison.jpg";
 import ethan from "./assets/people/ethan.jpg";
 import anna from "./assets/people/anna.jpeg";
 import daniel from "./assets/people/daniel.jpeg";
-import lorenss from "./assets/people/lorenss.jpeg";
 import tyler from "./assets/people/tyler.jpeg";
-import alex from "./assets/people/alex.jpeg";
-import sida from "./assets/people/sida.jpeg";
+import neil from "./assets/people/neil.jpeg";
+import humphrey from "./assets/people/humphrey.jpg";
 import chase from "./assets/people/chase.jpeg";
 import nicholas from "./assets/people/nicholas.jpeg";
 import ian from "./assets/people/ian.jpeg";
@@ -38,6 +37,12 @@ import betti from "./assets/people/betti.jpeg";
 import eric from "./assets/people/eric.jpeg";
 import LilyLin from "./assets/people/LilyLin.png";
 import amanda from "./assets/people/amanda.png";
+import ryan from "./assets/people/ryan.jpeg";
+import ryanf from "./assets/people/ryanf.jpeg";
+import hunter from "./assets/people/hunter.jpeg";
+import ephraim from "./assets/people/ephraim.jpeg";
+import jeet from "./assets/people/jeet.jpeg";
+import rylan from "./assets/people/rylan.jpeg";
 // import defaultPerson from "./assets/people.jpeg";
 // partnerships import
 import meta from "./assets/partnerships/meta.png";
@@ -73,11 +78,6 @@ export const BOARD: Person[] = [
     role: ["Senior Advisor"],
   },
   {
-    name: "Chase Reynders",
-    image: chase,
-    role: ["Director of Cataylst"],
-  },
-  {
     name: "Amanda Huang",
     image: amanda,
     role: ["Co-Director of Events"],
@@ -86,6 +86,11 @@ export const BOARD: Person[] = [
     name: "Eva Zheng",
     image: eva,
     role: ["Co-Director of Events"],
+  },
+  {
+    name: "Chase Reynders",
+    image: chase,
+    role: ["Director of Cataylst"],
   },
   {
     name: "Leslie Kim",
@@ -106,12 +111,12 @@ export const BOARD: Person[] = [
   // product leads
   {
     name: "Neil Song",
-    image: alex,
+    image: neil,
     role: ["CourseTable"],
   },
   {
     name: "Humphrey Xu",
-    image: sida,
+    image: humphrey,
     role: ["CourseTable"],
   },
   {
@@ -120,39 +125,39 @@ export const BOARD: Person[] = [
     role: ["Yalies"],
   },
   {
-    name: "Jeet Parikh",
-    image: nicholas,
-    role: ["ymeets"],
-  },
-  {
     name: "Addison Goolsbee",
     image: addison,
     role: ["Yale Clubs"],
   },
   {
+    name: "Jeet Parikh",
+    image: jeet,
+    role: ["ymeets"],
+  },
+  {
+    name: "Rylan Yang",
+    image: rylan,
+    role: ["ymeets"],
+  },
+  {
+    name: "Ephraim Akrai-Nettey",
+    image: ephraim,
+    role: ["YaleIMs"],
+  },
+  {
     name: "Ryan Gumlia",
-    image: lorenss,
+    image: ryan,
     role: ["MajorAudit"],
   },
   {
     name: "Hunter Wimsatt",
-    image: bill,
+    image: hunter,
     role: ["RoomAdvisor"],
   },
   {
-    name: "Ephraim Akrai-Nettey",
-    image: anna,
-    role: ["Yale IMs"],
-  },
-  {
-    name: "Rifat Tarafder",
-    image: betti,
-    role: ["YaleJournals"],
-  },
-  {
     name: "Ryan Fernandes",
-    image: ian,
-    role: ["RDB"],
+    image: ryanf,
+    role: ["YLabs"],
   },
 ];
 
@@ -231,7 +236,7 @@ export const PROJECTS: Project[] = [
   },
   {
     name: "YLabs",
-    logo: undefined,
+    logo: ylabs,
     headerImage: undefined,
     link: "https://rdb.onrender.com/",
     description: "Database visualizer for Yale research",
