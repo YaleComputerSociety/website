@@ -9,9 +9,10 @@ import type { Project } from "@data";
 interface Props {
   product: Project;
   roundedIcon?: boolean;
+  isBackgroundWhite?: boolean;
 }
 
-export const ProductCard = ({ product, roundedIcon }: Props) => {
+export const ProductCard = ({ product, roundedIcon, isBackgroundWhite }: Props) => {
   const ConditionalWrapper = ({
     condition,
     wrapper,
@@ -35,7 +36,7 @@ export const ProductCard = ({ product, roundedIcon }: Props) => {
       >
         <div className="w-40 h-40 bg-ycs-gray rounded-full absolute top-[-80px] left-1/2 -translate-x-1/2 flex justify-center items-center">
           <Image
-            className={`${roundedIcon ? "rounded-full w-32 h-32" : "w-28 h-28"} ${product.name == "Yalies" && "left-7 absolute"}`}
+            className={`${roundedIcon ? "rounded-full w-32 h-32" : "w-28 h-28"} ${product.name == "Yalies" && "left-7 absolute"} ${isBackgroundWhite ? "bg-white" : ""}`}
             src={product.logo ? product.logo : nologoproduct1}
             loading="lazy"
             alt={product.name}

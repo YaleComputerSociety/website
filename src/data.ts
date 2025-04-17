@@ -5,15 +5,14 @@ import { StaticImageData } from "next/image";
 import coursetable from "./assets/products/logos/coursetable.png";
 import yalies from "./assets/products/logos/yalies.png";
 import ymeets from "./assets/products/logos/ymeetslogo.png";
-import roomadvisor from "./assets/products/logos/roomadvisor.png";
 import yaleclubs from "./assets/products/logos/yaleclubs.svg";
 import yims from "./assets/products/logos/yims.png";
 import ylabs from "./assets/products/logos/ylabs.png";
+import majoraudit from "./assets/products/logos/majoraudit.png";
 // Product headers
 import coursetableHeader from "./assets/products/coursetable/headerimage.png";
 import yaliesHeader from "./assets/products/yalies/headerimage.png";
 import ymeetsHeader from "./assets/products/ymeets/headerimage.png";
-import roomadvisorHeader from "./assets/products/roomadvisor/headerimage.png";
 // Media imports
 import email from "./assets/email2.png";
 import facebook from "./assets/facebook.svg";
@@ -164,6 +163,7 @@ export type Project = {
   live: boolean;
   description: string;
   shouldIconBeRounded: boolean;
+  isBackgroundWhite?: boolean;
 };
 
 export const PROJECTS: Project[] = [
@@ -171,7 +171,7 @@ export const PROJECTS: Project[] = [
     name: "CourseTable",
     logo: coursetable,
     headerImage: coursetableHeader,
-    link: "/products/coursetable",
+    link: "https://coursetable.com",
     description: "A student-built courses browser used by nearly everyone at Yale.",
     live: true,
     shouldIconBeRounded: false,
@@ -180,7 +180,7 @@ export const PROJECTS: Project[] = [
     name: "Yalies",
     logo: yalies,
     headerImage: yaliesHeader,
-    link: "/products/yalies",
+    link: "https://yalies.io",
     description: "A directory that provides data on the Yale student body.",
     live: true,
     shouldIconBeRounded: false,
@@ -189,7 +189,7 @@ export const PROJECTS: Project[] = [
     name: "ymeets",
     logo: ymeets,
     headerImage: ymeetsHeader,
-    link: "/products/ymeets",
+    link: "https://ymeets.com",
     description: "A web application aimed to make it easier for Yalies to find a time to meet.",
     live: true,
     shouldIconBeRounded: true,
@@ -197,9 +197,9 @@ export const PROJECTS: Project[] = [
   {
     name: "YaleClubs",
     description: "Website to view clubs and events",
-    shouldIconBeRounded: true,
+    shouldIconBeRounded: false,
     live: true,
-    link: "https://yaleclubs.info",
+    link: "https://yaleclubs.io",
     logo: yaleclubs,
   },
   {
@@ -215,26 +215,18 @@ export const PROJECTS: Project[] = [
     description:
       "A web application aimed to make it easier for Yalies contextualize their four-year plan.",
     shouldIconBeRounded: true,
+    isBackgroundWhite: true,
     live: false,
     link: "https://majoraudit.web.app/",
-    logo: undefined,
-  },
-  {
-    name: "RoomAdvisor",
-    logo: roomadvisor,
-    headerImage: roomadvisorHeader,
-    link: "/products/roomadvisor",
-    description: "A website where Yale students can browse, rate, and review college rooms.",
-    live: false,
-    shouldIconBeRounded: true,
+    logo: majoraudit,
   },
   {
     name: "YLabs",
     logo: ylabs,
     headerImage: undefined,
-    link: "https://rdb.onrender.com/",
+    link: "https://yalelabs.io",
     description: "Database visualizer for Yale research",
-    live: false,
+    live: true,
     shouldIconBeRounded: true,
   },
 ];
@@ -270,7 +262,7 @@ export const STORIES = [
   {
     data: "2012",
     description:
-      "In 2012, then Yale students Peter Xu and Harry Yu created CourseTable – Yale’s first product built " +
+      "In 2012, then Yale students Peter Xu and Harry Yu created CourseTable – Yale's first product built " +
       "by students, for students.",
   },
   {

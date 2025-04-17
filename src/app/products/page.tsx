@@ -14,7 +14,12 @@ const ProductGrid = ({ live }: Props) => (
     </h2>
     <div className="product-grid">
       {PROJECTS.filter((project) => project.live === live).map((project, i) => (
-        <ProductCard product={project} roundedIcon={project.shouldIconBeRounded} key={i} />
+        <ProductCard
+          product={project}
+          roundedIcon={project.shouldIconBeRounded}
+          isBackgroundWhite={project.isBackgroundWhite}
+          key={i}
+        />
       ))}
     </div>
   </>
