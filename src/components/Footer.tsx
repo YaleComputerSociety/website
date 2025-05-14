@@ -47,7 +47,9 @@ export const Footer = ({ className }: Props) => {
           icon={<FaInstagram />}
         />
       </div>
-      <div className="mt-4 text-gray-400 mb-6">Yale Computer Society © 2024</div>
+      <div className="mt-4 text-gray-400 mb-6">
+        Yale Computer Society © {new Date().getFullYear()}
+      </div>
     </footer>
   );
 };
