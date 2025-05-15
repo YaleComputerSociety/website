@@ -194,6 +194,7 @@ export type Project = {
   live: boolean;
   description: string;
   shouldIconBeRounded: boolean;
+  isBackgroundWhite?: boolean;
 };
 
 export const PROJECTS: Project[] = [
@@ -244,6 +245,7 @@ export const PROJECTS: Project[] = [
     name: 'MajorAudit',
     description: 'A website that allows Yalies to contextualize their four-year plan.',
     shouldIconBeRounded: true,
+    isBackgroundWhite: true,
     live: false,
     link: 'https://majoraudit.web.app/',
     logo: undefined,
