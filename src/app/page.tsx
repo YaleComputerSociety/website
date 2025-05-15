@@ -165,7 +165,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto mt-32">
+      <section className="max-w-7xl mx-auto mt-32 mt-32 mt-32">
         <TitleSubtitle
           title="Cultivating a passion for computer science, at all skill levels"
           subtitle=""
