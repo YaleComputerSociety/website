@@ -1,15 +1,14 @@
-import Link from 'next/link';
 import { FC } from 'react';
 
 interface Props {
   title: string;
   text: string;
   color: 'pink' | 'blue' | 'green' | 'faded-pink' | 'red';
-  link?: string;
+
   icon?: React.ReactNode;
 }
 
-export const GradientBox: FC<Props> = ({ title, text, color, link, icon }) => {
+export const GradientBox: FC<Props> = ({ title, text, color, icon }) => {
   let gradientColors;
   let hoverGradient;
   let borderColor;
@@ -70,11 +69,5 @@ export const GradientBox: FC<Props> = ({ title, text, color, link, icon }) => {
     </div>
   );
 
-  return link ? (
-    <Link href={link} className="block h-full">
-      {content}
-    </Link>
-  ) : (
-    content
-  );
+  return content;
 };
