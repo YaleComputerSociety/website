@@ -77,7 +77,8 @@ const Home = () => {
         <div className="mt-16 md:mt-24 text-xl">
           <p className="text-white max-w-3xl">
             The y/cs is a group of product enthusiats that build software applications for Yale
-            University's campus community and connect over our shared love for applied computing.
+            University&apos;s campus community and connect over our shared love for applied
+            computing.
           </p>
           <a
             className="flex items-center text-ycs-pink hover:text-white hover:underline transition-colors duration-300 mt-4 group cursor-pointer"
@@ -291,7 +292,7 @@ const Home = () => {
           <div className="relative z-10 p-10 md:p-16 flex">
             <div className="max-w-2xl">
               <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
-                Ready to join Yale's premier tech community?
+                Ready to join Yale&apos;s premier tech community?
               </h2>
 
               <p className="mt-6 text-lg text-zinc-300">

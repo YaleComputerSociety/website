@@ -227,7 +227,6 @@ const Join = () => {
         </div>
       </section>
 
-      {/* FAQ section */}
       <section className="max-w-7xl mx-auto mt-32">
         <div className="border-b border-zinc-800 pb-4 mb-12">
           <h2 className="text-white text-3xl md:text-4xl font-bold">Frequently Asked Questions</h2>

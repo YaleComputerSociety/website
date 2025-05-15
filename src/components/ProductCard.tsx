@@ -8,7 +8,7 @@ import { GoArrowUpRight } from 'react-icons/go';
 import nologoproduct1 from '../assets/products/logos/ycs.png';
 
 // ProductCard Component
-export const ProductCard = ({ product }) => {
+export const ProductCard = ({ product }: { product: Product }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -62,7 +62,7 @@ export const ProductCard = ({ product }) => {
             </div>
 
             <p className="text-zinc-300 text-lg flex-grow">{product.description}</p>
-
+            {/* 
             {product.technologies && (
               <div className="mt-6 flex flex-wrap gap-2">
                 {product.technologies.map((tech, i) => (
@@ -74,7 +74,7 @@ export const ProductCard = ({ product }) => {
                   </span>
                 ))}
               </div>
-            )}
+            )} */}
           </div>
         </Link>
       </div>
@@ -82,8 +82,17 @@ export const ProductCard = ({ product }) => {
   );
 };
 
+interface Product {
+  name: string;
+  description: string;
+  logo?: string;
+  link?: string;
+  shouldIconBeRounded?: boolean;
+  live?: boolean;
+}
+
 // Featured Product Component
-export const FeaturedProduct = ({ product }) => {
+export const FeaturedProduct = ({ product }: { product: Product }) => {
   return (
     <div className="relative mb-16">
       <div className="rounded-lg overflow-hidden">

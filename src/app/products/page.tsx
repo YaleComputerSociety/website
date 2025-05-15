@@ -4,10 +4,6 @@ import '@styles/App.css';
 import { SectionTitle } from '@components/SectionTitle';
 import { GoArrowUpRight } from 'react-icons/go';
 
-interface Props {
-  live: boolean;
-}
-
 const Products = () => {
   const liveProducts = PROJECTS.filter((project) => project.live === true);
   const developmentProducts = PROJECTS.filter((project) => project.live === false);
@@ -31,7 +27,7 @@ const Products = () => {
       <section className="max-w-7xl mt-24">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {liveProducts.concat(developmentProducts).map((project, i) => (
-            <ProductCard key={i} product={project} />
+            <ProductCard key={i} product={{ ...project, logo: project.logo?.src }} />
           ))}
         </div>
       </section>
