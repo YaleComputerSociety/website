@@ -31,6 +31,37 @@ const Products = () => {
           ))}
         </div>
       </section>
+
+      <section className="max-w-7xl mx-auto mt-32 px-4">
+        <div className="border-b border-zinc-800 pb-4 mb-12">
+          <h2 className="text-white text-2xl md:text-4xl font-bold">Frequently Asked Questions</h2>
+          <p className="text-zinc-400 text-base md:text-lg mt-2">
+            Common questions about accessing our products
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 gap-6 md:gap-8">
+          <div className="bg-zinc-800/20 rounded-lg p-4 md:p-6">
+            <h3 className="text-lg md:text-xl font-bold text-white mb-2 md:mb-3">
+              What if I&apos;m not a Yale student?
+            </h3>
+            <p className="text-sm md:text-base text-zinc-300">
+              Certain applications have Guest modes built in or only require a gmail account, but
+              some of the apps that deal with sensitive Yale data require CAS login.
+            </p>
+          </div>
+
+          <div className="bg-zinc-800/20 rounded-lg p-4 md:p-6">
+            <h3 className="text-lg md:text-xl font-bold text-white mb-2 md:mb-3">
+              What if I&apos;m an incoming student?
+            </h3>
+            <p className="text-sm md:text-base text-zinc-300">
+              When you receive CAS login you will be able to access our applications. Sometimes this
+              can take until the beginning of the semester, so just hang tight!
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
