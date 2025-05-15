@@ -160,7 +160,6 @@ const Masthead = ({ people }: { title: string; people: Person[] }) => {
     );
   };
 
-  // Option buttons for filtering
   const FilterOption = ({
     active,
     label,
@@ -183,9 +182,7 @@ const Masthead = ({ people }: { title: string; people: Person[] }) => {
   return (
     <div className="bg-zinc-800/30 rounded-lg p-6 md:p-8">
       <div className="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
-        {/* Search and filter controls */}
         <div className="flex flex-col md:flex-row gap-4">
-          {/* Search input */}
           <div className="relative">
             <input
               type="text"
@@ -205,7 +202,6 @@ const Masthead = ({ people }: { title: string; people: Person[] }) => {
             )}
           </div>
 
-          {/* Filter toggle button */}
           <button
             onClick={() => setShowFilters(!showFilters)}
             className="flex items-center gap-2 bg-zinc-700/50 text-white px-4 py-2 rounded-lg hover:bg-zinc-700 transition-colors"
@@ -221,11 +217,9 @@ const Masthead = ({ people }: { title: string; people: Person[] }) => {
         </div>
       </div>
 
-      {/* Filter options panel */}
       {showFilters && (
         <div className="mb-8 p-4 bg-zinc-800/50 rounded-lg border border-zinc-700/50 animate-fadeIn">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Role filter */}
             <div>
               <h4 className="text-white font-medium mb-3">Filter by Role</h4>
               <div className="flex flex-wrap gap-2">
@@ -240,7 +234,6 @@ const Masthead = ({ people }: { title: string; people: Person[] }) => {
               </div>
             </div>
 
-            {/* Team filter */}
             <div>
               <h4 className="text-white font-medium mb-3">Filter by Team</h4>
               <div className="flex flex-wrap gap-2">
@@ -256,7 +249,6 @@ const Masthead = ({ people }: { title: string; people: Person[] }) => {
             </div>
           </div>
 
-          {/* Reset filters button */}
           <div className="mt-4 flex justify-end">
             <button
               onClick={() => {
@@ -274,7 +266,6 @@ const Masthead = ({ people }: { title: string; people: Person[] }) => {
         </div>
       )}
 
-      {/* Results count */}
       <div className="mb-4 text-zinc-400 text-sm">
         Showing {filteredPeople.length} of {people.length} people
         {searchTerm && <span> matching &quot;{searchTerm}&quot;</span>}
@@ -282,7 +273,6 @@ const Masthead = ({ people }: { title: string; people: Person[] }) => {
         {activeTeam !== 'All' && <span> on team &quot;{activeTeam}&quot;</span>}
       </div>
 
-      {/* Display no results message */}
       {filteredPeople.length === 0 && (
         <div className="py-12 text-center">
           <p className="text-zinc-400 text-lg">No people match your filters</p>
@@ -353,7 +343,6 @@ const Masthead = ({ people }: { title: string; people: Person[] }) => {
         </div>
       )}
 
-      {/* Mobile view of roles - only shown when screen is small and role column is hidden */}
       <div className="md:hidden mt-4">
         {filteredPeople.length > 0 && (
           <div className="text-sm text-zinc-400">

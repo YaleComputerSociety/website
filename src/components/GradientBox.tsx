@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { FC } from 'react';
-import { GoArrowUpRight } from 'react-icons/go';
 
 interface Props {
   title: string;
@@ -67,17 +66,6 @@ export const GradientBox: FC<Props> = ({ title, text, color, link, icon }) => {
         </div>
 
         <p className="text-zinc-300 text-base lg:text-lg mb-6 flex-grow">{text}</p>
-
-        {/* {link && (
-          <div className="flex items-center mt-auto group">
-            <span className="text-zinc-400 group-hover:text-white transition-colors duration-300">
-              Learn More
-            </span>
-            <div className="ml-2 p-1 rounded-full bg-zinc-700 group-hover:bg-zinc-600 transition-colors duration-300">
-              <GoArrowUpRight className="text-zinc-400 group-hover:text-white w-4 h-4" />
-            </div>
-          </div>
-        )} */}
       </div>
     </div>
   );

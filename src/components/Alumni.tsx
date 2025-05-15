@@ -57,14 +57,11 @@ const ALUMNI_COMPANIES = [
 ];
 
 const AlumniCompanies = () => {
-  // Display top 8 companies by default, or all if viewAll is true
-
   return (
     <section className="max-w-7xl mx-auto mt-24 md:mt-32">
       <h2 className="text-white text-3xl md:text-4xl font-bold mb-8">Where Our Members Land</h2>
 
       <div className="bg-zinc-800/20 rounded-lg relative overflow-hidden">
-        {/* Logo grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 relative z-10">
           {ALUMNI_COMPANIES.map((company, i) => (
             <motion.div

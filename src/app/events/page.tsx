@@ -212,7 +212,6 @@ const Events = () => {
 
   return (
     <div className="mb-20 px-6 pt-24">
-      {/* Hero section */}
       <section className="max-w-7xl mx-auto">
         <h1 className="text-white text-5xl md:text-7xl font-bold mb-4">Events</h1>
         <p className="text-zinc-400 text-xl mb-16 max-w-2xl">
@@ -221,7 +220,6 @@ const Events = () => {
         </p>
       </section>
 
-      {/* Tab navigation */}
       <section className="max-w-7xl mx-auto">
         <div className="flex space-x-2 mb-8">
           <TabButton active={activeTab === 'upcoming'} onClick={() => setActiveTab('upcoming')}>
@@ -240,7 +238,6 @@ const Events = () => {
           </Link>
         </div>
 
-        {/* Upcoming Events Tab */}
         {activeTab === 'upcoming' && (
           <div className="space-y-6">
             {upcomingEvents.length > 0 ? (
@@ -251,10 +248,8 @@ const Events = () => {
           </div>
         )}
 
-        {/* Past Events Tab */}
         {activeTab === 'past' && (
           <>
-            {/* Filters for past events */}
             <div className="mb-8 overflow-x-auto pb-2">
               <div className="flex space-x-2">
                 <button
@@ -283,7 +278,6 @@ const Events = () => {
               </div>
             </div>
 
-            {/* Past events grid */}
             {filteredPastEvents.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {filteredPastEvents.map((event) => (
@@ -302,7 +296,6 @@ const Events = () => {
         )}
       </section>
 
-      {/* Newsletter Signup */}
       <section className="max-w-7xl mx-auto mt-20">
         <div className="bg-gradient-to-br from-zinc-800/50 to-zinc-900/50 rounded-lg p-8 border-l-4 ">
           <div className="max-w-xl">

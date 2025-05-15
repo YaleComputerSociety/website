@@ -62,19 +62,6 @@ export const ProductCard = ({ product }: { product: Product }) => {
             </div>
 
             <p className="text-zinc-300 text-lg flex-grow">{product.description}</p>
-            {/* 
-            {product.technologies && (
-              <div className="mt-6 flex flex-wrap gap-2">
-                {product.technologies.map((tech, i) => (
-                  <span
-                    key={i}
-                    className="text-xs bg-zinc-700/70 text-zinc-300 px-2 py-1 rounded-full"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-            )} */}
           </div>
         </Link>
       </div>

@@ -119,17 +119,15 @@ const ProcessStep = ({
 };
 
 const Join = () => {
-  // Check if applications are currently open
-  const applicationsOpen = true;
+  const applicationsOpen = false;
 
   return (
     <div className="mb-20 px-6 pt-24">
-      {/* Hero section */}
       <section className="max-w-7xl mx-auto">
         <h1 className="text-white text-5xl md:text-7xl font-bold mb-4">Join y/cs</h1>
         <p className="text-zinc-400 text-xl mb-8 max-w-2xl">
-          We are Yale's largest collective of software developers, product designers, and computer
-          science enthusiasts.
+          We are Yale&apos;s largest collective of software developers, product designers, and
+          computer science enthusiasts.
         </p>
 
         {applicationsOpen && (
@@ -157,7 +155,6 @@ const Join = () => {
         )}
       </section>
 
-      {/* Roles section */}
       <section className="max-w-7xl mx-auto mt-16">
         <div className="border-b border-zinc-800 pb-4 mb-12">
           <h2 className="text-white text-3xl md:text-4xl font-bold">Available Roles</h2>
@@ -179,7 +176,6 @@ const Join = () => {
         </div>
       </section>
 
-      {/* Application Process section */}
       <section className="max-w-7xl mx-auto mt-32">
         <div className="border-b border-zinc-800 pb-4 mb-12">
           <h2 className="text-white text-3xl md:text-4xl font-bold">Application Process</h2>
@@ -193,7 +189,7 @@ const Join = () => {
           <ProcessStep number="1" title="Written Application">
             <p>
               Indicate which divisions or teams you are interested in joining, share a bit about
-              yourself, and why you're interested in joining y/cs.
+              yourself, and why you&apos;re interested in joining y/cs.
             </p>
           </ProcessStep>
 
@@ -206,11 +202,12 @@ const Join = () => {
               tools/skills used to build the products.
             </p>
             <p className="mb-4">
-              We don't expect everyone to come to Yale knowing how to use these tools/skills, which
-              is why we have beginner <span className="text-ycs-pink font-semibold">Catalyst</span>{' '}
-              programs designed to teach them to you! Those applying for beginner programs are
-              evaluated on their ability/willingness to learn new technical concepts in a take-home
-              challenge, with lots of office hour opportunities to help you complete it.
+              We don&apos;t expect everyone to come to Yale knowing how to use these tools/skills,
+              which is why we have beginner{' '}
+              <span className="text-ycs-pink font-semibold">Catalyst</span> programs designed to
+              teach them to you! Those applying for beginner programs are evaluated on their
+              ability/willingness to learn new technical concepts in a take-home challenge, with
+              lots of office hour opportunities to help you complete it.
             </p>
             <p>
               For those applying for non-technical roles (design, events, outreach), we do a short,
@@ -265,40 +262,59 @@ const Join = () => {
               When will I hear back about my application?
             </h3>
             <p className="text-zinc-300">
-              We typically review applications within 1-2 weeks after the deadline. You'll be
+              We typically review applications within 1-2 weeks after the deadline. You&apos;ll be
               notified by email about interview invitations and final decisions.
             </p>
           </div>
         </div>
       </section>
 
-      {/* CTA section */}
       <section className="max-w-7xl mx-auto mt-32">
         <div className="bg-gradient-to-br from-zinc-800/50 to-zinc-900/50 rounded-lg overflow-hidden border-l-4 border-ycs-pink p-8 md:p-10">
           <div className="max-w-3xl">
-            <h2 className="text-white text-3xl font-bold mb-4">Ready to apply?</h2>
-            <p className="text-zinc-300 text-lg mb-8">
-              Join our community of passionate developers, designers, and tech enthusiasts.
-              Applications for Fall 2024 are now open!
-            </p>
+            <h2 className="text-white text-3xl font-bold mb-4">Interested in joining?</h2>
+            {applicationsOpen ? (
+              <>
+                <p className="text-zinc-300 text-lg mb-8">
+                  Join our community of passionate developers, designers, and tech enthusiasts.
+                  Applications for Fall 2024 are now open!
+                </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                href="https://docs.google.com/forms/d/e/1FAIpQLSe5SHLgU1WBu6DyAIebNDJ3t-bx5XMh5aEcPkUG0ypAGFEd0w/viewform?usp=dialog"
-                className="inline-flex items-center justify-center rounded-lg font-bold text-lg bg-ycs-pink hover:bg-ycs-pink/90 text-black py-3 px-8 transition-all duration-300 hover:shadow-lg hover:translate-y-[-2px]"
-                target="_blank"
-              >
-                Apply Now
-                <GoArrowUpRight className="ml-2" />
-              </Link>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Link
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSe5SHLgU1WBu6DyAIebNDJ3t-bx5XMh5aEcPkUG0ypAGFEd0w/viewform?usp=dialog"
+                    className="inline-flex items-center justify-center rounded-lg font-bold text-lg bg-ycs-pink hover:bg-ycs-pink/90 text-black py-3 px-8 transition-all duration-300 hover:shadow-lg hover:translate-y-[-2px]"
+                    target="_blank"
+                  >
+                    Apply Now
+                    <GoArrowUpRight className="ml-2" />
+                  </Link>
 
-              <Link
-                href="mailto:yale.computer.society@gmail.com"
-                className="inline-flex items-center justify-center rounded-lg font-bold text-lg bg-zinc-700 hover:bg-zinc-600 text-white py-3 px-8 transition-all duration-300"
-              >
-                Contact Us
-              </Link>
-            </div>
+                  <Link
+                    href="mailto:yale.computer.society@gmail.com"
+                    className="inline-flex items-center justify-center rounded-lg font-bold text-lg bg-zinc-700 hover:bg-zinc-600 text-white py-3 px-8 transition-all duration-300"
+                  >
+                    Contact Us
+                  </Link>
+                </div>
+              </>
+            ) : (
+              <>
+                <p className="text-zinc-300 text-lg mb-8">
+                  Applications are currently closed. Check back at the beginning of next semester or
+                  reach out to learn more!
+                </p>
+
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Link
+                    href="mailto:yale.computer.society@gmail.com"
+                    className="inline-flex items-center justify-center rounded-lg font-bold text-lg bg-zinc-700 hover:bg-zinc-600 text-white py-3 px-8 transition-all duration-300"
+                  >
+                    Contact Us
+                  </Link>
+                </div>
+              </>
+            )}
           </div>
         </div>
       </section>
