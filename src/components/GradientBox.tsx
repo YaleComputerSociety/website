@@ -4,7 +4,7 @@ interface Props {
   title: string;
   text: string;
   color: 'pink' | 'blue' | 'green' | 'faded-pink' | 'red';
-
+  link?: string;
   icon?: React.ReactNode;
 }
 
