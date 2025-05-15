@@ -371,9 +371,13 @@ const Team = () => {
   const productLeads = BOARD.filter((person) => person.role === 'Team Lead');
   const { isLoggedIn } = useAuth();
   const [guestLoggedIn, setGuestLoggedIn] = useState(false);
+  const [currentPath, setCurrentPath] = useState('');
 
-  // These would need to be added to your data
   const developers = PEOPLE || [];
+
+  useEffect(() => {
+    setCurrentPath(window.location.pathname);
+  }, []);
 
   return (
     <div className="mb-20 px-6 pt-24">
@@ -443,7 +447,7 @@ const Team = () => {
                 This directory is only available to logged-in users.
               </p>
               <Link
-                href={`/api/auth/redirect?from=${encodeURIComponent(window.location.pathname)}`}
+                href={`/api/auth/redirect?from=${currentPath}`}
                 className="inline-flex items-center justify-center rounded-lg font-bold text-lg bg-ycs-blue hover:bg-ycs-blue/90 text-white py-3 px-8 transition-all duration-300 hover:shadow-lg hover:translate-y-[-2px]"
               >
                 Log In with Yale

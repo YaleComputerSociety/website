@@ -323,7 +323,7 @@ export const TODAY_STATISTICS = [
   },
 ];
 
-export const PARTNERSHIPS = [
+export const PARTNERSHIPS: { name: string; image: StaticImageData; url?: string }[] = [
   {
     name: 'Meta',
     image: meta,

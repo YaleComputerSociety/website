@@ -1,6 +1,5 @@
 'use client';
 
-import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import google from '@assets/partnerships/google.png';
@@ -58,11 +57,7 @@ const ALUMNI_COMPANIES = [
 ];
 
 const AlumniCompanies = () => {
-  const [viewAll, setViewAll] = useState(false);
-  const [hoveredCompany, setHoveredCompany] = useState(null);
-
   // Display top 8 companies by default, or all if viewAll is true
-  const displayedCompanies = viewAll ? ALUMNI_COMPANIES : ALUMNI_COMPANIES.slice(0, 8);
 
   return (
     <section className="max-w-7xl mx-auto mt-24 md:mt-32">
@@ -71,14 +66,10 @@ const AlumniCompanies = () => {
       <div className="bg-zinc-800/20 rounded-lg relative overflow-hidden">
         {/* Logo grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 relative z-10">
-          {displayedCompanies.map((company, i) => (
+          {ALUMNI_COMPANIES.map((company, i) => (
             <motion.div
               key={i}
               className="bg-zinc-800/20 rounded-lg p-4 flex flex-col items-center"
-              onHoverStart={() => setHoveredCompany(i)}
-              onHoverEnd={() => setHoveredCompany(null)}
-              whileHover={{ y: -5 }}
-              transition={{ duration: 0.2 }}
             >
               <div className="h-16 flex items-center justify-center mb-3 w-full bg-white/10 rounded-md">
                 <Image

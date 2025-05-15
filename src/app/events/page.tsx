@@ -1,19 +1,19 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import Image from 'next/image';
+import { useState } from 'react';
+import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import { GoArrowUpRight, GoCalendar, GoLocation, GoClockFill } from 'react-icons/go';
 import { motion } from 'framer-motion';
 import Wordmark from '@assets/wordmark.png';
 import { EVENTS } from '@data'; // Adjust the import path as necessary
 // Event Card Component for Past Events
-const EventCard = ({ event }) => {
+const EventCard = ({ event }: { event: Event }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   // Format the date for display
-  const formatDate = (dateString) => {
-    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  const formatDate = (dateString: string) => {
+    const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'long', day: 'numeric' };
     return new Date(dateString).toLocaleDateString('en-US', options);
   };
 
@@ -58,11 +58,35 @@ const EventCard = ({ event }) => {
   );
 };
 
+// Define the event type
+interface Event {
+  id: string;
+  title: string;
+  date: string;
+  time: string;
+  location: string;
+  description: string;
+  image: StaticImageData;
+  tags?: string[];
+}
+
 // Upcoming Event Card Component
-const UpcomingEventCard = ({ event }) => {
+const UpcomingEventCard = ({ event }: { event: Event }) => {
   // Format the date for display
-  const formatDate = (dateString) => {
-    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+  interface DateFormatOptions extends Intl.DateTimeFormatOptions {
+    weekday: 'long';
+    year: 'numeric';
+    month: 'long';
+    day: 'numeric';
+  }
+
+  const formatDate = (dateString: string): string => {
+    const options: DateFormatOptions = {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    };
     return new Date(dateString).toLocaleDateString('en-US', options);
   };
 
@@ -122,8 +146,8 @@ const NoUpcomingEvents = () => {
         </div>
         <h3 className="text-white text-xl font-bold mb-2">No upcoming events scheduled</h3>
         <p className="text-zinc-400 mb-6 max-w-lg mx-auto">
-          We're currently planning our next round of events. Check back soon or subscribe to our
-          calendar to be notified when new events are announced.
+          We&apos;re currently planning our next round of events. Check back soon or subscribe to
+          our calendar to be notified when new events are announced.
         </p>
         <Link
           href="https://calendar.google.com/calendar/embed?src=t6isudodqcpb2uepck99jmjt3o%40group.calendar.google.com&ctz=America%2FNew_York"
@@ -139,7 +163,15 @@ const NoUpcomingEvents = () => {
 };
 
 // TabButton Component
-const TabButton = ({ active, children, onClick }) => (
+const TabButton = ({
+  active,
+  children,
+  onClick,
+}: {
+  active: boolean;
+  children: React.ReactNode;
+  onClick: () => void;
+}) => (
   <button
     onClick={onClick}
     className={`px-4 py-2 font-medium text-sm md:text-base rounded-lg transition-colors ${
@@ -162,15 +194,15 @@ const Events = () => {
   const upcomingEvents = EVENTS.filter((event) => {
     const eventDate = new Date(event.date);
     return eventDate >= today;
-  }).sort((a, b) => new Date(a.date) - new Date(b.date)); // Sort by date ascending
+  }).sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()); // Sort by date ascending
 
   const pastEvents = EVENTS.filter((event) => {
     const eventDate = new Date(event.date);
     return eventDate < today;
-  }).sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort by date descending (most recent first)
+  }).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()); // Sort by date descending (most recent first)
 
   // Get unique tag categories from past events
-  const allTags = [...new Set(pastEvents.flatMap((event) => event.tags || []))].sort();
+  const allTags = Array.from(new Set(pastEvents.flatMap((event) => event.tags || []))).sort();
 
   // Filter past events by tag
   const filteredPastEvents =

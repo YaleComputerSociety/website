@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 import { NextResponse } from 'next/server';
 import jwt from 'jsonwebtoken';
 import { cookies } from 'next/headers';
@@ -8,7 +10,7 @@ interface DecodedToken {
   exp: number;
 }
 
-function isValidDecodedToken(decoded: any): decoded is DecodedToken {
+function isValidDecodedToken(decoded: DecodedToken): decoded is DecodedToken {
   return (
     typeof decoded === 'object' &&
     typeof decoded.netid === 'string' &&
@@ -33,7 +35,7 @@ export async function GET(): Promise<NextResponse> {
       return NextResponse.json({ isLoggedIn: false }, { status: 500 });
     }
 
-    const decoded = jwt.verify(token.value, JWT_SECRET);
+    const decoded = jwt.verify(token.value, JWT_SECRET) as DecodedToken;
 
     if (!isValidDecodedToken(decoded)) {
       console.error('Invalid token structure');
