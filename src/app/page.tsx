@@ -1,123 +1,323 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import dynamic from "next/dynamic";
+import Link from 'next/link';
+import { useState, useEffect } from 'react';
+import { GoArrowUpRight } from 'react-icons/go';
+import Image from 'next/image';
 
-import { GradientBox } from "@components/GradientBox";
-import { SolidColorBlock } from "@components/SolidColorBlock";
-import { Sponsors } from "@components/Sponsors";
-// import { ParticleNetwork } from "@components/ParticleNetwork";
-import { TitleSubtitle } from "@components/TitleSubtitle";
-
-const FastParticleNetwork = dynamic(() => import("@components/ParticleNetwork"), {
-  loading: () => <p>Loading...</p>,
-  ssr: true,
-});
+import { GradientBox } from '@components/GradientBox';
+import { SolidColorBlock } from '@components/SolidColorBlock';
+import { Sponsors } from '@components/Sponsors';
+import { TitleSubtitle } from '@components/TitleSubtitle';
+import AlumniCompanies from '@components/Alumni';
+import Wordmark from '@assets/wordmark.png';
 
 const Home = () => {
-  return (
-    <div className="mb-12">
-      <FastParticleNetwork />
+  const [displayText, setDisplayText] = useState('');
+  const [isTyping, setIsTyping] = useState(true);
+  const fullText = 'Yale Computer Society';
+  const typingSpeed = 100; // milliseconds per character
+  const cursorBlinkSpeed = 530; // milliseconds per blink
+  const [showCursor, setShowCursor] = useState(true);
 
-      <div className="hidden md:flex justify-center items-center overflow-hidden fixed top-0 left-0 w-full h-full -z-10">
+  // Typing animation effect
+  useEffect(() => {
+    if (isTyping && displayText.length < fullText.length) {
+      const timeout = setTimeout(() => {
+        setDisplayText(fullText.slice(0, displayText.length + 1));
+      }, typingSpeed);
+
+      return () => clearTimeout(timeout);
+    } else if (isTyping && displayText.length === fullText.length) {
+      setIsTyping(false);
+    }
+  }, [displayText, isTyping]);
+
+  // Cursor blink effect
+  useEffect(() => {
+    const cursorInterval = setInterval(() => {
+      setShowCursor((prev) => !prev);
+    }, cursorBlinkSpeed);
+
+    return () => clearInterval(cursorInterval);
+  }, []);
+  return (
+    <div className="mb-12 px-6">
+      <div className="hidden md:flex justify-start items-start fixed top-0 left-0 w-full h-full -z-10">
         <div
-          className="text-white opacity-[0.03] text-[20rem] md:text-[30rem] font-black text-center"
+          className="text-white opacity-[0.03] font-black"
           style={{
-            transform: "translateX(-50%)",
-            left: "50%",
-            position: "absolute",
-            fontSize: "calc(50vw + 1rem)",
+            position: 'absolute',
+            top: '5%',
+            left: '5%',
+            fontSize: 'calc(40vw + 1rem)',
           }}
         >
           y/cs
         </div>
       </div>
 
-      <div className="flex flex-col items-center">
-        <p className="text-white drop-shadow-lg text-center font-extrabold text-4xl md:text-5xl mt-20 md:mt-[9vw] mb-3 -z-10 bg-gradient-to-r from-ycs-pink to-ycs-pink text-transparent bg-clip-text">
-          We are the
-        </p>
-        <p className="text-white drop-shadow-lg text-center text-6xl md:text-8xl font-extrabold">
-          Yale Computer Society
-        </p>
-
-        <p className="text-white text-center lg:text-2xl md:text-xl text-lg mt-6 md:mt-8 w-3/4 md:w-3/4 mx-auto">
-          Yale&apos;s premier tech and computer science organization
-        </p>
-
-        <h1 className="text-white md:mt-[7vw] text-center mt-16 lg:text-2xl md:text-xl text-lg w-3/4 mx-auto">
-          We&apos;re a group of computer science students that build software applications for Yale
-          University&apos;s campus community and connect over our shared love for applied computing.
-          <br />
-          <a className="text-ycs-pink underline" href="https://github.com/yalecomputersociety">
-            GitHub
-          </a>
-        </h1>
-
-        <div className="flex md:flex-row flex-col mt-10 gap-10 md:mx-10 mx-16">
-          <SolidColorBlock
-            color={"ycs-pink"}
-            title={"80+ developers"}
-            desc={"creating apps to benefit the Yale and New Haven community."}
-          />
-          <SolidColorBlock
-            color={"ycs-pink"}
-            title={"50+ Catalyst members"}
-            desc={"taught each year."}
-          />
-          <SolidColorBlock
-            color={"ycs-pink"}
-            title={"20,000+ unique users"}
-            desc={"across all y/cs applications."}
-          />
+      <section className="max-w-7xl mx-auto">
+        <div className="text-left mt-16 md:mt-24">
+          <p className="text-white font-semibold text-3xl md:text-5xl mb-3 bg-gradient-to-r from-ycs-pink to-ycs-pink text-transparent bg-clip-text">
+            We are the
+          </p>
+          <h1 className="text-white text-4xl sm:text-6xl md:text-8xl font-semibold">
+            <span className="whitespace-normal sm:whitespace-nowrap">
+              {displayText}
+              <span
+                className={`${showCursor ? 'opacity-100' : 'opacity-0'} transition-opacity duration-100`}
+              >
+                |
+              </span>
+            </span>
+          </h1>
         </div>
 
+        <div className="mt-16 md:mt-24 text-xl">
+          <p className="text-white max-w-3xl">
+            The y/cs is a group of product enthusiats that build software applications for Yale
+            University&apos;s campus community and connect over our shared love for applied
+            computing.
+          </p>
+          <a
+            className="flex items-center text-ycs-pink hover:text-white hover:underline transition-colors duration-300 mt-4 group cursor-pointer"
+            href="/products"
+          >
+            <span>Explore our products</span>
+            <GoArrowUpRight size={30} className="ml-3" />
+          </a>
+        </div>
+      </section>
+
+      <section className="max-w-7xl mx-auto mt-28">
+        <h2 className="text-white text-3xl font-semibold mb-8">By the numbers</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <SolidColorBlock
+            color={'zinc-500'}
+            title={'80+'}
+            desc={
+              'Developers creating innovative applications to benefit the Yale and New Haven community.'
+            }
+            icon={
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                />
+              </svg>
+            }
+          />
+          <SolidColorBlock
+            color={'zinc-500'}
+            title={'50+'}
+            desc={
+              'Catalyst program members taught and mentored each year, nurturing the next generation of developers.'
+            }
+            icon={
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                />
+              </svg>
+            }
+          />
+          <SolidColorBlock
+            color={'zinc-500'}
+            title={'20,000+'}
+            desc={
+              'Unique users across all y/cs applications, demonstrating our widespread campus impact.'
+            }
+            icon={
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+                />
+              </svg>
+            }
+          />
+        </div>
+      </section>
+      {/* Programs section */}
+      {/* Programs section */}
+      <section className="max-w-7xl mx-auto mt-32">
         <TitleSubtitle
-          title="Cultivating a passion for the computer science industry"
-          subtitle="From development mentorship to hacking nights, we create a community for programmers of all skill levels."
-          className="mt-32"
+          title="Cultivating a passion for computer science, at all skill levels"
+          subtitle=""
         />
-        <div className="grid grid-cols-1 md:grid-cols-2 w-3/4 mx-auto gap-8 mt-8">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
           <GradientBox
             title="Development"
             color="blue"
-            text="Become a member of one of our software teams and help build apps that benefit the Yale and New Haven community."
+            text="Become a member of one of our software teams and help build applications that benefit the Yale and New Haven community."
             link="/products"
+            icon={
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                />
+              </svg>
+            }
           />
           <GradientBox
             title="Mentorship"
             color="pink"
-            text="New to software engineering? Learn from mentors who have been there before with the y/cs Catalyst Program."
+            text="New to software engineering? Learn from experienced mentors through our structured y/cs Catalyst Program."
+            icon={
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                />
+              </svg>
+            }
           />
           <GradientBox
             title="Events"
             color="green"
-            text="Help plan social events for students to meet and share their interests, as well as bring notable industry figures to Yale's campus."
+            text="Participate in social events, hackathons, and workshops, as well as interact with industry leaders on Yale's campus."
             link="/events"
+            icon={
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                />
+              </svg>
+            }
           />
           <GradientBox
             title="Community"
             color="red"
-            text="Join a y/cs community! These are groups of similarily interested Y/CS members who meet reguarly to discuss topics of interest. New communities are loading..."
-            link={"https://forms.gle/C4JvNKg5R19Khnpi9"}
+            text="Find and connect with likeminded individuals through our Discord server. Join our community of developers and tech enthusiasts."
+            link={'https://forms.gle/C4JvNKg5R19Khnpi9'}
+            icon={
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+            }
           />
         </div>
-
+      </section>
+      <AlumniCompanies />
+      <section className="max-w-7xl mx-auto mt-32">
         <Sponsors />
+      </section>
 
-        <TitleSubtitle
-          title="Ready to join the best computer science club at Yale?"
-          subtitle="The Fall 2024 Membership Application will open following the Extracirrcular Bazaar."
-          className="mt-32"
-        />
+      <section className="max-w-7xl mx-auto mt-32 mb-16">
+        <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-zinc-800 to-zinc-900 border-l-4 border-ycs-pink">
+          {/* Background elements */}
+          <div className="absolute -bottom-10 -right-10 w-40 h-40 rounded-full bg-ycs-pink/10 blur-2xl"></div>
+          <div className="absolute -top-20 -left-20 w-60 h-60 rounded-full bg-ycs-blue/10 blur-3xl"></div>
 
-        <Link
-          href="/join"
-          className="rounded-full disabled:opacity-50 font-bold text-xl hover:scale-105 duration-200 bg-ycs-pink p-4 pl-12 pr-12 m-6"
-        >
-          Learn More
-        </Link>
-      </div>
+          {/* Wordmark positioned on the right side */}
+          <div className="absolute top-0 right-0 bottom-0 w-1/3 flex items-center justify-center overflow-hidden">
+            <div className="relative w-full h-full flex items-center justify-center">
+              <Image
+                src={Wordmark}
+                alt="YCS logo"
+                className="opacity-10 object-contain mix-blend-normal"
+                style={{
+                  maxWidth: 'none',
+                  width: '80%',
+                  height: '80%',
+                }}
+              />
+            </div>
+          </div>
+
+          <div className="relative z-10 p-10 md:p-16 flex">
+            <div className="max-w-2xl">
+              <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
+                Ready to join Yale&apos;s premier tech community?
+              </h2>
+
+              <p className="mt-6 text-lg text-zinc-300">
+                The Fall 2025 Membership Application will open following the Extracurricular Bazaar.
+              </p>
+
+              <div className="mt-10 flex flex-col sm:flex-row gap-4">
+                <Link
+                  href="/join"
+                  className="inline-flex items-center justify-center rounded-lg font-semibold text-lg bg-gradient-to-r from-ycs-pink to-ycs-pink/90 hover:from-ycs-pink hover:to-ycs-pink text-black py-3 px-8 transition-all duration-300 hover:shadow-lg hover:shadow-ycs-pink/20 hover:translate-y-[-2px]"
+                >
+                  Apply to Join
+                </Link>
+
+                <Link
+                  href="/events"
+                  className="inline-flex items-center justify-center rounded-lg font-bold text-lg bg-zinc-700 hover:bg-zinc-600 text-white py-3 px-8 transition-all duration-300"
+                >
+                  Attend an Event
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

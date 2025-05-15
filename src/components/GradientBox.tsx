@@ -1,46 +1,92 @@
-import Link from "next/link";
-import { FC } from "react";
+import Link from 'next/link';
+import { FC } from 'react';
+import { GoArrowUpRight } from 'react-icons/go';
 
 interface Props {
   title: string;
   text: string;
-  color: "pink" | "blue" | "green" | "faded-pink" | "red";
+  color: 'pink' | 'blue' | 'green' | 'faded-pink' | 'red';
   link?: string;
+  icon?: React.ReactNode;
 }
 
-export const GradientBox: FC<Props> = ({ title, text, color, link }) => {
+export const GradientBox: FC<Props> = ({ title, text, color, link, icon }) => {
   let gradientColors;
+  let hoverGradient;
+  let borderColor;
+  let iconBg;
 
   switch (color) {
-    case "pink":
-      gradientColors = "from-ycs-pink to-ycs-pink/10";
+    case 'pink':
+      gradientColors = 'from-ycs-pink/20 to-transparent';
+      hoverGradient = 'hover:from-ycs-pink/30';
+      borderColor = 'border-ycs-pink';
+      iconBg = 'bg-ycs-pink/20';
       break;
-    case "faded-pink":
-      gradientColors = "from-ycs-faded-pink to-ycs-faded-pink/10";
+    case 'faded-pink':
+      gradientColors = 'from-ycs-faded-pink/20 to-transparent';
+      hoverGradient = 'hover:from-ycs-faded-pink/30';
+      borderColor = 'border-ycs-faded-pink';
+      iconBg = 'bg-ycs-faded-pink/20';
       break;
-    case "blue":
-      gradientColors = "from-ycs-blue to-ycs-blue/10";
+    case 'blue':
+      gradientColors = 'from-ycs-blue/20 to-transparent';
+      hoverGradient = 'hover:from-ycs-blue/30';
+      borderColor = 'border-ycs-blue';
+      iconBg = 'bg-ycs-blue/20';
       break;
-    case "green":
-      gradientColors = "from-ycs-green to-ycs-green/10";
+    case 'green':
+      gradientColors = 'from-ycs-green/20 to-transparent';
+      hoverGradient = 'hover:from-ycs-green/30';
+      borderColor = 'border-ycs-green';
+      iconBg = 'bg-ycs-green/20';
       break;
-    case "red":
-      gradientColors = "from-ycs-security-red to-ycs-security-red/10";
+    case 'red':
+      gradientColors = 'from-ycs-security-red/20 to-transparent';
+      hoverGradient = 'hover:from-ycs-security-red/30';
+      borderColor = 'border-ycs-security-red';
+      iconBg = 'bg-ycs-security-red/20';
       break;
     default:
-      gradientColors = "from-ycs-pink to-ycs-pink/10";
+      gradientColors = 'from-ycs-pink/20 to-transparent';
+      hoverGradient = 'hover:from-ycs-pink/30';
+      borderColor = 'border-ycs-pink';
+      iconBg = 'bg-ycs-pink/20';
   }
 
   const content = (
     <div
-      className={`w-full text-left bg-gradient-to-b ${gradientColors} rounded-2xl p-6 md:p-10  mx-auto  relative hover:scale-105 active:scale-95 transform duration-150`}
+      className={`w-full text-left bg-zinc-800/50 bg-gradient-to-br ${gradientColors} ${hoverGradient} 
+      border-l-4 ${borderColor} rounded-2xl p-8 transition-all duration-300 
+      hover:shadow-lg hover:translate-y-[-4px] relative h-full`}
     >
-      <div className="text-white cursor-default font-bold">
-        <p className="text-white text-md lg:text-xl">{title}</p>
-        <p className="text-gray-400 overflow-hidden whitespace-wrap text-sm lg:text-lg">{text}</p>
+      <div className="flex flex-col h-full">
+        <div className="flex items-center mb-4">
+          {icon && <div className={`p-3 rounded-lg ${iconBg} mr-4 text-white`}>{icon}</div>}
+          <h3 className="text-white text-2xl font-bold">{title}</h3>
+        </div>
+
+        <p className="text-zinc-300 text-base lg:text-lg mb-6 flex-grow">{text}</p>
+
+        {/* {link && (
+          <div className="flex items-center mt-auto group">
+            <span className="text-zinc-400 group-hover:text-white transition-colors duration-300">
+              Learn More
+            </span>
+            <div className="ml-2 p-1 rounded-full bg-zinc-700 group-hover:bg-zinc-600 transition-colors duration-300">
+              <GoArrowUpRight className="text-zinc-400 group-hover:text-white w-4 h-4" />
+            </div>
+          </div>
+        )} */}
       </div>
     </div>
   );
 
-  return link ? <Link href={link}>{content}</Link> : content;
+  return link ? (
+    <Link href={link} className="block h-full">
+      {content}
+    </Link>
+  ) : (
+    content
+  );
 };
