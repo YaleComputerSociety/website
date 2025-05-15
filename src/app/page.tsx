@@ -164,8 +164,7 @@ const Home = () => {
           />
         </div>
       </section>
-      {/* Programs section */}
-      {/* Programs section */}
+
       <section className="max-w-7xl mx-auto mt-32">
         <TitleSubtitle
           title="Cultivating a passion for computer science, at all skill levels"
@@ -269,11 +268,9 @@ const Home = () => {
 
       <section className="max-w-7xl mx-auto mt-32 mb-16">
         <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-zinc-800 to-zinc-900 border-l-4 border-ycs-pink">
-          {/* Background elements */}
           <div className="absolute -bottom-10 -right-10 w-40 h-40 rounded-full bg-ycs-pink/10 blur-2xl"></div>
           <div className="absolute -top-20 -left-20 w-60 h-60 rounded-full bg-ycs-blue/10 blur-3xl"></div>
 
-          {/* Wordmark positioned on the right side */}
           <div className="absolute top-0 right-0 bottom-0 w-1/3 flex items-center justify-center overflow-hidden">
             <div className="relative w-full h-full flex items-center justify-center">
               <Image
