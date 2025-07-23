@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import { GoArrowUpRight } from 'react-icons/go';
+
 import Image from 'next/image';
 
 import { GradientBox } from '@components/GradientBox';
@@ -11,16 +11,17 @@ import { Sponsors } from '@components/Sponsors';
 import { TitleSubtitle } from '@components/TitleSubtitle';
 import AlumniCompanies from '@components/Alumni';
 import Wordmark from '@assets/wordmark.png';
+import { PageContainer, SectionContainer } from '@components/Container';
+import ExploreLink from '@components/ExploreLink';
 
 const Home = () => {
   const [displayText, setDisplayText] = useState('');
   const [isTyping, setIsTyping] = useState(true);
   const fullText = 'Yale Computer Society';
-  const typingSpeed = 100; // milliseconds per character
-  const cursorBlinkSpeed = 530; // milliseconds per blink
+  const typingSpeed = 100;
+  const cursorBlinkSpeed = 530;
   const [showCursor, setShowCursor] = useState(true);
 
-  // Typing animation effect
   useEffect(() => {
     if (isTyping && displayText.length < fullText.length) {
       const timeout = setTimeout(() => {
@@ -33,7 +34,6 @@ const Home = () => {
     }
   }, [displayText, isTyping]);
 
-  // Cursor blink effect
   useEffect(() => {
     const cursorInterval = setInterval(() => {
       setShowCursor((prev) => !prev);
@@ -41,8 +41,9 @@ const Home = () => {
 
     return () => clearInterval(cursorInterval);
   }, []);
+
   return (
-    <div className="mb-12 px-6">
+    <PageContainer>
       <div className="hidden md:flex justify-start items-start fixed top-0 left-0 w-full h-full -z-10">
         <div
           className="text-white opacity-[0.03] font-black"
@@ -57,40 +58,32 @@ const Home = () => {
         </div>
       </div>
 
-      <section className="max-w-7xl mx-auto">
-        <div className="text-left mt-16 md:mt-24">
-          <p className="text-white font-semibold text-3xl md:text-5xl mb-3 bg-gradient-to-r from-ycs-pink to-ycs-pink text-transparent bg-clip-text">
-            We are the
-          </p>
-          <h1 className="text-white text-4xl sm:text-6xl md:text-8xl font-semibold">
-            <span className="whitespace-normal sm:whitespace-nowrap">
-              {displayText}
-              <span
-                className={`${showCursor ? 'opacity-100' : 'opacity-0'} transition-opacity duration-100`}
-              >
-                |
-              </span>
+      <SectionContainer>
+        <p className="text-white font-semibold text-3xl md:text-5xl mb-4 bg-gradient-to-r from-ycs-pink to-ycs-pink text-transparent bg-clip-text">
+          We are the
+        </p>
+        <h1 className="text-white text-4xl sm:text-6xl md:text-8xl font-semibold">
+          <span className="whitespace-normal sm:whitespace-nowrap">
+            {displayText}
+            <span
+              className={`${showCursor ? 'opacity-100' : 'opacity-0'} transition-opacity duration-100`}
+            >
+              |
             </span>
-          </h1>
-        </div>
+          </span>
+        </h1>
 
-        <div className="mt-16 md:mt-24 text-xl">
+        <div className="mt-16 text-xl">
           <p className="text-white max-w-3xl">
             The y/cs is a group of product enthusiats that build software applications for Yale
             University&apos;s campus community and connect over our shared love for applied
             computing.
           </p>
-          <a
-            className="flex items-center text-ycs-pink hover:text-white hover:underline transition-colors duration-300 mt-4 group cursor-pointer"
-            href="/products"
-          >
-            <span>Explore our products</span>
-            <GoArrowUpRight size={30} className="ml-3" />
-          </a>
+          <ExploreLink href="/products" />
         </div>
-      </section>
+      </SectionContainer>
 
-      <section className="max-w-7xl mx-auto mt-28">
+      <SectionContainer className="mt-20">
         <h2 className="text-white text-3xl font-semibold mb-8">By the numbers</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <SolidColorBlock
@@ -163,9 +156,9 @@ const Home = () => {
             }
           />
         </div>
-      </section>
+      </SectionContainer>
 
-      <section className="max-w-7xl mx-auto mt-32 mt-32 mt-32">
+      <SectionContainer>
         <TitleSubtitle
           title="Cultivating a passion for computer science, at all skill levels"
           subtitle=""
@@ -260,13 +253,15 @@ const Home = () => {
             }
           />
         </div>
-      </section>
-      <AlumniCompanies />
-      <section className="max-w-7xl mx-auto mt-32">
-        <Sponsors />
-      </section>
+      </SectionContainer>
 
-      <section className="max-w-7xl mx-auto mt-32 mb-16">
+      <AlumniCompanies />
+
+      <SectionContainer>
+        <Sponsors />
+      </SectionContainer>
+
+      <SectionContainer className="">
         <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-zinc-800 to-zinc-900 border-l-4 border-ycs-pink">
           <div className="absolute -bottom-10 -right-10 w-40 h-40 rounded-full bg-ycs-pink/10 blur-2xl"></div>
           <div className="absolute -top-20 -left-20 w-60 h-60 rounded-full bg-ycs-blue/10 blur-3xl"></div>
@@ -276,7 +271,7 @@ const Home = () => {
               <Image
                 src={Wordmark}
                 alt="YCS logo"
-                className="opacity-10 object-contain mix-blend-normal"
+                className="opacity-10 object-contain mix-blend-normal hidden md:block"
                 style={{
                   maxWidth: 'none',
                   width: '80%',
@@ -314,8 +309,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </SectionContainer>
+    </PageContainer>
   );
 };
 

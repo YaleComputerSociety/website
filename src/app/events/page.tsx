@@ -6,12 +6,12 @@ import Link from 'next/link';
 import { GoArrowUpRight, GoCalendar, GoLocation, GoClockFill } from 'react-icons/go';
 import { motion } from 'framer-motion';
 import Wordmark from '@assets/wordmark.png';
-import { EVENTS } from '@data'; // Adjust the import path as necessary
-// Event Card Component for Past Events
+import { EVENTS } from '@data';
+import { PageContainer, SectionContainer } from '@components/Container';
+
 const EventCard = ({ event }: { event: Event }) => {
   const [isHovered, setIsHovered] = useState(false);
 
-  // Format the date for display
   const formatDate = (dateString: string) => {
     const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'long', day: 'numeric' };
     return new Date(dateString).toLocaleDateString('en-US', options);
@@ -58,7 +58,6 @@ const EventCard = ({ event }: { event: Event }) => {
   );
 };
 
-// Define the event type
 interface Event {
   id: string;
   title: string;
@@ -70,9 +69,7 @@ interface Event {
   tags?: string[];
 }
 
-// Upcoming Event Card Component
 const UpcomingEventCard = ({ event }: { event: Event }) => {
-  // Format the date for display
   interface DateFormatOptions extends Intl.DateTimeFormatOptions {
     weekday: 'long';
     year: 'numeric';
@@ -130,14 +127,13 @@ const UpcomingEventCard = ({ event }: { event: Event }) => {
   );
 };
 
-// Empty state component for when there are no upcoming events
 const NoUpcomingEvents = () => {
   return (
     <div className="bg-zinc-800/30 rounded-lg overflow-hidden">
       <div className="p-8 text-center">
         <div className="mb-6">
           <Image
-            src={Wordmark} // Replace with an actual illustration
+            src={Wordmark}
             alt="No upcoming events"
             width={300}
             height={200}
@@ -162,7 +158,6 @@ const NoUpcomingEvents = () => {
   );
 };
 
-// TabButton Component
 const TabButton = ({
   active,
   children,
@@ -182,45 +177,41 @@ const TabButton = ({
   </button>
 );
 
-// Main Events Component
 const Events = () => {
   const [activeTab, setActiveTab] = useState('upcoming');
   const [filter, setFilter] = useState('all');
 
-  // Separate events into upcoming and past based on date
   const today = new Date();
-  today.setHours(0, 0, 0, 0); // Set to beginning of day for accurate comparison
+  today.setHours(0, 0, 0, 0);
 
   const upcomingEvents = EVENTS.filter((event) => {
     const eventDate = new Date(event.date);
     return eventDate >= today;
-  }).sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()); // Sort by date ascending
+  }).sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 
   const pastEvents = EVENTS.filter((event) => {
     const eventDate = new Date(event.date);
     return eventDate < today;
-  }).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()); // Sort by date descending (most recent first)
+  }).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-  // Get unique tag categories from past events
   const allTags = Array.from(new Set(pastEvents.flatMap((event) => event.tags || []))).sort();
 
-  // Filter past events by tag
   const filteredPastEvents =
     filter === 'all'
       ? pastEvents
       : pastEvents.filter((event) => event.tags && event.tags.includes(filter));
 
   return (
-    <div className="mb-20 px-6 pt-24">
-      <section className="max-w-7xl mx-auto">
+    <PageContainer>
+      <SectionContainer>
         <h1 className="text-white text-5xl md:text-7xl font-bold mb-4">Events</h1>
         <p className="text-zinc-400 text-xl mb-16 max-w-2xl">
           From workshops to socials, hackathons to tech talks, we host dozens of events each
           semester.
         </p>
-      </section>
+      </SectionContainer>
 
-      <section className="max-w-7xl mx-auto">
+      <SectionContainer>
         <div className="flex space-x-2 mb-8">
           <TabButton active={activeTab === 'upcoming'} onClick={() => setActiveTab('upcoming')}>
             Upcoming Events
@@ -294,10 +285,10 @@ const Events = () => {
             )}
           </>
         )}
-      </section>
+      </SectionContainer>
 
-      <section className="max-w-7xl mx-auto mt-20">
-        <div className="bg-gradient-to-br from-zinc-800/50 to-zinc-900/50 rounded-lg p-8 border-l-4 ">
+      <SectionContainer className="mt-20">
+        <div className="bg-gradient-to-br from-zinc-800/50 to-zinc-900/50 rounded-lg p-8 border-l-4">
           <div className="max-w-xl">
             <h2 className="text-white text-2xl font-bold mb-2">Stay Updated</h2>
             <p className="text-zinc-300 mb-6">
@@ -315,8 +306,8 @@ const Events = () => {
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </SectionContainer>
+    </PageContainer>
   );
 };
 

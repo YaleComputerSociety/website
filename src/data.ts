@@ -36,10 +36,10 @@ import william from './assets/people/william.jpeg';
 import sofia from './assets/people/sofia.jpeg';
 import humpery from './assets/people/humphrey.jpg';
 // partnerships import
-import meta from './assets/partnerships/meta.png';
-import bloomberg from './assets/partnerships/bloomberg.jpeg';
-import janestreet from './assets/partnerships/janestreet.jpeg';
-import tsai from './assets/partnerships/tsaicity.png';
+import bloomberg from './assets/partnerships/bloomberg.png';
+import janestreet from './assets/partnerships/JaneStreet.png';
+import tsai from './assets/partnerships/tsai.webp';
+import hrt from './assets/partnerships/HRT.png';
 import gala from '@assets/ycs.png';
 
 export interface Person {
@@ -323,24 +323,29 @@ export const TODAY_STATISTICS = [
   },
 ];
 
-export const PARTNERSHIPS: { name: string; image: StaticImageData; url?: string }[] = [
-  {
-    name: 'Meta',
-    image: meta,
-  },
-  {
-    name: 'Bloomberg',
-    image: bloomberg,
-  },
-  {
-    name: 'Jane Street',
-    image: janestreet,
-  },
-  {
-    name: 'Tsai City',
-    image: tsai,
-  },
-];
+export const PARTNERSHIPS: { name: string; image: StaticImageData; url?: string; tier?: string }[] =
+  [
+    {
+      name: 'Bloomberg',
+      image: bloomberg,
+      tier: 'silver',
+    },
+    {
+      name: 'Jane Street',
+      image: janestreet,
+      tier: 'silver',
+    },
+    {
+      name: 'Hudson River Trading',
+      image: hrt,
+      tier: 'obsidian',
+    },
+    {
+      name: 'Tsai CITY',
+      image: tsai,
+      tier: 'silver',
+    },
+  ];
 
 export const ORG = [
   {

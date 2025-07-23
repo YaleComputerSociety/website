@@ -18,6 +18,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import { useAuth } from '@components/AuthContext';
+import { PageContainer, SectionContainer, Container } from '@components/Container';
 import Wordmark from '@assets/wordmark.png';
 
 import { StaticImageData } from 'next/image';
@@ -369,15 +370,15 @@ const Team = () => {
   }, []);
 
   return (
-    <div className="mb-20 px-6 pt-24">
-      <section className="max-w-7xl mx-auto">
+    <PageContainer>
+      <SectionContainer>
         <h1 className="text-white text-5xl md:text-7xl font-bold mb-4">Our Team</h1>
         <p className="text-zinc-400 text-xl mb-16 max-w-2xl">
           Meet the talented individuals who make y/cs possible
         </p>
-      </section>
+      </SectionContainer>
 
-      <section className="max-w-7xl mx-auto mt-8">
+      <SectionContainer className="mt-8">
         <div className="border-b border-zinc-800 pb-4 mb-12">
           <h2 className="text-white text-3xl md:text-4xl font-bold">Executive Board</h2>
           <p className="text-zinc-400 text-lg mt-2">
@@ -390,9 +391,9 @@ const Team = () => {
             <TeamMember key={i} person={person} />
           ))}
         </div>
-      </section>
+      </SectionContainer>
 
-      <section className="max-w-7xl mx-auto mt-32">
+      <SectionContainer className="mt-32">
         <div className="border-b border-zinc-800 pb-4 mb-12">
           <h2 className="text-white text-3xl md:text-4xl font-bold">Product Leads</h2>
           <p className="text-zinc-400 text-lg mt-2">
@@ -405,9 +406,9 @@ const Team = () => {
             <TeamMember key={i} person={person} />
           ))}
         </div>
-      </section>
+      </SectionContainer>
 
-      <section className="max-w-7xl mx-auto mt-32">
+      <SectionContainer className="mt-32">
         <div className="border-b border-zinc-800 pb-4 mb-12">
           <h2 className="text-white text-3xl md:text-4xl font-bold">Our People</h2>
           <p className="text-zinc-400 text-lg mt-2">
@@ -420,7 +421,7 @@ const Team = () => {
           <Masthead title="Development Team" people={developers.concat(BOARD)} />
         ) : (
           <div className="bg-zinc-800/30 rounded-lg overflow-hidden p-8 text-center">
-            <div className="max-w-2xl mx-auto">
+            <Container className="max-w-2xl">
               <div className="mb-6">
                 <Image
                   src={Wordmark}
@@ -469,12 +470,12 @@ const Team = () => {
                 </form>
                 <div>Hint: There may be a way around this :)</div>
               </div>
-            </div>
+            </Container>
           </div>
         )}
-      </section>
+      </SectionContainer>
 
-      <section className="max-w-7xl mx-auto mt-32">
+      <SectionContainer className="mt-32">
         <div className="bg-gradient-to-br from-zinc-800/50 to-zinc-900/50 rounded-lg overflow-hidden border-l-4 border-ycs-pink p-8 md:p-10">
           <div className="max-w-3xl">
             <h2 className="text-white text-3xl font-bold mb-4">Interested in joining our team?</h2>
@@ -492,8 +493,8 @@ const Team = () => {
             </Link>
           </div>
         </div>
-      </section>
-    </div>
+      </SectionContainer>
+    </PageContainer>
   );
 };
 
