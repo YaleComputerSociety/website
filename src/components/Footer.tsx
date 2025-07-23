@@ -1,6 +1,6 @@
-import Link from "next/link";
-import { cloneElement } from "react";
-import { FaInstagram, FaGithub, FaRegEnvelope } from "react-icons/fa";
+import Link from 'next/link';
+import { cloneElement } from 'react';
+import { FaInstagram, FaGithub, FaRegEnvelope } from 'react-icons/fa';
 
 interface FooterIconProps {
   link: string;

@@ -13,7 +13,6 @@ export const NavbarMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  // functionality for closing the mobile menu
   const handleClickOutside = (event: MouseEvent) => {
     if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
       setIsMobileMenuOpen(false);

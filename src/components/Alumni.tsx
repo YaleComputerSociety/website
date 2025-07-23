@@ -13,7 +13,6 @@ import sig from '@assets/partnerships/sig.png';
 import { SectionContainer } from './Container';
 import { Carousel } from './Carousel';
 
-// Sample company data - replace with your actual alumni company data
 const ALUMNI_COMPANIES = [
   {
     name: 'Google',
@@ -57,7 +56,6 @@ const ALUMNI_COMPANIES = [
   },
 ];
 
-// Component for individual company card
 const CompanyCard = ({ company }: { company: (typeof ALUMNI_COMPANIES)[0] }) => (
   <motion.div className="bg-zinc-800/20 rounded-lg p-7 flex flex-col items-center">
     <div className="h-16 flex items-center justify-center mb-3 w-full bg-white/10 rounded-md">

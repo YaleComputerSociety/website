@@ -24,7 +24,6 @@ function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
-  // Check screen width to toggle mobile view
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 800) {
@@ -35,7 +34,6 @@ function Navbar() {
     };
     window.addEventListener('resize', handleResize);
     handleResize();
-    // remove listener on cleanup
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 

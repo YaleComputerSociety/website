@@ -35,10 +35,8 @@ export const Carousel: React.FC<CarouselProps> = ({
     setCurrentSlide(index);
   };
 
-  // Don't render carousel if there are no items
   if (items.length === 0) return null;
 
-  // If only one item, render it directly without carousel controls
   if (items.length === 1) {
     return (
       <div className={`w-full ${containerClassName}`}>
