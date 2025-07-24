@@ -40,7 +40,7 @@ const About = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
               <p className="text-white text-sm p-4">
-                Yale Computer Society team at a hackathon, 2024
+                Yale Computer Society team at our annual gala, 2025
               </p>
             </div>
           </div>
@@ -191,7 +191,9 @@ const About = () => {
                 className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                <p className="text-white text-sm p-4">Demo Day Presentation, 2024</p>
+                <p className="text-white text-sm p-4">
+                  y/cs members hack away during one of our BuildFests, 2024
+                </p>
               </div>
             </div>
           </div>
