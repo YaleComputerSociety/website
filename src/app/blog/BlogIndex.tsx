@@ -26,7 +26,7 @@ export function BlogIndex({ posts, tags }: BlogIndexProps) {
       <SectionContainer>
         <SectionTitle
           title="Blog"
-          subtitle="Here the latest updates from our development and executive teams."
+          subtitle="Hear the latest updates from our development and executive teams."
         />
 
         <div className="flex flex-wrap justify-center gap-3 mb-12">
