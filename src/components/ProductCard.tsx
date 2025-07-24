@@ -4,8 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { GoArrowUpRight } from 'react-icons/go';
-
-import nologoproduct1 from '../assets/products/logos/ycs.png';
+import slash from '@assets/ycs-slash.png';
 
 export const ProductCard = ({ product }: { product: Product }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -36,7 +35,7 @@ export const ProductCard = ({ product }: { product: Product }) => {
               <div className="bg-zinc-700/70 rounded-lg p-3 mr-4">
                 <Image
                   className={`object-contain w-10 h-10 ${product.shouldIconBeRounded ? 'rounded-full' : 'rounded-lg'}`}
-                  src={product.logo || nologoproduct1}
+                  src={product.logo || slash}
                   alt={product.name}
                   width={40}
                   height={40}

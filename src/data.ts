@@ -245,7 +245,7 @@ export const PROJECTS: Project[] = [
   {
     name: 'MajorAudit',
     description: 'A website that allows Yalies to contextualize their four-year plan.',
-    shouldIconBeRounded: true,
+    shouldIconBeRounded: false,
     isBackgroundWhite: true,
     live: false,
     link: 'https://majoraudit.web.app/',
