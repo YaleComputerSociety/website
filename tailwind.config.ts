@@ -8,7 +8,7 @@ const config: Config = {
         invert: {
           css: {
             color: theme('colors.white'),
-            a: { color: theme('colors.ycs-old-pink'), textDecoration: 'underline' },
+            a: { color: theme('colors.ycs-pink'), textDecoration: 'underline' },
             strong: { color: theme('colors.white') },
             h1: { color: theme('colors.white') },
             h2: { color: theme('colors.white') },
@@ -16,14 +16,14 @@ const config: Config = {
             h4: { color: theme('colors.white') },
             code: {
               backgroundColor: theme('colors.zinc.800'),
-              color: theme('colors.ycs-old-pink'),
+              color: theme('colors.ycs-pink'),
               padding: '0.25rem 0.5rem',
               borderRadius: '0.25rem',
               fontSize: '0.9em',
             },
             pre: {
               backgroundColor: theme('colors.zinc.900'),
-              color: theme('colors.ycs-old-pink'),
+              color: theme('colors.ycs-pink'),
               padding: '1rem',
               borderRadius: '0.5rem',
               fontSize: '0.9rem',
