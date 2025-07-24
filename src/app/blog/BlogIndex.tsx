@@ -96,11 +96,10 @@ export function BlogIndex({ posts, tags }: BlogIndexProps) {
                       <div className="mt-auto">
                         <div className="flex items-center justify-between text-white/60 text-sm">
                           <div className="flex items-center gap-2">
-                            <span>{post.author}</span>
+                            <span className="truncate max-w-[150px]">{post.author}</span>
                             <span>•</span>
                             <span>{new Date(post.date).toLocaleDateString()}</span>
                           </div>
-                          <span>{post.readTime}</span>
                         </div>
                       </div>
                     </div>
