@@ -336,11 +336,6 @@ export const PARTNERSHIPS: { name: string; image: StaticImageData; url?: string;
       tier: 'silver',
     },
     {
-      name: 'Hudson River Trading',
-      image: hrt,
-      tier: 'obsidian',
-    },
-    {
       name: 'Tsai CITY',
       image: tsai,
       tier: 'silver',

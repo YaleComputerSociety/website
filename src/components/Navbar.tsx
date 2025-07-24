@@ -4,9 +4,7 @@ import * as React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-
 import { NavbarMobileMenu } from './NavbarMobileMenu';
-
 import { ORG } from '@data';
 
 export const navigationItems = [
@@ -17,6 +15,10 @@ export const navigationItems = [
     name: 'Team',
     link: '/team',
     subItems: [{ name: 'Join', link: '/join' }],
+  },
+  {
+    name: 'Blog',
+    link: '/blog',
   },
 ];
 

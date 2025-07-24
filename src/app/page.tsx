@@ -80,6 +80,13 @@ const Home = () => {
             computing.
           </p>
           <ExploreLink href="/products" />
+          <p className="mt-4 text-white text-lg max-w-2xl">
+            Read about what we’re building, learning, and sharing on the{' '}
+            <Link href="/blog" className="text-ycs-pink font-semibold hover:underline">
+              y/cs blog
+            </Link>
+            .
+          </p>
         </div>
       </SectionContainer>
 

@@ -25,6 +25,11 @@ const ALUMNI_COMPANIES = [
     count: 11,
   },
   {
+    name: 'Netflix',
+    logo: netflix,
+    count: 2,
+  },
+  {
     name: 'Microsoft',
     logo: microsoft,
     count: 9,
@@ -39,11 +44,7 @@ const ALUMNI_COMPANIES = [
     logo: bloomberg,
     count: 3,
   },
-  {
-    name: 'Netflix',
-    logo: netflix,
-    count: 2,
-  },
+
   {
     name: 'NVIDIA',
     logo: nvida,
@@ -78,11 +79,10 @@ const CompanyCard = ({ company }: { company: (typeof ALUMNI_COMPANIES)[0] }) => 
 
 const AlumniCompanies = () => {
   const carouselItems = [];
-  for (let i = 0; i < ALUMNI_COMPANIES.length; i += 2) {
+  for (let i = 0; i < ALUMNI_COMPANIES.length; i += 1) {
     const slide = (
-      <div className="grid grid-cols-2 gap-4">
+      <div>
         <CompanyCard company={ALUMNI_COMPANIES[i]} />
-        {ALUMNI_COMPANIES[i + 1] && <CompanyCard company={ALUMNI_COMPANIES[i + 1]} />}
       </div>
     );
     carouselItems.push(slide);
