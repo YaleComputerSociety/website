@@ -17,6 +17,7 @@ import ymeetsHeader from './assets/products/ymeets/headerimage.png';
 import email from './assets/email2.png';
 import facebook from './assets/facebook.svg';
 import instagram from './assets/instagram.svg';
+import nvidia from './assets/partnerships/nvidia.png';
 // People imports
 import daniel from './assets/people/daniel.jpeg';
 import neil from './assets/people/neil.jpeg';
@@ -39,7 +40,7 @@ import humpery from './assets/people/humphrey.jpg';
 import bloomberg from './assets/partnerships/bloomberg.png';
 import janestreet from './assets/partnerships/JaneStreet.png';
 import tsai from './assets/partnerships/tsai.webp';
-import hrt from './assets/partnerships/HRT.png';
+// import hrt from './assets/partnerships/HRT.png';
 import gala from '@assets/ycs.png';
 
 export interface Person {
@@ -339,6 +340,11 @@ export const PARTNERSHIPS: { name: string; image: StaticImageData; url?: string;
       name: 'Tsai CITY',
       image: tsai,
       tier: 'silver',
+    },
+    {
+      name: 'NVIDIA',
+      image: nvidia,
+      tier: 'partner',
     },
   ];
 

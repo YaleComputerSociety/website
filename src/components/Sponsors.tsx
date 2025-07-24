@@ -14,7 +14,6 @@ import type { StaticImageData } from 'next/image';
 const sponsorTiers = [
   {
     name: 'Obsidian',
-
     bgColor: 'bg-gradient-to-r from-purple-900/20 to-gray-900/20',
     borderColor: 'border-purple-500/30',
     textColor: 'text-purple-300',
@@ -23,7 +22,6 @@ const sponsorTiers = [
   },
   {
     name: 'Gold',
-
     bgColor: 'bg-gradient-to-r from-yellow-900/20 to-amber-900/20',
     borderColor: 'border-yellow-500/30',
     textColor: 'text-yellow-300',
@@ -38,6 +36,15 @@ const sponsorTiers = [
     dotColor: 'bg-gray-400',
     sponsors: PARTNERSHIPS.filter((p) => p.tier === 'silver'),
   },
+
+  // {
+  //   name: 'Partner',
+  //   bgColor: 'bg-gradient-to-r from-green-900/20 to-emerald-900/20',
+  //   borderColor: 'border-green-500/30',
+  //   textColor: 'text-green-300',
+  //   dotColor: 'bg-green-400',
+  //   sponsors: PARTNERSHIPS.filter((p) => p.tier === 'partner'),
+  // },
 ];
 
 export const Sponsors: React.FC = () => {
