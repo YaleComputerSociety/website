@@ -89,7 +89,7 @@ export const FeaturedProduct = ({ product }: { product: Product }) => {
             <div className="bg-zinc-800/80 rounded-lg p-3 mr-4">
               <Image
                 className={`object-contain w-10 h-10 ${product.shouldIconBeRounded ? 'rounded-full' : 'rounded-lg'}`}
-                src={product.logo || nologoproduct1}
+                src={product.logo || slash}
                 alt={product.name}
                 width={40}
                 height={40}
