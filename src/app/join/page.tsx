@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { GoArrowUpRight, GoCheckCircle } from 'react-icons/go';
+import { PageContainer, SectionContainer } from '@components/Container';
 
 const ROLES = [
   {
@@ -69,7 +70,6 @@ const ROLES = [
   },
 ];
 
-// Role Card Component
 interface RoleCardProps {
   title: string;
   desc: string;
@@ -93,7 +93,6 @@ const RoleCard = ({ title, desc, icon, color }: RoleCardProps) => {
   );
 };
 
-// Process Step Component
 const ProcessStep = ({
   number,
   title,
@@ -122,8 +121,8 @@ const Join = () => {
   const applicationsOpen = false;
 
   return (
-    <div className="mb-20 px-6 pt-24">
-      <section className="max-w-7xl mx-auto">
+    <PageContainer>
+      <SectionContainer>
         <h1 className="text-white text-5xl md:text-7xl font-bold mb-4">Join y/cs</h1>
         <p className="text-zinc-400 text-xl mb-8 max-w-2xl">
           We are Yale&apos;s largest collective of software developers, product designers, and
@@ -153,9 +152,9 @@ const Join = () => {
             </div>
           </div>
         )}
-      </section>
+      </SectionContainer>
 
-      <section className="max-w-7xl mx-auto mt-16">
+      <SectionContainer className="mt-16">
         <div className="border-b border-zinc-800 pb-4 mb-12">
           <h2 className="text-white text-3xl md:text-4xl font-bold">Available Roles</h2>
           <p className="text-zinc-400 text-lg mt-2">
@@ -174,9 +173,9 @@ const Join = () => {
             />
           ))}
         </div>
-      </section>
+      </SectionContainer>
 
-      <section className="max-w-7xl mx-auto mt-32">
+      <SectionContainer className="mt-32">
         <div className="border-b border-zinc-800 pb-4 mb-12">
           <h2 className="text-white text-3xl md:text-4xl font-bold">Application Process</h2>
           <p className="text-zinc-400 text-lg mt-2">
@@ -222,9 +221,9 @@ const Join = () => {
             </p>
           </ProcessStep>
         </div>
-      </section>
+      </SectionContainer>
 
-      <section className="max-w-7xl mx-auto mt-32">
+      <SectionContainer className="mt-32">
         <div className="border-b border-zinc-800 pb-4 mb-12">
           <h2 className="text-white text-3xl md:text-4xl font-bold">Frequently Asked Questions</h2>
           <p className="text-zinc-400 text-lg mt-2">Common questions about joining y/cs</p>
@@ -267,9 +266,9 @@ const Join = () => {
             </p>
           </div>
         </div>
-      </section>
+      </SectionContainer>
 
-      <section className="max-w-7xl mx-auto mt-32">
+      <SectionContainer className="mt-32">
         <div className="bg-gradient-to-br from-zinc-800/50 to-zinc-900/50 rounded-lg overflow-hidden border-l-4 border-ycs-pink p-8 md:p-10">
           <div className="max-w-3xl">
             <h2 className="text-white text-3xl font-bold mb-4">Interested in joining?</h2>
@@ -317,8 +316,8 @@ const Join = () => {
             )}
           </div>
         </div>
-      </section>
-    </div>
+      </SectionContainer>
+    </PageContainer>
   );
 };
 

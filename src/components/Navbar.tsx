@@ -4,9 +4,7 @@ import * as React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-
 import { NavbarMobileMenu } from './NavbarMobileMenu';
-
 import { ORG } from '@data';
 
 export const navigationItems = [
@@ -18,13 +16,16 @@ export const navigationItems = [
     link: '/team',
     subItems: [{ name: 'Join', link: '/join' }],
   },
+  {
+    name: 'Blog',
+    link: '/blog',
+  },
 ];
 
 function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
-  // Check screen width to toggle mobile view
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 800) {
@@ -35,7 +36,6 @@ function Navbar() {
     };
     window.addEventListener('resize', handleResize);
     handleResize();
-    // remove listener on cleanup
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 

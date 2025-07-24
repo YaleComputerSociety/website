@@ -5,13 +5,14 @@ import { GoArrowUpRight } from 'react-icons/go';
 
 import { STORIES } from '@data';
 import { Sponsors } from '@components/Sponsors';
+import { PageContainer, SectionContainer } from '@components/Container';
 import gala from '@assets/groupphoto.jpg';
 import demoday from '@assets/demo day.jpg';
 
 const About = () => {
   return (
-    <div className="mb-20 px-6 pt-24">
-      <section className="max-w-7xl mx-auto">
+    <PageContainer>
+      <SectionContainer>
         <h1 className="text-white text-5xl md:text-7xl font-bold mb-4">About y/cs</h1>
         <p className="text-zinc-400 text-xl mb-16 max-w-2xl">
           The community for engineers & designers at Yale
@@ -20,8 +21,8 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div>
             <p className="text-zinc-200 text-lg leading-relaxed mb-8">
-              As the place for CS at Yale, we're a team of computer science enthusiasts looking to
-              revolutionize the campus and make students' lives easier through the use of
+              As the place for CS at Yale, we&#39;re a team of computer science enthusiasts looking
+              to revolutionize the campus and make students&#39; lives easier through the use of
               technology.
             </p>
             <p className="text-zinc-200 text-lg leading-relaxed">
@@ -44,9 +45,9 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </SectionContainer>
 
-      <section className="max-w-7xl mx-auto mt-32">
+      <SectionContainer className="mt-32">
         <div className="border-b border-zinc-800 pb-4 mb-16">
           <h2 className="text-white text-3xl md:text-4xl font-bold">Our Mission & Values</h2>
         </div>
@@ -143,9 +144,9 @@ const About = () => {
             </ul>
           </div>
         </div>
-      </section>
+      </SectionContainer>
 
-      <section className="max-w-7xl mx-auto mt-32">
+      <SectionContainer className="mt-32">
         <div className="border-b border-zinc-800 pb-4 mb-16">
           <h2 className="text-white text-3xl md:text-4xl font-bold">Our Story</h2>
         </div>
@@ -158,9 +159,9 @@ const About = () => {
             </div>
           ))}
         </div>
-      </section>
+      </SectionContainer>
 
-      <section className="max-w-7xl mx-auto mt-32 mb-10">
+      <SectionContainer className="mt-32 mb-10">
         <div className="border-b border-zinc-800 pb-4 mb-16">
           <h2 className="text-white text-3xl md:text-4xl font-bold">Meet Our Team</h2>
           <p className="text-zinc-400 text-lg mt-2">The talented students who make y/cs possible</p>
@@ -169,7 +170,7 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
           <div className="md:col-span-4">
             <p className="text-zinc-300 text-lg mb-8 leading-relaxed">
-              We're a diverse group of passionate computer science students working together to
+              We&#39;re a diverse group of passionate computer science students working together to
               create amazing technology. Join us in shaping the future of tech at Yale.
             </p>
 
@@ -195,10 +196,10 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </SectionContainer>
 
       <Sponsors />
-    </div>
+    </PageContainer>
   );
 };
 

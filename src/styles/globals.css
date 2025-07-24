@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import 'prism-themes/themes/prism-dracula.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,7 +14,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-rgb: #1F232C;
+    --background-rgb: #1f232c;
   }
 }
 
@@ -26,6 +27,11 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.prose img {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nav-link {
@@ -42,19 +48,17 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 6px; 
+  height: 6px;
   background-color: white;
-  transform: scaleX(0); 
-  transform-origin: bottom right; 
-  transition: transform 0.3s ease-out; 
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
 }
 
 .nav-link:hover::after {
-  transform: scaleX(1); 
-  transform-origin: bottom left; 
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
-
-
 
 .gradient-shadow::after {
   content: '';
@@ -64,7 +68,7 @@ body {
   width: 100%;
   height: 105%;
   /* filter: blur(10px); */
-  background: radial-gradient(circle, #FFcccc, #FF555B);
+  background: radial-gradient(circle, #ffcccc, #ff555b);
 }
 
 @keyframes fadeIn {

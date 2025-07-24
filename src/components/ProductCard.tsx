@@ -7,7 +7,6 @@ import { GoArrowUpRight } from 'react-icons/go';
 
 import nologoproduct1 from '../assets/products/logos/ycs.png';
 
-// ProductCard Component
 export const ProductCard = ({ product }: { product: Product }) => {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -78,7 +77,6 @@ interface Product {
   live?: boolean;
 }
 
-// Featured Product Component
 export const FeaturedProduct = ({ product }: { product: Product }) => {
   return (
     <div className="relative mb-16">
