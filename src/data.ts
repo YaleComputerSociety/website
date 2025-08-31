@@ -37,9 +37,11 @@ import william from './assets/people/william.jpeg';
 import sofia from './assets/people/sofia.jpeg';
 import humpery from './assets/people/humphrey.jpg';
 // partnerships import
-import bloomberg from './assets/partnerships/bloomberg.png';
-import janestreet from './assets/partnerships/JaneStreet.png';
+import janestreet from './assets/partnerships/JaneStreetWhite.png';
 import tsai from './assets/partnerships/tsai.webp';
+import hrt from './assets/partnerships/HudsonRiverTrading.png';
+import qnx from './assets/partnerships/QNX.png';
+import minimax from './assets/partnerships/MiniMax.png';
 // import hrt from './assets/partnerships/HRT.png';
 import gala from '@assets/ycs.png';
 
@@ -327,9 +329,19 @@ export const TODAY_STATISTICS = [
 export const PARTNERSHIPS: { name: string; image: StaticImageData; url?: string; tier?: string }[] =
   [
     {
-      name: 'Bloomberg',
-      image: bloomberg,
-      tier: 'silver',
+      name: 'MiniMax',
+      image: minimax,
+      tier: 'obsidian',
+    },
+    {
+      name: 'Hudson River Trading',
+      image: hrt,
+      tier: 'obsidian',
+    },
+    {
+      name: 'QNX',
+      image: qnx,
+      tier: 'gold',
     },
     {
       name: 'Jane Street',
