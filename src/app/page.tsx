@@ -295,7 +295,7 @@ const Home = () => {
               </h2>
 
               <p className="mt-6 text-lg text-zinc-300">
-                The Fall 2025 Membership Application is now open! Click below to become a y/cs general member and optionally apply our sub-divisions.
+                The Fall 2025 Membership Application is now open! Click below to learn more and apply.
               </p>
 
               <div className="mt-10 flex flex-col sm:flex-row gap-4">
@@ -303,7 +303,7 @@ const Home = () => {
                   href="/join"
                   className="inline-flex items-center justify-center rounded-lg font-semibold text-lg bg-gradient-to-r from-ycs-pink to-ycs-pink/90 hover:from-ycs-pink hover:to-ycs-pink text-black py-3 px-8 transition-all duration-300 hover:shadow-lg hover:shadow-ycs-pink/20 hover:translate-y-[-2px]"
                 >
-                  Join y/cs
+                  Apply to Join
                 </Link>
 
                 <Link
