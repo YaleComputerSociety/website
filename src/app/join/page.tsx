@@ -138,7 +138,7 @@ const Join = () => {
               <div className='mr-2'>
                 <h3 className="text-xl font-bold text-white">Applications are open now!</h3>
                 <p className="text-zinc-300 mt-1">
-                  Apply before the deadline to join our community for the Fall 2025 semester.
+                  Apply before September 7 at 11:59 PM to join our community for the Fall 2025 semester.
                 </p>
               </div>
               <Link
