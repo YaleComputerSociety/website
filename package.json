@@ -15,6 +15,7 @@
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.2.2",
     "@types/xml2js": "^0.4.14",
+    "@vercel/analytics": "^1.5.0",
     "framer-motion": "^12.4.10",
     "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
