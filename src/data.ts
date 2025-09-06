@@ -164,7 +164,7 @@ export const BOARD: Person[] = [
     team: 'YaleClubs',
   },
   {
-    name: 'Ephraim Akrai-Nettey',
+    name: 'Ephraim Akai-Nettey',
     image: ephraim,
     role: 'Team Lead',
     year: 2027,
