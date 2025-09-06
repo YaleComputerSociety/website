@@ -332,26 +332,32 @@ export const PARTNERSHIPS: { name: string; image: StaticImageData; url?: string;
       name: 'MiniMax',
       image: minimax,
       tier: 'obsidian',
+      url: 'https://www.minimaxi.com/',
     },
     {
       name: 'Hudson River Trading',
       image: hrt,
       tier: 'obsidian',
+      url: 'https://www.hudsonrivertrading.com/',
     },
     {
       name: 'QNX',
       image: qnx,
       tier: 'gold',
+      url: 'https://blackberry.qnx.com/en',
     },
     {
       name: 'Jane Street',
       image: janestreet,
       tier: 'silver',
+      url: 'https://www.janestreet.com/',
+
     },
     {
       name: 'Tsai CITY',
       image: tsai,
       tier: 'silver',
+      url: 'https://city.yale.edu/',
     },
     {
       name: 'NVIDIA',
