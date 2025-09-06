@@ -307,7 +307,7 @@ export const STORIES = [
   {
     data: '2023',
     description:
-      'The y/cs Catalyst program began, dedicated to teaching then ext generation of software engineers at Yale.',
+      'The y/cs Catalyst program began, dedicated to teaching then next generation of software engineers at Yale.',
   },
 ];
 

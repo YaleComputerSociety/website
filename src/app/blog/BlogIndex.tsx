@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import { PageContainer, SectionContainer } from '@components/Container';
 import { SectionTitle } from '@components/SectionTitle';
 import { BlogPostMeta, BlogTag } from '@lib/blog';
+import { BlogForm } from '@components/BlogForm';
 
 interface BlogIndexProps {
   posts: BlogPostMeta[];
@@ -119,6 +120,8 @@ export function BlogIndex({ posts, tags }: BlogIndexProps) {
             </p>
           </div>
         )}
+
+        <BlogForm/>
       </SectionContainer>
     </PageContainer>
   );

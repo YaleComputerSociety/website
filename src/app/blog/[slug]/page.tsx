@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import matter from 'gray-matter';
 import { getAllPosts } from '@/lib/blog'; // your existing helper
 import { compileMDX } from '@/lib/compileMDX';
+import { BlogForm } from '@components/BlogForm'
 
 export async function generateStaticParams() {
   const files = fs.readdirSync(path.join(process.cwd(), 'src/assets/posts'));
@@ -52,6 +53,8 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
           <article className="prose prose-invert max-w-none">
             <MDXContent components={{}} />
           </article>
+
+          <BlogForm/>
         </div>
 
         <aside className="space-y-6 sticky top-[7.5rem] self-start">
