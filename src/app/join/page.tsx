@@ -136,13 +136,13 @@ const Join = () => {
                 <GoCheckCircle size={24} />
               </div>
               <div className='mr-2'>
-                <h3 className="text-xl font-bold text-white">Applications are open now!</h3>
+                <h3 className="text-xl font-bold text-white">Apply for general membership!</h3>
                 <p className="text-zinc-300 mt-1">
-                  Apply before September 7 at 11:59 PM to join our community for the Fall 2025 semester.
+                  Applications are open year-round and reviewed on a rolling basis
                 </p>
               </div>
               <Link
-                href="https://docs.google.com/forms/d/e/1FAIpQLScva7mz0Bw6RbA1Et85DjsEteFX232u3ncYVEOVepjWcRSRQw/viewform?usp=dialog"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeguDHlt5DeycAmB9hZjdwASyPYUwPH-NhreYomuI7DPtND1A/viewform?usp=dialog"
                 className="ml-auto bg-ycs-pink hover:bg-ycs-pink/90 text-black py-2 px-6 rounded-lg transition-all duration-300 flex items-center whitespace-nowrap"
                 target="_blank"
               >
@@ -285,12 +285,12 @@ const Join = () => {
               <>
                 <p className="text-zinc-300 text-lg mb-8">
                   Join our community of passionate developers, designers, and tech enthusiasts.
-                  Applications for Fall 2025 are now open!
+                  Applications for general membership are open year-round!
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link
-                    href="https://docs.google.com/forms/d/e/1FAIpQLScva7mz0Bw6RbA1Et85DjsEteFX232u3ncYVEOVepjWcRSRQw/viewform?usp=dialog"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSeguDHlt5DeycAmB9hZjdwASyPYUwPH-NhreYomuI7DPtND1A/viewform?usp=dialog"
                     className="inline-flex items-center justify-center rounded-lg font-bold text-lg bg-ycs-pink hover:bg-ycs-pink/90 text-black py-3 px-8 transition-all duration-300 hover:shadow-lg hover:translate-y-[-2px]"
                     target="_blank"
                   >

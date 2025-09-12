@@ -295,7 +295,7 @@ const Home = () => {
               </h2>
 
               <p className="mt-6 text-lg text-zinc-300">
-                The Fall 2025 Membership Application is now open! Click below to learn more and apply.
+                General membership applications are open year-round! Click below to learn more and apply.
               </p>
 
               <div className="mt-10 flex flex-col sm:flex-row gap-4">
