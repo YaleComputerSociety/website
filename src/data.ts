@@ -150,7 +150,7 @@ export const BOARD: Person[] = [
     team: 'ymeets',
   },
   {
-    name: 'Jeet Parkih',
+    name: 'Jeet Parikh',
     image: jeet,
     role: 'Team Lead',
     team: 'ymeets',
@@ -480,7 +480,7 @@ export const PEOPLE = [
     year: 2028,
   },
   {
-    name: 'Jeet Parkih',
+    name: 'Jeet Parikh',
     role: 'Software Engineer',
     team: 'ymeets',
     year: 2028,
