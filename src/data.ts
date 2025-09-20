@@ -38,7 +38,7 @@ import sofia from './assets/people/sofia.jpeg';
 import humpery from './assets/people/humphrey.jpg';
 // partnerships import
 import janestreet from './assets/partnerships/JaneStreetWhite.png';
-import tsai from './assets/partnerships/tsai.webp';
+import tsai from './assets/partnerships/tsai.png';
 import hrt from './assets/partnerships/HudsonRiverTrading.png';
 import qnx from './assets/partnerships/QNX.png';
 import minimax from './assets/partnerships/MiniMax.png';
