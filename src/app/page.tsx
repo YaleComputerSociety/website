@@ -75,7 +75,7 @@ const Home = () => {
 
         <div className="mt-16 text-xl">
           <p className="text-white max-w-3xl">
-            The y/cs is a group of product enthusiats that build software applications for Yale
+            The y/cs is a group of product enthusiasts that build software applications for Yale
             University&apos;s campus community and connect over our shared love for applied
             computing.
           </p>
