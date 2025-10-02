@@ -21,8 +21,13 @@ import nvidia from './assets/partnerships/nvidia.png';
 // People imports
 import daniel from './assets/people/daniel.jpeg';
 import neil from './assets/people/neil.jpeg';
-import eric from './assets/people/eric.jpeg';
+import eric from './assets/people/eric.png';
 import LilyLin from './assets/people/LilyLin.png';
+import matei from './assets/people/matei.jpeg';
+import reyansh from './assets/people/reyansh.jpg';
+import sebastian from './assets/people/sebastian.jpeg';
+import ben from './assets/people/ben.jpeg';
+import yassin from './assets/people/yassin.jpg';
 
 import ryan from './assets/people/ryan.jpeg';
 import ryanf from './assets/people/ryanf.jpeg';
@@ -68,7 +73,6 @@ export const BOARD: Person[] = [
     team: 'Board',
     year: 2028,
   },
-
   {
     name: 'Jeet Parikh',
     image: jeet,
@@ -102,7 +106,7 @@ export const BOARD: Person[] = [
     image: christian,
     role: 'Director of Events',
     team: 'Board',
-    year: 2026,
+    year: 2028,
   },
   {
     name: 'Sofia Colorado',
@@ -118,13 +122,20 @@ export const BOARD: Person[] = [
     team: 'Board',
     year: 2028,
   },
+  {
+    name: 'Eric Yoon',
+    image: eric,
+    role: 'Director of Security',
+    year: 2027,
+    team: 'Board',
+  },
 
   // product leads
   {
-    name: 'Neil Song',
-    image: neil,
+    name: 'Reyansh Bahl',
+    image: reyansh,
     role: 'Team Lead',
-    year: 2027,
+    year: 2028,
     team: 'CourseTable',
   },
   {
@@ -135,10 +146,10 @@ export const BOARD: Person[] = [
     team: 'CourseTable',
   },
   {
-    name: 'Eric Yoon',
-    image: eric,
+    name: 'Matei Coldea',
+    image: matei,
     role: 'Team Lead',
-    year: 2027,
+    year: 2028,
     team: 'Yalies',
   },
 
@@ -146,7 +157,7 @@ export const BOARD: Person[] = [
     name: 'Rylan Yang',
     image: rylan,
     role: 'Team Lead',
-    year: 2028,
+    year: 2027,
     team: 'ymeets',
   },
   {
@@ -171,20 +182,39 @@ export const BOARD: Person[] = [
     team: 'YaleIMs',
   },
   {
-    name: 'Ryan Gumlia',
-    image: ryan,
-    role: 'Team Lead',
-    year: 2026,
-    team: 'MajorAudit',
-  },
-
-  /* Fix */
-  {
-    name: 'Ryan Fernandes',
-    image: ryanf,
+    name: 'Andy Cheng',
+    image: andy,
     role: 'Team Lead',
     year: 2027,
+    team: 'MajorAudit',
+  },
+  {
+    name: 'Ben Wu',
+    image: ben,
+    role: 'Team Lead',
+    year: 2027,
+    team: 'MajorAudit',
+  },
+  {
+    name: 'Christian Phanhthourath',
+    image: christian,
+    role: 'Team Lead',
     team: 'y/labs',
+    year: 2028,
+  },
+  {
+    name: 'Sebastian Gonzalez',
+    image: sebastian,
+    role: 'Team Lead',
+    team: 'y/labs',
+    year: 2028,
+  },
+  {
+    name: 'Yassin Mudawi',
+    image: yassin,
+    role: 'Team Lead',
+    team: 'YaleMenus',
+    year: 2027,
   },
 ];
 
