@@ -1,0 +1,137 @@
+---
+title: 'Parlays, Brackets and Permissions: YaleIMs 2.0'
+description: ''
+author: 'Ryan Fernandes, Ephraim Akai-Nettey'
+date: '2025-10-26'
+tags: ['Release Note', 'YaleIMs']
+type: 'tech'
+readTime: '5 min read'
+---
+
+<img
+  src="/images/blog/yaleims-version-two/leaderboard.png"
+  alt="Home screen and leaderboard page of YaleIMs"
+  width="1000"
+  style={{ display: 'block', marginLeft: 0 }}
+/>
+
+<small>Leaderboard page of YaleIMs showing the current Tyng Cup standings</small>
+
+Is there anything better than a good game of Yale intramurals? The rivalries, the chemistry, the drama—all in pursuit of the *coveted* Tyng Cup. For years, this was it: the undisputed pinnacle of athletics at Yale… until y/cs found something better.
+
+Introducing PARLAYS: the newest and greatest way to enjoy Yale intramurals, powered by [YaleIMs](https://yaleims.com/). One of the more recent y/cs projects to launch, YaleIMs is a platform built entirely by students for students with the goal of simplifying the undergraduate intramurals experience. 
+
+While the first version of the app was only released in 2024, the team has already reached version 2.0 after just a summer’s worth of work. With new ways to compete, a restructured backend, and a sleek new interface, intramurals at Yale have reached a whole new level. Here are some of our favorite features from the 2.0 release, as well as a look ahead for the future of YaleIMs:
+
+## Parlays
+
+<img
+  src="/images/blog/yaleims-version-two/odds.png"
+  alt="Odds page of YaleIMs"
+  width="1000"
+  style={{ display: 'block', marginLeft: 0 }}
+/>
+
+<small>The YaleIMs *Odds* page</small>
+
+Welcome to your new favorite sportsbook. While the [*Odds* page](https://yaleims.com/odds) existed in previous releases of YaleIMs as a way to predict the outcomes of games, it was still experimental and unrefined. Now, this feature has received a complete makeover. In line with traditional sports betting, YaleIMs users now add their predictions to “slips,” enabling them to either make single-game bets or chain them for more lucrative parlays. On the *Odds* page, users can easily see pending and past bets, complete with potential returns, match information, and timestamps.
+
+<img
+  src="/images/blog/yaleims-version-two/odds_leaderboard.png"
+  alt="The Odds rankings"
+  width="1000"
+  style={{ display: 'block', marginLeft: 0 }}
+/>
+
+<small>Odds Rankings as of October 26</small>
+
+What’s more, some stakes have been added to the competition with a new tab for the Odds Rankings. Users are now invited to create nicknames and work to climb the YCoins ranks against their peers. While not quite as prestigious as *the* Tyng Cup, we expect this leaderboard to add an extra element of competition into the mix. It might even serve as an opportunity for redemption among some colleges struggling on the main leaderboard (shoutout BerkeleyIMs).
+
+## Role-Based Permissions
+
+Hidden behind the allure of the parlays feature are some substantial, key changes to accounts and permissions on the site. Hoping to streamline the process for intramural referees, representatives, and administrators, the YaleIMs team has reworked the backend infrastructure to add roles and accounts. Linked directly with a user’s NetId (Yale’s identification schema), roles currently fall into one or multiple of the five categories:
+
+- Admins
+- College Representatives
+- Captains
+- General Users (standard experience)
+- Developers
+
+<img
+  src="/images/blog/yaleims-version-two/hub.png"
+  alt="Hub page of YaleIMs"
+  width="1000"
+  style={{ display: 'block', marginLeft: 0 }}
+/>
+
+<small>The *Hub* page is the launchpad from which users are able to access extra features based on their role</small>
+
+Depending on a user’s role, they are given select permissions and page access across the YaleIMs site. Authorization rewrites and conditional content were a heavy lift to implement, but it was worth it in the end for the resulting suite of impactful, administrative tools.
+
+For admins (intramural sports coordinators, referees, and site administrators), there is now a custom interface for uploading schedules in a CSV format, scoring games, and editing past records. For college representatives, there is a direct integration with [Yalies](https://yalies.io/) to select team captains for individual sports (assigning those students a new role), and selecting a weekly MVP. Captains gain access to student sign-ups for upcoming games, helping to keep rosters organized ahead of time. Further development will enable captains to verify attendance of singups. Lastly, developers have special privileges to directly modify the database in case of errors.
+
+## Fresh New Look
+
+If you are a long-time user of YaleIMs, you likely noticed a complete revamp from the site’s aesthetic a year ago. In collaboration with Design at Yale (DAY), the YaleIMs team has crafted a set of sleek, illuminated elements to decorate every page. The relocation of the navigation bar has completely transformed the feel of the site, and changes have been implemented to make the app mobile friendly.
+
+<img
+  src="/images/blog/yaleims-version-two/schedules.png"
+  alt="Schedules page of YaleIMs"
+  width="1000"
+  style={{ display: 'block', marginLeft: 0 }}
+/>
+
+<small>View upcoming schedules and sign up for games on YaleIMs</small>
+
+Beyond the visuals, navigation within YaleIMs has been updated with a brand new [*Hub* page](https://yaleims.com/hub) housing all of the essentials for users. Here, they can find contact information for their college representatives and captains, monitor their YCoins balance, and link directly to both the overall leaderboard and upcoming schedule. Speaking of the schedule, game cards have been updated to include more information, participants lists, sign-up buttons, and *direct Google Calendar integration*, all in a single small profile. We are thrilled with all of the new features in version 2.0 and cannot wait for you to try them all.
+
+## \*Bonus\*: Brackets
+
+<img
+  src="/images/blog/yaleims-version-two/bracket.png"
+  alt="Brackets page of YaleIMs"
+  width="1000"
+  style={{ display: 'block', marginLeft: 0 }}
+/>
+
+<small>The *all new Brackets* page on YaleIMs. Stay up-to-date on playoffs action!</small>
+
+In light of the playoffs season for Fall sports, interactive brackets have just been added to YaleIMs during the writing of this blog! Head to the [*Brackets* page](https://yaleims.com/brackets) to view results from playoff games, as well as each college’s path to the championship. Hover over any team and watch its current path to the final light up. We are excited to see these brackets fill as the playoffs continue!
+
+## The Team
+
+Of course, standing up a release over the summer is no small feat, especially considering work, internships and research. However, the [YaleIMs team](https://yaleims.com/about-us) was well-organized and motivated, leading to a polished and stunning result. These are the developers behind the 2.0 release:
+
+- [Ephraim Akai-Nettey](https://www.linkedin.com/in/ephraim-akai-nettey/), Class of 2027, Saybrook College (Team Lead)
+- [Katilyn Oikle](https://www.linkedin.com/in/kaitlyn-oikle/), Class of 2027, Morse College
+- [Daniel Morales](https://www.linkedin.com/in/dmorales7567/), Class of 2027, Jonathan Edwards College
+- [Brian Di Bassinga](https://www.linkedin.com/in/brian-di-bassinga/), Class of 2026, Davenport College
+- [Ella White](https://www.linkedin.com/in/ella-white-707012243/), Class of 2027, Trumbull College
+- [Farhan Baig](https://www.linkedin.com/in/baig-farhan/), Class of 2027, Davenport College
+- [Vojtěch Kysilka](https://www.linkedin.com/in/vojtech-kysilka/), Class of 2028, Pauli Murray College
+
+Special thanks also goes to [Anna Xu](https://www.linkedin.com/in/anna-wenxin-xu/), Yale Class of 2025 alumna and the founding team lead for YaleIMs. Anna currently lives in Boston, where she teaches Computer Science.
+
+## What’s Next?
+
+The future is bright for YaleIMs, and there are plenty of plans in store. Most immediately, to celebrate version 2.0, y/cs is giving away a *free Nintendo Switch* as a part of the YaleIMs Parlays Competition. Log onto the [*Odds* page](https://yaleims.com/odds) of YaleIMs and place your bets throughout the Fall and Winter seasons. At the end of the Winter season in March, the student with the most YCoins will take home the Nintendo Switch grand prize! There is already plenty of hype surrounding the competition, and we had a great time kicking it off last Tuesday at the YaleIMs Tailgate.
+
+<img
+  src="/images/blog/yaleims-version-two/tailgate.jpeg"
+  alt="y/cs members at the YaleIMs Tailgate"
+  width="1000"
+  style={{ display: 'block', marginLeft: 0 }}
+/>
+
+<small>y/cs members volunteering at the YaleIMs Tailgate</small>
+
+Moreover, for new features, here are some of the top ideas that the YaleIMs team is working on:
+
+- Mobile app
+- Friends (plus social network features for people to post and comment on games)
+- Newsletter (weekly recap of games, college power rankings, notable games and upsets)
+- Animations (making the site a little more gamified and engaging)
+
+The team is also joined this semester by recently inducted y/cs freshmen [Claire Guo](https://www.linkedin.com/in/claire-guo-881bb2287/) and [Ben Le](https://www.linkedin.com/in/benjamin-le-b836ba274/). We are all excited for their new ideas and contributions!
+
+With that, our YaleIMs 2.0 recap is complete, and we invite you to [check out the website](https://yaleims.com/) for yourself! y/cs developers are always welcoming of new ideas and feedback, so please visit the [YaleIMs Canny](https://yaleims.canny.io/feature-requests) here with any bug reports or feature requests. Together, we can level-up intramural sports for everyone. Game on!
