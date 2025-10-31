@@ -2,7 +2,7 @@
 
 import '@styles/App.css';
 import { useState, useEffect, SetStateAction } from 'react';
-import { BOARD, PEOPLE } from '@data';
+import { BOARD, loadMembers, Member } from '@data';
 import {
   GoCheck,
   GoX,
@@ -92,8 +92,8 @@ const Masthead = ({ people }: { title: string; people: Person[] }) => {
   const [filteredPeople, setFilteredPeople] = useState(people);
   const [showFilters, setShowFilters] = useState(false);
 
-  const allRoles = ['All', ...Array.from(new Set(people.map((person) => person.role)))].sort();
-  const allTeams = ['All', ...Array.from(new Set(people.map((person) => person.team)))].sort();
+  const allRoles = ['All', ...Array.from(new Set(people.filter((person) => !person.role.includes(";")).map((person) => person.role)))].sort();
+  const allTeams = ['All', ...Array.from(new Set(people.filter((person) => !person.team.includes(";")).map((person) => person.team)))].sort();
 
   useEffect(() => {
     let results = [...people];
@@ -109,11 +109,11 @@ const Masthead = ({ people }: { title: string; people: Person[] }) => {
     }
 
     if (activeRole !== 'All') {
-      results = results.filter((person) => person.role === activeRole);
+      results = results.filter((person) => person.role.includes(activeRole));
     }
 
     if (activeTeam !== 'All') {
-      results = results.filter((person) => person.team === activeTeam);
+      results = results.filter((person) => person.team.includes(activeTeam));
     }
 
     results.sort((a, b) => {
@@ -363,10 +363,11 @@ const Team = () => {
   const [guestLoggedIn, setGuestLoggedIn] = useState(false);
   const [currentPath, setCurrentPath] = useState('');
 
-  const developers = PEOPLE || [];
+  const [developers, setDevelopers] = useState<Member[]>([]);
 
   useEffect(() => {
     setCurrentPath(window.location.pathname);
+    loadMembers().then(setDevelopers);
   }, []);
 
   return (
@@ -417,8 +418,8 @@ const Team = () => {
         </div>
 
         {guestLoggedIn || isLoggedIn ? (
-          //@ts-expect-error BOARD and developers arrays have slightly different Person interfaces but are compatible for display
-          <Masthead title="Development Team" people={developers.concat(BOARD)} />
+          ////@ts-expect-error BOARD and developers arrays have slightly different Person interfaces but are compatible for display
+          <Masthead title="Development Team" people={developers} />
         ) : (
           <div className="bg-zinc-800/30 rounded-lg overflow-hidden p-8 text-center">
             <Container className="max-w-2xl">

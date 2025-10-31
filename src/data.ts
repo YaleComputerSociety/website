@@ -1,3 +1,6 @@
+//CSV parser
+import Papa from "papaparse";
+
 // Product imports
 import { StaticImageData } from 'next/image';
 
@@ -699,3 +702,20 @@ export const EVENTS = [
     tags: ['Mixer'],
   },
 ];
+
+export interface Member {
+  name: string;
+  class: string;
+  team: string;
+  role: string;
+}
+
+export async function loadMembers(): Promise<Member[]> {
+  const response = await fetch("/members/ycs_members.csv");
+  const text = await response.text();
+  const result = Papa.parse<Member>(text, {
+    header: true,
+    skipEmptyLines: true,
+  });
+  return result.data;
+}
