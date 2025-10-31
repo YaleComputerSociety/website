@@ -92,8 +92,8 @@ const Masthead = ({ people }: { title: string; people: Person[] }) => {
   const [filteredPeople, setFilteredPeople] = useState(people);
   const [showFilters, setShowFilters] = useState(false);
 
-  const allRoles = ['All', ...Array.from(new Set(people.filter((person) => !person.role.includes(";")).map((person) => person.role)))].sort();
-  const allTeams = ['All', ...Array.from(new Set(people.filter((person) => !person.team.includes(";")).map((person) => person.team)))].sort();
+  const allRoles = ['All', ...Array.from(new Set(people.filter((person) => !person.role.includes(",")).map((person) => person.role)))].sort();
+  const allTeams = ['All', ...Array.from(new Set(people.filter((person) => !person.team.includes(",")).map((person) => person.team)))].sort();
 
   useEffect(() => {
     let results = [...people];
