@@ -1,0 +1,171 @@
+---
+title: 'How I Solved Yale’s Scavenger Hunts with Code'
+description: ''
+author: 'Eric Yoon'
+date: '2025-11-09'
+tags: ['Generative AI', 'Story']
+type: 'tech'
+readTime: '5 min read'
+---
+
+Yalies love a good scavenger hunt. [Whales of Yale](https://www.instagram.com/whalesofyale) is an Instagram account that hides crochet whales around campus, posting only a photo of the creature’s surroundings as a hint. [The Veritas Search](https://www.theveritassearch.com/) is in its second year, encouraging students to find hidden “capsules” to win prizes like a meal with Mark Cuban. Without a lucky stroke of inspiration or special knowledge, chances of finding any of these prizes are slim—with almost 7,000 undergraduates all searching the moment a clue drops, each prize is discovered within a matter of minutes. As a Computer Science major, I knew I could use code to gain the upper hand.
+
+
+
+# The Whale Intelligence Map
+
+<img
+  src="/images/blog/scavenger-hunt/01.png"
+  width={600}
+/>
+
+The anatomy of a Whales of Yale post looks something like this: a picture of the crochet creature, a small portion of a floor or a wall (if you’re lucky), and a fun caption. Interestingly, each caption is updated after each whale is found with its former hiding location.
+
+At first, I thought there might be some pattern to whale drops. After all, the people hiding them are students too. Maybe one of the hiders has class on Science Hill on Mondays and is more likely to hide whales around that region. Maybe whales hidden after 9PM were more likely to be around the dorms. I set out to make an interactive map, plotting each whale’s hiding location.
+
+The first step was designing a data pipeline to download these images and obtain their latitude/longitude coordinates. The first step was easy—using the python instagrapi library,  I was able to mass-download each post, along with its caption.
+
+Extracting the geocoordinates proved to be a harder problem. First, I needed to figure out a way to extract only the place name (“Davies”), out of the caption which may contain other text. Many posts would refer to a location with a colloquial name used by Yale students: for example, “Davies” for Davies Auditorium, “WLH” for William L. Harkness Hall, or “LC” for Linsly-Chittenden Hall.
+
+The perfect tool for this, I figured, was an LLM! Using the Gemini API, I was able to have each place name extracted from the caption, turned into the official building name, and saved to a .csv file. To make sure the LLM did not return any extra text, I used the Structured Outputs API, instructing Gemini to return two fields: one string containing the place name, and one boolean indicating whether it is confident in its answer.
+
+
+<img
+  src="/images/blog/scavenger-hunt/02.png"
+  width={600}
+/>
+
+With a list of place names, I could now pass them to the Google Maps Places API (New). Provided with some hints that the POI would be in the general New Haven area, the Google Maps API was able to extract the latitude and longitude of each whale.
+
+<img
+  src="/images/blog/scavenger-hunt/03.png"
+  width={600}
+/>
+
+The final step was to create a GUI to display each post. I was able to vibe-code a website, making use of the Mapbox API. Enter the Whales of Yale: Intelligence Map.
+
+
+<img
+  src="/images/blog/scavenger-hunt/04.png"
+  width={600}
+/>
+
+After playing with the tool for a while, I realized that there was unfortunately no discernible pattern between weekday or time of day and whale location. Though, the work done to make this map interface seemed useful. My next idea was to add “reference photos” to the map. If I saw a brick floor, for example, I could look through the reference photos and find the ones with brick floors.
+
+# Gathering Intelligence
+
+And so, I went on a multi-day expedition to take photos of Yale campus. Not photos of the pretty architecture or beautiful fall colors, mind you—I was snapping pics of floors, walls, trees, and furniture.
+
+
+<img
+  src="/images/blog/scavenger-hunt/05.png"
+  width={600}
+/>
+
+Building on the work I did for my Instagram pipeline, I made a second pipeline to process these reference photos. First, a script would extract the geocoordinates from each image, using the [EXIF data](https://en.wikipedia.org/wiki/Burger_King_foot_lettuce). Then, I had Gemini take each image and return a set of pre-defined tags. 
+
+<img
+  src="/images/blog/scavenger-hunt/06.png"
+  width={600}
+/>
+
+Finally, I plotted these reference photos alongside the Whales of Yale posts on my Intelligence Map. With the help of a way to filter reference photos by tags, I had made a super powerful tool that would let me quickly sort through hundreds of reference photos.
+
+
+<img
+  src="/images/blog/scavenger-hunt/07.png"
+  width={600}
+/>
+<img
+  src="/images/blog/scavenger-hunt/08.png"
+  width={600}
+/>
+
+# The Catch
+
+<img
+  src="/images/blog/scavenger-hunt/01.png"
+  width={600}
+/>
+
+The day finally came. I got the Instagram “new post” notification. The rule I set up on [BuzzKill for Android](https://play.google.com/store/apps/details?id=com.samruston.buzzkill&hl=en_US&pli=1) triggered, immediately setting off an alarm. Spotted linoleum floor… concrete wall… let’s apply the tags.
+
+
+<img
+  src="/images/blog/scavenger-hunt/09.png"
+  width={600}
+/>
+
+Eureka! It’s a match. I sprinted to Davies, and saw the bench. Whale #210 captured!
+
+
+<img
+  src="/images/blog/scavenger-hunt/10.png"
+  width={600}
+/>
+
+# The Hunt for the Capsules
+
+With my new whaley friend in tow, I was on to bigger things. The Veritas Search had just commenced; I wasn’t going to miss out on my chance at free boba for a semester!
+
+
+<img
+  src="/images/blog/scavenger-hunt/11.png"
+  width={600}
+/>
+
+As this was the second Veritas Search, I knew some of the tricks the puzzle creators liked to pull. Last year, there were various hidden clues buried around the different pages of the website. Also, don’t forget the cryptic hints posted on the hints page.
+
+
+<img
+  src="/images/blog/scavenger-hunt/12.png"
+  width={600}
+/>
+
+At this point, I knew what I needed to do. I vibe-coded a bash script that scrapes the HTML page, parses out the filepath of the associated JS script, and sends me a Discord message when there is a change to the website code.
+
+The website seemed to be made in React, so the bundled code was unfortunately obfuscated and minified. This didn’t pose a problem to me, though. Using the built-in bash diff command, I was able to have the difference—only the lines that changed—sent to me in the Discord message body.
+
+I set up a cronjob to run the script every 15 minutes, awaiting any changes to the website; the sort of “set it and forget it” kind of deal.
+
+I spent a few days getting the occasional ping. Sometimes, it would simply alert me of someone new being added to the winners page. Sometimes, it told me that a new hint was added to the hints page, which gave me an immense advantage over the people who had to manually refresh the page whenever they felt like checking.
+
+
+<img
+  src="/images/blog/scavenger-hunt/13.png"
+  width={600}
+/>
+
+I was able to decipher some of the hints fairly quickly, but my general lack of athleticism made it so that I couldn’t run to the hiding spots fast enough. (I was even chased down by a wide-eyed sophomore on a bike once.)
+
+But then, the day came. I was alerted to an unusual diff; usually, the changes made to the website were only a few lines long, and usually pertained to the hints page or the winners page. This one seemed different. Why was the blurb on the home page being updated?
+
+
+<img
+  src="/images/blog/scavenger-hunt/14.png"
+  width={600}
+/>
+<img
+  src="/images/blog/scavenger-hunt/15.png"
+  width={600}
+/>
+
+Upon further inspection, I saw some strange code in the HTML source. Individual letters, spelling out “STOECKEL”, were put in their own tags!
+
+<img
+  src="/images/blog/scavenger-hunt/16.png"
+  width={600}
+/>
+
+Knowing this referenced Stoeckel Hall (the home of my 9AM music class), I sprinted down Elm St in the rain and searched all over the building. Eventually, I found the capsule tucked away underneath the emergency staircase.
+
+
+<img
+  src="/images/blog/scavenger-hunt/17.jpg"
+  width={600}
+/>
+
+I later learned that the intended solution related to the hint published on that same day: “Patience is a virtue. Over the view lies the clue.” Normal seekers were intended to wait 15 seconds on the home page before each highlighted letter would change color. However, with my diff alerter, I bypassed this element of the puzzle altogether!
+
+With two scavenger hunts conquered, the only thing left for me is to decide what I want to ask Mark Cuban.
+
