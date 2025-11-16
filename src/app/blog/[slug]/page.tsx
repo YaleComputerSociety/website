@@ -5,6 +5,7 @@ import matter from 'gray-matter';
 import { getAllPosts } from '@/lib/blog'; // your existing helper
 import { compileMDX } from '@/lib/compileMDX';
 import { BlogForm } from '@components/BlogForm'
+import { HighFiveButton } from '@components/HighFiveButton';
 
 export async function generateStaticParams() {
   const files = fs.readdirSync(path.join(process.cwd(), 'src/assets/posts'));
@@ -27,6 +28,8 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
     .filter((post) => post.tags.some((tag: string) => data.tags.includes(tag)))
     .slice(0, 5);
 
+  const postKey = params.slug.replace(/[^a-zA-Z]/g, "");
+
   return (
     <div className="bg-black min-h-screen">
       <div className="grid grid-cols-1 lg:grid-cols-[3fr_1fr] gap-12 max-w-7xl mx-auto px-4 pt-24 pb-32">
@@ -47,6 +50,9 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
                   {tag}
                 </span>
               ))}
+            </div>
+            <div className="mt-6">
+              <HighFiveButton blogKey={postKey}/>
             </div>
           </div>
 

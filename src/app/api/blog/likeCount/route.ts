@@ -7,7 +7,7 @@ interface RequestBody {
 
 interface ResponseBody {
   blogKey: string;
-  newCount: number;
+  count: number;
 }
 
 interface ResponseData {
@@ -16,55 +16,47 @@ interface ResponseData {
   data?: ResponseBody;
 }
 
-export async function POST(req: NextRequest): Promise<NextResponse<ResponseData>> {
+export async function GET(req: NextRequest): Promise<NextResponse<ResponseData>> {
   try {
-    const body = (await req.json()) as RequestBody;
+    const { searchParams } = new URL(req.url);
+    const key = searchParams.get("blogKey");
     const redis = await createClient({ url: process.env.REDIS_URL }).connect();
 
-    if (!body.blogKey) {
+    if (!key) {
       return NextResponse.json<ResponseData>(
         {
           success: false,
-          message: "Invalid request body"
+          message: "No blogKey provided in the query parameters"
         },
         { status: 400 }
       );
     }
 
-    const key = body.blogKey;
     const redisKey = `blog:${key}`;
 
     const currValue = await redis.get(redisKey);
 
-    if (currValue) {
-      const currNum = parseInt(currValue, 0);
-      await redis.set(redisKey, currNum + 1);
-    } else {
-      await redis.set(redisKey, 1);
-    }
-
-    const newValue = await redis.get(redisKey);
-
-    if (!newValue) {
+    if (!currValue) {
       return NextResponse.json<ResponseData>(
         {
           success: false,
-          message: "Error setting likes in Redis"
+          message: "Blog key does not exist in Redis"
         },
         { status: 500 }
       );
     }
 
-    const newNum = parseInt(newValue);
+    const currNum = parseInt(currValue);
 
-    const responseBody: ResponseBody = { blogKey: key, newCount: newNum };
+    const responseBody: ResponseBody = { blogKey: key, count: currNum };
 
     return NextResponse.json<ResponseData>({
       success: true,
-      message: "Successful like",
+      message: "Successful count retrieval",
       data: responseBody,
     });
   } catch(error) {
+    console.log(`Error: ${error}`);
     return NextResponse.json<ResponseData>(
       {
         success: false,
