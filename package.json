@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^14.2.2",
+    "@types/canvas-confetti": "^1.9.0",
     "@types/jsonwebtoken": "^9.0.9",
     "@types/node": "20.12.7",
     "@types/papaparse": "^5.3.16",
