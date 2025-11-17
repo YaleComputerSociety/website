@@ -9,7 +9,7 @@ interface HighFiveProps {
 
 export const HighFiveButton = ({ blogKey }: HighFiveProps) => {
   const [likes, setLikes] = useState<number>(0);
-  const [loading, setLoading] = useState<boolean>(false);
+  const [loading, setLoading] = useState<boolean>(true);
   const divRef = useRef<HTMLDivElement>(null);
 
   const fireConfetti = () => {
@@ -76,22 +76,24 @@ export const HighFiveButton = ({ blogKey }: HighFiveProps) => {
 
   return (
     <div className='flex gap-3'>
+      <div className='transition-transform duration-200 hover:scale-105 active:scale-95 flex'>
+        <span
+          className={`${loading ? 'opacity-0 translate-y-1' : ''} cursor-pointer select-none px-3.5 py-2 text-sm bg-white text-black rounded-2xl transition duration-1000`}
+          onClick={addLike}
+          ref={divRef}
+        >
+            High Five!
+        </span>
+      </div>
       <span
-        className='cursor-pointer select-none px-3.5 py-2 text-sm bg-white text-black rounded-2xl transition transform hover:scale-105 active:scale-95'
-        onClick={addLike}
-        ref={divRef}
-      >
-        High Five!
-      </span>
-      <span
-        className='cursor-pointer select-none py-2 text-sm text-white'
+        className={`${loading ? 'opacity-0 translate-y-1' : ''} transition duration-1000 py-2 text-sm text-white`}
       >
         —
       </span>
       <span
-        className='cursor-pointer select-none py-2 text-sm text-white'
+        className={`${loading ? 'opacity-0 translate-y-1' : ''} transition duration-1000 py-2 text-sm text-white`}
       >
-        {loading ? '...' : likes} High Fives
+        {likes} High Fives
       </span>
     </div>
   )
