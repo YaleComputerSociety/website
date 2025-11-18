@@ -290,7 +290,7 @@ export const PROJECTS: Project[] = [
     name: 'y/labs',
     logo: ylabs,
     headerImage: undefined,
-    link: 'https://rdb.onrender.com/',
+    link: 'https://yalelabs.io/',
     description: 'Database visualizer for Yale research.',
     live: true,
     shouldIconBeRounded: true,
