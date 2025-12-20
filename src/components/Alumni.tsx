@@ -9,7 +9,7 @@ import meta from '@assets/partnerships/meta.avif';
 import bloomberg from '@assets/partnerships/bloomberg.png';
 import microsoft from '@assets/partnerships/microsoft.png';
 import nvida from '@assets/partnerships/nvidia.png';
-import sig from '@assets/partnerships/sig.png';
+import roblox from '@assets/partnerships/roblox.png';
 import { SectionContainer } from './Container';
 import { Carousel } from './Carousel';
 
@@ -51,9 +51,9 @@ const ALUMNI_COMPANIES = [
     count: 2,
   },
   {
-    name: 'Susquehanna International Group',
-    logo: sig,
-    count: 2,
+    name: 'Roblox',
+    logo: roblox,
+    count: 1,
   },
 ];
 

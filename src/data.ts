@@ -50,6 +50,7 @@ import tsai from './assets/partnerships/tsai.png';
 import hrt from './assets/partnerships/HudsonRiverTrading.png';
 import qnx from './assets/partnerships/QNX.png';
 import minimax from './assets/partnerships/MiniMax.png';
+import citadel from './assets/partnerships/citadel.png';
 // import hrt from './assets/partnerships/HRT.png';
 import gala from '@assets/ycs.png';
 
@@ -362,16 +363,22 @@ export const TODAY_STATISTICS = [
 export const PARTNERSHIPS: { name: string; image: StaticImageData; url?: string; tier?: string }[] =
   [
     {
-      name: 'MiniMax',
-      image: minimax,
+      name: 'Citadel',
+      image: citadel,
       tier: 'obsidian',
-      url: 'https://www.minimaxi.com/',
+      url: 'https://www.citadel.com/',
     },
     {
       name: 'Hudson River Trading',
       image: hrt,
       tier: 'obsidian',
       url: 'https://www.hudsonrivertrading.com/',
+    },
+    {
+      name: 'MiniMax',
+      image: minimax,
+      tier: 'obsidian',
+      url: 'https://www.minimaxi.com/',
     },
     {
       name: 'QNX',
