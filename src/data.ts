@@ -1,5 +1,5 @@
 //CSV parser
-import Papa from "papaparse";
+import Papa from 'papaparse';
 
 // Product imports
 import { StaticImageData } from 'next/image';
@@ -11,6 +11,8 @@ import ymeets from './assets/products/logos/ymeetslogo.png';
 import yaleclubs from './assets/products/logos/yaleclubs.svg';
 import yims from './assets/products/logos/yims.png';
 import ylabs from './assets/products/logos/ylabs.png';
+import yalemeals from './assets/products/logos/yale_meals_logo.png';
+import majoraudit from './assets/products/logos/majoraudit.png';
 import slash from './assets/ycs-slash.png';
 // Product headers
 import coursetableHeader from './assets/products/coursetable/headerimage.png';
@@ -217,7 +219,7 @@ export const BOARD: Person[] = [
     name: 'Yassin Mudawi',
     image: yassin,
     role: 'Team Lead',
-    team: 'YaleMenus',
+    team: 'YaleMeals',
     year: 2027,
   },
 ];
@@ -285,7 +287,7 @@ export const PROJECTS: Project[] = [
     isBackgroundWhite: true,
     live: false,
     link: 'https://majoraudit.web.app/',
-    logo: undefined,
+    logo: majoraudit,
   },
   {
     name: 'y/labs',
@@ -295,6 +297,14 @@ export const PROJECTS: Project[] = [
     description: 'Database visualizer for Yale research.',
     live: true,
     shouldIconBeRounded: true,
+  },
+  {
+    name: 'YaleMeals',
+    logo: yalemeals,
+    link: 'https://apps.apple.com/us/app/yalemeals/id6755962674',
+    description: 'App to view Yale dining options.',
+    live: true,
+    shouldIconBeRounded: false,
   },
 ];
 
@@ -391,7 +401,6 @@ export const PARTNERSHIPS: { name: string; image: StaticImageData; url?: string;
       image: janestreet,
       tier: 'silver',
       url: 'https://www.janestreet.com/',
-
     },
     {
       name: 'Tsai CITY',
@@ -718,7 +727,7 @@ export interface Member {
 }
 
 export async function loadMembers(): Promise<Member[]> {
-  const response = await fetch("/members/ycs_members.csv");
+  const response = await fetch('/members/ycs_members.csv');
   const text = await response.text();
   const result = Papa.parse<Member>(text, {
     header: true,
