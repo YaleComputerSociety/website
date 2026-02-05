@@ -1,0 +1,113 @@
+---
+title: 'Modernizing the Yale Poker Club with Code'
+description: 'Playing card games is fun. Keeping track of ledgers is not. This is how my custom-built tech for Yale Poker Club helps players focus on winning, not accounting.'
+author: 'Eric Yoon'
+date: '2026-02-05'
+tags: ['Software Development', 'Story']
+type: 'tech'
+readTime: '5 min read'
+---
+
+Playing card games is fun. Keeping track of ledgers is not. This is how my custom-built tech for Yale Poker Club helps players focus on winning, not accounting.
+
+---
+
+While Yale students with active social lives are out partying on Friday nights, you’ll instead find me in the basement of William L. Harkness Hall. This gothic stone building is the home of Friday night games hosted by the [Yale Poker Club](https://yalepokerclub.com/). [As documented in the Yale Herald](https://yale-herald.com/2023/09/24/no-limit-at-the-table-with-the-yale-poker-club/), during these highly anticipated events, forty-something CS and Econ majors (let’s be real) gather to bet, check, and raise.
+
+When the night’s over, though, the fun quickly turns into “wait, who do I Venmo?” and “why are we missing $20 from the ledger?!.” If you pay a visit to Harkness Hall the next Monday morning, you’ll find that the blackboards are filled with records of Yale’s best and brightest trying and failing to do simple addition.
+
+<img
+  src="/images/blog/poker-club/blackboard.jpg"
+  width={400}
+  alt="The math is not mathing!!1!"
+/>
+
+With my experience with full-stack web development, I knew that this problem could be easily solved. I set out to make the ultimate Yale Poker Club ledger app. But before I could get coding, like any good engineer, I needed to determine the requirements and constraints for this app.
+
+# Scoping the Problem
+
+Yale Poker Club is fast-paced. Enter the classroom, grab chips, and ask to be dealt cards. The more time spent fiddling around with a ledger app, the more time spent away from the table—and the bigger the headache I would have providing technical support.
+
+So, I knew that having players download an app was a no-go. This needed to be a mobile-first web app, so players could pull up a simple URL and log their buy-ins. Also, I didn’t want players to have to log in with any SSO provider—the poker club runs on an honor system, so a simple “enter your email address” form would suffice.
+
+That being said, Yale students love trying to break things. Some basic auth schema, disallowing players from meddling with each others’ data, would be necessary.
+
+# The App
+So, I built Yale Poker Club Ledger! Players could go to the website, select the table they’re sitting at, and buy in.
+
+<img
+  src="/images/blog/poker-club/app.png"
+  width={600}
+/>
+<img
+  src="/images/blog/poker-club/app2.png"
+  width={600}
+/>
+
+On the page for the table itself, players have the option to buy in, top up, or buy out. Additionally, to solve the ledger discrepancy problem, players are required to submit a chip photo with their buy-out. That way, in case money is missing at the end of the night, some poor soul (…me) can go in and manually count the chips in every photo.
+
+(Before you ask: yes, I tried to automate chip counting with a multimodal LLM; the technology just isn’t there yet.)
+
+<img
+  src="/images/blog/poker-club/app3.png"
+  width={600}
+/>
+
+# Sending Out Ledgers
+
+Great, now we know exactly how much money each person made! How can we have the losers pay the winners their well-deserved profits?
+
+After manually sending out ledgers for the first few weeks, I had the idea to automate this process even further. Using the [AWS Simple Email Service](https://aws.amazon.com/ses/), I was able to dynamically generate HTML emails and blast them to all players at each table.
+
+<img
+  src="/images/blog/poker-club/email.png"
+  width={600}
+/>
+
+To enable creating a table of who sends what to whom, I researched various algorithms online. I settled on a widely-known banking algorithm that greedily minimizes the number of transfers necessary. (Which is good, because Venmo seems to block users if they make too many transactions…)
+
+# Reducing User Friction
+
+After testing the website for about a month, it seemed to be going swimmingly! We had fewer ledger discrepancies with the help of the chip photos, and banking was automatically settled without any need for blackboard math.
+
+However, I noticed that it was a struggle educating players about the new system. Some weren’t aware that they had to buy in on the ledger. Some didn’t know what URL to go to. And more asked, “wait, which table number is this?”
+
+I’ve always loved hardware that makes user interactions feel magical. It would’ve been easy to provide each table with a QR code… but when’s the last time you went to a restaurant and were happy to scan a code for the menu? I decided to go for something much more delightful: an NFC chip.
+
+So, I bought some NFC stickers! Just like [the one in my hand](https://dangerousthings.com/product/next/), these let you write any URI to their few kilobytes of onboard memory. Then, when someone touches their phone to the tag (iPhone and Android compatible, by the way), a notification pops up, which you can click to be taken to the specified URI!
+
+But plain NFC tags would be boring. So, I went to the [Yale Maker Space](https://ceid.yale.edu/) and laser-cut some custom dealer chips, embellished with the Yale Poker Club logo.
+
+<img
+  src="/images/blog/poker-club/dealer.jpg"
+  width={600}
+/>
+
+With the NFC tag fastened to the back with some adhesive, these were ready to go! Now, players could tap the dealer button to be taken to the ledger website.
+
+# Hungry for Data
+
+Since the conception of the Yale Poker Club ledger app, 50+ tables have been run and settled using the website. Soon, I realized that this was a treasure trove of data.
+
+Poker players are always looking to increase their edge by learning how their fellow players make decisions and whether they are profitable. In addition, those dedicated to the game love tracking their earnings over time to determine whether they are a winning or losing player.
+
+With a year of historical data, I realized I could create a real-time leaderboard. However, I didn’t want to make this a simple list—I’d had something much more eclectic planned.
+
+There is way too much [poker-related jargon](https://en.wikipedia.org/wiki/Glossary_of_poker_terms), which can easily be offputting to new players. However, some select terms are quite humorous. Players are largely sorted into three categories: “whales” for those who all but give away money; “fish” for those who are inexperienced; and “sharks,” reserved for the best-of-the-best who make every calculated move according to the rules of game theory-optimal play.
+
+So, I made the leaderboard sea-creature themed! Whales at the top; fish in the middle; sharks at the bottom, only if you scroll down. With a call to the Gemini API to generate an alliterative or rhyming nickname for every player, the ocean was now ready to be deployed.
+
+<img
+  src="/images/blog/poker-club/sharks.png"
+  width={600}
+/>
+
+# Conclusion
+
+Developing the ledger app was fun, made my experience at the table more pleasant, and helped me get to know some of the super smart people in the club. This is what I do best, after all: identifying a problem and solving it with code.
+
+If you’re interested in poker and you’re a Yale student, [reach out to us](https://yalepokerclub.com/), and we’ll tell you where to find us!
+
+_This story first appeared in the [Yoonicode blog](https://medium.com/@yoonicode/modernizing-the-yale-poker-club-with-code-3bb076f802ec)._
+
+_Reach out at [yoonicode.com](https://yoonicode.com)_
