@@ -22,7 +22,7 @@
     "gray-matter": "^4.0.3",
     "jsonwebtoken": "^9.0.2",
     "next": "14.1.0",
-    "next-mdx-remote": "^5.0.0",
+    "next-mdx-remote": "^6.0.0",
     "papaparse": "^5.5.3",
     "prism-themes": "^1.9.0",
     "react": "^18",

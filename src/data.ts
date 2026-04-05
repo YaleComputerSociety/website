@@ -56,6 +56,9 @@ import citadel from './assets/partnerships/citadel.png';
 // import hrt from './assets/partnerships/HRT.png';
 import gala from '@assets/ycs.png';
 
+import bobyard from '@assets/events/bobyard.png';
+import marshall_wace from '@assets/events/marshall_wace.png';
+
 export interface Person {
   name: string;
   image: StaticImageData;
@@ -716,6 +719,230 @@ export const EVENTS = [
       'Hear details on the progress of our projects and enjoy some food and drinks as we celebrate the end of the year',
     image: gala,
     tags: ['Mixer'],
+  },
+  {
+    id: 'e002',
+    title: 'The Danger of "Deploy"',
+    date: '2025-09-18',
+    time: '6:30 PM - 7:30 PM',
+    location: 'Tsai CITY, Yale University',
+    description:
+      'Learn about practical topics in cybersecurity with a panel of students, professors, and alumni',
+    image: gala,
+    tags: ['Speaker Event'],
+  },
+  {
+    id: 'e003',
+    title: 'y/cs Orientation 2025',
+    date: '2025-09-28',
+    time: '7:00 PM - 10:00 PM',
+    location: 'Tsai CITY, Yale University',
+    description:
+      'Come meet new y/cs members and developers, competing in teams to complete challenges across campus',
+    image: gala,
+    tags: ['Orientation'],
+  },
+  {
+    id: 'e004',
+    title: 'y/cs Bobathon',
+    date: '2025-10-11',
+    time: '2:00 PM - 5:00 PM',
+    location: 'Tsai CITY, Yale University',
+    description:
+      'Come work on projects and enjoy free boba during an afternoon hackathon!',
+    image: gala,
+    tags: ['Hackathon'],
+  },
+  {
+    id: 'e005',
+    title: 'Mario Kart Mixer with Yale Colorstack',
+    date: '2025-10-30',
+    time: '7:00 PM - 9:00 PM',
+    location: 'Tsai CITY, Yale University',
+    description:
+      'Join us for a mixer with members of Yale Colorstack with Mario Kart and fruit',
+    image: gala,
+    tags: ['Mixer'],
+  },
+  {
+    id: 'e006',
+    title: 'Catalyst Mixer: Meet, Mingle, & Build',
+    date: '2025-11-16',
+    time: '3:00 PM - 5:00 PM',
+    location: 'Tsai CITY, Yale University',
+    description:
+      'For all mentees of the y/cs Catalyst program, come brainstorm ideas for final projects and form teams',
+    image: gala,
+    tags: ['Mixer'],
+  },
+  {
+    id: 'e007',
+    title: 'From Yale to Netflix: A Conversation with a y/cs Alumn',
+    date: '2025-11-20',
+    time: '7:00 PM - 9:00 PM',
+    location: 'Tsai CITY, Yale University',
+    description:
+      'Fireside chat with Ethan Mathieu and Anna Xu about life post-Yale and advice for current underclassmen',
+    image: gala,
+    tags: ['Speaker Event'],
+  },
+  {
+    id: 'e008',
+    title: 'y/cs Winter Demo Day, 2025',
+    date: '2025-12-06',
+    time: '4:00 PM - 6:00 PM',
+    location: 'Tsai CITY, Yale University',
+    description:
+      'Come for a celebration and recap of the work done by y/cs members this past semester',
+    image: gala,
+    tags: ['Mixer'],
+  },
+  {
+    id: 'e009',
+    title: 'Yale Meals Study Break!',
+    date: '2025-12-09',
+    time: '2:00 PM - 4:00 PM',
+    location: 'Bass Cafe, Yale University',
+    description:
+      'Join us in Bass Cafe for free baked goods in celebration of the Yale Meals beta release!',
+    image: gala,
+    tags: ['Product Promo'],
+  },
+  {
+    id: 'e010',
+    title: 'STEM Navigators',
+    date: '2025-01-16',
+    time: '3:00 PM - 5:00 PM',
+    location: 'Poorvu Center, Yale University',
+    description:
+      'Stop by to chat with members of the y/cs Board about plans for the upcoming semester',
+    image: gala,
+    tags: ['Fair'],
+  },
+  {
+    id: 'e011',
+    title: 'The Danger of "Deploy',
+    date: '2025-09-18',
+    time: '6:30 PM - 7:30 PM',
+    location: 'Tsai CITY, Yale University',
+    description:
+      'Learn about practical topics in cybersecurity with a panel of students, professors, and alumni',
+    image: gala,
+    tags: ['Speaker Event'],
+  },
+  {
+    id: 'e012',
+    title: "Frank Pepe's Welcome Lunch with David Wu",
+    date: '2026-01-29',
+    time: '1:10 PM - 2:00 PM',
+    location: 'Tsai CITY, Yale University',
+    description:
+      'Welcome our West-Coast speaker, David Wu, with a small group lunch in Tsai CITY',
+    image: gala,
+    tags: ['Mixer'],
+  },
+  {
+    id: 'e013',
+    title: 'y/cs The Reality Gap with David Wu',
+    date: '2026-01-29',
+    time: '6:00 PM - 7:00 PM',
+    location: 'Tsai CITY, Yale University',
+    description:
+      'Get insight from Certified Professional Coach David Wu on post-grad career options for Computer Science',
+    image: gala,
+    tags: ['Speaker Event'],
+  },
+  {
+    id: 'e014',
+    title: 'y/cs Incubator Build Session',
+    date: '2026-02-06',
+    time: '3:00 PM - 4:00 PM',
+    location: 'Tsai CITY, Yale University',
+    description:
+      'Form teams for brand new projects as a part of the y/cs Incubator program. Haven Hot Chicken provided',
+    image: gala,
+    tags: ['Mixer'],
+  },
+  {
+    id: 'e015',
+    title: 'y/cs x MiniMax Agents and AI Hackathon Kickoff',
+    date: '2026-02-19',
+    time: '6:30 PM - 8:30 PM',
+    location: 'Tsai CITY, Yale University',
+    description:
+      'Join us for the kickoff of the y/cs x MiniMax Agents and AI Hackathon. Hear logistics, tracks, and guidelines for the competition',
+    image: gala,
+    tags: ['Hackathon'],
+  },
+  {
+    id: 'e016',
+    title: 'Yale Engineering Innovation Expo',
+    date: '2026-02-27',
+    time: '3:30 PM - 6:00 PM',
+    location: 'CEID, Yale University',
+    description:
+      'Stop by to hear about new opportunities for developers in y/cs!',
+    image: gala,
+    tags: ['Fair'],
+  },
+  {
+    id: 'e017',
+    title: 'y/cs x MiniMax Agents and AI Hackathon Gallery Walk',
+    date: '2026-02-28',
+    time: '4:00 PM - 5:30 PM',
+    location: 'Tsai CITY, Yale University',
+    description:
+      'Present your project at the end of the y/cs x MiniMax Agents and AI Hackathon. Winners will be revealed',
+    image: gala,
+    tags: ['Hackathon'],
+  },
+  {
+    id: 'e018',
+    title: 'Fireside Chat with QNX VP Grant Courville',
+    date: '2026-03-27',
+    time: '7:00 PM - 8:00 PM',
+    location: 'Tsai CITY, Yale University',
+    description:
+      'Hear from QNX VP Grant Courville about the unique design considerations and strategic implications of the embedded systems industry',
+    image: gala,
+    tags: ['Speaker Event'],
+  },
+  {
+    id: 'e019',
+    title: 'Technical Interview Workshop and Early Career Advice with Visa',
+    date: '2026-03-31',
+    time: '6:00 PM - 7:00 PM',
+    location: 'WLH 116, Yale University',
+    description:
+      'Learn about the recruiting process for technical roles at Visa. Free Chick-fil-A and swag will be provided!',
+    image: gala,
+    tags: ['Workshop'],
+  },
+  {
+    id: 'e020',
+    title: 'Marshall Wace: How to Prepare for the Industry',
+    date: '2026-04-16',
+    time: '6:00 PM - 8:00 PM',
+    location: 'TBA',
+    description:
+      'Engineers from Marshall Wace will be joining y/cs to share their perspectives on what skills and expertise make for a highly impactful engineer.',
+    image: marshall_wace,
+    tags: ['Workshop'],
+    link: "https://job-boards.greenhouse.io/mwamevents/jobs/8486856002",
+    link_text: "Apply"
+  },
+  {
+    id: 'e021',
+    title: 'AI in Practice: Applications at Bobyard',
+    date: '2026-04-17',
+    time: '3:00 PM - 4:00 PM',
+    location: 'Tsai CITY, Yale University',
+    description:
+      'Bobyard Computer Vision Research Engineer Raphaël Levisse joins y/cs to talk about applications of AI in the construction industry',
+    image: bobyard,
+    tags: ['Speaker Event'],
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSfHB30HqBy72ilPgRueXgiWLvrG63UsHxdb0hSgmK2E7EM4sA/viewform?usp=publish-editor",
+    link_text: "RSVP"
   },
 ];
 
