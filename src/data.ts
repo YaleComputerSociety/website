@@ -55,7 +55,6 @@ import minimax from './assets/partnerships/MiniMax.png';
 import citadel from './assets/partnerships/citadel.png';
 // import hrt from './assets/partnerships/HRT.png';
 import gala from '@assets/ycs.png';
-import danger_of_deploy from "@assets/"
 
 import bobyard from '@assets/events/bobyard.png';
 import marshall_wace from '@assets/events/marshall_wace.png';
