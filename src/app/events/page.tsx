@@ -67,6 +67,8 @@ interface Event {
   description: string;
   image: StaticImageData;
   tags?: string[];
+  link?: string;
+  link_text?: string;
 }
 
 const UpcomingEventCard = ({ event }: { event: Event }) => {
@@ -116,12 +118,23 @@ const UpcomingEventCard = ({ event }: { event: Event }) => {
           </div>
         </div>
         <p className="text-zinc-400 text-sm mb-4">{event.description}</p>
-        <Link
-          href={`/events/${event.id}`}
-          className="text-ycs-blue hover:text-ycs-blue/80 flex items-center text-sm font-medium"
-        >
-          View Details <GoArrowUpRight className="ml-1" />
-        </Link>
+        {/*
+          <Link
+            href={`/events/${event.id}`}
+            className="text-ycs-blue hover:text-ycs-blue/80 flex items-center text-sm font-medium"
+          >
+            View Details <GoArrowUpRight className="ml-1" />
+          </Link>
+        */}
+        {event.link && (
+          <Link
+            href={event.link}
+            target="_blank"
+            className="text-ycs-blue hover:text-ycs-blue/80 flex items-center text-sm font-medium"
+          >
+            {event.link_text || "RSVP"} <GoArrowUpRight className="ml-1" />
+          </Link>
+        )}
       </div>
     </div>
   );
