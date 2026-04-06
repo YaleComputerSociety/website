@@ -13,8 +13,14 @@ const EventCard = ({ event }: { event: Event }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const formatDate = (dateString: string) => {
-    const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'long', day: 'numeric' };
-    return new Date(dateString).toLocaleDateString('en-US', options);
+    const [year, month, day] = dateString.split('-').map(Number);
+    const date = new Date(year, month - 1, day);
+
+    return date.toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    });
   };
 
   return (
@@ -80,13 +86,15 @@ const UpcomingEventCard = ({ event }: { event: Event }) => {
   }
 
   const formatDate = (dateString: string): string => {
-    const options: DateFormatOptions = {
+    const [year, month, day] = dateString.split('-').map(Number);
+    const date = new Date(year, month - 1, day);
+
+    return date.toLocaleDateString('en-US', {
       weekday: 'long',
       year: 'numeric',
       month: 'long',
       day: 'numeric',
-    };
-    return new Date(dateString).toLocaleDateString('en-US', options);
+    });
   };
 
   return (
