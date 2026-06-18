@@ -142,10 +142,9 @@ export const Sponsors: React.FC = () => {
         <p className="text-sm text-white/50">Join our community of innovators and tech leaders.</p>
         <Link
           href="mailto:yalecomputersociety@gmail.com"
-          className="mt-3 inline-flex items-center gap-2 rounded-lg bg-white px-6 py-2.5 text-sm font-semibold text-black transition-transform duration-300 hover:-translate-y-0.5"
+          className="mt-3 inline-flex items-center rounded-lg bg-white px-6 py-2.5 text-sm font-semibold text-black transition-transform duration-300 hover:-translate-y-0.5"
         >
           Become a Sponsor
-          <GoArrowUpRight className="h-4 w-4" />
         </Link>
       </motion.div>
     </section>
