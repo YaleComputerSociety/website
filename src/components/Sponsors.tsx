@@ -55,7 +55,7 @@ const LOGO_OVERRIDE: Record<string, string> = {
 const SponsorTile = ({ partner, tier }: { partner: Partner; tier: Tier }) => {
   const inner = (
     <div
-      className={`group relative flex items-center justify-center overflow-hidden rounded-2xl bg-[#f7f7f5] px-5 ring-1 ring-black/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/40 hover:ring-black/10 ${tier.tile}`}
+      className={`group relative flex items-center justify-center overflow-hidden rounded-2xl bg-[#f6f5f2] px-5 ring-1 ring-black/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/40 hover:ring-black/10 ${tier.tile}`}
     >
       <div className={`relative w-full ${LOGO_OVERRIDE[partner.name] ?? tier.logo}`}>
         <Image
