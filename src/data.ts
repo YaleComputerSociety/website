@@ -47,11 +47,11 @@ import william from './assets/people/william.jpeg';
 import sofia from './assets/people/sofia.jpeg';
 import humpery from './assets/people/humphrey.jpg';
 // partnerships import
-import janestreet from './assets/partnerships/JaneStreetWhite.png';
-import tsai from './assets/partnerships/tsai.png';
+import janestreet from './assets/partnerships/JaneStreet.png';
+import tsai from './assets/partnerships/tsaicity-wordmark.webp';
 import hrt from './assets/partnerships/HudsonRiverTrading.png';
 import qnx from './assets/partnerships/QNX.png';
-import minimax from './assets/partnerships/MiniMax.png';
+import minimax from './assets/partnerships/minimax-horizontal.webp';
 import citadel from './assets/partnerships/citadel.png';
 // import hrt from './assets/partnerships/HRT.png';
 import gala from '@assets/ycs.png';
@@ -411,6 +411,10 @@ export const PARTNERSHIPS: { name: string; image: StaticImageData; url?: string;
       tier: 'silver',
       url: 'https://city.yale.edu/',
     },
+    // 'partner' tier is intentionally not rendered — TIERS in Sponsors.tsx only
+    // lists obsidian/gold/silver. Also note: nvidia.png is a white-on-transparent
+    // wordmark, so before moving NVIDIA into a rendered tier, swap in a dark/
+    // full-color logo or it will be invisible on the light (#f7f7f5) sponsor tiles.
     {
       name: 'NVIDIA',
       image: nvidia,
