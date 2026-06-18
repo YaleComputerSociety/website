@@ -268,51 +268,43 @@ const Home = () => {
 
       <AlumniCompanies />
 
-      <SectionContainer className="">
-        <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-zinc-800 to-zinc-900 border-l-4 border-ycs-pink">
-          <div className="absolute -bottom-10 -right-10 w-40 h-40 rounded-full bg-ycs-pink/10 blur-2xl"></div>
-          <div className="absolute -top-20 -left-20 w-60 h-60 rounded-full bg-ycs-blue/10 blur-3xl"></div>
-
-          <div className="absolute top-0 right-0 bottom-0 w-1/3 flex items-center justify-center overflow-hidden">
-            <div className="relative w-full h-full flex items-center justify-center">
-              <Image
-                src={Wordmark}
-                alt="YCS logo"
-                className="opacity-10 object-contain mix-blend-normal hidden md:block"
-                style={{
-                  maxWidth: 'none',
-                  width: '80%',
-                  height: '80%',
-                }}
-              />
-            </div>
+      <SectionContainer>
+        <div className="relative overflow-hidden rounded-2xl bg-white/[0.02] px-8 py-14 ring-1 ring-white/10 md:px-16 md:py-20">
+          {/* brand wordmark watermark, centered in the right third with comfortable margin */}
+          <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-1/3 items-center justify-center overflow-hidden md:flex">
+            <Image
+              src={Wordmark}
+              alt=""
+              aria-hidden
+              className="object-contain opacity-[0.06]"
+              style={{ maxWidth: 'none', width: '80%', height: '80%' }}
+            />
           </div>
 
-          <div className="relative z-10 p-10 md:p-16 flex">
-            <div className="max-w-2xl">
-              <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
-                Ready to join Yale&apos;s premier tech community?
-              </h2>
+          <div className="relative z-10 max-w-2xl">
+            <h2 className="text-4xl font-bold leading-tight text-white md:text-5xl">
+              Ready to join Yale&apos;s premier tech community?
+            </h2>
 
-              <p className="mt-6 text-lg text-zinc-300">
-                General membership applications are open year-round! Click below to learn more and apply.
-              </p>
+            <p className="mt-6 text-lg leading-relaxed text-white/60">
+              General membership applications are open year-round! Click below to learn more and
+              apply.
+            </p>
 
-              <div className="mt-10 flex flex-col sm:flex-row gap-4">
-                <Link
-                  href="/join"
-                  className="inline-flex items-center justify-center rounded-lg font-semibold text-lg bg-gradient-to-r from-ycs-pink to-ycs-pink/90 hover:from-ycs-pink hover:to-ycs-pink text-black py-3 px-8 transition-all duration-300 hover:shadow-lg hover:shadow-ycs-pink/20 hover:translate-y-[-2px]"
-                >
-                  Apply to Join
-                </Link>
+            <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+              <Link
+                href="/join"
+                className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-3 text-lg font-semibold text-black transition-transform duration-300 hover:-translate-y-0.5"
+              >
+                Apply to Join
+              </Link>
 
-                <Link
-                  href="/events"
-                  className="inline-flex items-center justify-center rounded-lg font-bold text-lg bg-zinc-700 hover:bg-zinc-600 text-white py-3 px-8 transition-all duration-300"
-                >
-                  Attend an Event
-                </Link>
-              </div>
+              <Link
+                href="/events"
+                className="inline-flex items-center justify-center rounded-lg px-8 py-3 text-lg font-semibold text-white ring-1 ring-white/15 transition-colors duration-300 hover:bg-white/5 hover:ring-white/25"
+              >
+                Attend an Event
+              </Link>
             </div>
           </div>
         </div>
