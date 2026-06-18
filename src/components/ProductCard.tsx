@@ -1,71 +1,50 @@
 'use client';
 
-import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { GoArrowUpRight } from 'react-icons/go';
 import slash from '@assets/ycs-slash.png';
 
-export const ProductCard = ({ product }: { product: Product }) => {
-  const [isHovered, setIsHovered] = useState(false);
+const StatusBadge = ({ live }: { live?: boolean }) => (
+  <span className="inline-flex items-center gap-1.5 whitespace-nowrap text-xs font-medium text-white/50">
+    <span className={`h-1.5 w-1.5 rounded-full ${live ? 'bg-emerald-400' : 'bg-amber-400'}`} />
+    {live ? 'Live' : 'In Development'}
+  </span>
+);
 
-  return (
-    <div
-      className={`group relative w-full transition-all duration-300 hover:translate-y-[-8px]`}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      <div className="relative bg-zinc-800/50 rounded-lg overflow-hidden border-l-4 border-zinc-700 h-full">
-        {product.link && (
-          <div
-            className={`absolute top-4 right-4 bg-zinc-700 rounded-full p-2 z-10 transition-all duration-300 ${isHovered ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-2'}`}
-          >
-            <GoArrowUpRight className="text-white w-4 h-4" />
-          </div>
-        )}
+export const ProductCard = ({ product }: { product: Product }) => (
+  <Link
+    href={product.link || '#'}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="group relative flex h-full flex-col rounded-2xl bg-white/[0.02] p-6 ring-1 ring-white/10 transition-all duration-300 hover:-translate-y-1 hover:bg-white/[0.04] hover:ring-white/20 md:p-8"
+  >
+    {product.link && (
+      <GoArrowUpRight
+        aria-hidden="true"
+        className="absolute right-5 top-5 h-5 w-5 text-white/20 opacity-0 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:text-white/60 group-hover:opacity-100"
+      />
+    )}
 
-        <Link
-          href={product.link || '#'}
-          className="block h-full"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div className="p-6 md:p-8 flex flex-col h-full">
-            <div className="flex items-center mb-6">
-              <div className="bg-zinc-700/70 rounded-lg p-3 mr-4">
-                <Image
-                  className={`object-contain w-10 h-10 ${product.shouldIconBeRounded ? 'rounded-full' : 'rounded-lg'}`}
-                  src={product.logo || slash}
-                  alt={product.name}
-                  width={40}
-                  height={40}
-                />
-              </div>
-
-              <div className="flex-1">
-                <div className="flex items-center">
-                  <h3 className="text-2xl font-bold text-white">{product.name}</h3>
-                  {product.live && (
-                    <span className="ml-3 text-xs bg-ycs-green/20 text-ycs-green px-2 py-1 rounded-full">
-                      Live
-                    </span>
-                  )}
-                  {!product.live && (
-                    <span className="ml-3 text-xs bg-ycs-blue/20 text-ycs-blue px-2 py-1 rounded-full">
-                      In Development
-                    </span>
-                  )}
-                </div>
-              </div>
-            </div>
-
-            <p className="text-zinc-300 text-lg flex-grow">{product.description}</p>
-          </div>
-        </Link>
+    <div className="mb-6 flex items-center gap-4">
+      <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-white/[0.04] ring-1 ring-white/10">
+        <Image
+          className={`h-9 w-9 object-contain ${product.shouldIconBeRounded ? 'rounded-full' : 'rounded-md'}`}
+          src={product.logo || slash}
+          alt={product.name}
+          width={40}
+          height={40}
+        />
+      </div>
+      <div className="flex items-center gap-3">
+        <h3 className="text-2xl font-semibold text-white">{product.name}</h3>
+        <StatusBadge live={product.live} />
       </div>
     </div>
-  );
-};
+
+    <p className="text-lg leading-relaxed text-white/60">{product.description}</p>
+  </Link>
+);
 
 interface Product {
   name: string;
