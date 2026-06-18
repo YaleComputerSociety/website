@@ -45,10 +45,12 @@ const TIERS: Tier[] = [
   },
 ];
 
-// Per-logo image-size overrides for marks that read optically smaller than the
-// tier default (keyed by partner name). Tunes the logo image, not the tile.
+// Per-logo image-size overrides for marks that read optically larger or smaller
+// than the tier default (keyed by partner name). Tunes the logo image, not the tile.
 const LOGO_OVERRIDE: Record<string, string> = {
-  QNX: 'h-20 md:h-24',
+  'Hudson River Trading': 'h-14 md:h-[78px]', // solid orange block reads heavy — trim slightly below the lead default
+  MiniMax: 'h-16 md:h-[74px]', // wide wordmark fills the most width — pull it just under the others
+  QNX: 'h-24 md:h-[104px]',
   'Tsai CITY': 'h-14 md:h-16',
 };
 
