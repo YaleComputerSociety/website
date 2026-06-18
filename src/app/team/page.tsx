@@ -477,20 +477,19 @@ const Team = () => {
       </SectionContainer>
 
       <SectionContainer className="mt-32">
-        <div className="bg-gradient-to-br from-zinc-800/50 to-zinc-900/50 rounded-lg overflow-hidden border-l-4 border-ycs-pink p-8 md:p-10">
+        <div className="rounded-2xl bg-white/[0.02] p-8 ring-1 ring-white/10 md:p-10">
           <div className="max-w-3xl">
-            <h2 className="text-white text-3xl font-bold mb-4">Interested in joining our team?</h2>
-            <p className="text-zinc-300 text-lg mb-8">
+            <h2 className="mb-4 text-3xl font-bold text-white">Interested in joining our team?</h2>
+            <p className="mb-8 text-lg leading-relaxed text-white/60">
               We&apos;re always looking for passionate students to join our development, design, and
               events teams. Applications open each semester.
             </p>
 
             <Link
               href="/join"
-              className="inline-flex items-center justify-center rounded-lg font-bold text-lg bg-ycs-pink hover:bg-ycs-pink/90 text-black py-3 px-8 transition-all duration-300 hover:shadow-lg hover:translate-y-[-2px]"
+              className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-3 text-lg font-semibold text-black transition-transform duration-300 hover:-translate-y-0.5"
             >
               Join y/cs
-              <GoArrowUpRight className="ml-2" />
             </Link>
           </div>
         </div>
