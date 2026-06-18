@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 
 import Image from 'next/image';
 
-import { GradientBox } from '@components/GradientBox';
+import { LevelCard } from '@components/LevelCard';
 import { SolidColorBlock } from '@components/SolidColorBlock';
 import { Sponsors } from '@components/Sponsors';
 import { TitleSubtitle } from '@components/TitleSubtitle';
@@ -172,9 +172,9 @@ const Home = () => {
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
-          <GradientBox
+          <LevelCard
+            index={1}
             title="Development"
-            color="blue"
             text="Become a member of one of our software teams and help build applications that benefit the Yale and New Haven community."
             link="/products"
             icon={
@@ -194,9 +194,9 @@ const Home = () => {
               </svg>
             }
           />
-          <GradientBox
+          <LevelCard
+            index={2}
             title="Mentorship"
-            color="pink"
             text="New to software engineering? Learn from experienced mentors through our structured y/cs Catalyst Program."
             icon={
               <svg
@@ -215,9 +215,9 @@ const Home = () => {
               </svg>
             }
           />
-          <GradientBox
+          <LevelCard
+            index={3}
             title="Events"
-            color="green"
             text="Participate in social events, hackathons, and workshops, as well as interact with industry leaders on Yale's campus."
             link="/events"
             icon={
@@ -237,9 +237,9 @@ const Home = () => {
               </svg>
             }
           />
-          <GradientBox
+          <LevelCard
+            index={4}
             title="Community"
-            color="red"
             text="Find and connect with likeminded individuals through our Discord server. Join our community of developers and tech enthusiasts."
             link={'https://forms.gle/C4JvNKg5R19Khnpi9'}
             icon={
