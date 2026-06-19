@@ -1,128 +1,107 @@
-'use client';
-
 import Image from 'next/image';
 import type { StaticImageData } from 'next/image';
-import { motion } from 'framer-motion';
-import google from '@assets/partnerships/google.png';
-import netflix from '@assets/partnerships/netflix.png';
-import amazon from '@assets/partnerships/amazon.png';
-import meta from '@assets/partnerships/meta.avif';
-import bloomberg from '@assets/partnerships/bloomberg-gradient.webp';
-import microsoft from '@assets/partnerships/microsoft.png';
-import nvida from '@assets/partnerships/nvidia.png';
-import roblox from '@assets/partnerships/roblox.png';
+import google from '@assets/companies/google.png';
+import meta from '@assets/companies/meta.png';
+import netflix from '@assets/companies/netflix.png';
+import microsoft from '@assets/companies/microsoft.png';
+import amazon from '@assets/companies/amazon.png';
+import bloomberg from '@assets/companies/bloomberg.png';
+import nvidia from '@assets/companies/nvidia.png';
+import roblox from '@assets/companies/roblox.png';
+import databricks from '@assets/companies/databricks.png';
+import morganStanley from '@assets/companies/morgan-stanley.png';
+import janeStreet from '@assets/companies/jane-street.png';
+import mckinsey from '@assets/companies/mckinsey.png';
+import bcg from '@assets/companies/bcg.png';
+import linkedin from '@assets/companies/linkedin.png';
+import yCombinator from '@assets/companies/y-combinator.png';
+import capitalOne from '@assets/companies/capital-one.png';
+import openai from '@assets/companies/openai.png';
+import plaid from '@assets/companies/plaid.png';
+import coinbase from '@assets/companies/coinbase.png';
+import redhat from '@assets/companies/red-hat.png';
+import salesforce from '@assets/companies/salesforce.png';
 import { SectionContainer } from './Container';
-import { Carousel } from './Carousel';
 
-type AlumniCompany = {
+// Every logo is auto-sized to ~equal optical area (see `logoHeight`) so wide and square marks
+// read at a similar size; `scale` fine-tunes an individual logo on top of that.
+// `keepWhite` keeps a dark logo white on hover (its true color would vanish on the black bg).
+// `color` shows the logo in its real colors instead of forcing it white (e.g. Red Hat's red hat).
+type CompanyLogo = {
   name: string;
   logo: StaticImageData;
-  count: number;
-  fill?: boolean; // render the logo as a full-bleed tile (e.g. a baked-in gradient background)
+  keepWhite?: boolean;
+  color?: boolean;
+  scale?: number;
 };
 
-const ALUMNI_COMPANIES: AlumniCompany[] = [
-  {
-    name: 'Google',
-    logo: google,
-    count: 14,
-  },
-  {
-    name: 'Meta',
-    logo: meta,
-    count: 11,
-  },
-  {
-    name: 'Netflix',
-    logo: netflix,
-    count: 2,
-  },
-  {
-    name: 'Microsoft',
-    logo: microsoft,
-    count: 9,
-  },
-  {
-    name: 'Amazon',
-    logo: amazon,
-    count: 7,
-  },
-  {
-    name: 'Bloomberg',
-    logo: bloomberg,
-    count: 3,
-    fill: true,
-  },
+// Equal-area sizing: derive each logo's height from its aspect ratio so a wide wordmark and a
+// square mark occupy a similar footprint. Clamped so nothing gets too thin or too tall.
+const TARGET_AREA = 6000;
+const MIN_H = 36;
+const MAX_H = 60;
 
-  {
-    name: 'NVIDIA',
-    logo: nvida,
-    count: 2,
-  },
-  {
-    name: 'Roblox',
-    logo: roblox,
-    count: 1,
-  },
+const logoHeight = ({ logo, scale = 1 }: CompanyLogo) => {
+  const aspect = logo.width / logo.height;
+  const base = Math.sqrt(TARGET_AREA / aspect);
+  // `scale` applies after the clamp so an individual logo can be nudged past it.
+  return Math.round(Math.min(MAX_H, Math.max(MIN_H, base)) * scale);
+};
+
+const ALUMNI_LOGOS: CompanyLogo[] = [
+  { name: 'Google', logo: google },
+  { name: 'Meta', logo: meta },
+  { name: 'Netflix', logo: netflix },
+  { name: 'Microsoft', logo: microsoft },
+  { name: 'Amazon', logo: amazon },
+  { name: 'Bloomberg', logo: bloomberg, keepWhite: true },
+  { name: 'NVIDIA', logo: nvidia },
+  { name: 'Roblox', logo: roblox },
+  { name: 'Databricks', logo: databricks, keepWhite: true },
+  { name: 'Morgan Stanley', logo: morganStanley },
+  { name: 'Jane Street', logo: janeStreet },
+  { name: 'McKinsey', logo: mckinsey, keepWhite: true },
+  { name: 'BCG', logo: bcg },
+  { name: 'LinkedIn', logo: linkedin },
+  { name: 'Y Combinator', logo: yCombinator },
+  { name: 'Capital One', logo: capitalOne },
+  { name: 'OpenAI', logo: openai, keepWhite: true },
+  { name: 'Plaid', logo: plaid, keepWhite: true },
+  { name: 'Coinbase', logo: coinbase },
+  { name: 'Red Hat', logo: redhat, color: true },
+  { name: 'Salesforce', logo: salesforce, color: true, scale: 1.3 },
 ];
 
-const CompanyCard = ({ company }: { company: AlumniCompany }) => (
-  <motion.div className="bg-zinc-800/20 rounded-lg p-7 flex flex-col items-center">
-    <div className="relative h-16 w-full overflow-hidden rounded-md bg-white/10 flex items-center justify-center mb-3">
-      {company.fill ? (
-        <Image
-          src={company.logo}
-          alt={`${company.name} logo`}
-          fill
-          sizes="240px"
-          className="object-cover"
-        />
-      ) : (
-        <Image
-          src={company.logo}
-          alt={`${company.name} logo`}
-          width={120}
-          height={120}
-          className="object-contain max-h-12 transition-all duration-300"
-          unoptimized={
-            typeof company.logo === 'object' && 'src' in company.logo
-              ? company.logo.src.endsWith('.avif')
-              : false
-          }
-        />
-      )}
-    </div>
-    <div className="text-white text-center">{company.name}</div>
-  </motion.div>
-);
-
 const AlumniCompanies = () => {
-  const carouselItems = [];
-  for (let i = 0; i < ALUMNI_COMPANIES.length; i += 1) {
-    const slide = (
-      <div>
-        <CompanyCard company={ALUMNI_COMPANIES[i]} />
-      </div>
-    );
-    carouselItems.push(slide);
-  }
+  // Duplicate the set so the -50% translate loops seamlessly and never runs out.
+  const loop = [...ALUMNI_LOGOS, ...ALUMNI_LOGOS];
 
   return (
     <SectionContainer>
-      <h2 className="text-white text-3xl md:text-4xl font-bold mb-8">Where Our Members Land</h2>
+      <h2 className="mb-10 text-center text-3xl font-bold text-white md:text-4xl">
+        Where Our Members Land
+      </h2>
 
-      <div className="bg-zinc-800/20 rounded-lg relative overflow-hidden">
-        <div className="md:hidden p-6">
-          <Carousel items={carouselItems} dotColor="bg-white" showArrows={true} showDots={true} />
-        </div>
-
-        {/* Desktop Grid (hidden on mobile) */}
-        <div className="hidden md:block">
-          <div className="grid grid-cols-4 gap-6 p-6 relative z-10">
-            {ALUMNI_COMPANIES.map((company, i) => (
-              <CompanyCard key={i} company={company} />
-            ))}
-          </div>
+      {/* Contained auto-scrolling marquee: infinite seamless loop (never pauses), fades at the
+          edges, respects reduced motion. */}
+      <div className="marquee-mask relative overflow-hidden py-4">
+        <div className="flex w-max animate-marquee items-center">
+          {loop.map((company, i) => {
+            // Forced-white silhouette by default; `color` logos keep their real colors.
+            const filter = company.color
+              ? ''
+              : `brightness-0 invert ${company.keepWhite ? '' : 'hover:brightness-100 hover:invert-0'}`;
+            return (
+              <Image
+                key={i}
+                src={company.logo}
+                alt={`${company.name} logo`}
+                aria-hidden={i >= ALUMNI_LOGOS.length}
+                style={{ height: logoHeight(company), width: 'auto' }}
+                className={`mr-16 shrink-0 object-contain opacity-50 transition duration-300 hover:opacity-100 ${filter}`}
+              />
+            );
+          })}
         </div>
       </div>
     </SectionContainer>
