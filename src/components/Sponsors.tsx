@@ -27,7 +27,7 @@ interface Tier {
 const TIERS: Tier[] = [
   {
     key: 'obsidian',
-    label: 'Lead Sponsors',
+    label: 'Obsidian',
     tile: 'h-32 w-[260px] md:h-36 md:w-[300px]',
     logo: 'h-16 md:h-20',
   },
