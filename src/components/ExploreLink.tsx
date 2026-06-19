@@ -15,7 +15,7 @@ export default function ExploreLink({
   return (
     <Link
       href={href}
-      className={`flex items-center text-ycs-pink hover:text-white hover:underline transition-colors duration-300 mt-4 group cursor-pointer ${className} text-xl`}
+      className={`inline-flex items-center text-ycs-pink hover:text-white hover:underline transition-colors duration-300 mt-4 group cursor-pointer ${className} text-xl`}
     >
       <span>{text}</span>
       <GoArrowUpRight size={30} className="ml-3" />
