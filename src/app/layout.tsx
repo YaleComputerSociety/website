@@ -8,6 +8,7 @@ import '@styles/globals.css';
 import Navbar from '@components/Navbar';
 import { Footer } from '@components/Footer';
 import { AuthProvider } from '@components/AuthContext';
+import ConstellationBackground from '@components/ConstellationBackground';
 
 // const inter = Inter({ subsets: ["latin"] });
 const dmSans = DM_Sans({
@@ -34,6 +35,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`  bg-[#000000] text-white ${dmSans.className}`}>
         <AuthProvider>
+          <ConstellationBackground />
           <Navbar />
           {children}
           <Footer />

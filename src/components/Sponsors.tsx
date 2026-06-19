@@ -2,217 +2,151 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
-import { GoArrowUpRight } from 'react-icons/go';
 import { motion } from 'framer-motion';
-
-import { TitleSubtitle } from './TitleSubtitle';
-import { Carousel } from './Carousel';
-import { PARTNERSHIPS } from '@data';
+import { GoArrowUpRight } from 'react-icons/go';
 import type { StaticImageData } from 'next/image';
 
-const sponsorTiers = [
-	{
-		name: 'Obsidian',
-		bgColor: 'bg-gradient-to-r from-purple-900/20 to-gray-900/20',
-		borderColor: 'border-purple-500/30',
-		textColor: 'text-purple-300',
-		dotColor: 'bg-purple-400',
-		sponsors: PARTNERSHIPS.filter((p) => p.tier === 'obsidian'),
-	},
-	{
-		name: 'Gold',
-		bgColor: 'bg-gradient-to-r from-yellow-900/20 to-amber-900/20',
-		borderColor: 'border-yellow-500/30',
-		textColor: 'text-yellow-300',
-		dotColor: 'bg-yellow-400',
-		sponsors: PARTNERSHIPS.filter((p) => p.tier === 'gold'),
-	},
-	{
-		name: 'Silver',
-		bgColor: 'bg-gradient-to-r from-gray-700/20 to-slate-700/20',
-		borderColor: 'border-gray-400/30',
-		textColor: 'text-gray-300',
-		dotColor: 'bg-gray-400',
-		sponsors: PARTNERSHIPS.filter((p) => p.tier === 'silver'),
-	},
+import { TitleSubtitle } from './TitleSubtitle';
+import { PARTNERSHIPS } from '@data';
 
-	// {
-	//   name: 'Partner',
-	//   bgColor: 'bg-gradient-to-r from-green-900/20 to-emerald-900/20',
-	//   borderColor: 'border-green-500/30',
-	//   textColor: 'text-green-300',
-	//   dotColor: 'bg-green-400',
-	//   sponsors: PARTNERSHIPS.filter((p) => p.tier === 'partner'),
-	// },
+interface Partner {
+  name: string;
+  image: StaticImageData;
+  url?: string;
+  tier?: string;
+}
+
+interface Tier {
+  key: string;
+  label: string;
+  tile: string; // tile box sizing
+  logo: string; // logo box height (object-contain inside)
+}
+
+// Tiers are conveyed by size + order + a muted label — not by colored cards.
+const TIERS: Tier[] = [
+  {
+    key: 'obsidian',
+    label: 'Obsidian',
+    tile: 'h-32 w-[260px] md:h-36 md:w-[300px]',
+    logo: 'h-16 md:h-20',
+  },
+  {
+    key: 'gold',
+    label: 'Gold',
+    tile: 'h-28 w-[210px] md:w-[240px]',
+    logo: 'h-12 md:h-14',
+  },
+  {
+    key: 'silver',
+    label: 'Silver',
+    tile: 'h-24 w-[160px] sm:w-[185px]',
+    logo: 'h-12 md:h-14',
+  },
 ];
 
+// Per-logo image-size overrides for marks that read optically larger or smaller
+// than the tier default (keyed by partner name). Tunes the logo image, not the tile.
+const LOGO_OVERRIDE: Record<string, string> = {
+  'Hudson River Trading': 'h-14 md:h-[78px]', // solid orange block reads heavy — trim slightly below the lead default
+  MiniMax: 'h-16 md:h-[74px]', // wide wordmark fills the most width — pull it just under the others
+  QNX: 'h-24 md:h-[104px]',
+  'Tsai CITY': 'h-14 md:h-16',
+};
+
+const SponsorTile = ({ partner, tier }: { partner: Partner; tier: Tier }) => {
+  const inner = (
+    <div
+      className={`group relative flex items-center justify-center overflow-hidden rounded-2xl bg-[#f6f5f2] px-5 ring-1 ring-black/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/40 hover:ring-black/10 ${tier.tile}`}
+    >
+      <div className={`relative w-full ${LOGO_OVERRIDE[partner.name] ?? tier.logo}`}>
+        <Image
+          src={partner.image}
+          alt={partner.name}
+          fill
+          sizes="300px"
+          className="object-contain"
+        />
+      </div>
+      {partner.url && (
+        <GoArrowUpRight
+          aria-hidden="true"
+          className="absolute right-3 top-3 h-4 w-4 text-black/25 opacity-0 transition-opacity duration-200 group-hover:opacity-100"
+        />
+      )}
+    </div>
+  );
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 16 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: '-60px' }}
+      transition={{ duration: 0.45 }}
+    >
+      {partner.url ? (
+        <a
+          href={partner.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`${partner.name} (opens in a new tab)`}
+        >
+          {inner}
+        </a>
+      ) : (
+        inner
+      )}
+    </motion.div>
+  );
+};
+
 export const Sponsors: React.FC = () => {
-	const [hoveredSponsor, setHoveredSponsor] = useState<string | null>(null);
+  const groups = TIERS.map((tier) => ({
+    tier,
+    sponsors: PARTNERSHIPS.filter((p) => p.tier === tier.key) as Partner[],
+  })).filter((group) => group.sponsors.length > 0);
 
-	interface Partner {
-		name: string;
-		image: string | StaticImageData;
-		url?: string;
-		tier?: string;
-	}
+  return (
+    <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <TitleSubtitle title="Our Sponsors" subtitle="The organizations that make y/cs possible" />
 
-	const createSponsorCard = (
-		partner: Partner,
-		tierName: string,
-		tierTextColor: string,
-		index: number,
-		isMobile = false
-	) => (
-		<motion.div
-			className="flex flex-col items-center justify-center"
-			onHoverStart={() =>
-				setHoveredSponsor(`${tierName}-${isMobile ? 'mobile-' : ''}${index}`)
-			}
-			onHoverEnd={() => setHoveredSponsor(null)}
-			whileHover={{ y: -5, scale: 1.02 }}
-			transition={{ duration: 0.2 }}
-		>
-			<div
-				className={`rounded-lg flex items-center justify-center w-full ${
-					isMobile ? 'h-28' : 'h-24'
-				} ${isMobile ? 'mb-4' : 'mb-3'} bg-white/5 backdrop-blur-sm border border-zinc-700/30 hover:border-zinc-600/50 transition-all duration-300`}
-			>
-				<div className="flex items-center justify-center w-full px-4">
-					<Image
-						src={partner.image}
-						alt={partner.name}
-						className={`transition-all duration-300 ${
-							hoveredSponsor === `${tierName}-${isMobile ? 'mobile-' : ''}${index}`
-								? 'scale-110 brightness-110'
-								: 'scale-100'
-						}`}
-						width={120}
-						height={120}
-						style={{ objectFit: 'contain' }}
-					/>
-				</div>
-			</div>
-			<p
-				className={`text-zinc-300 text-center ${
-					isMobile ? 'text-base' : 'text-sm md:text-base'
-				} font-medium ${isMobile ? 'mb-2' : 'mb-1'}`}
-			>
-				{partner.name}
-			</p>
-			{partner.url && (
-				<a
-					href={partner.url}
-					target="_blank"
-					rel="noopener noreferrer"
-					className={`${tierTextColor} hover:text-white ${
-						isMobile ? 'text-sm' : 'text-xs'
-					} flex items-center transition-colors duration-200`}
-				>
-					Visit{' '}
-					<GoArrowUpRight
-						className={`ml-1 ${isMobile ? 'w-4 h-4' : 'w-3 h-3'}`}
-					/>
-				</a>
-			)}
-		</motion.div>
-	);
+      <div className="mt-14 space-y-12">
+        {groups.map(({ tier, sponsors }) => (
+          <div key={tier.key}>
+            <div className="mb-6 flex items-center justify-center gap-4">
+              <span className="h-px w-8 bg-white/15 sm:w-12" />
+              <span className="text-xs font-medium uppercase tracking-[0.25em] text-white/40">
+                {tier.label}
+              </span>
+              <span className="h-px w-8 bg-white/15 sm:w-12" />
+            </div>
+            <div className="flex flex-wrap justify-center gap-4 sm:gap-5">
+              {sponsors.map((partner) => (
+                <SponsorTile key={partner.name} partner={partner} tier={tier} />
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
 
-	return (
-		<section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-			<TitleSubtitle
-				title="Our Sponsors"
-				subtitle="The organizations that make y/cs possible"
-			/>
-
-			<div className="mt-8 space-y-8">
-				{sponsorTiers.map(
-					(tier, tierIndex) =>
-						tier.sponsors.length > 0 && (
-							<motion.div
-								key={tier.name}
-								className={`relative rounded-xl border ${tier.borderColor} ${tier.bgColor} backdrop-blur-sm`}
-								initial={{ opacity: 0, y: 20 }}
-								animate={{ opacity: 1, y: 0 }}
-								transition={{ delay: tierIndex * 0.1 }}
-							>
-								<div className="flex items-center justify-center gap-3 py-4 px-6 border-b border-zinc-700/50">
-									<div className="text-center">
-										<h3
-											className={`text-xl md:text-2xl font-bold ${tier.textColor}`}
-										>
-											{tier.name} Sponsors
-										</h3>
-									</div>
-								</div>
-
-								<div className="p-6">
-									<div
-										className={`hidden lg:flex flex-wrap justify-center ${
-											tier.sponsors.length >= 4
-												? 'gap-6'
-												: 'gap-6'
-										}`}
-									>
-										{tier.sponsors.map((partner, i) => (
-											<div
-												className={`${
-													tier.sponsors.length >= 4
-														? 'w-[calc(25%-1.125rem)]'
-														: tier.sponsors.length === 3
-														? 'w-[calc(33.333%-1rem)]'
-														: tier.sponsors.length === 2
-														? 'w-[calc(50%-0.75rem)]'
-														: 'w-full'
-												}`}
-												key={i}
-											>
-												{createSponsorCard(partner, tier.name, tier.textColor, i, false)}
-											</div>
-										))}
-									</div>
-
-									<div className="lg:hidden">
-										<Carousel
-											items={tier.sponsors.map((partner, i) =>
-												createSponsorCard(partner, tier.name, tier.textColor, i, true)
-											)}
-											dotColor={tier.dotColor}
-											showArrows={true}
-											showDots={true}
-										/>
-									</div>
-								</div>
-							</motion.div>
-						)
-				)}
-			</div>
-
-			<motion.div
-				className="mt-8 bg-zinc-800/30 rounded-xl p-6 border border-zinc-700/50 backdrop-blur-sm"
-				initial={{ opacity: 0, y: 20 }}
-				animate={{ opacity: 1, y: 0 }}
-				transition={{ delay: 0.4 }}
-			>
-				<div className="flex flex-col lg:flex-row items-center justify-between gap-6">
-					<div className="text-center lg:text-left">
-						<p className="text-zinc-300 text-lg md:text-xl mb-2">
-							Interested in partnering with Yale Computer Society?
-						</p>
-						<p className="text-zinc-400 text-sm">
-							Join our community of innovators and tech leaders
-						</p>
-					</div>
-					<div className="flex flex-col sm:flex-row w-full sm:w-auto gap-3">
-						<Link
-							href="mailto:yalecomputersociety@gmail.com"
-							className="bg-zinc-700 hover:bg-zinc-600 text-white py-2.5 px-5 rounded-lg transition-all duration-300 flex items-center justify-center text-base font-medium hover:shadow-lg hover:shadow-zinc-900/25"
-						>
-							Contact Us
-						</Link>
-					</div>
-				</div>
-			</motion.div>
-		</section>
-	);
+      <motion.div
+        className="mt-16 flex flex-col items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.02] px-8 py-10 text-center"
+        initial={{ opacity: 0, y: 16 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: '-60px' }}
+        transition={{ duration: 0.45 }}
+      >
+        <p className="text-lg text-white md:text-xl">
+          Interested in partnering with Yale Computer Society?
+        </p>
+        <p className="text-sm text-white/50">Join our community of innovators and tech leaders.</p>
+        <Link
+          href="mailto:yalecomputersociety@gmail.com"
+          className="mt-3 inline-flex items-center rounded-lg bg-white px-6 py-2.5 text-sm font-semibold text-black transition-transform duration-300 hover:-translate-y-0.5"
+        >
+          Become a Sponsor
+        </Link>
+      </motion.div>
+    </section>
+  );
 };

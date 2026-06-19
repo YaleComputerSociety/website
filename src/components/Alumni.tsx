@@ -1,19 +1,27 @@
 'use client';
 
 import Image from 'next/image';
+import type { StaticImageData } from 'next/image';
 import { motion } from 'framer-motion';
 import google from '@assets/partnerships/google.png';
 import netflix from '@assets/partnerships/netflix.png';
 import amazon from '@assets/partnerships/amazon.png';
 import meta from '@assets/partnerships/meta.avif';
-import bloomberg from '@assets/partnerships/bloomberg.png';
+import bloomberg from '@assets/partnerships/bloomberg-gradient.webp';
 import microsoft from '@assets/partnerships/microsoft.png';
 import nvida from '@assets/partnerships/nvidia.png';
 import roblox from '@assets/partnerships/roblox.png';
 import { SectionContainer } from './Container';
 import { Carousel } from './Carousel';
 
-const ALUMNI_COMPANIES = [
+type AlumniCompany = {
+  name: string;
+  logo: StaticImageData;
+  count: number;
+  fill?: boolean; // render the logo as a full-bleed tile (e.g. a baked-in gradient background)
+};
+
+const ALUMNI_COMPANIES: AlumniCompany[] = [
   {
     name: 'Google',
     logo: google,
@@ -43,6 +51,7 @@ const ALUMNI_COMPANIES = [
     name: 'Bloomberg',
     logo: bloomberg,
     count: 3,
+    fill: true,
   },
 
   {
@@ -57,21 +66,31 @@ const ALUMNI_COMPANIES = [
   },
 ];
 
-const CompanyCard = ({ company }: { company: (typeof ALUMNI_COMPANIES)[0] }) => (
+const CompanyCard = ({ company }: { company: AlumniCompany }) => (
   <motion.div className="bg-zinc-800/20 rounded-lg p-7 flex flex-col items-center">
-    <div className="h-16 flex items-center justify-center mb-3 w-full bg-white/10 rounded-md">
-      <Image
-        src={company.logo}
-        alt={`${company.name} logo`}
-        width={120}
-        height={120}
-        className="object-contain max-h-12 transition-all duration-300"
-        unoptimized={
-          typeof company.logo === 'object' && 'src' in company.logo
-            ? company.logo.src.endsWith('.avif')
-            : false
-        }
-      />
+    <div className="relative h-16 w-full overflow-hidden rounded-md bg-white/10 flex items-center justify-center mb-3">
+      {company.fill ? (
+        <Image
+          src={company.logo}
+          alt={`${company.name} logo`}
+          fill
+          sizes="240px"
+          className="object-cover"
+        />
+      ) : (
+        <Image
+          src={company.logo}
+          alt={`${company.name} logo`}
+          width={120}
+          height={120}
+          className="object-contain max-h-12 transition-all duration-300"
+          unoptimized={
+            typeof company.logo === 'object' && 'src' in company.logo
+              ? company.logo.src.endsWith('.avif')
+              : false
+          }
+        />
+      )}
     </div>
     <div className="text-white text-center">{company.name}</div>
   </motion.div>

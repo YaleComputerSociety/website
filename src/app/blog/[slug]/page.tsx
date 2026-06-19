@@ -31,7 +31,7 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
   const postKey = params.slug.replace(/[^a-zA-Z]/g, "");
 
   return (
-    <div className="bg-black min-h-screen">
+    <div className="min-h-screen">
       <div className="grid grid-cols-1 lg:grid-cols-[3fr_1fr] gap-12 max-w-7xl mx-auto px-4 pt-24 pb-32">
         <div className="min-w-0">
           <div className="mb-12">
