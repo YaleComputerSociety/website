@@ -165,6 +165,8 @@ const Home = () => {
         </div>
       </SectionContainer>
 
+      <AlumniCompanies />
+
       <SectionContainer>
         <TitleSubtitle
           title="Cultivating a passion for computer science, at all skill levels"
@@ -265,8 +267,6 @@ const Home = () => {
       <SectionContainer>
         <Sponsors />
       </SectionContainer>
-
-      <AlumniCompanies />
 
       <SectionContainer>
         <div className="relative overflow-hidden rounded-2xl bg-white/[0.02] px-8 py-14 ring-1 ring-white/10 md:px-16 md:py-20">
