@@ -272,7 +272,7 @@ export const PROJECTS: Project[] = [
     description: 'Website to view clubs and events.',
     shouldIconBeRounded: true,
     live: true,
-    link: 'https://yaleclubs.info',
+    link: 'https://yaleclubs.io',
     logo: yaleclubs,
   },
   {
