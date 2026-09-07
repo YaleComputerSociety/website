@@ -142,7 +142,7 @@ const Join = () => {
                 </p>
               </div>
               <Link
-                href="https://docs.google.com/forms/d/e/1FAIpQLSeguDHlt5DeycAmB9hZjdwASyPYUwPH-NhreYomuI7DPtND1A/viewform?usp=dialog"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeiYwNUGe0Z0FmVFXZLRe-Obzt84yMLqZ6Ji6o_cYkVcIX7Ng/viewform"
                 className="ml-auto bg-ycs-pink hover:bg-ycs-pink/90 text-black py-2 px-6 rounded-lg transition-all duration-300 flex items-center whitespace-nowrap"
                 target="_blank"
               >
@@ -290,7 +290,7 @@ const Join = () => {
 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSeguDHlt5DeycAmB9hZjdwASyPYUwPH-NhreYomuI7DPtND1A/viewform?usp=dialog"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSeiYwNUGe0Z0FmVFXZLRe-Obzt84yMLqZ6Ji6o_cYkVcIX7Ng/viewform"
                     className="inline-flex items-center justify-center rounded-lg font-bold text-lg bg-ycs-pink hover:bg-ycs-pink/90 text-black py-3 px-8 transition-all duration-300 hover:shadow-lg hover:translate-y-[-2px]"
                     target="_blank"
                   >
