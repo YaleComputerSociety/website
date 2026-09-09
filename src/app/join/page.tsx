@@ -194,25 +194,22 @@ const Join = () => {
 
           <ProcessStep number="2" title="Interview/Challenge">
             <p className="mb-4">
-              For those applying for technical roles, we have a technical interview.
+              For y/cs Development, applicants will complete a short product challenge designed to
+              show us how they think about building software. You’ll explore our products, identify
+              things you would improve or add, and tell us more about what you’re interested in working on.              
             </p>
             <p className="mb-4">
-              Those applying for y/cs Development are evaluated on their ability to operate the
-              tools/skills used to build the products (not LeetCode questions).
-            </p>
-            <p className="mb-4">
-              We don&apos;t expect everyone to come to Yale knowing how to use these tools/skills,
-              which is why we have beginner{' '}
-              <span className="text-ycs-pink font-semibold">Catalyst</span> programs designed to
-              teach them to you! Those applying for beginner programs are evaluated on their
-              ability/willingness to learn new technical concepts in a separate interview.
+              Selected applicants will then meet with Development team leads to talk through their ideas,
+              experience, interests, and how they might contribute to a team. We’re not looking for LeetCode
+              performance—we care about technical foundation, product thinking, initiative, and your ability to
+              learn and build with others.
             </p>
           </ProcessStep>
 
           <ProcessStep number="3" title="Team Placement">
             <p>
               Based on your written application and interview you are placed on a y/cs team within
-              3 weeks of the application deadline, as space permits.
+              weeks of the application deadline, as space permits.
             </p>
           </ProcessStep>
         </div>
