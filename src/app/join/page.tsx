@@ -200,9 +200,7 @@ const Join = () => {
             </p>
             <p className="mb-4">
               Selected applicants will then meet with Development team leads to talk through their ideas,
-              experience, interests, and how they might contribute to a team. We’re not looking for LeetCode
-              performance—we care about technical foundation, product thinking, initiative, and your ability to
-              learn and build with others.
+              experience, interests, and how they might contribute to a team.
             </p>
           </ProcessStep>
 
