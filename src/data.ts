@@ -48,6 +48,7 @@ import william from './assets/people/william.jpeg';
 import sofia from './assets/people/sofia.jpeg';
 import himani from './assets/people/himani-kumar.jpg';
 import defaultPic from './assets/people/defaultpic.jpg';
+import helen from './assets/people/helen-huang.jpg';
 import humpery from './assets/people/humphrey.jpg';
 // partnerships import
 import janestreet from './assets/partnerships/JaneStreet.png';
@@ -151,6 +152,13 @@ export const BOARD: Person[] = [
     name: 'Sonia Gupta',
     image: defaultPic,
     role: 'Director of External Affairs',
+    team: 'Board',
+  },
+
+  {
+    name: 'Helen Huang',
+    image: helen,
+    role: 'Director of Design',
     team: 'Board',
   },
 
