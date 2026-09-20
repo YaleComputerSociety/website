@@ -114,11 +114,10 @@ export const BOARD: Person[] = [
     year: 2027,
   },
   {
-    name: 'Andy Cheng',
-    image: andy,
+    name: 'Eli Bouganim',
+    image: defaultPic,
     role: 'Director of Training',
     team: 'Board',
-    year: 2027,
   },
   {
     name: 'Sydney Scheller',
