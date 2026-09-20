@@ -39,6 +39,7 @@ import ryanf from './assets/people/ryanf.jpeg';
 import Francis from '@assets/people/francis.jpeg';
 import ephraim from './assets/people/ephraim.jpeg';
 import jeet from './assets/people/jeet.jpeg';
+import yavin from './assets/people/yavin-fickel.jpg';
 import rylan from './assets/people/rylan.jpeg';
 import andy from './assets/people/andy.jpeg';
 import syndey from './assets/people/syndey.jpeg';
@@ -83,11 +84,10 @@ export const BOARD: Person[] = [
     year: 2028,
   },
   {
-    name: 'Jeet Parikh',
-    image: jeet,
+    name: 'Yavin Fickel',
+    image: yavin,
     role: 'Director of Development',
     team: 'Board',
-    year: 2028,
   },
   {
     name: 'Daniel Wang',
