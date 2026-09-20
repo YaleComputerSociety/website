@@ -157,13 +157,13 @@ export const BOARD: Person[] = [
   {
     name: 'Himani Kumar',
     image: himani,
-    role: 'Director of External Affairs',
+    role: 'Co-Director of External Affairs',
     team: 'Board',
   },
   {
     name: 'Sonia Gupta',
     image: defaultPic,
-    role: 'Director of External Affairs',
+    role: 'Co-Director of External Affairs',
     team: 'Board',
   },
 
@@ -171,6 +171,18 @@ export const BOARD: Person[] = [
     name: 'Helen Huang',
     image: helen,
     role: 'Director of Design',
+    team: 'Board',
+  },
+  {
+    name: 'Matthew Li',
+    image: defaultPic,
+    role: 'Director of Marketing',
+    team: 'Board',
+  },
+  {
+    name: 'Juwang Lee',
+    image: defaultPic,
+    role: 'Director of Finance',
     team: 'Board',
   },
 
