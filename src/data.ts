@@ -74,16 +74,29 @@ export interface Person {
 
 export const BOARD: Person[] = [
   {
+    name: 'Jeet Parikh',
+    image: jeet,
+    role: 'President',
+    team: 'Board',
+    year: 2028,
+  },
+  {
+    name: 'Yassin Mudawi',
+    image: yassin,
+    role: 'Vice President',
+    team: 'Board',
+  },
+  {
     name: 'Lily Lin',
     image: LilyLin,
-    role: 'Co-President',
+    role: 'Senior Advisor',
     team: 'Board',
     year: 2027,
   },
   {
     name: 'Ryan Fernandes',
     image: ryanf,
-    role: 'Co-President',
+    role: 'Senior Advisor',
     team: 'Board',
     year: 2028,
   },
