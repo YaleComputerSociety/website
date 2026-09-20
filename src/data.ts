@@ -46,6 +46,7 @@ import syndey from './assets/people/syndey.jpeg';
 import christian from './assets/people/christian.jpeg';
 import william from './assets/people/william.jpeg';
 import sofia from './assets/people/sofia.jpeg';
+import himani from './assets/people/himani-kumar.jpg';
 import humpery from './assets/people/humphrey.jpg';
 // partnerships import
 import janestreet from './assets/partnerships/JaneStreet.png';
@@ -136,6 +137,13 @@ export const BOARD: Person[] = [
     image: eric,
     role: 'Director of Security',
     year: 2027,
+    team: 'Board',
+  },
+
+  {
+    name: 'Himani Kumar',
+    image: himani,
+    role: 'Director of External Affairs',
     team: 'Board',
   },
 
