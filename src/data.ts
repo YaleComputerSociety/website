@@ -24,7 +24,6 @@ import facebook from './assets/facebook.svg';
 import instagram from './assets/instagram.svg';
 import nvidia from './assets/partnerships/nvidia.png';
 // People imports
-import daniel from './assets/people/daniel.jpeg';
 import neil from './assets/people/neil.jpeg';
 import eric from './assets/people/eric.png';
 import LilyLin from './assets/people/LilyLin.png';
@@ -39,12 +38,15 @@ import ryanf from './assets/people/ryanf.jpeg';
 import Francis from '@assets/people/francis.jpeg';
 import ephraim from './assets/people/ephraim.jpeg';
 import jeet from './assets/people/jeet.jpeg';
+import yavin from './assets/people/yavin-fickel.jpg';
 import rylan from './assets/people/rylan.jpeg';
 import andy from './assets/people/andy.jpeg';
-import syndey from './assets/people/syndey.jpeg';
 import christian from './assets/people/christian.jpeg';
-import william from './assets/people/william.jpeg';
 import sofia from './assets/people/sofia.jpeg';
+import himani from './assets/people/himani-kumar.jpg';
+import defaultPic from './assets/people/ycs-default-avatar.png';
+import helen from './assets/people/helen-huang.jpg';
+import eashan from './assets/people/eashan-hatti.jpg';
 import humpery from './assets/people/humphrey.jpg';
 // partnerships import
 import janestreet from './assets/partnerships/JaneStreet.png';
@@ -69,74 +71,93 @@ export interface Person {
 
 export const BOARD: Person[] = [
   {
+    name: 'Jeet Parikh',
+    image: jeet,
+    role: 'President',
+    team: 'Board',
+    year: 2028,
+  },
+  {
+    name: 'Yassin Mudawi',
+    image: yassin,
+    role: 'Vice President',
+    team: 'Board',
+  },
+  {
+    name: 'Sofia Colorado',
+    image: sofia,
+    role: 'Director of Community',
+    team: 'Board',
+    year: 2028,
+  },
+  {
+    name: 'Yavin Fickel',
+    image: yavin,
+    role: 'Director of Development',
+    team: 'Board',
+  },
+  {
+    name: 'Eashan Hatti',
+    image: eashan,
+    role: 'Director of Events',
+    team: 'Board',
+  },
+  {
+    name: 'Eli Bouganim',
+    image: defaultPic,
+    role: 'Director of Training',
+    team: 'Board',
+  },
+  {
+    name: 'Himani Kumar',
+    image: himani,
+    role: 'Co-Director of External Affairs',
+    team: 'Board',
+  },
+  {
+    name: 'Sonia Gupta',
+    image: defaultPic,
+    role: 'Co-Director of External Affairs',
+    team: 'Board',
+  },
+  {
+    name: 'Helen Huang',
+    image: helen,
+    role: 'Director of Design',
+    team: 'Board',
+  },
+  {
+    name: 'Matthew Li',
+    image: defaultPic,
+    role: 'Director of Marketing',
+    team: 'Board',
+  },
+  {
+    name: 'Juwang Lee',
+    image: defaultPic,
+    role: 'Director of Finance',
+    team: 'Board',
+  },
+  {
+    name: 'Eric Yoon',
+    image: eric,
+    role: 'Director of Cybersecurity',
+    year: 2027,
+    team: 'Board',
+  },
+  {
     name: 'Lily Lin',
     image: LilyLin,
-    role: 'Co-President',
+    role: 'Advisor',
     team: 'Board',
     year: 2027,
   },
   {
     name: 'Ryan Fernandes',
     image: ryanf,
-    role: 'Co-President',
+    role: 'Advisor',
     team: 'Board',
     year: 2028,
-  },
-  {
-    name: 'Jeet Parikh',
-    image: jeet,
-    role: 'Director of Development',
-    team: 'Board',
-    year: 2028,
-  },
-  {
-    name: 'Daniel Wang',
-    image: daniel,
-    role: 'Senior Advisor',
-    team: 'Board',
-    year: 2027,
-  },
-  {
-    name: 'Andy Cheng',
-    image: andy,
-    role: 'Director of Training',
-    team: 'Board',
-    year: 2027,
-  },
-  {
-    name: 'Sydney Scheller',
-    image: syndey,
-    role: 'Director of Finances',
-    team: 'Board',
-    year: 2026,
-  },
-  {
-    name: 'Christian Phanhthourath',
-    image: christian,
-    role: 'Director of Events',
-    team: 'Board',
-    year: 2028,
-  },
-  {
-    name: 'Sofia Colorado',
-    image: sofia,
-    role: 'Director of Marketing',
-    team: 'Board',
-    year: 2028,
-  },
-  {
-    name: 'William Qian',
-    image: william,
-    role: 'Director of Communications',
-    team: 'Board',
-    year: 2028,
-  },
-  {
-    name: 'Eric Yoon',
-    image: eric,
-    role: 'Director of Security',
-    year: 2027,
-    team: 'Board',
   },
 
   // product leads
