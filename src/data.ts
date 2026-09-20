@@ -24,7 +24,6 @@ import facebook from './assets/facebook.svg';
 import instagram from './assets/instagram.svg';
 import nvidia from './assets/partnerships/nvidia.png';
 // People imports
-import daniel from './assets/people/daniel.jpeg';
 import neil from './assets/people/neil.jpeg';
 import eric from './assets/people/eric.png';
 import LilyLin from './assets/people/LilyLin.png';
@@ -42,9 +41,7 @@ import jeet from './assets/people/jeet.jpeg';
 import yavin from './assets/people/yavin-fickel.jpg';
 import rylan from './assets/people/rylan.jpeg';
 import andy from './assets/people/andy.jpeg';
-import syndey from './assets/people/syndey.jpeg';
 import christian from './assets/people/christian.jpeg';
-import william from './assets/people/william.jpeg';
 import sofia from './assets/people/sofia.jpeg';
 import himani from './assets/people/himani-kumar.jpg';
 import defaultPic from './assets/people/defaultpic.jpg';
@@ -87,16 +84,9 @@ export const BOARD: Person[] = [
     team: 'Board',
   },
   {
-    name: 'Lily Lin',
-    image: LilyLin,
-    role: 'Senior Advisor',
-    team: 'Board',
-    year: 2027,
-  },
-  {
-    name: 'Ryan Fernandes',
-    image: ryanf,
-    role: 'Senior Advisor',
+    name: 'Sofia Colorado',
+    image: sofia,
+    role: 'Director of Community',
     team: 'Board',
     year: 2028,
   },
@@ -107,11 +97,10 @@ export const BOARD: Person[] = [
     team: 'Board',
   },
   {
-    name: 'Daniel Wang',
-    image: daniel,
-    role: 'Senior Advisor',
+    name: 'Eashan Hatti',
+    image: eashan,
+    role: 'Director of Events',
     team: 'Board',
-    year: 2027,
   },
   {
     name: 'Eli Bouganim',
@@ -119,41 +108,6 @@ export const BOARD: Person[] = [
     role: 'Director of Training',
     team: 'Board',
   },
-  {
-    name: 'Sydney Scheller',
-    image: syndey,
-    role: 'Director of Finances',
-    team: 'Board',
-    year: 2026,
-  },
-  {
-    name: 'Eashan Hatti',
-    image: eashan,
-    role: 'Director of Events',
-    team: 'Board',
-  },
-  {
-    name: 'Sofia Colorado',
-    image: sofia,
-    role: 'Director of Community',
-    team: 'Board',
-    year: 2028,
-  },
-  {
-    name: 'William Qian',
-    image: william,
-    role: 'Director of Communications',
-    team: 'Board',
-    year: 2028,
-  },
-  {
-    name: 'Eric Yoon',
-    image: eric,
-    role: 'Director of Security',
-    year: 2027,
-    team: 'Board',
-  },
-
   {
     name: 'Himani Kumar',
     image: himani,
@@ -166,7 +120,6 @@ export const BOARD: Person[] = [
     role: 'Co-Director of External Affairs',
     team: 'Board',
   },
-
   {
     name: 'Helen Huang',
     image: helen,
@@ -184,6 +137,27 @@ export const BOARD: Person[] = [
     image: defaultPic,
     role: 'Director of Finance',
     team: 'Board',
+  },
+  {
+    name: 'Eric Yoon',
+    image: eric,
+    role: 'Director of Cybersecurity',
+    year: 2027,
+    team: 'Board',
+  },
+  {
+    name: 'Lily Lin',
+    image: LilyLin,
+    role: 'Advisor',
+    team: 'Board',
+    year: 2027,
+  },
+  {
+    name: 'Ryan Fernandes',
+    image: ryanf,
+    role: 'Advisor',
+    team: 'Board',
+    year: 2028,
   },
 
   // product leads
