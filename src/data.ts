@@ -120,7 +120,7 @@ export const BOARD: Person[] = [
   {
     name: 'Sofia Colorado',
     image: sofia,
-    role: 'Director of Marketing',
+    role: 'Director of Community',
     team: 'Board',
     year: 2028,
   },
