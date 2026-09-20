@@ -44,7 +44,7 @@ import andy from './assets/people/andy.jpeg';
 import christian from './assets/people/christian.jpeg';
 import sofia from './assets/people/sofia.jpeg';
 import himani from './assets/people/himani-kumar.jpg';
-import defaultPic from './assets/people/defaultpic.jpg';
+import defaultPic from './assets/people/ycs-default-avatar.png';
 import helen from './assets/people/helen-huang.jpg';
 import eashan from './assets/people/eashan-hatti.jpg';
 import humpery from './assets/people/humphrey.jpg';
