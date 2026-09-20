@@ -49,6 +49,7 @@ import sofia from './assets/people/sofia.jpeg';
 import himani from './assets/people/himani-kumar.jpg';
 import defaultPic from './assets/people/defaultpic.jpg';
 import helen from './assets/people/helen-huang.jpg';
+import eashan from './assets/people/eashan-hatti.jpg';
 import humpery from './assets/people/humphrey.jpg';
 // partnerships import
 import janestreet from './assets/partnerships/JaneStreet.png';
@@ -114,11 +115,10 @@ export const BOARD: Person[] = [
     year: 2026,
   },
   {
-    name: 'Christian Phanhthourath',
-    image: christian,
+    name: 'Eashan Hatti',
+    image: eashan,
     role: 'Director of Events',
     team: 'Board',
-    year: 2028,
   },
   {
     name: 'Sofia Colorado',
