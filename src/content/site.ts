@@ -429,6 +429,107 @@ export const PAST_EVENTS = [
   { date: 'Apr 28, 2025', title: 'y/cs Gala 2025', where: 'SSS 114', type: 'Mixer' },
 ];
 
+// Join page
+export const APPLY_URL =
+  'https://docs.google.com/forms/d/e/1FAIpQLSeiYwNUGe0Z0FmVFXZLRe-Obzt84yMLqZ6Ji6o_cYkVcIX7Ng/viewform';
+/** Flip to false to show the "applications closed" state on the Join page. */
+export const APPLICATIONS_OPEN = true;
+
+export const JOIN_HERO: Photo = {
+  src: bazaarBooth2026,
+  alt: 'y/cs members at the club booth during the 2026 activities bazaar',
+};
+
+export const JOIN_STATS = [
+  { value: '100%', label: 'acceptance for general members' },
+  { value: '80+', label: 'student developers & designers' },
+  { value: '7', label: 'products live on campus' },
+  { value: 'Rolling', label: 'applications, open year-round' },
+];
+
+export const JOIN_ROLES = [
+  {
+    path: '/general',
+    title: 'General Member',
+    body: 'Attend workshops, hackathons and speaker events, contribute to our blog, and build projects with other members.',
+    tag: '100% acceptance · every skill level',
+    photo: { src: tsaiGroupPhoto, alt: 'y/cs members together at Tsai CITY' },
+  },
+  {
+    path: '/dev',
+    title: 'Software Engineer',
+    body: 'Develop one of y/cs’s current or upcoming products. Work with your team every week in a startup-like environment.',
+    tag: 'Selective · application + product challenge',
+    photo: {
+      src: buildNightPointing,
+      alt: 'A developer presenting their work at a y/cs build night',
+    },
+  },
+  {
+    path: '/catalyst',
+    title: 'Catalyst Developer',
+    body: 'Hone your skills in a beginner-friendly program designed to prepare you to work on one of our products.',
+    tag: 'No experience needed · selective',
+    photo: { src: teamTableDiscussion, alt: 'Catalyst members talking around a table' },
+  },
+];
+
+export const JOIN_STEPS = [
+  {
+    title: 'Written application',
+    body: [
+      'Tell us which divisions or teams you’re interested in, share a bit about yourself, and why you want to join y/cs.',
+    ],
+  },
+  {
+    title: 'Interview & challenge',
+    body: [
+      'For y/cs Development, you’ll complete a short product challenge that shows us how you think about building software: explore our products, find what you would improve or add, and tell us what you want to work on.',
+      'Selected applicants then meet with Development team leads to talk through their ideas, experience, interests and how they might contribute to a team.',
+    ],
+  },
+  {
+    title: 'Team placement',
+    body: [
+      'Based on your written application and interview, you’re placed on a y/cs team within weeks of the application deadline, as space permits.',
+    ],
+  },
+];
+
+export const JOIN_FAQ = [
+  {
+    q: 'What do you mean by “100% acceptance”?',
+    a: [
+      'Exactly what it sounds like. Everyone who applies is accepted as a general member, whatever their technical background. General members contribute to the y/cs blog, attend events and hackathons, work on projects with other members, and can opt in to our internship recruitment pipeline.',
+      'Our development teams (CourseTable, Yalies and more) and the Catalyst program are sub-divisions that general members can apply to join. For purely logistical reasons, they are more selective.',
+    ],
+  },
+  {
+    q: 'Do I need prior experience?',
+    a: [
+      'Not at all. Catalyst is designed for beginners who want to learn development. For more advanced roles experience helps, but enthusiasm and willingness to learn matter just as much.',
+    ],
+  },
+  {
+    q: 'What is the time commitment?',
+    a: [
+      'It depends on the role. Development teams typically meet 2–3 hours a week, plus time for individual work. Catalyst asks for 4–6 hours a week.',
+    ],
+  },
+  {
+    q: 'Do I need to be a CS major?',
+    a: [
+      'No. We welcome students from every major and background. Many of our most successful members come from outside CS but share a passion for technology.',
+    ],
+  },
+  {
+    q: 'When will I hear back?',
+    a: [
+      'We typically review applications within 1–3 weeks of the deadline. You’ll hear by email about interviews and final decisions.',
+    ],
+  },
+];
+
 export const SPONSOR_HERO: Photo = {
   src: boothBanner,
   alt: 'The y/cs launch booth on campus; its banner lists sponsors HRT, QNX, Tsai CITY and Jane Street',

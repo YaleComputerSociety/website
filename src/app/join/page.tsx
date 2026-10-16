@@ -1,331 +1,234 @@
-'use client';
+import type { Metadata } from 'next';
+import Image from 'next/image';
+import { GoArrowUpRight } from 'react-icons/go';
 
-import Link from 'next/link';
-import { GoArrowUpRight, GoCheckCircle } from 'react-icons/go';
-import { PageContainer, SectionContainer } from '@components/Container';
+import { CtaPanel, Eyebrow, PillLink, SectionTitle, Shell, StatRow } from '@components/site/ui';
+import {
+  APPLICATIONS_OPEN,
+  APPLY_URL,
+  CONTACT_EMAIL,
+  JOIN_FAQ,
+  JOIN_HERO,
+  JOIN_ROLES,
+  JOIN_STATS,
+  JOIN_STEPS,
+} from '@/content/site';
 
-const ROLES = [
-  {
-    title: 'General Member',
-    desc: 'Attend workshops, hackathons, and speaker event, contribute to our blog, and make projects with other members. 100% acceptance.',
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-6 w-6"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-        />
-      </svg>
-    ),
-    color: 'ycs-blue',
-  },
-  {
-    title: 'Software Engineer',
-    desc: "Develop one of the y/cs's current or upcoming products. Collaborate with your team on a weekly basis in a startup-like environment.",
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-6 w-6"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M2 7l5 5-5 5M14 17h8"
-        />
-      </svg>
-    ),
-    color: 'ycs-pink',
-  },
-  {
-    title: 'Catalyst Developer',
-    desc: 'Hone your development skills in a beginner-friendly software program designed to prepare you to work on one of our products.',
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-6 w-6"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
-        />
-      </svg>
-    ),
-    color: 'ycs-green',
-  },
-];
-
-interface RoleCardProps {
-  title: string;
-  desc: string;
-  icon: React.ReactNode;
-  color: string;
-}
-
-const RoleCard = ({ title, desc, icon, color }: RoleCardProps) => {
-  return (
-    <div
-      className={`bg-zinc-800/40 rounded-lg overflow-hidden border-l-4 border-${color} hover:translate-y-[-4px] transition-all duration-300 h-full`}
-    >
-      <div className="p-6 flex flex-col h-full">
-        <div className="flex items-center mb-4">
-          <div className={`p-3 rounded-lg bg-${color}/20 mr-4 text-white`}>{icon}</div>
-          <h3 className="text-xl font-bold text-white">{title}</h3>
-        </div>
-        <p className="text-zinc-300 flex-grow">{desc}</p>
-      </div>
-    </div>
-  );
+export const metadata: Metadata = {
+  title: 'Join · Yale Computer Society',
+  description:
+    "Join Yale's largest collective of student developers, designers and CS enthusiasts. General membership is open to everyone, year-round.",
 };
 
-const ProcessStep = ({
-  number,
-  title,
-  children,
-}: {
-  number: string | number;
-  title: string;
-  children: React.ReactNode;
-}) => {
+const CONTACT_HREF = `mailto:${CONTACT_EMAIL}`;
+
+const StatusChip = () => (
+  <p className="mb-7 inline-flex items-center gap-2.5 rounded-full border border-white/[0.12] bg-white/[0.04] px-4 py-2 text-sm text-soft">
+    <span className="relative flex h-2 w-2" aria-hidden="true">
+      {APPLICATIONS_OPEN && (
+        <span className="absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-60 motion-safe:animate-ping" />
+      )}
+      <span
+        className={`relative inline-flex h-2 w-2 rounded-full ${
+          APPLICATIONS_OPEN ? 'bg-emerald-400' : 'bg-muted'
+        }`}
+      />
+    </span>
+    {APPLICATIONS_OPEN
+      ? 'Applications open · reviewed on a rolling basis'
+      : 'Applications are currently closed'}
+  </p>
+);
+
+export default function Join() {
   return (
-    <div className="mb-8">
-      <div className="flex items-center mb-3">
-        <div className="bg-ycs-pink/20 w-10 h-10 rounded-full flex items-center justify-center mr-4 text-ycs-pink font-bold">
-          {number}
-        </div>
-        <h3 className="text-xl font-bold text-white">{title}</h3>
-      </div>
-      <div className="pl-14">
-        <div className="text-zinc-300 text-lg">{children}</div>
-      </div>
-    </div>
-  );
-};
-
-const Join = () => {
-  const applicationsOpen = true;
-
-  return (
-    <PageContainer>
-      <SectionContainer>
-        <h1 className="text-white text-5xl md:text-7xl font-bold mb-4">Join y/cs</h1>
-        <p className="text-zinc-400 text-xl mb-8 max-w-2xl">
-          We are Yale&apos;s largest collective of software developers, product designers, and
-          computer science enthusiasts.
-        </p>
-
-        {applicationsOpen && (
-          <div className="bg-gradient-to-r from-ycs-pink/20 to-transparent p-6 rounded-lg border-l-4 border-ycs-pink mb-12">
-            <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center">
-              <div className="mr-4 text-ycs-pink">
-                <GoCheckCircle size={24} />
-              </div>
-              <div className="mr-2">
-                <h3 className="text-xl font-bold text-white">Apply for general membership!</h3>
-                <p className="text-zinc-300 mt-1">
-                  Applications are open year-round and reviewed on a rolling basis
-                </p>
-              </div>
-              <Link
-                href="https://docs.google.com/forms/d/e/1FAIpQLSeiYwNUGe0Z0FmVFXZLRe-Obzt84yMLqZ6Ji6o_cYkVcIX7Ng/viewform"
-                className="sm:ml-auto bg-ycs-pink hover:bg-ycs-pink/90 text-black py-2 px-6 rounded-lg transition-all duration-300 flex items-center whitespace-nowrap"
-                target="_blank"
-              >
-                Apply Now
-                <GoArrowUpRight className="ml-2" />
-              </Link>
+    <main>
+      {/* HERO */}
+      <section className="pb-20 pt-20 sm:pt-24">
+        <Shell className="flex flex-wrap items-center gap-14">
+          <div className="min-w-0 flex-[1_1_460px]">
+            <StatusChip />
+            <h1 className="text-[clamp(44px,5.6vw,80px)] font-extrabold leading-[0.98] tracking-[-0.035em] text-cream">
+              Come build with <span className="text-accent">y/cs</span>.
+            </h1>
+            <p className="mt-7 max-w-[540px] text-xl leading-relaxed text-soft">
+              We are Yale&apos;s largest collective of software developers, product designers and
+              computer science enthusiasts. Everyone who applies becomes a member.
+            </p>
+            <div className="mt-10 flex flex-wrap gap-3">
+              {APPLICATIONS_OPEN && (
+                <PillLink href={APPLY_URL}>
+                  Apply now <GoArrowUpRight aria-hidden="true" />
+                </PillLink>
+              )}
+              <PillLink href="#process" variant="outline">
+                How it works
+              </PillLink>
             </div>
           </div>
-        )}
-      </SectionContainer>
-
-      <SectionContainer className="mt-16">
-        <div className="border-b border-zinc-800 pb-4 mb-12">
-          <h2 className="text-white text-3xl md:text-4xl font-bold">Available Roles</h2>
-          <p className="text-zinc-400 text-lg mt-2">
-            Explore the diverse opportunities to contribute and grow with our dynamic team
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {ROLES.map((role, index) => (
-            <RoleCard
-              key={index}
-              title={role.title}
-              desc={role.desc}
-              icon={role.icon}
-              color={role.color}
+          <figure className="relative m-0 h-[380px] min-w-0 flex-[1_1_480px] overflow-hidden rounded-[28px] sm:h-[540px]">
+            <Image
+              src={JOIN_HERO.src}
+              alt={JOIN_HERO.alt}
+              fill
+              priority
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              placeholder="blur"
+              className="object-cover"
             />
-          ))}
-        </div>
-      </SectionContainer>
+          </figure>
+        </Shell>
+      </section>
 
-      <SectionContainer className="mt-32">
-        <div className="border-b border-zinc-800 pb-4 mb-12">
-          <h2 className="text-white text-3xl md:text-4xl font-bold">Application Process</h2>
-          <p className="text-zinc-400 text-lg mt-2">
-            Applications open at the beginning of each semester. We try to keep our process as short
-            and sweet as possible.
+      {/* STATS */}
+      <section aria-label="y/cs at a glance" className="pb-28">
+        <Shell>
+          <StatRow stats={JOIN_STATS} />
+        </Shell>
+      </section>
+
+      {/* ROLES */}
+      <section aria-labelledby="roles" className="pb-32">
+        <Shell>
+          <Eyebrow>01 — Ways to join</Eyebrow>
+          <SectionTitle className="mb-5 max-w-[820px]">
+            <span id="roles">Three ways in. Pick your pace.</span>
+          </SectionTitle>
+          <p className="mb-14 max-w-[640px] text-lg leading-relaxed text-soft">
+            Start as a general member, then apply to a product team or Catalyst whenever you&apos;re
+            ready. You can grow from one to the next.
           </p>
-        </div>
-
-        <div className="bg-zinc-800/30 rounded-lg p-8 md:p-10">
-          <ProcessStep number="1" title="Written Application">
-            <p>
-              Indicate which divisions or teams you are interested in joining, share a bit about
-              yourself, and why you&apos;re interested in joining y/cs.
-            </p>
-          </ProcessStep>
-
-          <ProcessStep number="2" title="Interview/Challenge">
-            <p className="mb-4">
-              For y/cs Development, applicants will complete a short product challenge designed to
-              show us how they think about building software. You’ll explore our products, identify
-              things you would improve or add, and tell us more about what you’re interested in working on.              
-            </p>
-            <p className="mb-4">
-              Selected applicants will then meet with Development team leads to talk through their ideas,
-              experience, interests, and how they might contribute to a team.
-            </p>
-          </ProcessStep>
-
-          <ProcessStep number="3" title="Team Placement">
-            <p>
-              Based on your written application and interview you are placed on a y/cs team within
-              weeks of the application deadline, as space permits.
-            </p>
-          </ProcessStep>
-        </div>
-      </SectionContainer>
-
-      <SectionContainer className="mt-32">
-        <div className="border-b border-zinc-800 pb-4 mb-12">
-          <h2 className="text-white text-3xl md:text-4xl font-bold">Frequently Asked Questions</h2>
-          <p className="text-zinc-400 text-lg mt-2">Common questions about joining y/cs</p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-zinc-800/20 rounded-lg p-6">
-            <h3 className="text-xl font-bold text-white mb-3">
-              What do you mean "100% acceptance"?
-            </h3>
-            <p className="text-zinc-300">
-              Exactly what it sounds like! Everyone who applies to y/cs will be accepted as a
-              general member, regardless of their technical background. General members contribute
-              to the y/cs blog, attend events/hackathons, and work on projects with other members.
-              They may also opt-in to our internship recruitment pipeline.
-              <br />
-              <br />
-              Our development teams (CourseTable, Yalies, etc.) and Catalyst program are y/cs
-              sub-divisions that general members may apply to join. For stricly logistical reasons,
-              these sub-divisions are more selective.
-            </p>
-          </div>
-
-          <div className="bg-zinc-800/20 rounded-lg p-6">
-            <h3 className="text-xl font-bold text-white mb-3">Do I need prior experience?</h3>
-            <p className="text-zinc-300">
-              Not at all! Our Catalyst program is specifically designed for beginners who want to
-              learn development skills. For more advanced roles, experience is helpful but
-              enthusiasm and willingness to learn are equally important.
-            </p>
-          </div>
-
-          <div className="bg-zinc-800/20 rounded-lg p-6">
-            <h3 className="text-xl font-bold text-white mb-3">What is the time commitment?</h3>
-            <p className="text-zinc-300">
-              Time commitments vary by role. Development teams typically meet 2-3 hours per week,
-              with additional time for individual work. The Catalyst program requires 4-6 hours
-              weekly.
-            </p>
-          </div>
-
-          <div className="bg-zinc-800/20 rounded-lg p-6">
-            <h3 className="text-xl font-bold text-white mb-3">Do I need to be a CS major?</h3>
-            <p className="text-zinc-300">
-              Not at all! We welcome students from all majors and backgrounds. Many of our most
-              successful members come from non-CS fields but share a passion for technology.
-            </p>
-          </div>
-
-          <div className="bg-zinc-800/20 rounded-lg p-6">
-            <h3 className="text-xl font-bold text-white mb-3">
-              When will I hear back about my application?
-            </h3>
-            <p className="text-zinc-300">
-              We typically review applications within 1-3 weeks after the deadline. You&apos;ll be
-              notified by email about interview invitations and final decisions.
-            </p>
-          </div>
-        </div>
-      </SectionContainer>
-
-      <SectionContainer className="mt-32">
-        <div className="bg-gradient-to-br from-zinc-800/50 to-zinc-900/50 rounded-lg overflow-hidden border-l-4 border-ycs-pink p-8 md:p-10">
-          <div className="max-w-3xl">
-            <h2 className="text-white text-3xl font-bold mb-4">Interested in joining?</h2>
-            {applicationsOpen ? (
-              <>
-                <p className="text-zinc-300 text-lg mb-8">
-                  Join our community of passionate developers, designers, and tech enthusiasts.
-                  Applications for general membership are open year-round!
-                </p>
-
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Link
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSeiYwNUGe0Z0FmVFXZLRe-Obzt84yMLqZ6Ji6o_cYkVcIX7Ng/viewform"
-                    className="inline-flex items-center justify-center rounded-lg font-bold text-lg bg-ycs-pink hover:bg-ycs-pink/90 text-black py-3 px-8 transition-all duration-300 hover:shadow-lg hover:translate-y-[-2px]"
-                    target="_blank"
-                  >
-                    Apply Now
-                    <GoArrowUpRight className="ml-2" />
-                  </Link>
-
-                  <Link
-                    href="mailto:yale.computer.society@gmail.com"
-                    className="inline-flex items-center justify-center rounded-lg font-bold text-lg bg-zinc-700 hover:bg-zinc-600 text-white py-3 px-8 transition-all duration-300"
-                  >
-                    Contact Us
-                  </Link>
+          <div className="grid gap-5 md:grid-cols-3">
+            {JOIN_ROLES.map((role) => (
+              <article
+                data-reveal
+                key={role.title}
+                className="group overflow-hidden rounded-3xl border border-white/[0.08] bg-panel"
+              >
+                <div className="relative h-[220px] overflow-hidden">
+                  <Image
+                    src={role.photo.src}
+                    alt={role.photo.alt}
+                    fill
+                    sizes="(min-width: 768px) 33vw, 100vw"
+                    placeholder="blur"
+                    className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                  />
                 </div>
-              </>
-            ) : (
-              <>
-                <p className="text-zinc-300 text-lg mb-8">
-                  Applications are currently closed. Check back at the beginning of next semester or
-                  reach out to learn more!
-                </p>
-
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Link
-                    href="mailto:yale.computer.society@gmail.com"
-                    className="inline-flex items-center justify-center rounded-lg font-bold text-lg bg-zinc-700 hover:bg-zinc-600 text-white py-3 px-8 transition-all duration-300"
-                  >
-                    Contact Us
-                  </Link>
+                <div className="px-8 pb-8 pt-7">
+                  <p className="mb-3 font-mono text-[13px] text-accent">{role.path}</p>
+                  <h3 className="mb-2.5 text-2xl font-extrabold text-cream">{role.title}</h3>
+                  <p className="leading-relaxed text-soft">{role.body}</p>
+                  <p className="mt-5 text-sm text-muted">{role.tag}</p>
                 </div>
-              </>
-            )}
+              </article>
+            ))}
           </div>
-        </div>
-      </SectionContainer>
-    </PageContainer>
+        </Shell>
+      </section>
+
+      {/* PROCESS */}
+      <section
+        id="process"
+        aria-labelledby="process-title"
+        className="scroll-mt-20 bg-panel-deep py-32"
+      >
+        <Shell>
+          <Eyebrow>02 — How it works</Eyebrow>
+          <SectionTitle className="mb-5 max-w-[820px]">
+            <span id="process-title">Short and sweet.</span>
+          </SectionTitle>
+          <p className="mb-14 max-w-[640px] text-lg leading-relaxed text-soft">
+            General membership is open year-round. Product team and Catalyst applications open at
+            the start of each semester, and we keep the process as short as possible.
+          </p>
+          <ol className="grid gap-5 lg:grid-cols-3">
+            {JOIN_STEPS.map((step, i) => (
+              <li
+                data-reveal
+                key={step.title}
+                className="relative rounded-3xl border border-white/[0.08] bg-panel p-8 sm:p-10"
+              >
+                <p className="font-mono text-sm text-accent">
+                  {String(i + 1).padStart(2, '0')} / {String(JOIN_STEPS.length).padStart(2, '0')}
+                </p>
+                <h3 className="mb-4 mt-6 text-[26px] font-extrabold tracking-[-0.02em] text-cream">
+                  {step.title}
+                </h3>
+                <div className="space-y-4 leading-relaxed text-soft">
+                  {step.body.map((paragraph) => (
+                    <p key={paragraph}>{paragraph}</p>
+                  ))}
+                </div>
+              </li>
+            ))}
+          </ol>
+        </Shell>
+      </section>
+
+      {/* FAQ */}
+      <section aria-labelledby="faq" className="py-32">
+        <Shell className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.6fr)] lg:gap-20">
+          <div className="lg:sticky lg:top-28 lg:self-start">
+            <Eyebrow>03 — FAQ</Eyebrow>
+            <SectionTitle>
+              <span id="faq">Common questions.</span>
+            </SectionTitle>
+            <p className="mt-6 max-w-[400px] text-lg leading-relaxed text-soft">
+              Still curious?{' '}
+              <a
+                href={CONTACT_HREF}
+                className="text-accent underline-offset-4 transition-colors hover:text-[#FFD2BF] hover:underline"
+              >
+                Email us
+              </a>{' '}
+              and we&apos;ll get back to you.
+            </p>
+          </div>
+          <dl className="border-t border-white/[0.12]">
+            {JOIN_FAQ.map((item) => (
+              <div data-reveal key={item.q} className="border-b border-white/[0.12] py-8">
+                <dt className="mb-3 text-[21px] font-bold tracking-[-0.01em] text-cream">
+                  {item.q}
+                </dt>
+                <dd className="space-y-3 text-[17px] leading-relaxed text-soft">
+                  {item.a.map((paragraph) => (
+                    <p key={paragraph}>{paragraph}</p>
+                  ))}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </Shell>
+      </section>
+
+      {/* CTA */}
+      <section className="pb-32">
+        <Shell>
+          {APPLICATIONS_OPEN ? (
+            <CtaPanel
+              title="Ready to build with us?"
+              body="Join a community of developers, designers and tech enthusiasts. General membership applications are open year-round."
+            >
+              <PillLink href={APPLY_URL} variant="dark">
+                Apply now <GoArrowUpRight aria-hidden="true" />
+              </PillLink>
+              <PillLink href={CONTACT_HREF} variant="outline-dark">
+                Contact us
+              </PillLink>
+            </CtaPanel>
+          ) : (
+            <CtaPanel
+              title="Applications are closed for now."
+              body="Check back at the start of next semester, or reach out to learn more."
+            >
+              <PillLink href={CONTACT_HREF} variant="dark">
+                Contact us
+              </PillLink>
+            </CtaPanel>
+          )}
+        </Shell>
+      </section>
+    </main>
   );
-};
-
-export default Join;
+}
