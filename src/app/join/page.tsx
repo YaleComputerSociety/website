@@ -7,7 +7,7 @@ import { PageContainer, SectionContainer } from '@components/Container';
 const ROLES = [
   {
     title: 'General Member',
-    desc: "Attend workshops, hackathons, and speaker event, contribute to our blog, and make projects with other members. 100% acceptance.",
+    desc: 'Attend workshops, hackathons, and speaker event, contribute to our blog, and make projects with other members. 100% acceptance.',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -131,11 +131,11 @@ const Join = () => {
 
         {applicationsOpen && (
           <div className="bg-gradient-to-r from-ycs-pink/20 to-transparent p-6 rounded-lg border-l-4 border-ycs-pink mb-12">
-            <div className="flex items-center">
+            <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center">
               <div className="mr-4 text-ycs-pink">
                 <GoCheckCircle size={24} />
               </div>
-              <div className='mr-2'>
+              <div className="mr-2">
                 <h3 className="text-xl font-bold text-white">Apply for general membership!</h3>
                 <p className="text-zinc-300 mt-1">
                   Applications are open year-round and reviewed on a rolling basis
@@ -143,7 +143,7 @@ const Join = () => {
               </div>
               <Link
                 href="https://docs.google.com/forms/d/e/1FAIpQLSeguDHlt5DeycAmB9hZjdwASyPYUwPH-NhreYomuI7DPtND1A/viewform?usp=dialog"
-                className="ml-auto bg-ycs-pink hover:bg-ycs-pink/90 text-black py-2 px-6 rounded-lg transition-all duration-300 flex items-center whitespace-nowrap"
+                className="sm:ml-auto bg-ycs-pink hover:bg-ycs-pink/90 text-black py-2 px-6 rounded-lg transition-all duration-300 flex items-center whitespace-nowrap"
                 target="_blank"
               >
                 Apply Now
@@ -211,8 +211,8 @@ const Join = () => {
 
           <ProcessStep number="3" title="Team Placement">
             <p>
-              Based on your written application and interview you are placed on a y/cs team within
-              3 weeks of the application deadline, as space permits.
+              Based on your written application and interview you are placed on a y/cs team within 3
+              weeks of the application deadline, as space permits.
             </p>
           </ProcessStep>
         </div>
@@ -226,16 +226,19 @@ const Join = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="bg-zinc-800/20 rounded-lg p-6">
-            <h3 className="text-xl font-bold text-white mb-3">What do you mean "100% acceptance"?</h3>
+            <h3 className="text-xl font-bold text-white mb-3">
+              What do you mean "100% acceptance"?
+            </h3>
             <p className="text-zinc-300">
-              Exactly what it sounds like! Everyone who applies to y/cs will be accepted as a general
-              member, regardless of their technical background. General members contribute to the 
-              y/cs blog, attend events/hackathons, and work on projects with other members. They may
-              also opt-in to our internship recruitment pipeline.
-              <br/><br/>
-              Our development teams (CourseTable, Yalies, etc.) and Catalyst program are y/cs sub-divisions
-              that general members may apply to join. For stricly logistical reasons, these sub-divisions
-              are more selective.
+              Exactly what it sounds like! Everyone who applies to y/cs will be accepted as a
+              general member, regardless of their technical background. General members contribute
+              to the y/cs blog, attend events/hackathons, and work on projects with other members.
+              They may also opt-in to our internship recruitment pipeline.
+              <br />
+              <br />
+              Our development teams (CourseTable, Yalies, etc.) and Catalyst program are y/cs
+              sub-divisions that general members may apply to join. For stricly logistical reasons,
+              these sub-divisions are more selective.
             </p>
           </div>
 

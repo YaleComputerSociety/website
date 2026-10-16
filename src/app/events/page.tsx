@@ -1,332 +1,176 @@
-'use client';
+import type { Metadata } from 'next';
+import Image from 'next/image';
 
-import { useState } from 'react';
-import Image, { StaticImageData } from 'next/image';
-import Link from 'next/link';
-import { GoArrowUpRight, GoCalendar, GoLocation, GoClockFill } from 'react-icons/go';
-import { motion } from 'framer-motion';
-import Wordmark from '@assets/wordmark.png';
-import { EVENTS } from '@data';
-import { PageContainer, SectionContainer } from '@components/Container';
+import { UNDER_NAV_CLASS } from '@components/site/brand';
+import { CtaPanel, Eyebrow, PhotoGrid, PillLink, SectionTitle, Shell } from '@components/site/ui';
+import {
+  CALENDAR_SUBSCRIBE_URL,
+  EVENT_GALLERY,
+  EVENT_TYPES,
+  EVENTS_HERO,
+  INSTAGRAM_URL,
+  PAST_EVENTS,
+} from '@/content/site';
 
-const EventCard = ({ event }: { event: Event }) => {
-  const [isHovered, setIsHovered] = useState(false);
-
-  const formatDate = (dateString: string) => {
-    const [year, month, day] = dateString.split('-').map(Number);
-    const date = new Date(year, month - 1, day);
-
-    return date.toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-    });
-  };
-
-  return (
-    <motion.div
-      className="bg-zinc-800/50 rounded-lg overflow-hidden group cursor-pointer"
-      whileHover={{ y: -5 }}
-      onHoverStart={() => setIsHovered(true)}
-      onHoverEnd={() => setIsHovered(false)}
-    >
-      <div className="relative h-48 md:h-56 overflow-hidden">
-        <Image
-          src={event.image}
-          alt={event.title}
-          className={`object-cover w-full h-full transition-transform duration-500 ${isHovered ? 'scale-110' : 'scale-100'}`}
-          width={600}
-          height={400}
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/70 flex items-end">
-          <div className="p-4">
-            <div className="flex flex-wrap gap-2 mb-2">
-              {event.tags &&
-                event.tags.map((tag, index) => (
-                  <span key={index} className="text-xs bg-white text-black px-2 py-0.5 rounded-sm">
-                    {tag}
-                  </span>
-                ))}
-            </div>
-            <h3 className="text-white text-lg font-bold">{event.title}</h3>
-            <div className="flex items-center text-zinc-300 text-sm">
-              <span>{formatDate(event.date)}</span>
-              <span className="mx-2">•</span>
-              <span>{event.location.split(',')[0]}</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </motion.div>
-  );
+export const metadata: Metadata = {
+  title: 'Events · Yale Computer Society',
+  description:
+    'Demo days, hackathons, workshops, recruiting events and socials, open to every Yale student.',
 };
 
-interface Event {
-  id: string;
-  title: string;
-  date: string;
-  time: string;
-  location: string;
-  description: string;
-  image: StaticImageData;
-  tags?: string[];
-  link?: string;
-  link_text?: string;
-}
-
-const UpcomingEventCard = ({ event }: { event: Event }) => {
-  interface DateFormatOptions extends Intl.DateTimeFormatOptions {
-    weekday: 'long';
-    year: 'numeric';
-    month: 'long';
-    day: 'numeric';
-  }
-
-  const formatDate = (dateString: string): string => {
-    const [year, month, day] = dateString.split('-').map(Number);
-    const date = new Date(year, month - 1, day);
-
-    return date.toLocaleDateString('en-US', {
-      weekday: 'long',
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-    });
-  };
-
-  return (
-    <div className="bg-zinc-800/30 border-l-4 border-ycs-blue rounded-lg p-5 flex flex-col md:flex-row gap-6">
-      <div className="relative h-32 md:h-auto md:w-40 rounded-lg overflow-hidden flex-shrink-0">
-        <Image
-          src={event.image}
-          alt={event.title}
-          className="object-cover w-full h-full"
-          width={160}
-          height={120}
-        />
-      </div>
-
-      <div className="flex-1">
-        <h3 className="text-white text-xl font-bold mb-2">{event.title}</h3>
-        <div className="flex flex-col gap-2 mb-3">
-          <div className="flex items-center text-zinc-300">
-            <GoCalendar className="mr-2 text-ycs-blue" />
-            <span>{formatDate(event.date)}</span>
-          </div>
-          <div className="flex items-center text-zinc-300">
-            <GoClockFill className="mr-2 text-ycs-blue" />
-            <span>{event.time}</span>
-          </div>
-          <div className="flex items-center text-zinc-300">
-            <GoLocation className="mr-2 text-ycs-blue" />
-            <span>{event.location}</span>
-          </div>
-        </div>
-        <p className="text-zinc-400 text-sm mb-4">{event.description}</p>
-        {/*
-          <Link
-            href={`/events/${event.id}`}
-            className="text-ycs-blue hover:text-ycs-blue/80 flex items-center text-sm font-medium"
-          >
-            View Details <GoArrowUpRight className="ml-1" />
-          </Link>
-        */}
-        {event.link && (
-          <Link
-            href={event.link}
-            target="_blank"
-            className="text-ycs-blue hover:text-ycs-blue/80 flex items-center text-sm font-medium"
-          >
-            {event.link_text || "RSVP"} <GoArrowUpRight className="ml-1" />
-          </Link>
-        )}
-      </div>
-    </div>
-  );
-};
-
-const NoUpcomingEvents = () => {
-  return (
-    <div className="bg-zinc-800/30 rounded-lg overflow-hidden">
-      <div className="p-8 text-center">
-        <div className="mb-6">
-          <Image
-            src={Wordmark}
-            alt="No upcoming events"
-            width={300}
-            height={200}
-            className="mx-auto"
-          />
-        </div>
-        <h3 className="text-white text-xl font-bold mb-2">No upcoming events scheduled</h3>
-        <p className="text-zinc-400 mb-6 max-w-lg mx-auto">
-          We&apos;re currently planning our next round of events. Check back soon or subscribe to
-          our calendar to be notified when new events are announced.
-        </p>
-        <Link
-          href="https://calendar.google.com/calendar/embed?src=t6isudodqcpb2uepck99jmjt3o%40group.calendar.google.com&ctz=America%2FNew_York"
-          target="_blank"
-          className="inline-flex items-center bg-zinc-700 hover:bg-zinc-600 text-white px-4 py-2 rounded-lg transition-colors"
-        >
-          <GoCalendar className="mr-2" />
-          Add to Calendar
-        </Link>
-      </div>
-    </div>
-  );
-};
-
-const TabButton = ({
-  active,
-  children,
-  onClick,
-}: {
-  active: boolean;
-  children: React.ReactNode;
-  onClick: () => void;
-}) => (
-  <button
-    onClick={onClick}
-    className={`px-4 py-2 font-medium text-sm md:text-base rounded-lg transition-colors ${
-      active ? 'bg-white text-black' : 'text-zinc-400 hover:text-white'
-    }`}
+const CalendarIcon = () => (
+  <svg
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    aria-hidden="true"
   >
-    {children}
-  </button>
+    <rect x="3" y="4" width="18" height="18" rx="2" />
+    <path d="M16 2v4" />
+    <path d="M8 2v4" />
+    <path d="M3 10h18" />
+  </svg>
 );
 
-const Events = () => {
-  const [activeTab, setActiveTab] = useState('upcoming');
-  const [filter, setFilter] = useState('all');
-
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-
-  const upcomingEvents = EVENTS.filter((event) => {
-    const eventDate = new Date(event.date);
-    return eventDate >= today;
-  }).sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
-
-  const pastEvents = EVENTS.filter((event) => {
-    const eventDate = new Date(event.date);
-    return eventDate < today;
-  }).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-
-  const allTags = Array.from(new Set(pastEvents.flatMap((event) => event.tags || []))).sort();
-
-  const filteredPastEvents =
-    filter === 'all'
-      ? pastEvents
-      : pastEvents.filter((event) => event.tags && event.tags.includes(filter));
-
+export default function Events() {
   return (
-    <PageContainer>
-      <SectionContainer>
-        <h1 className="text-white text-5xl md:text-7xl font-bold mb-4">Events</h1>
-        <p className="text-zinc-400 text-xl mb-16 max-w-2xl">
-          From workshops to socials, hackathons to tech talks, we host dozens of events each
-          semester.
-        </p>
-      </SectionContainer>
-
-      <SectionContainer>
-        <div className="flex space-x-2 mb-8">
-          <TabButton active={activeTab === 'upcoming'} onClick={() => setActiveTab('upcoming')}>
-            Upcoming Events
-          </TabButton>
-          <TabButton active={activeTab === 'past'} onClick={() => setActiveTab('past')}>
-            Past Events
-          </TabButton>
-          <Link
-            href="https://calendar.google.com/calendar/embed?src=t6isudodqcpb2uepck99jmjt3o%40group.calendar.google.com&ctz=America%2FNew_York"
-            target="_blank"
-            className="ml-auto flex items-center bg-zinc-800 hover:bg-zinc-700 text-white px-4 py-2 rounded-lg transition-colors text-sm md:text-base"
-          >
-            <GoCalendar className="mr-2" />
-            Add to Calendar
-          </Link>
-        </div>
-
-        {activeTab === 'upcoming' && (
-          <div className="space-y-6">
-            {upcomingEvents.length > 0 ? (
-              upcomingEvents.map((event) => <UpcomingEventCard key={event.id} event={event} />)
-            ) : (
-              <NoUpcomingEvents />
-            )}
-          </div>
-        )}
-
-        {activeTab === 'past' && (
-          <>
-            <div className="mb-8 overflow-x-auto pb-2">
-              <div className="flex space-x-2">
-                <button
-                  onClick={() => setFilter('all')}
-                  className={`px-3 py-1.5 text-sm rounded-md whitespace-nowrap transition-colors ${
-                    filter === 'all'
-                      ? 'bg-ycs-pink text-black'
-                      : 'bg-zinc-800 text-zinc-300 hover:text-white'
-                  }`}
-                >
-                  All Events
-                </button>
-                {allTags.map((tag) => (
-                  <button
-                    key={tag}
-                    onClick={() => setFilter(tag)}
-                    className={`px-3 py-1.5 text-sm rounded-md whitespace-nowrap transition-colors ${
-                      filter === tag
-                        ? 'bg-ycs-pink text-black'
-                        : 'bg-zinc-800 text-zinc-300 hover:text-white'
-                    }`}
-                  >
-                    {tag}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            {filteredPastEvents.length > 0 ? (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {filteredPastEvents.map((event) => (
-                  <EventCard key={event.id} event={event} />
-                ))}
-              </div>
-            ) : (
-              <div className="bg-zinc-800/30 rounded-lg p-8 text-center">
-                <h3 className="text-white text-xl font-bold mb-2">No events found</h3>
-                <p className="text-zinc-400">
-                  No past events match your current filter. Try selecting a different category.
-                </p>
-              </div>
-            )}
-          </>
-        )}
-      </SectionContainer>
-
-      <SectionContainer className="mt-20">
-        <div className="rounded-2xl bg-white/[0.02] p-8 ring-1 ring-white/10 md:p-10">
-          <div className="max-w-xl">
-            <h2 className="mb-2 text-2xl font-bold text-white">Stay Updated</h2>
-            <p className="mb-6 leading-relaxed text-white/60">
-              Sign up for our newsletter to receive updates about upcoming events and opportunities.
+    <main>
+      {/* HERO */}
+      <section className={`relative flex min-h-[640px] flex-col justify-end ${UNDER_NAV_CLASS}`}>
+        <Image
+          src={EVENTS_HERO.src}
+          alt={EVENTS_HERO.alt}
+          fill
+          priority
+          sizes="100vw"
+          placeholder="blur"
+          className="object-cover object-[50%_45%]"
+        />
+        <div
+          aria-hidden="true"
+          className="absolute inset-0"
+          style={{
+            background:
+              'linear-gradient(90deg, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.7) 45%, rgba(10,10,10,0.2) 80%), linear-gradient(0deg, #0A0A0A 0%, rgba(10,10,10,0) 45%)',
+          }}
+        />
+        <Shell className="relative">
+          <div className="max-w-[760px] pb-20 pt-44">
+            <Eyebrow>Events</Eyebrow>
+            <h1 className="text-[clamp(44px,6vw,84px)] font-extrabold leading-[0.98] tracking-[-0.035em] text-cream">
+              There&apos;s always something happening.
+            </h1>
+            <p className="mt-6 max-w-[560px] text-xl leading-relaxed text-soft">
+              Demo days, hackathons, workshops with industry engineers, recruiting events and
+              socials. Most events are open to every Yale student, members or not.
             </p>
-            <div className="flex flex-col gap-3 sm:flex-row">
-              <input
-                type="email"
-                placeholder="Your email address"
-                className="flex-grow rounded-lg bg-white/5 px-4 py-2.5 text-white placeholder-white/40 ring-1 ring-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-white/25"
-              />
-              <button className="rounded-lg bg-white px-6 py-2.5 font-semibold text-black transition-transform duration-300 hover:-translate-y-0.5">
-                Subscribe
-              </button>
+            <div className="mt-9 flex flex-wrap gap-3">
+              <PillLink href={CALENDAR_SUBSCRIBE_URL}>
+                <CalendarIcon />
+                Add our calendar
+              </PillLink>
+              <PillLink href={INSTAGRAM_URL} variant="outline">
+                Follow on Instagram
+              </PillLink>
             </div>
           </div>
-        </div>
-      </SectionContainer>
-    </PageContainer>
-  );
-};
+        </Shell>
+      </section>
 
-export default Events;
+      {/* EVENT TYPES */}
+      <section aria-labelledby="types" className="pb-28 pt-14">
+        <Shell>
+          <Eyebrow>What we run</Eyebrow>
+          <SectionTitle className="mb-10 max-w-[760px]">
+            Five kinds of events, all semester long.
+          </SectionTitle>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+            {EVENT_TYPES.map((type) => (
+              <article
+                data-reveal
+                key={type.name}
+                className="overflow-hidden rounded-[22px] border border-white/[0.08] bg-panel"
+              >
+                <div className="relative h-[200px]">
+                  <Image
+                    src={type.photo.src}
+                    alt={type.photo.alt}
+                    fill
+                    sizes="(min-width: 1024px) 20vw, (min-width: 640px) 50vw, 100vw"
+                    placeholder="blur"
+                    className="object-cover"
+                  />
+                </div>
+                <div className="px-6 pb-6 pt-5">
+                  <h3 className="mb-2 text-[21px] font-extrabold text-cream">{type.name}</h3>
+                  <p className="text-[15px] leading-normal text-soft">{type.desc}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </Shell>
+      </section>
+
+      {/* GALLERY */}
+      <section aria-labelledby="gallery" className="bg-panel-deep py-28">
+        <Shell>
+          <h2
+            id="gallery"
+            className="mb-10 text-[40px] font-extrabold tracking-[-0.02em] text-cream"
+          >
+            From past events
+          </h2>
+          <PhotoGrid photos={EVENT_GALLERY} rowHeight={260} />
+        </Shell>
+      </section>
+
+      {/* PAST EVENTS */}
+      <section aria-labelledby="past" className="py-28">
+        <Shell>
+          <h2 id="past" className="mb-7 text-[32px] font-extrabold tracking-[-0.02em] text-cream">
+            Past events
+          </h2>
+          <ul className="border-t border-white/[0.12]">
+            {PAST_EVENTS.map((event) => (
+              <li
+                key={event.title}
+                className="flex flex-wrap items-baseline gap-x-8 gap-y-2 border-b border-white/[0.12] py-5"
+              >
+                <span className="w-[140px] font-mono text-sm text-muted">{event.date}</span>
+                <span className="min-w-0 flex-[1_1_320px] text-[19px] font-bold text-cream">
+                  {event.title}
+                </span>
+                <span className="w-[160px] text-sm text-muted">{event.where}</span>
+                <span className="rounded-full bg-white/[0.08] px-2.5 py-1 text-xs font-semibold text-[#D8D4CC]">
+                  {event.type}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </Shell>
+      </section>
+
+      {/* CTA */}
+      <section className="pb-28">
+        <Shell>
+          <CtaPanel
+            title="Never miss an event."
+            body="Add the y/cs calendar or follow us on Instagram. We post every event there first."
+          >
+            <PillLink href={CALENDAR_SUBSCRIBE_URL} variant="dark">
+              Add to Google Calendar
+            </PillLink>
+            <PillLink href={INSTAGRAM_URL} variant="outline-dark">
+              Follow on Instagram
+            </PillLink>
+          </CtaPanel>
+        </Shell>
+      </section>
+    </main>
+  );
+}

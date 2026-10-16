@@ -59,6 +59,20 @@ const config: Config = {
         'ycs-green': '#39A393',
         'ycs-security-red': '#890c0c',
         'ycs-gray': '#323844',
+        // 2026 redesign palette
+        ink: '#0A0A0A',
+        panel: '#151515',
+        'panel-deep': '#111111',
+        paper: '#F3F1EC',
+        cream: '#F5F3EF',
+        muted: '#A9A398',
+        soft: '#CFCAC1',
+        accent: '#FFB090',
+        'accent-ink': '#1A0E08',
+      },
+      fontFamily: {
+        sans: ['var(--font-dm-sans)', 'system-ui', 'sans-serif'],
+        mono: ['var(--font-plex-mono)', 'ui-monospace', 'monospace'],
       },
       fontSize: {
         big: '200px',

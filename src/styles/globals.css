@@ -5,22 +5,69 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+  background: #0a0a0a;
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-rgb: #1f232c;
+/* Hero typing caret */
+@keyframes ycs-blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: var(--background-rgb);
+.ycs-caret {
+  animation: ycs-blink 1.06s steps(1) infinite;
+}
+
+/* Product carousel progress bar (restarts whenever the active tab remounts) */
+@keyframes ycs-progress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.ycs-progress {
+  transform-origin: left center;
+  animation: ycs-progress var(--ycs-progress-duration, 6s) linear forwards;
+}
+
+/* Scroll reveal: only active once JS has opted in (see RevealObserver) */
+.reveal-ready [data-reveal] {
+  opacity: 0;
+  transform: translateY(14px);
+  transition:
+    opacity 0.55s cubic-bezier(0.2, 0.7, 0.2, 1),
+    transform 0.55s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.reveal-ready [data-reveal].is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Turns any logo into a flat white mark on dark backgrounds */
+.logo-white {
+  filter: brightness(0) invert(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .ycs-caret,
+  .ycs-progress {
+    animation: none;
+  }
 }
 
 @layer utilities {
