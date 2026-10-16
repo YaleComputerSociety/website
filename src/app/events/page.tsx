@@ -62,7 +62,7 @@ export default function Events() {
         <Shell className="relative">
           <div className="max-w-[760px] pb-20 pt-44">
             <Eyebrow>Events</Eyebrow>
-            <h1 className="text-[clamp(44px,6vw,84px)] font-extrabold leading-[0.98] tracking-[-0.035em] text-cream">
+            <h1 className="text-[clamp(41px,5.6vw,78px)] font-extrabold leading-[0.98] tracking-[-0.035em] text-cream">
               There&apos;s always something happening.
             </h1>
             <p className="mt-6 max-w-[560px] text-xl leading-relaxed text-soft">
@@ -107,8 +107,8 @@ export default function Events() {
                   />
                 </div>
                 <div className="px-6 pb-6 pt-5">
-                  <h3 className="mb-2 text-[21px] font-extrabold text-cream">{type.name}</h3>
-                  <p className="text-[15px] leading-normal text-soft">{type.desc}</p>
+                  <h3 className="mb-2 text-[19.5px] font-extrabold text-cream">{type.name}</h3>
+                  <p className="text-[14px] leading-normal text-soft">{type.desc}</p>
                 </div>
               </article>
             ))}
@@ -121,7 +121,7 @@ export default function Events() {
         <Shell>
           <h2
             id="gallery"
-            className="mb-10 text-[40px] font-extrabold tracking-[-0.02em] text-cream"
+            className="mb-10 text-[37px] font-extrabold tracking-[-0.02em] text-cream"
           >
             From past events
           </h2>
@@ -132,7 +132,7 @@ export default function Events() {
       {/* PAST EVENTS */}
       <section aria-labelledby="past" className="py-28">
         <Shell>
-          <h2 id="past" className="mb-7 text-[32px] font-extrabold tracking-[-0.02em] text-cream">
+          <h2 id="past" className="mb-7 text-[30px] font-extrabold tracking-[-0.02em] text-cream">
             Past events
           </h2>
           <ul className="border-t border-white/[0.12]">
@@ -142,7 +142,7 @@ export default function Events() {
                 className="flex flex-wrap items-baseline gap-x-8 gap-y-2 border-b border-white/[0.12] py-5"
               >
                 <span className="w-[140px] font-mono text-sm text-muted">{event.date}</span>
-                <span className="min-w-0 flex-[1_1_320px] text-[19px] font-bold text-cream">
+                <span className="min-w-0 flex-[1_1_320px] text-[18px] font-bold text-cream">
                   {event.title}
                 </span>
                 <span className="w-[160px] text-sm text-muted">{event.where}</span>

@@ -50,7 +50,7 @@ export default function Home() {
         <Shell className="relative">
           <div className="max-w-[760px] pt-[200px]">
             <TypedHeadline />
-            <p className="mt-5 text-[clamp(24px,2.6vw,38px)] font-bold leading-[1.15] tracking-[-0.02em] text-cream">
+            <p className="mt-5 text-[clamp(22px,2.4vw,35px)] font-bold leading-[1.15] tracking-[-0.02em] text-cream">
               Yale&apos;s premier tech organization and developer community.
             </p>
             <div className="mt-10 flex flex-wrap gap-3">
@@ -131,7 +131,7 @@ export default function Home() {
           <SectionTitle className="max-w-[820px]">
             Wherever you&apos;re starting from, there&apos;s a place for you.
           </SectionTitle>
-          <p className="mb-14 mt-5 max-w-[640px] text-[19px] leading-relaxed text-soft">
+          <p className="mb-14 mt-5 max-w-[640px] text-[18px] leading-relaxed text-soft">
             No experience required. Whether you&apos;ve never written a line of code or you&apos;ve
             already shipped to production, y/cs meets you where you are and helps you grow.
           </p>
@@ -154,8 +154,8 @@ export default function Home() {
                 </div>
                 <div className="p-9">
                   <p className="font-mono text-sm text-accent">{way.path}</p>
-                  <h3 className="mb-2.5 mt-4 text-[26px] font-extrabold text-cream">{way.title}</h3>
-                  <p className="text-[17px] leading-relaxed text-soft">{way.body}</p>
+                  <h3 className="mb-2.5 mt-4 text-[24px] font-extrabold text-cream">{way.title}</h3>
+                  <p className="text-[16px] leading-relaxed text-soft">{way.body}</p>
                   <p className="mt-6 text-sm text-muted">{way.tag}</p>
                 </div>
               </article>
@@ -168,8 +168,8 @@ export default function Home() {
       <section className="pb-28">
         <Shell className="grid gap-5 md:grid-cols-2">
           <div className="rounded-[28px] bg-accent p-10 text-accent-ink sm:p-14">
-            <p className="font-mono text-[13px] uppercase tracking-[0.14em]">For students</p>
-            <h2 className="mb-3.5 mt-4 text-[clamp(34px,3.4vw,44px)] font-extrabold leading-[1.02] tracking-[-0.03em]">
+            <p className="font-mono text-[12.5px] uppercase tracking-[0.14em]">For students</p>
+            <h2 className="mb-3.5 mt-4 text-[clamp(32px,3.2vw,41px)] font-extrabold leading-[1.02] tracking-[-0.03em]">
               Build with us this semester.
             </h2>
             <p className="mb-8 text-lg leading-relaxed">General membership is open year-round.</p>
@@ -178,10 +178,10 @@ export default function Home() {
             </PillLink>
           </div>
           <div className="rounded-[28px] bg-paper p-10 text-[#141414] sm:p-14">
-            <p className="font-mono text-[13px] uppercase tracking-[0.14em] text-[#5C574F]">
+            <p className="font-mono text-[12.5px] uppercase tracking-[0.14em] text-[#5C574F]">
               For companies
             </p>
-            <h2 className="mb-3.5 mt-4 text-[clamp(34px,3.4vw,44px)] font-extrabold leading-[1.02] tracking-[-0.03em]">
+            <h2 className="mb-3.5 mt-4 text-[clamp(32px,3.2vw,41px)] font-extrabold leading-[1.02] tracking-[-0.03em]">
               Meet Yale&apos;s strongest builders.
             </h2>
             <p className="mb-8 text-lg leading-relaxed text-[#3D3A35]">

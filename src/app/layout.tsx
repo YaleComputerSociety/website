@@ -54,7 +54,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${dmSans.variable} ${plexMono.variable}`}>
-      <body className="bg-ink font-sans text-cream antialiased">
+      <body className="bg-ink font-sans text-[15px] text-cream antialiased">
         <AuthProvider>
           <Navbar />
           {children}

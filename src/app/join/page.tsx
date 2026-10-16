@@ -48,7 +48,7 @@ export default function Join() {
         <Shell className="flex flex-wrap items-center gap-14">
           <div className="min-w-0 flex-[1_1_460px]">
             <StatusChip />
-            <h1 className="text-[clamp(44px,5.6vw,80px)] font-extrabold leading-[0.98] tracking-[-0.035em] text-cream">
+            <h1 className="text-[clamp(41px,5.2vw,74px)] font-extrabold leading-[0.98] tracking-[-0.035em] text-cream">
               Come build with <span className="text-accent">y/cs</span>.
             </h1>
             <p className="mt-7 max-w-[540px] text-xl leading-relaxed text-soft">
@@ -116,7 +116,7 @@ export default function Join() {
                   />
                 </div>
                 <div className="px-8 pb-8 pt-7">
-                  <p className="mb-3 font-mono text-[13px] text-accent">{role.path}</p>
+                  <p className="mb-3 font-mono text-[12.5px] text-accent">{role.path}</p>
                   <h3 className="mb-2.5 text-2xl font-extrabold text-cream">{role.title}</h3>
                   <p className="leading-relaxed text-soft">{role.body}</p>
                   <p className="mt-5 text-sm text-muted">{role.tag}</p>
@@ -152,7 +152,7 @@ export default function Join() {
                 <p className="font-mono text-sm text-accent">
                   {String(i + 1).padStart(2, '0')} / {String(JOIN_STEPS.length).padStart(2, '0')}
                 </p>
-                <h3 className="mb-4 mt-6 text-[26px] font-extrabold tracking-[-0.02em] text-cream">
+                <h3 className="mb-4 mt-6 text-[24px] font-extrabold tracking-[-0.02em] text-cream">
                   {step.title}
                 </h3>
                 <div className="space-y-4 leading-relaxed text-soft">
@@ -188,10 +188,10 @@ export default function Join() {
           <dl className="border-t border-white/[0.12]">
             {JOIN_FAQ.map((item) => (
               <div data-reveal key={item.q} className="border-b border-white/[0.12] py-8">
-                <dt className="mb-3 text-[21px] font-bold tracking-[-0.01em] text-cream">
+                <dt className="mb-3 text-[19.5px] font-bold tracking-[-0.01em] text-cream">
                   {item.q}
                 </dt>
-                <dd className="space-y-3 text-[17px] leading-relaxed text-soft">
+                <dd className="space-y-3 text-[16px] leading-relaxed text-soft">
                   {item.a.map((paragraph) => (
                     <p key={paragraph}>{paragraph}</p>
                   ))}

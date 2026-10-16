@@ -30,7 +30,7 @@ export default function Team() {
         <Shell className="flex flex-wrap items-center gap-14">
           <div className="min-w-0 flex-[1_1_440px]">
             <Eyebrow>Team</Eyebrow>
-            <h1 className="text-[clamp(44px,5.6vw,80px)] font-extrabold leading-[0.98] tracking-[-0.035em] text-cream">
+            <h1 className="text-[clamp(41px,5.2vw,74px)] font-extrabold leading-[0.98] tracking-[-0.035em] text-cream">
               The people behind y/cs.
             </h1>
             <p className="mt-7 max-w-[520px] text-xl leading-relaxed text-soft">
@@ -40,11 +40,11 @@ export default function Team() {
             </p>
             <dl className="mt-10 flex flex-wrap gap-8">
               <div>
-                <dd className="text-[40px] font-extrabold text-cream">{boardMembers.length}</dd>
+                <dd className="text-[37px] font-extrabold text-cream">{boardMembers.length}</dd>
                 <dt className="text-sm text-muted">board members</dt>
               </div>
               <div>
-                <dd className="text-[40px] font-extrabold text-cream">{leads.length}</dd>
+                <dd className="text-[37px] font-extrabold text-cream">{leads.length}</dd>
                 <dt className="text-sm text-muted">product team leads</dt>
               </div>
             </dl>
@@ -67,7 +67,7 @@ export default function Team() {
       <section aria-labelledby="board" className="pb-28">
         <Shell>
           <Eyebrow className="mb-3">2026–27</Eyebrow>
-          <h2 id="board" className="mb-9 text-[44px] font-extrabold tracking-[-0.02em] text-cream">
+          <h2 id="board" className="mb-9 text-[41px] font-extrabold tracking-[-0.02em] text-cream">
             Executive board
           </h2>
           <ul className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
@@ -100,7 +100,7 @@ export default function Team() {
       <section aria-labelledby="leads" className="bg-panel-deep py-28">
         <Shell>
           <Eyebrow className="mb-3">Product teams</Eyebrow>
-          <h2 id="leads" className="mb-10 text-[44px] font-extrabold tracking-[-0.02em] text-cream">
+          <h2 id="leads" className="mb-10 text-[41px] font-extrabold tracking-[-0.02em] text-cream">
             Team leads
           </h2>
           <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -120,8 +120,8 @@ export default function Team() {
                     />
                   </span>
                   <div>
-                    <h3 className="text-[21px] font-extrabold text-cream">{product.name}</h3>
-                    <p className="text-[13px] text-muted">{product.short}</p>
+                    <h3 className="text-[19.5px] font-extrabold text-cream">{product.name}</h3>
+                    <p className="text-[12.5px] text-muted">{product.short}</p>
                   </div>
                 </div>
                 <ul className="grid grid-cols-2 gap-3">
@@ -136,7 +136,7 @@ export default function Team() {
                           className="object-cover"
                         />
                       </div>
-                      <p className="mt-2.5 text-[15px] font-semibold leading-snug text-cream">
+                      <p className="mt-2.5 text-[14px] font-semibold leading-snug text-cream">
                         {lead.name}
                       </p>
                       {lead.year && (
@@ -158,7 +158,7 @@ export default function Team() {
         <Shell>
           <h2
             id="directory"
-            className="mb-2 text-[32px] font-extrabold tracking-[-0.02em] text-cream"
+            className="mb-2 text-[30px] font-extrabold tracking-[-0.02em] text-cream"
           >
             Member directory
           </h2>

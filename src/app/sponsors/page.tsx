@@ -26,7 +26,7 @@ export default function Sponsors() {
         <Shell className="flex flex-wrap items-center gap-14">
           <div className="min-w-0 flex-[1_1_460px]">
             <Eyebrow>Partnerships · 2026–27</Eyebrow>
-            <h1 className="text-[clamp(44px,5.6vw,80px)] font-extrabold leading-[0.98] tracking-[-0.035em] text-cream">
+            <h1 className="text-[clamp(41px,5.2vw,74px)] font-extrabold leading-[0.98] tracking-[-0.035em] text-cream">
               Recruit the students who already ship.
             </h1>
             <p className="mt-7 max-w-[540px] text-xl leading-relaxed text-soft">

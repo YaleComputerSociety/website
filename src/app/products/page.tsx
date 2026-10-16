@@ -36,7 +36,7 @@ export default function Products() {
       <section className="pb-16 pt-24 sm:pt-28">
         <Shell>
           <Eyebrow>Products</Eyebrow>
-          <h1 className="max-w-[980px] text-[clamp(44px,6vw,88px)] font-extrabold leading-[0.98] tracking-[-0.035em] text-cream">
+          <h1 className="max-w-[980px] text-[clamp(41px,5.6vw,82px)] font-extrabold leading-[0.98] tracking-[-0.035em] text-cream">
             Software Yale uses every day, built by students.
           </h1>
           <p className="mt-7 max-w-[640px] text-xl leading-relaxed text-soft">
@@ -74,7 +74,7 @@ export default function Products() {
                     />
                   </span>
                   <span className="flex min-w-0 flex-col gap-0.5 xl:items-center">
-                    <span className="text-[15px] font-bold leading-tight">{product.name}</span>
+                    <span className="text-[14px] font-bold leading-tight">{product.name}</span>
                     <span className="text-xs leading-tight text-muted">{product.short}</span>
                   </span>
                 </Link>
@@ -120,20 +120,20 @@ export default function Products() {
                       />
                     </span>
                     <div>
-                      <h2 className="text-[34px] font-extrabold leading-[1.05] tracking-[-0.02em] text-cream">
+                      <h2 className="text-[32px] font-extrabold leading-[1.05] tracking-[-0.02em] text-cream">
                         {product.name}
                       </h2>
                       <p className="mt-1 font-mono text-xs text-muted">{product.tag}</p>
                     </div>
                   </div>
-                  <p className="mt-5 text-[17px] leading-relaxed text-soft">{product.desc}</p>
+                  <p className="mt-5 text-[16px] leading-relaxed text-soft">{product.desc}</p>
                 </div>
                 <div className="flex flex-col gap-4">
                   <div className="border-t border-white/10 pt-4">
                     <p className="mb-1.5 font-mono text-[11px] uppercase tracking-[0.14em] text-muted">
                       Team leads
                     </p>
-                    <p className="text-[15px] text-cream">{product.leads}</p>
+                    <p className="text-[14px] text-cream">{product.leads}</p>
                   </div>
                   <div className="flex flex-wrap gap-2.5">
                     <PillLink href={product.url} size="sm">
@@ -167,7 +167,7 @@ export default function Products() {
       {/* FAQ */}
       <section aria-labelledby="faq" className="pb-28">
         <Shell>
-          <h2 id="faq" className="mb-7 text-[32px] font-extrabold tracking-[-0.02em] text-cream">
+          <h2 id="faq" className="mb-7 text-[30px] font-extrabold tracking-[-0.02em] text-cream">
             Common questions
           </h2>
           <div className="grid gap-4 md:grid-cols-2">
@@ -176,7 +176,7 @@ export default function Products() {
                 key={item.q}
                 className="rounded-[20px] border border-white/[0.08] bg-panel px-8 py-7"
               >
-                <h3 className="mb-2.5 text-[19px] font-bold text-cream">{item.q}</h3>
+                <h3 className="mb-2.5 text-[18px] font-bold text-cream">{item.q}</h3>
                 <p className="leading-relaxed text-soft">{item.a}</p>
               </div>
             ))}

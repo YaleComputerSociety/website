@@ -37,7 +37,7 @@ export default function TypedHeadline() {
   return (
     <h1
       aria-label={TEXT}
-      className="min-h-[1em] whitespace-nowrap text-[clamp(56px,8vw,116px)] font-extrabold leading-none tracking-[-0.04em] text-cream"
+      className="min-h-[1em] whitespace-nowrap text-[clamp(52px,7.4vw,108px)] font-extrabold leading-none tracking-[-0.04em] text-cream"
     >
       <span aria-hidden="true">{shown.slice(0, ACCENT_FROM)}</span>
       <span aria-hidden="true" className="text-accent">

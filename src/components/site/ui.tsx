@@ -24,7 +24,9 @@ export const Eyebrow = ({
   children: ReactNode;
   className?: string;
 }) => (
-  <p className={`mb-4 font-mono text-[13px] uppercase tracking-[0.14em] text-accent ${className}`}>
+  <p
+    className={`mb-4 font-mono text-[12.5px] uppercase tracking-[0.14em] text-accent ${className}`}
+  >
     {children}
   </p>
 );
@@ -38,7 +40,7 @@ export const SectionTitle = ({
 }) => (
   <h2
     data-reveal
-    className={`text-[clamp(36px,4.4vw,60px)] font-extrabold leading-[1.02] tracking-[-0.03em] text-cream ${className}`}
+    className={`text-[clamp(34px,4.1vw,56px)] font-extrabold leading-[1.02] tracking-[-0.03em] text-cream ${className}`}
   >
     {children}
   </h2>
@@ -58,7 +60,7 @@ export const PillLink = ({
   className?: string;
 }) => {
   const sizing =
-    size === 'sm' ? 'min-h-[46px] px-[22px] text-[15px]' : 'min-h-[52px] px-7 text-[17px]';
+    size === 'sm' ? 'min-h-[46px] px-[22px] text-[14px]' : 'min-h-[52px] px-7 text-[16px]';
   const styles = {
     accent: 'bg-accent text-accent-ink font-bold hover:-translate-y-0.5',
     outline: 'border border-white/35 text-cream font-medium hover:bg-white/5',
@@ -151,7 +153,7 @@ export const CtaPanel = ({
     className="flex flex-wrap items-center justify-between gap-8 rounded-[28px] bg-accent p-8 text-accent-ink sm:p-14"
   >
     <div className="min-w-0 flex-[1_1_420px]">
-      <h2 className="text-[clamp(32px,3.4vw,44px)] font-extrabold leading-[1.02] tracking-[-0.03em]">
+      <h2 className="text-[clamp(30px,3.2vw,41px)] font-extrabold leading-[1.02] tracking-[-0.03em]">
         {title}
       </h2>
       <p className="mt-4 max-w-[560px] text-lg leading-relaxed">{body}</p>
@@ -165,10 +167,10 @@ export const StatRow = ({ stats }: { stats: { value: string; label: string }[] }
     {stats.map((stat) => (
       <div key={stat.label} className="py-7 pr-6">
         <dt className="sr-only">{stat.label}</dt>
-        <dd className="text-[clamp(36px,4vw,52px)] font-extrabold tracking-[-0.03em] text-cream">
+        <dd className="text-[clamp(34px,3.7vw,48px)] font-extrabold tracking-[-0.03em] text-cream">
           {stat.value}
         </dd>
-        <dd className="mt-1.5 text-[15px] text-muted">{stat.label}</dd>
+        <dd className="mt-1.5 text-[14px] text-muted">{stat.label}</dd>
       </div>
     ))}
   </dl>

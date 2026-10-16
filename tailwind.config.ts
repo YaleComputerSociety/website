@@ -74,8 +74,20 @@ const config: Config = {
         sans: ['var(--font-dm-sans)', 'system-ui', 'sans-serif'],
         mono: ['var(--font-plex-mono)', 'ui-monospace', 'monospace'],
       },
+      // Type runs about 7% under Tailwind's defaults for a tighter, crisper feel.
+      // Only text shrinks; spacing still uses the 16px rem.
       fontSize: {
         big: '200px',
+        sm: ['13px', '19px'],
+        base: ['15px', '22px'],
+        lg: ['17px', '26px'],
+        xl: ['18.5px', '26px'],
+        '2xl': ['22px', '30px'],
+        '3xl': ['28px', '34px'],
+        '4xl': ['33px', '37px'],
+        '5xl': ['44px', '1'],
+        '6xl': ['56px', '1'],
+        '7xl': ['66px', '1'],
       },
     },
   },

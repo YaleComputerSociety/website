@@ -325,7 +325,7 @@ export default function MemberDirectory() {
         </p>
         <Link
           href={`/api/auth/redirect?from=${currentPath}`}
-          className="inline-flex min-h-[52px] items-center gap-2 rounded-full bg-accent px-7 text-[17px] font-bold text-accent-ink transition-transform hover:-translate-y-0.5"
+          className="inline-flex min-h-[52px] items-center gap-2 rounded-full bg-accent px-7 text-[16px] font-bold text-accent-ink transition-transform hover:-translate-y-0.5"
         >
           Log in with Yale
           <GoArrowUpRight />

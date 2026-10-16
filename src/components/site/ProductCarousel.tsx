@@ -47,7 +47,7 @@ export default function ProductCarousel() {
   return (
     <div>
       <div className="mb-3 flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
-        <p className="text-[15px] font-semibold text-cream">
+        <p className="text-[14px] font-semibold text-cream">
           {PRODUCTS.length} products, built and run by y/cs
         </p>
         <p className="font-mono text-xs text-muted">Select a product to explore · auto-plays</p>
@@ -82,7 +82,7 @@ export default function ProductCarousel() {
               </span>
               <span className="flex min-w-0 flex-col gap-0.5 xl:items-center">
                 <span
-                  className={`text-sm leading-tight sm:text-[15px] ${active ? 'font-extrabold' : 'font-semibold'}`}
+                  className={`text-sm leading-tight sm:text-[14px] ${active ? 'font-extrabold' : 'font-semibold'}`}
                 >
                   {product.name}
                 </span>
@@ -126,8 +126,8 @@ export default function ProductCarousel() {
                   i === index ? 'opacity-100' : 'invisible translate-y-1 opacity-0'
                 }`}
               >
-                <p className="font-mono text-[13px] text-muted">{product.tag}</p>
-                <h3 className="mt-3.5 text-[40px] font-extrabold tracking-[-0.02em] text-cream sm:text-[44px]">
+                <p className="font-mono text-[12.5px] text-muted">{product.tag}</p>
+                <h3 className="mt-3.5 text-[37px] font-extrabold tracking-[-0.02em] text-cream sm:text-[41px]">
                   {product.name}
                 </h3>
                 <p className="mt-4 text-lg leading-relaxed text-soft">{product.desc}</p>

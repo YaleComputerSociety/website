@@ -50,14 +50,14 @@ function Navbar() {
           aria-label="Yale Computer Society home"
         >
           <SlashMark className="h-[26px] w-4" />
-          <span className="font-mono text-[13px] leading-[1.15] tracking-wide">
+          <span className="font-mono text-[12.5px] leading-[1.15] tracking-wide">
             yale computer
             <br />
             society
           </span>
         </Link>
 
-        <nav aria-label="Primary" className="hidden items-center gap-7 text-[15px] md:flex">
+        <nav aria-label="Primary" className="hidden items-center gap-7 text-[14px] md:flex">
           {navigationItems.map((item) => (
             <Link
               key={item.link}
