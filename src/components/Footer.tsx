@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { SlashMark } from '@components/site/brand';
 
 const footerLinks = [
-  { name: 'About', href: '/about' },
   { name: 'Join', href: '/join' },
   { name: 'Email', href: 'mailto:yalecomputersociety@gmail.com' },
   { name: 'GitHub', href: 'https://github.com/yalecomputersociety' },

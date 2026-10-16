@@ -336,26 +336,6 @@ export const MEDIA = [
   },
 ];
 
-export const STORIES = [
-  {
-    data: '2016',
-    description:
-      'In 2016, the Yale Computer Society was created as a space for CS enthusiasts to learn and share ' +
-      'tech learnings together.',
-  },
-  {
-    data: '2019',
-    description:
-      'In 2019, the Yale Computer Society combined product and community to begin developing a suite of' +
-      ' products for Yale students.',
-  },
-  {
-    data: '2023',
-    description:
-      'The y/cs Catalyst program began, dedicated to teaching then next generation of software engineers at Yale.',
-  },
-];
-
 export const TODAY_STATISTICS = [
   {
     data: '120+',
