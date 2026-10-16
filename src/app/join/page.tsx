@@ -142,7 +142,7 @@ const Join = () => {
                 </p>
               </div>
               <Link
-                href="https://docs.google.com/forms/d/e/1FAIpQLSeguDHlt5DeycAmB9hZjdwASyPYUwPH-NhreYomuI7DPtND1A/viewform?usp=dialog"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeiYwNUGe0Z0FmVFXZLRe-Obzt84yMLqZ6Ji6o_cYkVcIX7Ng/viewform"
                 className="sm:ml-auto bg-ycs-pink hover:bg-ycs-pink/90 text-black py-2 px-6 rounded-lg transition-all duration-300 flex items-center whitespace-nowrap"
                 target="_blank"
               >
@@ -194,24 +194,19 @@ const Join = () => {
 
           <ProcessStep number="2" title="Interview/Challenge">
             <p className="mb-4">
-              For those applying for technical roles, we have a technical interview.
+              For y/cs Development, applicants will complete a short product challenge designed to
+              show us how they think about building software. You’ll explore our products, identify
+              things you would improve or add, and tell us more about what you’re interested in working on.              
             </p>
             <p className="mb-4">
-              Those applying for y/cs Development are evaluated on their ability to operate the
-              tools/skills used to build the products (not LeetCode questions).
-            </p>
-            <p className="mb-4">
-              We don&apos;t expect everyone to come to Yale knowing how to use these tools/skills,
-              which is why we have beginner{' '}
-              <span className="text-ycs-pink font-semibold">Catalyst</span> programs designed to
-              teach them to you! Those applying for beginner programs are evaluated on their
-              ability/willingness to learn new technical concepts in a separate interview.
+              Selected applicants will then meet with Development team leads to talk through their ideas,
+              experience, interests, and how they might contribute to a team.
             </p>
           </ProcessStep>
 
           <ProcessStep number="3" title="Team Placement">
             <p>
-              Based on your written application and interview you are placed on a y/cs team within 3
+              Based on your written application and interview you are placed on a y/cs team within
               weeks of the application deadline, as space permits.
             </p>
           </ProcessStep>
@@ -293,7 +288,7 @@ const Join = () => {
 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSeguDHlt5DeycAmB9hZjdwASyPYUwPH-NhreYomuI7DPtND1A/viewform?usp=dialog"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSeiYwNUGe0Z0FmVFXZLRe-Obzt84yMLqZ6Ji6o_cYkVcIX7Ng/viewform"
                     className="inline-flex items-center justify-center rounded-lg font-bold text-lg bg-ycs-pink hover:bg-ycs-pink/90 text-black py-3 px-8 transition-all duration-300 hover:shadow-lg hover:translate-y-[-2px]"
                     target="_blank"
                   >
