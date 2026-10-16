@@ -23,7 +23,7 @@ import yaleclubsShot from '@assets/products/screenshots/yaleclubs.jpg';
 import majorauditShot from '@assets/products/screenshots/majoraudit.jpg';
 
 // Sponsors
-import citadel from '@assets/partnerships/citadel-wordmark.png';
+import citadel from '@assets/partnerships/citadel-white.png';
 import hrtWhite from '@assets/partnerships/hrt.png';
 import janeStreet from '@assets/partnerships/JaneStreet.png';
 import deshaw from '@assets/partnerships/deshaw.png';
@@ -48,7 +48,7 @@ import coinbase from '@assets/companies/coinbase.png';
 import plaid from '@assets/companies/plaid.png';
 import yCombinator from '@assets/companies/y-combinator.png';
 import janeStreetAlumni from '@assets/companies/jane-street.png';
-import optiver from '@assets/companies/optiver.png';
+import optiver from '@assets/companies/optiver-white.png';
 import bloomberg from '@assets/companies/bloomberg.png';
 import morganStanley from '@assets/companies/morgan-stanley.png';
 import mckinsey from '@assets/companies/mckinsey.png';
@@ -231,7 +231,7 @@ export type Logo = {
 };
 
 export const SPONSORS: Logo[] = [
-  { name: 'Citadel', src: citadel, height: 18 },
+  { name: 'Citadel', src: citadel, height: 20, alreadyWhite: true },
   { name: 'Hudson River Trading', src: hrtWhite, height: 34, alreadyWhite: true },
   { name: 'Jane Street', src: janeStreet, height: 32 },
   { name: 'D. E. Shaw & Co.', src: deshaw, height: 26 },
@@ -258,7 +258,7 @@ export const ALUMNI: Logo[] = [
   { name: 'Plaid', src: plaid, height: 26 },
   { name: 'Y Combinator', src: yCombinator, height: 24 },
   { name: 'Jane Street', src: janeStreetAlumni, height: 24 },
-  { name: 'Optiver', src: optiver, height: 24 },
+  { name: 'Optiver', src: optiver, height: 24, alreadyWhite: true },
   { name: 'Bloomberg', src: bloomberg, height: 24 },
   { name: 'Morgan Stanley', src: morganStanley, height: 30 },
   { name: 'McKinsey & Company', src: mckinsey, height: 24 },
