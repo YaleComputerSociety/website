@@ -73,7 +73,10 @@ export default function Home() {
       >
         <Shell className="flex flex-col gap-12">
           <div className="grid gap-6 lg:grid-cols-[200px_1fr] lg:items-center lg:gap-12">
-            <p className="font-mono text-xs uppercase tracking-[0.14em] text-muted">Backed by</p>
+            <p className="font-mono text-xs uppercase tracking-[0.14em] text-muted">
+              Partners, past <br className="hidden lg:block" />
+              &amp; present
+            </p>
             <LogoRow logos={SPONSORS} minWidth={100} />
           </div>
           <div className="h-px bg-white/10" />
@@ -116,8 +119,8 @@ export default function Home() {
               <SectionTitle>More than a club. A crew.</SectionTitle>
             </div>
             <p className="max-w-[420px] text-lg leading-relaxed text-soft">
-              Demo days, launch booths, a black-tie gala, hackathons and late nights in the CEID.
-              This is where Yale&apos;s builders find each other.
+              Demo days, launch booths, a black-tie gala, hackathons and late nights in Tsai. This
+              is where Yale&apos;s builders find each other.
             </p>
           </div>
           <PhotoGrid photos={LIFE_PHOTOS} />

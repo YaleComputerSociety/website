@@ -309,8 +309,8 @@ export const LIFE_PHOTOS: GridPhoto[] = [
   },
   {
     src: bazaarBoothDuo,
-    alt: 'Two members at the y/cs booth at the activities bazaar',
-    caption: 'Activities bazaar',
+    alt: 'Two members at the y/cs booth at the EC Bazaar',
+    caption: 'EC Bazaar',
     wide: true,
   },
   {
@@ -383,7 +383,7 @@ export const EVENT_GALLERY: GridPhoto[] = [
   },
   {
     src: bazaarCrowd,
-    alt: 'Crowds of students at the y/cs table at the activities bazaar',
+    alt: 'Crowds of students at the y/cs table at the EC Bazaar',
     caption: '',
   },
   { src: holidayParty, alt: 'Members at the y/cs holiday party', caption: '' },
@@ -396,7 +396,7 @@ export const EVENT_GALLERY: GridPhoto[] = [
     wide: true,
   },
   { src: firesideChat, alt: 'A fireside chat at Tsai CITY', caption: '' },
-  { src: bazaarBooth2026, alt: 'The y/cs booth at the 2026 activities bazaar', caption: '' },
+  { src: bazaarBooth2026, alt: 'The y/cs booth at the 2026 EC Bazaar', caption: '' },
 ];
 
 export const EVENTS_HERO: Photo = { src: demoDayAudience, alt: 'A full audience at y/cs Demo Day' };
@@ -437,7 +437,7 @@ export const APPLICATIONS_OPEN = true;
 
 export const JOIN_HERO: Photo = {
   src: bazaarBooth2026,
-  alt: 'y/cs members at the club booth during the 2026 activities bazaar',
+  alt: 'y/cs members at the club booth during the 2026 EC Bazaar',
 };
 
 export const JOIN_STATS = [
@@ -544,7 +544,7 @@ export const SPONSOR_STATS = [
 
 export const SPONSOR_STRIP: Photo[] = [
   { src: demoDayAudience, alt: 'A full audience at y/cs Demo Day' },
-  { src: bazaarCrowd, alt: 'Crowds of students around the y/cs table at the activities bazaar' },
+  { src: bazaarCrowd, alt: 'Crowds of students around the y/cs table at the EC Bazaar' },
   { src: tsaiGroupPhoto, alt: 'A large y/cs group photo in front of the Tsai CITY backdrop' },
   { src: techTalkPanel, alt: 'A sponsor panel presenting to students in a lecture hall' },
 ];
