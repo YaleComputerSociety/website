@@ -1,54 +1,35 @@
 import Link from 'next/link';
-import { cloneElement } from 'react';
-import { FaInstagram, FaGithub, FaRegEnvelope } from 'react-icons/fa';
 
-interface FooterIconProps {
-  link: string;
-  ariaLabel: string;
-  icon: React.ReactElement;
-}
+import { SlashMark } from '@components/site/brand';
 
-const FooterIcon: React.FC<FooterIconProps> = (props: FooterIconProps) => {
-  const resizedIcon = cloneElement(props.icon, { size: 40 });
-
-  return (
-    <Link
-      href={props.link}
-      className="h-7 transform transition-transform hover:scale-110 hover:duration-200"
-      aria-label={props.ariaLabel}
-    >
-      {resizedIcon}
-    </Link>
-  );
-};
+const footerLinks = [
+  { name: 'Join', href: '/join' },
+  { name: 'Email', href: 'mailto:yalecomputersociety@gmail.com' },
+  { name: 'GitHub', href: 'https://github.com/yalecomputersociety' },
+  { name: 'Instagram', href: 'https://www.instagram.com/yalecomputersociety/' },
+];
 
 interface Props {
   className?: string;
 }
 
-export const Footer = ({ className }: Props) => {
+export const Footer = ({ className = '' }: Props) => {
   return (
-    <footer className={`flex flex-col text-white z-20 justify-normal items-center ${className}`}>
-      <div className="text-white text-xl mb-1">Get in touch with us</div>
-      <div className="flex justify-center gap-6 p-3">
-        <FooterIcon
-          link="mailto:yalecomputersociety@gmail.com"
-          ariaLabel="Email"
-          icon={<FaRegEnvelope />}
-        />
-        <FooterIcon
-          link="https://github.com/yalecomputersociety"
-          ariaLabel="Github"
-          icon={<FaGithub />}
-        />
-        <FooterIcon
-          link="https://www.instagram.com/yalecomputersociety/"
-          ariaLabel="Instagram"
-          icon={<FaInstagram />}
-        />
-      </div>
-      <div className="mt-4 text-gray-400 mb-6">
-        Yale Computer Society © {new Date().getFullYear()}
+    <footer className={`border-t border-white/[0.08] ${className}`}>
+      <div className="mx-auto flex max-w-[1440px] flex-wrap items-center justify-between gap-6 px-4 py-12 text-[14px] text-muted sm:px-8 lg:px-[72px]">
+        <div className="flex items-center gap-3">
+          <SlashMark className="h-5 w-3" />
+          <span>Yale Computer Society © {new Date().getFullYear()}</span>
+        </div>
+        <ul className="flex flex-wrap gap-7">
+          {footerLinks.map((link) => (
+            <li key={link.name}>
+              <Link href={link.href} className="text-[#D8D4CC] transition-colors hover:text-cream">
+                {link.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
       </div>
     </footer>
   );
