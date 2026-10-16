@@ -124,16 +124,26 @@ export default function Team() {
                     <p className="text-[13px] text-muted">{product.short}</p>
                   </div>
                 </div>
-                <ul className="flex flex-col gap-2.5">
+                <ul className="grid grid-cols-2 gap-3">
                   {teamLeads.map((lead) => (
-                    <li key={lead.name} className="flex items-center gap-3">
-                      <span className="relative h-10 w-10 shrink-0 overflow-hidden rounded-full bg-[#2A2A2A]">
-                        <Image src={lead.image} alt="" fill sizes="40px" className="object-cover" />
-                      </span>
-                      <span className="text-base font-semibold text-cream">{lead.name}</span>
-                      <span className="ml-auto font-mono text-xs text-muted">
-                        {shortYear(lead.year)}
-                      </span>
+                    <li key={lead.name}>
+                      <div className="relative aspect-square overflow-hidden rounded-2xl bg-gradient-to-br from-[#262626] to-[#1A1A1A]">
+                        <Image
+                          src={lead.image}
+                          alt={lead.name}
+                          fill
+                          sizes="(min-width: 1024px) 140px, (min-width: 640px) 25vw, 45vw"
+                          className="object-cover"
+                        />
+                      </div>
+                      <p className="mt-2.5 text-[15px] font-semibold leading-snug text-cream">
+                        {lead.name}
+                      </p>
+                      {lead.year && (
+                        <p className="mt-0.5 font-mono text-xs text-muted">
+                          {shortYear(lead.year)}
+                        </p>
+                      )}
                     </li>
                   ))}
                 </ul>
