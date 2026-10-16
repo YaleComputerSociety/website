@@ -27,27 +27,17 @@ import nvidia from './assets/partnerships/nvidia.png';
 import neil from './assets/people/neil.jpeg';
 import eric from './assets/people/eric.png';
 import LilyLin from './assets/people/LilyLin.png';
-import matei from './assets/people/matei.jpeg';
-import reyansh from './assets/people/reyansh.jpg';
-import sebastian from './assets/people/sebastian.jpeg';
-import ben from './assets/people/ben.jpeg';
 import yassin from './assets/people/yassin.jpg';
 
 import ryan from './assets/people/ryan.jpeg';
 import ryanf from './assets/people/ryanf.jpeg';
-import Francis from '@assets/people/francis.jpeg';
-import ephraim from './assets/people/ephraim.jpeg';
 import jeet from './assets/people/jeet.jpeg';
 import yavin from './assets/people/yavin-fickel.jpg';
-import rylan from './assets/people/rylan.jpeg';
-import andy from './assets/people/andy.jpeg';
-import christian from './assets/people/christian.jpeg';
 import sofia from './assets/people/sofia.jpeg';
 import himani from './assets/people/himani-kumar.jpg';
 import defaultPic from './assets/people/ycs-default-avatar.png';
 import helen from './assets/people/helen-huang.jpg';
 import eashan from './assets/people/eashan-hatti.jpg';
-import humpery from './assets/people/humphrey.jpg';
 // partnerships import
 import janestreet from './assets/partnerships/JaneStreet.png';
 import tsai from './assets/partnerships/tsaicity-wordmark.webp';
@@ -162,89 +152,76 @@ export const BOARD: Person[] = [
 
   // product leads
   {
-    name: 'Reyansh Bahl',
-    image: reyansh,
+    name: 'William Feng',
+    image: defaultPic,
     role: 'Team Lead',
-    year: 2028,
     team: 'CourseTable',
   },
   {
-    name: 'Humphrey Xu',
-    image: humpery,
+    name: 'Aryan Sharma',
+    image: defaultPic,
     role: 'Team Lead',
-    year: 2027,
     team: 'CourseTable',
   },
   {
-    name: 'Matei Coldea',
-    image: matei,
+    name: 'Yavin Fickel',
+    image: yavin,
     role: 'Team Lead',
-    year: 2028,
     team: 'Yalies',
   },
-
   {
-    name: 'Rylan Yang',
-    image: rylan,
+    name: 'Gavin Onghai',
+    image: defaultPic,
     role: 'Team Lead',
-    year: 2027,
+    team: 'YaleMeals',
+  },
+  {
+    name: 'Ishani Singh',
+    image: defaultPic,
+    role: 'Team Lead',
     team: 'ymeets',
   },
   {
-    name: 'Jeet Parikh',
-    image: jeet,
+    name: 'Jaden Cohen',
+    image: defaultPic,
     role: 'Team Lead',
     team: 'ymeets',
-    year: 2028,
   },
   {
-    name: 'Francis Fan',
-    image: Francis,
+    name: 'Peter Yu',
+    image: defaultPic,
     role: 'Team Lead',
-    year: 2027,
-    team: 'YaleClubs',
+    team: 'y/labs',
   },
   {
-    name: 'Ephraim Akai-Nettey',
-    image: ephraim,
+    name: 'Tanav Prabhu',
+    image: defaultPic,
     role: 'Team Lead',
-    year: 2027,
+    team: 'y/labs',
+  },
+  {
+    name: 'Vojtech Kysilka',
+    image: defaultPic,
+    role: 'Team Lead',
     team: 'YaleIMs',
   },
   {
-    name: 'Andy Cheng',
-    image: andy,
+    name: 'Ben Le',
+    image: defaultPic,
     role: 'Team Lead',
-    year: 2027,
+    team: 'YaleIMs',
+  },
+  {
+    name: 'Grady Yu',
+    image: defaultPic,
+    role: 'Team Lead',
+    team: 'YaleClubs',
+  },
+  {
+    name: 'Mateo Rodriguez',
+    image: defaultPic,
+    role: 'Team Lead',
     team: 'MajorAudit',
-  },
-  {
-    name: 'Ben Wu',
-    image: ben,
-    role: 'Team Lead',
-    year: 2027,
-    team: 'MajorAudit',
-  },
-  {
-    name: 'Christian Phanhthourath',
-    image: christian,
-    role: 'Team Lead',
-    team: 'y/labs',
-    year: 2028,
-  },
-  {
-    name: 'Sebastian Gonzalez',
-    image: sebastian,
-    role: 'Team Lead',
-    team: 'y/labs',
-    year: 2028,
-  },
-  {
-    name: 'Yassin Mudawi',
-    image: yassin,
-    role: 'Team Lead',
-    team: 'YaleMeals',
-    year: 2027,
   },
 ];
 
@@ -773,8 +750,7 @@ export const EVENTS = [
     date: '2025-10-11',
     time: '2:00 PM - 5:00 PM',
     location: 'Tsai CITY, Yale University',
-    description:
-      'Come work on projects and enjoy free boba during an afternoon hackathon!',
+    description: 'Come work on projects and enjoy free boba during an afternoon hackathon!',
     image: gala,
     tags: ['Hackathon'],
   },
@@ -784,8 +760,7 @@ export const EVENTS = [
     date: '2025-10-30',
     time: '7:00 PM - 9:00 PM',
     location: 'Tsai CITY, Yale University',
-    description:
-      'Join us for a mixer with members of Yale Colorstack with Mario Kart and fruit',
+    description: 'Join us for a mixer with members of Yale Colorstack with Mario Kart and fruit',
     image: gala,
     tags: ['Mixer'],
   },
@@ -861,8 +836,7 @@ export const EVENTS = [
     date: '2026-01-29',
     time: '1:10 PM - 2:00 PM',
     location: 'Tsai CITY, Yale University',
-    description:
-      'Welcome our West-Coast speaker, David Wu, with a small group lunch in Tsai CITY',
+    description: 'Welcome our West-Coast speaker, David Wu, with a small group lunch in Tsai CITY',
     image: gala,
     tags: ['Mixer'],
   },
@@ -905,8 +879,7 @@ export const EVENTS = [
     date: '2026-02-27',
     time: '3:30 PM - 6:00 PM',
     location: 'CEID, Yale University',
-    description:
-      'Stop by to hear about new opportunities for developers in y/cs!',
+    description: 'Stop by to hear about new opportunities for developers in y/cs!',
     image: gala,
     tags: ['Fair'],
   },
@@ -953,8 +926,8 @@ export const EVENTS = [
       'Engineers from Marshall Wace will be joining y/cs to share their perspectives on what skills and expertise make for a highly impactful engineer.',
     image: marshall_wace,
     tags: ['Workshop'],
-    link: "https://job-boards.greenhouse.io/mwamevents/jobs/8486856002",
-    link_text: "Apply"
+    link: 'https://job-boards.greenhouse.io/mwamevents/jobs/8486856002',
+    link_text: 'Apply',
   },
   {
     id: 'e021',
@@ -966,8 +939,8 @@ export const EVENTS = [
       'Bobyard Computer Vision Research Engineer Raphaël Levisse joins y/cs to talk about applications of AI in the construction industry',
     image: bobyard,
     tags: ['Speaker Event'],
-    link: "https://docs.google.com/forms/d/e/1FAIpQLSfHB30HqBy72ilPgRueXgiWLvrG63UsHxdb0hSgmK2E7EM4sA/viewform?usp=publish-editor",
-    link_text: "RSVP"
+    link: 'https://docs.google.com/forms/d/e/1FAIpQLSfHB30HqBy72ilPgRueXgiWLvrG63UsHxdb0hSgmK2E7EM4sA/viewform?usp=publish-editor',
+    link_text: 'RSVP',
   },
 ];
 
