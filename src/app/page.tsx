@@ -72,15 +72,13 @@ export default function Home() {
         className="border-y border-white/[0.08] py-14"
       >
         <Shell className="flex flex-col gap-12">
-          <div className="flex flex-wrap items-center gap-x-12 gap-y-6">
-            <p className="w-[200px] shrink-0 font-mono text-xs uppercase tracking-[0.14em] text-muted">
-              Backed by
-            </p>
+          <div className="grid gap-6 lg:grid-cols-[200px_1fr] lg:items-center lg:gap-12">
+            <p className="font-mono text-xs uppercase tracking-[0.14em] text-muted">Backed by</p>
             <LogoRow logos={SPONSORS} minWidth={100} />
           </div>
           <div className="h-px bg-white/10" />
-          <div className="flex flex-wrap items-center gap-x-12 gap-y-6">
-            <p className="w-[200px] shrink-0 font-mono text-xs uppercase tracking-[0.14em] text-muted">
+          <div className="grid gap-6 lg:grid-cols-[200px_1fr] lg:items-center lg:gap-12">
+            <p className="font-mono text-xs uppercase tracking-[0.14em] text-muted">
               Where our members land
             </p>
             <LogoRow logos={ALUMNI} minWidth={100} />

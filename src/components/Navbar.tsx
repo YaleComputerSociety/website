@@ -65,8 +65,8 @@ function Navbar() {
               aria-current={isActive(item.link) ? 'page' : undefined}
               className={
                 isActive(item.link)
-                  ? 'border-b-2 border-accent pb-1 font-bold text-cream'
-                  : 'text-[#D8D4CC] transition-colors hover:text-cream'
+                  ? 'border-b-2 border-accent py-1 font-bold text-cream'
+                  : 'border-b-2 border-transparent py-1 text-[#D8D4CC] transition-colors hover:text-cream'
               }
             >
               {item.name}
