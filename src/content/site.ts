@@ -83,6 +83,9 @@ import gala from '@assets/groupphoto.jpg';
 export const CONTACT_EMAIL = 'yalecomputersociety@gmail.com';
 export const CALENDAR_SUBSCRIBE_URL =
   'https://calendar.google.com/calendar/u/0?cid=dDZpc3Vkb2RxY3BiMnVlcGNrOTlqbWp0M29AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ';
+export const CATALYST_URL = 'https://catalyst-fall26.vercel.app/';
+export const CATALYST_CALENDAR_URL =
+  'https://calendar.google.com/calendar/u/0?cid=MjQzYmExZWNiMWIzMDkzMTgxZjNhMmVlZTY0NzQyMTEyY2FmNTlmZjFhNDdiMzVkOTM1ZTFlZjAyOGQxOWViM0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t';
 export const INSTAGRAM_URL = 'https://www.instagram.com/yalecomputersociety/';
 export const GITHUB_URL = 'https://github.com/YaleComputerSociety';
 
@@ -97,7 +100,7 @@ export const STATS = [
   { value: '20,000+', label: 'people use y/cs apps' },
   { value: '80+', label: 'student developers & designers' },
   { value: '7', label: 'products live on campus' },
-  { value: '50+', label: 'Catalyst mentees each year' },
+  { value: '100+', label: 'Catalyst participants this fall' },
 ];
 
 export type Product = {

@@ -15,6 +15,8 @@ import {
 } from '@components/site/ui';
 import {
   ALUMNI,
+  CATALYST_CALENDAR_URL,
+  CATALYST_URL,
   GITHUB_URL,
   HERO_PHOTO,
   LIFE_PHOTOS,
@@ -169,29 +171,47 @@ export default function Home() {
 
       {/* DUAL CTA */}
       <section className="pb-28">
-        <Shell className="grid gap-5 md:grid-cols-2">
-          <div className="rounded-[28px] bg-accent p-10 text-accent-ink sm:p-14">
+        <Shell className="grid gap-5 lg:grid-cols-3">
+          <div className="flex flex-col items-start rounded-[28px] bg-accent p-10 text-accent-ink sm:p-12">
             <p className="font-mono text-[12.5px] uppercase tracking-[0.14em]">For students</p>
-            <h2 className="mb-3.5 mt-4 text-[clamp(32px,3.2vw,41px)] font-extrabold leading-[1.02] tracking-[-0.03em]">
+            <h2 className="mb-3.5 mt-4 text-[clamp(32px,2.6vw,38px)] font-extrabold leading-[1.02] tracking-[-0.03em]">
               Build with us this semester.
             </h2>
             <p className="mb-8 text-lg leading-relaxed">General membership is open year-round.</p>
-            <PillLink href="/join" variant="dark">
+            <PillLink href="/join" variant="dark" className="mt-auto">
               Apply to join
             </PillLink>
           </div>
-          <div className="rounded-[28px] bg-paper p-10 text-[#141414] sm:p-14">
+          <div className="flex flex-col items-start rounded-[28px] border border-white/[0.08] bg-panel p-10 text-cream sm:p-12">
+            <p className="font-mono text-[12.5px] uppercase tracking-[0.14em] text-accent">
+              Catalyst · Fall 2026
+            </p>
+            <h2 className="mb-3.5 mt-4 text-[clamp(32px,2.6vw,38px)] font-extrabold leading-[1.02] tracking-[-0.03em]">
+              Go from first commit to Demo Day.
+            </h2>
+            <p className="mb-8 text-lg leading-relaxed text-soft">
+              No experience needed. Build in two-week sprints alongside about 100 y/cs members, with
+              workshops and a small group every time.
+            </p>
+            <div className="mt-auto flex flex-wrap gap-2.5">
+              <PillLink href={CATALYST_URL}>Visit Catalyst</PillLink>
+              <PillLink href={CATALYST_CALENDAR_URL} variant="outline">
+                Add the calendar
+              </PillLink>
+            </div>
+          </div>
+          <div className="flex flex-col items-start rounded-[28px] bg-paper p-10 text-[#141414] sm:p-12">
             <p className="font-mono text-[12.5px] uppercase tracking-[0.14em] text-[#5C574F]">
               For companies
             </p>
-            <h2 className="mb-3.5 mt-4 text-[clamp(32px,3.2vw,41px)] font-extrabold leading-[1.02] tracking-[-0.03em]">
+            <h2 className="mb-3.5 mt-4 text-[clamp(32px,2.6vw,38px)] font-extrabold leading-[1.02] tracking-[-0.03em]">
               Meet Yale&apos;s strongest builders.
             </h2>
             <p className="mb-8 text-lg leading-relaxed text-[#3D3A35]">
               Tech talks, recruiting events and a direct line to students who already ship
               production software.
             </p>
-            <PillLink href="/sponsors" variant="dark">
+            <PillLink href="/sponsors" variant="dark" className="mt-auto">
               Become a sponsor
             </PillLink>
           </div>
