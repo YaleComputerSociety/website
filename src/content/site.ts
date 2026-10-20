@@ -100,7 +100,7 @@ export const STATS = [
   { value: '20,000+', label: 'people use y/cs apps' },
   { value: '80+', label: 'student developers & designers' },
   { value: '7', label: 'products live on campus' },
-  { value: '50+', label: 'Catalyst mentees each year' },
+  { value: '100+', label: 'Catalyst participants this fall' },
 ];
 
 export type Product = {
